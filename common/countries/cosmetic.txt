@@ -1,0 +1,71 @@
+
+SWE_elmo_europe = {
+	color = rgb { 36 0 110 }
+	color_ui = rgb { 36 0 110 }
+}
+
+SWE_EMP = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_EMP = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_NDR_radsoc = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_NDR_synd = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_NDR_flyg = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_NDR_commie = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_NDR_natsoc = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_sven_lind = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_natsynd = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_linderot = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_syndicalist = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_radsoc = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+
+SWE_natsynd = {
+	color = rgb { 0 40 104 }
+	color_ui = rgb { 0 40 104 }
+}
+

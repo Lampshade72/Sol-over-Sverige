@@ -1,0 +1,62 @@
+﻿l_english:
+  ################################################################################################################################################################################################
+  ### SWE
+  ################################################################################################################################################################################################
+
+	### Head of Government ###
+
+
+	### Person of Influence ###
+	## Foreign Minister
+	SWE_Annie_akerhielm_for_npo:0 "Annie Akerhielm"
+	SWE_Knut_Senander_for_tot:0 "Knut Senander"   
+	SWE_Britta_Grondahl_for_syn:0 "Britta Gröndahl"
+    
+    
+	## Economy Minister
+	SWE_Ragnar_Berg_eco_npo:0 "Ragnar Berg"
+	SWE_Ingvar_Kamprad_eco_npo:0 "Ingvar Kamprad"
+	SWE_Set_Persson_eco_tot:0 "Set Persson"
+
+	## Security Minister
+	SWE_Alf_Meyerhoffer_sec_npo:0 "Alf Meyerhoffer"
+	SWE_Hugo_Sillén_sec_tot:0 "Hugo Sillén"
+	SWE_Elise_Ottesen_Jensen_sec_syn:0 "Elise Ottesen-Jensen"
+
+
+
+
+	### Chief of Staff ###
+	SWE_Ernst_af_Klercker_cos_mli:0 "Ernst af Klercker"
+	SWE_Olof_Thoernell_cos_sco:0 "Olof Thörnell"
+	SWE_Oscar_Nygren_cos_ade:0 "Oscar Nygren"
+	SWE_Per_Sylvan_cos_ade:0 "Per Sylvan"
+	SWE_Carl_August_Ehrensvaerd_cos_ade:0 "Carl August Ehrensvärd"
+	SWE_Axel_Rappe_cos_pau:0 "Axel Rappe"
+	SWE_Martin_Ekstroem_cos_npo:0 "Martin Ekström"
+
+	### Chief of Army ###
+	SWE_Axel_Bredberg_carm_sli:0 "Axel Bredberg"
+	SWE_Olof_Thoernell_carm_sco:0 "Olof Thörnell"
+	SWE_Oscar_Nygren_carm_ade:0 "Oscar Nygren"
+	SWE_Per_Sylvan_carm_ade:0 "Per Sylvan"
+	SWE_Axel_Rappe_carm_pau:0 "Axel Rappe"
+	SWE_Helge_Jung_carm_pau:0 "Helge Jung"
+	SWE_Martin_Ekstroem_carm_npo:0 "Martin Ekström"
+	SWE_Archibald_Douglas_carm_npo:0 "Archibald Douglas"
+
+	### Chief of Navy ###
+	SWE_Erik_Palmstierna_cnav_sde:0 "Erik Palmstierna"
+	SWE_Helge_Stroembaeck_cnav_sli:0 "Helge Strömbäck"
+	SWE_Fabian_Tamm_cnav_sco:0 "Fabian Tamm"
+	SWE_Otto_Lybeck_cnav_ade:0 "Otto Lybeck"
+	SWE_Goesta_Ehrensvaerd_cnav_ade:0 "Gösta Ehrensvärd"
+	SWE_Charles_de_Champs_cnav_ade:0 "Charles de Champs"
+
+	### Chief of Air Force ###
+	SWE_Anton_Nilsson_cair_rso:0 "Anton Nilsson"
+	SWE_Krister_Reuterswaerd_cair_rso:0 "Krister Reuterswärd"
+	SWE_Axel_Ljungdahl_cair_sli:0 "Axel Ljungdahl"
+	SWE_Bengt_Nordenskioeld_cair_mli:0 "Bengt Nordenskiöld"
+	SWE_Torsten_Friis_cair_mli:0 "Torsten Friis"
+	SWE_Axel_Gyllenkrok_cair_npo:0 "Axel Gyllenkrok"

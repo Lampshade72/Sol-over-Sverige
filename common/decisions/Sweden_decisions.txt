@@ -1,0 +1,2876 @@
+###Sweden Decisions###
+
+# By Lampshade72
+
+SWE_foreign_policy_empire_decisions = {
+
+	SWE_claim_scandinavia = {
+		icon = generic_form_nation
+		allowed = { tag = SWE }
+		available = { 
+			has_completed_focus = SWE_FOP_ready_the_blade
+			}
+		
+		visible = { 
+			has_completed_focus = SWE_FOP_realm_of_our_own
+			}
+		fire_only_once = yes
+		cost = 75
+		days_remove = 24
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_claim_scandinavia"	
+			add_state_claim = 110
+			add_state_claim = 142
+			add_state_claim = 143
+			add_state_claim = 144
+			add_state_claim = 937
+			add_state_claim = 936
+			add_state_claim = 37
+			add_state_claim = 99
+			add_state_claim = 337
+			add_state_claim = 100
+			add_state_claim = 101
+			add_state_claim = 926		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	SWE_destroy_norway = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_completed_focus = SWE_FOP_karlstad_failure
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_karlstad_failure
+		}
+
+		cost = 100
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete SWE_destroy_norway target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_destroy_norway target: [From.GetName]"
+				create_wargoal = {
+					target = NOR
+					type = annex_everything
+				}
+		}
+	}
+
+	SWE_destroy_denmark = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_completed_focus = SWE_FOP_danes_returned
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_danes_returned
+		}
+
+		cost = 80
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete SWE_destroy_denmark target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_destroy_denmark target: [From.GetName]"
+				create_wargoal = {
+					target = DEN
+					type = annex_everything
+				}
+		}
+	}
+
+	SWE_destroy_finjacks = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_completed_focus = SWE_FOP_wayward_son
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_wayward_son
+		}
+
+		cost = 80
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete SWE_destroy_finjacks target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_destroy_finjacks target: [From.GetName]"
+			add_state_claim = 844
+			add_state_claim = 148
+			add_state_claim = 149
+			add_state_claim = 147
+			add_state_claim = 150
+			add_state_claim = 111
+			add_state_claim = 863
+			add_state_claim = 840
+			add_state_claim = 864	
+			add_state_claim = 865
+			add_state_claim = 1326
+			add_state_claim = 1325	
+			add_state_claim = 1324			
+				create_wargoal = {
+					target = FIN
+					type = annex_everything
+				}
+		}
+	}
+
+	SWE_destroy_fake_nords = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_completed_focus = SWE_FOP_lands_of_old_empire
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_lands_of_old_empire
+		}
+
+		cost = 80
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete SWE_destroy_fake_nords target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_destroy_fake_nords target: [From.GetName]"
+				create_wargoal = {
+					target = EST
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = BAT
+					type = annex_everything
+				}				
+		}
+	}
+
+	SWE_destroy_the_bear = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_completed_focus = SWE_FOP_contront_bear
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_contront_bear
+		}
+
+		cost = 300
+		days_remove = 78
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete SWE_destroy_the_bear target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_destroy_the_bear target: [From.GetName]"
+			add_state_claim = 722
+			add_state_claim = 213
+			add_state_claim = 215
+			add_state_claim = 1327
+			add_state_claim = 1328
+			add_state_claim = 1274	
+			add_state_claim = 216			
+				create_wargoal = {
+					target = RUS
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = SOV
+					type = annex_everything
+				}				
+		}
+	}
+
+
+	SWE_integrate_scandinavia = {
+		icon = generic_form_nation
+		allowed = { original_tag = SWE }
+		visible = {
+			110 = { is_claimed_by = SWE }
+			37 = { is_claimed_by = SWE }			
+		}
+		available = {
+			AND = { 
+				110 = { is_owned_and_controlled_by = SWE }
+				142 = { is_owned_and_controlled_by = SWE }
+				143 = { is_owned_and_controlled_by = SWE }
+				144 = { is_owned_and_controlled_by = SWE }
+				937 = { is_owned_and_controlled_by = SWE }
+				936 = { is_owned_and_controlled_by = SWE }
+				37 = { is_owned_and_controlled_by = SWE }
+				99 = { is_owned_and_controlled_by = SWE }
+				337 = { is_owned_and_controlled_by = SWE }
+				100 = { is_owned_and_controlled_by = SWE }
+				101 = { is_owned_and_controlled_by = SWE }
+				926 = { is_owned_and_controlled_by = SWE }
+
+			}
+		}
+		fire_only_once = yes
+		cost = 250
+		days_remove = 150
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia"
+			add_stability = 0.10
+			add_ideas = SWE_integrate_scandinavia
+
+		}
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia"
+			remove_ideas = SWE_integrate_scandinavia
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 144
+			add_state_core = 937
+			add_state_core = 936
+			add_state_core = 37
+			add_state_core = 99
+			add_state_core = 337
+			add_state_core = 100
+			add_state_core = 101
+			add_state_core = 926
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+SWE_neutral_decisions = {
+	SWE_fort_south = {
+		icon = fortress
+		allowed = {
+			tag = SWE
+		}
+
+		highlight_states = {
+	highlight_state_targets = {
+			state = 138
+		}
+	}
+
+		available = {
+			has_full_control_of_state = 138
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_fortification_efforts
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 64
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_fort_south"
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_fort_south"
+			if = {
+				limit = { controls_state = 138 }
+				138 = {
+					add_building_construction = {
+						type = bunker
+						province = 6345
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9279
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9362
+						level = 2
+						instant_build = yes
+					}					
+				}
+			}
+		}
+	}
+
+	SWE_fort_west1 = {
+		icon = fortress
+		allowed = {
+			tag = SWE
+		}
+
+		highlight_states = {
+	highlight_state_targets = {
+			state = 908
+		}
+	}
+
+		available = {
+			has_full_control_of_state = 908
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_fortification_efforts
+		}
+
+		fire_only_once = yes
+
+		cost = 55
+		days_remove = 45
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_fort_west1"
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_fort_west1"
+			if = {
+				limit = { controls_state = 908 }
+				908 = {
+					add_building_construction = {
+						type = bunker
+						province = 171
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = 6310
+						level = 2
+						instant_build = yes
+					}
+					
+				}
+			}
+		}
+	}
+
+	SWE_fort_west2 = {
+		icon = fortress
+		allowed = {
+			tag = SWE
+		}
+
+		highlight_states = {
+	highlight_state_targets = {
+			state = 140
+			state = 778
+		}
+	}
+
+		available = {
+			has_full_control_of_state = 140
+			has_full_control_of_state = 778
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_fortification_efforts
+		}
+
+		fire_only_once = yes
+
+		cost = 80
+		days_remove = 80
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_fort_west2"
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_fort_west2"
+				140 = {
+					add_building_construction = {
+						type = bunker
+						province = 69
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 147
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9138
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6195
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3128
+						level = 2
+						instant_build = yes
+					}					
+				}
+				778 = {
+					add_building_construction = {
+						type = bunker
+						province = 9068
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 202
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6207
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3111
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9066
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 168
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6185
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9171
+						level = 2
+						instant_build = yes
+					}					
+				}
+			}
+	}
+
+	SWE_fort_north = {
+		icon = fortress
+		allowed = {
+			tag = SWE
+		}
+
+		highlight_states = {
+	highlight_state_targets = {
+			state = 909
+		}
+	}
+
+		available = {
+			has_full_control_of_state = 909
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_fortification_efforts
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 64
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_fort_north"
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_fort_north"
+			if = {
+				limit = { controls_state = 909 }
+				909 = {
+					add_building_construction = {
+						type = bunker
+						province = 6208
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6170
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 61
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6168
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 201
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9147
+						level = 2
+						instant_build = yes
+					}					
+				}
+			}
+		}
+	}
+
+	SWE_fort_coast_cities = {
+		icon = fortress
+		allowed = {
+			tag = SWE
+		}
+
+		highlight_states = {
+	highlight_state_targets = {
+			state = 140
+		}
+	}
+
+		available = {
+			has_full_control_of_state = 140
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_gotland_fortress
+		}
+
+		fire_only_once = yes
+
+		cost = 88
+		days_remove = 75
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_fort_coast_cities"
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_fort_coast_cities"
+				140 = {
+					add_building_construction = {
+						type = coastal_bunker
+						province = 383
+						level = 2
+						instant_build = yes
+					}		
+				}				
+				138 = {
+					add_building_construction = {
+						type = coastal_bunker
+						province = 9279
+						level = 2
+						instant_build = yes
+					}	
+					add_building_construction = {
+						type = coastal_bunker
+						province = 11215
+						level = 2
+						instant_build = yes
+					}							
+				}
+				139 = {
+					add_building_construction = {
+						type = coastal_bunker
+						province = 11380
+						level = 2
+						instant_build = yes
+					}		
+				}				
+				141 = {
+					add_building_construction = {
+						type = coastal_bunker
+						province = 6050
+						level = 2
+						instant_build = yes
+					}		
+				}
+				38 = {
+					add_building_construction = {
+						type = coastal_bunker
+						province = 130
+						level = 2
+						instant_build = yes
+					}		
+				}
+				666 = {
+					add_building_construction = {
+						type = coastal_bunker
+						province = 9108
+						level = 2
+						instant_build = yes
+					}		
+				}
+				
+			}
+		}
+	}
+
+SWE_alliance_reachout = {
+	SWE_join_entente_LS = {# Join the Entente
+		icon = generic_nationalism
+
+		allowed = { tag = SWE }
+
+		available = {
+			has_socialist_government = no
+
+			ENT = {
+				is_faction_leader = yes
+				has_socialist_government = no
+			}
+			date > 1937.2.2
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_democractic_light
+			is_subject = no
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 50
+
+		}
+		fire_only_once = no
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_entente_LS"
+			ENT = {
+				add_to_faction = SWE
+			}
+		}
+	}
+	SWE_join_reichspact_ls = {# Join the Reichspact
+		icon = generic_nationalism
+
+		allowed = { tag = SWE }
+
+		available = {
+			has_socialist_government = no
+			NOT = {		
+				has_country_flag = SWE_flag_revolution_in_sweden
+				has_completed_focus = SWE_radical_united_front
+			}
+			GER = {
+				is_faction_leader = yes
+		
+			}
+			date > 1937.2.2
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_democractic_light
+			is_subject = no
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		fire_only_once = no
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_reichspact_ls"
+			GER = {
+				add_to_faction = SWE
+			}
+		}
+	}
+	SWE_join_russia_ls = {# Join the russia
+		icon = generic_nationalism
+
+		allowed = { tag = SWE }
+
+		available = {
+			has_socialist_government = no
+			NOT = {		
+				has_country_flag = SWE_flag_revolution_in_sweden
+				has_completed_focus = SWE_radical_united_front
+			}
+			RUS = {
+				has_socialist_government = no
+				is_faction_leader = yes
+		
+			}
+			date > 1937.2.2
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_democractic_light
+			is_subject = no
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		fire_only_once = no
+		cost = 70
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_russia_ls"
+			RUS = {
+				add_to_faction = SWE
+			}
+		}
+	}
+
+	swe_subjugate_norway_alliance = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			OR = {
+			has_completed_focus = SWE_FOP_player_in_reclamation
+			has_completed_focus = SWE_FOP_bastion_against_radicals
+			}
+			is_subject = no
+		}
+
+		visible = {
+			OR = {
+			has_completed_focus = SWE_FOP_player_in_reclamation
+			has_completed_focus = SWE_FOP_bastion_against_radicals
+			}
+		}
+
+		cost = 100
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_norway_alliance target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_norway_alliance target: [From.GetName]"
+				create_wargoal = {
+					target = NOR
+					type = annex_everything
+				}
+		}
+	}
+
+	swe_subjugate_finland_alliance = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			OR = {
+			has_completed_focus = SWE_FOP_player_in_reclamation
+			has_completed_focus = SWE_FOP_bastion_against_radicals
+			}
+			is_subject = no
+		}
+
+		visible = {
+			OR = {
+			has_completed_focus = SWE_FOP_player_in_reclamation
+			has_completed_focus = SWE_FOP_bastion_against_radicals
+			}
+		}
+
+		cost = 80
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_finland_alliance target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_finland_alliance target: [From.GetName]"
+			add_state_claim = 844
+			add_state_claim = 148
+			add_state_claim = 149
+			add_state_claim = 147
+			add_state_claim = 150
+			add_state_claim = 111
+			add_state_claim = 863
+			add_state_claim = 840
+			add_state_claim = 864	
+			add_state_claim = 865
+			add_state_claim = 1326
+			add_state_claim = 1325	
+			add_state_claim = 1324			
+				create_wargoal = {
+					target = FIN
+					type = annex_everything
+				}
+		}
+	}
+
+	swe_subjugate_denmark_alliance = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			OR = {
+			has_completed_focus = SWE_FOP_player_in_reclamation
+			has_completed_focus = SWE_FOP_bastion_against_radicals
+			}
+			is_subject = no
+		}
+
+		visible = {
+			OR = {
+			has_completed_focus = SWE_FOP_player_in_reclamation
+			has_completed_focus = SWE_FOP_bastion_against_radicals
+			}
+		}
+
+		cost = 80
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_denmark_alliance target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_denmark_alliance target: [From.GetName]"
+				create_wargoal = {
+					target = DEN
+					type = annex_everything
+				}
+		}
+	}	
+
+	swe_seize_iceland = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			OR = {
+			has_completed_focus = SWE_FOP_player_in_reclamation
+			has_completed_focus = SWE_FOP_bastion_against_radicals
+			}
+			is_subject = no
+			is_in_faction = no
+			DEN = { surrender_progress > 0.5 }
+		}
+
+		visible = {
+			OR = {
+			has_completed_focus = SWE_FOP_player_in_reclamation
+			has_completed_focus = SWE_FOP_bastion_against_radicals
+			}
+			37 = { is_owned_and_controlled_by = SWE }
+		}
+
+		cost = 80
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		targets = { DEN }
+		target_trigger = {
+			can_declare_war_on = FROM
+			37 = { is_owned_and_controlled_by = FROM }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_seize_iceland target: [From.GetName]"
+			transfer_state = 37
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_seize_iceland target: [From.GetName]"
+			clear_decision_attack_AI = yes
+		}
+	}
+
+}
+
+SWE_revolution_decisions = {
+	SWE_join_internationale_ls = {# join the big bois
+		icon = generic_nationalism
+
+		allowed = { tag = SWE }
+
+		available = {
+			has_socialist_government = yes
+
+			FRA = {
+				has_socialist_government = yes
+			}
+			date > 1937.2.2
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_revolutionary_torch
+			is_subject = no
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		fire_only_once = no
+		cost = 70
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_internationale_ls"
+			FRA = {
+				add_to_faction = SWE
+			}
+		}
+	}
+
+	SWE_own_faction_rev = {# Create Faction
+		icon = generic_nationalism
+
+		allowed = { tag = MEX }
+
+		available = {
+			has_socialist_government = yes
+			date > 1937.2.2
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_revolutionary_torch
+			is_subject = no
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		fire_only_once = no
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_own_faction_rev"
+
+
+			if = {
+				limit = {
+					NOT = { has_country_flag = SWE_flag_lindholm_tot }
+				}
+				create_faction = "Nordiskt Internationell"
+			}
+			if = {
+				limit = {
+						has_country_flag = SWE_flag_lindholm_tot 
+				}
+				create_faction = "Revolutionära Nationella Internationalen"
+			}
+		}
+	}
+
+	swe_subjugate_norway_revolution = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_socialist_government = yes
+			date > 1939.4.4
+			is_subject = no
+			
+			NOR = { has_socialist_government = no }
+		}
+
+		visible = {
+			OR = {
+			has_completed_focus = SWE_FOP_ready_world_revolution
+			has_completed_focus = SWE_FOP_crush_nordic_crowns
+			}
+		}
+
+		cost = 100
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1939.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_norway_revolution target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_norway_revolution target: [From.GetName]"
+				create_wargoal = {
+					target = NOR
+					type = annex_everything
+				}
+		}
+	}
+
+	swe_subjugate_finland_revolution = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_socialist_government = yes
+			date > 1939.4.4
+			is_subject = no
+			
+			FIN = { has_socialist_government = no }
+			is_subject = no
+		}
+
+		visible = {
+			OR = {
+			has_completed_focus = SWE_FOP_ready_world_revolution
+			has_completed_focus = SWE_FOP_crush_nordic_crowns
+			}
+		}
+
+		cost = 80
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1939.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_finland_revolution target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_finland_revolution target: [From.GetName]"
+			add_state_claim = 844
+			add_state_claim = 148
+			add_state_claim = 149
+			add_state_claim = 147
+			add_state_claim = 150
+			add_state_claim = 111
+			add_state_claim = 863
+			add_state_claim = 840
+			add_state_claim = 864	
+			add_state_claim = 865
+			add_state_claim = 1326
+			add_state_claim = 1325	
+			add_state_claim = 1324			
+				create_wargoal = {
+					target = FIN
+					type = annex_everything
+				}
+		}
+	}
+
+	swe_subjugate_denmark_revolution = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_socialist_government = yes
+			date > 1939.4.4
+			is_subject = no
+			
+			DEN = { has_socialist_government = no }
+			is_subject = no
+		}
+
+		visible = {
+			OR = {
+			has_completed_focus = SWE_FOP_ready_world_revolution
+			has_completed_focus = SWE_FOP_crush_nordic_crowns
+			}
+		}
+
+		cost = 80
+		days_remove = 31
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_denmark_alliance target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_denmark_alliance target: [From.GetName]"
+				create_wargoal = {
+					target = DEN
+					type = annex_everything
+				}
+		}
+	}
+
+	SWE_claim_scandinavia_revolution = {
+		icon = generic_form_nation
+		allowed = { tag = SWE }
+		available = { 
+			OR = {
+			has_completed_focus = SWE_FOP_role_to_play
+			has_completed_focus = SWE_FOP_true_nordic_union
+			}
+		}
+		
+		visible = { 
+			OR = {
+			has_completed_focus = SWE_FOP_role_to_play
+			has_completed_focus = SWE_FOP_true_nordic_union
+			}
+			}
+		fire_only_once = yes
+		cost = 75
+		days_remove = 24
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_claim_scandinavia_revolution"	
+			add_state_claim = 110
+			add_state_claim = 142
+			add_state_claim = 143
+			add_state_claim = 144
+			add_state_claim = 937
+			add_state_claim = 936
+			add_state_claim = 37
+			add_state_claim = 99
+			add_state_claim = 337
+			add_state_claim = 100
+			add_state_claim = 101
+			add_state_claim = 926		
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	SWE_integrate_scandinavia_revolution = {
+		icon = generic_form_nation
+		allowed = { original_tag = SWE }
+		visible = {
+			110 = { is_claimed_by = SWE }
+			37 = { is_claimed_by = SWE }			
+		}
+		available = {
+			AND = { 
+				110 = { is_owned_and_controlled_by = SWE }
+				142 = { is_owned_and_controlled_by = SWE }
+				143 = { is_owned_and_controlled_by = SWE }
+				144 = { is_owned_and_controlled_by = SWE }
+				937 = { is_owned_and_controlled_by = SWE }
+				936 = { is_owned_and_controlled_by = SWE }
+				37 = { is_owned_and_controlled_by = SWE }
+				99 = { is_owned_and_controlled_by = SWE }
+				337 = { is_owned_and_controlled_by = SWE }
+				100 = { is_owned_and_controlled_by = SWE }
+				101 = { is_owned_and_controlled_by = SWE }
+				926 = { is_owned_and_controlled_by = SWE }
+
+			}
+		}
+		fire_only_once = yes
+		cost = 250
+		days_remove = 150
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_revolution"
+			add_stability = 0.10
+			add_ideas = SWE_integrate_scandinavia
+			if = {
+				limit = { has_completed_focus = SWE_radical_socialist_victory } 
+				set_cosmetic_tag = SWE_NDR_radsoc		
+			}
+			if = {
+				limit = { has_completed_focus = SWE_syndicalist_victory } 
+				set_cosmetic_tag = SWE_NDR_synd	
+			}
+			if = {
+				limit = { has_completed_focus = SWE_communists_alone } 
+				set_cosmetic_tag = SWE_NDR_flyg		
+			}
+			if = {
+				limit = { has_completed_focus = SWE_socialists_alone } 
+				set_cosmetic_tag = SWE_NDR_commie		
+			}
+			if = {
+				limit = { has_completed_focus = SWE_national_revolution } 
+				set_cosmetic_tag = SWE_NDR_natsoc		
+			}					
+
+		}
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_revolution"
+			remove_ideas = SWE_integrate_scandinavia
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 144
+			add_state_core = 937
+			add_state_core = 936
+			add_state_core = 37
+			add_state_core = 99
+			add_state_core = 337
+			add_state_core = 100
+			add_state_core = 101
+			add_state_core = 926
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}
+
+
+SWE_vinland_decision = {
+	SWE_establish_vinland = { 
+		icon = GFX_decision_generic_flags
+		allowed = { original_tag = SWE }
+		visible = {
+			OR = {
+				NOT = {
+				country_exists = NFL
+				}		
+			is_puppet_of = COR
+			}
+
+		}
+	
+		fire_only_once = no
+		cost = 10
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_establish_vinland"
+			country_event = { id = swefop.998 } 
+			NFL = {
+			set_cosmetic_tag = NFL_SWECRO
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SWE_elmo_decisions = {
+	SWE_claim_elmo_europe = {# 
+		icon = generic_form_nation
+		allowed = { original_tag = SWE }
+		visible = {
+			has_completed_focus = SWE_oragnic_state
+			is_ai = no
+		}
+		available = {
+			is_subject = no
+		}
+		fire_only_once = yes
+		cost = 20
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_claim_elmo_europe"
+			set_capital = { state = 138 }
+			
+			set_cosmetic_tag = SWE_elmo_europe
+			leave_faction = yes
+		    create_faction = "Union of European Kingdoms"
+			every_country = {
+				limit = {
+					is_subject_of = SWE
+				}
+				leave_faction = yes 
+				SWE = { add_to_faction = PREV }
+			}
+			every_country = {
+				limit = {
+					is_in_europe = yes
+				}
+				SWE = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+				    }	
+				}
+			}
+		    every_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				SWE = { 
+					add_state_claim = PREV 
+			    }
+			}
+	   }
+	   ai_will_do = {
+			factor = 0
+		}
+    }
+
+	SWE_core_elmo_europe = {# 
+		icon = generic_form_nation
+		allowed = { original_tag = SWE }
+		visible = {
+			has_completed_focus = SWE_oragnic_state
+		}
+		available = {
+			16 = { is_owned_by_ROOT_or_ally = yes}
+			64 = { is_owned_by_ROOT_or_ally = yes}
+			6 = { is_owned_by_ROOT_or_ally = yes}
+			34 = { is_owned_by_ROOT_or_ally = yes}
+			7 = { is_owned_by_ROOT_or_ally = yes}
+			3 = { is_owned_by_ROOT_or_ally = yes}
+			1137 = { is_owned_by_ROOT_or_ally = yes}
+			41 = { is_owned_by_ROOT_or_ally = yes}
+			112 = { is_owned_by_ROOT_or_ally = yes}
+			117 = { is_owned_by_ROOT_or_ally = yes}
+			2 = { is_owned_by_ROOT_or_ally = yes}
+			1129 = { is_owned_by_ROOT_or_ally = yes}
+			43 = { is_owned_by_ROOT_or_ally = yes}
+			91 = { is_owned_by_ROOT_or_ally = yes}
+			10 = { is_owned_by_ROOT_or_ally = yes}
+			107 = { is_owned_by_ROOT_or_ally = yes}
+			109 = { is_owned_by_ROOT_or_ally = yes}
+			44 = { is_owned_by_ROOT_or_ally = yes}
+			46 = { is_owned_by_ROOT_or_ally = yes}
+			47 = { is_owned_by_ROOT_or_ally = yes}
+			48 = { is_owned_by_ROOT_or_ally = yes}
+			202 = { is_owned_by_ROOT_or_ally = yes}
+			206 = { is_owned_by_ROOT_or_ally = yes}
+			96 = { is_owned_by_ROOT_or_ally = yes}
+			1091 = { is_owned_by_ROOT_or_ally = yes}
+			840 = { is_owned_by_ROOT_or_ally = yes}
+			37 = { is_owned_by_ROOT_or_ally = yes}
+			110 = { is_owned_by_ROOT_or_ally = yes}
+			141 = { is_owned_by_ROOT_or_ally = yes}
+			219 = { is_owned_by_ROOT_or_ally = yes}
+			195 = { is_owned_by_ROOT_or_ally = yes}
+			100 = { is_owned_by_ROOT_or_ally = yes}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_core_elmo_europe"
+			
+			every_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				SWE = { 
+					add_state_core = PREV 
+			    }
+		    }
+			every_other_country = {
+				limit = { 
+					AND = {
+					is_in_europe = yes
+					is_subject_of = SWE
+					}
+				}
+				SWE = {	
+					annex_country = {
+					target = PREV
+				}
+			    }
+	        }
+	   }	
+	   ai_will_do = {
+			factor = 0
+		}
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+SWE_geopolitical_actions = {
+	swe_join_reichspakt = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			OR = {
+				has_authoritarian_government = yes
+				NOR = { has_socialist_government = yes }
+				FIN = { has_socialist_government = yes }
+				FIN = { is_subject_of = RUS }
+				RUS = { owns_state = 840 }
+			}
+			date > 1937.6.1
+			OR = {
+				has_war = no
+				custom_trigger_tooltip = {
+					tooltip = GRE_same_wars_as_germany
+					has_war = yes
+					NOT = {
+						any_enemy_country = {
+							NOT = { has_war_with = GER }
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			is_subject = no
+			is_in_faction = no
+			country_exists = GER
+			has_socialist_government = no
+			GER = {
+				is_faction_leader = yes
+				has_socialist_government = no
+				NOT = {
+					is_in_faction_with = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				GER = {
+					any_owned_state = { is_claim_or_core_of_ROOT = yes }
+				}
+			}
+			modifier = {
+				factor = 0
+				GER = {
+					is_faction_leader = yes
+					has_war = yes
+					surrender_progress > 0.10
+				}
+			}
+			modifier = {
+				factor = 0
+				has_government = social_democrat
+			}
+			modifier = {
+				factor = 0
+				has_government = social_democrat
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SCA_formation
+						option = SCA_FORMATION_ALWAYS
+					}
+					has_game_rule = {
+						rule = SWE_foreign_policy
+						option = SWE_FOREIGN_POLICY_NEUTRALITY
+					}
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision swe_join_reichspakt"
+			GER = { country_event = { id = swe.46 } }
+		}
+	}
+
+	swe_join_internationale = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			has_socialist_government = yes
+			date > 1937.6.1
+			OR = {
+				has_war = no
+				custom_trigger_tooltip = {
+					tooltip = GRE_same_wars_as_intl
+					has_war = yes
+					any_enemy_country = { has_war_with = INT }
+				}
+			}
+		}
+		visible = {
+			is_in_faction = no
+			is_subject = no
+			country_exists = INT
+			has_socialist_government = yes
+			INT = {
+				is_faction_leader = yes
+				has_socialist_government = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					has_war_with = ROOT
+					AND = {
+						ROOT = { has_government = totalist }
+						OR = {
+							is_in_faction_with = CSA
+							is_in_faction_with = RUS
+						}
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				INT = {
+					any_owned_state = { is_claim_or_core_of_ROOT = yes }
+				}
+			}
+			modifier = {
+				factor = 0
+				INT = {
+					is_faction_leader = yes
+					has_war = yes
+					surrender_progress > 0.10
+				}
+			}
+			modifier = {
+			factor = 0
+				has_game_rule = {
+					rule = SWE_foreign_policy
+					option = SWE_FOREIGN_POLICY_NEUTRALITY
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision swe_join_internationale"
+			INT = { country_event = { id = swe.39 } }
+		}
+	}
+
+	swe_leave_reichspakt = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			is_in_faction_with = GER
+			is_subject = no
+			OR = {
+				has_government = national_populist
+				AND = {
+					has_elected_government = yes
+					GER = {
+						has_government = paternal_autocrat
+					}
+				}
+			}
+			NOT = {
+				NOR = {
+					OR = {
+						is_in_faction_with = FRA
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+					}
+				}
+				FIN = {
+					OR = {
+						is_in_faction_with = FRA
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+					}
+				}
+				has_war = yes
+			}
+		}
+		visible = {
+			is_in_faction_with = GER
+			GER = {
+				is_faction_leader = yes
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				country_exists = FRA
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision swe_leave_reichspakt"
+			SWE = { country_event = { id = swe.125 } }
+			if = {
+				limit = {
+					is_in_tech_sharing_group = german_research
+				}
+				remove_from_tech_sharing_group = german_research
+			}
+		}
+	}
+
+	swe_leave_internationale = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			is_in_faction_with = INT
+			OR = {
+				AND = {
+					is_in_faction_with = CSA
+					CSA = { is_subject = no }
+				}
+				AND = {
+					is_in_faction_with = RUS
+					RUS = { is_subject = no }
+				}
+			}
+			is_subject = no
+			has_government = totalist
+			has_war = no
+			NOT = {
+				has_idea = SWE_Sven_Linderot_hog_tot
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_in_faction_with = FRA
+					FRA = { is_faction_leader = yes }
+				}
+				AND = {
+					is_in_faction_with = CSA
+					CSA = { is_faction_leader = yes }
+				}
+				AND = {
+					is_in_faction_with = RUS
+					RUS = { is_faction_leader = yes }
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision swe_leave_internationale"
+			INT = { country_event = { id = swe.126 } }
+			if = {
+				limit = {
+					is_in_tech_sharing_group = phalanstere_research
+				}
+				remove_from_tech_sharing_group = phalanstere_research
+			}
+		}
+	}
+
+	swe_seize_aland = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = SWE
+		}
+
+		available = {
+			is_subject = no
+			is_in_faction = no
+			FIN = { surrender_progress > 0.7 }
+		}
+
+		visible = {
+			can_declare_war_on = FROM
+			145 = { is_owned_and_controlled_by = FROM }
+			NOT = {
+				AND = {
+					OR = {
+						has_government = syndicalist
+						has_government = radical_socialist
+					}
+					FIN = { has_socialist_government = yes }
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { can_declare_war_on = FROM }
+				145 = { is_owned_and_controlled_by = ROOT }
+			}
+		}
+
+		cost = 25
+		days_remove = 10
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		war_with_target_on_remove = yes
+
+		targets = { FIN }
+		target_trigger = {
+			can_declare_war_on = FROM
+			145 = { is_owned_and_controlled_by = FROM }
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = { #No seizing Åland from allies if liberal or socdem
+				factor = 0
+				is_in_faction_with = FIN
+				OR = {
+					has_government = social_democrat
+					has_government = market_liberal
+				}
+			}
+			modifier = { #No need to seize Åland the Russia invading Finland is democratic and not an enemy
+				factor = 0
+				RUS = {
+					has_war_with = FIN
+					has_democratic_government = yes
+				}
+				OR = {
+					has_government = social_democrat
+					has_government = market_liberal
+				}
+				NOT = {
+					has_war_with = RUS
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					ROOT_is_threatened_cautious = yes
+					FROM = { dont_start_major_faction_wars = yes }
+					FROM = { default_attack_AI_trigger_FROM = yes }
+				}
+			}
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancelled swe_seize_aland target: [From.GetName]"
+			clear_decision_attack_AI = yes
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision swe_seize_aland target: [From.GetName]"
+			transfer_state = 145
+			FROM = { country_event = swe.111 }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_seize_aland target: [From.GetName]"
+			clear_decision_attack_AI = yes
+		}
+	}
+
+	swe_subjugate_norway = {
+		name = swe_subjugate_neighbours
+		icon = generic_prepare_civil_war
+		allowed = { always = no }			# Activated by Junta/syndie focuses
+		available = {
+			date > 1938.6.1
+			can_declare_war_on = FROM
+			is_subject = no
+			is_in_faction = no
+		}
+
+		visible = {
+			if = {
+				limit = { has_socialist_government = yes }
+				FROM = { has_socialist_government = no }
+			}
+		}
+
+		cost = 0
+		days_remove = 30
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { #AI shouldn't invade Norway before 1939 so Norway has the chance to pick its side and Sweden to get their political affairs in order
+				add = 100
+				date > 1938.6.1
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					ROOT_is_threatened_cautious = yes
+					FROM = { dont_start_major_faction_wars = yes }
+					FROM = { default_attack_AI_trigger_FROM = yes }
+				}
+			}
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel swe_subjugate_norway target: [From.GetName]"
+			clear_decision_attack_AI = yes
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_norway target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_norway target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+
+	swe_subjugate_finland = {
+		name = swe_subjugate_neighbours
+		icon = generic_prepare_civil_war
+		allowed = { always = no }			# Activated by Junta/syndie focuses
+		available = {
+			date > 1938.6.1
+			can_declare_war_on = FROM
+			is_subject = no
+			is_in_faction = no
+		}
+
+		visible = {
+			if = {
+				limit = { has_socialist_government = yes }
+				FROM = { has_socialist_government = no }
+			}
+		}
+
+		cost = 0
+		days_remove = 30
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { #AI shouldn't invade Norway before 1939 so Norway has the chance to pick its side and Sweden to get their political affairs in order
+				add = 100
+				date > 1938.6.1
+				OR = {
+					NOR = { is_in_faction = yes }
+					NOR = { is_subject_of = ROOT }
+					NOR = { exists = no }
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					ROOT_is_threatened_cautious = yes
+					FROM = { dont_start_major_faction_wars = yes }
+					FROM = { default_attack_AI_trigger_FROM = yes }
+				}
+			}
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel swe_subjugate_finland target: [From.GetName]"
+			clear_decision_attack_AI = yes
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_finland target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_finland target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			add_state_claim = 145
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+
+	swe_operation_radde_danmark = {
+		icon = generic_prepare_civil_war
+		allowed = { always = no }				# Activated by Junta focus
+		available = {
+			is_subject = no
+			is_in_faction = no
+			FROM = {
+				NOT = { is_in_faction_with = INT }
+			}
+			GER = {
+				surrender_progress > 0.5
+			}
+		}
+
+		visible = {
+			NOT = { is_in_faction_with = GER }
+			can_declare_war_on = FROM
+		}
+
+		cost = 0
+		days_remove = 30
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { #AI shouldn't invade Norway before 1939 so Norway has the chance to pick its side and Sweden to get their political affairs in order
+				add = 100
+				date > 1940.1.1
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					ROOT_is_threatened_cautious = yes
+					FROM = { dont_start_major_faction_wars = yes }
+					FROM = { default_attack_AI_trigger_FROM = yes }
+				}
+			}
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel swe_operation_radde_danmark target: [From.GetName]"
+			clear_decision_attack_AI = yes
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_operation_radde_danmark target: [From.GetName]"
+			FROM = { incoming_war_notification_effect = yes }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_operation_radde_danmark target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+}
+
+war_measures = {
+	swe_establish_allmana_sakerhetstjansten = {
+		icon = generic_political_discourse
+		allowed = {
+			tag = SWE
+		}
+		available = {
+			has_war = yes
+		}
+		visible = {
+			has_democratic_government = yes
+		}
+		fire_only_once = yes
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision swe_establish_allmana_sakerhetstjansten"
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				create_intelligence_agency = yes
+				upgrade_intelligence_agency = upgrade_form_department
+
+				add_ideas = SWE_idea_allmanna_sakerhetstjansten_lar
+			}
+			else = {
+				add_ideas = SWE_idea_allmanna_sakerhetstjansten
+			}
+		}
+	}
+}
+
+SWE_fix_black_monday_category = {
+	SWE_drop_gold_standard = {
+		icon = steel
+		allowed = {
+			original_tag = SWE
+		}
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_drop_gold_standard"
+			custom_effect_tooltip = SWE_tt_gold_standard_dropped
+			add_to_variable = { var = swe_var_inflation value = 0.02 }
+			set_country_flag = swe_gold_standard_dropped
+			SWE_inflation_events = yes
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = social_conservative
+					has_government = authoritarian_democrat
+					has_government = paternal_autocrat
+				}
+			}
+		}
+	}
+
+	SWE_print_extra_money = {
+		icon = ger_mefo_bills
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			has_country_flag = swe_gold_standard_dropped
+		}
+		days_re_enable = 1
+		days_remove = 5
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_print_extra_money"
+			custom_effect_tooltip = SWE_tt_print_extra_money
+			add_to_variable = { var = swe_var_budget value = 2 }
+			if = {
+				limit = {
+					check_variable = {
+						var = swe_var_inflation
+						value = 0.06
+						compare = less_than
+					}
+				}
+				add_to_variable = { var = swe_var_inflation value = 0.03 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = swe_var_inflation
+						value = 0.12
+						compare = less_than
+					}
+				}
+				add_to_variable = { var = swe_var_inflation value = 0.06 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = swe_var_inflation
+						value = 0.24
+						compare = less_than
+					}
+				}
+				add_to_variable = { var = swe_var_inflation value = 0.12 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = swe_var_inflation
+						value = 0.48
+						compare = less_than
+					}
+				}
+				add_to_variable = { var = swe_var_inflation value = 0.24 }
+			}
+			else = {
+				add_to_variable = { var = swe_var_inflation value = 0.48 }
+			}
+			SWE_inflation_events = yes
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = swe_var_inflation
+					value = 0.12
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_counter_inflation = {
+		icon = ger_mefo_bills
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SWE_tt_more_than_two_percent_inflation
+				check_variable = {
+					var = swe_var_inflation
+					value = 0.05
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		days_re_enable = 1
+		days_remove = 5
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_counter_inflation"
+			custom_effect_tooltip = SWE_tt_lower_inflation
+			subtract_from_variable = { var = swe_var_inflation value = 0.05 }
+			SWE_inflation_events = yes
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = swe_var_inflation
+					value = 0.12
+					compare = less_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_take_a_loan = {
+		icon = generic_decision
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			NOT = {
+				has_country_flag = SWE_no_more_loans
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_take_a_loan"
+			custom_effect_tooltip = SWE_tt_loan_money
+			add_to_variable = { var = swe_var_debt value = 2 }
+			add_to_variable = { var = swe_var_budget value = 2 }
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = swe_var_debt
+					value = 10
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_repay_a_loan = {
+		icon = generic_decision
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SWE_tt_can_pay_off_debt
+				check_variable = {
+					var = swe_var_budget
+					value = 2
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = swe_var_debt
+				value = 2
+				compare = greater_than_or_equals
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_repay_a_loan"
+			custom_effect_tooltip = SWE_tt_pays_off_debt
+			subtract_from_variable = { var = swe_var_debt value = 2 }
+			subtract_from_variable = { var = swe_var_budget value = 2 }
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					check_variable = {
+						var = swe_var_debt
+						value = 10
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_repay_leftovers = {
+		icon = generic_decision
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SWE_tt_can_pay_off_leftovers
+				check_variable = {
+					var = swe_var_budget
+					value = swe_var_debt
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		visible = {
+			check_variable = {
+				var = swe_var_debt
+				value = 2
+				compare = less_than
+			}
+			check_variable = {
+				var = swe_var_debt
+				value = 0
+				compare = greater_than
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_repay_leftovers"
+			custom_effect_tooltip = SWE_tt_pays_off_leftovers
+			subtract_from_variable = { var = swe_var_debt value = swe_var_debt }
+			subtract_from_variable = { var = swe_var_budget value = swe_var_debt }
+		}
+	}
+
+	SWE_cut_funding_on_military = {
+		icon = ger_military_buildup
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SWE_tt_not_trying_to_win_elections
+				date < 1937.9.20
+			}
+			NOT = {
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+		days_re_enable = 1
+		days_remove = 365
+
+		modifier = {
+			production_factory_max_efficiency_factor  = -0.25
+			army_org_Factor = -0.1
+		}
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_cut_funding_on_military"
+			custom_effect_tooltip = SWE_tt_saved_money_goes_to_free_budget
+			add_to_variable = { var = swe_var_budget value = 5 }
+			if = {
+				limit = {
+					has_government = social_conservative
+				}
+				add_popularity = { ideology = social_conservative popularity = -0.05 }
+			}
+			if = {
+				limit = {
+					has_government = authoritarian_democrat
+				}
+				add_popularity = { ideology = authoritarian_democrat popularity = -0.05 }
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_raise_taxes = {
+		icon = oppression
+		allowed = {
+			original_tag = SWE
+		}
+		days_re_enable = 1
+		days_remove = 365
+
+		modifier = {
+			production_speed_buildings_factor = -0.25
+			consumer_goods_factor = 0.05
+		}
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_raise_taxes"
+			custom_effect_tooltip = SWE_tt_earned_money_goes_to_free_budget
+			add_to_variable = { var = swe_var_budget value = 2 }
+			if = {
+				limit = {
+					has_government = market_liberal
+				}
+				add_popularity = { ideology = market_liberal popularity = -0.05 }
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = swe_var_inflation
+						value = 0.01
+						compare = greater_than_or_equals
+					}
+				}
+				custom_effect_tooltip = SWE_tt_inflation_reduced_by_one
+				add_to_variable = { var = swe_var_inflation value = -0.01 }
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = swe_var_inflation
+					value = 0.08
+					compare = less_than
+				}
+			}
+		}
+	}
+
+	SWE_cut_welfare = {
+		icon = generic_break_treaty
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			NOT = {
+				has_completed_focus = SWE_public_healthcare
+				has_completed_focus = SWE_education_reforms
+			}
+		}
+		days_re_enable = 1
+		days_remove = 365
+
+		modifier = {
+			stability_factor = -0.25
+			MONTHLY_POPULATION = -0.1
+		}
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_cut_welfare"
+			custom_effect_tooltip = SWE_tt_saved_money_goes_to_free_budget_welfare
+			add_to_variable = { var = swe_var_budget value = 5 }
+			if = {
+				limit = {
+					has_government = market_liberal
+				}
+				add_popularity = { ideology = market_liberal popularity = -0.05 }
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_public_work_program = {
+		icon = generic_construction
+		allowed = {
+			original_tag = SWE
+		}
+		days_re_enable = 1
+		days_remove = 150
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = {
+				var = swe_var_budget
+				value = 3
+				compare = greater_than_or_equals
+			}
+		}
+
+		custom_cost_text = SWE_tt_three_million_kronor
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_public_work_program"
+			#custom_effect_tooltip = SWE_tt_two_million_kronor_spent
+			add_to_variable = { var = swe_var_budget value = -3 }
+			custom_effect_tooltip = SWE_tt_unemployment_lowered_three_percent
+			add_to_variable = { var = swe_var_unemployment value = -0.03 }
+			SWE_unemployment_events = yes
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_public_work_program"
+			custom_effect_tooltip = SWE_tt_unemployment_lowered_two_percent
+			add_to_variable = { var = swe_var_unemployment value = -0.02 }
+			SWE_unemployment_events = yes
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 9
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_subsidize_resource_exports = {
+		icon = tungsten
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			NOT = {
+				has_completed_focus = SWE_protectionist_economy
+			}
+		}
+		days_re_enable = 1
+		days_remove = 150
+
+		modifier = {
+			local_resources_factor = 0.10
+			min_export = 0.2
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = {
+				var = swe_var_budget
+				value = 2
+				compare = greater_than_or_equals
+			}
+		}
+
+		custom_cost_text = SWE_tt_two_million_kronor
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_subsidize_resource_exports"
+			add_to_variable = { var = swe_var_budget value = -2 }
+			custom_effect_tooltip = SWE_tt_unemployment_lowered_two_percent
+			add_to_variable = { var = swe_var_unemployment value = -0.02 }
+			SWE_unemployment_events = yes
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove SWE_subsidize_resource_exports"
+			custom_effect_tooltip = SWE_tt_unemployment_lowered_two_percent
+			add_to_variable = { var = swe_var_unemployment value = -0.02 }
+			SWE_unemployment_events = yes
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_nationalize_company = {
+		icon = generic_industry
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			OR = {
+				has_government = social_democrat
+				has_government = national_populist
+			}
+		}
+		days_re_enable = 60
+		days_remove = 2
+
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = {
+				var = swe_var_budget
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+
+		custom_cost_text = SWE_tt_five_million_kronor
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_nationalize_company"
+			add_to_variable = { var = swe_var_budget value = -5 }
+			custom_effect_tooltip = SWE_tt_unemployment_lowered_two_percent
+			add_to_variable = { var = swe_var_unemployment value = -0.02 }
+			SWE_unemployment_events = yes
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+		}
+	}
+
+	SWE_implement_tariffs = {
+		icon = generic_break_treaty
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			NOT = {
+				has_completed_focus = SWE_free_trade_economy
+			}
+			OR = {
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+		modifier = {
+			trade_opinion_factor = -0.25
+		}
+		days_re_enable = 365
+		days_remove = 365
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_implement_tariffs"
+			custom_effect_tooltip = SWE_tt_receive_million_kronor
+			add_to_variable = { var = swe_var_budget value = 2 }
+			custom_effect_tooltip = SWE_tt_unemployment_lowered_two_percent
+			add_to_variable = { var = swe_var_unemployment value = -0.02 }
+			custom_effect_tooltip = SWE_tt_violation_of_mitteleuropa
+			GER_kick_from_mitteleuropa = yes
+			SWE_unemployment_events = yes
+			hidden_effect = {
+				GER = {
+					country_event = {
+						id = swe.60
+						days = 8
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = national_populist
+				}
+			}
+		}
+	}
+
+	SWE_wrap_up_crisis_commission = {
+		icon = generic_civil_support
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SWE_tt_no_black_monday
+				NOT = {
+					has_idea = SWE_black_monday
+					has_idea = SWE_black_monday_1
+					has_idea = SWE_black_monday_2
+					has_idea = SWE_black_monday_3
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SWE_tt_no_extreme_inflation
+				check_variable = {
+					var = swe_var_inflation
+					value = 0.08
+					compare = less_than
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SWE_tt_no_extreme_debt
+				check_variable = {
+					var = swe_var_debt
+					value = 10
+					compare = less_than
+				}
+			}
+		}
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_wrap_up_crisis_commission"
+			add_stability = 0.10
+			custom_effect_tooltip = SWE_tt_decisions_will_be_removed
+			set_country_flag = SWE_black_monday_over
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
