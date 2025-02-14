@@ -95,6 +95,14 @@ SWE_social_dem_urban_effort:0 "Urbanisation Efforts"
 SWE_military_resistance:0 "Reactionary Military Resistance"
 SWE_military_resistance_desc:0 "WIP"
 
+SWE_red_terror_1:0 "Curtailing Red Terror"
+SWE_red_terror_1_desc:0 "WIP"
+
+SWE_red_terror_2:0 "Limited Red Terror"
+SWE_red_terror_2_desc:0 "WIP"
+
+SWE_red_terror_3:0 "Rampant Red Terror"
+SWE_red_terror_3_desc:0 "WIP"
 
 ## Totalist Ideas ##
 SWE_totalist1:0 "Beginning the Totalist Revolution"
@@ -134,7 +142,8 @@ SWE_trade_union_dommy_desc:0 ""
 SWE_syndicalist_charter:0 "Swedish Syndicalist Charter"
 SWE_syndicalist_charter_desc:0 ""
 
-
+SWE_international_worker:0 ""
+SWE_international_worker_desc:0 ""
 
 ## Radsoc ideas ## 
 SWE_socialist1:0 "Beginning the Socialist Revolution"
@@ -155,32 +164,31 @@ SWE_socialist_socdem_desc:0 ""
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## Lindholm Tot ideas ## 
 
+SWE_lindholm1:0 "Beginning the National Revolution"
+SWE_lindholm1_desc:0 ""
 
+SWE_lindholm2:0 "Furthering the National Revolution"
+SWE_lindholm2_desc:0 ""
 
+SWE_lindholm3:0 "True National Revolution"
+SWE_lindholm3_desc:0 ""
 
+SWE_red_resistance_lind:0 "Syndicalist Resistance"
+SWE_red_resistance_lind_desc:0 ""
 
+SWE_red_new_guard:0 "Refined Red Guard"
+SWE_red_new_guard_desc:0 ""
 
+SWE_false_reds:0 "False Socialists"
+SWE_false_reds_desc:0 ""
 
+SWE_new_statare_red:0 "Red-Tinted Statare"
+SWE_new_statare_red_desc:0 ""
 
-
-
-
-
-
-
-
+SWE_nat_pop_allies:0 "Cross Aisle Alliance"
+SWE_nat_pop_allies_desc:0 ""
 
 
 
@@ -952,15 +960,6 @@ SWE_totalist_lind_party_long:0 "Svensk Socialistisk Samling - §LSwedish Sociali
 
 SWE_totalist_party_fighting:0 "SP/SVV"
 SWE_totalist_party_fighting_long:0 "Socialistiska Partiet - §LSocialist Party§!\nSveriges kommunistiska parti - §LCommunist Party of Sweden§!"
-
-## Ideas ##
-
-
-
-
-
-
-
 
 
 #### FOP ####
