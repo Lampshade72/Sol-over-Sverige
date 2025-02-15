@@ -928,6 +928,7 @@ country_event = { ####Who shall win this struggle ##LS##
 		hidden_effect = {
 			country_event = { id = swerev.4 days = 3 }
 			SWE = { SWE_remove_reactionary_generals = yes }
+			SWE = { SWE_remove_special_reaction_dudes = yes }
 			
 		}		
 	}
@@ -2301,6 +2302,7 @@ country_event = { ####reactionary allies - coalition add ##LS##
 
 	option = { # keep current
 		name = swetot.13.a
+		SWE = { SWE_add_special_reaction_dudes = yes }
 		add_natpop_to_coalition = yes
 		add_ideas = SWE_nat_pop_allies
 		add_popularity = {
