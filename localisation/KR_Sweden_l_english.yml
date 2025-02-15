@@ -142,8 +142,8 @@ SWE_trade_union_dommy_desc:0 ""
 SWE_syndicalist_charter:0 "Swedish Syndicalist Charter"
 SWE_syndicalist_charter_desc:0 ""
 
-SWE_international_worker:0 ""
-SWE_international_worker_desc:0 ""
+SWE_international_worker_idea:0 "International Worker Idealism"
+SWE_international_worker_idea_desc:0 ""
 
 ## Radsoc ideas ## 
 SWE_socialist1:0 "Beginning the Socialist Revolution"
@@ -189,6 +189,91 @@ SWE_new_statare_red_desc:0 ""
 
 SWE_nat_pop_allies:0 "Cross Aisle Alliance"
 SWE_nat_pop_allies_desc:0 ""
+
+
+## Military coup ideas ##
+
+SWE_red_resistance_mil:0 "Leftist Resistance"
+SWE_red_resistance_mil_desc:0 "WIP"
+
+SWE_unending_martial_law:0 "Indefinite Martial Law"
+SWE_unending_martial_law_desc:0 "WIP"
+
+SWE_army_symbol:0 "Military Symbolism"
+SWE_army_symbol_desc:0 "WIP"
+
+SWE_radical_paramilitary_support:0 "Radical Nationalist Paramilitary Support"
+SWE_radical_paramilitary_support_desc:0 "WIP"
+
+
+## Jung Ideas ##
+
+SWE_pataut1:0 "Beginning Jung's Vision"
+SWE_pataut1_desc:0 "WIP"
+
+SWE_pataut2:0 "Furthering Jung's Vision"
+SWE_pataut2_desc:0 "WIP"
+
+SWE_pataut3:0 "Jung's Military With A State"
+SWE_pataut3_desc:0 "WIP"
+
+SWE_jungs_vision:0 "Total Defensive Alignment"
+SWE_jungs_vision_desc:0 "WIP"
+
+SWE_alllied_companies:0 "Military Aligned Companies"
+SWE_alllied_companies_desc:0 "WIP"
+
+
+## Authdem ideas ##
+
+SWE_autdem1:0 "Beginning Ehrensvard's Vision"
+SWE_autdem1_desc:0 ""
+
+SWE_autdem2:0 "Furthering Ehrensvard's Vision"
+SWE_autdem2_desc:0 ""
+
+SWE_autdem3:0 "Ehrensvard's United Government"
+SWE_autdem3_desc:0 ""
+
+SWE_patriotic_unions:0 "Patriotic Unions Established"
+SWE_patriotic_unions_desc:0 ""
+
+SWE_army_expansion:0 "Army Focus"
+SWE_army_expansion_desc:0 ""
+
+SWE_authdem_civilian:0 "Swedish Thaw"
+SWE_authdem_civilian_desc:0 ""
+
+SWE_authdem_military:0 "Swedish Twilight"
+SWE_authdem_military_desc:0 ""
+
+
+## Natpop ideas ##
+
+SWE_new_paramilitaries:0 "Reforged Paramilitaries"
+SWE_new_paramilitaries_desc:0 ""
+
+SWE_worker_patriotism:0 "Total Worker Patriotism"
+SWE_worker_patriotism_desc:0 ""
+
+SWE_under_the_king:0 "The King 'Commands'"
+SWE_under_the_king_desc:0 ""
+
+SWE_riksledare:0 "The Riksledare Leads"
+SWE_riksledare_desc:0 ""
+
+SWE_arch_1:0 "Beginning the Counter-Revolution"
+SWE_arch_1_desc:0 ""
+
+SWE_arch_2:0 "Furthering the Counter-Revolution"
+SWE_arch_2_desc:0 ""
+
+SWE_arch_3:0 "För Gud och Sverige!"
+SWE_arch_3_desc:0 ""
+
+
+
+
 
 
 

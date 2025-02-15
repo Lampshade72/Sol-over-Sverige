@@ -2598,7 +2598,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swessv.4 }			
+			country_event = { id = swessv.4 }	
+			remove_ideas = SWE_statare_idea
 		}
 	}
 
@@ -3350,7 +3351,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
-			add_ideas = SWE_international_worker
+			add_ideas = SWE_international_worker_idea
 			country_event = { id = swerev.22 }
 		}
 	}

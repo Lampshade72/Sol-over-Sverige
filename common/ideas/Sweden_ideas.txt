@@ -1185,7 +1185,7 @@ ideas = {
 			}				
 		}
 
-		SWE_international_worker = {
+		SWE_international_worker_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_international_worker"}
 			picture = generic_syndicalist_worker
 			allowed = { always = no }
