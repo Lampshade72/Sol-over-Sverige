@@ -746,6 +746,62 @@ SWE_neutral_decisions = {
 				
 			}
 		}
+
+	SWE_integrate_scandinavia_neu = {
+		icon = generic_form_nation
+		allowed = { original_tag = SWE }
+		visible = {
+			110 = { is_claimed_by = SWE }
+			37 = { is_claimed_by = SWE }			
+		}
+		available = {
+			AND = { 
+				110 = { is_owned_and_controlled_by = SWE }
+				142 = { is_owned_and_controlled_by = SWE }
+				143 = { is_owned_and_controlled_by = SWE }
+				144 = { is_owned_and_controlled_by = SWE }
+				937 = { is_owned_and_controlled_by = SWE }
+				936 = { is_owned_and_controlled_by = SWE }
+				37 = { is_owned_and_controlled_by = SWE }
+				99 = { is_owned_and_controlled_by = SWE }
+				337 = { is_owned_and_controlled_by = SWE }
+				100 = { is_owned_and_controlled_by = SWE }
+				101 = { is_owned_and_controlled_by = SWE }
+				926 = { is_owned_and_controlled_by = SWE }
+
+			}
+		}
+		fire_only_once = yes
+		cost = 250
+		days_remove = 150
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_neu"
+			add_stability = 0.10
+			add_ideas = SWE_integrate_scandinavia
+
+		}
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_neu"
+			remove_ideas = SWE_integrate_scandinavia
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 144
+			add_state_core = 937
+			add_state_core = 936
+			add_state_core = 37
+			add_state_core = 99
+			add_state_core = 337
+			add_state_core = 100
+			add_state_core = 101
+			add_state_core = 926
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}		
+		
 	}
 
 SWE_alliance_reachout = {
@@ -1057,6 +1113,61 @@ SWE_alliance_reachout = {
 		}
 	}
 
+	SWE_integrate_scandinavia_ali = {
+		icon = generic_form_nation
+		allowed = { original_tag = SWE }
+		visible = {
+			110 = { is_claimed_by = SWE }
+			37 = { is_claimed_by = SWE }			
+		}
+		available = {
+			AND = { 
+				110 = { is_owned_and_controlled_by = SWE }
+				142 = { is_owned_and_controlled_by = SWE }
+				143 = { is_owned_and_controlled_by = SWE }
+				144 = { is_owned_and_controlled_by = SWE }
+				937 = { is_owned_and_controlled_by = SWE }
+				936 = { is_owned_and_controlled_by = SWE }
+				37 = { is_owned_and_controlled_by = SWE }
+				99 = { is_owned_and_controlled_by = SWE }
+				337 = { is_owned_and_controlled_by = SWE }
+				100 = { is_owned_and_controlled_by = SWE }
+				101 = { is_owned_and_controlled_by = SWE }
+				926 = { is_owned_and_controlled_by = SWE }
+
+			}
+		}
+		fire_only_once = yes
+		cost = 250
+		days_remove = 150
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_ali"
+			add_stability = 0.10
+			add_ideas = SWE_integrate_scandinavia
+
+		}
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_ali"
+			remove_ideas = SWE_integrate_scandinavia
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 144
+			add_state_core = 937
+			add_state_core = 936
+			add_state_core = 37
+			add_state_core = 99
+			add_state_core = 337
+			add_state_core = 100
+			add_state_core = 101
+			add_state_core = 926
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}	
+
 }
 
 SWE_revolution_decisions = {
@@ -1136,10 +1247,8 @@ SWE_revolution_decisions = {
 		allowed = { tag = SWE }			
 		available = {
 			has_socialist_government = yes
-			date > 1939.4.4
 			is_subject = no
 			
-			NOR = { has_socialist_government = no }
 		}
 
 		visible = {
@@ -1150,7 +1259,7 @@ SWE_revolution_decisions = {
 		}
 
 		cost = 100
-		days_remove = 31
+		days_remove = 16
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1163,19 +1272,67 @@ SWE_revolution_decisions = {
 		}
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_norway_revolution target: [From.GetName]"
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_subjugate_norway_revolution target: [From.GetName]" 		
 			FROM = { incoming_war_notification_effect = yes }
 			setup_decision_attack_AI = yes
+
 		}
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_norway_revolution target: [From.GetName]"
+			if = { 
+				limit = { NOR = { has_socialist_government = yes } }
+					SWE = {
+						puppet = NOR
+					}
+			}
+			else = {
 				create_wargoal = {
 					target = NOR
 					type = annex_everything
 				}
+			}
 		}
 	}
+	swe_annex_norway_revolution = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_socialist_government = yes
+			date > 1939.4.4
+			is_subject = no
+		}
+
+		visible = {
+				NOR = { is_puppet_of = SWE }					
+			}
+
+		cost = 100
+		days_remove = 5
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1939.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_annex_norway_revolution target: [From.GetName]"
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_annex_norway_revolution target: [From.GetName]"
+			Annex_country = {
+				target = NOR
+				transfer_troops = SWE
+			}
+		}
+	}
+
 
 	swe_subjugate_finland_revolution = {
 		icon = generic_ignite_civil_war
@@ -1242,7 +1399,7 @@ SWE_revolution_decisions = {
 		allowed = { tag = SWE }			
 		available = {
 			has_socialist_government = yes
-			date > 1939.4.4
+			date > 1938.4.4
 			is_subject = no
 			
 			DEN = { has_socialist_government = no }
@@ -1277,12 +1434,61 @@ SWE_revolution_decisions = {
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove swe_subjugate_denmark_alliance target: [From.GetName]"
+			if = { 
+				limit = { DEN = { has_socialist_government = yes } }
+					SWE = {
+						puppet = DEN
+					}
+			}
+			else = {
 				create_wargoal = {
 					target = DEN
 					type = annex_everything
 				}
+			}
 		}
 	}
+
+	swe_annex_denmark_revolution = {
+		icon = generic_ignite_civil_war
+		allowed = { tag = SWE }			
+		available = {
+			has_socialist_government = yes
+			date > 1939.4.4
+			is_subject = no
+		}
+
+		visible = {
+				NOR = { is_puppet_of = SWE }					
+			}
+
+		cost = 100
+		days_remove = 5
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = { 
+				add = 100
+				date > 1939.6.1
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete swe_annex_denmark_revolution target: [From.GetName]"
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_annex_denmark_revolution target: [From.GetName]"
+			Annex_country = {
+				target = DEN
+				transfer_troops = yes
+			}
+		}
+	}
+
+
 
 	SWE_claim_scandinavia_revolution = {
 		icon = generic_form_nation
