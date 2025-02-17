@@ -1300,7 +1300,7 @@ ideas = {
 		
 		SWE_socialist_prohibition = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_socialist_prohibition"}
-			picture = generic_social_democracy
+			picture = NEE_nationwide_prohibition
 			allowed = { always = no }
 			modifier = {
 				political_power_cost = -0.05			
