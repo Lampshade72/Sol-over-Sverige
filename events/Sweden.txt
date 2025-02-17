@@ -2535,6 +2535,8 @@ country_event = { ####rural socialism ##LS##
 }
 
 
+
+
 ############ Syndicalist Events ###############
 
 country_event = { ####ideology choice ##LS##
@@ -2647,7 +2649,25 @@ country_event = { ####farmer syndies ##LS##
 	}			
 }
 
+## Syndie-radsoc flavour events ## 
 
+country_event = { ####prohibition 
+	id = swerev.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swerev.26" }
+	title = swerev.26.t
+	desc = swerev.26.d
+	picture = GFX_report_event_SWE_no_alcohol
+
+	is_triggered_only = yes
+
+	option = { 
+		name = swerev.26.a
+	}
+	option = { 
+		name = swerev.26.b
+		add_ideas = SWE_socialist_prohibition
+	}	
+}
 
 #### FOP events ####
 

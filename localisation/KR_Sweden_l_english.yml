@@ -1312,6 +1312,7 @@ swerev.18.d:0 "In our initial attempts at winning the election, we drew large su
 swerev.18.a:0 "Arbetare och småbrukare!"
 
 
+
 ### Syndicalist events ###
 
 swerev.19.t:0 "Question of Ideology"
@@ -1343,6 +1344,12 @@ swerev.25.t:0 "Farmer Syndicates"
 swerev.25.d:0 "Trade unions in our cities listened to the concerns of their workers, issues with pay, working hours and factory conditions. However, with limited support in the more conservative rural regions of Sweden, we must create new farmer unions. These shall allow us to hear the complaints and issues plaguing our rural folk, allowing our government to respond and react faster and more personalized to their needs. This will go a long way in improving our standing with the farmers."
 swerev.25.a:0 "A nation cannot live if its starving"
 
+### Radsoc-syndie flavour events ##
+
+swerev.26.t:0 "Prohibition Promises"
+swerev.26.d:0 "Recently, members of our own party, the SSV, have reignited the debate over our stance on prohibition. While no laws have yet been enacted, it is important to remember that the party originally campaigned in 1921 for a state-imposed ban on alcohol—a policy that, to this day, has never been formally renounced. Although the 1922 prohibition referendum resulted in a narrow defeat, allowing Swedes to retain their liquor, the political landscape has shifted significantly since then. With the SSV’s rise to power in the wake of the revolution, the possibility of reintroducing prohibition has once again come to the forefront. Now, the party leadership faces a crucial decision—one that will have far-reaching consequences. Enforcing a nationwide ban would align with the party’s original platform, yet such a move is certain to provoke significant public outcry and economic disruption, potentially fueling unrest across the nation. On the other hand, maintaining the status quo by allowing the people their right to drink would avoid immediate backlash but might be seen as a betrayal of the party’s founding principles.\n\nWith the eyes of the nation fixed on this debate, the leadership can no longer afford to delay. A definitive stance must be taken, and the choice made now will not only shape the party’s legacy but also determine the course of Sweden’s future."
+swerev.26.a:0 "The People clearly would like to keep their liquor"
+swerev.26.b:0 "Freedom from vice, freedom from tyrants!"
 
 ### Totalist Events ###
 
