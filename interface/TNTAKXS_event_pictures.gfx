@@ -4,8 +4,8 @@
 spriteTypes = {
 	### Sol over sverige 
 	spriteType = {
-		name = "GFX_report_event_SWE_no_alcohol"
-		texturefile = "gfx/event_pictures/Europe/Sweden/SWE_no_alcohol.png"
+		name = "GFX_report_event_SOS_no_alcohol"
+		texturefile = "gfx/event_pictures/Europe/SOS-Sweden/SOS_no_alcohol.png"
 	}	
 
 
