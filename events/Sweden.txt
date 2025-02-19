@@ -75,7 +75,7 @@ country_event = { ####swedish gold coast ##LS##
 	}	
 }
 
-country_event = { ####swedish gold coast ##LS##
+country_event = { ####Vinland ##LS##
 	id = swefop.998
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.998" }
 	title = swefop.998.t
@@ -83,7 +83,7 @@ country_event = { ####swedish gold coast ##LS##
 	picture = GFX_report_event_SWE_army
 	is_triggered_only = yes
 
-	option = { ## We love the gold coast
+	option = { ## We love colonialism
 		name = swefop.998.a
 			if = {
 				limit = { 		
