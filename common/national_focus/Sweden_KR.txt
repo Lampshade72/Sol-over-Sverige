@@ -699,7 +699,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					arms_factory > 0
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3548,6 +3559,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
+			add_research_slot = 1		
 			swap_ideas = {
 				remove_idea = SWE_syndicalist2
 				add_idea = SWE_syndicalist3
@@ -3937,6 +3949,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
+			add_research_slot = 1		
 			swap_ideas = {
 				remove_idea = SWE_socialist2
 				add_idea = SWE_socialist3
@@ -4293,6 +4306,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
+			add_research_slot = 1		
 			swap_ideas = {
 			remove_idea = SWE_totalist2
 			add_idea = SWE_totalist3
@@ -4638,6 +4652,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SWE_new_statare_red
+			add_research_slot = 1			
 		}
 	}
 
@@ -5297,6 +5312,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_research_slot = 1		
 			country_event = { id = swemil.16 }	
 			swap_ideas = {
 				remove_idea = SWE_arch_2
@@ -5581,6 +5597,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_research_slot = 1		
 			if = {
 				limit = {
 					NOT = { has_country_flag = SWE_flag_crown_restored }
@@ -5591,6 +5608,7 @@ focus_tree = {
 					country_event = { id = swemil.24 }
 			}									
 			swap_ideas = {
+			
 				remove_idea = SWE_pataut2
 				add_idea = SWE_pataut3
 			}			
@@ -5992,6 +6010,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_research_slot = 1		
 			if = {
 				limit = {
 					NOT = { has_country_flag = SWE_flag_crown_restored }
@@ -6350,6 +6369,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_research_slot = 1		
 			swap_ideas = {
 				remove_idea = SWE_elmo2
 				add_idea = SWE_elmo3
