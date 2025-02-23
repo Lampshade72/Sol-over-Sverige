@@ -70,7 +70,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_politcal_power = 45
+			add_political_power = 45
 			add_stability = 0.05			
 			add_popularity = {
 				ideology = market_liberal
@@ -94,7 +94,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_politcal_power = 20
+			add_political_power = 20
 			add_popularity = {
 				ideology = social_conservative
 				popularity = -0.02
@@ -282,7 +282,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_politcal_power = 65
+			add_political_power = 35
 		}
 	}
 
@@ -375,7 +375,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SWE_eel_economy1
-			add_politcal_power = 35
+			add_political_power = 35
 		}
 	}
 
@@ -424,7 +424,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_politcal_power = 60
+			add_political_power = 60
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
 				cost_reduction = 0.5
@@ -766,7 +766,7 @@ focus_tree = {
 				uses = 2
 				category = radar_tech
 			}
-			add_politcal_power = 20
+			add_political_power = 20
 		}
 	}
 
@@ -1237,7 +1237,7 @@ focus_tree = {
 			remove_ideas = SWE_german_reach_3bad
 			}
 			add_stability = 0.08
-			add_politcal_power = 150
+			add_political_power = 150
 			
 		}
 	}
@@ -1476,7 +1476,7 @@ focus_tree = {
 			FRA = { add_opinion_modifier = { target = SWE modifier = medium_decrease } }	
 			ENG = { add_opinion_modifier = { target = SWE modifier = medium_decrease } }
 			add_stability = 0.12
-			add_politcal_power = 50
+			add_political_power = 50
 
 		}
 	}
@@ -1500,7 +1500,7 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 3000
 			add_command_power = 30
-			add_politcal_power = 50
+			add_political_power = 50
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 2500
@@ -1677,7 +1677,7 @@ focus_tree = {
 			}		
 			add_manpower = 2500
 			add_command_power = 50
-			add_politcal_power = 100
+			add_political_power = 100
 			add_war_support = 0.05
 		}
 	}
@@ -2385,7 +2385,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_stability = 0.04
-			add_politcal_power = 30
+			add_political_power = 30
 			add_popularity = { ideology = totalist popularity = -0.02 }		
 			add_popularity = { ideology = syndicalist popularity = -0.06 }
 			add_popularity = { ideology = radical_socialist popularity = -0.04 }				
@@ -3234,7 +3234,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.08
 			add_war_support = -0.10
-			add_politcal_power = 30
+			add_political_power = 30
 			add_popularity = { ideology = syndicalist popularity = -0.05 }			
 		
 		}
@@ -3259,7 +3259,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.12
 			add_war_support = 0.10
-			add_politcal_power = 50
+			add_political_power = 50
 			add_popularity = { ideology = syndicalist popularity = 0.03 }			
 		}
 	}
@@ -3439,7 +3439,7 @@ focus_tree = {
 			FRA = { add_opinion_modifier = { target = SWE modifier = medium_decrease } }	
 			ENG = { add_opinion_modifier = { target = SWE modifier = medium_decrease } }	
 			add_stability = 0.02
-			add_politcal_power = 50
+			add_political_power = 50
 			add_command_power = 35	
 		}
 	}	
@@ -3673,7 +3673,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_manpower = 4500
-			add_politcal_power = 50
+			add_political_power = 50
 			increase_ruling_party_popularity_by_2 = yes
 			FRA = { add_opinion_modifier = { target = SWE modifier = medium_increase } }	
 			ENG = { add_opinion_modifier = { target = SWE modifier = medium_increase } }	
@@ -3706,7 +3706,7 @@ focus_tree = {
 				add_idea = SWE_socialist2
 			}
 			add_stability = 0.09
-			add_politcal_power = 100
+			add_political_power = 100
 			random_owned_state = {
 				limit = {
 					is_valid_state_for_development = yes
@@ -4311,7 +4311,7 @@ focus_tree = {
 			remove_idea = SWE_totalist2
 			add_idea = SWE_totalist3
 			}
-			add_politcal_power = 150
+			add_political_power = 150
 			country_event = { id = swetot.7 } 
 			
 		}
@@ -4627,7 +4627,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
-			add_politcal_power = 100
+			add_political_power = 100
 			add_command_power = 100
 			add_war_support = 0.05
 			add_stability = 0.05
@@ -4929,10 +4929,28 @@ focus_tree = {
 			add_ideas = SWE_army_symbol
 		}
 	}	
-	
 
+	focus = { 
+		id = SWE_junga_junta
+		icon = GFX_goal_SWE_focus_jung
+		prerequisite = { focus = SWE_place_of_the_crown }
 
-###Natpoop###
+		x = 0
+		y = 3
+		cost = 5
+		relative_position_id = SWE_martial_law_declared
+		ai_will_do = {
+			factor = 80
+		}
+		available = { 
+			has_country_flag = SWE_flag_jung_junta
+		}
+		
+		completion_reward = {
+			add_ideas = SWE_pataut1
+			country_event = { id = swemil.18 }
+		}
+	}	
 
 	focus = { 
 		id = SWE_archibald_take_command
@@ -4957,6 +4975,33 @@ focus_tree = {
 			add_popularity = { ideology = national_populist popularity = 0.15 }
 		}
 	}
+
+	focus = { 
+		id = SWE_authdem_stabilize_nation
+		icon = GFX_goal_SWE_focus_ehrensvard
+		prerequisite = { focus = SWE_place_of_the_crown }
+
+		x = -7
+		y = 3
+		cost = 5
+		relative_position_id = SWE_martial_law_declared
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			has_country_flag = SWE_flag_authdem_junta
+		}
+		
+		completion_reward = {
+			add_ideas = SWE_autdem1
+			country_event = { id = swemil.26 }
+		}
+	}
+
+###Natpoop###
+
+
 
 	focus = { 
 		id = SWE_corporatism_in_north
@@ -5062,7 +5107,7 @@ focus_tree = {
 			country_event = { id = swemil.17 }
 			add_popularity = { ideology = national_populist popularity = 0.05 }
 			add_war_support = 0.1
-			add_politcal_power = 45
+			add_political_power = 45
 		}
 	}
 
@@ -5084,7 +5129,7 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = { id = swemil.12 }
-			add_politcal_power = -30
+			add_political_power = -30
 			add_stability = 0.08
 			FRA = { add_opinion_modifier = { target = SWE modifier = medium_decrease } }
 			ENG = { add_opinion_modifier = { target = SWE modifier = medium_decrease } }
@@ -5328,27 +5373,7 @@ focus_tree = {
 
 ###Junga Junta###
 
-	focus = { 
-		id = SWE_junga_junta
-		icon = GFX_goal_SWE_focus_jung
-		prerequisite = { focus = SWE_place_of_the_crown }
 
-		x = 0
-		y = 3
-		cost = 5
-		relative_position_id = SWE_martial_law_declared
-		ai_will_do = {
-			factor = 80
-		}
-		available = { 
-			has_country_flag = SWE_flag_jung_junta
-		}
-		
-		completion_reward = {
-			add_ideas = SWE_pataut1
-			country_event = { id = swemil.18 }
-		}
-	}
 
 	focus = { 
 		id = SWE_away_with_paramilitary_thugs
@@ -5370,7 +5395,7 @@ focus_tree = {
 			remove_ideas = SWE_radical_paramilitary_support
 			add_manpower = -780
 			add_stability = 0.11
-			add_politcal_power = 100
+			add_political_power = 100
 			country_event = { id = swemil.21 }
 		}
 	}
@@ -5619,28 +5644,7 @@ focus_tree = {
 
 ###Authdem mil###
 
-	focus = { 
-		id = SWE_authdem_stabilize_nation
-		icon = GFX_goal_SWE_focus_ehrensvard
-		prerequisite = { focus = SWE_place_of_the_crown }
 
-		x = -7
-		y = 3
-		cost = 5
-		relative_position_id = SWE_martial_law_declared
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			has_country_flag = SWE_flag_authdem_junta
-		}
-		
-		completion_reward = {
-			add_ideas = SWE_autdem1
-			country_event = { id = swemil.26 }
-		}
-	}
 
 	focus = { 
 		id = SWE_iron_olive_branch
@@ -5771,7 +5775,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = { ideology = social_conservative popularity = 0.08 }	
 			add_popularity = { ideology = market_liberal popularity = 0.06 }
-			add_politcal_power = 50
+			add_political_power = 50
 			add_command_power = 15
 			country_event = { id = swemil.27 }
 		
@@ -5955,7 +5959,7 @@ focus_tree = {
 			add_popularity = { ideology = social_democrat popularity = -0.06 }
 			add_popularity = { ideology = radical_socialist popularity = -0.06 }
 			add_stability = 0.03
-			add_politcal_power = -50
+			add_political_power = -50
 		
 		}
 	}
@@ -5985,7 +5989,7 @@ focus_tree = {
 			add_popularity = { ideology = market_liberal popularity = 0.04 }
 			add_popularity = { ideology = social_liberal popularity = 0.02 }
 			add_stability = 0.08
-			add_politcal_power = 50
+			add_political_power = 50
 			
 		}
 	}

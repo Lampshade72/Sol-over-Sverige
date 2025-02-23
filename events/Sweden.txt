@@ -43,8 +43,7 @@ country_event = { ####swedish gold coast ##LS##
 				}				
 				CIV = {
 					load_focus_tree = generic_focus				
-					remove_all_ministers
-
+					remove_all_ministers = yes
 					set_cosmetic_tag = CIV_swedish
 					set_politics = {
 					ruling_party = paternal_autocrat
@@ -96,7 +95,7 @@ country_event = { ####Vinland ##LS##
 				}
 				NFL = {
 					load_focus_tree = generic_focus				
-					remove_all_ministers				
+					remove_all_ministers = yes				
 					set_cosmetic_tag = NFL_SWEREV
 					set_politics = { 
 						ruling_party = radical_socialist
@@ -1051,7 +1050,9 @@ country_event = { ####soldiers in factories ##LS##
 
 	option = {
 		name = swemil.3.a
-		
+		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
+		add_stability = 0.02
+		add_war_support = -0.03
 
 	}
 }

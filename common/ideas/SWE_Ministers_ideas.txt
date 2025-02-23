@@ -149,7 +149,7 @@ ideas = {
 			}
 		}
 
-		SWE_Hugo_Sillén_sec_tot = {
+		SWE_Hugo_Sillen_sec_tot = {
 			allowed = { original_tag = SWE }
 			available = {
 				custom_trigger_tooltip = {
