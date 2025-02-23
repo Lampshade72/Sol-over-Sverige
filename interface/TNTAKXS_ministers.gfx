@@ -48,6 +48,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ministers/SWE/SWE_Elise_Ottesen_Jensen.png"
 	}	
 	
+	spriteType = {
+		name = "GFX_idea_SWE_Elise_Ottesen_Jensen_hog_syn"
+		texturefile = "gfx/interface/ministers/SWE/SWE_Elise_Ottesen_Jensen.png"
+	}	
 
 	
 }

@@ -2551,12 +2551,20 @@ country_event = { ####ideology choice ##LS##
 
 	option = { ## Anarchism stays
 		name = swerev.19.a
+		
 		set_country_flag = SWE_flag_anarcho_syndie
 		remove_ideas_with_trait = security_minister
 		remove_ideas_with_trait = foreign_minister
-		
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SWE_Elise_Ottesen_Jensen_hog_syn
 		add_ideas = SWE_Britta_Gröndahl_for_syn
-		add_ideas = SWE_Elise_Ottesen_Jensen_for_syn
+		add_ideas = SWE_Elise_Ottesen_Jensen_sec_syn
+		create_country_leader = {
+			name = "Elise Ottesen-Jensen"
+			picture = "gfx/leaders/SWE/Portrait_Sweden_Elise_Ottesen_Jensen.png"
+			expire = "1.1.1"
+			ideology = syn_anarchism_subtype
+		}				
 	}	
 
 	option = { ### Centralisation
@@ -2652,7 +2660,7 @@ country_event = { ####farmer syndies ##LS##
 
 ## Syndie-radsoc flavour events ## 
 
-country_event = { ####prohibition 
+country_event = { ####prohibition RADSOC
 	id = swerev.26
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swerev.26" }
 	title = swerev.26.t
@@ -2667,6 +2675,24 @@ country_event = { ####prohibition
 	option = { 
 		name = swerev.26.b
 		add_ideas = SWE_socialist_prohibition
+	}	
+}
+
+country_event = { ####
+	id = swerev.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swerev.27" }
+	title = swerev.27.t
+	desc = swerev.27.d
+	picture = GFX_report_event_SOS_no_alcohol
+
+	is_triggered_only = yes
+
+	option = { 
+		name = swerev.27.a
+	}
+	option = { 
+		name = swerev.27.b
+
 	}	
 }
 

@@ -4,12 +4,30 @@ ideas = {
   ################################################################################################################################################################################################
 
 	head_of_government = { ### Head of Government ###
-
+		SWE_Elise_Ottesen_Jensen_hog_syn = {
+			allowed = { original_tag = SWE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWE_Elise_Ottesen_Jensen_hog_syn"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				for_great_compromiser
+			}
+		
 
 	}
-
+ }
 	person_of_influence = { ### Person of Influence ###
 		## Foreign Minister ##
+
 		SWE_Annie_akerhielm_for_npo = {
 			allowed = { original_tag = SWE }
 			available = {
