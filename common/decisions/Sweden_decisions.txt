@@ -1328,7 +1328,7 @@ SWE_revolution_decisions = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove swe_annex_norway_revolution target: [From.GetName]"
 			Annex_country = {
 				target = NOR
-				transfer_troops = SWE
+				transfer_troops = yes
 			}
 		}
 	}
