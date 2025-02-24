@@ -730,7 +730,7 @@ ideas = {
 				research_speed_factor = 0.02	
 				political_power_factor = 0.05	
 				production_speed_buildings_factor = 0.08
-				production_speed_buildings_factor = 0.05				
+				production_factory_max_efficiency_factor = 0.05				
 				trade_opinion_factor = 0.25
 			}				
 		}
@@ -1433,7 +1433,7 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.08
 				consumer_goods_factor = 0.07	
-				army_defend_factor = 0.045	
+				max_dig_in_factor = 0.12	
 				experience_loss_factor = -0.10				
 			}				
 		}
@@ -3339,48 +3339,14 @@ ideas = {
 			}
 			visible = {
 				owns_state = 141 #Stockholm
-				NOT = { SWE = { has_completed_focus = SWE_lkab_investments } }
 			}
 			traits = { industrial_manufacturer }
             modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.13
+				production_speed_industrial_complex_factor = 0.13
 			}
 			research_bonus = {
 				industry = 0.1
-			}
-		}
-
-		lkab_upgraded = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_lkab_upgraded" }
-			name = lkab
-			picture = lkab
-			allowed = {
-				OR = {
-					original_tag = SWE
-					original_tag = SCA
-				}
-			}
-			visible = {
-				owns_state = 141 #Stockholm
-				SWE = { has_completed_focus = SWE_lkab_investments }
-			}
-			available = {
-				if = {
-					limit = { original_tag = SCA }
-					has_completed_focus = SCA_Advance_the_Integration
-				}
-				else = {
-					has_completed_focus = SWE_lkab_investments
-				}
-			}
-			traits = { industrial_manufacturer }
-			modifier = {
-				production_speed_arms_factory_factor = 0.15
-				production_speed_industrial_complex_factor = 0.15
-			}
-			research_bonus = {
-				industry = 0.15
 			}
 		}
 		

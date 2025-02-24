@@ -993,6 +993,7 @@ focus_tree = {
 		id = SWE_INF_abrupt_pull_out
 		icon = GFX_goal_WHR_Assert_Independence_Germany
 		prerequisite = { focus = SWE_INF_german_cloud }
+		mutually_exclusive = { focus = SWE_INF_abrupt_pull_out }
 		x = -2
 		y = 1
 		relative_position_id = SWE_INF_german_cloud
@@ -4432,7 +4433,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
-			remove_idea = SWE_red_resistance_lind
+			remove_ideas = SWE_red_resistance_lind
 			country_event = { id = swetot.13 }			
 			
 		}

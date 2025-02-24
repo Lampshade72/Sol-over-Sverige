@@ -1803,6 +1803,36 @@ country_event = { #paramilitaries into a royal guard ##LS##
 
 
 
+#### Additional Military flavour ####
+
+country_event = { #Ingvar Kamprad ##LS##
+	id = swemil.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.41" }
+	title = swemil.41.t
+	desc = swemil.41.d
+	picture = GFX_report_event_SWE_Swedish_military_2
+
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+		has_government = radical_socialist
+		date > 1943.8.8
+		}
+	}
+
+	option = { #nice, give help
+		name = swemil.41.a
+	
+	}	
+	option = { #He would do good in government
+		name = swemil.41.b
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SWE_Ingvar_Kamprad_eco_npo
+	}	
+}
+
+
 
 
 ##########Socialist Tree Events############
