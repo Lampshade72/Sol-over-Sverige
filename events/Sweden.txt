@@ -1816,7 +1816,7 @@ country_event = { #Ingvar Kamprad ##LS##
 	
 	trigger = {
 		AND = {
-		has_government = radical_socialist
+		has_government = national_populist
 		date > 1943.8.8
 		}
 	}
