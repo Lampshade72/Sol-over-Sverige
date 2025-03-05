@@ -1004,6 +1004,8 @@ politics_nils_flyg_desc:0 "The figurehead of Swedish totalism, Nils 'Nisse' Flyg
 
 SWE_chief_of_army_tt:0 "§OThe King's authority over the Armed forces shall be replaced with the position Chief of Army to better structure our high command!§!" 
 
+SWE_arms_against_tyranny_tt:0 "§RWith the Monarchy disposed of and many of the aristocratic generals gone, the Swedish military must be entirely reformed and shaped anew!§!" 
+
 
 ### Parties ###
 SWE_totalist_party:0 "SKP/SNSP"
@@ -1096,29 +1098,33 @@ TNTswe.2.t:0 "The Political Situation"
 TNTswe.2.d:0 "With her neutrality in the Weltkrieg Sweden has been allowed to maintain a stable political scene compared to the rest of Europe. While the fallen Kingdom of Britain and Republic of France both fell to the hordes of Syndicalists and Russia currently under the leadership of the so-called Social Liberal Kerensky since the ravages of the Russian Civil War. However this apparent stability has not stopped some wayward Swedes from aligning with those considered flung too far outside the political scene. \n\nOn the centre-left are the Farmers’ League, seen as an agrarian and socially liberal party, they enjoy much of their support from the rural farmer base, most commonly found in coalition with the larger leftist parties, it's possible they may be swayed right if the conditions are good. The largest Leftist party, lead by Per Albin Hansson, presiding over the Swedish Social Democratic Workers’ Party which maintains a centre-left to moderate-left political stance, also remaining to adhere to the Monarchy Sweden currently holds. Further left are the Swedish Social Democratic Left Party, a contingent of more Radical social democrats that adhere to many of Per Albin Hansson’s policies bar the question of the Monarchy, seeing it as a symbol of reactionary tradition, believing Sweden can only truly be free when she is a republic. \n\nInspired by those in France and Britain, a syndicalist group calling themselves the Central Organisation of the Workers of Sweden, hope to abolish the monarchy and bring about a syndicalist revolution in Sweden like other syndicalist nations. They share membership with the Left party but are barred from coalition status as they are seen as far too radical. Finally are the splinter parties of the Socialist Party and the Communist Party of Sweden, headed by Nils Flyg and Sven Linderot respectively. Sharing many of the similar policies, due to their small status they are in coalition with each other in the hope of achieving more seats in the Rikstag, while a victory for them is impossible, they may be invited by other factions. \n\nOn the Right is the Peoples’ Party, a classical liberal group seen as a moderate bridge between both the centre right and left, it currently enjoys coalition status with the conservatives. The largest Conservative party is the General Electoral League, currently led by Gösta Bagge, it believes in the ideas of a protectionist economy while maintaining conservative values, adhering close to the Crown of Sweden. Further right resides small scatterings of military cliques and ultra-nationalist paramilitaries, the largest military clique residing around Helge Jung, with his group nicknamed the ‘Jung Junta’. Within the Ultra-nationalist groups preside Archibald Douglas, a leading military figure, Birger Furugård whose policies echo that of the legionnaires throughout Europe, and Elmo Lindholm following a Maurassian system of governance."
 TNTswe.2.a:0 "Stability breads Safety, right?"
 
-TNTswe.3.t:0 "Embracing kaiser money"
+TNTswe.3.t:0 "More Intro choice etc"
 TNTswe.3.d:0 ""
 TNTswe.3.a:0 ""
 
-TNTswe.4.t:0 "Embracing Kaiser money 2"
+TNTswe.4.t:0 "Embracing kaiser money"
 TNTswe.4.d:0 ""
 TNTswe.4.a:0 ""
 
-TNTswe.5.t:0 "Slow removal"
+TNTswe.5.t:0 "Embracing Kaiser money 2"
 TNTswe.5.d:0 ""
 TNTswe.5.a:0 ""
 
-TNTswe.6.t:0 "Slow removal 2"
+TNTswe.6.t:0 "Slow removal"
 TNTswe.6.d:0 ""
 TNTswe.6.a:0 ""
 
-TNTswe.7.t:0 "Pull out"
+TNTswe.7.t:0 "Slow removal 2"
 TNTswe.7.d:0 ""
 TNTswe.7.a:0 ""
 
-TNTswe.8.t:0 "Pull out 2"
+TNTswe.8.t:0 "Pull out"
 TNTswe.8.d:0 ""
 TNTswe.8.a:0 ""
+
+TNTswe.9.t:0 "Pull out 2"
+TNTswe.9.d:0 ""
+TNTswe.9.a:0 ""
 
 
 
@@ -1129,91 +1135,91 @@ TNTswe.8.a:0 ""
 
 
 ###conservative events###
-swescml.0.t:0 "GEL victory"
-swescml.0.d:0 "skibidi"
-swescml.0.a:0 "skibidi"
+swedem.0.t:0 "GEL victory"
+swedem.0.d:0 "skibidi"
+swedem.0.a:0 "skibidi"
 
-swescml.1.t:0 "skibidi"
-swescml.1.d:0 "skibidi"
-swescml.1.a:0 "skibidi"
+swedem.1.t:0 "skibidi"
+swedem.1.d:0 "skibidi"
+swedem.1.a:0 "skibidi"
 
-swescml.2.t:0 "Electoral Victory Approved by the Army"
-swescml.2.d:0 "It is not unknown to many in Sweden that the generals and marshals in the Swedish Armed Forces retain right leaning sentiments. Distinct cliques such as those aligning with the general Archibald Douglas who hold near ultranationalist sentiments, or those like Helge Junga who preside over a more traditionalist view exist, strengthening the conservative support base. \n\nWith these groups in mind, the government has made distinct outreaches of support via funding of the military apparatus in an obvious attempt to court the Army further into the current government. While aligning with the ultranationalists would cause mass political outcry from opposition and socialists alike, the more moderates in the Army will provide much needed stability through these turbulent times."
-swescml.2.a:0 "Generals, a toast?"
+swedem.2.t:0 "Electoral Victory Approved by the Army"
+swedem.2.d:0 "It is not unknown to many in Sweden that the generals and marshals in the Swedish Armed Forces retain right leaning sentiments. Distinct cliques such as those aligning with the general Archibald Douglas who hold near ultranationalist sentiments, or those like Helge Junga who preside over a more traditionalist view exist, strengthening the conservative support base. \n\nWith these groups in mind, the government has made distinct outreaches of support via funding of the military apparatus in an obvious attempt to court the Army further into the current government. While aligning with the ultranationalists would cause mass political outcry from opposition and socialists alike, the more moderates in the Army will provide much needed stability through these turbulent times."
+swedem.2.a:0 "Generals, a toast?"
 
-swescml.3.t:0 "Northern Nordic Conservatism"
-swescml.3.d:0 "Victory!"
-swescml.3.a:0 "yay!"
+swedem.3.t:0 "The Nordic Bulwark"
+swedem.3.d:0 "At last, the tireless efforts of the Electoral League have borne fruit, with the economic devastation of Black Monday now a distant memory. Strengthened by unwavering support from the Armed Forces and the continued success of a robust protectionist market, the League can finally bask in its well-earned triumph. What once seemed like an insurmountable challenge—competing against Hansson’s Social Democrats in the polls—has been decisively overcome. A crucial turning point came with the strategic alliance between Bagge’s Electoral League and Gustav Andersson’s market-liberal-aligned People’s Party. This partnership secured vital seats in the Riksdag, surpassing the threshold for a general majority and effectively granting the coalition the power to pass legislation with ease. With this newfound authority, sweeping economic and political reforms have been set in motion. Among the most significant changes is the introduction of a corporatist economic model, designed to further expand Sweden’s industrial base. By fostering closer collaboration between the government, businesses, and labor organizations, this system allows for smarter allocation of resources, more efficient urban planning, and the development of new industrial sectors. As a result, economic growth has accelerated, and the general quality of life for all Swedes has begun to improve. \n\nAgainst all odds, Bagge and his party have not only solidified their dominance in Swedish politics but also laid the foundation for a new era of prosperity and stability."
+swedem.3.a:0 "Tradition and Piety Secured"
 
 ###Market Liberal events###
-swescml.00.t:0 "marlib victory"
-swescml.00.d:0 "skibidi"
-swescml.00.a:0 "skibidi"
+swedem.4.t:0 "marlib victory"
+swedem.4.d:0 "skibidi"
+swedem.4.a:0 "skibidi"
 
-swescml.4.t:0 "Classical Liberalism Made Manifest"
-swescml.4.d:0 "Basically Classical Liberalism policies etc"
-swescml.4.a:0 "yay!"
+swedem.5.t:0 "Classical Liberalism Made Manifest"
+swedem.5.d:0 "Basically Classical Liberalism policies etc"
+swedem.5.a:0 "yay!"
 
-swescml.5.t:0 "Alliance with the Soclib"
-swescml.5.d:0 "Do we broaden coalition with the soclibs to increase government stability at risk of alienating the conservatives"
-swescml.5.a:0 "yay!"
-swescml.5.b:0 "no"
+swedem.6.t:0 "Alliance with the Soclib"
+swedem.6.d:0 "Do we broaden coalition with the soclibs to increase government stability at risk of alienating the conservatives"
+swedem.6.a:0 "yay!"
+swedem.6.b:0 "no"
 
-swescml.6.t:0 "Sweden, Liberal and Proud"
-swescml.6.d:0 "Finale"
-swescml.6.a:0 "yay!"
+swedem.7.t:0 "Sweden, Liberal and Proud"
+swedem.7.d:0 "Finale"
+swedem.7.a:0 "yay!"
 
-swescml.7.t:0 "Corporatism Choice"
-swescml.7.d:0 "Finale"
-swescml.7.a:0 "heavy"
+swedem.8.t:0 "Corporatism Choice"
+swedem.8.d:0 "Finale"
+swedem.8.a:0 "heavy"
 
-swescml.8.t:0 "Conservatism Entrenched"
-swescml.8.d:0 "Finale"
-swescml.8.a:0 "yay!"
+swedem.9.t:0 "Conservatism Entrenched"
+swedem.9.d:0 "Finale"
+swedem.9.a:0 "yay!"
 
 
 ###Socdem events###
-swesd.1.t:0 "The Social Democratic Principles"
-swesd.1.d:0 "here we are!"
-swesd.1.a:0 "yay!"
+swedem.10.t:0 "The Social Democratic Principles"
+swedem.10.d:0 "here we are!"
+swedem.10.a:0 "yay!"
 
-swesd.2.t:0 "Folkhemmet"
-swesd.2.d:0 "here we are!"
-swesd.2.a:0 "yay!"
+swedem.11.t:0 "Folkhemmet"
+swedem.11.d:0 "here we are!"
+swedem.11.a:0 "yay!"
 
-swesd.3.t:0 "Ridicule Radicals"
-swesd.3.d:0 "here we are!"
-swesd.3.a:0 "yay!"
+swedem.12.t:0 "Ridicule Radicals"
+swedem.12.d:0 "here we are!"
+swedem.12.a:0 "yay!"
 
-swesd.4.t:0 "Northern Folkhemmet"
-swesd.4.d:0 "here we are!"
-swesd.4.a:0 "yay!"
+swedem.13.t:0 "Northern Folkhemmet"
+swedem.13.d:0 "here we are!"
+swedem.13.a:0 "yay!"
 
-swesd.5.t:0 "Status of the Statare"
-swesd.5.d:0 "here we are!"
-swesd.5.a:0 "yay!"
+swedem.14.t:0 "Status of the Statare"
+swedem.14.d:0 "here we are!"
+swedem.14.a:0 "yay!"
 
-swesd.6.t:0 "Aligning the Farmers' League"
-swesd.6.d:0 "good"
-swesd.6.a:0 "ok"
+swedem.15.t:0 "Aligning the Farmers' League"
+swedem.15.d:0 "good"
+swedem.15.a:0 "ok"
 
 
 ###Radsoc events###
-swessv.1.t:0 "A Shocking Result"
-swessv.1.d:0 "While the idea of a coalition between the SAP and the SSV seemed unlikely due to the apparent popularity of the SAP alone, it would seem due to less votes than needed for a majority the SAP has aligned with the SSV in a desperate attempt to stabilize the Rikstag. Such a coalition does give Hansson enough seats to gain a majority, it does leave him with the difficult position of giving such seats to radicals in parliament."
-swessv.1.a:0 "How long will this unease last?"
+swedem.16.t:0 "A Shocking Result"
+swedem.16.d:0 "While the idea of a coalition between the SAP and the SSV seemed unlikely due to the apparent popularity of the SAP alone, it would seem due to less votes than needed for a majority the SAP has aligned with the SSV in a desperate attempt to stabilize the Rikstag. Such a coalition does give Hansson enough seats to gain a majority, it does leave him with the difficult position of giving such seats to radicals in parliament."
+swedem.16.a:0 "How long will this unease last?"
 
-swessv.2.t:0 "Expanding the Coalition"
-swessv.2.d:0 "To truly cement a true revolution in Sweden, to combat the reactionary enemies that face us, we must unite with our ideological brethren. Putting away our petty squabbles over minor policy choices, our difference between socialism and syndicalism, for the reactionaries will spare us no expense. They will try their hardest to break us, to destroy any chance for true freedom from the oppression of capitalism, but united they stand no chance. Reaching out and creating a united front of social democrats, socialists, syndicalists, alongside the far more fringe groups like the national syndicalists and communists, to stand together for Sweden."
-swessv.2.a:0 "A True Leftist Coalition"
+swedem.17.t:0 "Expanding the Coalition"
+swedem.17.d:0 "To truly cement a true revolution in Sweden, to combat the reactionary enemies that face us, we must unite with our ideological brethren. Putting away our petty squabbles over minor policy choices, our difference between socialism and syndicalism, for the reactionaries will spare us no expense. They will try their hardest to break us, to destroy any chance for true freedom from the oppression of capitalism, but united they stand no chance. Reaching out and creating a united front of social democrats, socialists, syndicalists, alongside the far more fringe groups like the national syndicalists and communists, to stand together for Sweden."
+swedem.17.a:0 "A True Leftist Coalition"
 
-swessv.3.t:0 "Telegram to Paris"
-swessv.3.d:0 "As a newly born socialist nation, we must reach out to those of similar ideologies. None, fit the bill better than that of the 3rd Internationale. Tonight, we shall send a telegram to Paris, the heart of the world’s revolutions, asking for their support and assistance in our upcoming struggles against reactionary forces. The Internationale has made it no secret that any nation willing to reach out to them is guaranteed their support, and such a helping hand will be invaluable in battles to come."
-swessv.3.a:0 "They send their best wishes, and guns!"
+swedem.18.t:0 "Telegram to Paris"
+swedem.18.d:0 "As a newly born socialist nation, we must reach out to those of similar ideologies. None, fit the bill better than that of the 3rd Internationale. Tonight, we shall send a telegram to Paris, the heart of the world’s revolutions, asking for their support and assistance in our upcoming struggles against reactionary forces. The Internationale has made it no secret that any nation willing to reach out to them is guaranteed their support, and such a helping hand will be invaluable in battles to come."
+swedem.18.a:0 "They send their best wishes, and guns!"
 
-swessv.4.t:0 "Breaking the Crown"
-swessv.4.d:0 "The day has come, our greatest goal may finally be achieved, abolition of the traditional monarchy and freedom for Swedish workers. After the bill was proposed into the Rikstag, the growing coalition of the SSV-SAP, alongside their radical allies, voted in favour. While in uproar the conservative GEL and People’s Party greatly objected, however due to their minority of seats they were unable to legally oppose the bill. Many of their members stormed out in protest, refusing to believe in the ideals of a Swedish republic, but their support was not needed. Today, Per Albin Hansson addresses the nation, announcing the abdication of the former monarchy in place of a republican system."
-swessv.4.a:0 "Long live the Republic!"
+swedem.19.t:0 "Breaking the Crown"
+swedem.19.d:0 "The day has come, our greatest goal may finally be achieved, abolition of the traditional monarchy and freedom for Swedish workers. After the bill was proposed into the Rikstag, the growing coalition of the SSV-SAP, alongside their radical allies, voted in favour. While in uproar the conservative GEL and People’s Party greatly objected, however due to their minority of seats they were unable to legally oppose the bill. Many of their members stormed out in protest, refusing to believe in the ideals of a Swedish republic, but their support was not needed. Today, Per Albin Hansson addresses the nation, announcing the abdication of the former monarchy in place of a republican system."
+swedem.19.a:0 "Long live the Republic!"
 
 
 
@@ -2110,54 +2116,6 @@ swe.113.d:0 "The Finns have been under severe pressure in the ongoing war, and S
 swe.113.a:0 "We can't help here!"
 swe.113.b:0 "Demand that Sweden retreats!"
 
-swe.114.t:0 "Germany Demands our Retreat!"
-swe.114.d:0 "Just as we thought that we secured the isles, the Germans arrived again. And of course, biased to the Finnish side as they are, they demand that we retreat from the Åland isles. We could of course refuse in the hopes that it is a bluff, and that Germany is not really prepared to support Finland with military means. Ending up at war with the Germans however, could spell disaster."
-swe.114.a:0 "Retreat, we'd stand no chance!"
-swe.114.b:0 "Stand firm, this time we will not surrender Åland!"
-
-swe.115.t:0 "The Swedes Back Down!"
-swe.115.d:0 "The Swedish government has given in to the pressure that was put on them following their illegal occupation of the Åland islands. They are retreating and returning the archipelago to us."
-swe.115.a:0 "Hurrah!"
-
-swe.116.t:0 "The Swedes Refuse!"
-swe.116.d:0 "The Swedish government has refused to retreat from Åland, claiming they have a popular mandate to annex the islands from the islands' inhabitants, and that they will not abandon them again!"
-swe.116.a:0 "We didn't want to resort to violence..."
-swe.116.b:0 "Uh, well I guess it's fine then..."
-
-swe.117.t:0 "The Germans Can't Help Us"
-swe.117.d:0 "The Germans have let us know that they can't help us get the Åland islands back. It is clear that they want to avoid antagonizing Sweden at our cost."
-swe.117.a:0 "Nefarious Swedes, misusing the situation!"
-swe.117.b:0 "We'll push them back ourselves!"
-
-swe.118.t:0 "The Finns Demand Our Retreat!"
-swe.118.d:0 "The Finns have let us know that our military must vacate all their sovereign territory within 48 hours or they will consider our states to be in state of war."
-swe.118.a:0 "Almost overrun by their enemies and still issuing threats, hah!"
-swe.118.b:0 "We concede, we can't afford a war with Finland."
-
-swe.119.t:0 "The Swedes Refuse!"
-swe.119.d:0 "The perfidious Swedes don't seem to take us seriously because of our current military situation and refuse to return the Åland islands to our control."
-swe.119.a:0 "War it is then!"
-swe.119.b:0 "Then there's really nothing we can do..."
-
-swe.121.t:0 "Sweden's Ragnarök?"
-swe.121.d:0 "Disaster! [From.GetAdjective] hordes are descending on Stockholm, the designated Asgard of Douglas's empire while our patriots mount a desperate defence to salvage the nation from their tyranny.\n\nOur beloved Riksledare, Archibald Douglas, is seeing it all from a position of inactivity from his office in Stockholm, and, as a former front line officer, contemplates fighting for the survival of the Swedish identity with the young men struggling against the [From.GetAdjective] menace in a last attempt to stave off this blatant attempt to end our nation. Reality is however that it is possible that the Riksledare will die in this endeavour, and wouldn't losing the Riksledare leave Sweden hopelessly lost?"
-swe.121.a:0 "I shall not witness our demise from an office chair!"
-swe.121.b:0 "The risk would be too great!"
-
-swe.122.t:0 "The Death of a Tyrant!"
-swe.122.d:0 "A patrol has been inspecting the ruins of a house in Stockholm in the aftermath of the battle, when they found the remains of a Swedish officer in a most unusual uniform as well as several of his presumptive guards. Upon further inspection, it has been deduced that this officer was in fact once the nefarious Swedish dictator Archibald Douglas. Clearly he and his guards had remained trapped in the building for a fairly long while, as the bodies are showing their first signs of disintegration. Regardless, the confirmation of the death of their dictator must come hard on the Swedes."
-swe.122.a:0 "A Tyrant has fallen!"
-
-swe.123.t:0 "The Riksledare Is dead!"
-swe.123.d:0 "We have received confirmation that the body of the Riksledare, who fought among his troops in the battle of Stockholm and who had been considered to be missing since several days, has been found by the enemy. He has had honours bestowed upon himself in absentia on the orders of Archibald Douglas, Douglas's friend and former superior who has been declared the new Riksledare as per the orders of Douglas."
-swe.123.a:0 "The Riksledare is dead. Long live the Riksledare!"
-
-swe.124.t:0 "The Riksledare Is dead"
-swe.124.d:0 "The great guide of our nation, Riksledare Archibald Douglas, has passed away peacefully in his villa. Of course, all of Sweden will now enter into a week of sorrow, but while respects are being paid, his power is immediately contested. Douglas was quite open in his desire of being succeeded by his friend, air commander, sport shooter and supporter of a strong military, but his ascent of the role of leadership is being contested by ideological extremists within the SRNS who instead desire Martin Ekström as the new Riksledare, as well as elements who are weary of Gyllenkrok's personality. Namely, he has been observed being aggressive, rude, sarcastic and almost abusive to his subordinates. Of course the totalitarian regime left by Douglas has many more 'radical' supporters, who wish to see the state transformed from a mere military junta into a more solidly legionarist state; this contingency is headed by former veterinarian Birger Furugård, who heads a radical arm of the SRNS's paramilitary. Then there are some within the army who have seen enough of the totalitarian tactics employed by the SRNS and who are plotting to install Helge Jung as a moderate candidate."
-swe.124.a:0 "Gyllenkrok was Douglas's own choice!"
-swe.124.b:0 "Ekström shall safeguard Swedish ideological purity!"
-swe.124.e:0 "Furugård shall transform the Swedish State!"
-swe.124.c:0 "Jung shall bring back normality!"
 
 swe.125.t:0 "Sweden Leaves the Reichspakt"
 swe.125.d:0 "We have received word from the Swedish ambassador that they seek to end our military alliance, officially and effectively ending their Reichspakt allegiance."

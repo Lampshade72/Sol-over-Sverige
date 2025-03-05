@@ -919,7 +919,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			country_event = { id = TNTswe.3 }
 		}
 	}
 
@@ -937,10 +937,8 @@ focus_tree = {
 
 		available = {
 				or = {
-				has_completed_focus = SWE_GEL_leads
-				has_completed_focus = SWE_people_party_front
-				has_completed_focus = SWE_social_dem_stab
-				has_completed_focus = SWE_place_of_the_crown	
+				has_country_flag = SWE_election_safe_success
+				has_country_flag = SWE_flag_military_steps_in		
 				}
 
 		}
@@ -951,7 +949,7 @@ focus_tree = {
 				add_idea = SWE_german_reach_2good
 				}
 			hidden_effect = { 
-				country_event = { id = TNTswe.3 days = 2 }
+				country_event = { id = TNTswe.4 days = 2 }
 				}
 
 		}
@@ -971,10 +969,8 @@ focus_tree = {
 
 		available = {
 			or = {
-				has_completed_focus = SWE_people_party_front
-				has_completed_focus = SWE_social_dem_stab
-				has_completed_focus = SWE_radical_united_front
-				has_completed_focus = SWE_place_of_the_crown
+				has_country_flag = SWE_election_safe_success
+				has_country_flag = SWE_flag_military_steps_in	
 				}
 		}
 
@@ -984,7 +980,7 @@ focus_tree = {
 				add_idea = SWE_german_reach_2mid
 				}
 			hidden_effect = { 
-				country_event = { id = TNTswe.5 days = 2 }
+				country_event = { id = TNTswe.6 days = 2 }
 				}				
 		}
 	}
@@ -1004,12 +1000,9 @@ focus_tree = {
 
 		available = {
 			or = {
-				has_completed_focus = SWE_social_dem_stab
-				has_completed_focus = SWE_radical_united_front
-				has_completed_focus = SWE_place_of_the_crown
-				has_completed_focus = SWE_socialist_communist_victory
-				has_completed_focus = SWE_syndicalist_victory
-				has_completed_focus = SWE_radical_socialist_victory				
+				has_country_flag = SWE_election_safe_success
+				has_country_flag = SWE_flag_red_in_sweden
+				has_country_flag = SWE_flag_military_steps_in		
 				}
 		}
 
@@ -1019,7 +1012,7 @@ focus_tree = {
 				add_idea = SWE_german_reach_2bad
 				}
 			hidden_effect = { 
-				country_event = { id = TNTswe.7 days = 2 }
+				country_event = { id = TNTswe.8 days = 2 }
 				}				
 		}
 	}
@@ -1132,7 +1125,7 @@ focus_tree = {
 				}
 			}
 			hidden_effect = { 
-				country_event = { id = TNTswe.4 days = 2 }
+				country_event = { id = TNTswe.5 days = 2 }
 				}
 		}
 	}
@@ -1157,7 +1150,7 @@ focus_tree = {
 					add_idea = SWE_german_reach_3mid
 				}
 			hidden_effect = { 
-				country_event = { id = TNTswe.6 days = 2 }
+				country_event = { id = TNTswe.7 days = 2 }
 				}				
 		}
 	}
@@ -1182,7 +1175,7 @@ focus_tree = {
 				add_idea = SWE_german_reach_3bad
 				}
 			hidden_effect = { 
-				country_event = { id = TNTswe.8 days = 2 }
+				country_event = { id = TNTswe.9 days = 2 }
 				}				
 		}
 	}
@@ -2306,7 +2299,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swesd.1 }			
+			country_event = { id = swedem.10 }			
 		}
 	}
 
@@ -2327,7 +2320,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swessv.1 days = 1 }			
+			country_event = { id = swedem.16 days = 2 }			
 		}
 	}
 
@@ -2344,7 +2337,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swesd.2 days = 1 }			
+			country_event = { id = swedem.11 days = 1 }			
 			add_ideas = SWE_social_dem_pol1
 		}
 	}
@@ -2390,7 +2383,7 @@ focus_tree = {
 			add_popularity = { ideology = totalist popularity = -0.02 }		
 			add_popularity = { ideology = syndicalist popularity = -0.06 }
 			add_popularity = { ideology = radical_socialist popularity = -0.04 }				
-			country_event = { id = swesd.3 }			
+			country_event = { id = swedem.12 }			
 		}
 	}
 
@@ -2448,10 +2441,8 @@ focus_tree = {
 			random_owned_controlled_state = {
 				increase_state_category_by_one_level = yes
 			}
-			add_timed_idea = {
-				idea = SWE_social_dem_urban_effort
-				days = 120
-			}			
+			
+			add_ideas = SWE_social_dem_urban_effort			
 		}
 	}
 
@@ -2470,7 +2461,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swessv.3 }			
+			country_event = { id = swedem.16 }			
 		}
 	}
 
@@ -2517,7 +2508,7 @@ focus_tree = {
 				remove_idea = SWE_statare_idea
 				add_idea = SWE_statare_idea2
 			}		
-			country_event = { id = swesd.5 }
+			country_event = { id = swedem.14 }
 		
 		}
 	}
@@ -2538,7 +2529,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swesd.6 }
+			country_event = { id = swedem.15 }
 			add_stability = 0.08
 			if = {
 				limit = { owns_state = 960 }
@@ -2568,7 +2559,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swessv.2 }			
+			country_event = { id = swedem.17 }			
 		}
 	}
 
@@ -2586,7 +2577,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swesd.4 }			
+			country_event = { id = swedem.13 }			
 			swap_ideas = {
 				remove_idea = SWE_social_dem_pol2
 				add_idea = SWE_social_dem_pol3
@@ -2610,7 +2601,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swessv.4 }	
+			country_event = { id = swedem.19 }	
 			remove_ideas = SWE_statare_idea
 		}
 	}
@@ -2635,6 +2626,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = swedem.0 }
 		}
 	}
 
@@ -2654,6 +2646,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = swedem.4 }
 		}
 	}
 	
@@ -2670,7 +2663,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swescml.1 }		
+			country_event = { id = swedem.1 }		
 			add_ideas = SWE_conservative_pol1
 		}
 	}
@@ -2717,7 +2710,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = swescml.2
+			country_event = { id = swedem.2 }
 			army_experience = 45
 			add_war_support = 0.08
 			random_owned_controlled_state = {
@@ -2836,10 +2829,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_timed_idea = {
-				idea = 	SWE_domestic_business1
-				days = 60
-			}			
+		
+			add_ideas = SWE_domestic_business1			
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2869,6 +2860,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = swedem.8 }
 			swap_ideas = {
 				remove_idea = SWE_black_monday_1
 				add_idea = SWE_black_monday_2
@@ -2889,6 +2881,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = swedem.5 }
 			add_ideas = SWE_market_liberal_pol1
 		}
 	}
@@ -2927,7 +2920,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swescml.5 }
+			country_event = { id = swedem.6 }
 			if = {
 				limit = { owns_state = 778 }
 				778 = {
@@ -2993,6 +2986,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = swedem.7 }
 			add_research_slot = 1		
 			swap_ideas = {
 				remove_idea = SWE_market_liberal_pol2
@@ -3015,7 +3009,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = swescml.3
+			country_event = { id = swedem.3 }
 			add_research_slot = 1			
 			swap_ideas = {
 				remove_idea = SWE_conservative_pol2
@@ -6464,6 +6458,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWE_arms_against_tyranny"
+			custom_effect_tooltip = SWE_arms_against_tyranny_tt
+			
 			swap_ideas = {
 				remove_idea = SWE_conservative_army_idea_1
 				add_idea = SWE_red_new_leadership_idea1
