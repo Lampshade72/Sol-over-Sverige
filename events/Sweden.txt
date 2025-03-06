@@ -198,7 +198,52 @@ country_event = { ####Vinland ##LS##
 	
 }
 
+country_event = { #Finland now ours ##LS##
+	id = swefop.777
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.777" }
+	title = swefop.777.t
+	desc = swefop.777.d
+	picture = GFX_report_event_SOS_peak
 
+	trigger = {
+				tag = SWE 
+				840 = { is_owned_and_controlled_by = SWE }
+				863 = { is_owned_and_controlled_by = SWE }	
+				149 = { is_owned_and_controlled_by = SWE }
+				148 = { is_owned_and_controlled_by = SWE }
+				844 = { is_owned_and_controlled_by = SWE }
+				150 = { is_owned_and_controlled_by = SWE }
+				864 = { is_owned_and_controlled_by = SWE } 
+				865 = { is_owned_and_controlled_by = SWE }
+		}
+
+	option = { ##Full integration
+		name = swefop.777.a
+		set_country_flag = SWE_flag_integrate_finland
+		add_ideas = SWE_integrate_finland
+		add_stability = -0.1
+		add_war_support = 0.04	
+		
+		if = { limit = { has_completed_focus = SWE_FOP_wayward_son}
+		unlock_decision_tooltip = swe_integrate_finland_empire
+		} 
+		if = { limit = { has_completed_focus = SWE_FOP_democratic_light	}
+		unlock_decision_tooltip = swe_integrate_finland_alliance
+		} if = { limit = { has_socialist_government = yes }
+		unlock_decision_tooltip = swe_integrate_finland_revolution
+		} else = {
+		unlock_decision_tooltip = swe_integrate_finland_neutral
+		}
+	}
+	
+	option = { ##Take essential, setup puppet
+		name = swefop.777.b
+	}
+	option = { ##Limited self independence
+		name = swefop.777.c
+	}	
+	
+}
 
 
 

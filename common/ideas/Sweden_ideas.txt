@@ -88,8 +88,22 @@ ideas = {
 
 #### Decision/FOP Ideas ####
 
+		SWE_integrate_finland = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_integrate_finland"}
+			picture = generic_cold_war
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.05
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+
+
+
 		SWE_integrate_scandinavia = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_black_monday"}
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_integrate_scandinavia"}
 			picture = generic_cold_war
 			allowed = { always = no }
             modifier = {
@@ -101,7 +115,7 @@ ideas = {
 		}
 
 		SWE_swedish_empire = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_black_monday"}
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_empire"}
 			picture = COR_american_hegemon
 			allowed = { always = no }
             modifier = {

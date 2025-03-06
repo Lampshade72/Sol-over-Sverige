@@ -8,6 +8,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_no_alcohol.png"
 	}	
 
+	spriteType = {
+		name = "GFX_report_event_SOS_peak"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_peak.png"
+	}
 
 	### GENERIC PICS
 	spriteType = {

@@ -968,6 +968,7 @@ SWE_flag_elmo_quo:0 "Elmo keeps the Maurras ideology"
 SWE_flag_elmo_med:0 "Elmo embraces Feudalism"
 SWE_flag_elmo_int:0 "Elmo leans to integral nationalism"
 
+SWE_flag_integrate_finland:0 "Sweden Integrates the Finns"
 
 ## Decisions ##
 SWE_claim_scandinavia:0 "Claim Scandinavia"
@@ -1059,6 +1060,11 @@ swefop.998.t:0 "Vinland colony"
 swefop.998.d:0 "Yay!"
 swefop.998.a:0 "viking era!"
 
+swefop.777.t:0 "Order to the Wayward Child"
+swefop.777.d:0 "Not seen since 1809 when Finland was ceded to Russia after the Swedish Empire’s defeat at her hands, Finland now rests once more upon Sweden’s watchful eye. The current Swedish government has shown in a display of power, the rising of the Swedish flag over the town hall in Hamina, once called Fredrikshamn when under the Swedish Empire, where the former Treaty of Fredrikshamn was signed, ceded Finland to Russia. \n\nWith such a display, many Finns have started coming out in resistance to the Swedish occupation, many putting aside their ideological differences in defence of Finnish independence. Such resistance has been met harshly with Swedish soldiers and officers as the Stockholm government decides on what to do with their newfoundland. \n\nThe first and most straightforward option is total annexation and reintegration of Finland into Sweden. This would force a long and arduous process of annihilating Finnish culture and sovereignty, while likely suffering strong resistance from the native Finns. Some in government say this is the only option as, like Jörmungandr, in an immortal cycle of allowing the Finns self-governance will only lead to constant rebellion. \n\nAnother camp favors the idea of integrating the Finns but offers another solution. Annex the main areas that house a large Swedish presence, and install a puppet administration over the rest to subdue the Finnish resistance while also slowly forcing their reintegration back into Sweden. \n\nA final group sees the total integration of Finland as a truly impossible feat, due to Finland’s many years of self-governance, forcing a reintegration would doom Sweden with economic issues and constant uprisings. As such they advocate for putting a pro-Swedish government in charge of Finland, giving the Finns a sense of self-governance while still keeping them aligned with Sweden. \n\nA choice must be made soon, as the Finnish resistance only grows with each passing day."
+swefop.777.a:0 "Complete Swedification!"
+swefop.777.b:0 "Incorporate the Swedsih dominated regions, prepare the rest for eventual integration!"
+swefop.777.c:0 "Semi-Independent governance under our watchful eye!"
 
 swefop.1.t:0 "Birth of a new Empire"
 swefop.1.d:0 "Yay!"
@@ -1353,7 +1359,7 @@ swerev.25.a:0 "A nation cannot live if its starving"
 ### Radsoc-syndie flavour events ##
 
 swerev.26.t:0 "Prohibition Promises"
-swerev.26.d:0 "Recently, members of our own party, the SSV, have reignited the debate over our stance on prohibition. While no laws have yet been enacted, it is important to remember that the party originally campaigned in 1921 for a state-imposed ban on alcohol—a policy that, to this day, has never been formally renounced. Although the 1922 prohibition referendum resulted in a narrow defeat, allowing Swedes to retain their liquor, the political landscape has shifted significantly since then. With the SSV’s rise to power in the wake of the revolution, the possibility of reintroducing prohibition has once again come to the forefront. Now, the party leadership faces a crucial decision—one that will have far-reaching consequences. Enforcing a nationwide ban would align with the party’s original platform, yet such a move is certain to provoke significant public outcry and economic disruption, potentially fueling unrest across the nation. On the other hand, maintaining the status quo by allowing the people their right to drink would avoid immediate backlash but might be seen as a betrayal of the party’s founding principles.\n\nWith the eyes of the nation fixed on this debate, the leadership can no longer afford to delay. A definitive stance must be taken, and it must be made now."
+swerev.26.d:0 "Recently, the discourse over prohibition in Sweden has been reignited. Originally, back in 1921, the SSV ran on the principles of enacting a state-imposed ban on alcohol should it find itself elected into government. These principles have never been sworn away by the party, however with the chaos of the revolution finally at an end, the question has arisen once more. Although the referendum on prohibition in 1922 resulted in a narrow defeat, maintaining the status quo on the sale and licensing of alcohol in Sweden, with the dethroning of the monarchy and radical reforms of the SSV while in charge, the possibility of reintroducing prohibition has sprung up.\n\nPut out as a new referendum, the party will adhere to whatever choice the public makes, whether to once again maintain their status quo or go along the arduous task of prohibition, should they decide that a nationwide prohibition will be enacted under the SSV."
 swerev.26.a:0 "The People clearly would like to keep their liquor"
 swerev.26.b:0 "Freedom from vice, freedom from tyrants!"
 
