@@ -767,6 +767,462 @@ country_event = { #Finland now ours ##LS##
 	
 	option = { ##Limited self independence
 		name = swefop.777.c
+		if = { limit = { has_government = national_populist } 	
+			FIN = {
+				add_state_core = 150
+				add_state_core = 864
+				add_state_core = 111
+				add_state_core = 863
+				add_state_core = 840
+				add_state_core = 865
+				add_state_core = 1325
+				add_state_core = 146
+				add_state_core = 1326
+				add_state_core = 1324
+
+				transfer_state = 150
+				transfer_state = 864
+				transfer_state = 111
+				transfer_state = 863
+				transfer_state = 840
+				transfer_state = 865
+				transfer_state = 1325
+				transfer_state = 146
+				transfer_state = 1326
+
+				set_politics = { 
+					ruling_party = national_populist
+				}
+				create_country_leader = {
+					name = "Martin Ekstrom"
+					picture = "gfx/leaders/SWE/Portrait_Sweden_Martin_Ekstrom.png"
+					expire = "1.1.1"
+					ideology = militarism_subtype
+				}
+				set_popularities = {
+					totalist = 2
+					radical_socialist = 3
+					syndicalist = 3
+					social_democrat = 0
+					social_liberal = 5
+					market_liberal = 5
+					social_conservative = 2
+					authoritarian_democrat = 10
+					paternal_autocrat = 20
+					national_populist = 50
+				}	
+				set_party_name = {
+				ideology = national_populist
+				long_name = "Swedish Military Administration"
+				name = "Swedish Military Administration"
+				}
+				set_cosmetic_tag = SWE_FINPUPPY
+				load_focus_tree = generic_focus
+				add_ideas = SWE_occupation_finland
+			}
+			
+			release_puppet = FIN
+			SWE = {
+			set_autonomy = {
+				target = FIN
+				autonomous_state = kx_colored_puppet
+				}
+			}
+		}
+
+
+		
+		if = { limit = { has_government = paternal_autocrat	}
+			FIN = {
+				add_state_core = 150
+				add_state_core = 864
+				add_state_core = 111
+				add_state_core = 863
+				add_state_core = 840
+				add_state_core = 865
+				add_state_core = 1325
+				add_state_core = 146
+				add_state_core = 1326
+				add_state_core = 1324
+
+				transfer_state = 150
+				transfer_state = 864
+				transfer_state = 111
+				transfer_state = 863
+				transfer_state = 840
+				transfer_state = 865
+				transfer_state = 1325
+				transfer_state = 146
+				transfer_state = 1326
+
+				set_politics = { 
+					ruling_party = paternal_autocrat
+				}
+				create_country_leader = {
+					name = "Martin Ekstrom"
+					picture = "gfx/leaders/SWE/Portrait_Sweden_Martin_Ekstrom.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				set_popularities = {
+					totalist = 2
+					radical_socialist = 3
+					syndicalist = 3
+					social_democrat = 0
+					social_liberal = 5
+					market_liberal = 5
+					social_conservative = 2
+					authoritarian_democrat = 10
+					paternal_autocrat = 60
+					national_populist = 10
+				}	
+				set_party_name = {
+				ideology = paternal_autocrat
+				long_name = "Swedish Military Administration"
+				name = "Swedish Military Administration"
+				}
+				set_cosmetic_tag = SWE_FINPUPPY
+				load_focus_tree = generic_focus
+				add_ideas = SWE_occupation_finland				
+			}
+			
+			release_puppet = FIN
+			SWE = {
+			set_autonomy = {
+				target = FIN
+				autonomous_state = kx_colored_puppet
+				}
+			}
+
+
+
+		}
+
+		if = { limit = { has_government = authoritarian_democrat }
+			FIN = {
+				add_state_core = 150
+				add_state_core = 864
+				add_state_core = 111
+				add_state_core = 863
+				add_state_core = 840
+				add_state_core = 865
+				add_state_core = 1325
+				add_state_core = 146
+				add_state_core = 1326
+				add_state_core = 1324
+
+				transfer_state = 150
+				transfer_state = 864
+				transfer_state = 111
+				transfer_state = 863
+				transfer_state = 840
+				transfer_state = 865
+				transfer_state = 1325
+				transfer_state = 146
+				transfer_state = 1326
+
+				set_politics = { 
+					ruling_party = authoritarian_democrat
+				}
+				create_country_leader = {
+					name = "Nils Bjork"
+					picture = "gfx/leaders/SWE/Portrait_Sweden_Nils_Bjork.png"
+					expire = "1.1.1"
+					ideology = authdem_junta_subtype
+				}
+				set_popularities = {
+					totalist = 2
+					radical_socialist = 3
+					syndicalist = 3
+					social_democrat = 0
+					social_liberal = 5
+					market_liberal = 5
+					social_conservative = 2
+					authoritarian_democrat = 50
+					paternal_autocrat = 20
+					national_populist = 10
+				}	
+				set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = "Swedish Military Administration"
+				name = "Swedish Military Administration"
+				}
+				set_cosmetic_tag = SWE_FINPUPPY
+				load_focus_tree = generic_focus
+				add_ideas = SWE_occupation_finland				
+			}
+			
+			release_puppet = FIN
+			SWE = {
+			set_autonomy = {
+				target = FIN
+				autonomous_state = kx_colored_puppet
+				}
+			}
+
+
+
+		}
+
+		if = { limit = { has_government = radical_socialist }
+		
+			FIN = {
+				add_state_core = 150
+				add_state_core = 864
+				add_state_core = 111
+				add_state_core = 863
+				add_state_core = 840
+				add_state_core = 865
+				add_state_core = 1325
+				add_state_core = 146
+				add_state_core = 1326
+				add_state_core = 1324
+
+				transfer_state = 150
+				transfer_state = 864
+				transfer_state = 111
+				transfer_state = 863
+				transfer_state = 840
+				transfer_state = 865
+				transfer_state = 1325
+				transfer_state = 146
+				transfer_state = 1326
+
+				set_politics = { 
+					ruling_party = radical_socialist
+				}
+				create_country_leader = {
+					name = "Swedish-Finnish Revolutionary Committee"
+					picture = "gfx/leaders/SWE/Portrait_Sweden_Revolutionary_Committee.png"
+					expire = "1.1.1"
+					ideology = radsoc_red_junta_subtype
+				}
+				set_popularities = {
+					totalist = 2
+					radical_socialist = 40
+					syndicalist = 6
+					social_democrat = 0
+					social_liberal = 5
+					market_liberal = 5
+					social_conservative = 2
+					authoritarian_democrat = 25
+					paternal_autocrat = 10
+					national_populist = 5
+				}	
+				set_party_name = {
+				ideology = radical_socialist
+				long_name = "Finnish Revolutionary Committee"
+				name = "Finnish Revolutionary Committee"
+				}
+				set_cosmetic_tag = SWE_FINKITTY
+				load_focus_tree = generic_focus
+				add_ideas = SWE_occupation_finland				
+			}
+			
+			release_puppet = FIN
+			SWE = {
+			set_autonomy = {
+				target = FIN
+				autonomous_state = kx_colored_puppet
+				}
+			}
+
+
+
+		} 
+
+		if = { limit = { has_government = syndicalist }
+		
+			FIN = {
+				add_state_core = 150
+				add_state_core = 864
+				add_state_core = 111
+				add_state_core = 863
+				add_state_core = 840
+				add_state_core = 865
+				add_state_core = 1325
+				add_state_core = 146
+				add_state_core = 1326
+				add_state_core = 1324
+
+				transfer_state = 150
+				transfer_state = 864
+				transfer_state = 111
+				transfer_state = 863
+				transfer_state = 840
+				transfer_state = 865
+				transfer_state = 1325
+				transfer_state = 146
+				transfer_state = 1326
+
+				set_politics = { 
+					ruling_party = syndicalist
+				}
+				create_country_leader = {
+					name = "Swedish-Finnish Syndicalist Committee"
+					picture = "gfx/leaders/SWE/Portrait_Sweden_Revolutionary_Committee.png"
+					expire = "1.1.1"
+					ideology = syn_red_junta_subtype
+				}
+				set_popularities = {
+					totalist = 5
+					radical_socialist = 20
+					syndicalist = 50
+					social_democrat = 5
+					social_liberal = 4
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 15
+					paternal_autocrat = 5
+					national_populist = 1
+				}	
+				set_party_name = {
+				ideology = syndicalist
+				long_name = "Finnish Syndicalist Committee"
+				name = "Finnish Syndicalist Committee"
+				}
+				set_cosmetic_tag = SWE_FINKITTY
+				load_focus_tree = generic_focus
+				add_ideas = SWE_occupation_finland				
+			}
+			
+			release_puppet = FIN
+			SWE = {
+			set_autonomy = {
+				target = FIN
+				autonomous_state = kx_colored_puppet
+				}
+			}
+		} 		
+
+		if = { limit = { has_government = totalist }
+			FIN = {
+				add_state_core = 150
+				add_state_core = 864
+				add_state_core = 111
+				add_state_core = 863
+				add_state_core = 840
+				add_state_core = 865
+				add_state_core = 1325
+				add_state_core = 146
+				add_state_core = 1326
+				add_state_core = 1324
+
+				transfer_state = 150
+				transfer_state = 864
+				transfer_state = 111
+				transfer_state = 863
+				transfer_state = 840
+				transfer_state = 865
+				transfer_state = 1325
+				transfer_state = 146
+				transfer_state = 1326
+
+				set_politics = { 
+					ruling_party = totalist
+				}
+				create_country_leader = {
+					name = "Swedish Totalist Committee"
+					picture = "gfx/leaders/SWE/Portrait_Sweden_Revolutionary_Committee.png"
+					expire = "1.1.1"
+					ideology = red_junta_subtype
+				}
+				set_popularities = {
+					totalist = 50
+					radical_socialist = 20
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 4
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 15
+					paternal_autocrat = 5
+					national_populist = 1
+				}	
+				set_party_name = {
+				ideology = totalist
+				long_name = "Finnish Freed Committee"
+				name = "Finnish Freed Committee"
+				}
+				set_cosmetic_tag = SWE_FINBIRD
+				load_focus_tree = generic_focus
+				add_ideas = SWE_occupation_finland				
+			}
+			
+			release_puppet = FIN
+			SWE = {
+			set_autonomy = {
+				target = FIN
+				autonomous_state = kx_colored_puppet
+				}
+			}
+		}		
+		
+		
+		else = {		
+			FIN = {
+				add_state_core = 150
+				add_state_core = 864
+				add_state_core = 111
+				add_state_core = 863
+				add_state_core = 840
+				add_state_core = 865
+				add_state_core = 1325
+				add_state_core = 146
+				add_state_core = 1326
+				add_state_core = 1324
+
+				transfer_state = 150
+				transfer_state = 864
+				transfer_state = 111
+				transfer_state = 863
+				transfer_state = 840
+				transfer_state = 865
+				transfer_state = 1325
+				transfer_state = 146
+				transfer_state = 1326
+
+				set_politics = { 
+					ruling_party = social_liberal
+				}
+				create_country_leader = {
+					name = "Ernst Von Born"
+					picture = "gfx/leaders/FIN/Portrait_FIN_Ernst_von_Born.png"
+					expire = "1.1.1"
+					ideology = soclib_popular_patriotism_subtype
+				}
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 5
+					syndicalist = 0
+					social_democrat = 5
+					social_liberal = 45 
+					market_liberal = 20
+					social_conservative = 10
+					authoritarian_democrat = 5
+					paternal_autocrat = 0
+					national_populist = 0
+				}	
+				set_party_name = {
+				ideology = social_liberal
+				long_name = "Swedish People's Party of Finland"
+				name = "Swedish People's Party of Finland"
+				}
+				set_cosmetic_tag = SWE_FINDEM
+				load_focus_tree = generic_focus
+				add_ideas = SWE_occupation_finland				
+			}
+			
+			release_puppet = FIN
+			SWE = {
+			set_autonomy = {
+				target = FIN
+				autonomous_state = kx_colored_puppet
+				}
+			}
+
+		}		
+		
 	}	
 	
 }
