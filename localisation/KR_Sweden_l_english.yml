@@ -2694,12 +2694,21 @@ NFL_SWECRO_ADJ:0 "Vinlandish"
 NFL_SWECRO_DEF:0 "Swedish Crown Colony of Vinland"
 
 
+SWE_FINPUPPY:0 "Finnish Occupied State"
+SWE_FINPUPPY_ADJ:0 "Finnish"
+SWE_FINPUPPY_DEF:0 "the Finnish Occupied State"
 
+SWE_FINKITTY:0 "Liberated Finnish State"
+SWE_FINKITTY_ADJ:0 "Finnish"
+SWE_FINKITTY_DEF:0 "the Liberated Finnish State"
 
+SWE_FINBIRD:0 "Occupied Revolutionary Finnish State"
+SWE_FINBIRD_ADJ:0 "Finnish"
+SWE_FINBIRD_DEF:0 "the Occupied Revolutionary Finnish State"
 
-
-
-
+SWE_FINDEM:0 "Finland"
+SWE_FINDEM_ADJ:0 "Finnish"
+SWE_FINDEM_DEF:0 "the Finland"
 
 
 

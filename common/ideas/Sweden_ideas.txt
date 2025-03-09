@@ -100,6 +100,17 @@ ideas = {
 			}
 		}
 
+		SWE_occupation_finland = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_occupation_finland"}
+			picture = generic_cold_war
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.05
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
 
 
 		SWE_integrate_scandinavia = {
