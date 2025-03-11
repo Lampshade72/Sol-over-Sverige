@@ -25,7 +25,7 @@ country_event = { ####swedish gold coast ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.999" }
 	title = swefop.999.t
 	desc = swefop.999.d
-	picture = GFX_report_event_SWE_army
+	picture = GFX_report_event_SWE_gold_coast_map
 
 	trigger = {
 				tag = SWE
@@ -80,7 +80,7 @@ country_event = { ####Vinland ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.998" }
 	title = swefop.998.t
 	desc = swefop.998.d
-	picture = GFX_report_event_SWE_army
+	picture = GFX_report_event_SWE_vinland_map
 	is_triggered_only = yes
 
 	option = { ## We love colonialism
@@ -203,7 +203,7 @@ country_event = { #Finland now ours ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.777" }
 	title = swefop.777.t
 	desc = swefop.777.d
-	picture = GFX_report_event_SOS_peak
+	picture = GFX_report_event_SWE_finland_war_1
 
 	trigger = {
 				tag = SWE 
@@ -1238,7 +1238,7 @@ country_event = { #Empire of our own ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.1" }
 	title = swefop.1.t
 	desc = swefop.1.d
-	picture = GFX_report_event_GER_Blackweekover
+	picture = GFX_report_event_SOS_empire_map
 
 	is_triggered_only = yes
 
@@ -1252,7 +1252,7 @@ country_event = { #Empire of our own 2 #talk abouut killing scandi bros ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.2" }
 	title = swefop.2.t
 	desc = swefop.2.d
-	picture = GFX_report_event_GER_Blackweekover
+	picture = GFX_report_event_SOS_empire_map
 
 	is_triggered_only = yes
 
@@ -1266,7 +1266,7 @@ country_event = { #Empire of our own 3 #Baltic bitch ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.3" }
 	title = swefop.3.t
 	desc = swefop.3.d
-	picture = GFX_report_event_GER_Blackweekover
+	picture = GFX_report_event_SOS_empire_map
 
 	is_triggered_only = yes
 
@@ -1280,7 +1280,7 @@ country_event = { #Empire of our own 4 #Russia my cuck ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.4" }
 	title = swefop.4.t
 	desc = swefop.4.d
-	picture = GFX_report_event_GER_Blackweekover
+	picture = GFX_report_event_SOS_empire_map
 
 	is_triggered_only = yes
 
@@ -1308,7 +1308,7 @@ country_event = { #neutrality 1 ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.6" }
 	title = swefop.6.t
 	desc = swefop.6.d
-	picture = GFX_report_event_GER_Blackweekover
+	picture = GFX_report_event_SWE_neutral_1
 
 	is_triggered_only = yes
 
@@ -1322,7 +1322,7 @@ country_event = { #neutrality 2 ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.7" }
 	title = swefop.7.t
 	desc = swefop.7.d
-	picture = GFX_report_event_GER_Blackweekover
+	picture = GFX_report_event_SWE_neutral_tiger
 
 	is_triggered_only = yes
 
@@ -1538,7 +1538,7 @@ country_event = { ####United Morals under the crown ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.1" }
 	title = swedem.1.t
 	desc = swedem.1.d
-	picture = GFX_report_event_SWE_SocCon_Cabinet
+	picture = GFX_report_event_SWE_monarchist_1
 
 	is_triggered_only = yes
 
@@ -1553,7 +1553,7 @@ country_event = { ####army support ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.2" }
 	title = swedem.2.t
 	desc = swedem.2.d
-	picture = GFX_report_event_SWE_military_meeting
+	picture = GFX_report_event_SWE_GEL_war
 
 	is_triggered_only = yes
 
@@ -1568,7 +1568,7 @@ country_event = { ####Northern light of conservatism ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.3" }
 	title = swedem.3.t
 	desc = swedem.3.d
-	picture = GFX_report_event_SWE_army
+	picture = GFX_report_event_SWE_military_meeting 
 
 	is_triggered_only = yes
 

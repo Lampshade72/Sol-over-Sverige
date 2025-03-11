@@ -12,6 +12,49 @@ spriteTypes = {
 		name = "GFX_report_event_SOS_peak"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_peak.png"
 	}
+	
+	spriteType = {
+		name = "GFX_report_event_SOS_empire_map"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_empire_map.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_finland_war_1"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_finland_war_1.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_vinland_map"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_vinland_map.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_gold_coast_map"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_gold_coast_map.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_neutral_1"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_neutral_1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_neutral_2"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_neutral_2.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_neutral_tiger"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_neutral_tiger.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_GEL_war"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_GEL_war.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_monarchist_1"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_monarchist_1.png"
+	}
+
+
+
+
+
+	
 
 	### GENERIC PICS
 	spriteType = {
