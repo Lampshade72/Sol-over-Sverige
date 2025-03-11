@@ -2886,6 +2886,28 @@ country_event = { #Ingvar Kamprad ##LS##
 	}	
 }
 
+country_event = { #elmo flag switcher ##LS##
+	id = swemil.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.42" }
+	title = swemil.42.t
+	desc = swemil.42.d
+	picture = GFX_report_event_SWE_elmo_flag_picker
+
+	is_triggered_only = yes
+
+	option = { #elmo 1
+		name = swemil.42.a
+		set_cosmetic_tag = SWE_elmo_empire
+	}	
+	option = { #elmo 2
+		name = swemil.42.b
+		set_cosmetic_tag = SWE_elmo_empire2
+	}
+	option = { #elmo 3
+		name = swemil.42.c
+		set_cosmetic_tag = SWE_elmo_empire3
+	}	
+}
 
 
 

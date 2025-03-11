@@ -1419,22 +1419,22 @@ swetot.10.d:0 "Lindholm, after his sudden grab at power, now wields Sweden with 
 swetot.10.a:0 "True Nationalism cannot last without participation of the Working class"
 
 swetot.11.t:0 "New Red Guard"
-swetot.11.d:0 "WOKR!!!"
-swetot.11.a:0 "hello"
+swetot.11.d:0 "During the initial days of the revolution, the Red Guard alongside smaller worker militias were formed to combat the military's coup against the rightful government. In time, some of these guardsmen have gone astray and meandered about, squandering their potential by the former government. Now, under Lindholm’s leadership, these militias and guardsmen shall be reorganized into a new formal Red Guard, answering directly to Lindholm and his close officials. Outside of both police and military jurisdiction, they shall act as the righteous fist of our great leader. Smashing and silencing reactionary monarchists and rebellious socialists groups alike."
+swetot.11.a:0 "Proud and brave, they serve"
 
-swetot.12.t:0 "False Reds"
-swetot.12.d:0 "WOKR!!!"
-swetot.12.a:0 "hello"
+swetot.12.t:0 "Disintegration of Opposition"
+swetot.12.d:0 "It is no surprise that our new regime is rather unpopular to most still, not only to the traditional monarchists that remain in the nation, alongside our former allies on the left. Members of the anarcho-syndicalists have already begun rioting and showing open opposition to our regime, with them are their allies in the SSV who decry our socialism as nothing more than reactionary gibberish! \n\nHowever, with control over Sweden’s military apparatus and soldiers, as well as with the reorganisation of our own Red Guard, such opposition will not last long. Many of the syndicalist strongholds are being hunted down and liquidated. Such woes against us, such provocations, will not go unpunished!"
+swetot.12.a:0 "Demand dedication, always"
 
-swetot.13.t:0 "Reactionary allies"
-swetot.13.d:0 "WOKR!!!"
-swetot.13.a:0 "hello"
+swetot.13.t:0 "Shaking hands with General Douglas"
+swetot.13.d:0 "After the revolution that took hold of our nation, many generals in the military, especially those involved in the failed coup, either fled the country or were captured and imprisoned until further notice. One such general that failed to avoid capture was the renowned nationalist and proponent of movement warfare, Archibald Douglas. Seen alongside Jung when their soldiers attempted to storm the Rikstag, he was soon captured by a band of worker militias after an intense shootout caused him and his few remaining soldiers to surrender. With his surrender and subsequent imprisonment, he remained in temporary confinement in Långholmen Prison, however upon hearing of Sven Lindholm’s rise into power, he sent an offer towards the new Chairman. \n\nDouglas, ever the ultra-nationalist, has offered Lindholm his services in exchange for the chance to lead the Swedish armed forces once more, declaring that his involvement in the former coup was merely his failed attempt at saving Sweden from the lawless anarchists. Espousing similar nationalist and command economy ideals as Lindholm, the Chairman has found favour in this former radical nationalist clique. Under strict supervision from Lindholm’s most loyal guardsmen, the generals Archibald Douglas and his close friend Martin Ekstroem have been given new titles of Generals in the reformed Swedish army and the chance to redeem themselves from their past sins. \n\nWhile such a move is seen as insane by many on the left, Lindholm’s mishmash of fanatics see this as a national win, that if the possibility to reform such men is possible, then surely the entire nation could be as well. In any case, the Swedish army now stands bolstered with more competent and experienced leadership."
+swetot.13.a:0 "If the monarchist can reform, any soul can!"
 
-swetot.14.t:0 "Lindholms new charter"
+swetot.14.t:0 "Address to the Nation"
 swetot.14.d:0 "WOKR!!!"
-swetot.14.a:0 "stay"
-swetot.14.a:0 "natsynd"
-swetot.14.a:0 "savinkov"
+swetot.14.a:0 "Remain as we are, we have no need for change again!"
+swetot.14.a:0 "Flyg’s vision will be best realised by our hand!"
+swetot.14.a:0 "The Russian ideologue Savinkov’s ideals would best fit Sweden!"
 
 
 ### Military Events ###
@@ -1625,6 +1625,11 @@ swemil.41.t:0 "Ingvar kamprad"
 swemil.41.d:0 ""
 swemil.41.a:0 ""
 
+swemil.42.t:0 "Elmo Flag chooser"
+swemil.42.d:0 "As the soon to be sole rulers of Europe, we must design a flag fit for our emerging Kingdom. And for that, Riksledare Lindholm has put forth a national competition for our new flag. \n\nUnder this, three options have captured the leaders eyes, all adorned with purple, the colour of European royalty and with a large circle of Fleur de Lys shown in a golden yellow. The differences arise in that the first option most signifies Swedish supremacy over this new empire with the three crowns inside a roundel in Sweden's national colours. Second is a similar design but without the roundel around the crowns. The final option places the crowns in the top left corner. \n\nThe final choice is..."
+swemil.42.a:0 "The First, Swedish surpremacy and might!"
+swemil.42.b:0 "The second, the crowns alone display our might!"
+swemil.42.c:0 "The third, to show true European unity!"
 
 ### Intro Events ###
 
@@ -2635,9 +2640,17 @@ SWE_EMP:0 "Swedish Empire"
 SWE_EMP_ADJ:0 "Swedish"
 SWE_EMP_DEF:0 "the Swedish Empire"
 
-SWE_elmo_europe:0 "Union of European Crowns"
-SWE_elmo_europe_ADJ:0 "European"
-SWE_elmo_europe_DEF:0 "the European Kingdom"
+SWE_elmo_empire:0 "Union of European Crowns"
+SWE_elmo_empire_ADJ:0 "European"
+SWE_elmo_empire_DEF:0 "the European Kingdom"
+
+SWE_elmo_empire2:0 "Union of European Crowns"
+SWE_elmo_empire2_ADJ:0 "European"
+SWE_elmo_empire2_DEF:0 "the European Kingdom"
+
+SWE_elmo_empire3:0 "Union of European Crowns"
+SWE_elmo_empire3_ADJ:0 "European"
+SWE_elmo_empire3_DEF:0 "the European Kingdom"
 
 SWE_NDR_radsoc:0 "Union of Nordic Republics"
 SWE_NDR_radsoc_ADJ:0 "Nordic"

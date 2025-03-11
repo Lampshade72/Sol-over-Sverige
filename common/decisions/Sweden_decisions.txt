@@ -1879,7 +1879,8 @@ SWE_elmo_decisions = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_claim_elmo_europe"
 			set_capital = { state = 138 }
 			
-			set_cosmetic_tag = SWE_elmo_europe
+			add_ideas = SWE_elmo_europe_idea
+			set_cosmetic_tag = SWE_elmo_empire
 			leave_faction = yes
 		    create_faction = "Union of European Kingdoms"
 			every_country = {
@@ -1987,7 +1988,29 @@ SWE_elmo_decisions = {
 		}
     }
 
+	SWE_elmo_flag_switcher = {# I can't decide
+		icon = generic_nationalism
 
+		allowed = { tag = SWE }
+
+		available = {
+			has_idea = SWE_elmo_europe_idea	
+		}
+
+		visible = {
+			is_subject = no
+
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_elmo_flag_switcher"
+			country_event = { id = swemil.42 }
+		}
+	}
 
 
 

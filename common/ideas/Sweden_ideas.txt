@@ -1803,7 +1803,7 @@ ideas = {
 		}
 
 		SWE_svea_rike = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_royal_youth2"}
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_svea_rike"}
 			picture = GFX_idea_SWE_landstormen_idea
 			allowed = { always = no }
 			modifier = {
@@ -1822,6 +1822,25 @@ ideas = {
 			}			
 		}
 
+		SWE_elmo_europe_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_elmo_europe_idea"}
+			picture = GFX_idea_SWE_landstormen_idea
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = 0.07
+				justify_war_goal_time = -0.6
+				war_support_factor = 0.05
+				army_morale_factor = 0.05
+				encryption_factor = 0.02
+				decryption_factor = 0.02				
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}	
+			}			
+		}
 
 
 
