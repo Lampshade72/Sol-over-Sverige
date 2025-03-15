@@ -1141,13 +1141,13 @@ TNTswe.9.a:0 ""
 
 
 ###conservative events###
-swedem.0.t:0 "GEL victory"
-swedem.0.d:0 "skibidi"
-swedem.0.a:0 "skibidi"
+swedem.0.t:0 "The General Electoral League Secures Victory"
+swedem.0.d:0 "Standing as the ballwork of conservatism in Sweden, the General Electoral League under Gösta Bagge has achieved a victory in the election. Seen as a somewhat unexpected victory due to Per Albin Hanssons rising popularity, it seems Bagge's response to the Black Monday crisis garnered enough trust to allow his party to achieve victory. Alongside this, support from their libertarian allies in the People’s Party under Gustaf Andersson has allowed Bagge to secure a majority of seats in the Rikstag, allowing them to hopefully pass bills and laws without too much objection from the Left. \n\nMoving forward, there is still much to do. While successful in their initial response to Black Monday, its economic effects are still hurting Sweden and fixing it has become the government's main goal moving forward."
+swedem.0.a:0 "Stability under Tradition"
 
-swedem.1.t:0 "skibidi"
-swedem.1.d:0 "skibidi"
-swedem.1.a:0 "skibidi"
+swedem.1.t:0 "The General Electoral League sets out her objectives"
+swedem.1.d:0 "The General Electoral league stands out as the mainline conservative party in Swedish politics, headed by the former Lindman, it defines itself by its approach of mild corporatist economics with the view of protectionism while maintaining social cohesion and tradition. The party favours many voters from those who align with the current monarchy, labeling itself as the only true party to uphold the Crown’s position in its entirety. Gosta Bagge and his party now set out about fixing the issues they see plaguing Sweden, positioning Sweden onto the global stage either as a neutral factor focused on her own defence, becoming a part of one of the major factions playing their hand at international cooperation or secluding herself to her northern neighbours in a bid for Nordic unity. With this the party has formed an official coalition once more with the People’s Party, a staunchly classical liberal party that finds itself largely compatible with the Electoral league, such a relationship gives Bagge the needed seats to dominate the Rikstag, and place his party in a good position against the opposition."
+swedem.1.a:0 "We will make ‘The Admiral’ proud!"
 
 swedem.2.t:0 "Electoral Victory Approved by the Army"
 swedem.2.d:0 "It is not unknown to many in Sweden that the generals and marshals in the Swedish Armed Forces retain right leaning sentiments. Distinct cliques such as those aligning with the general Archibald Douglas who hold near ultranationalist sentiments, or those like Helge Junga who preside over a more traditionalist view exist, strengthening the conservative support base. \n\nWith these groups in mind, the government has made distinct outreaches of support via funding of the military apparatus in an obvious attempt to court the Army further into the current government. While aligning with the ultranationalists would cause mass political outcry from opposition and socialists alike, the more moderates in the Army will provide much needed stability through these turbulent times."
@@ -1158,18 +1158,18 @@ swedem.3.d:0 "At last, the tireless efforts of the Electoral League have borne f
 swedem.3.a:0 "Tradition and Piety Secured"
 
 ###Market Liberal events###
-swedem.4.t:0 "marlib victory"
-swedem.4.d:0 "skibidi"
-swedem.4.a:0 "skibidi"
+swedem.4.t:0 "First Victory of its Kind"
+swedem.4.d:0 "None can deny that such a victory was seen as near impossible, that a minor party could position itself in such a way that, in a coalition in which it was the smaller partner, would find itself on top. Against all odds, the People’s Party now stands as the dominant position in the Rikstag, and with it the chance to realize their ambitions, with the approval of the General Electoral League of course."
+swedem.4.a:0 "Classical liberalism, in the far North? Possibly…"
 
-swedem.5.t:0 "Classical Liberalism Made Manifest"
-swedem.5.d:0 "Basically Classical Liberalism policies etc"
-swedem.5.a:0 "yay!"
+swedem.5.t:0 "The People’s Party"
+swedem.5.d:0 "The People’s Party (Folkpartiet) sits near the centre of the political spectrum, claiming to adhere to the tenets of Classical Liberalism, advocating for a freer market and increased civil liberties. Currently led by isolationist proponent Gustaf Andersson, it aligns itself closely with the Electoral League and remains in a close coalition with her. However some of Andersson’s comments have taken a harsh stance against the 3rd Internationale governments and as such has caused strained relations in London and Paris. Using its coalition connection, the party allowed itself to come ahead in the election as its seats became vital for a majority in the Rikstag for Bagge’s conservatives. \n\nWith this victory, Andersson and his once minor party now have the chance to bring about true liberalism to Sweden, equality amongst the population and stability on the world stage."
+swedem.5.a:0 "True Liberty and freedom!"
 
-swedem.6.t:0 "Alliance with the Soclib"
-swedem.6.d:0 "Do we broaden coalition with the soclibs to increase government stability at risk of alienating the conservatives"
-swedem.6.a:0 "yay!"
-swedem.6.b:0 "no"
+swedem.6.t:0 "Moving to the Countryside"
+swedem.6.d:0 "While much of our support base comes from those working in the buildings in our cities, and our conservative allies attracting their own entourage of support, a largely neglected part of society in Sweden is that of the smaller farmers. While many of the larger farms in Sweden owned by wealthy individuals generally vote conservative, many smaller tend to vote towards either Hanssons social democratic party or the smaller Farmer’s League. The Farmer’s league sits comfortably near us politically, made to represent the more agrarian voter base, they hold economically liberal views while aligning progressively in terms of social policies. While we find them now and then at odds with us regarding social points, we find much common ground on the position of the economy. We may offer them a position in our coalition, conceding some of our power in turn to widen and broaden our support base, alongside expanding our seats in the RIkstag. Such a move would come with compromise, we will allow them to focus and improve areas based around farmers in Sweden, however our allies in the General Electoral League are unlikely to view such a move favourably and in turn some guarantees with them as well to maintain the coalition must be made. Or, we could simply ignore this smaller party, we already have the backing of the conservatives, so what would we need with a party of small farmers and agrarian? The choice is ours."
+swedem.6.a:0 "Send the offer, together we are stronger"
+swedem.6.b:0 "Such a group would destabilise our current coalition"
 
 swedem.7.t:0 "Sweden, Liberal and Proud"
 swedem.7.d:0 "Finale"

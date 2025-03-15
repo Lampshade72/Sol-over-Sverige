@@ -1626,7 +1626,7 @@ country_event = { ####align soclib ##LS##
 	option = { #no
 		name = swedem.6.b
 		add_political_power = 30
-		add_popularity = { ideology = social_liberal popularity = -0.03 }		
+		add_popularity = { ideology = social_liberal popularity = -0.02 }		
 	}
 	
 }
