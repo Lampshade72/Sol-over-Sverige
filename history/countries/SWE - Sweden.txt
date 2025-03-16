@@ -5,13 +5,8 @@ starting_train_buffer = 2.0
 
 #####Starting and flavour events#####
 
-country_event = { days = 1 id = swe.9999 }
-country_event = { days = 106 id = swe.2 } ##keep##
-country_event = { days = 120 id = swe.3 } ##keep##
-country_event = { days = 145 id = swe.4 } ##keep##
-country_event = { days = 167 id = swe.5 } ##keep##
-country_event = { days = 182 id = swe.6 } ##keep##
-country_event = { days = 209 id = swe.7 } ##keep##
+country_event = { id = swe.9999 days = 1 } 
+
 
 
 

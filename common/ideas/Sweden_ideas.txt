@@ -418,7 +418,7 @@ ideas = {
 
 		SWE_tighten_expenses1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_tighten_expenses1"}
-			picture = GFX_idea_NFE_decreased_expense
+			picture = GFX_idea_generic_shackles
 			allowed = { always = no }
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -441,7 +441,7 @@ ideas = {
 
 		SWE_austerity_measures = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_austerity_measures"}
-			picture = GFX_idea_HUN_austerity_idea
+			picture = GFX_idea_generic_broken_champagne
 			allowed = { always = no }
 			modifier = {
 				consumer_goods_factor = 0.15
@@ -882,7 +882,7 @@ ideas = {
 
 		SWE_military_resistance = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_military_resistance"}
-			picture = GFX_idea_catholic_resistance
+			picture = GFX_idea_generic_assassination
 			allowed = { always = no }
 			modifier = {
 				army_org_Factor = -0.30
