@@ -409,9 +409,7 @@ SWE_has_leader_GUI = {
 			ruling_only = yes
 		}
 	}
-	OR = { 
-		has_country_flag = SWE_flag_crown_restored
-		}
+
 
 	
 }

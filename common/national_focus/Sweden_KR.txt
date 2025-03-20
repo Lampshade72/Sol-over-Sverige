@@ -55,8 +55,8 @@ focus_tree = {
 				add_idea = SWE_political_chaos_idea2
 			}
 			hidden_effect = { 
-				country_event = { id = swe.2 days = 80 }
-				country_event = { id = swe.3 days = 100 }
+				country_event = { id = swe.2 days = 45 }
+				country_event = { id = swe.3 days = 90 }
 				country_event = { id = swe.4 days = 125 }
 				country_event = { id = swe.5 days = 145 }
 				country_event = { id = swe.6 days = 160 }
@@ -4823,7 +4823,7 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = SWE_red_resistance_mil
-			
+			country_event = { id = swemil.7 }
 		}
 	}
 

@@ -418,7 +418,7 @@ ideas = {
 
 		SWE_tighten_expenses1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_tighten_expenses1"}
-			picture = GFX_idea_generic_shackles
+			picture = MEX_Economic_Legacy_of_the_Revolution
 			allowed = { always = no }
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -430,7 +430,7 @@ ideas = {
 
 		SWE_cutting_the_army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_cutting_the_army"}
-			picture = GFX_idea_RUS_divided_army
+			picture = tfv_can_conscription_crisis
 			allowed = { always = no }
 			modifier = {
 				coordination_bonus = -0.1
@@ -882,7 +882,7 @@ ideas = {
 
 		SWE_military_resistance = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_military_resistance"}
-			picture = GFX_idea_generic_assassination
+			picture = generic_assassination
 			allowed = { always = no }
 			modifier = {
 				army_org_Factor = -0.30
@@ -1381,7 +1381,7 @@ ideas = {
 
 		SWE_radical_paramilitary_support = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_radical_paramilitary_support"}
-			picture = GFX_idea_NFA_loyal_society
+			picture = NFA_loyal_society
 			allowed = { always = no }
 			modifier = {
 				stability_weekly = 0.005

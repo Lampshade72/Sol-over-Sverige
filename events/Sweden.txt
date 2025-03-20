@@ -4023,7 +4023,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		}
 		
 	option = { ###Radical United Front
-		name = swe.8.d 
+		name = swe.8.e 
 		add_popularity = { ideology = radical_socialist popularity = 0.05 }		
 		add_popularity = { ideology = social_democrat popularity = 0.05 }	
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
@@ -6787,6 +6787,9 @@ country_event = {
 	}
 	option = {
 		name = swe_flavor.3.b
+		add_popularity = { ideology = national_populist = 0.02 }
+		add_popularity = { ideology = paternal_autocrat = 0.04}
+		add_popularity = { ideology = authoritarian_democrat = 0.03 }
 		add_political_power = -50
 	}
 }
