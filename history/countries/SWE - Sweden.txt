@@ -9,13 +9,6 @@ country_event = { id = swe.9999 days = 1 }
 
 
 
-
-
-
-
-
-country_event = { days = 2565 id = swe.109 }
-country_event = { days = 3872 id = swe.124 random_days = 24 }
 country_event = { days = 130 id = swe_flavor.1 }
 country_event = { days = 366 id = swe_flavor.2 }
 country_event = { days = 104 id = swe_flavor.3 }

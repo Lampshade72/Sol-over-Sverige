@@ -2332,6 +2332,14 @@ swe_flavor.19.d:0 "With war coming to the shores of Sweden, the stunt-pilot Elsa
 swe_flavor.19.a:0 "Everyone who wants to fight for Sweden is welcome!"
 swe_flavor.19.b:0 "Ladies! We need you on the homefront..."
 
+## new flavour events ##
+
+swe_flavor.20.t:0 "Sol över Sverige Releases!"
+swe_flavor.20.d:0 "As film and cinema grow ever more popular and easier to produce, a remake of the film ‘Sun Over Denmark’ was released today called ‘Sun Over Sweden’. Following two groups, one being the shop assistants Inga and Britta who travel on bike across Sweden, the other being Nisse and Rut enjoying their honeymoon in their truck. Directed by Arne Bornebusch, the film has drawn in many in Stockholm at its release, giving many a time for laughs and cheers as they enjoy their leisure. Showcasing the beautiful aspects of Sweden’s cities and countryside, a scene of a loving wedding to melt viewers hearts, with the film ending of a priest congratulating the newly wedded young couples, reminding those watching of the richness of Sweden, and of their love for the nation."
+swe_flavor.20.a:0 "Their love has also been linked to a greater, love for Sweden"
+
+
+
 ### TO BE REVISED STUFF ###
 
 swe.700.t:0 "The Stockholm Conference"
@@ -2673,6 +2681,17 @@ SWE_NDR_natsoc_ADJ:0 "Nordic"
 SWE_NDR_natsoc_DEF:0 "the National Nordic Revolutionary State"
 
 ## Basic cosmetics ##
+SWE_king_mil:0 "Kingdom of Sweden"
+SWE_king_mil_ADJ:0 "Swedish"
+SWE_king_mil_DEF:0 "the Kingdom of Sweden"
+
+SWE_mil:0 "Swedish State"
+SWE_mil_ADJ:0 "Swedish"
+SWE_mil_DEF:0 "the Swedish State"
+
+SWE_natpop_mil:0 "Swedish State"
+SWE_natpop_mil_ADJ:0 "Swedish"
+SWE_natpop_mil_DEF:0 "the Swedish State"
 
 SWE_sven_lind:0 "Swedish National Revolutionary State"
 SWE_sven_lind_ADJ:0 "Swedish"
@@ -2694,18 +2713,17 @@ SWE_radsoc:0 "Swedish Socialist Republic"
 SWE_radsoc_ADJ:0 "Swedish"
 SWE_radsoc_DEF:0 "the Swedish Socialist Republic"
 
-NFL_SWEREV:0 "Vinland Worker Colonial Administration"
-NFL_SWEREV_ADJ:0 "Vinlandish"
-NFL_SWEREV_DEF:0 "Vinland Worker Colonial Administration"
+SWE_NFLREV:0 "Vinland Worker Colonial Administration"
+SWE_NFLREV_ADJ:0 "Vinlandish"
+SWE_NFLREV_DEF:0 "Vinland Worker Colonial Administration"
 
-NFL_SWEMIL:0 "Swedish Colonial State of Vinland"
-NFL_SWEMIL_ADJ:0 "Vinlandish"
-NFL_SWEMIL_DEF:0 "Swedish Colonial State of Vinland"
+SWE_NFLMIL:0 "Swedish Colonial State of Vinland"
+SWE_NFLMIL_ADJ:0 "Vinlandish"
+SWE_NFLMIL_DEF:0 "Swedish Colonial State of Vinland"
 
-NFL_SWECRO:0 "Swedish Crown Colony of Vinland"
-NFL_SWECRO_ADJ:0 "Vinlandish"
-NFL_SWECRO_DEF:0 "Swedish Crown Colony of Vinland"
-
+SWE_NFLCRO:0 "Swedish Crown Colony of Vinland"
+SWE_NFLCRO_ADJ:0 "Vinlandish"
+SWE_NFLCRO_DEF:0 "Swedish Crown Colony of Vinland"
 
 SWE_FINPUPPY:0 "Finnish Occupied State"
 SWE_FINPUPPY_ADJ:0 "Finnish"
@@ -2721,7 +2739,8 @@ SWE_FINBIRD_DEF:0 "the Occupied Revolutionary Finnish State"
 
 SWE_FINDEM:0 "Finland"
 SWE_FINDEM_ADJ:0 "Finnish"
-SWE_FINDEM_DEF:0 "the Finland"
+SWE_FINDEM_DEF:0 "Finland"
+
 
 
 

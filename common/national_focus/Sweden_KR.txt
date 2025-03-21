@@ -1012,6 +1012,10 @@ focus_tree = {
 				has_country_flag = SWE_flag_red_in_sweden
 				has_country_flag = SWE_flag_military_steps_in		
 				}
+			NOT = {
+				has_completed_focus = SWE_FOP_former_victors_kaiser
+			}
+			
 		}
 
 		completion_reward = {
@@ -1291,7 +1295,6 @@ focus_tree = {
 				has_completed_focus = SWE_socialist_communist_victory
 				has_completed_focus = SWE_syndicalist_victory
 				has_completed_focus = SWE_radical_socialist_victory
-				has_completed_focus = SWE_radical_united_front
 			}
 			NOT = { 
 				has_completed_focus = SWE_FOP_democractic_light
@@ -7777,6 +7780,13 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			OR = {
+				has_country_flag = SWE_flag_military_steps_in
+				has_country_flag = SWE_election_safe_success
+			}
+		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWE_swedish_army_air"
 			add_ideas = SWE_gyllen_air_CAS1
@@ -7800,6 +7810,13 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			OR = {
+				has_country_flag = SWE_flag_military_steps_in
+				has_country_flag = SWE_election_safe_success
+			}
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWE_swedish_independent_air"
 			add_ideas = SWE_fighter_superior2
@@ -7821,6 +7838,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			has_country_flag = SWE_flag_red_in_sweden		
 		}
 
 		completion_reward = {
@@ -8395,6 +8416,14 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			OR = {
+				has_country_flag = SWE_flag_military_steps_in
+				has_country_flag = SWE_election_safe_success
+				has_country_flag = SWE_flag_red_in_sweden
+			}
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWE_navy_baltic_sea"
 			add_ideas = SWE_baltic_sea_fleet1
@@ -8416,6 +8445,14 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_country_flag = SWE_flag_military_steps_in
+				has_country_flag = SWE_election_safe_success
+				has_country_flag = SWE_flag_red_in_sweden
+			}
 		}
 
 		completion_reward = {
@@ -8440,6 +8477,14 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_country_flag = SWE_flag_military_steps_in
+				has_country_flag = SWE_election_safe_success
+				has_country_flag = SWE_flag_red_in_sweden
+			}
 		}
 
 		completion_reward = {
