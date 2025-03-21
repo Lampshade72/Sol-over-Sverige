@@ -341,7 +341,6 @@ SWE_foreign_policy_empire_decisions = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia"
 			add_stability = 0.10
 			add_ideas = SWE_integrate_scandinavia
-
 		}
 		
 		remove_effect = {
@@ -1308,7 +1307,7 @@ SWE_alliance_reachout = {
 }
 
 SWE_revolution_decisions = {
-	SWE_join_internationale_ls = {# join the big bois
+	SWE_join_internationale_ls = {
 		icon = generic_nationalism
 
 		allowed = { tag = SWE }
@@ -1685,7 +1684,7 @@ SWE_revolution_decisions = {
 			has_completed_focus = SWE_FOP_role_to_play
 			has_completed_focus = SWE_FOP_true_nordic_union
 			}
-			}
+		}
 		fire_only_once = yes
 		cost = 75
 		days_remove = 24
@@ -1742,23 +1741,52 @@ SWE_revolution_decisions = {
 			add_ideas = SWE_integrate_scandinavia
 			if = {
 				limit = { has_completed_focus = SWE_radical_socialist_victory } 
-				set_cosmetic_tag = SWE_NDR_radsoc		
+					if = { 
+						limit = { 840 = { is_owned_and_controlled_by = SWE } }
+							set_cosmetic_tag = SWE_NDR_radsoc
+
+					} else = {
+				set_cosmetic_tag = SWE_SCA_radsoc	
+				}
 			}
-			if = {
+			else_if = {
 				limit = { has_completed_focus = SWE_syndicalist_victory } 
-				set_cosmetic_tag = SWE_NDR_synd	
+					if = { 
+						limit = { 840 = { is_owned_and_controlled_by = SWE } }
+							set_cosmetic_tag = SWE_NDR_synd
+
+					} else = {				
+				set_cosmetic_tag = SWE_SCA_synd	
+				}
 			}
-			if = {
+			else_if = {
 				limit = { has_completed_focus = SWE_communists_alone } 
-				set_cosmetic_tag = SWE_NDR_flyg		
+					if = { 
+						limit = { 840 = { is_owned_and_controlled_by = SWE } }
+							set_cosmetic_tag = SWE_NDR_flyg
+
+					} else = {				
+				set_cosmetic_tag = SWE_SCA_flyg	
+				}
 			}
-			if = {
-				limit = { has_completed_focus = SWE_socialists_alone } 
-				set_cosmetic_tag = SWE_NDR_commie		
+			else_if = {
+				limit = { has_completed_focus = SWE_socialists_alone }
+					if = { 
+						limit = { 840 = { is_owned_and_controlled_by = SWE } }
+							set_cosmetic_tag = SWE_NDR_commie
+
+					} else = {				
+				set_cosmetic_tag = SWE_NDR_commie	
+				}
 			}
-			if = {
+			else_if = {
 				limit = { has_completed_focus = SWE_national_revolution } 
-				set_cosmetic_tag = SWE_NDR_natsoc		
+					if = { 
+						limit = { 840 = { is_owned_and_controlled_by = SWE } }
+							set_cosmetic_tag = SWE_NDR_natsoc
+					} else = {				
+				set_cosmetic_tag = SWE_SCA_natsoc	
+				}
 			}					
 
 		}

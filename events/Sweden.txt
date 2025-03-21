@@ -1241,9 +1241,24 @@ country_event = { #Empire of our own ##LS##
 
 	is_triggered_only = yes
 
-	option = {
+	option = { #Declare the Empire
 		name = swefop.1.a
+		add_political_power = -5
+		if = { limit = {
+				has_government = national_populist
+			}
+			set_cosmetic_tag = SWE_EMP_2
+		}
+		else = {
+			set_cosmetic_tag = SWE_EMP_1
+		}
+		
 	}
+	option = { #Nah
+		name = swefop.1.b
+		add_political_power = 10
+	}	
+	
 }
 
 country_event = { #Empire of our own 2 #talk abouut killing scandi bros ##LS##

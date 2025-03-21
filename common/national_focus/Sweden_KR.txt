@@ -2472,7 +2472,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = swedem.16 }			
+			country_event = { id = swedem.18 }			
 		}
 	}
 

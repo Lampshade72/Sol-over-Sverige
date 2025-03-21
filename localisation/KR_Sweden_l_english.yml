@@ -2644,9 +2644,17 @@ SWE_prefix_roy_en:0 "Royal"
 SWE_kth_loc:0 "KTH"
 SWE_rth_loc:0 "RTH"
 
-SWE_EMP:0 "Swedish Empire"
-SWE_EMP_ADJ:0 "Swedish"
-SWE_EMP_DEF:0 "the Swedish Empire"
+
+
+## Formables ##
+
+SWE_EMP_1:0 "Swedish Empire"
+SWE_EMP_1_ADJ:0 "Swedish"
+SWE_EMP_1_DEF:0 "the Swedish Empire"
+
+SWE_EMP_2:0 "Swedish Empire"
+SWE_EMP_2_ADJ:0 "Swedish"
+SWE_EMP_2_DEF:0 "the Swedish Empire"
 
 SWE_elmo_empire:0 "Union of European Crowns"
 SWE_elmo_empire_ADJ:0 "European"
@@ -2679,6 +2687,26 @@ SWE_NDR_commie_DEF:0 "the Union of Soviet Nordic Republics"
 SWE_NDR_natsoc:0 "National Nordic Revolutionary State"
 SWE_NDR_natsoc_ADJ:0 "Nordic"
 SWE_NDR_natsoc_DEF:0 "the National Nordic Revolutionary State"
+
+SWE_SCA_radsoc:0 "Union of Scandinavian Republics"
+SWE_SCA_radsoc_ADJ:0 "Scandinavian"
+SWE_SCA_radsoc_DEF:0 "the Union of Scandinavian Republics"
+
+SWE_SCA_synd:0 "Scandinavian Commune"
+SWE_SCA_synd_ADJ:0 "Scandinavian"
+SWE_SCA_synd_DEF:0 "the Scandinavian Commune"
+
+SWE_SCA_flyg:0 "Scandinavian Revolutionary State"
+SWE_SCA_flyg_ADJ:0 "Scandinavian"
+SWE_SCA_flyg_DEF:0 "the Scandinavian Revolutionary State"
+
+SWE_NSCA_commie:0 "Union of Soviet Scandinavian Republics"
+SWE_SCA_commie_ADJ:0 "Scandinavian"
+SWE_SCA_commie_DEF:0 "the Union of Soviet Scandinavian Republics"
+
+SWE_SCA_natsoc:0 "National Scandinavian Revolutionary State"
+SWE_SCA_natsoc_ADJ:0 "Scandinavian"
+SWE_SCA_natsoc_DEF:0 "the National Scandinavian Revolutionary State"SCA
 
 ## Basic cosmetics ##
 SWE_king_mil:0 "Kingdom of Sweden"
