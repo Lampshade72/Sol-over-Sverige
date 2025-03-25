@@ -1823,7 +1823,7 @@ SWE_vinland_decision = {
 				NOT = {
 				country_exists = NFL
 				}		
-			is_puppet_of = COR
+			is_puppet_of = SWE
 			}
 
 		}
@@ -1833,24 +1833,9 @@ SWE_vinland_decision = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_establish_vinland"
 			country_event = { id = swefop.998 } 
-			NFL = {
-			set_cosmetic_tag = NFL_SWECRO
-			}
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

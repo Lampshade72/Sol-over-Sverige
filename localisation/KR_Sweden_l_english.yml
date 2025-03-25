@@ -2769,6 +2769,11 @@ SWE_FINDEM:0 "Finland"
 SWE_FINDEM_ADJ:0 "Finnish"
 SWE_FINDEM_DEF:0 "Finland"
 
+SWE_GOLDCOASTCRO:0 "Swedish Crown Colony of the Gold Coast"
+SWE_GOLDCOASTCRO_ADJ:0 "Swedish"
+SWE_GOLDCOASTCRO_DEF:0 "the Swedish Crown Colony of the Gold Coast"
 
-
+SWE_GOLDCOAST:0 "Swedish Colony of the Gold Coast"
+SWE_GOLDCOAST_ADJ:0 "Swedish"
+SWE_GOLDCOAST_DEF:0 "the Swedish Colony of the Gold Coast"
 

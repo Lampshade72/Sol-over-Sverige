@@ -11,9 +11,8 @@ add_namespace = swe_flavor
 add_namespace = swemil
 add_namespace = swerev
 add_namespace = TNTswe
-add_namespace = swescml
-add_namespace = swesd
-add_namespace = swessv
+
+
 add_namespace = swetot
 add_namespace = swefop
 add_namespace = swedem
@@ -41,15 +40,23 @@ country_event = { ####swedish gold coast ##LS##
 
 	option = { ## We love the gold coast
 		name = swefop.999.a
+			add_political_power = -10
 				release_puppet = CIV
 				set_autonomy = {
 					target = CIV
 					autonomous_state = kx_colored_puppet
-				}				
+				}
+			If = { limit = { 
+					NOT = {
+						has_country_flag = SWE_flag_crown_restored
+					}
+					
+					has_country_flag = SWE_flag_military_steps_in
+					}
 				CIV = {
 					load_focus_tree = generic_focus				
 					remove_all_ministers = yes
-					set_cosmetic_tag = CIV_swedish
+					set_cosmetic_tag = SWE_GOLDCOAST
 					set_politics = {
 					ruling_party = paternal_autocrat
 					elections_allowed = no
@@ -57,8 +64,8 @@ country_event = { ####swedish gold coast ##LS##
 				
 					set_party_name = {
 					ideology = paternal_autocrat
-					long_name = CIV_swedish_long
-					name = CIV_swedish
+					long_name = Swedish Colonial Administration of the Gold Coast
+					name = Swedish Colonial Administration
 				}
 					create_country_leader = {
 					name = "Bob The Swede"
@@ -68,14 +75,41 @@ country_event = { ####swedish gold coast ##LS##
 				}
 					add_popularity = {
 					ideology = paternal_autocrat
-					popularity = 0.30
+					popularity = 0.38
 						}
-				}	
-		
+				}
+			} else = {
+				CIV = {
+					load_focus_tree = generic_focus				
+					remove_all_ministers = yes
+					set_cosmetic_tag = SWE_GOLDCOASTCRO
+					set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				
+					set_party_name = {
+					ideology = paternal_autocrat
+					long_name = Swedish Crown Colonial Administration of the Gold Coast
+					name = Swedish Crown Colonial Administration
+				}
+					create_country_leader = {
+					name = "Bob The Swede"
+					picture = "gfx/Leaders/GHA/Portait_Ashanti_bob.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+					add_popularity = {
+					ideology = paternal_autocrat
+					popularity = 0.38
+						}
+				}
+			}
 	}
 
 	option = { ## nah i dont want it
 		name = swefop.999.b
+		add_political_power = 50
 	}	
 }
 
@@ -1308,7 +1342,7 @@ country_event = { #Empire of our own 5 #Winning chat ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.5" }
 	title = swefop.5.t
 	desc = swefop.5.d
-	picture = GFX_report_event_GER_Blackweekover
+	picture = GFX_report_event_SOS_empire_map
 
 	is_triggered_only = yes
 
@@ -1317,12 +1351,12 @@ country_event = { #Empire of our own 5 #Winning chat ##LS##
 	}
 }
 
-country_event = { #neutrality 1 ##LS##
+country_event = { #empire final ##LS##
 	id = swefop.6
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.6" }
 	title = swefop.6.t
 	desc = swefop.6.d
-	picture = GFX_report_event_SWE_neutral_1
+	picture = GFX_report_event_SOS_empire_map
 
 	is_triggered_only = yes
 
@@ -1331,7 +1365,7 @@ country_event = { #neutrality 1 ##LS##
 	}
 }
 
-country_event = { #neutrality 2 ##LS##
+country_event = { #neutrality 1 ##LS##
 	id = swefop.7
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.7" }
 	title = swefop.7.t
@@ -1345,12 +1379,12 @@ country_event = { #neutrality 2 ##LS##
 	}
 }
 
-country_event = { #which faction to send offer ##LS##
+country_event = { #neutrality 2 final ##LS##
 	id = swefop.8
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.8" }
 	title = swefop.8.t
 	desc = swefop.8.d
-	picture = GFX_report_event_GER_Blackweekover
+	picture = GFX_report_event_SWE_neutral_1
 
 	is_triggered_only = yes
 
@@ -1557,7 +1591,7 @@ country_event = { ####United Morals under the crown ##LS##
 	is_triggered_only = yes
 
 	option = {
-		name = swescml.1.a
+		name = swedem.1.a
 		add_political_power = 10
 	}
 }

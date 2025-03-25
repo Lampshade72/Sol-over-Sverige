@@ -2222,7 +2222,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
-			country_event = { id = swefop.5 days = 5 }
+			country_event = { id = swefop.6 days = 18 }
 			swap_ideas = {
 			remove_idea = SWE_swedish_empire	
 			add_idea = SWE_swedish_empire2
