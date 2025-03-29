@@ -1737,7 +1737,7 @@ SWE_revolution_decisions = {
 		days_remove = 150
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_revolution"
-			add_stability = 0.10
+			add_stability = -0.10
 			add_ideas = SWE_integrate_scandinavia
 			if = {
 				limit = { has_completed_focus = SWE_radical_socialist_victory } 

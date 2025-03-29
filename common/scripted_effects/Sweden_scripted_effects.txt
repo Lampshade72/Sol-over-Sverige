@@ -455,30 +455,3 @@ SWE_add_special_reaction_dudes = {
 }
 
 
-
-
-
-SWE_upgrade_svenska_aeroplan = {
-	if = {
-		limit = { has_dlc_aat = no }
-		custom_effect_tooltip = improves_designer_tt
-		effect_tooltip = {
-			swap_ideas = {
-				remove_idea = svenska_aeroplan
-				add_idea = svenska_aeroplan_ab_upgraded
-			}
-		}
-		hidden_effect = {
-			if = {
-				limit = { has_idea = svenska_aeroplan }
-				swap_ideas = {
-					remove_idea = svenska_aeroplan
-					add_idea = svenska_aeroplan_ab_upgraded
-				}
-			}
-		}
-	}
-	else = {
-		mio:SWE_svenska_aeroplan_ab_organisation = { add_mio_funds = 1200 }
-	}
-}

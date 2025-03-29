@@ -1066,6 +1066,11 @@ swefop.777.a:0 "Complete Swedification!"
 swefop.777.b:0 "Incorporate the Swedsih dominated regions, prepare the rest for eventual integration!"
 swefop.777.c:0 "Semi-Independent governance under our watchful eye!"
 
+swefop.500.t:0 "Nordic switcher"
+swefop.500.d:0 "e"
+swefop.500.a:0 "yes"
+swefop.500.b:0 "no"
+
 swefop.1.t:0 "Birth of a new Empire"
 swefop.1.d:0 "Yay!"
 swefop.1.a:0 "Time to take take take!"
@@ -2646,15 +2651,7 @@ SWE_rth_loc:0 "RTH"
 
 
 
-## Formables ##
-
-SWE_EMP_1:0 "Swedish Empire"
-SWE_EMP_1_ADJ:0 "Swedish"
-SWE_EMP_1_DEF:0 "the Swedish Empire"
-
-SWE_EMP_2:0 "Swedish Empire"
-SWE_EMP_2_ADJ:0 "Swedish"
-SWE_EMP_2_DEF:0 "the Swedish Empire"
+## special Formables ##
 
 SWE_elmo_empire:0 "Union of European Crowns"
 SWE_elmo_empire_ADJ:0 "European"
@@ -2667,6 +2664,8 @@ SWE_elmo_empire2_DEF:0 "the European Kingdom"
 SWE_elmo_empire3:0 "Union of European Crowns"
 SWE_elmo_empire3_ADJ:0 "European"
 SWE_elmo_empire3_DEF:0 "the European Kingdom"
+
+##left formables##
 
 SWE_NDR_radsoc:0 "Union of Nordic Republics"
 SWE_NDR_radsoc_ADJ:0 "Nordic"
@@ -2700,7 +2699,7 @@ SWE_SCA_flyg:0 "Scandinavian Revolutionary State"
 SWE_SCA_flyg_ADJ:0 "Scandinavian"
 SWE_SCA_flyg_DEF:0 "the Scandinavian Revolutionary State"
 
-SWE_NSCA_commie:0 "Union of Soviet Scandinavian Republics"
+SWE_SCA_commie:0 "Union of Soviet Scandinavian Republics"
 SWE_SCA_commie_ADJ:0 "Scandinavian"
 SWE_SCA_commie_DEF:0 "the Union of Soviet Scandinavian Republics"
 
@@ -2708,10 +2707,26 @@ SWE_SCA_natsoc:0 "National Scandinavian Revolutionary State"
 SWE_SCA_natsoc_ADJ:0 "Scandinavian"
 SWE_SCA_natsoc_DEF:0 "the National Scandinavian Revolutionary State"SCA
 
+## Right formables ##
+
+SWE_EMP_1:0 "Swedish Empire"
+SWE_EMP_1_ADJ:0 "Swedish"
+SWE_EMP_1_DEF:0 "the Swedish Empire"
+
+SWE_EMP_2:0 "Swedish Empire"
+SWE_EMP_2_ADJ:0 "Swedish"
+SWE_EMP_2_DEF:0 "the Swedish Empire"
+
+
+
 ## Basic cosmetics ##
 SWE_king_mil:0 "Kingdom of Sweden"
 SWE_king_mil_ADJ:0 "Swedish"
 SWE_king_mil_DEF:0 "the Kingdom of Sweden"
+
+SWE_mil_bagge:0 "Kingdom of Sweden"
+SWE_mil_bagge_ADJ:0 "Swedish"
+SWE_mil_bagge_DEF:0 "the Kingdom of Sweden"
 
 SWE_mil:0 "Swedish State"
 SWE_mil_ADJ:0 "Swedish"
@@ -2733,9 +2748,9 @@ SWE_linderot:0 "Swedish Soviet Republic"
 SWE_linderot_ADJ:0 "Swedish"
 SWE_linderot_DEF:0 "the Swedish Soviet Republic"
 
-SWE_syndicalist:0 "Union of Sweden"
-SWE_syndicalist_ADJ:0 "Swedish"
-SWE_syndicalist_DEF:0 "the Union of Sweden"
+SWE_syndies:0 "Union of Sweden"
+SWE_syndies_ADJ:0 "Swedish"
+SWE_syndies_DEF:0 "the Union of Sweden"
 
 SWE_radsoc:0 "Swedish Socialist Republic"
 SWE_radsoc_ADJ:0 "Swedish"

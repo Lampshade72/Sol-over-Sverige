@@ -11,8 +11,6 @@ add_namespace = swe_flavor
 add_namespace = swemil
 add_namespace = swerev
 add_namespace = TNTswe
-
-
 add_namespace = swetot
 add_namespace = swefop
 add_namespace = swedem
@@ -60,13 +58,14 @@ country_event = { ####swedish gold coast ##LS##
 					set_politics = {
 					ruling_party = paternal_autocrat
 					elections_allowed = no
-				}
+					}
 				
 					set_party_name = {
 					ideology = paternal_autocrat
 					long_name = Swedish Colonial Administration of the Gold Coast
 					name = Swedish Colonial Administration
-				}
+					}
+					
 					create_country_leader = {
 					name = "Bob The Swede"
 					picture = "gfx/Leaders/GHA/Portait_Ashanti_bob.png"
@@ -90,8 +89,8 @@ country_event = { ####swedish gold coast ##LS##
 				
 					set_party_name = {
 					ideology = paternal_autocrat
-					long_name = Swedish Crown Colonial Administration of the Gold Coast
-					name = Swedish Crown Colonial Administration
+					long_name = "Swedish Crown Colonial Administration of the Gold Coast"
+					name = "Swedish Crown Colonial Administration"
 				}
 					create_country_leader = {
 					name = "Bob The Swede"
@@ -226,11 +225,10 @@ country_event = { ####Vinland ##LS##
 			
 		
 	}
-
 	
 }
 
-country_event = { #Finland now ours ##LS##
+country_event = { #Finland now ours 
 	id = swefop.777
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.777" }
 	title = swefop.777.t
@@ -1257,10 +1255,67 @@ country_event = { #Finland now ours ##LS##
 		}		
 		
 	}	
-	
-}
+	}
 
 
+
+country_event = { #give you nordic if not
+	id = swefop.500
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.500" }
+	title = swefop.500.t
+	desc = swefop.500.d
+	picture = GFX_report_event_SOS_empire_map
+
+	trigger = {
+				tag = SWE
+				840 = { is_owned_and_controlled_by = SWE } 
+				OR = {
+					has_cosmetic_tag = SWE_SCA_radsoc
+					has_cosmetic_tag = SWE_SCA_synd
+					has_cosmetic_tag = SWE_SCA_flyg
+					has_cosmetic_tag = SWE_SCA_commie
+					has_cosmetic_tag = SWE_SCA_natsoc
+				}
+		}
+
+	option = { #Declare Nordic
+		name = swefop.500.a
+		add_political_power = -5
+		if = { limit = {
+				has_cosmetic_tag = SWE_SCA_radsoc
+			}
+			set_cosmetic_tag = SWE_NDR_radsoc
+		} 
+		
+		else_if = { limit = {
+				has_cosmetic_tag = SWE_SCA_synd
+			}
+			set_cosmetic_tag = SWE_NDR_synd
+		}
+		
+		else_if = { limit = {
+				has_cosmetic_tag = SWE_SCA_flyg
+			}
+			set_cosmetic_tag = SWE_NDR_flyg
+		}
+		
+		else_if = { limit = { 
+				has_cosmetic_tag = SWE_SCA_commie
+			}
+			set_cosmetic_tag = SWE_NDR_commie
+		}
+		
+		else_if = { limit = {
+				has_cosmetic_tag = SWE_SCA_natsoc
+			}
+			set_cosmetic_tag = SWE_NDR_natsoc
+		}		
+	}
+	option = { #Stay as is
+		name = swefop.500.b
+		add_political_power = 10
+	}	
+}	
 
 
 
@@ -1391,10 +1446,6 @@ country_event = { #neutrality 2 final ##LS##
 	option = {
 		name = swefop.8.a
 	}
-	
-	
-	
-	
 	
 }
 
@@ -3190,7 +3241,7 @@ country_event = { ####choose your character ##LS##
 		add_ideas = SWE_Albert_Jensen_for_syn
 		add_ideas = SWE_Gustav_Sjoestroem_eco_syn 
 		add_ideas = SWE_Folke_Fridell_sec_syn
-		set_cosmetic_tag = SWE_syndicalist
+		set_cosmetic_tag = SWE_syndies
 	}	
 
 	option = { ##tots
