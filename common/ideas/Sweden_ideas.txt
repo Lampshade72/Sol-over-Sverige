@@ -1369,7 +1369,7 @@ ideas = {
 
 		SWE_army_symbol = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_army_symbol"}
-			picture = GFX_idea_GEN_army_doctrine_def
+			picture = GEN_army_doctrine_def
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.04
@@ -1486,7 +1486,7 @@ ideas = {
 
 		SWE_autdem1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_autdem1"}
-			picture = GFX_idea_VNC_auth_dem_victory_idea
+			picture = VNC_auth_dem_victory_idea
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.06
@@ -1501,7 +1501,7 @@ ideas = {
 
 		SWE_autdem2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_autdem2"}
-			picture = GFX_idea_VNC_auth_dem_victory_idea
+			picture = VNC_auth_dem_victory_idea
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.08
@@ -1517,7 +1517,7 @@ ideas = {
 		
 		SWE_autdem3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_autdem3"}
-			picture = GFX_idea_VNC_auth_dem_victory_idea
+			picture = VNC_auth_dem_victory_idea
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.12
@@ -1533,7 +1533,7 @@ ideas = {
 
 		SWE_patriotic_unions = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_patriotic_unions"}
-			picture = GFX_idea_death_men
+			picture = death_men
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.12
@@ -1549,7 +1549,7 @@ ideas = {
 
 		SWE_army_expansion = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_army_expansion"}
-			picture = GFX_idea_NEE_donovans_raiders
+			picture = NEE_donovans_raiders
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.12
@@ -1565,7 +1565,7 @@ ideas = {
 
 		SWE_authdem_civilian = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_authdem_civilian"}
-			picture = GFX_idea_civil_service_expansion
+			picture = civil_service_expansion
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.12
@@ -1575,13 +1575,13 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
 				research_speed_factor = 0.08
-				authoritarian_democrat_drift = 0.03
+				social_conservative_drift = 0.04
 			}				
 		}
 
 		SWE_authdem_military = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_authdem_military"}
-			picture = GFX_idea_NFA_milice_state
+			picture = NFA_milice_state
 			allowed = { always = no }
 			equipment_bonus = {
 				infantry_equipment = {
@@ -1612,7 +1612,7 @@ ideas = {
 
 		SWE_new_paramilitaries = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_new_paramilitaries"}
-			picture = GFX_idea_BUL_feudalism
+			picture = BUL_feudalism
 			allowed = { always = no }
 			modifier = {
 				stability_weekly = 0.005
@@ -1627,7 +1627,7 @@ ideas = {
 
 		SWE_worker_patriotism = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_worker_patriotism"}
-			picture = GFX_idea_CAN_training_idea
+			picture = CAN_training_idea
 			allowed = { always = no }
 			modifier = {
 				industrial_capacity_factory = 0.10
@@ -1639,7 +1639,7 @@ ideas = {
 
 		SWE_under_the_king = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_under_the_king"}
-			picture = GFX_idea_UKR_crown
+			picture = UKR_crown
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.10
@@ -1653,7 +1653,7 @@ ideas = {
 
 		SWE_riksledare = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_riksledare"}
-			picture = GFX_idea_WHR_theology_of_liberation
+			picture = WHR_theology_of_liberation
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.04
@@ -1668,7 +1668,7 @@ ideas = {
 
 		SWE_arch_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_arch_1"}
-			picture = GFX_idea_BAN_vicious_soldiers
+			picture = BAN_vicious_soldiers
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.04
@@ -1682,7 +1682,7 @@ ideas = {
 
 		SWE_arch_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_arch_2"}
-			picture = GFX_idea_BAN_vicious_soldiers
+			picture = BAN_vicious_soldiers
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.08
@@ -1696,7 +1696,7 @@ ideas = {
 
 		SWE_arch_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_arch_3"}
-			picture = GFX_idea_BAN_vicious_soldiers
+			picture = BAN_vicious_soldiers
 			allowed = { always = no }
 			modifier = {
 				stability_factor = 0.10
@@ -3406,8 +3406,8 @@ ideas = {
 			}
 			traits = { industrial_manufacturer }
             modifier = {
-				production_speed_arms_factory_factor = 0.13
-				production_speed_industrial_complex_factor = 0.13
+				production_speed_arms_factory_factor = 0.14
+				production_speed_industrial_complex_factor = 0.14
 			}
 			research_bonus = {
 				industry = 0.1

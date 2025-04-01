@@ -2000,7 +2000,7 @@ country_event = { ####Military don't like it ##LS##
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }	
 		add_ideas = SWE_military_resistance
 		hidden_effect = {
-			country_event = { id = swerev.2 days = 2 }
+			country_event = { id = swerev.2 days = 7 }
 		}
 	}
 }
@@ -2020,7 +2020,7 @@ country_event = { ####Socialists prepare for military revolt ##LS##
 		add_popularity = { ideology = syndicalist popularity = 0.06 }	
 		add_popularity = { ideology = radical_socialist popularity = 0.04 }			
 		hidden_effect = {
-			country_event = { id = swerev.3 days = 2 }
+			country_event = { id = swerev.3 days = 8 }
 		}
 	}
 }
@@ -2777,6 +2777,8 @@ country_event = { #return to norm - monarch ##LS##
 		add_popularity = { ideology = social_conservative popularity = 0.10 }		
 		set_politics = { ruling_party = social_conservative elections_allowed = no }		
 		add_ideas = SWE_Goesta_Bagge_hog_sco
+		set_cosmetic_tag = SWE_mil_bagge
+		add_ideas = SWE_authdem_civilian
 
 	}	
 }
@@ -6882,15 +6884,15 @@ country_event = {
 
 	option = {
 		name = swe_flavor.3.a
-		add_popularity = { ideology = radical_socialist popularity = 0.1 }
-		add_popularity = { ideology = syndicalist popularity = 0.05 }
-		add_popularity = { ideology = totalist popularity = 0.05 }
-		add_popularity = { ideology = social_democrat popularity = 0.1 }
+		add_popularity = { ideology = radical_socialist popularity = 0.05 }
+		add_popularity = { ideology = syndicalist popularity = 0.02 }
+		add_popularity = { ideology = totalist popularity = 0.02 }
+		add_popularity = { ideology = social_democrat popularity = 0.03 }
 	}
 	option = {
 		name = swe_flavor.3.b
 		add_popularity = { ideology = national_populist = 0.02 }
-		add_popularity = { ideology = paternal_autocrat = 0.04}
+		add_popularity = { ideology = paternal_autocrat = 0.04 }
 		add_popularity = { ideology = authoritarian_democrat = 0.03 }
 		add_political_power = -50
 	}
