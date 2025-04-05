@@ -1036,7 +1036,7 @@ focus_tree = {
 			focus = SWE_INF_embrace_kaiser
 			focus = SWE_INF_gradual_removal
 			}
-		mutually_exclusive = { focus = SWE_INF_abrupt_pull_out }
+		mutually_exclusive = { focus = SWE_INF_swedish_primancy }
 		x = 1
 		y = 2
 		relative_position_id = SWE_INF_german_cloud
