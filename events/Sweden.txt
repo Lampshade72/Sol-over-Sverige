@@ -2768,6 +2768,7 @@ country_event = { #return to norm - monarch ##LS##
 
 	option = { #Keep military apparatus
 		name = swemil.30.a
+		add_soccon_to_coalition = yes
 	
 	}
 
@@ -2779,6 +2780,7 @@ country_event = { #return to norm - monarch ##LS##
 		add_ideas = SWE_Goesta_Bagge_hog_sco
 		set_cosmetic_tag = SWE_mil_bagge
 		add_ideas = SWE_authdem_civilian
+		add_authdem_to_coalition = yes
 
 	}	
 }
@@ -2794,6 +2796,8 @@ country_event = { #iron sharpen iron - no monarch ##LS##
 
 	option = { 
 		name = swemil.31.a
+		add_stability = 0.05
+		add_political_power = 60
 	
 	}
 }

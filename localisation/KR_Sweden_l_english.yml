@@ -401,11 +401,11 @@ SWE_funding_research_desc:0 ""
 SWE_lunds_universitet_donation:0 "Lunds University Donations"
 SWE_lunds_universitet_donation_desc:0 ""
 SWE_chalmers_uni:0 "Professional Prowess of Chalmers University"
-SWE_chalmers_uni_desc:0 ""
+SWE_chalmers_uni_desc:0 "Chlamer’s university stands as one of our best centres for engineering studies, by furthering its funding, we will expand the future generation of engineers!"
 SWE_research_grants_and_schemes:0 "Research Grants and Benefit Schemes"
 SWE_research_grants_and_schemes_desc:0 ""
 SWE_synthetic_research:0 "Synthetic Oil Experimentation"
-SWE_synthetic_research_desc:0 ""
+SWE_synthetic_research_desc:0 "Our current oil reserves will not sustain our growing nation, both in the civilian sector and the military. Synthetic oil comes as a new way for nations without major natural oil reserves to begin to rival others. We shall fund our research into this synthetic oil to maximise our chances of independence in the future."
 
 SWE_INF_german_cloud:0 "The German Cloud"
 SWE_INF_german_cloud_desc:0 "With the political situation now at some semblance of stability, the nation may once again draw her attention to the issue of German capital in Sweden."
@@ -500,9 +500,9 @@ SWE_radical_socialist_victory_desc:0 "Once more the people have chosen us to lea
 SWE_land_to_people:0 "People's Land"
 SWE_land_to_people_desc:0 "People's Land"
 SWE_internationale_aid:0 "Help from the Internationale"
-SWE_internationale_aid_desc:0 "Help from the Internationale"
+SWE_internationale_aid_desc:0 "The Internationale is the most substantial global faction on the world stage. Showing support to our unstable regime when we fought against the attempted coup by the monarchists. We shall further aid between our nations!"
 SWE_dissolve_noble_estates:0 "Distributing Noble Estates"
-SWE_dissolve_noble_estates_desc:0 "Distributing Noble Estates"
+SWE_dissolve_noble_estates_desc:0 "There still remain many former noble’s properties that lie around Sweden. We shall turn these into something far more useful, from homes to workers to administration complexes."
 SWE_connections_to_russian_socialists:0 "Slaves No More"
 SWE_connections_to_russian_socialists_desc:0 "Connections to Foreign Socialists"
 SWE_mass_education_reform:0 "Mass Education Reform"
@@ -599,17 +599,17 @@ SWE_ties_to_international_nationalists_desc:0 "It has been known that there are 
 SWE_state_land_without_social:0 "State Land without Socialism"
 SWE_state_land_without_social_desc:0 "New government policies of nationalising land swathes of land across Sweden will allow for greater government authority over the construction of factories and infrastructure. Should the time come, the building of bunkers and defensive structures for Sweden will also more easily be made, cutting away the red tape of bureaucracy. Seen as somewhat controversial as those in the moderate right call a move ‘socialist’, however it is essential for the defence of Sweden and her livelihood."
 SWE_grand_military_awakening:0 "Army, Symbol of Devotion"
-SWE_grand_military_awakening_desc:0 "Army, Symbol of Devotion"
+SWE_grand_military_awakening_desc:0 "The soldier will be made into the image of the model man in Sweden, someone who in their heart holds their home close, prepared to sacrifice it all for her freedom."
 SWE_dictate_of_one:0 "The Riksledare"
-SWE_dictate_of_one_desc:0 "The Grand Leader"
+SWE_dictate_of_one_desc:0 "The Riksledare shall be given further extended powers to stabilize the nation, while our detractors call this a dictatorship of old absolute monarchies, we see it as necessary in protecting Sweden."
 SWE_council_of_command:0 "Nationalist Authority inside the Crown"
-SWE_council_of_command_desc:0 "Council Of Nationalists"
+SWE_council_of_command_desc:0 "A grand council of the nation's top nationalist minds shall be organised to best lead the nation, headed by our current leader, they shall best mold Sweden to serve the crown."
 SWE_svea_rike:0 "Svea Rike!"
 SWE_svea_rike_desc:0 "Svea Rike!"
 SWE_create_secret_police:0 "Eyes in the Dark"
 SWE_create_secret_police_desc:0 "Eyes in the Dark"
 SWE_unending_martial_law:0 "Permanent Martial Law"
-SWE_unending_martial_law_desc:0 "Permanent Martial Law"
+SWE_unending_martial_law_desc:0 "The nation still stands as far too unstable to remove martial law, the unfortunate necessity is that the national curfew and military patrols in cities will remain for the foreseeable future."
 SWE_junga_junta:0 "The Junga Junta"
 SWE_junga_junta_desc:0 "The Junga Junta"
 SWE_away_with_paramilitary_thugs:0 "Disarm the Paramilitaries"
@@ -658,27 +658,27 @@ SWE_sweden_guided_by_most_loyal:0 "Sweden Guided by her most Loyal"
 SWE_sweden_guided_by_most_loyal_desc:0 "Sweden Guided by her most Loyal"
 
 SWE_sesame_street:0 "Maurrassisme Triumph"
-
+SWE_sesame_street_desc:0 "Maurrassisme Triumph"
 SWE_regions_affirm:0 "Localist Power Expansion"
-
+SWE_regions_affirm_desc:0 "Localist Power Expansion"
 SWE_royal_youth:0 "Royal Youth Program"
-
+SWE_royal_youth_desc:0 "Royal Youth Program"
 SWE_new_royal_guard:0 "Reforging the Paramilitaries"
-
+SWE_new_royal_guard_desc:0 "Reforging the Paramilitaries"
 SWE_protest_catholic_issue:0 "The Reformation Conundrum"
-
+SWE_protest_catholic_issue_desc:0 "The Reformation Conundrum"
 SWE_swedish_revanchism:0 "Swedish Revanchism"
-
+SWE_swedish_revanchism_desc:0 "Swedish Revanchism"
 SWE_fluent_in_maurass:0 "Fluent in Doctrine"
-
+SWE_fluent_in_maurass_desc:0 "Fluent in Doctrine"
 SWE_royal_corporatism:0 "Expand Royal Corporatism"
-
+SWE_royal_corporatism_desc:0 "Expand Royal Corporatism"
 SWE_reinforce_hierarchy:0 "Enforcing Hierarchy"
-
+SWE_reinforce_hierarchy_desc:0 "Enforcing Hierarchy"
 SWE_latin_scandinavia:0 "Latinise Scandinavia"
-
+SWE_latin_scandinavia_desc:0 "Latinise Scandinavia"
 SWE_oragnic_state:0 "The Northern Organic State"
-
+SWE_oragnic_state_desc:0 "The Northern Organic State"
 
 ##FOP##
 
