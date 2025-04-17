@@ -4829,6 +4829,75 @@ focus_tree = {
 	}
 
 	focus = { 
+		id = SWE_junga_junta
+		icon = GFX_goal_SWE_focus_jung
+		prerequisite = { focus = SWE_place_of_the_crown }
+
+		x = 0
+		y = 3
+		cost = 5
+		relative_position_id = SWE_martial_law_declared
+		ai_will_do = {
+			factor = 80
+		}
+		available = { 
+			has_country_flag = SWE_flag_jung_junta
+		}
+		
+		completion_reward = {
+			add_ideas = SWE_pataut1
+			country_event = { id = swemil.18 }
+		}
+	}	
+
+	focus = { 
+		id = SWE_archibald_take_command
+		icon = GFX_goal_SWE_focus_douglas
+		prerequisite = { focus = SWE_place_of_the_crown }
+
+		x = 7
+		y = 3
+		cost = 5
+		relative_position_id = SWE_martial_law_declared
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			has_country_flag = SWE_flag_archibald_winning
+		}
+		
+		completion_reward = {
+			country_event = { id = swemil.8 }
+			add_ideas = SWE_arch_1
+			add_popularity = { ideology = national_populist popularity = 0.15 }
+		}
+	}
+
+	focus = { 
+		id = SWE_authdem_stabilize_nation
+		icon = GFX_goal_SWE_focus_ehrensvard
+		prerequisite = { focus = SWE_place_of_the_crown }
+
+		x = -7
+		y = 3
+		cost = 5
+		relative_position_id = SWE_martial_law_declared
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			has_country_flag = SWE_flag_authdem_junta
+		}
+		
+		completion_reward = {
+			add_ideas = SWE_autdem1
+			country_event = { id = swemil.26 }
+		}
+	}
+
+	focus = { 
 		id = SWE_create_secret_police
 		icon = GFX_goal_LEC_police2
 		prerequisite = { 
@@ -4934,74 +5003,7 @@ focus_tree = {
 		}
 	}	
 
-	focus = { 
-		id = SWE_junga_junta
-		icon = GFX_goal_SWE_focus_jung
-		prerequisite = { focus = SWE_place_of_the_crown }
 
-		x = 0
-		y = 3
-		cost = 5
-		relative_position_id = SWE_martial_law_declared
-		ai_will_do = {
-			factor = 80
-		}
-		available = { 
-			has_country_flag = SWE_flag_jung_junta
-		}
-		
-		completion_reward = {
-			add_ideas = SWE_pataut1
-			country_event = { id = swemil.18 }
-		}
-	}	
-
-	focus = { 
-		id = SWE_archibald_take_command
-		icon = GFX_goal_SWE_focus_douglas
-		prerequisite = { focus = SWE_place_of_the_crown }
-
-		x = 7
-		y = 3
-		cost = 5
-		relative_position_id = SWE_martial_law_declared
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			has_country_flag = SWE_flag_archibald_winning
-		}
-		
-		completion_reward = {
-			country_event = { id = swemil.8 }
-			add_ideas = SWE_arch_1
-			add_popularity = { ideology = national_populist popularity = 0.15 }
-		}
-	}
-
-	focus = { 
-		id = SWE_authdem_stabilize_nation
-		icon = GFX_goal_SWE_focus_ehrensvard
-		prerequisite = { focus = SWE_place_of_the_crown }
-
-		x = -7
-		y = 3
-		cost = 5
-		relative_position_id = SWE_martial_law_declared
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			has_country_flag = SWE_flag_authdem_junta
-		}
-		
-		completion_reward = {
-			add_ideas = SWE_autdem1
-			country_event = { id = swemil.26 }
-		}
-	}
 
 ###Natpoop###
 
