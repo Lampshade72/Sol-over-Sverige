@@ -232,7 +232,7 @@ SWE_autdem1_desc:0 ""
 SWE_autdem2:0 "Furthering Ehrensvard's Vision"
 SWE_autdem2_desc:0 ""
 
-SWE_autdem3:0 "Ehrensvard's United Government"
+SWE_autdem3:0 "United Civilian-Military Government"
 SWE_autdem3_desc:0 ""
 
 SWE_patriotic_unions:0 "Patriotic Unions Established"
@@ -271,10 +271,109 @@ SWE_arch_2_desc:0 ""
 SWE_arch_3:0 "För Gud och Sverige!"
 SWE_arch_3_desc:0 ""
 
+###military Ideas###
+
+SWE_chief_of_army_idea:0 "Chief of the Army"
+
+SWE_archies_army_idea1:0 "Douglas's War of Manoeuvre"
+
+SWE_archies_army_idea2:0 "Douglas's War of Manoeuvre"
+
+SWE_archie_moterise_cavalry:0 "Motorising Cavalry Forces"
+
+SWE_archie_officer_smert:0 "Elite Officer Corp"
+
+SWE_archies_army_idea3:0 "Douglas's War of Manoeuvre"
+
+SWE_archies_army_idea4:0 "Douglas's War of Manoeuvre"
+
+SWE_fort_supply:0 "Fortified Supply Lines"
+
+SWE_olof_army_idea1:0 "Olof's Strategic Warfare"
+
+SWE_olof_army_idea2:0 "Olof's Strategic Warfare"
+
+SWE_olof_modern_equipment:0 "Modern Equipment Priority"
+
+SWE_olof_harsh_officer:0 "Harsh Officer Corp"
+
+SWE_olof_army_idea3:0 "Olof's Strategic Warfare"
+
+SWE_olof_army_idea4:0 "Olof's Strategic Warfare"
+
+SWE_jung_army_idea1:0 "Jung's War of Defence"
+
+SWE_jung_army_idea2:0 "Jung's War of Defence"
+
+SWE_army_research:0 "Military Research"
+
+SWE_jung_special_forces:0 "Special Forces Initiative"
+
+SWE_jung_army_idea3:0 "Jung's War of Defence"
+
+SWE_jung_artillery_idea:0 "Jung's War of Defence"
+
+SWE_jung_army_idea4:0 "Jung's War of Defence"
+
+SWE_chief_of_army_modern_idea:0 "Chief of the Army"
 
 
 
+SWE_red_new_leadership_idea1:0 "Army Against Tyranny"
 
+SWE_red_militia_idea1:0 "Swedish Militia Army"
+
+SWE_red_militia_idea2:0 "Swedish Militia Army"
+
+SWE_red_militia_idea3:0 "Swedish Militia Army"
+
+SWE_red_militia_idea4:0 "Swedish Militia Army"
+
+SWE_red_army_idea1:0 "Swedish Red Army"
+
+SWE_red_army_idea2:0 "Swedish Red Army"
+
+SWE_red_army_idea3:0 "Swedish Red Army"
+
+SWE_red_army_idea4:0 "Swedish Red Army"
+
+SWE_red_militia_hit_run:0 "Hit and Run Tactics"
+
+SWE_red_remove_react:0 "Removing Reactionary Army Elements"
+
+SWE_red_army_officers:0 "Crimson Officer Corp"
+
+SWE_red_militia_cold:0 "Cold Weather Specialization"
+
+SWE_red_army_motor:0 "Motorised Army"
+
+SWE_red_militia_tank:0 "Militiamen Tanks"
+
+SWE_red_army_tank:0 "Red Army Tanks"
+
+SWE_red_new_leadership_idea2:0 "Army Against Tyranny"
+
+###Airforce Ideas### 
+
+SWE_gyllen_air_CAS1:0 "Gyllenkrok's Air Support Doctrine"
+SWE_gyllen_air_CAS2:0 "Gyllenkrok's Air Support Doctrine"
+SWE_gyllen_air_CAS3:0 "Gyllenkrok's Air Support Doctrine"
+SWE_fighter_superior1:0 "Air Supremacy Doctrine"
+SWE_fighter_superior2:0 "Air Supremacy Doctrine"
+SWE_fighter_superior3:0 "Air Supremacy Doctrine"
+SWE_socialist_air1:0 "Worker's Airforce Doctrine"
+SWE_socialist_air2:0 "Worker's Airforce Doctrine"
+SWE_socialist_air3:0 "Worker's Airforce Doctrine"
+
+###Navy Ideas### 
+SWE_baltic_sea_fleet1:0 "Baltic Sea Domination"
+SWE_baltic_sea_fleet2:0 "Baltic Sea Domination"
+
+SWE_submarine_fleet1:0 "Trade Disruption Doctrine"
+SWE_submarine_fleet2:0 "Trade Disruption Doctrine"
+
+SWE_big_boi_fleet1:0 "Naval Armada Doctrine"
+SWE_big_boi_fleet2:0 "Naval Armada Doctrine"
 
 
 ####Focuses####

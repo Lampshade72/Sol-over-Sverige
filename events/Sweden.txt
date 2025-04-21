@@ -23,6 +23,7 @@ country_event = { ####swedish gold coast ##LS##
 	title = swefop.999.t
 	desc = swefop.999.d
 	picture = GFX_report_event_SWE_gold_coast_map
+	fire_only_once = yes
 
 	trigger = {
 				tag = SWE
@@ -62,7 +63,7 @@ country_event = { ####swedish gold coast ##LS##
 				
 					set_party_name = {
 					ideology = paternal_autocrat
-					long_name = Swedish Colonial Administration of the Gold Coast
+					long_name = "Swedish Colonial Administration of the Gold Coast"
 					name = Swedish Colonial Administration
 					}
 					
@@ -166,7 +167,7 @@ country_event = { ####Vinland ##LS##
 				}
 				NFL = {
 					load_focus_tree = generic_focus				
-					remove_all_ministers				
+					remove_all_ministers = yes			
 
 					set_politics = { 
 						ruling_party = paternal_autocrat
@@ -2572,7 +2573,7 @@ country_event = { #jung junta ##LS##
 	}
 }
 
-country_event = { #Axel offers support if monarch ##LS##
+country_event = { #more security or nah ##LS##
 	id = swemil.19
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.19" }
 	title = swemil.19.t

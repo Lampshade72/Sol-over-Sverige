@@ -301,7 +301,7 @@ focus_tree = {
 		icon = GFX_goal_AST_an_iron_grip_on_the_economy
 		x = 11
 		y = 0
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -329,7 +329,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -373,7 +373,7 @@ focus_tree = {
 		x = 5
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -394,7 +394,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -421,7 +421,7 @@ focus_tree = {
 		x = 4
 		y = 3
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -453,7 +453,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -509,7 +509,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -534,7 +534,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -558,7 +558,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -598,7 +598,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -619,7 +619,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -640,7 +640,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -666,7 +666,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -698,7 +698,7 @@ focus_tree = {
 		x = -2
 		y = 3
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -729,7 +729,7 @@ focus_tree = {
 		x = -4
 		y = 3
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -759,7 +759,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -785,7 +785,7 @@ focus_tree = {
 		x = -5
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -810,7 +810,7 @@ focus_tree = {
 		x = -7
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -832,7 +832,7 @@ focus_tree = {
 		x = -6
 		y = 3
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -874,7 +874,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -7123,7 +7123,6 @@ focus_tree = {
 		}
 		
 		available = {
-			add_ideas = SWE_fort_supply
 		}
 
 		completion_reward = {
