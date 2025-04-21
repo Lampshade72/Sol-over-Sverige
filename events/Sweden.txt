@@ -2104,7 +2104,7 @@ country_event = { ####eyes in the dark ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.9999" }
 	title = swemil.9999.t
 	desc = swemil.9999.d
-	picture = GFX_report_event_SWE_Swedish_military_3
+	picture = GFX_report_event_SWE_army_shoot
 
 	is_triggered_only = yes
 
@@ -2136,7 +2136,7 @@ country_event = { ####Military starts stabilizing the nation ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.1" }
 	title = swemil.1.t
 	desc = swemil.1.d
-	picture = GFX_report_event_SWE_Swedish_military_3
+	picture = GFX_report_event_SWE_Swedish_military
 
 	is_triggered_only = yes
 
@@ -2246,7 +2246,7 @@ country_event = { #Discourse over lack of monarchy ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.6" }
 	title = swemil.6.t
 	desc = swemil.6.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_CZE_protest
 
 	is_triggered_only = yes
 
@@ -2337,7 +2337,7 @@ country_event = { #Archy wins ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.8" }
 	title = swemil.8.t
 	desc = swemil.8.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_archibald_douglas
 
 	is_triggered_only = yes
 
@@ -2359,7 +2359,7 @@ country_event = { #sesame street ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.9" }
 	title = swemil.9.t
 	desc = swemil.9.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_elmo_lindholm
 
 	is_triggered_only = yes
 
@@ -2391,7 +2391,7 @@ country_event = { #martin or keep archie ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.10" }
 	title = swemil.10.t
 	desc = swemil.10.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_martin_ekstroem_gang
 
 	is_triggered_only = yes
 
@@ -2430,13 +2430,14 @@ country_event = { #if no other mils we should try burgers ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.11" }
 	title = swemil.11.t
 	desc = swemil.11.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_burger_nazi
 
 	is_triggered_only = yes
 
 	option = { #I prefer a salad
 		name = swemil.11.a
-	
+		add_popularity = { ideology = national_populist popularity = 0.02 }	
+		add_stability = 0.02
 	}
 
 	option = { #hmmmm burgers
@@ -2457,7 +2458,7 @@ country_event = { #sweeping up reds ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.12" }
 	title = swemil.12.t
 	desc = swemil.12.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_army_shoot
 
 	is_triggered_only = yes
 
@@ -2477,7 +2478,7 @@ country_event = { #like minded men ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.13" }
 	title = swemil.13.t
 	desc = swemil.13.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_random_rally
 
 	is_triggered_only = yes
 
@@ -2492,7 +2493,7 @@ country_event = { #riksledare ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.14" }
 	title = swemil.14.t
 	desc = swemil.14.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_ultra_dudes
 
 	is_triggered_only = yes
 
@@ -2510,7 +2511,7 @@ country_event = { #crown authority ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.15" }
 	title = swemil.15.t
 	desc = swemil.15.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_BRG_crown
 
 	is_triggered_only = yes
 
@@ -2530,7 +2531,7 @@ country_event = { #svea rike ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.16" }
 	title = swemil.16.t
 	desc = swemil.16.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_ultra_dudes
 
 	is_triggered_only = yes
 
@@ -2546,7 +2547,7 @@ country_event = { #dictate of nationalism ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.17" }
 	title = swemil.17.t
 	desc = swemil.17.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_random_rally
 
 	is_triggered_only = yes
 
@@ -2578,7 +2579,7 @@ country_event = { #more security or nah ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.19" }
 	title = swemil.19.t
 	desc = swemil.19.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_martin_ekstroem_gang
 
 	is_triggered_only = yes
 
@@ -2599,7 +2600,7 @@ country_event = { #arresting politicians if no monarch ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.20" }
 	title = swemil.20.t
 	desc = swemil.20.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_even_more_army
 
 	is_triggered_only = yes
 
@@ -2625,7 +2626,7 @@ country_event = { #rid of paramilitaries ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.21" }
 	title = swemil.21.t
 	desc = swemil.21.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_cop_alone
 
 	is_triggered_only = yes
 
@@ -2640,7 +2641,7 @@ country_event = { #jungs plan ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.22" }
 	title = swemil.22.t
 	desc = swemil.22.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_helge_jung_shake
 
 	is_triggered_only = yes
 
