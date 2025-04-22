@@ -2553,8 +2553,32 @@ country_event = { #dictate of nationalism ##LS##
 
 	option = { 
 		name = swemil.17.a
+		add_pataut_to_coalition = yes 
+		add_popularity = { ideology = national_populist popularity = 0.04 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.06 }
+		add_political_power = -15
+		add_stability = 0.03		
+	}
+
+	option = { 
+		name = swemil.17.a
+		add_authdem_to_coalition = yes 
+		add_popularity = { ideology = national_populist popularity = 0.03 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }
+		add_political_power = 25
+		add_stability = -0.08
 	
 	}
+
+	option = { 
+		name = swemil.17.a
+		add_popularity = { ideology = national_populist popularity = 0.05 }	
+		add_stability = -0.08
+		add_war_support = 0.07
+	
+	}	
+
+	
 }
 
 ##### Jung Junta #####
@@ -2647,6 +2671,8 @@ country_event = { #jungs plan ##LS##
 
 	option = { 
 		name = swemil.22.a
+		add_political_power = 20
+		increase_ruling_party_popularity_by_5 = yes
 	
 	}
 }
@@ -2662,7 +2688,10 @@ country_event = { #bastion of nordic might - republic ##LS##
 
 	option = { 
 		name = swemil.23.a
-	
+		increase_ruling_party_popularity_by_5 = yes
+		add_war_support = 0.05
+		
+
 	}
 }
 
@@ -2677,7 +2706,8 @@ country_event = { #bastion of nordic might - monarch ##LS##
 
 	option = { 
 		name = swemil.24.a
-	
+		increase_ruling_party_popularity_by_5 = yes
+		add_war_support = 0.05	
 	}
 }
 
