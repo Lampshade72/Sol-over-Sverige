@@ -1879,7 +1879,7 @@ ideas = {
 		SWE_archies_army_idea1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_archies_army_idea1"}
 			allowed = { always = no }
-            picture = GFX_idea_NFA_tank_war
+            picture = NFA_tank_war
 			modifier = {
 				army_attack_factor = 0.05
 				army_morale_factor = -0.15
@@ -1900,7 +1900,7 @@ ideas = {
 		SWE_archies_army_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_archies_army_idea2"}
 			allowed = { always = no }
-            picture = GFX_idea_NFA_tank_war
+            picture = NFA_tank_war
 			modifier = {
 				army_attack_factor = 0.05
 				army_morale_factor = -0.10
@@ -1924,7 +1924,7 @@ ideas = {
 		SWE_archies_army_idea3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_archies_army_idea3"}
 			allowed = { always = no }
-            picture = GFX_idea_NFA_tank_war
+            picture = NFA_tank_war
 			modifier = {
 				army_attack_factor = 0.10
 				army_morale_factor = -0.08
@@ -1949,7 +1949,7 @@ ideas = {
 		SWE_archies_army_idea4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_archies_army_idea4"}
 			allowed = { always = no }
-            picture = GFX_idea_NFA_tank_war
+            picture = NFA_tank_war
 			modifier = {
 				army_attack_factor = 0.12
 				army_morale_factor = -0.08
@@ -1975,7 +1975,7 @@ ideas = {
 		SWE_archie_motorise_cavalry = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_archie_motorise_cavalry"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = GEN_army_mech_corps
 			modifier = {
 
 			}
@@ -1990,7 +1990,7 @@ ideas = {
 		SWE_archie_officer_smert = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_archie_officer_smert"}
 			allowed = { always = no }
-            picture = GFX_idea_BBR_officer_training
+            picture = BBR_officer_training
 			modifier = {
 				recon_factor = 0.05
 				experience_loss_factor = -0.05
@@ -2001,7 +2001,7 @@ ideas = {
 		SWE_fort_supply = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_fort_supply"}
 			allowed = { always = no }
-            picture = GFX_idea_BBR_officer_training
+            picture = cos_defense_icon
 			modifier = {
 				attrition = -0.03
 				max_dig_in = 1
@@ -2015,7 +2015,7 @@ ideas = {
 		SWE_olof_army_idea1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_olof_army_idea1"}
 			allowed = { always = no }
-            picture = GFX_idea_SWE_conservative_army_idea
+            picture = SWE_conservative_army_idea
 			modifier = {
 				training_time_army_factor = -0.05
 				conscription_factor = 0.02
@@ -2030,7 +2030,7 @@ ideas = {
 		SWE_olof_army_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_olof_army_idea2"}
 			allowed = { always = no }
-            picture = GFX_idea_SWE_conservative_army_idea
+            picture = SWE_conservative_army_idea
 			modifier = {
 				training_time_army_factor = -0.1
 				conscription_factor = 0.05
@@ -2050,7 +2050,7 @@ ideas = {
 		SWE_olof_army_idea3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_olof_army_idea3"}
 			allowed = { always = no }
-            picture = GFX_idea_SWE_conservative_army_idea
+            picture = SWE_conservative_army_idea
 			modifier = {
 				training_time_army_factor = -0.12
 				conscription_factor = 0.07
@@ -2071,7 +2071,7 @@ ideas = {
 		SWE_olof_army_idea4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_olof_army_idea4"}
 			allowed = { always = no }
-            picture = GFX_idea_SWE_conservative_army_idea
+            picture = SWE_conservative_army_idea
 			modifier = {
 				training_time_army_factor = -0.16
 				conscription_factor = 0.1
@@ -2092,7 +2092,7 @@ ideas = {
 		SWE_olof_modern_equipment = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_olof_modern_equipment"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = PAN_gunpic
 			modifier = {
 
 			}
@@ -2107,7 +2107,7 @@ ideas = {
 		SWE_olof_harsh_officer = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_olof_harsh_officer"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = CAN_training_idea
 			modifier = {
 				experience_gain_factor = 0.05
 				training_time_army_factor = 0.05
@@ -2119,7 +2119,7 @@ ideas = {
 		SWE_jung_army_idea1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_jung_army_idea1"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = BAN_gray_army_mobilize
 			modifier = {
 				army_org_Factor = 0.04
 				attrition = 0.05
@@ -2143,7 +2143,7 @@ ideas = {
 		SWE_jung_army_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_jung_army_idea2"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = BAN_gray_army_mobilize
 			modifier = {
 				army_org_Factor = 0.06
 				attrition = 0.08
@@ -2167,7 +2167,7 @@ ideas = {
 		SWE_jung_army_idea3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_jung_army_idea3"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = BAN_gray_army_mobilize
 			modifier = {
 				army_org_Factor = 0.1
 				attrition = 0.1
@@ -2191,7 +2191,7 @@ ideas = {
 		SWE_jung_army_idea4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_jung_army_idea4"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = BAN_gray_army_mobilize
 			modifier = {
 				army_org_Factor = 0.15
 				attrition = 0.12
@@ -2215,7 +2215,7 @@ ideas = {
 		SWE_jung_artillery_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_jung_artillery_idea"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = GEN_army_artillery
 			equipment_bonus = {
 				artillery_equipment = {
 					soft_attack = 0.06
@@ -2229,7 +2229,7 @@ ideas = {
 		SWE_jung_special_forces = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_jung_special_forces"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = GEN_army_special_forces
 			modifier = {
 				special_forces_cap = 0.05
 				special_forces_attack_factor = 0.1
@@ -2241,7 +2241,7 @@ ideas = {
 		SWE_army_research = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_army_research"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = WCC_bureaucratic_research_complex
 			modifier = {
 				research_speed_factor = 0.05
 				army_org_factor = 0.02
@@ -2252,7 +2252,7 @@ ideas = {
 		SWE_red_army_idea1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_army_idea1"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = centralist_gdc
 			modifier = {
 				training_time_army_factor = 0.1
 				max_planning = 0.1
@@ -2269,7 +2269,7 @@ ideas = {
 		SWE_red_army_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_army_idea2"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = centralist_gdc
 			modifier = {
 				training_time_army_factor = 0.08
 				max_planning = 0.2
@@ -2289,7 +2289,7 @@ ideas = {
 		SWE_red_army_idea3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_army_idea3"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = centralist_gdc
 			modifier = {
 				training_time_army_factor = 0.06
 				max_planning = 0.3
@@ -2310,7 +2310,7 @@ ideas = {
 		SWE_red_army_idea4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_army_idea4"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = centralist_gdc
 			modifier = {
 				training_time_army_factor = 0.06
 				conscription_factor = 0.02				
@@ -2425,7 +2425,7 @@ ideas = {
 		SWE_red_army_officers = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_army_officers"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = syndicalist_resistance
 			modifier = {
 				dig_in_speed_factor = 0.03
 				army_org_regain	= 0.02
@@ -2436,7 +2436,7 @@ ideas = {
 		SWE_red_army_motor = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_army_motor"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = GEN_army_mech_corps
 			modifier = {
 
 			}
@@ -2451,7 +2451,7 @@ ideas = {
 		SWE_red_army_tank = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_army_tank"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = CAL_Armor
 			modifier = {
 				army_armor_defence_factor = 0.05
 			}
@@ -2469,7 +2469,7 @@ ideas = {
 		SWE_red_militia_hit_run = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_militia_hit_run"}
 			allowed = { always = no }
-            picture = army_of_militias
+            picture = CZE_traitor_hunts
 			modifier = {
 				special_forces_cap = 0.1
 				special_forces_attack_factor = 0.06
@@ -2482,7 +2482,7 @@ ideas = {
 		SWE_red_militia_cold = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_militia_cold"}
 			allowed = { always = no }
-            picture = army_of_militias
+            picture = ALA_dogsled_idea
 			modifier = {
 				acclimatization_cold_climate_gain_factor = 0.35
 				attrition = -0.04
@@ -2498,7 +2498,7 @@ ideas = {
 		SWE_red_militia_tank = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_militia_tank"}
 			allowed = { always = no }
-            picture = GFX_idea_GEN_army_mech_corps
+            picture = carm_armored_spearhead_icon
 			modifier = {
 				army_armor_attack_factor = 0.05
 			}
@@ -2516,7 +2516,7 @@ ideas = {
 		SWE_red_remove_react = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_remove_react"}
 			allowed = { always = no }
-			picture = GFX_idea_WHR_schools_burnt
+			picture = WHR_schools_burnt
 			modifier = {
 				experience_gain_factor = -0.10
 				land_doctrine_cost_factor = 0.20
@@ -2530,7 +2530,7 @@ ideas = {
 		SWE_red_new_leadership_idea1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_new_leadership_idea1"}
 			allowed = { always = no }
-			picture = GFX_idea_HOL_dutch_militia
+			picture = HOL_dutch_militia
 			modifier = {
 				experience_gain_factor = -0.10
 				local_manpower = 0.02
@@ -2542,7 +2542,7 @@ ideas = {
 		SWE_red_new_leadership_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_new_leadership_idea2"}
 			allowed = { always = no }
-			picture = GFX_idea_HOL_dutch_militia
+			picture = HOL_dutch_militia
 			modifier = {
 				experience_gain_factor = 0.10
 				local_manpower = 0.05
@@ -2558,7 +2558,7 @@ ideas = {
 		SWE_gyllen_air_CAS1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_gyllen_air_CAS1"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_close_air_support
+			picture = GEN_air_close_air_support
 			modifier = {
 				air_mission_xp_gain_factor = 0.1
 				air_training_xp_gain_factor = 0.1	
@@ -2572,7 +2572,7 @@ ideas = {
 		SWE_gyllen_air_CAS2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_gyllen_air_CAS2"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_close_air_support
+			picture = GEN_air_close_air_support
 			modifier = {
 				air_mission_xp_gain_factor = 0.15
 				air_training_xp_gain_factor = 0.15
@@ -2591,7 +2591,7 @@ ideas = {
 		SWE_gyllen_air_CAS3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_gyllen_air_CAS3"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_close_air_support
+			picture = GEN_air_close_air_support
 			modifier = {
 				air_mission_xp_gain_factor = 0.2
 				air_training_xp_gain_factor = 0.2
@@ -2611,7 +2611,7 @@ ideas = {
 		SWE_fighter_superior1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_fighter_superior1"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_combat
+			picture = GEN_air_combat
 			modifier = {
 				air_mission_xp_gain_factor = 0.1
 				air_training_xp_gain_factor = 0.1	
@@ -2624,7 +2624,7 @@ ideas = {
 		SWE_fighter_superior2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_fighter_superior2"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_combat
+			picture = GEN_air_combat
 			modifier = {
 				air_mission_xp_gain_factor = 0.15
 				air_training_xp_gain_factor = 0.15
@@ -2645,7 +2645,7 @@ ideas = {
 		SWE_fighter_superior3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_fighter_superior3"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_combat
+			picture = GEN_air_combat
 			modifier = {
 				air_mission_xp_gain_factor = 0.2
 				air_training_xp_gain_factor = 0.2
@@ -2666,7 +2666,7 @@ ideas = {
 		SWE_socialist_air1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_socialist_air1"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_daredevil_pilots
+			picture = GEN_air_daredevil_pilots
 			modifier = {
 				air_mission_xp_gain_factor = 0.05
 				air_training_xp_gain_factor = 0.05
@@ -2690,7 +2690,7 @@ ideas = {
 		SWE_socialist_air2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_socialist_air2"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_daredevil_pilots
+			picture = GEN_air_daredevil_pilots
 			modifier = {
 				air_mission_xp_gain_factor = 0.1
 				air_training_xp_gain_factor = 0.1
@@ -2717,7 +2717,7 @@ ideas = {
 		SWE_socialist_air3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_socialist_air3"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_air_daredevil_pilots
+			picture = GEN_air_daredevil_pilots
 			modifier = {
 				air_mission_xp_gain_factor = 0.15
 				air_training_xp_gain_factor = 0.15
@@ -2745,7 +2745,7 @@ ideas = {
 		SWE_baltic_sea_fleet1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_baltic_sea_fleet1"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_navy_decisive_bat
+			picture = GEN_navy_decisive_bat
 			modifier = {
 				experience_gain_navy = 0.02
 				experience_gain_navy_factor = 0.05
@@ -2769,7 +2769,7 @@ ideas = {
 		SWE_baltic_sea_fleet2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_baltic_sea_fleet2"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_navy_decisive_bat
+			picture = GEN_navy_decisive_bat
 			modifier = {
 				experience_gain_navy = 0.05
 				experience_gain_navy_factor = 0.1
@@ -2794,7 +2794,7 @@ ideas = {
 		SWE_submarine_fleet1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_submarine_fleet1"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_navy_submarine_war
+			picture = GEN_navy_submarine_war
 			modifier = {
 				experience_gain_navy = 0.02
 				experience_gain_navy_factor = 0.05
@@ -2818,7 +2818,7 @@ ideas = {
 		SWE_submarine_fleet2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_submarine_fleet2"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_navy_submarine_war
+			picture = GEN_navy_submarine_war
 			modifier = {
 				experience_gain_navy = 0.05
 				experience_gain_navy_factor = 0.1
@@ -2844,7 +2844,7 @@ ideas = {
 		SWE_big_boi_fleet1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_big_boi_fleet1"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_navy_capital_ships
+			picture = GEN_navy_capital_ships
 			modifier = {
 				experience_gain_navy = 0.02
 				experience_gain_navy_factor = 0.05
@@ -2867,7 +2867,7 @@ ideas = {
 		SWE_big_boi_fleet2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_big_boi_fleet2"}
 			allowed = { always = no }
-			picture = GFX_idea_GEN_navy_capital_ships
+			picture = GEN_navy_capital_ships
 			modifier = {
 				experience_gain_navy = 0.05
 				experience_gain_navy_factor = 0.1

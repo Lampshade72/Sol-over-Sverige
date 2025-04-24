@@ -311,7 +311,7 @@ SWE_jung_special_forces:0 "Special Forces Initiative"
 
 SWE_jung_army_idea3:0 "Jung's War of Defence"
 
-SWE_jung_artillery_idea:0 "Jung's War of Defence"
+SWE_jung_artillery_idea:0 "Artillery Fixation"
 
 SWE_jung_army_idea4:0 "Jung's War of Defence"
 
@@ -741,7 +741,7 @@ SWE_bring_the_right_back:0 "Reconcile the Right"
 SWE_bring_the_right_back_desc:0 "Reconcile the Right"
 SWE_expand_armed_forces:0 "Prioritising the Army"
 SWE_expand_armed_forces_desc:0 "Prioritising the Army"
-SWE_overtures_to_entente:0 "A Letter to Ottowa"
+SWE_overtures_to_entente:0 "A Telegram to Ottowa"
 SWE_overtures_to_entente_desc:0 "A Letter to Ottowa"
 SWE_we_the_strong:0 "Strength of a Nation"
 SWE_we_the_strong_desc:0 "Strength of a Nation"
@@ -1069,6 +1069,10 @@ SWE_flag_elmo_int:0 "Elmo leans to integral nationalism"
 
 SWE_flag_integrate_finland:0 "Sweden Integrates the Finns"
 
+SWE_flag_entente_nice:0 "The Entente Accepts our Telegram!"
+
+SWE_flag_entente_bad:0 "The Entente Rejects our Telegram!"
+
 ## Decisions ##
 SWE_claim_scandinavia:0 "Claim Scandinavia"
 SWE_destroy_norway:0 "Tear up the Karlstad treaty"
@@ -1301,9 +1305,9 @@ swedem.12.t:0 "Ridicule Radicals"
 swedem.12.d:0 "While before the election, the notion of cooperation with the radicals in the SSV was not ruled out by Hansson, given the chance of not garnering enough seats to hold a majority in the RIkstag. Now, however, given our assumption to national leadership and electoral victory, we can banish these radicals once more. Allowing us to attract wayward social liberals and centrists to our cause, disavowing such minor yet vocal radical elements in Sweden will go a long way in improving stability.\n\nAway with such radicals, Sweden’s crown shall foster hope and wealth for all beneath her gaze!"
 swedem.12.a:0 "Democracy is not essential, it is vital!"
 
-swedem.13.t:0 "Northern Folkhemmet"
-swedem.13.d:0 "here we are!"
-swedem.13.a:0 "yay!"
+swedem.13.t:0 "The Folkhemmet Dream Realised"
+swedem.13.d:0 "After arduous months upon months, Hansson’s SAP party has achieved what many deemed to be impossible. Using the foundations of capitalism, Hansson has moulded a new humanistic, non-exploitative model within Sweden. Giving welfare to even the poorest in the country, with strict worker protections and unionist rights, to believe the country still maintains itself in the capital sphere is nigh unthinkable. Yet, somehow the SAP have achieved their goal, creating the uniquely Swedish ‘Folkhemmet’, or People’s Home. Alongside this economic miracle, political stability has once again returned to the Rikstag, with favourable debates and discussions allowed, creating a new sense of hope in the Swedish populace. Whether such a people's prioritised market can continue to exist in the long term surrounded by exploitative capitalists is unknown, but what is known is that the Swedish people are ready to stand and fight for their rights once more."
+swedem.13.a:0 "No one here seeks benefit, at another’s expense!"
 
 swedem.14.t:0 "Status of the Statare"
 swedem.14.d:0 "The Statare remains as a public stain on Swedish society, a hallmark back to our near medieval past. Such a workforce is seen as backward and heinous but the major world powers, remaining as our final leash to the past. \n\nAs such, while total abolishment of the Statare could cause major economic drawbacks, improving the general living standards and offering greater access to healthcare and aid for the Statare class will provide us with a good step in the right direction."
@@ -1677,9 +1681,9 @@ swemil.27.t:0 "Reconciliation with the Moderate Right"
 swemil.27.d:0 "The aftermath of the Army’s coup against the revolutionaries left many of the mainstream parties in total chaos. Many of Hansson’s social democrats were either arrested or fled the country, as the abolishment of the monarchy was blamed upon them. The Farmer’s League remains, absorbing some of Hansson’s remnants while being kept under watchful eye of the military. This leaves the People’s party and the General Electoral league, both still holding significant support from the civilian population. By reaching out to their former leaders, especially Gosta Bagge due to Lindman’s backing of him, shall ensure stability in Sweden and expand our support base."
 swemil.27.a:0 "Together, we can rebuild Sweden"
 
-swemil.28.t:0 "letter to ottowa"
-swemil.28.d:0 ""
-swemil.28.a:0 ""
+swemil.28.t:0 "A Telegram to Ottawa"
+swemil.28.d:0 "Ehrensvärd has always maintained a positive view towards the Entente and her members, especially of the Windors. During the chaos of the British revolution, Ehrensvärd advocated to the Swedish government to aid the Royalists, seeing them as a gallant ally. However, due to both economic woes after the Weltkrieg alongside the determination of the Swedish government to maintain neutrality, nothing was sent. Now, at the helm of the nation, Ehrensvärd has ordered a telegram be sent to the King in Ottawa, one filled with admiration and desire for mutual aid. While such a telegram does not guarantee an alliance with the Entente, it will open up friendly relationships with them, should they respond in kind."
+swemil.28.a:0 "We can only hope they respond"
 
 swemil.29.t:0 "Restoration of the Unions"
 swemil.29.d:0 "The unions served as a vital voice of the workers, however they also allowed themselves to become infected with parasitic ideologues who seeked to use them for their own purposes. Since the military’s coup against the revolutionaries, many of the trade unions were purged, either by the army or radical paramilitaries. As such, currently unions remain banned nationwide, however Ehrensvard has now allowed the formation of new trade unions, under some restrictions. Unions must remain patriotic first and foremost, disallowing and sedition or disident ideologues to seize their reigns, alongside this army oversight over unions will be enacted. Such moves have caused some hope amongst Sweden’s workers, however how much of an actual this will have remains to be seen."
@@ -1741,6 +1745,20 @@ swemil.42.d:0 "As the soon to be sole rulers of Europe, we must design a flag fi
 swemil.42.a:0 "The First, Swedish surpremacy and might!"
 swemil.42.b:0 "The second, the crowns alone display our might!"
 swemil.42.c:0 "The third, to show true European unity!"
+
+swemil.43.t:0 "A Telegram from Stockholm"
+swemil.43.d:0 "An unusual telegram has arrived from the Swedish government in Stockholm. Headed by the nations leader, Carl Ehrensvärd, it has proposed an olive branch to the Entente. Showing affection and admiration for the alliance, proposing mutually beneficial trade deals as well as aid to either nation. While a direct entry into the Entente is not proposed in the telegram, it also does not exclude such a possibility. We are now given the choice of sending some aid to their recovering nation after the attempted revolution, or deny them of such. Denying them will alienate them from the Entente, but Sweden could also pose a burden to the alliance."
+swemil.43.a:0 "Send the aid, we extend in kind"
+swemil.43.b:0 "We appreciate the telegram, but we must decline"
+
+swemil.44.t:0 "A Response"
+swemil.44.d:0 "It would seem the powers within the Entente have responded in kind! Sending some military and financial aid our way, alongside offering new trade deals between our nations. This will go a long way in both improving Sweden’s stability and growing our foreign relations with the Entente!"
+swemil.44.a:0 "God save the Entente!"
+
+swemil.45.t:0 "A Response"
+swemil.45.d:0 "Unfortunately, our plea to the Entente has been denied. Appreciating our valiant effort to establish better relations, the Entente seem focused on their goals of Reclamation. This tunneled vision view may be their befal, however we must now move forward without the Entente."
+swemil.45.a:0 "A sad state of foreign affairs"
+
 
 ### Intro Events ###
 
