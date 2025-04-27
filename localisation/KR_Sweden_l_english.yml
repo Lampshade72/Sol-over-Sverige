@@ -1310,8 +1310,8 @@ swedem.13.d:0 "After arduous months upon months, Hansson’s SAP party has achie
 swedem.13.a:0 "No one here seeks benefit, at another’s expense!"
 
 swedem.14.t:0 "Status of the Statare"
-swedem.14.d:0 "The Statare remains as a public stain on Swedish society, a hallmark back to our near medieval past. Such a workforce is seen as backward and heinous but the major world powers, remaining as our final leash to the past. \n\nAs such, while total abolishment of the Statare could cause major economic drawbacks, improving the general living standards and offering greater access to healthcare and aid for the Statare class will provide us with a good step in the right direction."
-swedem.14.a:0 "Downtrodden no more!"
+swedem.14.d:0 "The Statare, an enduring remnant of Sweden’s feudal past, remains a stark reminder of the inequalities still present in modern Sweden. While vital to the agricultural economy, this class of laborers endures harsh conditions, poverty and exploitation, a contraindication to the progress we have thus made as a nation. \n\nThough a complete abolition of the Statare system could risk economic instability, it is crucial that we begin to lift them from their plight. By improving their access to healthcare, education and social support, we can begin to eliminate the deep divisions that persist within our society. This is another large step to fulfilling the dream of a social democratic Sweden, ensuring that all Swedes can love with dignity and equality."
+swedem.14.a:0 "Downtrodden no more"
 
 swedem.15.t:0 "Aligning the Farmers' League"
 swedem.15.d:0 "In the Swedish political scene sits two parties apart from the general conservative right and the social democratic left. These being the People’s Party and the Farmer’s League, with the People’s party representing a minor group of classical liberalist followers who, during the early 20’s remained a minor ally of ours in championing social reforms. However in recent years they’ve quickly slid towards the right as they directly oppose our policies of nationalization of some private businesses. While they remain firmly against any official form of coalition at this point in time, the Farmer’s league offers another moderate and more politically aligned party. Sitting as a somewhat unofficial coalition member with us, breaking against some of our policies deemed as too ‘socialist’, they remain generally well aligned with us. By formalizing an official coalition with them, we can broaden our government and expand our seats in the Rikstag while better hearing the needs of the smaller farm’s and farmer’s across Sweden."
@@ -1424,8 +1424,8 @@ swerev.16.d:0 "While they the SAP aided us in winning the election of 1936, thei
 swerev.16.a:0 "A government by, and for the working class"
 
 swerev.17.t:0 "The Red North Blooms"
-swerev.17.d:0 "With our essential policies in place, workers and farmers pleased and alcohol consumption at an all time low, Sweden may finally take a sigh of relief. For the hardest hurdles are over, with the last vestiges of the monarchy nearly evaporated and the majority of the nation supporting our government, what cannot be said of our rule? \n\nSweden must now become a symbol, a bastion, to the world at large. A nation in which a socialist government can truly thrive, people for her and her for her people, Sweden will become the North's red bastion, a blooming flower for the world to see."
-swerev.17.a:0 "Rest easy workers, your hard work has paid off"
+swerev.17.d:0 "With the revolutionary policies now fully in place, Sweden stands united under a government that serves the people. Workers and farmers are reaping the rewards of their hard-fought gains, alcohol consumption has dropped, and the monarchy’s influence has nearly vanished. The toughest challenges are behind us. The Swedish people are strong, their support unwavering. Our nation, once shackled by royalism and capitalist greed, has emerged as a beacon of socialist success. Sweden is no longer just a country, it is proof that a socialist government can thrive. \n\nAs the Red North rises, Sweden will stand as a symbol to the world—a thriving, independent nation where the people come first, and where socialism is no longer a dream, but a reality."
+swerev.17.a:0 "Rest easy workers, your sacrifices have borne fruit!"
 
 swerev.18.t:0 "The Red Farmers"
 swerev.18.d:0 "In our initial attempts at winning the election, we drew large support from small farmers across the nation, with a majority located in Lapland. These farmers, under the promises of better conditions, additional aid from the Stockholm government and greater freedom from the larger, traditional farmsteads. With our victory, we must surely begin enacting such policies for one of our essential support bases."
@@ -1449,19 +1449,19 @@ swerev.21.d:0 "The decision to create a stronger executive and centralizing the 
 swerev.21.a:0 "Order is essential for the workers"
 
 swerev.22.t:0 "An International Worker"
-swerev.22.d:0 "Workers in Sweden, under new laws and benefits, enjoy many privileges that most across the globe couldn’t even fathom to exist. No longer chained to nepotic oligarchs and corrupt kleptocrats, workers now truly enjoy their work, with their health and enjoyment a forefront for the government. In this, the Swedish worker has become an international symbol, one of joy and hard work. Many countries around the globe are beginning to censor publications and news from Sweden, out of fear of a similar revolt occurring in their nation."
+swerev.22.d:0 "With the syndicalist revolution secured, the Swedish worker has emerged as a global symbol of dignity, strength and joy. Freed from the chains of capitalist exploitation and aristocratic decay, workers now labor not in misery, but in pride of the laws that guarantee them housing, healthcare and leisure as fundamental rights. Workplaces are democratic, days are shorter, and life is fuller. The hum of industry is now a melody of purpose, not oppression. Abroad, the world watches with unease. From Berlin to Tokyo, reactionary regimes have begun censoring Swedish publications, terrified that their own workers might awaken to our example. \n\nLet them fear, the worker of Sweden is no longer a cog in a machine, but a builder of the future!"
 swerev.22.a:0 "Hard work, good leisure"
 
 swerev.23.t:0 "Swedish Syndicalist Charter"
-swerev.23.d:0 "Mimicking the displays made by British and French syndicalists, with our revolution finally secure, we may declare a syndicalist charter for Sweden, one that shows the world both what we have achieved, and what is left to be done. Espousing notions of an international syndicalist revolution, such a display will both draw us closer to our allies, and expand the displeasure of our enemies."
-swerev.23.a:0 "Syndicalism, the ideology of the 20th century and more!"
+swerev.23.d:0 "With the revolution triumphant and the old order swept away, Sweden now stands as a proud bastion of Syndicalism in the north. Inspired by the declarations made in the British Union and the Commune of France, the time has come for us to etch our own vision into the world. \n\nThis new Swedish Syndicalist CHarter shall enshrine the triumph of the worker, the dismantling of bourgeois oppression and the irreversible rejection of monarchy, capital and clericalism. The charter speaks of syndicates in every field and factory, of rural communes united in solidarity, and of a people no longer ruled, by ruling themselves. It denounces imperialist aggression and bourgeois democracies, affirming our support for a global revolution of the working class. From Malmö to Kiruna, every Swede shall know, they are no longer subjects but free men and women. \n\nTo our comrades abroad, this Charter is a beacon of solidarity. To our enemies, it is a warning: The North has risen, red and resolute."
+swerev.23.a:0 "Syndicalism, the ideology of the 20th century and beyond!"
 
 swerev.24.t:0 "Scandinavian Syndicalism"
 swerev.24.d:0 "In line with our internationalist ideals of syndicalism, we understand the limitations of our nation. While we may enjoy help and aid from our syndicalist allies, alone we cannot save the global working class, together we shall free them all. First point of call is the region in which we reside, Scandinavia. To the east, Finland, north-west, Norway, and Denmark to the south, all these nations are yearning for freedom, their workers cry out and we shall answer their call!"
 swerev.24.a:0 "Onwards, time waits for no-one!"
 
 swerev.25.t:0 "Farmer Syndicates"
-swerev.25.d:0 "Trade unions in our cities listened to the concerns of their workers, issues with pay, working hours and factory conditions. However, with limited support in the more conservative rural regions of Sweden, we must create new farmer unions. These shall allow us to hear the complaints and issues plaguing our rural folk, allowing our government to respond and react faster and more personalized to their needs. This will go a long way in improving our standing with the farmers."
+swerev.25.d:0 "In the cities, our trade unions have become the voice of the working class, resolving issues of wages, hours, and conditions through collective strength and worker control. Yet the revolution must reach beyond the factories and into the fields. The rural heart of Sweden, long ignored by monarchs and capitalists alike, must now be organized.\n\nTo do this, we shall establish agricultural syndicates, unions built by and for farmers, guided by the same democratic principles that drive our urban movements. These syndicates will give rural workers the means to voice their struggles and receive real, responsive support from our government. Land, labor, and livelihood will no longer be dictated from above, but shaped by those who till the soil. By uniting farms and factories, we bind Sweden together in syndicalist solidarity—ensuring no worker, in the city or countryside, is left behind."
 swerev.25.a:0 "A nation cannot live if its starving"
 
 ### Radsoc-syndie flavour events ##
@@ -1502,8 +1502,8 @@ swetot.4.d:0 "Reports reached Linderot today, Flyg had been killed and his group
 swetot.4.a:0 "The National Revolution may finally come"
 
 swetot.5.t:0 "Opium of the People"
-swetot.5.d:0 "There is nothing more destructive and oppressive than the false teachings of religion. Having started with viking pagans in Sweden’s early norse history, to her unfortunate Christening under Christianity, Swede’s have long fallen to the woes of religion. While many in Sweden still hold to the illogical ways of their religion, we must begin the first steps of therapy against this opioid. It will be a long road, but we know we are right, and soon all Swedes shall only bow to the revolution, and to the chairman"
-swetot.5.a:0 "Opioid replacement therapy starts with an alternate drug..."
+swetot.5.d:0 "There is no force more corrosive to reason, no shackle more suffocating to the spirit of progress, than the ancient and decaying teachings of religion. For too long, the minds of Swedes have been bound by superstition, first through the blood-soaked rites of Norse paganism and later through the long, grim shadow cast by Christianity. From the moment the cross was hoisted above our temples and altars, a darkness fell across Sweden, a darkness of submission, guilt, and blind obedience to invisible masters. \n\nBut no longer. The age of divine lies is ending. \n\nThough many still cling desperately to these irrational beliefs, nurtured by generations of indoctrination and fear, the time has come to begin the great therapy of truth. Religion is the opioid of a dying world—a crutch for the weak, a tool for the exploiters—and we shall see it cast down, broken and discredited. The revolution has no place for fairy tales and ghosts; its altar is reason, and its scripture is strength. \n\nThis will not be an easy struggle. The parasite of faith has deep roots. But we know the path is righteous, and we do not waver. Through education, through will, through the ceaseless flame of ideological clarity, we shall purge the final vestiges of religious delusion from our people. In the end, no Swede shall bow to heaven, nor to prophets, nor to gods. They shall bow only to the Revolution—and to the Chairman, the living embodiment of Sweden’s destiny!"
+swetot.5.a:0 "Opioid replacement therapy begins with a substitute substance…"
 
 swetot.6.t:0 "The Worker, a humble Commissar"
 swetot.6.d:0 "Reaction and traitors hide in every shadow, corner, and unfortunately in many homes in Sweden. Such dissidents cannot be allowed to continue, for leaving them would open up the possibility of a counter-revolution, ending all the progress we have worked so hard for. A massive propaganda drive has begun underway, teaching the values of upholding the revolution, loyalty to the party and chairman. Benefits, such as more leisure time and improved status in the party shall be given to those that aid in our search for counter-revolutionaries. For every worker must be a commissar for the party, and such must fulfill his duty by exposing all enemies of the state!"
@@ -1539,10 +1539,9 @@ swetot.13.d:0 "After the revolution that took hold of our nation, many generals 
 swetot.13.a:0 "If the monarchist can reform, any soul can!"
 
 swetot.14.t:0 "Address to the Nation"
-swetot.14.d:0 "Today in a grand display, Lindholm has addressed the nation with the pretense of cementing his rule with a new charter written. The charter will distinguish itself from those in Britain and France, filled with uniquely Swedish ideals and rules. Espousing the failings of the 3rd internationale, he denounced their rabid internationalist to be their folly and eventual downfall, and when this happens it shall be Sweden’s duty to pick up the pieces and rebuild Europe. Further exclaiming radical nationalist and skewed socialist ideals, the speech ended in a roar of cheers from the crowd. \n\nThe world may now peak into Sweden, seeing it entirely changed from the democratic monarchist bastion mere years ago to now an ardent social-nationalist nation under a near totalitarian rule."
-swetot.14.a:0 "Remain as we are, we have no need for change again!"
-swetot.14.a:0 "Flyg’s vision will be best realised by our hand!"
-swetot.14.a:0 "The Russian ideologue Savinkov’s ideals would best fit Sweden!"
+swetot.14.d:0 "Today, in a grand and orchestrated display of national strength, Riksledare Lindholm addressed the people of Sweden with unwavering authority, unveiling the foundations of a new era—one forged in fire, discipline, and destiny. Standing before a sea of flags and a roaring crowd, he declared the drafting of a new national charter, one unlike any the world has seen. Unlike the crumbling constitutions of Britain or the hollow principles of France, Sweden’s new charter will be a testament to her unique spirit—crafted not from borrowed ideals, but from the blood, toil, and will of the Swedish people. \n\nIn his address, Lindholm fiercely condemned the 3rd Internationale and its pitiful doctrine of blind internationalism—calling it not a vision of unity, but a grotesque denial of national identity. He proclaimed that their obsession with borderless brotherhood had led to their moral and structural decay. And when their house of cards inevitably collapses, it will be Sweden—disciplined, unified, and reborn—that shall rise to pick up the shattered remnants of Europe. Not out of charity, but duty. Not in weakness, but in strength. \n\nEspousing a bold vision blending radical nationalist purpose with a reimagined form of Swedish socialism, Lindholm's words struck like lightning—commanding applause, evoking passion, and stirring the very soul of the nation. As his speech came to an end, a thunderous ovation erupted—thousands of voices united as one, echoing his vision across the capital and beyond.\n\nThe world now gazes upon Sweden with awe, fear, and fascination. No longer the placid, democratic monarchist bastion of yesteryear, our nation has been reborn as a blazing pillar of social-nationalist resolve. Under the watchful eye of the Riksledare, Sweden stands proud; unyielding, sovereign, and ready to shape the destiny of a crumbling continent."swetot.14.a:0 "Remain as we are, we have no need for change again!"
+swetot.14.b:0 "Flyg’s vision will be best realised by our hand!"
+swetot.14.c:0 "The Russian ideologue Savinkov’s ideals would best fit Sweden!"
 
 
 ### Military Events ###
@@ -1614,7 +1613,7 @@ swemil.13.d:0 "Around the world stand many parties and groups who desire order, 
 swemil.13.a:0 "A continent of Order and Stability"
 
 swemil.14.t:0 "The Riksledare"
-swemil.14.d:0 "With the fall of the Swedish crown, the red wave that swept the Rikstag, the political landscape of Sweden has been completely upturned. With our refusal to end the stage of emergency, maintaining the military's direct rule over Sweden, we have further anti-monarchist sentiment in the nation. The notion of a monarchist restoration now fading every day, the monarchists slowly losing ranks as many now follow the Riksledare, the sole figure seen as Sweden’s saviour. \n\nIt’s a long way before the memory of the crown fully fades from memory, but with it Sweden marches forward, free to rule herself."
+swemil.14.d:0 "With the fall of the Swedish crown, the red wave that swept through the Riksdag has left an indelible mark on the nation's political landscape. The centuries-old monarchy, once seen as a pillar of Swedish identity, now lies in ruins. Its insignia stripped from public buildings and her former supporters dwindling by the day. In the aftermath of this historic upheaval, our decision to prolong the state of emergency and maintain the military’s direct governance over the country has further galvanized anti-monarchist sentiment across all sectors of society. Now far from being a temporary measure or rule, the new order has become a defining chapter towards the nation’s rebirth. What was once considered radical is now embraced with fervor by the public, where once the people looked to the royal family for stability, now they look to a singular figure, the Riksledare. Seen as Sweden’s saviour, they are the beacon who guided the nation through her darkest hours, and into a new dawn. \n\nThough whispers of restoration still echo faintly across Sweden, they grow quieter with each passing day. Monarchist factions, once a vocal and defiant image of the right, are now fractured and fading. The crown, once a symbol of age old traditions, has become a relic of the old era, its relevance diminished in the face of the people. There is still a long road ahead before the memory of the monarchy fades into history books and museums, but with each step forward Sweden breaks free from these chains."swemil.14.a:0 "Long live the Riksledare!"
 swemil.14.a:0 "Long live the Riksledare!"
 
 swemil.15.t:0 "Etheralisation of the Monarchy"
@@ -1667,9 +1666,8 @@ swemil.24.d:0 ""
 swemil.24.a:0 ""
 
 swemil.25.t:0 "A Swedish Military Industrial Complex"
-swemil.25.d:0 "Under Jung’s leadership, the industrial focus of Sweden has made a drastic change within the span of a few months. Turning from a system of peacetime consumerism into arms and munitions crafting. The Junta rewarding the industrialists and businessmen who patriotically support our cause, providing them with government benefits, while imposing harsh punishments towards those less inclined to our policies."
+swemil.25.d:0 "Under the decisive leadership of General Helge Jung, Sweden has rapidly transformed its industrial landscape, shifting from a nation of peacetime consumerism into a formidable war machine. In just a few short months, our factories, once focused on civilian goods, now hum with the production of arms, munitions, and military vehicles, securing our position as a true power in the north. The Junta has made it clear: those industrialists and businessmen who embrace the cause of Sweden’s military resurgence are richly rewarded with government contracts, tax incentives, and state-backed support. For those who resist or fail to fall in line with the new order, the punishment is swift and severe. The loyalty of our industrial elite is no longer optional; it is mandatory. Those who stand with us will be instrumental in securing Sweden’s future—while those who oppose us will be swept aside. \n\nWith companies like Aktiebolaget Landsverk leading the charge, we now possess the industrial backbone necessary to become an unstoppable force in Europe. The strength of our nation is built on steel, firepower, and the unbreakable resolve of the people under the banner of the Junta."swemil.25.a:0 "With Aktiebolaget Landsverk and others, we will be unstoppable"
 swemil.25.a:0 "With Aktiebolaget Landsverk and others, we will be unstoppable"
-
 
 ####authdem events####
 
@@ -1715,24 +1713,24 @@ swemil.35.d:0 "It seems the voices of our detractors have both grown louder and 
 swemil.35.a:0 "Fy fan!"
 
 swemil.36.t:0 "The Eclipse of the Crisis"
-swemil.36.d:0 ""
+swemil.36.d:0 "It would seem the crisis around the Catholic nature of our governance has come ahead, with infighting between the Protestant majority and Catholic members. Elmo Lindholm sits at the assembly, poorly getting a word in as fights and disputes over the most minor decisions continue, with any push by the Catholics seen as an attempt to erase Swedish Protestant culture. While some of the Protestants have made vague bills that directly target and tax the Catholic church. To mend this divide in the party, Lindholm has summoned all members in an attempt to decide and finalize the future of the party’s approach. The easiest path forward would be to maintain the current ideological framework by Charles Maurass, enforcing it amongst the party with some slight tweaks, no longer enforcing its Catholic priority. An alternative choice presented is the somewhat vague ideology of ‘Neo-Feudalism’, with near identical views to ours, it shifts in the notions of a more warrior based culture. One where a strict hierarchy is the main priority of the government, where most authority is placed upon the monarch, with regions headed by lords and counts that swear total allegiance to the King. On the other end sits Integralism, another similar foundational ideology, with the diverged focus on the Church itself within the government apparatus. Combining rigid hierarchy with meritocracy, it espouses the authority of the King and Church as vital to the nation, as such placing the Church of Sweden alongside the King in government. \n\nWith such choices presented, and their benefits and negatives weighed up accordingly, it is Elmo Lindholm with the King’s approval to choose."
 swemil.36.a:0 "Maurass’s ways are sound, remain as is"
 swemil.36.b:0 "We shall revive the medieval era, Feudalism!"
 swemil.36.b:0 "All towards the crown, Integral nationalism!"
 
-swemil.37.t:0 "kept status quo"
+swemil.37.t:0 "Maurrassism Entrenched"
 swemil.37.d:0 ""
 swemil.37.a:0 ""
 
-swemil.38.t:0 "mew fuedalism"
+swemil.38.t:0 "Revival of the Medieval Era"
 swemil.38.d:0 ""
 swemil.38.a:0 ""
 
-swemil.39.t:0 "integral nationalism"
+swemil.39.t:0 "The Church’s Newfound Authority"
 swemil.39.d:0 ""
 swemil.39.a:0 ""
 
-swemil.40.t:0 "Paramils into royal guard"
+swemil.40.t:0 "Recreating the Royal Guard"
 swemil.40.d:0 ""
 swemil.40.a:0 ""
 
