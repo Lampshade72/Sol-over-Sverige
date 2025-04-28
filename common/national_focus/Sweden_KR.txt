@@ -3135,7 +3135,10 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
-			country_event = { id = swerev.5 }
+			hidden_effect = {
+			country_event = { id = swerev.5 days = 2 }			
+			}
+
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 1255
@@ -3239,7 +3242,7 @@ focus_tree = {
 			add_stability = 0.08
 			add_war_support = -0.10
 			add_political_power = 30
-			add_popularity = { ideology = syndicalist popularity = -0.05 }			
+			add_popularity = { ideology = syndicalist popularity = -0.04 }			
 		
 		}
 	}
@@ -3261,7 +3264,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
-			add_stability = -0.12
+			add_stability = -0.1
 			add_war_support = 0.10
 			add_political_power = 50
 			add_popularity = { ideology = syndicalist popularity = 0.03 }			
@@ -3285,7 +3288,9 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SWE_trade_union_dommy
-			country_event = { id = swerev.21 }			
+			hidden = {
+				country_event = { id = swerev.21 days = 3 }
+			}		
 		}
 	}
 
