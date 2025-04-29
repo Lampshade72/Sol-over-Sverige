@@ -925,64 +925,66 @@ SWE_swedish_red_army:0 "Establish the Swedish Red Army"
 SWE_swedish_red_army_desc:0 "Modeling after the Bolshevik forces during the Russian civil war, we shall construct a centralized military apparatus. Focused on professionalism seen similar to those found in non-revolutionary country’s armies."
 SWE_swedish_red_militia:0 "Organise Swedish Red Militias"
 SWE_swedish_red_militia_desc:0 "Modeled after the militias in the Union of Britain and France, we shall construct a truly Swedish army around small unit tactics."
-
-
 SWE_new_high_command:0 "A New High Command"
-
+SWE_new_high_command_desc:0 "After many officers and generals left or were arrested for aiding the military’s coup, a new high command must be made, lest we find ourselves without anyone to lead the men."
 SWE_reborn_officer_corp:0 "Rebirthed Officer Corp"
-
+SWE_reborn_officer_corp_desc:0 "It's no lie that many officers directly or indirectly sided with the army’s coup, as such we are left with few competent officers. As such, bringing those collaborators out of prison, under watchful eyes, shall instruct the next generation of officers until we can do without them."
 SWE_remove_old_generals:0 "Cutting Away Reactionary Fossils"
-
+SWE_remove_old_generals_desc:0 "A top down purge of monarchist sympathisers in our army must be done, to prevent yet another coup arising from the army."
 SWE_hit_and_run:0 "Hit and Run Tactics"
-
+SWE_hit_and_run_desc:0 "In the likelihood of war, we may face an enemy far greater than our own, a foe who can both outnumber and out gun us. In such a circumstance, our forces must be trained in harassment tactics, the ability to disrupt enemy supply lines and strike fear in their forces, destroying any semblance of peace and rest."
 SWE_officer_uplifting:0 "Supremacy of Local Officers"
-
+SWE_officer_uplifting_desc:0 "In the heat of the battle, it is the officers who take charge, becoming the deciding factor between victory or defeat. By emboldening our officers and giving them local powers not seen before, we can allow them to work unchained."
 SWE_motorise_workers:0 "Motorisation of Cavalry"
-
+SWE_motorise_workers_desc:0 "As warfare quickly changes and technology advances, the use of cavalry becomes more and more useless. By updating our cavalry corp to trucks we can guarantee speed and efficiency."
 SWE_new_doctrine:0 "Modern Warfare"
-
+SWE_new_doctrine_desc:0 "We must learn of warfare from history, war changes quickly as technology advances most in times of strife. As such we must make ourselves prepared."
 SWE_international_tactics:0 "Studying Revolutions Abroad"
-
+SWE_international_tactics_desc:0 "By studying revolutions across the globe, we can mimic their successes like in Britain and France, while avoiding the failures displayed in Russia."
 SWE_cold_weather_partisans:0 "Cold Weather Partisans"
-
+SWE_cold_weather_partisans_desc:0 "Due to Sweden’s frigid winter climate, in the case of an active invasion, we must make use of this season's effects. Training soldiers to effectively fight in cold weather, alongside ski training, we can make any foe freeze."
 SWE_defensive_tank_fleet:0 "Defensive Tank Fleet"
-
+SWE_defensive_tank_fleet:0 "As warfare evolves, the deployment of tanks grows evermore, focusing on their strengths we can develop our army. Prioritising their armour and weaponry will allow us to survive and destroy any enemy armoured units."
 SWE_army_commissars:0 "Military Commissars"
-
+SWE_army_commissars:0 "Dissent and subversion still lie in our ranks, as many still hold loyalties to either former generals or of the monarchy itself. As such, the deployment of ideological commissars shall begin, men proven loyal to the cause shall make sure all soldiers do not falter."
 SWE_reserve_units:0 "Worker Reserves"
-
+SWE_reserve_units_desc:0 "By adding basic military service required for most workers, we can tap into a large reserve of manpower."
 SWE_rifle_in_every_home:0 "A Rifle In Every Hand"
-
+SWE_rifle_in_every_home_desc:0 "To maintain a strong army, we must ensure everyone holds a gun, from the humble worker, the valiant soldier or the generals themselves, everyone must be prepared to defend the revolution."
 SWE_fast_tank_fleet:0 "Light Tank Fleet"
-
+SWE_fast_tank_fleet_desc:0 "Tanks provide many benefits, none so much as speed and reliability. By focusing on these strengths we can be assured of swift and effective armoured deployments against our enemy."
 SWE_concentrated_breakthroughs:0 "Coordinated Breakthroughs"
-
+SWE_concentrated_breakthroughs_desc:0 "With coordinated strikes at the enemies positions, we can break through their lines and encircle their soldiers."
 SWE_wave_offensives:0 "Militia Wave Offensives"
-
+SWE_wave_offensives_desc:0 "By focusing on a wave system, we can batter an enemy relentlessly until either our forces overwhelm them or they tire out."
 SWE_army_of_the_people:0 "The Swedish People’s Army"
+SWE_army_of_the_people_desc:0 "We have managed to overhaul the Swedish army, from a distinctly monarchist apparatus of the state, to something that truthfully defends Sweden’s workers and the revolution."
+
 
 
 SWE_swedish_air_force:0 "The Swedish Air Force"
-
+SWE_swedish_air_force_desc:0 "Originally founded in 1926 by merging the army’s and navy’s planes, it has remained practically forgotten up till now. Seeing the growing importance of air based combat and its potential, we must focus on expanding it now more than ever."
 SWE_swedish_army_air:0 "Gyllenkrok’s Air Support"
-
+SWE_swedish_army_air_desc:0 "Gyllenkrok’s plan for the air force has been chosen, centred around the needs of the army, it focuses heavily on small air support bombers targeting enemy units and supply lines."
 SWE_swedish_independent_air:0 "Doctrine of Superiority"
-
+SWE_swedish_independent_air_desc:0 "Seen as the most straightforward plan, the Doctrine of Superiority has been chosen, focused on fighter combat and large industrial bombers."
 SWE_swedish_socialist_air:0 "Worker’s Board of Air Supremacy"
-
+SWE_swedish_socialist_air_desc:0 "After the chaos of the revolution, the air force has been reformed, focusing on general plane production and use."
 SWE_swedish_CAS:0 "Develop Close Air Support"
-
+SWE_swedish_CAS_desc:0 "Close air support planes play a crucial role in Gyllenkrok’s plan, increasing resources into them will allow us to create a truly magnificent plane."
 SWE_swedish_air_help_army:0 "Air Force for Army Needs"
-
+SWE_swedish_air_help_army_desc:0 "The Air force shall indirectly serve the army, while remaining as an independent branch, it will generally be beholden to the whims of the army."
 SWE_swedish_tactical_bomber:0 "Tactical Bomber Research"
-
+SWE_swedish_tactical_bomber_desc:0 "The creation of a smaller bomber that can both target enemy units and buildings alike will allow us to combine two roles into one."
 SWE_swedish_best_fighter:0 "Domination of the Fighter"
-
+SWE_swedish_best_fighter_desc:0 "There is no aircraft more important than the fighter plane, securing air superiority, stopping enemy bombers and close air support, it is the most vital role and shall be treated as such."
 SWE_swedish_strategic_bombing:0 "Buildings to Rubble"
-
+SWE_swedish_strategic_bombing_desc:0 "Most nations in Europe have a vastly greater industrial base than us, by utilising bombers in destroying this, we can level the playing field."
 SWE_swedish_fast_production:0 "Plane Production Priority"
-
+SWE_swedish_fast_production_desc:0 "We need as many planes in the sky as possible, being able to out produce our enemies will allow us to dominate the skies."
 SWE_swedish_no_gender_req:0 "All Able Bodied Pilots"
+SWE_swedish_no_gender_req_desc:0 "Women are just as capable of flying as men, washing away myths against this is vital as we recruit women into the air force to fill in the blanks."
+
 
 SWE_swedish_logistic_targeting:0 "Logistical Targeting"
 
