@@ -97,7 +97,10 @@ spriteTypes = {
 		name = "GFX_report_event_SWE_helge_jung_shake"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_helge_jung_shake.png"
 	}
-
+	spriteType = {
+		name = "GFX_report_event_SWE_SOS"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_SOS.png"
+	}
 
 
 

@@ -3288,7 +3288,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SWE_trade_union_dommy
-			hidden = {
+			hidden_effect = {
 				country_event = { id = swerev.21 days = 3 }
 			}		
 		}
@@ -6313,9 +6313,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = -0.12
+			add_stability = -0.11
 			add_command_power = 50
-			add_political_power = 80
+			add_political_power = 81
+			add_manpower = 1500
 		
 		}
 	}
