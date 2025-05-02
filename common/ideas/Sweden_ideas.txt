@@ -2889,6 +2889,29 @@ ideas = {
 			}			
 		}
 
+		SWE_idea_allmanna_sakerhetstjansten = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_idea_allmanna_sakerhetstjansten" }
+			picture = generic_investigation
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.02			
+				encryption_factor = 0.25
+				decryption_factor = 0.25
+				defensive_war_stability_factor = 0.02				
+			}
+		}
+
+		SWE_idea_landstorm = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_idea_landstorm" }
+			picture = SWE_landstormen_idea
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = 0.1
+				conscription = 0.01
+				war_support_factor = -0.02			
+			}
+		}
+
 		SWE_idea_rocketry_setback = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_idea_rocketry_setback"}
 			allowed = { always = no }

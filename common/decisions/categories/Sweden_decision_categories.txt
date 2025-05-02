@@ -102,5 +102,14 @@ SWE_economic_tree_decisions = {
 }
 
 
+SWE_wartime_decisions = {
+	icon = GFX_decision_category_patriotic
+	allowed = {
+		original_tag = SWE 
+		}
+	visible = { 
+		has_war = yes 
+		}	
 
+}
 	

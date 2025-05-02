@@ -1323,6 +1323,7 @@ SWE_revolution_decisions = {
 				has_socialist_government = yes
 			}
 			date > 1937.2.2
+			is_in_faction = no
 		}
 
 		visible = {
@@ -1346,11 +1347,12 @@ SWE_revolution_decisions = {
 	SWE_own_faction_rev = {# Create Faction
 		icon = generic_nationalism
 
-		allowed = { tag = MEX }
+		allowed = { tag = SWE }
 
 		available = {
 			has_socialist_government = yes
 			date > 1937.2.2
+			is_in_faction = no
 		}
 
 		visible = {
@@ -2545,7 +2547,7 @@ SWE_economic_tree_decisions = {
 
 
 
-war_measures = {
+SWE_wartime_decisions = {
 	swe_establish_allmana_sakerhetstjansten = {
 		icon = generic_political_discourse
 		allowed = {
@@ -2564,18 +2566,41 @@ war_measures = {
 		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision swe_establish_allmana_sakerhetstjansten"
-			if = {
-				limit = { has_dlc = "La Resistance" }
-				create_intelligence_agency = yes
-				upgrade_intelligence_agency = upgrade_form_department
-
 				add_ideas = SWE_idea_allmanna_sakerhetstjansten_lar
-			}
-			else = {
-				add_ideas = SWE_idea_allmanna_sakerhetstjansten
-			}
+
 		}
 	}
+	
+	SWE_mobilize_landsturm = {
+		icon = GFX_decision_soldierly_discipline
+		allowed = {
+			tag = SWE
+		}
+		available = {
+			has_war = yes
+		}
+		fire_only_once = yes
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}			
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_mobilize_landsturm"
+				add_ideas = SWE_idea_landstorm
+				add_warsupport = -0.02
+
+
+
+		}	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 
