@@ -376,6 +376,25 @@ SWE_big_boi_fleet1:0 "Naval Armada Doctrine"
 SWE_big_boi_fleet2:0 "Naval Armada Doctrine"
 
 
+###FOP ideas###
+
+SWE_swedish_commune_friend:0 "Commune's Industrial Advice"
+
+SWE_swedish_uob_friend:0 "Britain's Naval Expertise"
+
+SWE_swedish_germany_friend:0 "Reichspakt Investments"
+SWE_swedish_russia:0 "Russian Willpower"
+SWE_swedish_entente:0 "Entente Expertise"
+SWE_swedish_arm_in_arm:0 "Torch of Allegiance"
+SWE_swedish_neutrality1:0 "Swedish Neutrality Reinforced"
+SWE_swedish_intelligence:0 "Svensk Tiger"
+SWE_swedish_neutrality2:0 "Swedish Neutrality Entrenched"
+SWE_swedish_empire:0 "Awakened Empire"
+SWE_swedish_empire2:0 "An Empire Reborn"
+
+
+
+
 ####Focuses####
 
 SWE_rikstag_restructuring:0 "The Rikstag's Rising Stagnation"
@@ -951,9 +970,9 @@ SWE_international_tactics_desc:0 "By studying revolutions across the globe, we c
 SWE_cold_weather_partisans:0 "Cold Weather Partisans"
 SWE_cold_weather_partisans_desc:0 "Due to Sweden’s frigid winter climate, in the case of an active invasion, we must make use of this season's effects. Training soldiers to effectively fight in cold weather, alongside ski training, we can make any foe freeze."
 SWE_defensive_tank_fleet:0 "Defensive Tank Fleet"
-SWE_defensive_tank_fleet:0 "As warfare evolves, the deployment of tanks grows evermore, focusing on their strengths we can develop our army. Prioritising their armour and weaponry will allow us to survive and destroy any enemy armoured units."
+SWE_defensive_tank_fleet_desc:0 "As warfare evolves, the deployment of tanks grows evermore, focusing on their strengths we can develop our army. Prioritising their armour and weaponry will allow us to survive and destroy any enemy armoured units."
 SWE_army_commissars:0 "Military Commissars"
-SWE_army_commissars:0 "Dissent and subversion still lie in our ranks, as many still hold loyalties to either former generals or of the monarchy itself. As such, the deployment of ideological commissars shall begin, men proven loyal to the cause shall make sure all soldiers do not falter."
+SWE_army_commissars_desc:0 "Dissent and subversion still lie in our ranks, as many still hold loyalties to either former generals or of the monarchy itself. As such, the deployment of ideological commissars shall begin, men proven loyal to the cause shall make sure all soldiers do not falter."
 SWE_reserve_units:0 "Worker Reserves"
 SWE_reserve_units_desc:0 "By adding basic military service required for most workers, we can tap into a large reserve of manpower."
 SWE_rifle_in_every_home:0 "A Rifle In Every Hand"
@@ -992,55 +1011,57 @@ SWE_swedish_fast_production_desc:0 "We need as many planes in the sky as possibl
 SWE_swedish_no_gender_req:0 "All Able Bodied Pilots"
 SWE_swedish_no_gender_req_desc:0 "Women are just as capable of flying as men, washing away myths against this is vital as we recruit women into the air force to fill in the blanks."
 
-
 SWE_swedish_logistic_targeting:0 "Logistical Targeting"
-
-SWE_swedish_saab_expansion:0 "Aircraft Research Funding"
-
+SWE_swedish_logistic_targeting_desc:0 "By using planes to target enemy supply lines, we can starve their ground forces."
+SWE_swedish_saab_expansion:0 "SAAB Expansion"
+SWE_swedish_saab_expansion_desc:0 "SAAB is one of, if the most expansive Swedish aircraft company, expanding them shall aid in our aircraft production."
 SWE_swedish_supporting_bombers:0 "Defending Death’s Angels"
-
+SWE_swedish_supporting_bombers_desc:0 "Enemy fights harass and attack our bombers, no matter how many guns we give them. By deploying specific fighter squadrons to defend them, we can guarantee their safety."
 SWE_swedish_blind_sky:0 "In Defence of Sweden’s Sky"
-
+SWE_swedish_blind_sky_desc:0 "To avoid enemy aircraft from destroying our vital industries, we must be ready to defend our own skies."
 SWE_swedish_aviation_unions:0 "Creation of Aviation Unions"
-
+SWE_swedish_aviation_unions_desc:0 "The creation of aviation unions shall allow us to insert greater influence and production of aircraft."
 SWE_swedish_jet_testing:0 "Future Propulsion Testing"
-
+SWE_swedish_jet_testing_desc:0 "Aircraft can always go faster, go further, as such research into alternative propulsion systems must be explored to push their limits."
 SWE_swedish_aa_emplacement:0 "Anti-Aircraft Emplacement Planning"
-
-SWE_swedish_air_superior:0 "Dog Fighting Exercises"
-
+SWE_swedish_aa_emplacement_desc:0 "Aircraft alone cannot defend our skies, while they refuel anti-aircraft guns must be ready to defend them."
+SWE_swedish_air_superiority:0 "Dog Pilot Exercises"
+SWE_swedish_air_superiority_desc:0 "Like the glory of knights of old, our pilots will be embolden with honor and glory in their fight, as the new knights of the sky."
 SWE_swedish_new_age_aircraft:0 "New Age of Air Warfare"
+SWE_swedish_new_age_aircraft_desc:0 "Warfare is always evolving, and aircraft are no exception, the Swedish air force must be cutting edge, always."
 
 
 SWE_swedish_navy_start:0 "The Swedish Naval Forces"
-
+SWE_swedish_navy_start_desc:0 "The Swedish navy has and still stands as one of the largest in the Scandinavian region, despite the economic upheavals of the 1920s and neutrality. However, many of our ships are pre-Weltkrieg era at best, warped and rusting. An overhaul must be commenced if we hope to protect our ports and Seas."
 SWE_navy_baltic_sea:0 "The Baltic Sea Plan"
-
+SWE_navy_baltic_sea_desc:0 "The criteria for a good plan is understanding your limitations, we are relatively small on the side of nations in Europe. As such, defending our nearest Seas, that being the Baltic sea, should be our top priority. We shall focus on the use of destroyers and escort cruisers to make up the bulk of our fleet."
 SWE_navy_trade_disrupt:0 "Trade Disruption Plan"
-
+SWE_navy_trade_disrupt_desc:0 "In recent years the Submarine has arisen as a new technological military marvel. Capable of destroying large ships like battleships and carriers, it remains relatively cheap in comparison to other vessels. By having a small standing fleet supported by a horde of under ocean submarines, we can quietly dominate the seas."
 SWE_navy_old:0 "Looking To The Past"
-
+SWE_navy_old_desc:0 "The triumph of a good navy is a vast array of specialised ships, sailing alongside behemoths able to take down hundreds of ships alone. By looking into the European heritage of battleships, we can curate a new era of ironclad giants across the ocean."
 SWE_navy_baltic_destroyers:0 "Shallow Sea Destroyers"
-
+SWE_navy_baltic_destroyers_desc:0 "The baltic sea coastline offers many shallow areas, as such by preparing our destroyers for shallow water combat, we can hope to dominate these shores."
 SWE_navy_air_over_sea:0 "Air Force Cooperation"
-
+SWE_navy_air_over_sea_desc:0 "In the modern era, ships alone are not enough, many nations look to aircraft to support their naval vessels. We shall do the same, developing cooperation between those that sail and those who fly."
 SWE_navy_sub_attack:0 "Submarine Warfare Perfected"
-
+SWE_navy_sub_attack_desc:0 "Unrestricted submarine warfare, a truly limitless force of success. While the Kaiser decided against such maneuvers in the Weltkrieg, we shall not hold back."
 SWE_navy_battle_cruiser:0 "Mainline Battlecruisers"
-
+SWE_navy_battle_cruiser_desc:0 "Battleships are expensive, slow and easily crushed by planes or submarines, the cheaper, faster and almost as well equipped battlecruisers will fit our nation's capabilities far better."
 SWE_navy_battle_ship:0 "Rebuilding A Grand Navy"
-
+SWE_navy_battle_ship_desc:0 "The Swedish must be feared, a power to dominate Europe’s seas, we must increase production and recruitment, expanding it to the reaches of the Earth."
 SWE_navy_coastal_fortification:0 "Fortify Coastal Targets"
-
+SWE_navy_coastal_fortification_desc:0 "While our most essential ports focus on repairing and producing more naval vessels, they must remain protected against strikes from both across the waves and above."
 SWE_navy_further_doctrine:0 "Naval Doctrine Studies"
-
+SWE_navy_further_doctrine_desc:0 "By studying the most famous naval battles in history, and failures, we can learn not to repeat such mistakes."
 SWE_navy_encourage_citizen_funding:0 "Naval Citizen Funding Scheme"
-
+SWE_navy_encourage_citizen_funding_desc:0 "By setting up the Naval Citizen Funding Scheme, we can better allocate the resources from our civilian population to our navy, while showing them the fruits of their labour."
 SWE_navy_carrier_experiment:0 "Carrier Experimentation"
-
+SWE_navy_carrier_experiment_desc:0 "Aircraft carriers stand still relatively new to the scene of ships, by researching and experimenting on designs, we can hope to make one to fit our own navy."
 SWE_navy_large_and_big:0 "Bigger Boats, Bigger Guns"
+SWE_navy_large_and_big_desc:0 "They may move fast, we shoot faster. They may armour themselves, our rounds piece their armour. No enemy too powerful for our ships."
+SWE_navy_henrik_trolle:0 "Naval Warfare Alike Henrik Trolle"
+SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedish Admirals in history, by embodying his skill, the Swedish navy shall rise to heights it has never seen before."
 
-SWE_navy_henrik_trolle:0 "Naval Warfare Alike Henrik af Trolle"
 
 
 
@@ -1119,6 +1140,19 @@ SWE_develop_gotland:0 "Develop Gotland"
 SWE_add_civilian1:0 "Develop Southern Factories"
 SWE_add_civilian2:0 "Re-open Norrland Businesses"
 SWE_add_civilian3:0 "Expand Kiruna's Industry"
+
+SWE_wartime_decisions:0 "Wartime Decisions"
+
+swe_subjugate_denmark_revolution:0 "Freeing the Dane's"
+swe_subjugate_finland_revolution:0 "Liberating the Finn's"
+swe_subjugate_norway_revolution:0 "Unchaining the Norwegian's"
+SWE_claim_scandinavia_revolution:0 "Claiming a Red Scandinavia"
+
+
+
+
+
+
 
 
 
@@ -1392,16 +1426,16 @@ swerev.3.a:0 "Arise Workers! Your hard work has paid off!"
 swerev.3.b:0 "Hold Fire, move in and arrest the rest!"
 
 swerev.4.t:0 "A Red Dawn"
-swerev.4.d:0 "After the bloody aftermath of the Militaries failed attempt at dismantling the Revolutionary government, the rest of the Armies top brass either pledged loyalty to the new Swedish revolution or were arrested and tried. A new day is now dawning upon Sweden, one in which the hopes of workers rights, class liberation and freedom will hopefully be achieved, as such the red flag of revolution flutters in Sweden's sky."
-swerev.4.a:0 "Onwards, there is much to do!"
+swerev.4.d:0 "The attempted coup by the military has ended in failure, its architects either defeated in battle or dragged before the people's justice. In the aftermath, the remaining generals have either pledged fealty to the revolution or been cast down alongside their comrades. With the old guard swept away, Sweden stands at the threshold of a new era. The dreams of workers' rights, class liberation, and human dignity are no longer distant hopes, they are the guiding principles of a new society in the making. Across the cities and countryside alike, the red flag of revolution rises, carried by the winds of change."swerev.4.a:0 "Onwards, there is much to do!"
+swerev.4.a:0 "Forward, our labor has only just begun!"
 
 swerev.5.t:0 "Rise, Red Guardsmen!"
 swerev.5.d:0 "While the threat of a total coup by reactionary forces is gone, many within Sweden still hold to their old ways. Attacking political stations and harassing our efforts at establishing a true workers paradise. As such, drastic measures must be enacted, the creation of a ‘Red Guard’ modeled after those that fought in the Russian Civil war. These new guardsmen will aid in combating reactionary terrorists and enemies of the revolution, for their loyalty to the revolution is assured."
 swerev.5.a:0 "Red covers Sweden now and forever!"
 
-swerev.6.t:0 "A Red Rikstag"
-swerev.6.d:0 "With most of the revolution's enemies either arrested, destroyed or fleeing the nation, we may now turn our eyes back to the political landscape. For the once united and fierce revolutionary forces, now start to break over ideological differences without a common enemy. \n\nFactions are starting to be established, from those of the previously elected SSV with their more moderate support base and believe in a socialist system of governance, to the syndicalist anarchists who gain support from the 3rd Internationale in both funding and armaments. Finally is the mix of National syndicalist and Communists authoritarians on the far left. \n\nWith each group organising themselves a new election has been called, and soon, one of these groups shall emerge as the inheritors of the Swedish Revolution."
-swerev.6.a:0 "A true and fair election!"
+swerev.6.t:0 "A Red Riksdag"
+swerev.6.d:0 "With the enemies of the revolution either imprisoned, destroyed, or driven beyond our borders, attention now turns inward—toward the emerging political landscape of a reborn Sweden. The once-unified revolutionary front, bound together by shared struggle, has begun to fracture as ideological rifts surface in the absence of a common foe. \n\nNew factions are beginning to take shape. The Socialists of the SSV, with their roots in the former electoral system, advocate for a structured socialist republic with popular representation. Opposing them are the syndicalist anarchists, gaining momentum through support from the 3rd Internationale in both arms and ideology, envisioning a stateless, decentralized workers' order. Further still are the hardline national syndicalists and authoritarian communists, united only by their desire for a more militant, centralized revolutionary state.\n\nAs these groups organize and solidify their positions, a new election has been declared. Soon, one of them will rise to claim the mantle of leadership and shape the future of the Swedish Revolution."
+swerev.6.a:0 "Let the people decide our path!"
 
 swerev.7.t:0 "Social Democrat Left Party Reorganises"
 swerev.7.d:0 "The Social Democrat Left Party of Sweden, headed by her leader Karin Boye, took the position of a moderated revolution, while initially allying with Hanssons Social democrats to achieve a parliamentary electoral victory, they have now left behind their old allies in favour of their more revolutionary ones. Seeking to maintain a parliament, albeit with only revolutionary members, is a must to maintain order within Sweden. They seek the proletarianization of the middle class while also uplifting the working class to a higher status. Improving both working conditions and pay for all in Sweden. \n\nBeleiving in a strong cooperation between the small farmers, croppers, tenants and workers, shall create a liberation of agricultural people from capitalist exploitation and oppression. Aside from these, they also hold the position of a statutory ban on drinking. \n\nThey remain as the largest party in terms of active members, giving them a solid chance at yet another electoral victory, albeit within a very different looking Rikstag."
@@ -1460,10 +1494,10 @@ swerev.18.a:0 "Arbetare och småbrukare!"
 
 ### Syndicalist events ###
 
-swerev.19.t:0 "Question of Ideology"
-swerev.19.d:0 "Now with our rule certain, our eyes may be turned to dealing with more pressing internal issues. One that has come to light is the basis of our ideology, while Syndicalism has served well for nations like France and Britain, our current structure bases a more anarchist, semi-stateless system, based around the thought of eliminating state greed, creating an egalitarian utopia. Maintaining such a position makes the most sense as most within the party structure, and those that initially supported our group, hold to Anarchist ideals. \n\nHowever with the recent revolution and subsequent growth of our party, those with differing views on how syndicalism should be administered have begun to express themselves. They believe, while holding to Syndicalist trade union dominance, the nation requires some form of strong executive to maintain control. Arguing that a complete anarchist system expressed by the others would lead to a quick end, from either foreign reactionaries or internal coups. Keeping both positions in mind, is it up to Severin to decide on the direction of the party, maintaining her anarchist ideals, or agreeing with the necessity to centralize?"
-swerev.19.a:0 "Anarchism is our backbone, stay the course"
-swerev.19.b:0 "Centralization is unfortunately necessary"
+swerev.19.t:0 "The Question of Ideology"
+swerev.19.d:0 "Now that our authority is secure and the fires of counter-revolution have dimmed, attention turns inward—toward the ideological soul of our new society. In the early days, our movement found strength in anarchist ideals: the dismantling of hierarchical power, the abolition of the capitalist state, and the vision of a decentralized, egalitarian order governed by federated workers' councils. This framework, drawn from syndicalist and anarchist traditions, has guided us thus far and remains popular among many in the party's founding ranks and grassroots supporters.\n\nYet, with victory has come growth, and with growth, dissent. New voices within the movement, some from recently joined unions and local committees, argue that total decentralization is impractical in the face of ongoing threats. They do not reject syndicalism, but contend that the revolution cannot be defended without a central structure, some form of executive authority to coordinate defense, economic planning, and diplomacy. They warn that clinging to pure anarchism could leave us vulnerable to both foreign intervention and internal instability.\n\nThe decision now lies with Severin. Will he uphold the anarchist vision that brought the revolution to life, or compromise in favor of centralized authority to ensure its survival?"
+swerev.19.a:0 "Anarchism is our foundation, stay the course."
+swerev.19.b:0 "We must centralize to endure."
 
 swerev.20.t:0 "Anarchist Dream"
 swerev.20.d:0 "With the party's choice to maintain her anarchist ideals, internal friction between the party is starting to mend. Workers will soon no longer be burdened by the fear of a low wage leading them to poverty, no more shall those in cities struggle to afford rent and no more shall large swathes of land belong to the few. With this Anarcho-syndicalist ideology, we shall pursue a truly stateless, egalitarian paradise on Earth."
@@ -1645,9 +1679,9 @@ swemil.15.t:0 "Etheralisation of the Monarchy"
 swemil.15.d:0 "The king stands as the ruler of Sweden, however de facto control remains in the military’s hands, the king unable to even speak to the public with its first approval. Quickly, this has transformed the image of the king in the public eye from a close figure of the people, someone of which is familiar with the common man, to a near deify figure. Such a shift has been utilised by the current regime, furthering the ethereal nature of the crown as more than just the figure who sits upon the throne. \n\nStill a long way from the vision of monarch’s seen in nations like Japan or the Russian EMpire, with time the Swedish monarchy will become a beacon of the soul of Sweden."
 swemil.15.a:0 "God Save the King!"
 
-swemil.16.t:0 "Svea rike"
-swemil.16.d:0 ""
-swemil.16.a:0 ""
+swemil.16.t:0 "Order Restored, Sweden Reborn"
+swemil.16.d:0 "Years have passed since the red tide swept across Sweden, plunging the nation into chaos. The socialist revolution, once heralded as a new dawn, quickly fractured under the weight of ideological infighting and economic collapse. Disorder reigned, and the fabric of the state began to unravel. \n\nIn this moment of crisis, the Army acted. The counter-revolution was swift and ruthless, arresting, purging, and crushing those who had dragged the country into ruin. With the old regime dismantled, the military turned to a new figure to lead the nation: a man of steel resolve, an ardent ultranationalist, and a symbol of discipline and renewal.\n\nUnder his guidance, Sweden has been reforged. The excesses of the past have been swept away, the economy has stabilized, and the people's faith in the state has been restored. Through sweeping reforms, national unity campaigns, and strict control over dissent, a new era has begun—one defined not by class warfare, but by strength, order, and the supremacy of the Swedish nation.\n\nWhere once there was chaos, there is now purpose. Sweden marches forward."
+swemil.16.a:0 "Discipline. Unity. Rebirth."
 
 swemil.17.t:0 "Dictate of Swedish Nationalism"
 swemil.17.d:0 "As of so far, the new government has remained on a menagerie of like-minded ultranationalists, because of this many differing ideas on economic policies, race and expansion have arrison. Sparking many debates, the time has come for the Riksledare to formalise a cohesive view, one that the rest of the party shall follow. Determining such positions will come with its challenges due to the current shifts and cracks in the party, but to avoid a complete rebellion within, such formation of a cohesive ideology must be made."
@@ -1674,21 +1708,21 @@ swemil.20.a:0 "Nonsense! I rule alone for the good of Sweden!"
 swemil.20.b:0 "Excellent, the military has always remained my true burden!"
 
 
-swemil.21.t:0 "Cutting out the Radicals"
-swemil.21.d:0 "Alongside Jung in both his crafting and executing his plan to overthrow the crazed revolutionaries, has stood the general Archibald Douglas. A cunning and bright mind for military tactics, however a large supporter of fringe ultranationalist cliques. Such cliques formed paramilitaries after Jung’s initial coup, aiding the army in securing towns and battling against the remaining socialist and syndicalist militias. However, their unprofessionalism, unchecked violence and failure to adhere to military command, has led them to drift further and further away from Jung’s government. Reaching out to Douglas, Jung hopes to put down the paramilitary rabble, disband their groups in hopes of them joining the current armed forces, streamlining military cohesion."
-swemil.21.a:0 "Come wayward sons, come!"
+swemil.21.t:0 "Cutting Out the Radicals"
+swemil.21.d:0 "In the wake of the revolution that swept away the monarchy, and the subsequent socialist takeover, Sweden descended into chaos. It was through the decisive intervention of the Army, under the firm hand of General Helge Jung, that order was restored. Yet even within the counter-revolutionary coalition, fractures remain.\n\nAmong Jung’s early allies was General Archibald Douglas, a capable commander and fierce opponent of the left. However, Douglas has long harbored sympathies for ultranationalist elements that now operate beyond the Army’s direct control. These groups, forged into paramilitary bands during the civil unrest, proved useful in routing the final remnants of socialist militias. But in the months since, they’ve grown increasingly reckless, disobeying orders, committing atrocities, and threatening the discipline of the restored Swedish state.\n\nNow, Jung moves to reassert full control. Reaching out to Douglas, he offers an ultimatum: disband the paramilitaries and integrate their members into the formal armed forces, or face dissolution by force. Only by streamlining command and eliminating rogue elements can Sweden's military and government march as one."
+swemil.21.a:0 "Come wayward sons, there is still work to do."
 
 swemil.22.t:0 "Jung’s Rearmament Manifest"
 swemil.22.d:0 "Helge Jung has long pleaded with the former government’s of the need for a defensive rearmament for the nation. Believing a conflict to rival or surpass the Weltkreig was bound to come soon, and Sweden needed to be prepared to defend her borders against any foe, from land or sea. Until now, Jung’s woes went unheard, now with the reins of the nation in his hands, a vast defensive rearmament plan has now begun. Fortifications are set up along all neighbouring borders, whether they are friend or foe, alongside crucial sea forts in all major cities starting construction. To many, this may seem like overkill, even as paranoia, but Jung knows that when the enemy strikes, Sweden will be prepared."
 swemil.22.a:0 "The winds of History are soon to be blowing"
 
-swemil.23.t:0 "bastion of nordic might - republic"
-swemil.23.d:0 ""
-swemil.23.a:0 ""
+swemil.23.t:0 "Bastion of Nordic Might"
+swemil.23.d:0 "After the collapse of the monarchy and the short-lived reign of the socialist republic, Sweden was on the brink of chaos. Amidst civil unrest and uncertainty, the military, under the leadership of General Helge Jung, rose to restore order. Though many expected a return to the old monarchy, Jung defied expectations. \n\nInstead of reinstating the crown, he forged a new path, an ironclad republic led by strength, unity, and the disciplined hand of the armed forces. Through trials at home and abroad, he has steered Sweden away from division and weakness. Now, all opposition has been silenced or co-opted, and the nation marches forward as a beacon of Nordic strength and order.\n\nSweden stands tall, not as a kingdom nor a proletarian dream, but as a disciplined republic born in fire and sustained through will."
+swemil.23.a:0 "Jung has made Sweden mighty again."
 
-swemil.24.t:0 "bastion of nordic might - monarch"
-swemil.24.d:0 ""
-swemil.24.a:0 ""
+swemil.24.t:0 "The Crown and the Sword"
+swemil.24.d:0 "Following the collapse of the monarchy and the chaos unleashed by the socialist regime, General Helge Jung led the military in a swift and decisive counter-coup. While many anticipated a new military dictatorship, Jung chose a more calculated path.\n\nTo unify the nation and give the appearance of tradition restored, Prince Gustaf Adolf was crowned King Gustaf IV. But behind the gilded throne lies the true seat of power—Jung and the military establishment. The king rules in name, but it is the army that governs in fact. Political opposition has been crushed, the socialist threat eliminated, and the nation rebuilt under disciplined authority.\n\nSweden stands not as a liberal democracy, nor a monarchy in spirit, but as a military regime cloaked in royal legitimacy."
+swemil.24.a:0 "The king wears the crown, but Jung holds the sword."
 
 swemil.25.t:0 "A Swedish Military Industrial Complex"
 swemil.25.d:0 "Under the decisive leadership of General Helge Jung, Sweden has rapidly transformed its industrial landscape, shifting from a nation of peacetime consumerism into a formidable war machine. In just a few short months, our factories, once focused on civilian goods, now hum with the production of arms, munitions, and military vehicles, securing our position as a true power in the north. The Junta has made it clear, those industrialists and businessmen who embrace the cause of Sweden’s military resurgence are richly rewarded with government contracts, tax incentives, and state-backed support. For those who resist or fail to fall in line with the new order, the punishment is swift and severe. The loyalty of our industrial elite is no longer optional; it is mandatory. Those who stand with us will be instrumental in securing Sweden’s future—while those who oppose us will be swept aside. \n\nWith companies like Aktiebolaget Landsverk leading the charge, we now possess the industrial backbone necessary to become an unstoppable force in Europe. The strength of our nation is built on steel, firepower, and the unbreakable resolve of the people under the banner of the Junta."swemil.25.a:0 "With Aktiebolaget Landsverk and others, we will be unstoppable"
@@ -1712,9 +1746,10 @@ swemil.29.t:0 "Restoration of the Unions"
 swemil.29.d:0 "The unions served as a vital voice of the workers, however they also allowed themselves to become infected with parasitic ideologues who seeked to use them for their own purposes. Since the military’s coup against the revolutionaries, many of the trade unions were purged, either by the army or radical paramilitaries. As such, currently unions remain banned nationwide, however Ehrensvard has now allowed the formation of new trade unions, under some restrictions. Unions must remain patriotic first and foremost, disallowing and sedition or disident ideologues to seize their reigns, alongside this army oversight over unions will be enacted. Such moves have caused some hope amongst Sweden’s workers, however how much of an actual this will have remains to be seen."
 swemil.29.a:0 "Let not yourself get caught up by charismatic speaker"
 
-swemil.30.t:0 "return to norm - monarch"
-swemil.30.d:0 ""
-swemil.30.a:0 ""
+swemil.30.t:0 "Twilight of the Junta"
+swemil.30.d:0 "After months of persistent negotiation, diplomatic maneuvering, and subtle pressure, Gösta Bagge has achieved a partial yet symbolic victory. The military junta, which seized power in the chaotic aftermath of the national crisis, has agreed to transfer limited political authority back to the remnants of the pre-coup civilian government. Bagge, now at the head of a revitalized National Organization of the Right, reborn from the ashes of the old General Electoral League, has positioned himself as a staunch advocate for a constitutional restoration. While King Gustaf VI has been allowed to serve in a ceremonial role, true authority remains elusive, held tightly by the generals and their inner circle.\n\nStill, a possible concession could mark a tentative turning point. With careful statesmanship and national unity, Bagge hopes to slowly reclaim Sweden’s democratic traditions, extinguished but not forgotten. The road ahead is uncertain and fraught with internal tension, but the flicker of parliamentary governance has not been fully snuffed out. Sweden may yet reclaim her soul from the grip of martial authority."
+swemil.30.a:0 "For now, we retain control"
+swemil.30.b:0 "A step forward it shall be!"
 
 swemil.31.t:0 "iron sharpen iron"
 swemil.31.d:0 ""

@@ -6401,6 +6401,17 @@ focus_tree = {
 		icon = GFX_goal_SWE_army
 		x = -20
 		y = 0
+		offset = {
+			x = 10
+			y = 0
+			trigger = {
+				OR = {
+				has_country_flag = SWE_flag_military_steps_in
+				has_country_flag = SWE_election_safe_success
+				has_country_flag = SWE_flag_red_in_sweden
+				}
+			}
+		}		
 		cost = 5
 
 		ai_will_do = {
@@ -6430,6 +6441,14 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_arms_against_tyranny }
 		x = 7
 		y = 1
+		offset = {
+			x = 7
+			y = 0
+			trigger = {
+				has_country_flag = SWE_flag_military_steps_in
+				has_country_flag = SWE_election_safe_success
+			}
+		}		
 		cost = 5
 		relative_position_id = SWE_defense_of_sweden
 
@@ -6441,6 +6460,15 @@ focus_tree = {
 			OR = {
 				has_country_flag = SWE_flag_military_steps_in
 				has_country_flag = SWE_election_safe_success
+			}
+		}
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag  = SWE_flag_red_in_sweden
+
+				}
 			}
 		}
 
@@ -6462,6 +6490,14 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_chief_of_army }
 		x = -7
 		y = 1
+		offset = {
+			x = 7
+			y = 0
+			trigger = {
+				has_country_flag = SWE_flag_red_in_sweden
+			}
+		}
+		
 		cost = 5
 		relative_position_id = SWE_defense_of_sweden
 
@@ -6471,6 +6507,15 @@ focus_tree = {
 		
 		available = {
 			has_country_flag = SWE_flag_red_in_sweden
+		}
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag  = SWE_election_safe_success
+					has_country_flag = SWE_flag_military_steps_in
+				}
+			}
 		}
 
 		completion_reward = {
@@ -7750,7 +7795,7 @@ focus_tree = {
 	focus = {
 		id = SWE_swedish_air_force
 		icon = GFX_goal_SWE_airforce_2
-		x = -13
+		x = -10
 		y = 9
 		cost = 5
 
@@ -8379,7 +8424,7 @@ focus_tree = {
 	focus = {
 		id = SWE_swedish_navy_start
 		icon = GFX_goal_SWE_navy
-		x = -27
+		x = -23
 		y = 9
 		cost = 5
 

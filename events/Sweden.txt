@@ -2807,7 +2807,7 @@ country_event = { #return to norm - monarch ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.30" }
 	title = swemil.30.t
 	desc = swemil.30.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_generic_diplomacy1
 
 	is_triggered_only = yes
 
@@ -2836,7 +2836,7 @@ country_event = { #iron sharpen iron - no monarch ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.31" }
 	title = swemil.31.t
 	desc = swemil.31.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_army_shoot
 
 	is_triggered_only = yes
 
@@ -2869,7 +2869,7 @@ country_event = { #authdem final - monarch ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.33" }
 	title = swemil.33.t
 	desc = swemil.33.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_monarchist_1
 
 	is_triggered_only = yes
 
