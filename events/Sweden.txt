@@ -2207,7 +2207,9 @@ country_event = { ####soldiers in factories ##LS##
 		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
 		add_stability = 0.02
 		add_war_support = -0.03
-
+		hidden_effect = {
+		country_event = { id = swe.22 days = 164 }
+			}
 	}
 }
 
@@ -2293,7 +2295,11 @@ country_event = { #Inter-military election ##LS##
 		name = swemil.7.a
 		set_country_flag = SWE_flag_jung_junta
 		add_stability = 0.10
-		add_popularity = { ideology = paternal_autocrat popularity = 0.14 }	
+		add_popularity = { ideology = paternal_autocrat popularity = 0.14 }
+
+		hidden_effect = {
+			country_event = { id = swe.30 days = 400 }
+			}		
 	}
 	
 	option = { ##Authdem
@@ -2307,6 +2313,7 @@ country_event = { #Inter-military election ##LS##
 		add_ideas = SWE_Sven_Hedin_for_ade
 		add_ideas = SWE_Harald_Malmberg_eco_ade
 		add_ideas = SWE_Carlos_Adlercreutz_sec_ade
+		
 		hidden_effect = {
 			if = {
 				limit = { has_country_flag = SWE_flag_crown_restored }				
@@ -2320,6 +2327,9 @@ country_event = { #Inter-military election ##LS##
 					ideology = authdem_junta_subtype
 					}
 				}
+
+			country_event = { id = swe.30 days = 400 }
+				
 			}		
 	}
 
@@ -2338,7 +2348,8 @@ country_event = { #Inter-military election ##LS##
 		country_event = { id = swemil.8 days = 8 }		
 		hidden_effect = {
 			if = {
-				limit = { has_country_flag = SWE_flag_crown_restored }					
+				limit = { has_country_flag = SWE_flag_crown_restored }	
+					set_cosmetic_tag = SWE_natpop_king
 				} 			
 				else = {
 					create_country_leader = {
@@ -2347,8 +2358,12 @@ country_event = { #Inter-military election ##LS##
 					expire = "1.1.1"
 					ideology = militarism_subtype
 					}
+					set_cosmetic_tag = SWE_natpop_mil
+					
 				}
+			country_event = { id = swe.30 days = 400 }					
 			}
+			
 		}
 	}
 	
@@ -2771,7 +2786,8 @@ country_event = { #authdem start ##LS##
 
 	option = { 
 		name = swemil.26.a
-		increase_ruling_party_popularity_by_2 = yes	
+		increase_ruling_party_popularity_by_2 = yes
+		add_political_power = 40
 	}
 }
 
@@ -2786,6 +2802,8 @@ country_event = { #recconcile the right ##LS##
 
 	option = { 
 		name = swemil.27.a
+		add_stability = 0.02
+		add_political_power = 15
 	
 	}
 }
@@ -2818,7 +2836,9 @@ country_event = { #patriotic unions ##LS##
 
 	option = { 
 		name = swemil.29.a
-	
+		add_war_support = 0.05
+		add_political_power = -25
+		add_offsite_building = { type = arms_factory level = 1 }	
 	}
 }
 
@@ -2838,7 +2858,7 @@ country_event = { #return to norm - monarch ##LS##
 	}
 
 	option = { #let bagge restore some civilian
-		name = swemil.30.a
+		name = swemil.30.b
 		add_stability = 0.12
 		add_popularity = { ideology = social_conservative popularity = 0.10 }		
 		set_politics = { ruling_party = social_conservative elections_allowed = no }
@@ -2847,6 +2867,12 @@ country_event = { #return to norm - monarch ##LS##
 		set_cosmetic_tag = SWE_mil_bagge
 		add_ideas = SWE_authdem_civilian
 		add_authdem_to_coalition = yes
+		
+		set_party_name = {
+			ideology = social_conservative
+			long_name = SWE_social_conservative_alternate_party_long
+			name = SWE_social_conservative_alternate_party
+		}		
 
 	}	
 }
@@ -2981,7 +3007,10 @@ country_event = { #kept status quo ##LS##
 
 	option = { #yay!
 		name = swemil.37.a
-	
+		increase_ruling_party_popularity_by_2
+		add_stability = 0.01
+		add_war_support = 0.01
+		add_political_power	= -10
 	}	
 }
 
@@ -2996,7 +3025,10 @@ country_event = { #mew-fuedalism ##LS##
 
 	option = { #yay!
 		name = swemil.38.a
-	
+		increase_ruling_party_popularity_by_2	
+		add_stability = -0.01
+		add_war_support	= 0.02
+		add_political_power = 6
 	}	
 }
 
@@ -5232,10 +5264,6 @@ country_event = { #The Trade Union question
 
 	is_triggered_only = yes
 
-	trigger = {
-		tag = SWE
-		has_government = national_populist
-	}
 
 	option = { #Establish a guild system
 		name = swe.30.a
@@ -5354,7 +5382,7 @@ country_event = { #Riksledare meets archbishop
 		name = swe.34.a
 		ai_chance = { factor = 20 }
 		hidden_effect = {
-			country_event = { id = swe.35 days = 21 }
+			country_event = { id = swe.35 days = 42 }
 		}
 	}
 
@@ -5362,7 +5390,7 @@ country_event = { #Riksledare meets archbishop
 		name = swe.34.b
 		ai_chance = { factor = 80 }
 		hidden_effect = {
-			country_event = { id = swe.36 days = 21 }
+			country_event = { id = swe.36 days = 42 }
 		}
 	}
 }
@@ -5652,7 +5680,7 @@ country_event = { #The General Electoral League renames itself ##kr-K##
 			long_name = SWE_social_conservative_alternate_party_long
 			name = SWE_social_conservative_alternate_party
 		}
-		add_popularity = { ideology = social_conservative popularity = -0.03 }
+		add_popularity = { ideology = social_conservative popularity = -0.01 }
 		add_popularity = { ideology = market_liberal popularity = 0.02 }
 	}
 }

@@ -1211,6 +1211,13 @@ SWE_totalist_lind_party_long:0 "Svensk Socialistisk Samling - §LSwedish Sociali
 SWE_totalist_party_fighting:0 "SP/SVV"
 SWE_totalist_party_fighting_long:0 "Socialistiska Partiet - §LSocialist Party§!\nSveriges kommunistiska parti - §LCommunist Party of Sweden§!"
 
+SWE_social_conservative_alternate_party:0 "Högern"
+SWE_social_conservative_alternate_party_long:0 "Högerns Riksorganisation\n§LNational Organization of the Right§!" 
+
+SWE_authoritarian_democrat_alternate_party_two:0 "Högern"
+SWE_authoritarian_democrat_alternate_party_two_long:0 "Högerns Riksorganisation\n§LNational Organization of the Right§!"
+
+
 
 #### FOP ####
 swefop.999.t:0 "Swedish gold coast"
@@ -1793,12 +1800,13 @@ swemil.39.d:0 "The rise of integral nationalism has reshaped not only the struct
 swemil.39.a:0 "God Save Sweden"
 
 swemil.40.t:0 "Recreating the Royal Guard"
-swemil.40.d:0 ""
-swemil.40.a:0 ""
+swemil.40.d:0 "Under previous governments, the Royal Guard had become little more than an ornament, soldiers in polished boots and bright sashes, parading through the streets during galas and state visits. Their duties were ceremonial, their weapons largely for show. But in Elmo Lindholm’s Sweden, there is no room for decoration without purpose.\n\nThe government has moved swiftly to repurpose the institution, merging it with the most loyal paramilitary elements that fought to secure the regime. These men, hardened, disciplined, and utterly devoted to the nation’s new order, will now don the title of Royal Guard not as symbols of tradition, but as enforcers of loyalty and strength.\n\nClad in uniforms that blend regal tradition with the austere practicality of modern warfare, the new Royal Guard will serve both as the personal protectors of the King and as Lindholm’s shield against dissent. Their presence in the capital is unmistakable, a reminder that while the crown may shine in public, it is the blade behind it that keeps Sweden stable.\n\nThe age of ceremonial pageantry is over. The Royal Guard marches once more, not for spectacle, but for power."
+swemil.40.a:0 "Let loyalty wear steel once again."
 
-swemil.41.t:0 "Ingvar kamprad"
-swemil.41.d:0 ""
-swemil.41.a:0 ""
+swemil.41.t:0 "A Vision in Flat-Pack"
+swemil.41.d:0 "In the quiet forests of Småland, a young entrepreneur named Ingvar Kamprad has founded a small mail-order company by the name of IKEA. Selling everyday household goods at affordable prices, Kamprad's business model emphasizes efficiency, simplicity, and accessibility, a sharp contrast to the traditional, expensive furniture markets.\n\nThough still modest in scale, IKEA represents a new spirit of Swedish innovation and frugality, values that may one day shape not only domestic life, but the Swedish economy at large. For now, it is just a name. But to those who watch closely, it may be the beginning of something far greater."
+swemil.41.a:0 "A promising future for Swedish industry."
+swemil.41.b:0 "A brilliant mine, bring him into government!"
 
 swemil.42.t:0 "Elmo Flag chooser"
 swemil.42.d:0 "As the soon to be sole rulers of Europe, we must design a flag fit for our emerging Kingdom. And for that, Riksledare Lindholm has put forth a national competition for our new flag. \n\nUnder this, three options have captured the leaders eyes, all adorned with purple, the colour of European royalty and with a large circle of Fleur de Lys shown in a golden yellow. The differences arise in that the first option most signifies Swedish supremacy over this new empire with the three crowns inside a roundel in Sweden's national colours. Second is a similar design but without the roundel around the crowns. The final option places the crowns in the top left corner. \n\nThe final choice is..."
@@ -2925,6 +2933,10 @@ SWE_mil_DEF:0 "the Swedish State"
 SWE_natpop_mil:0 "Swedish State"
 SWE_natpop_mil_ADJ:0 "Swedish"
 SWE_natpop_mil_DEF:0 "the Swedish State"
+
+SWE_natpop_king:0 "Kingdom of Sweden"
+SWE_natpop_king_ADJ:0 "Swedish"
+SWE_natpop_king_DEF:0 "the Swedish Kingdom"
 
 SWE_sven_lind:0 "Swedish National Revolutionary State"
 SWE_sven_lind_ADJ:0 "Swedish"
