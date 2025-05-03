@@ -101,9 +101,18 @@ spriteTypes = {
 		name = "GFX_report_event_SWE_SOS"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_SOS.png"
 	}
-
-
-
+	spriteType = {
+		name = "GFX_report_event_SWE_church_auth"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_church_auth.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_knights"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_knights.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_IKEA_man"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_IKEA_man.png"
+	}
 
 
 

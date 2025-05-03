@@ -1753,17 +1753,17 @@ swemil.30.d:0 "After months of persistent negotiation, diplomatic maneuvering, a
 swemil.30.a:0 "For now, we retain control"
 swemil.30.b:0 "A step forward it shall be!"
 
-swemil.31.t:0 "iron sharpen iron"
-swemil.31.d:0 ""
-swemil.31.a:0 ""
+swemil.31.t:0 "The Ironclad Republic"
+swemil.31.d:0 "It has been shown that even the more aligned in the conservative right cannot be trusted, holding onto the false hope of restoring the old monarchy. The very same monarchy that led us to this catastrophe. No reprisal with them can be found or simply made, those most outspoken amongst them must be arrested and tried against a military court for their failings. Sweden is now a republic of strong men, the weak shall not tarnish our image."
+swemil.31.a:0 "Iron shall sharpen Iron"
 
-swemil.32.t:0 "guided most loyal - no monarch"
-swemil.32.d:0 ""
-swemil.32.a:0 ""
+swemil.32.t:0 "Guided by the Most Loyal"
+swemil.32.d:0 "The fires of revolution remain as nothing but withering embers, buried beneath the iron discipline of the Swedish Armed forces. After Carl August Ehrensvärd was voted in as Commander of the nation, he went about transforming Sweden, maintaining the republican order.Under his leadership, the Swedish army transformed as the violent force that oppressed workers into men who have tried their best to rebuild Sweden from the aftermath of chaos. With the return to stability, many thought a return to parliamentary rule was guaranteed, however Ehrensvärd knows the embers could easily reignite at a moment's notice. As such, maintaining military rule is a necessity, to avoid the chaos of recent years. While a future of civilian government remains possible, it's in the far future down the road, and for now Sweden shall be led by iron discipline and unitary government.
+swemil.32.a:0 "Order above all."
 
-swemil.33.t:0 "guided most loyal - monarch"
-swemil.33.d:0 ""
-swemil.33.a:0 ""
+swemil.32.t:0 "Guided by the Most Loyal"
+swemil.32.d:0 "The fires of revolution have burned out, reduced to scattered embers beneath the heel of the Swedish Armed Forces. Under the resolute leadership of Carl August Ehrensvärd, the socialist uprising was crushed, and in its place, a new Sweden began to take shape, one founded on stability, unity, and national discipline.\n\nWith the worst of the chaos behind them, the people demanded a return to tradition. In a move both symbolic and stabilizing, the monarchy was restored, placing the crown once more upon the head of the House of Bernadotte. Some elements of civilian governance have also been reintroduced, a controlled parliament and limited press freedoms,  offering the illusion of normalcy to a nation weary of strife.\n\nYet beneath the polished veneer of restored order, the military still casts a long shadow. Ehrensvärd remains Commander of the Nation, his influence woven into every level of the state. The civilian cabinet acts, but not without quiet consultation. The king speaks, but within boundaries set by those in uniform. Sweden is no longer burning, but it is not yet free.\n\nThis new order is neither the republic of yesterday nor the totalitarian regime many feared. It is a delicate hybrid, a monarchy guarded by generals, a democracy tempered by discipline, a nation guided by the most loyal."
+swemil.32.a:0 "A quiet balance, for now."
 
 ###Elmo events###
 swemil.34.t:0 "Swedish Integral Nationalism"
@@ -1781,16 +1781,16 @@ swemil.36.b:0 "We shall revive the medieval era, Feudalism!"
 swemil.36.b:0 "All towards the crown, Integral nationalism!"
 
 swemil.37.t:0 "Maurrassism Entrenched"
-swemil.37.d:0 ""
-swemil.37.a:0 ""
+swemil.37.d:0 "After deliberation and debate within the ruling assembly, Elmo Lindholm has emerged from the ideological storm with a clear verdict, the doctrine of Charles Maurras shall remain the guiding light of the Swedish state.\n\nThough heavily rooted in Catholic traditionalism, Lindholm has sanctioned revisions to the framework, adapting its principles to Sweden’s Protestant character. The result is a uniquely Swedish variant of Maurrassism: a staunchly hierarchical society grounded in monarchism, anti-parliamentarianism, and cultural nationalism.\n\nThe King, while still adorned in royal finery and spoken of as the living symbol of the nation, now acts at the discretion of Lindholm’s inner circle. The monarchy is sacred, yes, but sacred under supervision. The democratic institutions of the old era remain abolished or neutered, replaced with a centralized state apparatus designed to enforce discipline, unity, and national will.\n\nThe Church, though no longer privileged above all, remains under close watch. It is tolerated so long as it serves the vision of the state, not the other way around.\n\nWith Maurrassism now codified into law and governance, Lindholm has achieved what few have in Sweden’s long history, an ideologically unified regime with one will, one voice, and one destiny."
+swemil.37.a:0 "The nation stands united without room for dissent."
 
 swemil.38.t:0 "Revival of the Medieval Era"
-swemil.38.d:0 ""
-swemil.38.a:0 ""
+swemil.38.d:0 "The return to a feudal order has rekindled a long-dormant fire in the hearts of the Swedish people. Tradition, once buried beneath layers of modern bureaucracy, now emerges resplendent in steel, silk, and ceremony. Members of the King’s personal guard no longer wear only the crisp blue of the modern era, they now don suits of plate armor inspired by the knights of old, marching in parades with lances raised high and banners unfurled.\n\nThough largely symbolic, these displays of medieval grandeur have sparked a cultural renaissance. Officers in the army now carry ceremonial swords once more, and many wear the uniforms of generations past, some tracing back to ancestors who fought under Gustavus Adolphus himself. The old gives way to the older, and a new aesthetic age takes root.\n\nThe Riksdag has been formally abolished, and in its place, construction has begun on a towering royal citadel, a castle worthy of kings, forged not merely in stone but in myth and legacy. Within its halls, Elmo Lindholm has established a powerful royal court, populated by loyal nobles, ideologues, and trusted officers. Though the King remains head of state, his role is increasingly ceremonial, gently swayed by Lindholm’s courtly whispers.\n\nTo the average Swede, life may continue much the same, for now. But these changes mark the dawn of something deeper: a romanticized return to blood, crown, and soil. Sweden will not be dictated to. She will decide her fate, in armor, with banners flying."
+swemil.38.a:0 "Prepare, Arms!"
 
 swemil.39.t:0 "The Church’s Newfound Authority"
-swemil.39.d:0 ""
-swemil.39.a:0 ""
+swemil.39.d:0 "The rise of integral nationalism has reshaped not only the structure of the state but also the soul of the nation. Nowhere is this shift more evident than in the newfound political stature of the Church. Once viewed as a largely apolitical institution, aligned loosely with centrism or the quiet traditions of the monarchy, the clergy now find themselves drawn into the heart of power.\n\nWith many high-ranking clerics pledging loyalty to Lindholm and his vision for a unified Sweden, the Church has been elevated to an unofficial pillar of state. Though King Gustaf remains the symbolic sovereign and Lindholm his ever-faithful executor, it is increasingly the Church that provides the ideological backbone of this new Sweden.\n\nSunday services have begun to change. Soldiers in uniform attend mass in growing numbers, often seated near the front as honored symbols of state and faith. Sermons now intertwine scripture with speeches on duty, unity, and obedience. The line between pulpit and podium fades by the week.\n\nAs this sacred institution shifts to echo the voice of the state, questions linger. Is this a revival of faith, or a repurposing of it? Is the Church guiding the nation, or is it being guided itself?"
+swemil.39.a:0 "God Save Sweden"
 
 swemil.40.t:0 "Recreating the Royal Guard"
 swemil.40.d:0 ""

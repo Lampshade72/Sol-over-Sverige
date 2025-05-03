@@ -2975,7 +2975,7 @@ country_event = { #kept status quo ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.37" }
 	title = swemil.37.t
 	desc = swemil.37.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_NFA_event_AFRessurection
 
 	is_triggered_only = yes
 
@@ -2985,12 +2985,12 @@ country_event = { #kept status quo ##LS##
 	}	
 }
 
-country_event = { #mew-fuedalism-fuedalism ##LS##
+country_event = { #mew-fuedalism ##LS##
 	id = swemil.38
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.38" }
 	title = swemil.38.t
 	desc = swemil.38.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_knights
 
 	is_triggered_only = yes
 
@@ -3005,12 +3005,16 @@ country_event = { #integral nationalism ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.39" }
 	title = swemil.39.t
 	desc = swemil.39.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_church_auth
 
 	is_triggered_only = yes
 
 	option = { #yay!
 		name = swemil.39.a
+		increase_ruling_party_popularity_by_2
+		add_stability = 0.01
+		add_war_support = -0.02
+		add_political_power	= 12
 	
 	}	
 }
@@ -3039,7 +3043,7 @@ country_event = { #Ingvar Kamprad ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.41" }
 	title = swemil.41.t
 	desc = swemil.41.d
-	picture = GFX_report_event_SWE_Swedish_military_2
+	picture = GFX_report_event_SWE_IKEA_man
 
 	is_triggered_only = yes
 	
@@ -3052,10 +3056,12 @@ country_event = { #Ingvar Kamprad ##LS##
 
 	option = { #nice, give help
 		name = swemil.41.a
+		increase_ruling_party_popularity_by_3
 	
 	}	
 	option = { #He would do good in government
 		name = swemil.41.b
+		add_stability = 0.01
 		remove_ideas_with_trait = economy_minister
 		add_ideas = SWE_Ingvar_Kamprad_eco_npo
 	}	
