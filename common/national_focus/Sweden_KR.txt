@@ -1270,6 +1270,7 @@ focus_tree = {
 				has_country_flag = SWE_flag_red_in_sweden		
 			
 			}
+			date > 1938.1.1
 		}
 
 
@@ -1388,8 +1389,7 @@ focus_tree = {
 					has_completed_focus = SWE_DEM_treaty_of_stockholm
 					has_completed_focus = SWE_FOP_democractic_light
 					has_completed_focus = SWE_FOP_revolutionary_torch
-				}
-				date > 1938.2.12	
+				}	
 			}
 
 		completion_reward = {
@@ -2089,6 +2089,7 @@ focus_tree = {
 		}
 
 		available = {
+		is_subject = no
 			}
 
 		completion_reward = {
@@ -2112,11 +2113,12 @@ focus_tree = {
 		}
 
 		available = {
+		is_subject = no
 			}
 
 		completion_reward = {
 			unlock_decision_tooltip = SWE_destroy_fake_nords
-			country_event = { id = swefop.3 days = 5 }
+
 		}
 	}
 	
@@ -2133,6 +2135,7 @@ focus_tree = {
 		}
 
 		available = {
+		is_subject = no
 			}
 
 		completion_reward = {
@@ -2153,6 +2156,7 @@ focus_tree = {
 		}
 
 		available = {
+		is_subject = no
 			}
 
 		completion_reward = {
@@ -2175,6 +2179,7 @@ focus_tree = {
 		}
 
 		available = {
+		is_subject = no
 			}
 
 		completion_reward = {
@@ -2197,6 +2202,7 @@ focus_tree = {
 		}
 
 		available = {
+		is_subject = no
 			}
 
 		completion_reward = {
@@ -2219,6 +2225,7 @@ focus_tree = {
 		}
 
 		available = {
+		is_subject = no
 			}
 
 		completion_reward = {
@@ -6399,16 +6406,15 @@ focus_tree = {
 	focus = {
 		id = SWE_defense_of_sweden
 		icon = GFX_goal_SWE_army
-		x = -20
+		x = -19
 		y = 0
 		offset = {
-			x = 10
+			x = 7
 			y = 0
 			trigger = {
 				OR = {
 				has_country_flag = SWE_flag_military_steps_in
 				has_country_flag = SWE_election_safe_success
-				has_country_flag = SWE_flag_red_in_sweden
 				}
 			}
 		}		
@@ -6439,18 +6445,11 @@ focus_tree = {
 		icon = GFX_goal_NFA_sole_leadership
 		prerequisite = { focus = SWE_defense_of_sweden }
 		mutually_exclusive = { focus = SWE_arms_against_tyranny }
-		x = 7
+		x = -12
 		y = 1
-		offset = {
-			x = 7
-			y = 0
-			trigger = {
-				has_country_flag = SWE_flag_military_steps_in
-				has_country_flag = SWE_election_safe_success
-			}
-		}		
+		
 		cost = 5
-		relative_position_id = SWE_defense_of_sweden
+
 
 		ai_will_do = {
 			factor = 10
@@ -6465,10 +6464,8 @@ focus_tree = {
 
 		allow_branch = {
 			NOT = {
-				OR = {
 					has_country_flag  = SWE_flag_red_in_sweden
 
-				}
 			}
 		}
 
@@ -6488,7 +6485,7 @@ focus_tree = {
 		icon = GFX_goal_CSA_revolutionary_army
 		prerequisite = { focus = SWE_defense_of_sweden }
 		mutually_exclusive = { focus = SWE_chief_of_army }
-		x = -7
+		x = -26
 		y = 1
 		offset = {
 			x = 7
@@ -6499,7 +6496,7 @@ focus_tree = {
 		}
 		
 		cost = 5
-		relative_position_id = SWE_defense_of_sweden
+
 
 		ai_will_do = {
 			factor = 10

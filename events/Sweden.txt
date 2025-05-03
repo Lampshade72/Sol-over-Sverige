@@ -259,9 +259,9 @@ country_event = { #Finland now ours
 		if = { limit = { has_completed_focus = SWE_FOP_wayward_son}
 		unlock_decision_tooltip = swe_integrate_finland_empire
 		} 
-		if = { limit = { has_completed_focus = SWE_FOP_democratic_light	}
+		else_if = { limit = { has_completed_focus = SWE_FOP_democratic_light}
 		unlock_decision_tooltip = swe_integrate_finland_alliance
-		} if = { limit = { has_socialist_government = yes }
+		} else_if = { limit = { has_socialist_government = yes }
 		unlock_decision_tooltip = swe_integrate_finland_revolution
 		} else = {
 		unlock_decision_tooltip = swe_integrate_finland_neutral
@@ -1366,18 +1366,24 @@ country_event = { #Empire of our own 2 #talk abouut killing scandi bros ##LS##
 	}
 }
 
-country_event = { #Empire of our own 3 #Baltic bitch ##LS##
+country_event = { #Empire of our own 3 #SweNor ##LS##
 	id = swefop.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.3" }
 	title = swefop.3.t
 	desc = swefop.3.d
 	picture = GFX_report_event_SOS_empire_map
+	fire_only_once = yes
 
 	is_triggered_only = yes
-
-	option = {
+	option = { #yes SWENOR
 		name = swefop.3.a
+		set_cosmetic_tag = SWENOR
+		
 	}
+	option = { #Nah
+		name = swefop.3.b
+	}
+	
 }
 
 country_event = { #Empire of our own 4 #Russia my cuck ##LS##
@@ -1386,6 +1392,7 @@ country_event = { #Empire of our own 4 #Russia my cuck ##LS##
 	title = swefop.4.t
 	desc = swefop.4.d
 	picture = GFX_report_event_SOS_empire_map
+	fire_only_once = yes
 
 	is_triggered_only = yes
 
@@ -1399,12 +1406,23 @@ country_event = { #Empire of our own 5 #Winning chat ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.5" }
 	title = swefop.5.t
 	desc = swefop.5.d
-	picture = GFX_report_event_SOS_empire_map
+	picture = GFX_report_event_SCA_three_brothers
+	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+				tag = SWE
+				110 = { is_owned_and_controlled_by = SWE } 
+				142 = { is_owned_and_controlled_by = SWE } 
+				143 = { is_owned_and_controlled_by = SWE } 
+				144 = { is_owned_and_controlled_by = SWE } 
+				37 = { is_owned_and_controlled_by = SWE } 
+				99 = { is_owned_and_controlled_by = SWE } 				
+		}
 
 	option = {
 		name = swefop.5.a
+		add_stability = 0.02
+		add_war_support = 0.02
 	}
 }
 
@@ -1661,6 +1679,8 @@ country_event = { ####army support ##LS##
 	option = {
 		name = swedem.2.a
 		add_political_power = 10
+		add_authdem_to_coalition = yes
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }			
 	}
 }
 

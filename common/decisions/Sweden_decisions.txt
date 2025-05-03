@@ -2587,9 +2587,6 @@ SWE_wartime_decisions = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_mobilize_landsturm"
 				add_ideas = SWE_idea_landstorm
-				add_warsupport = -0.02
-
-
 
 		}	
 	}
