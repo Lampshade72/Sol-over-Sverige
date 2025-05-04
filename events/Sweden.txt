@@ -14,6 +14,7 @@ add_namespace = TNTswe
 add_namespace = swetot
 add_namespace = swefop
 add_namespace = swedem
+add_namespace = newsswe
 
 
 ######### FOP events #########
@@ -1997,7 +1998,8 @@ country_event = { ####Cracking the Crown ##LS##
 		SWE_create_republic = yes	
 		add_stability = -0.3
 		hidden_effect = {
-			country_event = { id = swerev.1 days = 1 }
+			country_event = { id = swerev.1 days = 6 }
+			country_event = { id = swe.130 days = 2 }
 			news_event = swe.130
 		}
 		
@@ -2018,7 +2020,7 @@ country_event = { ####Military don't like it ##LS##
 	option = {
 		name = swerev.1.a
 		add_popularity = { ideology = national_populist popularity = 0.04 }	
-		add_popularity = { ideology = paternal_autocrat popularity = 0.10 }	
+		add_popularity = { ideology = paternal_autocrat popularity = 0.09 }	
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }	
 		add_ideas = SWE_military_resistance
 		hidden_effect = {
@@ -2078,7 +2080,8 @@ country_event = { ####Who shall win this struggle ##LS##
 			ideology = radical_socialist_subtype
 		}		
 		hidden_effect = {
-			country_event = { id = swerev.4 days = 3 }
+			country_event = { id = swerev.4 days = 4 }
+			country_event = { id = newsswe.2 days = 1 }
 			SWE = { SWE_remove_reactionary_generals = yes }
 			SWE = { SWE_remove_special_reaction_dudes = yes }
 			
@@ -2110,7 +2113,7 @@ country_event = { ####Who shall win this struggle ##LS##
 			ideology = junta_subtype
 		}
 		hidden_effect = {
-			country_event = { id = swemil.1 days = 3 }
+			country_event = { id = swemil.1 days = 5 }
 			
 		}		
 		
@@ -2227,13 +2230,19 @@ country_event = { ####crown or no crown ##LS##
 		add_stability = -0.10
 		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
 		add_popularity = { ideology = national_populist popularity = 0.05 }		
-		country_event = { id = swemil.6 days = 6 }			
+		country_event = { id = swemil.6 days = 6 }	
+		hidden_effect = {
+			country_event = { id = newsswe.4 days = 1 }
+		}		
 	}
 	
 	option = {
 		name = swemil.4.b
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }		
 		country_event = { id = swemil.5 days = 6 }
+		hidden_effect = {
+			country_event = { id = newsswe.3 days = 1 }
+		}
 
 
 	}		
@@ -7035,7 +7044,167 @@ country_event = {
 
 
 
+###News Events 
 
+news_event = {
+	id = newsswe.1 #Safe swedish elections
+	immediate = { log = "[GetDateText]: [Root.GetName]: event newsswe.1" }
+	title = newsswe.1.t
+	desc = newsswe.1.d
+	picture = GFX_news_event_SWE_stockholm_news
+
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	option = {
+		name = newsswe.1.a
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = no
+			}
+		}
+	}
+	option = {
+		name = newsswe.1.b
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = yes
+			}
+		}
+	}
+	option = {
+		name = newsswe.1.c
+		trigger = {
+			tag = SWE
+		}
+	}
+}
+
+news_event = {
+	id = newsswe.2 #socialist revolution
+	immediate = { log = "[GetDateText]: [Root.GetName]: event newsswe.2" }
+	title = newsswe.2.t
+	desc = newsswe.2.d
+	picture = GFX_news_event_SWE_rally_cop
+
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	option = {
+		name = newsswe.2.a
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = no
+			}
+		}
+	}
+	option = {
+		name = newsswe.2.b
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = yes
+			}
+		}
+	}
+	option = {
+		name = newsswe.2.c
+		trigger = {
+			tag = SWE
+		}
+	}
+}
+
+news_event = {
+	id = newsswe.3 #military restore monarchy
+	immediate = { log = "[GetDateText]: [Root.GetName]: event newsswe.3" }
+	title = newsswe.3.t
+	desc = newsswe.3.d
+	picture = GFX_news_event_SWE_military
+
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	option = {
+		name = newsswe.3.a
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = no
+			}
+		}
+	}
+	option = {
+		name = newsswe.3.b
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = yes
+			}
+		}
+	}
+	option = {
+		name = newsswe.3.c
+		trigger = {
+			tag = SWE
+		}
+	}
+}
+
+news_event = {
+	id = newsswe.4 #military restore monarchy
+	immediate = { log = "[GetDateText]: [Root.GetName]: event newsswe.4" }
+	title = newsswe.4.t
+	desc = newsswe.4.d
+	picture = GFX_news_event_SWE_military
+
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	option = {
+		name = newsswe.4.a
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = no
+			}
+		}
+	}
+	option = {
+		name = newsswe.4.b
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = yes
+			}
+		}
+	}
+	option = {
+		name = newsswe.4.c
+		trigger = {
+			tag = SWE
+		}
+	}
+}
 
 
 

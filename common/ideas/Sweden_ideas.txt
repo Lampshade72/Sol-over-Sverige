@@ -113,8 +113,8 @@ ideas = {
 		}
 
 
-		SWE_integrate_scandinavia = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_integrate_scandinavia"}
+		SWE_integrate_scandinavia_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_integrate_scandinavia_idea"}
 			picture = generic_cold_war
 			allowed = { always = no }
             modifier = {
@@ -441,7 +441,7 @@ ideas = {
 
 		SWE_austerity_measures = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_austerity_measures"}
-			picture = GFX_idea_generic_broken_champagne
+			picture = generic_broken_champagne
 			allowed = { always = no }
 			modifier = {
 				consumer_goods_factor = 0.15

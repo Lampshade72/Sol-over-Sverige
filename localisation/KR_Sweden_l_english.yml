@@ -2606,6 +2606,36 @@ swe.330.t:0 "Scandinavian Federation Failure"
 swe.330.d:0 "Our attempts at creating a Nordic Federation have failed... It seems that Nordic Integration have reached it peak."
 swe.330.a:0 "Damn you, stupid Scandinavians!"
 
+
+###News 
+
+newsswe.1.t:0 "1936 Swedish Elections"
+newsswe.1.d:0 "The ballots have been counted, and the results of the 1936 general elections in Sweden are in. Despite growing concerns over political radicalization across Europe, the Swedish people have once again demonstrated their commitment to parliamentary democracy and constitutional monarchy. Prime Minister Per Albin Hansson's Social Democratic Party has emerged as the clear victor, securing a strong mandate to continue their policies of social welfare, neutrality, and economic reform.\n\nFears that the far-left Socialistiska Samlingspartiet Vänster (SSV) might gain ground proved unfounded, as the party failed to secure a single seat in the Riksdag. This outcome has allowed Hansson to confidently rule out any coalition with the extremists, thereby reinforcing Sweden’s political stability in these uncertain times.\n\nWith the support of the monarchy and a firm popular backing, Sweden now looks to the future with cautious optimism. Hansson's administration is expected to focus on modernizing infrastructure, strengthening social programs, and maintaining neutrality amidst the rising tide of Syndicalism across Europe. Whether this course will hold steady in the face of global upheaval remains to be seen."
+newsswe.1.a:0 "As expected, Sweden chose stability" #norm
+newsswe.1.b:0 "Capitalist slaves!" #socialists
+newsswe.1.c:0 "Crisis averted!" #swe
+
+newsswe.2.t:0 "Revolution overtakes Sweden"
+newsswe.2.d:0 "Imagine something cool here WIP"
+newsswe.2.a:0 "The red tide drowns even Sweden?" #norm
+newsswe.2.b:0 "They have finally broken free!" #socialists
+newsswe.2.c:0 "Arise!" #swe
+
+newsswe.3.t:0 "Military Restores Monarchy"
+newsswe.3.d:0 "Imagine something cool here WIP"
+newsswe.3.a:0 "The crown is back, but who holds the Sword?" #norm
+newsswe.3.b:0 "More failed revolutions? Bleh" #socialists
+newsswe.3.c:0 "A necessary action" #swe
+
+
+
+
+
+
+
+
+
+
 ### Tooltips ###
 SWE_new_generals_tooltip:0 "A §Y2 Skill General§! named §YFrode Lund Hvalkof§! will appear.\nA §Y1 Skill General§! named §YErland Frisvold§! will appear.\n"
 battlecruiser:0 "Battlecruiser"
