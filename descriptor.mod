@@ -8,4 +8,4 @@ dependencies={
 	"KaiserreduX"
 }
 name="Sol över Sverige: A Kaiserredux Submod"
-supported_version="1.15.*"
+supported_version="1.16.*"
