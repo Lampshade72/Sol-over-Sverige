@@ -3085,7 +3085,6 @@ country_event = { #Ingvar Kamprad ##LS##
 		date > 1943.8.8
 		}
 	}
-
 	option = { #nice, give help
 		name = swemil.41.a
 		increase_ruling_party_popularity_by_3
@@ -3098,6 +3097,7 @@ country_event = { #Ingvar Kamprad ##LS##
 		add_ideas = SWE_Ingvar_Kamprad_eco_npo
 	}	
 }
+
 
 country_event = { #elmo flag switcher ##LS##
 	id = swemil.42
@@ -4297,7 +4297,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		date < 1937.1.1
 	}
 
-	option = { #The socialdemocrats alone win
+	option = { #The socialdemocrats win
 		name = swe.8.a
 
 		add_popularity = { ideology = social_democrat popularity = 0.15 }
@@ -4322,7 +4322,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		set_country_flag = SWE_election_safe_success
 		complete_national_focus = SWE_elections_over
 		complete_national_focus = SWE_GEL_leads
-		add_popularity = { ideology = social_liberal popularity = 0.1 }
+		add_popularity = { ideology = social_liberal popularity = 0.04 }
 		set_politics = { ruling_party = social_conservative elections_allowed = yes }
 		remove_all_ministers = yes
 		add_ideas = SWE_Goesta_Bagge_hog_sco
@@ -5037,208 +5037,8 @@ country_event = { #Hansson v. Sweden
 	}
 }
 
-country_event = { #Return of the king?
-	id = swe.23
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.23" }
-	title = swe.23.t
-	desc = swe.23.d
-	picture = GFX_report_event_SWE_King_Gustav_Adolf
 
-	is_triggered_only = yes
 
-	option = { #Let us invite the monarchy back!
-		name = swe.23.a
-		ai_chance = {
-			factor = 60
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_AUTHORITARIAN
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_PATERNAL
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_NATIONAL_POPULIST
-					}
-				}
-			}
-		}
-		set_country_flag = SWE_restore_kingdom
-	}
-
-	option = { #The military junta should stay in place for the time being
-		name = swe.23.b
-		ai_chance = {
-			factor = 40
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_KING_AUTHORITARIAN_DEMOCRAT
-				}
-			}
-		}
-		set_country_flag = SWE_permanent_junta
-	}
-}
-
-country_event = { #Coronation of Gustaf VI Adolf
-	id = swe.24
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.24" }
-	title = swe.24.t
-	desc = swe.24.d
-	picture = GFX_report_event_SWE_King_Gustav_Adolf
-
-	is_triggered_only = yes
-
-	option = { #Hurrah!
-		name = swe.24.a
-		SWE_create_gustaf_adolf_jr = yes
-		drop_cosmetic_tag = yes		
-		country_event = { id = swe.25 days = 7 }
-	}
-}
-
-country_event = { #The king appoints the second Bagge-Cabinet
-	id = swe.25
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.25" }
-	title = swe.25.t
-	desc = swe.25.d
-	picture = GFX_report_event_SWE_SocCon_Cabinet
-
-	is_triggered_only = yes
-
-	option = { #Hurrah!
-		name = swe.25.a
-		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
-		add_popularity = { ideology = paternal_autocrat popularity = -0.03 }
-		add_popularity = { ideology = social_conservative popularity = -0.02 }
-		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }
-		remove_all_ministers = yes
-		add_ideas = SWE_Goesta_Bagge_hog_sco
-		add_ideas = SWE_Sven_Hedin_for_ade
-		add_ideas = SWE_Harald_Malmberg_eco_ade
-		add_ideas = SWE_Knut_Ewerloef_sec_sco
-		set_party_name = {
-			ideology = authoritarian_democrat
-			long_name = SWE_authoritarian_democrat_alternate_party_long
-			name = SWE_authoritarian_democrat_alternate_party
-		}
-		add_soccon_to_coalition = yes
-		set_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-	}
-}
-
-country_event = { #The establishment of the Ehrensvärd cabinet
-	id = swe.26
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.26" }
-	title = swe.26.t
-	desc = swe.26.d
-	picture = GFX_report_event_SWE_Swedish_military_3
-
-	is_triggered_only = yes
-
-	option = { #Hurrah!
-		name = swe.26.a
-		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
-		remove_all_ministers = yes
-		add_ideas = SWE_Carl_August_Ehrensvaerd_hog_ade
-		add_ideas = SWE_Sven_Hedin_for_ade
-		add_ideas = SWE_Harald_Malmberg_eco_ade
-		add_ideas = SWE_Carlos_Adlercreutz_sec_ade
-
-		create_country_leader = {
-			name = "Carl August Ehrensvärd"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Carl_August_Ehrensvard.png"
-			expire = "1.1.1"
-			ideology = authdem_junta_subtype
-		}
-		
-		create_country_leader = {
-			name = "Carl August Ehrensvärd"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Carl_August_Ehrensvard.png"
-			expire = "1.1.1"
-			ideology = junta_subtype
-		}
-	}
-}
-
-country_event = { #The establishment of the Jung Junta
-	id = swe.27
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.27" }
-	title = swe.27.t
-	desc = swe.27.d
-	picture = GFX_report_event_SWE_Swedish_military_2
-
-	is_triggered_only = yes
-
-	option = { #Hurrah!
-		name = swe.27.a
-		set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
-		remove_all_ministers = yes
-		add_ideas = SWE_Helge_Jung_hog_pau
-		add_ideas = SWE_Sven_Hedin_for_ade
-		add_ideas = SWE_Marcus_Wallenberg_eco_pau
-		add_ideas = SWE_Axel_Rappe_sec_pau
-
-		create_country_leader = {
-			name = "Helge Jung"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Helge_Jung.png"
-			expire = "1.1.1"
-			ideology = authdem_junta_subtype
-		}
-		create_country_leader = {
-			name = "Helge Jung"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Helge_Jung.png"
-			expire = "1.1.1"
-			ideology = junta_subtype
-		}
-	}
-}
-
-country_event = { #The establishment of the Douglas regime (did not take over Junta earlier)
-	id = swe.28
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.28" }
-	title = swe.28.t
-	desc = swe.28.d
-	picture = GFX_report_event_SWE_military_meeting
-
-	is_triggered_only = yes
-
-	option = { #Hurrah!
-		name = swe.28.a
-		add_popularity = { ideology = national_populist popularity = 0.15 }
-		set_politics = { ruling_party = national_populist elections_allowed = no }
-		remove_all_ministers = yes
-		add_ideas = SWE_Archibald_Douglas_hog_npo
-		add_ideas = SWE_Erik_von_Rosen_for_npo
-		add_ideas = SWE_Elof_Eriksson_eco_npo
-		add_ideas = SWE_Martin_Ekstroem_sec_npo
-		create_country_leader = {
-			name = "Archibald Douglas"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Archibald_Douglas.png"
-			expire = "1.1.1"
-			ideology = authdem_junta_subtype
-		}
-		create_country_leader = {
-			name = "Archibald Douglas"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Archibald_Douglas.png"
-			expire = "1.1.1"
-			ideology = junta_subtype
-		}
-		create_country_leader = {
-			name = "Archibald Douglas"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Archibald_Douglas.png"
-			expire = "1.1.1"
-			ideology = militarism_subtype
-		}
-	}
-}
 
 country_event = { #Dissolution of the trade unions
 	id = swe.29
@@ -5437,151 +5237,7 @@ country_event = { #Synod accepts the Riksledare
 	}
 }
 
-country_event = { #The establishment of the Douglas regime (did not take over Junta earlier)
-	id = swe.37
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.37" }
-	title = swe.37.t
-	desc = swe.37.d
-	picture = GFX_report_event_SWE_army
 
-	is_triggered_only = yes
-
-	option = { #Hurrah!
-		name = swe.37.a
-		add_popularity = { ideology = national_populist popularity = 0.15 }
-		set_politics = { ruling_party = national_populist elections_allowed = no }
-		remove_all_ministers = yes
-		add_ideas = SWE_Archibald_Douglas_hog_npo
-		add_ideas = SWE_Erik_von_Rosen_for_npo
-		add_ideas = SWE_Elof_Eriksson_eco_npo
-		add_ideas = SWE_Martin_Ekstroem_sec_npo
-
-		create_country_leader = {
-			name = "Archibald Douglas"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Archibald_Douglas.png"
-			expire = "1.1.1"
-			ideology = militarism_subtype
-		}
-		if = {
-			limit = {
-				has_country_leader = {
-					name = "Archibald Douglas"
-				}
-			}
-			set_country_leader_portrait = {	
-				portrait = "gfx/leaders/SWE/Portrait_Sweden_Archibald_Douglas_Civ.png"
-			}
-		}
-		hidden_effect = {
-			country_event = { id = swe.30 days = 45 }
-			country_event = { id = swe.34 days = 300 }
-		}
-	}
-}
-
-country_event = { #The new constitution
-	id = swe.38
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.38" }
-	title = swe.38.t
-	desc = swe.38.d
-	picture = GFX_report_event_SWE_Riksdag
-
-	is_triggered_only = yes
-
-	option = { #Hurrah!
-		name = swe.38.a
-		if = {
-			limit = {
-				has_government = social_conservative
-			}
-			custom_effect_tooltip = SWE_tt_soccons_become_authdems
-			hidden_effect = {
-				set_temp_variable = { SWE_conservative_to_authdem_value = party_popularity@social_conservative }
-				set_temp_variable = { SWE_conservative_to_authdem_value_reverse = 0 }
-				subtract_from_temp_variable = { var = SWE_conservative_to_authdem_value_reverse value = party_popularity@social_conservative }
-				add_popularity = { ideology = social_conservative popularity = SWE_conservative_to_authdem_value_reverse }
-				add_popularity = { ideology = authoritarian_democrat popularity = SWE_conservative_to_authdem_value }
-				set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = yes
-				}
-				set_party_name = {
-					ideology = authoritarian_democrat
-					long_name = SWE_authoritarian_democrat_alternate_party_long
-					name = SWE_authoritarian_democrat_alternate_party
-				}
-			}
-		}
-		add_political_power = 100
-		set_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-	}
-}
-
-country_event = { #Sweden wants to join the Third Internationale
-	id = swe.39
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.39" }
-	title = swe.39.t
-	desc = swe.39.d
-	picture = GFX_report_event_SWE_Adalen
-
-	is_triggered_only = yes
-
-	option = { #Welcome, camarades!
-		name = swe.39.a
-		ai_chance = { factor = 99 }
-		add_to_faction = SWE
-		SWE = { country_event = { id =swe.40 } }
-	}
-
-	option = { #Swedes? In the Internationale? Why?
-		name = swe.39.b
-		ai_chance = { factor = 1 
-		modifier = {
-			factor = 0
-				has_game_rule = {
-					rule = SWE_foreign_policy
-					option = SWE_FOREIGN_POLICY_INTERNATIONALE
-				}
-			}
-		}
-		SWE = { country_event = { id =swe.41 } }
-	}
-}
-
-country_event = { #Sweden joins the Third Internationale
-	id = swe.40
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.40" }
-	title = swe.40.t
-	desc = swe.40.d
-	picture = GFX_report_event_SWE_Adalen
-
-	is_triggered_only = yes
-
-	option = { #We are glad to be part of the global struggle!
-		name = swe.40.a
-		add_political_power = 25
-		effect_tooltip = {
-			FRA = {
-				add_to_faction = SWE
-			}
-		}
-	}
-}
-
-country_event = { #Sweden will not join the Third Internationale
-	id = swe.41
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.41" }
-	title = swe.41.t
-	desc = swe.41.d
-	picture = GFX_report_event_SWE_Adalen
-
-	is_triggered_only = yes
-
-	option = { #Damn those snail-eaters
-		name = swe.41.a
-		add_political_power = -25
-	}
-}
 
 country_event = { #A statue of Per Albin Hansson
 	id = swe.42
@@ -5690,15 +5346,13 @@ country_event = { #The General Electoral League renames itself ##kr-K##
 
 
 
-country_event = { #[GetYear] Swedish General Elections
+country_event = { #[GetYear] Swedish General Elections ##Needs rework
 	id = swe.55
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event swe.55"
 		hidden_effect = {
 			remove_ideas = SWE_idea_unity_cabinet
-			clr_country_flag = swe_center_left_coalition
-			clr_country_flag = swe_center_right_coalition
-			clr_country_flag = swe_far_left_coalition
+
 		}
 	}
 	title = swe.55.t
@@ -5715,19 +5369,8 @@ country_event = { #[GetYear] Swedish General Elections
 	option = { #The Social Democrats are victorious
 		name = swe.55.a
 		ai_chance = { factor = 65 }
-		trigger = {
-			NOT = {
-				has_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-			}
-		}
-		if = {
-			limit = {
-				social_democrat < 0.4
-			}
-			add_popularity = { ideology = social_democrat popularity = 0.08 }
-		}
+		add_popularity = { ideology = social_democrat popularity = 0.08 }
 		country_event = { id = swe.56 days = 7 }
-		modify_country_flag = { flag = swe_conservative_decline value = 1 }
 		hidden_effect = {
 			country_event = { id = swe.54 days = 10 random_days = 120 }
 		}
@@ -5752,21 +5395,10 @@ country_event = { #[GetYear] Swedish General Elections
 		modify_country_flag = { flag = swe_conservative_decline value = -1 }
 	}
 
-	option = { #The Conservatives are victorious (and they are authdem)
-		name = swe.55.b
+	option = { #switching to folkparty 
+		name = swe.55.c
 		ai_chance = { factor = 65 }
-		trigger = {
-			has_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-			NOT = {
-				has_country_flag = swe_conservatives_arent_relevant_anymore
-			}
-		}
-		if = {
-			limit = {
-				authoritarian_democrat < 0.4
-			}
-			add_popularity = { ideology = authoritarian_democrat popularity = 0.08 }
-		}
+
 		country_event = { id = swe.57 days = 7 }
 		modify_country_flag = { flag = swe_conservative_decline value = -1 }
 	}
@@ -5787,7 +5419,7 @@ country_event = { #[GetYear] Swedish General Elections
 	}
 }
 
-country_event = { #The social democrats form a government
+country_event = { #The social democrats form a government #Change to socdem leader choice
 	id = swe.56
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.56" }
 	title = swe.56.t
@@ -5830,7 +5462,7 @@ country_event = { #The social democrats form a government
 		add_soccon_to_coalition = yes
 	}
 
-	option = { #We form a coalition with the Böndeforbundet
+	option = { #normal choice
 		name = swe.56.b
 		ai_chance = { factor = 20 }
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }
@@ -5842,12 +5474,9 @@ country_event = { #The social democrats form a government
 		add_soclib_to_coalition = yes
 	}
 
-	option = { #We form a coalition by ourselves
+	option = { #new leader
 		name = swe.56.c
 		ai_chance = { factor = 40 }
-		trigger = {
-			has_country_flag = swe_conservatives_arent_relevant_anymore
-		}
 		add_popularity = { ideology = social_democrat popularity = 0.03 }
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }
 		remove_all_ministers = yes
@@ -5867,81 +5496,29 @@ country_event = { #The Conservatives form a government
 
 	is_triggered_only = yes
 
-	option = { #We form a coalition with the Böndeforbundet
+	option = { #bagge
 		name = swe.57.a
 		ai_chance = { factor = 30 }
-		trigger = {
-			NOT = {
-				has_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-			}
-		}
 		set_politics = { ruling_party = social_conservative elections_allowed = yes }
-		remove_ideas_with_trait = head_of_government
-		if = {
-			limit = {
-				date > 1945.1.1
-			}
-			SWE_set_conservative_leader_domoe = yes
-			set_global_flag = SWE_SocCon_Leader_Domoe
-		}
-		else = {
-			add_ideas = SWE_Goesta_Bagge_hog_sco
-		}
 		remove_all_ministers_but_hog = yes
 		add_ideas = SWE_Christian_Guenther_for_sco
 		add_ideas = SWE_Arthur_Heiding_eco_sli
 		add_ideas = SWE_Knut_Ewerloef_sec_sco
-		add_soclib_to_coalition = yes
+
 	}
 
-	option = { #We form a coalition with the Folkpartiet
+	option = { #other dude
 		name = swe.57.b
 		ai_chance = { factor = 70 }
-		trigger = {
-			NOT = {
-				has_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-			}
-		}
 		set_politics = { ruling_party = social_conservative elections_allowed = yes }
 		remove_ideas_with_trait = head_of_government
-		if = {
-			limit = {
-				date > 1945.1.1
-			}
-			SWE_set_conservative_leader_domoe = yes
-		}
-		else = {
-			add_ideas = SWE_Goesta_Bagge_hog_sco
-		}
+		add_ideas = SWE_Fritiof_Domoe_hog_sco
 		remove_all_ministers_but_hog = yes
+		add_ideas = SWE_Fritiof_Domoe_hog
 		add_ideas = SWE_Christian_Guenther_for_sco
 		add_ideas = SWE_Gustav_Cassel_eco_mli
 		add_ideas = SWE_Knut_Ewerloef_sec_sco
-		add_marlib_to_coalition = yes
-	}
 
-	option = { #We form a coalition with the Böndeforbundet (authdems)
-		name = swe.57.a
-		ai_chance = { factor = 30 }
-		trigger = {
-			has_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-		}
-		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }
-		remove_ideas_with_trait = head_of_government
-		if = {
-			limit = {
-				date > 1945.1.1
-			}
-			add_ideas = SWE_Fritiof_Domoe_hog_sco
-		}
-		else = {
-			add_ideas = SWE_Goesta_Bagge_hog_sco
-		}
-		remove_all_ministers_but_hog = yes
-		add_ideas = SWE_Sven_Hedin_for_ade
-		add_ideas = SWE_Arthur_Heiding_eco_sli
-		add_ideas = SWE_Carlos_Adlercreutz_sec_ade
-		add_authdem_to_coalition = yes
 	}
 }
 
