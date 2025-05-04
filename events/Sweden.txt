@@ -259,7 +259,7 @@ country_event = { #Finland now ours
 		if = { limit = { has_completed_focus = SWE_FOP_wayward_son}
 		unlock_decision_tooltip = swe_integrate_finland_empire
 		} 
-		else_if = { limit = { has_completed_focus = SWE_FOP_democratic_light}
+		else_if = { limit = { has_completed_focus = SWE_FOP_democractic_light}
 		unlock_decision_tooltip = swe_integrate_finland_alliance
 		} else_if = { limit = { has_socialist_government = yes }
 		unlock_decision_tooltip = swe_integrate_finland_revolution
@@ -2503,7 +2503,7 @@ country_event = { #sweeping up reds ##LS##
 		add_stability = 0.06
 		add_manpower = -240
 		add_popularity = { ideology = totalist popularity = 0.03 }
-		add_popularity = { ideology = syndicalism popularity = 0.03 }
+		add_popularity = { ideology = syndicalist popularity = 0.03 }
 		add_popularity = { ideology = radical_socialist popularity = 0.03 }
 	
 	}
@@ -3007,10 +3007,13 @@ country_event = { #kept status quo ##LS##
 
 	option = { #yay!
 		name = swemil.37.a
-		increase_ruling_party_popularity_by_2
-		add_stability = 0.01
 		add_war_support = 0.01
-		add_political_power	= -10
+		add_political_power	= -10		
+	
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.10
+			} 		
 	}	
 }
 
@@ -3025,10 +3028,14 @@ country_event = { #mew-fuedalism ##LS##
 
 	option = { #yay!
 		name = swemil.38.a
-		increase_ruling_party_popularity_by_2	
 		add_stability = -0.01
 		add_war_support	= 0.02
-		add_political_power = 6
+		add_political_power = 6				
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.10
+			} 	
+
 	}	
 }
 
@@ -3043,10 +3050,13 @@ country_event = { #integral nationalism ##LS##
 
 	option = { #yay!
 		name = swemil.39.a
-		increase_ruling_party_popularity_by_2
 		add_stability = 0.01
 		add_war_support = -0.02
-		add_political_power	= 12
+		add_political_power	= 12		
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.10
+			} 
 	
 	}	
 }
@@ -3067,9 +3077,6 @@ country_event = { #paramilitaries into a royal guard ##LS##
 }
 
 
-
-#### Additional Military flavour ####
-
 country_event = { #Ingvar Kamprad ##LS##
 	id = swemil.41
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.41" }
@@ -3080,23 +3087,25 @@ country_event = { #Ingvar Kamprad ##LS##
 	is_triggered_only = yes
 	
 	trigger = {
-		AND = {
-		has_government = national_populist
 		date > 1943.8.8
-		}
 	}
 	option = { #nice, give help
 		name = swemil.41.a
-		increase_ruling_party_popularity_by_3
+		add_political_power = 10
 	
 	}	
 	option = { #He would do good in government
 		name = swemil.41.b
+		trigger = {
+			has_government = national_populist
+		}
 		add_stability = 0.01
 		remove_ideas_with_trait = economy_minister
 		add_ideas = SWE_Ingvar_Kamprad_eco_npo
-	}	
-}
+		}
+	} 
+	
+
 
 
 country_event = { #elmo flag switcher ##LS##
@@ -5322,12 +5331,6 @@ country_event = { #The General Electoral League renames itself ##kr-K##
 
 	is_triggered_only = yes
 
-	trigger = {
-		OR = {
-			has_government = social_democrat
-			has_government = market_liberal
-		}
-	}
 
 	option = { #Interesting
 		name = swe.49.a
@@ -5337,7 +5340,7 @@ country_event = { #The General Electoral League renames itself ##kr-K##
 			name = SWE_social_conservative_alternate_party
 		}
 		add_popularity = { ideology = social_conservative popularity = -0.01 }
-		add_popularity = { ideology = market_liberal popularity = 0.02 }
+		add_popularity = { ideology = market_liberal popularity = 0.01 }
 	}
 }
 
@@ -5371,51 +5374,32 @@ country_event = { #[GetYear] Swedish General Elections ##Needs rework
 		ai_chance = { factor = 65 }
 		add_popularity = { ideology = social_democrat popularity = 0.08 }
 		country_event = { id = swe.56 days = 7 }
-		hidden_effect = {
-			country_event = { id = swe.54 days = 10 random_days = 120 }
-		}
 	}
 
-	option = { #The Conservatives are victorious (and they are soccon)
+	option = { #The Conservatives are victorious 
 		name = swe.55.b
 		ai_chance = { factor = 35 }
-		trigger = {
-			NOT = {
-				has_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-				has_country_flag = swe_conservatives_arent_relevant_anymore
-			}
-		}
-		if = {
-			limit = {
-				social_conservative < 0.4
-			}
-			add_popularity = { ideology = social_conservative popularity = 0.08 }
-		}
+		add_popularity = { ideology = social_conservative popularity = 0.08 }
+		
 		country_event = { id = swe.57 days = 7 }
-		modify_country_flag = { flag = swe_conservative_decline value = -1 }
 	}
 
-	option = { #switching to folkparty 
+	option = { #marlibs victorious 
 		name = swe.55.c
 		ai_chance = { factor = 65 }
-
-		country_event = { id = swe.57 days = 7 }
-		modify_country_flag = { flag = swe_conservative_decline value = -1 }
+		add_popularity = { ideology = market_liberal popularity = 0.08 }
+		country_event = { id = swe.58 days = 7 }
 	}
 
-	option = { #The liberals are victorious
-		name = swe.55.c
+	option = { #The soclibs are victorious
+		name = swe.55.e
 		ai_chance = { factor = 35 }
 		trigger = {
-			has_country_flag = swe_liberals_are_relevant_again
+			has_government = social_democrat
 		}
-		if = {
-			limit = {
-				market_liberal < 0.4
-			}
-			add_popularity = { ideology = market_liberal popularity = 0.08 }
-		}
-		country_event = { id = swe.58 days = 7 }
+		add_popularity = { ideology = social_liberal popularity = 0.08 }
+		add_stability = -0.03
+		country_event = { id = swe.59 days = 7 }
 	}
 }
 
@@ -5466,6 +5450,7 @@ country_event = { #The social democrats form a government #Change to socdem lead
 		name = swe.56.b
 		ai_chance = { factor = 20 }
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }
+		add_popularity = { ideology = social_democrat popularity = 0.03 }		
 		remove_all_ministers = yes
 		add_ideas = SWE_Per_Albin_Hansson_hog_sde
 		add_ideas = SWE_J_Rickard_Sandler_for_sde
@@ -5477,13 +5462,15 @@ country_event = { #The social democrats form a government #Change to socdem lead
 	option = { #new leader
 		name = swe.56.c
 		ai_chance = { factor = 40 }
-		add_popularity = { ideology = social_democrat popularity = 0.03 }
+		add_popularity = { ideology = social_democrat popularity = -0.03 }
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }
 		remove_all_ministers = yes
-		add_ideas = SWE_Per_Albin_Hansson_hog_sde
+		SWE_set_socdem_leader_erlander = yes
+		set_global_flag = SWE_SocDem_Leader_Erlander
 		add_ideas = SWE_J_Rickard_Sandler_for_sde
 		add_ideas = SWE_Per_Edvin_Skold_eco_sde
 		add_ideas = SWE_Karl_Schlyter_sec_sde
+		add_soclib_to_coalition = yes		
 	}
 }
 
@@ -5504,6 +5491,7 @@ country_event = { #The Conservatives form a government
 		add_ideas = SWE_Christian_Guenther_for_sco
 		add_ideas = SWE_Arthur_Heiding_eco_sli
 		add_ideas = SWE_Knut_Ewerloef_sec_sco
+		add_marlib_to_coalition = yes
 
 	}
 
@@ -5518,11 +5506,12 @@ country_event = { #The Conservatives form a government
 		add_ideas = SWE_Christian_Guenther_for_sco
 		add_ideas = SWE_Gustav_Cassel_eco_mli
 		add_ideas = SWE_Knut_Ewerloef_sec_sco
+		add_marlib_to_coalition = yes
 
 	}
 }
 
-country_event = { #The Liberals form a government
+country_event = { #The marlibs form a government
 	id = swe.58
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.58" }
 	title = swe.58.t
@@ -5541,9 +5530,6 @@ country_event = { #The Liberals form a government
 		add_ideas = SWE_Arthur_Heiding_eco_sli
 		add_ideas = SWE_Thorwald_Bergquist_sec_mli
 		add_soclib_to_coalition = yes
-		hidden_effect = {
-			country_event = { id = swe.59 days = 100 }
-		}
 	}
 
 	option = { #We form a coalition with the conservatives
@@ -5559,7 +5545,7 @@ country_event = { #The Liberals form a government
 	}
 }
 
-country_event = { #The Liberals form a government
+country_event = { #The soclibs form a government
 	id = swe.59
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.59" }
 	title = swe.59.t
@@ -5568,17 +5554,29 @@ country_event = { #The Liberals form a government
 
 	is_triggered_only = yes
 
-	trigger = {
-		tag = SWE
-		has_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-	}
-
-	option = { #We form a coalition with the Böndeforbundet
+	option = { #marlib coalition
 		name = swe.59.a
-		custom_effect_tooltip = swe_tt_social_democrats_allowed_again_conservatives_no_longer_relevant
-		clr_country_flag = swe_sorry_sir_this_is_a_conservative_sweden_so_no_socdems
-		set_country_flag = swe_conservatives_arent_relevant_anymore
+		set_politics = { ruling_party = social_liberal elections_allowed = yes }
+		remove_all_ministers = yes 
+		add_ideas = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_for_sli
+		add_ideas = SWE_Arthur_Heiding_eco_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_sec_sli
+		add_marlib_to_coalition = yes
+		
+
 	}
+	option = { #socdem coalition
+		name = swe.59.b
+		set_politics = { ruling_party = social_liberal elections_allowed = yes }
+		remove_all_ministers = yes 
+		add_ideas = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_for_sli
+		add_ideas = SWE_Arthur_Heiding_eco_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_sec_sli
+		add_socdem_to_coalition = yes
+	}
+	
 }
 
 
@@ -5838,31 +5836,6 @@ news_event = { # Military coups the government
 #########################################################
 
 ### Air Force Summit ###
-
-country_event = {
-	id = swefocus.100
-	title = swefocus.100.t
-	desc = swefocus.100.desc
-	picture = GFX_report_event_SWE_military_meeting
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = { # Invest in the navy
-		log = "[GetLogInfo]: event swefocus.100 option swefocus.100.a"
-		name = swefocus.100.a
-		ai_chance = { base = 25 }
-		add_political_power = -50
-		add_ideas = SWE_idea_naval_investments
-	}
-
-	option = { # Invest in the air force
-		log = "[GetLogInfo]: event swefocus.100 option swefocus.100.b"
-		name = swefocus.100.b
-		ai_chance = { base = 25 }
-		add_political_power = -50
-		add_ideas = SWE_idea_air_investments
-	}
-}
 
 country_event = { # Armor development
 	id = swefocus.110

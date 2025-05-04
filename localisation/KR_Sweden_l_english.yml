@@ -876,17 +876,17 @@ SWE_FOP_role_to_play:0 "The Torch We Carry"
 SWE_FOP_role_to_play:0 "We carry a torch, it tells the tale of liberation, freedom and hope. Together, with our comrades in the Internationale we can achieve much, for together we all carry a torch, for the workers!"
 
 SWE_FOP_nordic_torch_alone:0 "A Nordic Internationell"
-SWE_FOP_nordic_torch_alone:0 "The 3rd Internationale started as a noble cause, but like many causes it has since become corrupt, a shell of its original intentions. Its ideologies muddy the water of freedom and tyranny in their ploy for red imperialism. Because of this, we must go it alone, proclaiming our own international, here in the Nordic North."
+SWE_FOP_nordic_torch_alone_desc:0 "The 3rd Internationale started as a noble cause, but like many causes it has since become corrupt, a shell of its original intentions. Its ideologies muddy the water of freedom and tyranny in their ploy for red imperialism. Because of this, we must go it alone, proclaiming our own international, here in the Nordic North."
 SWE_FOP_decry_reaction:0 "Against False Ideologues"
-SWE_FOP_decry_reaction:0 "The scourge of false ideologues hide behind every corner, charismatic men willing to say all the right lines to gain power with not a snippet of belief in the cause within their hearts. Such men, such nations cannot be allowed to infiltrate us."
+SWE_FOP_decry_reaction_desc:0 "The scourge of false ideologues hide behind every corner, charismatic men willing to say all the right lines to gain power with not a snippet of belief in the cause within their hearts. Such men, such nations cannot be allowed to infiltrate us."
 SWE_FOP_workers_arsenal:0 "Arsenal for Worker Liberation"
-SWE_FOP_workers_arsenal:0 "Not all nations will be willing to join our cause, as such we must be prepared for the conflicts to come."
+SWE_FOP_workers_arsenal_desc:0 "Not all nations will be willing to join our cause, as such we must be prepared for the conflicts to come."
 SWE_FOP_crush_nordic_crowns:0 "Crushing Nordic Crowns"
-SWE_FOP_crush_nordic_crowns:0 "The Nordic crowns have long held oppressive rule over the people of the north, we must liberate the Scandinavian peoples from their tyrants!"
+SWE_FOP_crush_nordic_crowns_desc:0 "The Nordic crowns have long held oppressive rule over the people of the north, we must liberate the Scandinavian peoples from their tyrants!"
 SWE_FOP_rally_oppressed:0 "Bastion of the Free"
-SWE_FOP_rally_oppressed:0 "We shall be the beacon of freedom, a light of hope upon the struggles of the world."
+SWE_FOP_rally_oppressed_desc:0 "We shall be the beacon of freedom, a light of hope upon the struggles of the world."
 SWE_FOP_true_nordic_union:0 "The Nordic Union"
-SWE_FOP_true_nordic_union:0 "We shall create a new nation, one that brings upon the liberties we bestow to our own people, for all of those in Northern Europe. Forging a united Nordic peoples."
+SWE_FOP_true_nordic_union_desc:0 "We shall create a new nation, one that brings upon the liberties we bestow to our own people, for all of those in Northern Europe. Forging a united Nordic peoples."
 
 
 SWE_defense_of_sweden:0 "Armed Forces of Sweden"
@@ -1262,9 +1262,10 @@ swefop.5.t:0 "We won!"
 swefop.5.d:0 "Yay!"
 swefop.5.a:0 "Time to take take take!"
 
-swefop.6.t:0 "Birth of a new Empire"
-swefop.6.d:0 "Yay!"
-swefop.6.a:0 "Time to take take take!"
+swefop.6.t:0 "An Old Empire made New"
+swefop.6.d:0 "The dream of empire, once buried beneath centuries of neutrality and modest diplomacy, has been reignited and realized. Under firm and visionary leadership, Sweden has cast off its traditional restraint and seized its destiny as the dominant power in the North. The Nordic lands, Denmark, Norway, Finland, and Iceland, have all been brought under Swedish control, willingly or otherwise. Even the ancient foe to the east, Russia, has bowed before the might of a resurgent Swedish war machine.\n\nFrom the icy fjords of Norway to the windswept steppes beyond the Karelian Isthmus, Swedish soldiers now march under the banner of the Three Crowns. The Baltic Sea, once contested, is now a Swedish lake. Stockholm has become the capital of a new empire, an empire that recalls the days of Gustavus Adolphus and Charles XII, but now reborn for the modern age.\n\nSome hail this resurgence as the beginning of a golden age for Scandinavia. Others whisper of tyranny and retribution. But one thing is certain: the Swedish Empire is no longer a memory—it is a force the world must reckon with."
+swefop.6.a:0 "The North is ours, long live the Empire!"
+
 
 
 
@@ -1806,7 +1807,7 @@ swemil.40.a:0 "Let loyalty wear steel once again."
 swemil.41.t:0 "A Vision in Flat-Pack"
 swemil.41.d:0 "In the quiet forests of Småland, a young entrepreneur named Ingvar Kamprad has founded a small mail-order company by the name of IKEA. Selling everyday household goods at affordable prices, Kamprad's business model emphasizes efficiency, simplicity, and accessibility, a sharp contrast to the traditional, expensive furniture markets.\n\nThough still modest in scale, IKEA represents a new spirit of Swedish innovation and frugality, values that may one day shape not only domestic life, but the Swedish economy at large. For now, it is just a name. But to those who watch closely, it may be the beginning of something far greater."
 swemil.41.a:0 "A promising future for Swedish industry."
-swemil.41.b:0 "A brilliant mine, bring him into government!"
+swemil.41.b:0 "A brilliant mind, bring him into government!"
 
 swemil.42.t:0 "Elmo Flag chooser"
 swemil.42.d:0 "As the soon to be sole rulers of Europe, we must design a flag fit for our emerging Kingdom. And for that, Riksledare Lindholm has put forth a national competition for our new flag. \n\nUnder this, three options have captured the leaders eyes, all adorned with purple, the colour of European royalty and with a large circle of Fleur de Lys shown in a golden yellow. The differences arise in that the first option most signifies Swedish supremacy over this new empire with the three crowns inside a roundel in Sweden's national colours. Second is a similar design but without the roundel around the crowns. The final option places the crowns in the top left corner. \n\nThe final choice is..."
@@ -2085,9 +2086,12 @@ swe.58.d:0 "The liberals have decisively won the Riksdag in the elections, and a
 swe.58.a:0 "A true liberal coalition with the Bondeförbundet"
 swe.58.b:0 "A coalition with the conservatives, but under liberal leadership!"
 
-swe.59.t:0 "Constitutional Amendments"
-swe.59.d:0 "Many within both the liberal and agrarian parties had been agitated when the conservatives changed the instruments of government to disenfranchise a large part of the nation. Now that the Folkpartiet rules Sweden - ironically arguably due to the forceful exclusion of the social democrats - it is therefore no surprise that they roll back these changes. In addition, they have entrenched the instruments, so that henceforth a two-third majority will be required to amend the instruments."
-swe.59.a:0 "Democratic integrity has been restored!"
+swe.59.t:0 "A Pivotal Coalition Decision"
+swe.59.d:0 "Against all expectations, Bondeförbundet has emerged as the largest party in the recent elections, riding a wave of rural support and public desire for pragmatic, centrist leadership. Now, with no clear majority in the Riksdag, the party faces a critical decision, whether to form a coalition with the market-liberal Folkpartiet, whose economic vision aligns with rural entrepreneurialism, or with the Social Democrats, whose focus on welfare and social cohesion appeals to many within Bondeförbundet's cooperative tradition. Both options offer stability, but also carry risks of alienating key parts of the base. The path chosen will define Sweden’s political direction for years to come."
+swe.59.a:0 "Partner with the Folkpartiet for a liberal-centrist alliance"
+swe.59.b:0 "Form a progressive bloc with the Social Democrats"
+
+
 
 swe.60.t:0 "Sweden Implements Tariffs"
 swe.60.d:0 "The Swedes have implemented tariffs against us, despite the fact that they are part of the Mitteleuropa Free-Trade Zone and thus in principle banned from implementing such measures. Many economists feel we should retaliate against this measure, lest the integrity of Mitteleuropa be harmed and other members get ideas!"

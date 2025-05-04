@@ -2921,6 +2921,15 @@ ideas = {
 			}
 		}
 
+		SWE_idea_unity_cabinet = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_idea_unity_cabinet"}
+			picture = generic_disjointed_gov
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.5
+			}
+		}
+
 ########################
 ### Democratic Tree  ###
 ########################

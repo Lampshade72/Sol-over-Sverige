@@ -1384,7 +1384,6 @@ focus_tree = {
 			has_completed_focus = SWE_GEL_leads
 			}
 				NOT = {
-					has_completed_focus = SWE_FOP_democractic_light
 					has_completed_focus = SWE_FOP_neutrality_again
 					has_completed_focus = SWE_DEM_treaty_of_stockholm
 					has_completed_focus = SWE_FOP_democractic_light
