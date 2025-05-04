@@ -1977,6 +1977,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 	is_ai = no
+	has_socialist_government = no	
 	OR = {
 	tag = SWE
 	tag = DEN
@@ -1984,9 +1985,18 @@ country_event = {
 	tag = ICE
 		}
 	NOT = {
+
 	has_completed_focus = ICE_rise_of_flokkur_jernissinna
 	has_completed_focus = SWE_FOP_realm_of_our_own
 	has_completed_focus = SWE_FOP_revolutionary_torch
+	has_cosmetic_tag = SWE_EMP_1
+	has_cosmetic_tag = SWE_EMP_2
+	has_cosmetic_tag = SWE_elmo_empire
+	has_cosmetic_tag = SWE_elmo_empire2
+	has_cosmetic_tag = SWE_elmo_empire3
+		
+	
+	
 	}
 	37 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 	141 = { is_owned_and_controlled_by_ROOT_or_subject = yes }

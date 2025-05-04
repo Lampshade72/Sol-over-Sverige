@@ -53,15 +53,7 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SWE_political_chaos_idea
 				add_idea = SWE_political_chaos_idea2
-			}
-			hidden_effect = { 
-				country_event = { id = swe.2 days = 45 }
-				country_event = { id = swe.3 days = 90 }
-				country_event = { id = swe.4 days = 125 }
-				country_event = { id = swe.5 days = 145 }
-				country_event = { id = swe.6 days = 160 }
-				country_event = { id = swe.7 days = 187 }				
-				}			
+			}			
 		}
 	}
 
@@ -1286,7 +1278,7 @@ focus_tree = {
 		x = 14
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -1316,7 +1308,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -1348,7 +1340,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -1373,7 +1365,7 @@ focus_tree = {
 		x = -11
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
-		cost = 2
+		cost = 3=
 		ai_will_do = {
 			factor = 80
 		}
@@ -1406,7 +1398,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SWE_FOP_revolutionary_torch
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -1433,7 +1425,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1467,7 +1459,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -1492,7 +1484,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1522,7 +1514,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -1546,7 +1538,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -1568,7 +1560,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SWE_FOP_revolutionary_torch
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1595,7 +1587,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1622,7 +1614,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1643,7 +1635,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -1666,7 +1658,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1694,7 +1686,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -1720,7 +1712,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1746,7 +1738,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
-		cost =2 
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1771,7 +1763,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1796,7 +1788,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1820,7 +1812,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1843,7 +1835,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1867,7 +1859,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1895,7 +1887,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -1919,7 +1911,7 @@ focus_tree = {
 		x = 1
 		y = 4
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 80
 		}
@@ -1941,7 +1933,7 @@ focus_tree = {
 		x = -1
 		y = 4
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 80
 		}
@@ -1967,7 +1959,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_FOP_neutrality_again
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -1987,7 +1979,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = SWE_FOP_neutrality_again
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -2010,7 +2002,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SWE_FOP_neutrality_again
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2032,7 +2024,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SWE_FOP_neutrality_again
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2057,7 +2049,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = SWE_FOP_neutrality_again
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 80
 		}
@@ -2082,7 +2074,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -2106,7 +2098,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2128,7 +2120,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2149,7 +2141,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2172,7 +2164,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 80
 		}
@@ -2195,7 +2187,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 80
 		}
@@ -2218,7 +2210,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 80
 		}
