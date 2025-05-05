@@ -4331,12 +4331,13 @@ country_event = { #1936 Riksdag Elections ##LS##
 		add_ideas = SWE_Karl_Schlyter_sec_sde
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
+			country_event = { id = newsswe.1 days = 1 }
 		}
 	}
 
 	option = { #GEL win
 		name = swe.8.b
-
+		
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		set_country_flag = SWE_election_safe_success
 		complete_national_focus = SWE_elections_over
@@ -4348,7 +4349,11 @@ country_event = { #1936 Riksdag Elections ##LS##
 		add_ideas = SWE_Christian_Guenther_for_sco
 		add_ideas = SWE_Arthur_Heiding_eco_sli
 		add_ideas = SWE_Knut_Ewerloef_sec_sco
-		add_marlib_to_coalition = yes		
+		add_marlib_to_coalition = yes	
+		hidden_effect = {
+			country_event = { id = swe.49 days = 700 }
+			country_event = { id = newsswe.1 days = 1 }
+		}		
 	}
 	
 	option = { ###Market Liberals Win
@@ -4364,6 +4369,10 @@ country_event = { #1936 Riksdag Elections ##LS##
 		add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
 		add_ideas = SWE_Gustav_Cassel_eco_mli
 		add_ideas = SWE_Thorwald_Bergquist_sec_mli
+		hidden_effect = {
+			country_event = { id = swe.49 days = 700 }
+			country_event = { id = newsswe.1 days = 1 }
+		}		
 		}
 		
 	option = { ###Radical United Front
