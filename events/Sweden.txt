@@ -2483,6 +2483,7 @@ country_event = { #if no other mils we should try burgers ##LS##
 		name = swemil.11.a
 		add_popularity = { ideology = national_populist popularity = 0.02 }	
 		add_stability = 0.02
+		add_war_support = -0.01
 	}
 
 	option = { #hmmmm burgers
