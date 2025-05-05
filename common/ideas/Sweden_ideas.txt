@@ -525,7 +525,7 @@ ideas = {
 		
 		SWE_good_economy1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_good_economy1"}
-			picture = GFX_idea_COR_free_market_approach
+			picture = COR_free_market_approach
 			allowed = { always = no }
             modifier = {
 				production_factory_max_efficiency_factor = 0.03
@@ -539,7 +539,7 @@ ideas = {
 		
 		SWE_good_economy2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_good_economy2"}
-			picture = GFX_idea_COR_free_market_approach
+			picture = COR_free_market_approach
 			allowed = { always = no }
             modifier = {
 				production_factory_max_efficiency_factor = 0.05
@@ -553,7 +553,7 @@ ideas = {
 
 		SWE_good_economy3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_good_economy3"}
-			picture = GFX_idea_COR_free_market_approach
+			picture = COR_free_market_approach
 			allowed = { always = no }
             modifier = {
 				production_factory_max_efficiency_factor = 0.10
@@ -951,7 +951,7 @@ ideas = {
 			picture = ALB_cultural_ideological_revolution
 			allowed = { always = no }
 			modifier = {
-				stability_weekly = 0.002			
+				stability_weekly = 0.02			
 			research_speed_factor = 0.06
 			global_building_slots_factor = 0.20
 			political_power_cost = -0.10			
@@ -964,7 +964,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				political_power_factor = -0.05
-				stability_factor = -0.08				
+				stability_factor = -0.04				
 				consumer_goods_factor = -0.16
 				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = 0.07
@@ -1005,7 +1005,7 @@ ideas = {
 				totalist_drift = 0.03
 				war_support_factor = 0.12
 				mobilization_speed = 0.10				
-				stability_factor = 0.12	
+				stability_factor = 0.15	
 				offensive_war_stability_factor = 0.10
 				intel_network_gain_factor = 0.25				
 				intel_network_gain = 0.2				
@@ -1035,7 +1035,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				totalist_drift = 0.02
-				stability_factor = -0.1
+				stability_factor = -0.06
 				war_support_factor = 0.15
 				consumer_goods_factor = -0.05	
 				research_speed_factor = 0.03				
@@ -1048,7 +1048,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				totalist_drift = 0.04
-				stability_factor = -0.08
+				stability_factor = -0.02
 				war_support_factor = 0.20
 				command_power_gain = 0.03
 				production_factory_start_efficiency_factor = 0.04
@@ -1065,7 +1065,7 @@ ideas = {
 			modifier = {
 				totalist_drift = 0.05
 				national_populist_drift = 0.01
-				stability_factor = -0.06
+				stability_factor = 0.05
 				war_support_factor = 0.20
 				command_power_gain = 0.08
 				production_factory_start_efficiency_factor = 0.08
@@ -1080,7 +1080,7 @@ ideas = {
 			picture = Liquidating_Social_Capitalists
 			allowed = { always = no }
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.10
 				war_support_factor = -0.10
 				production_factory_max_efficiency_factor = -0.04			
 				consumer_goods_factor = 0.10					
@@ -1092,7 +1092,7 @@ ideas = {
 			picture = union_military
 			allowed = { always = no }
 			modifier = {
-				stability_weekly = 0.005
+				stability_weekly = 0.01
 				mobilization_speed = 0.05	
 				offensive_war_stability_factor = 0.05
 				intel_network_gain_factor = 0.1				
@@ -1148,7 +1148,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				syndicalist_drift = 0.01
-				stability_factor = 0.03
+				stability_factor = 0.04
 				supply_consumption_factor = -0.05
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.025				
@@ -1163,7 +1163,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				syndicalist_drift = 0.03
-				stability_factor = 0.06
+				stability_factor = 0.08
 				supply_consumption_factor = -0.08
 				production_factory_max_efficiency_factor = 0.10
 				production_speed_buildings_factor = 0.06				
@@ -1178,7 +1178,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				syndicalist_drift = 0.04
-				stability_factor = 0.08
+				stability_factor = 0.10
 				supply_consumption_factor = -0.10
 				production_factory_max_efficiency_factor = 0.15
 				production_speed_buildings_factor = 0.10				
@@ -1192,7 +1192,7 @@ ideas = {
 			picture = TEX_start_economic_revival
 			allowed = { always = no }
 			modifier = {
-				stability_factor = -0.02
+				stability_factor = -0.01
 				war_support_factor = 0.1
 				drift_defence_factor = 0.2				
 				conscription = 0.001				
@@ -1204,7 +1204,7 @@ ideas = {
 			picture = union_congress
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0.08
 				war_support_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.03	
 				line_change_production_efficiency_factor = 0.03				
@@ -1228,7 +1228,7 @@ ideas = {
 			picture = generic_syndicalist_medal
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.10
+				stability_factor = 0.12
 				party_popularity_stability_factor = 0.1
 				decryption_factor = 0.08
 				encryption_factor = 0.06
@@ -1252,7 +1252,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				radical_socialist_drift = 0.01
-				stability_factor = 0.04
+				stability_factor = 0.07
 				war_support_factor = -0.06
 				party_popularity_stability_factor = 0.02				
 				political_power_cost = -0.05
@@ -1267,7 +1267,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				radical_socialist_drift = 0.03
-				stability_factor = 0.08
+				stability_factor = 0.09
 				war_support_factor = -0.04
 				party_popularity_stability_factor = 0.05				
 				political_power_cost = -0.15
@@ -1282,7 +1282,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				radical_socialist_drift = 0.04
-				stability_factor = 0.10
+				stability_factor = 0.13
 				war_support_factor = -0.02
 				party_popularity_stability_factor = 0.10				
 				political_power_cost = -0.20
@@ -1307,7 +1307,7 @@ ideas = {
 			picture = NFA_start_eco_lib
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.04			
+				stability_factor = 0.05		
 				industrial_capacity_factory = 0.10
 				monthly_population = -0.10						
 			}				
@@ -1318,7 +1318,7 @@ ideas = {
 			picture = generic_social_democracy
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.06
+				stability_factor = 0.07
 				war_support_factor = -0.07
 				social_democrat_drift = 0.01					
 			}				
@@ -1331,7 +1331,7 @@ ideas = {
 			modifier = {
 				political_power_cost = -0.05			
 				war_support_factor = -0.04
-				stability_factor = -0.04
+				stability_factor = -0.02
 				production_speed_buildings_factor = 0.03
 				production_factory_start_efficiency_factor = 0.02
 				consumer_goods_factor = 0.03				
@@ -1349,7 +1349,7 @@ ideas = {
 			picture = NFA_red_resistance
 			allowed = { always = no }
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.10
 				war_support_factor = -0.20
 				conscription = -0.005
 				industrial_capacity_factory = -0.25			
@@ -1361,7 +1361,7 @@ ideas = {
 			picture = TEX_corrupt_police
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.02
+				stability_factor = 0.03
 				war_support_factor = -0.04
 				conscription = 0.005			
 			}				
@@ -1372,7 +1372,7 @@ ideas = {
 			picture = GEN_army_doctrine_def
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.04
+				stability_factor = 0.07
 				conscription_factor = 0.1
 				command_power_gain = 0.1
 				training_time_army_factor = -0.1				
@@ -1384,7 +1384,7 @@ ideas = {
 			picture = NFA_loyal_society
 			allowed = { always = no }
 			modifier = {
-				stability_weekly = 0.005
+				stability_weekly = 0.01
 				weekly_manpower = 60
 				national_populist_drift	= 0.01
 				paternal_autocrat_drift = 0.01				
@@ -1404,7 +1404,7 @@ ideas = {
 			picture = GFX_idea_GEN_army_doctrine_off
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0.06
 				mobilization_speed = 0.05
 				training_time_army_factor = -0.05
 				consumer_goods_factor = -0.05
@@ -1432,7 +1432,7 @@ ideas = {
 			picture = GFX_idea_GEN_army_doctrine_off
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.12
+				stability_factor = 0.14
 				mobilization_speed = 0.15
 				training_time_army_factor = -0.1
 				consumer_goods_factor = -0.1
@@ -1489,7 +1489,7 @@ ideas = {
 			picture = VNC_auth_dem_victory_idea
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.06
+				stability_factor = 0.07
 				command_power_gain_mult = 0.03
 				army_morale_factor = 0.02
 				mobilization_speed = 0.05
@@ -1504,7 +1504,7 @@ ideas = {
 			picture = VNC_auth_dem_victory_idea
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.08
+				stability_factor = 0.11
 				command_power_gain_mult = 0.06
 				army_morale_factor = 0.05
 				mobilization_speed = 0.08
@@ -1520,7 +1520,7 @@ ideas = {
 			picture = VNC_auth_dem_victory_idea
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.12
+				stability_factor = 0.16
 				command_power_gain_mult = 0.10
 				army_morale_factor = 0.08
 				mobilization_speed = 0.10
@@ -1536,7 +1536,7 @@ ideas = {
 			picture = death_men
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.12
+				stability_factor = 0.10
 				command_power_gain_mult = 0.10
 				army_morale_factor = 0.08
 				mobilization_speed = 0.10
@@ -1552,7 +1552,7 @@ ideas = {
 			picture = NEE_donovans_raiders
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.12
+				stability_factor = 0.13
 				command_power_gain_mult = 0.10
 				army_morale_factor = 0.08
 				mobilization_speed = 0.10
@@ -1568,7 +1568,7 @@ ideas = {
 			picture = civil_service_expansion
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.12
+				stability_factor = 0.17
 				command_power_gain_mult = 0.10
 				army_morale_factor = 0.08
 				mobilization_speed = 0.10
@@ -1615,7 +1615,7 @@ ideas = {
 			picture = BUL_feudalism
 			allowed = { always = no }
 			modifier = {
-				stability_weekly = 0.005
+				stability_weekly = 0.01
 				weekly_manpower = 60
 				conscription_factor = 0.02
 				army_morale_factor = 0.06
@@ -1642,7 +1642,7 @@ ideas = {
 			picture = UKR_crown
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.10
+				stability_factor = 0.11
 				political_power_gain = 0.1
 				political_power_factor = 0.05
 				command_power_gain = 0.1
@@ -1656,7 +1656,7 @@ ideas = {
 			picture = WHR_theology_of_liberation
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.04
+				stability_factor = 0.06
 				political_power_gain = 0.1
 				political_power_factor = 0.05
 				command_power_gain = 0.1
@@ -1671,7 +1671,7 @@ ideas = {
 			picture = BAN_vicious_soldiers
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.04
+				stability_factor = 0.05
 				conscription_factor = 0.03
 				mobilization_speed = 0.03
 				resistance_activity = -0.05
@@ -1685,7 +1685,7 @@ ideas = {
 			picture = BAN_vicious_soldiers
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.08
+				stability_factor = 0.09
 				conscription_factor = 0.05
 				mobilization_speed = 0.06
 				resistance_damage_to_garrison = -0.1
@@ -1699,7 +1699,7 @@ ideas = {
 			picture = BAN_vicious_soldiers
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.10
+				stability_factor = 0.15
 				research_speed_factor = 0.06
 				conscription_factor = 0.10
 				mobilization_speed = 0.10
@@ -1734,7 +1734,7 @@ ideas = {
 			picture = GFX_idea_NFA_heroic_idealism
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0.03
 				research_speed_factor = 0.04
 				conscription_factor = 0.05
 				production_factory_max_efficiency_factor = 0.08
@@ -1766,7 +1766,7 @@ ideas = {
 			picture = GFX_idea_NFA_heroic_idealism
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.12
+				stability_factor = 0.13
 				research_speed_factor = 0.08
 				conscription_factor = 0.10
 				production_factory_max_efficiency_factor = 0.16

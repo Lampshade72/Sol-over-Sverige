@@ -15,8 +15,8 @@ SWE_foreign_policy_empire_decisions = {
 			has_completed_focus = SWE_FOP_realm_of_our_own
 			}
 		fire_only_once = yes
-		cost = 75
-		days_remove = 24
+		cost = 35
+		days_remove = 15
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_claim_scandinavia"	
 			add_state_claim = 110
@@ -49,8 +49,8 @@ SWE_foreign_policy_empire_decisions = {
 			has_completed_focus = SWE_FOP_karlstad_failure
 		}
 
-		cost = 100
-		days_remove = 31
+		cost = 50
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -89,8 +89,8 @@ SWE_foreign_policy_empire_decisions = {
 			has_completed_focus = SWE_FOP_danes_returned
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 40
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -129,8 +129,8 @@ SWE_foreign_policy_empire_decisions = {
 			has_completed_focus = SWE_FOP_wayward_son
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 40
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -182,8 +182,8 @@ SWE_foreign_policy_empire_decisions = {
 			has_completed_focus = SWE_FOP_wayward_son
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 40
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -226,8 +226,8 @@ SWE_foreign_policy_empire_decisions = {
 			has_completed_focus = SWE_FOP_lands_of_old_empire
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 40
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -270,8 +270,8 @@ SWE_foreign_policy_empire_decisions = {
 			has_completed_focus = SWE_FOP_contront_bear
 		}
 
-		cost = 300
-		days_remove = 78
+		cost = 50
+		days_remove = 21
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -335,8 +335,8 @@ SWE_foreign_policy_empire_decisions = {
 			}
 		}
 		fire_only_once = yes
-		cost = 250
-		days_remove = 150
+		cost = 80
+		days_remove = 111
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia"
 			add_stability = 0.10
@@ -406,7 +406,7 @@ SWE_neutral_decisions = {
 
 		fire_only_once = yes
 
-		cost = 75
+		cost = 30
 		days_remove = 64
 
 		ai_will_do = {
@@ -467,7 +467,7 @@ SWE_neutral_decisions = {
 
 		fire_only_once = yes
 
-		cost = 55
+		cost = 40
 		days_remove = 45
 
 		ai_will_do = {
@@ -525,7 +525,7 @@ SWE_neutral_decisions = {
 
 		fire_only_once = yes
 
-		cost = 80
+		cost = 45
 		days_remove = 80
 
 		ai_will_do = {
@@ -645,7 +645,7 @@ SWE_neutral_decisions = {
 
 		fire_only_once = yes
 
-		cost = 75
+		cost = 50
 		days_remove = 64
 
 		ai_will_do = {
@@ -724,7 +724,7 @@ SWE_neutral_decisions = {
 
 		fire_only_once = yes
 
-		cost = 88
+		cost = 40
 		days_remove = 75
 
 		ai_will_do = {
@@ -820,8 +820,8 @@ SWE_neutral_decisions = {
 			}
 		}
 		fire_only_once = yes
-		cost = 250
-		days_remove = 150
+		cost = 80
+		days_remove = 110
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_neu"
 			add_stability = 0.10
@@ -864,8 +864,8 @@ SWE_neutral_decisions = {
 			is_subject = no
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 40
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -927,7 +927,7 @@ SWE_alliance_reachout = {
 
 		}
 		fire_only_once = no
-		cost = 50
+		cost = 5
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_entente_LS"
 			ENT = {
@@ -962,7 +962,7 @@ SWE_alliance_reachout = {
 			factor = 50
 		}
 		fire_only_once = no
-		cost = 50
+		cost = 5
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_reichspact_ls"
 			GER = {
@@ -998,7 +998,7 @@ SWE_alliance_reachout = {
 			factor = 50
 		}
 		fire_only_once = no
-		cost = 70
+		cost = 7
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_russia_ls"
 			RUS = {
@@ -1025,8 +1025,8 @@ SWE_alliance_reachout = {
 			}
 		}
 
-		cost = 100
-		days_remove = 31
+		cost = 45
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1071,8 +1071,8 @@ SWE_alliance_reachout = {
 			}
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 45
+		days_remove = 21
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1130,8 +1130,8 @@ SWE_alliance_reachout = {
 			}
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 45
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1180,8 +1180,8 @@ SWE_alliance_reachout = {
 			}
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 40
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1229,8 +1229,8 @@ SWE_alliance_reachout = {
 			37 = { is_owned_and_controlled_by = SWE }
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 45
+		days_remove = 15
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1285,8 +1285,8 @@ SWE_alliance_reachout = {
 			}
 		}
 		fire_only_once = yes
-		cost = 250
-		days_remove = 150
+		cost = 80
+		days_remove = 110
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_ali"
 			add_stability = 0.10
@@ -1346,7 +1346,7 @@ SWE_revolution_decisions = {
 			factor = 50
 		}
 		fire_only_once = no
-		cost = 70
+		cost = 35
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_internationale_ls"
 			FRA = {
@@ -1375,7 +1375,7 @@ SWE_revolution_decisions = {
 			factor = 50
 		}
 		fire_only_once = no
-		cost = 50
+		cost = 35
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_own_faction_rev"
 
@@ -1411,8 +1411,8 @@ SWE_revolution_decisions = {
 			}
 		}
 
-		cost = 100
-		days_remove = 16
+		cost = 40
+		days_remove = 10
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1460,8 +1460,8 @@ SWE_revolution_decisions = {
 				NOR = { is_puppet_of = SWE }					
 			}
 
-		cost = 100
-		days_remove = 5
+		cost = 25
+		days_remove = 7
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1502,8 +1502,8 @@ SWE_revolution_decisions = {
 			}
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 60
+		days_remove = 18
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1555,8 +1555,8 @@ SWE_revolution_decisions = {
 			has_country_flag = SWE_flag_integrate_finland
 		}
 
-		cost = 80
-		days_remove = 125
+		cost = 40
+		days_remove = 95
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1608,8 +1608,8 @@ SWE_revolution_decisions = {
 			}
 		}
 
-		cost = 80
-		days_remove = 31
+		cost = 40
+		days_remove = 16
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1657,8 +1657,8 @@ SWE_revolution_decisions = {
 				NOR = { is_puppet_of = SWE }					
 			}
 
-		cost = 100
-		days_remove = 5
+		cost = 40
+		days_remove = 7
 		fire_only_once = yes
 		war_with_target_on_remove = yes
 
@@ -1702,8 +1702,8 @@ SWE_revolution_decisions = {
 			}
 		}
 		fire_only_once = yes
-		cost = 75
-		days_remove = 24
+		cost = 50
+		days_remove = 15
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_claim_scandinavia_revolution"	
 			add_state_claim = 110
@@ -1749,8 +1749,8 @@ SWE_revolution_decisions = {
 			}
 		}
 		fire_only_once = yes
-		cost = 250
-		days_remove = 150
+		cost = 100
+		days_remove = 110
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_integrate_scandinavia_revolution"
 			add_stability = -0.10
@@ -1884,7 +1884,7 @@ SWE_elmo_decisions = {
 			factor = 50
 		}
 		fire_only_once = no
-		cost = 70
+		cost = 40
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_latin_bois"
 			CAR = {
@@ -1905,7 +1905,7 @@ SWE_elmo_decisions = {
 			is_subject = no
 		}
 		fire_only_once = yes
-		cost = 20
+		cost = 15
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_claim_elmo_europe"
 			set_capital = { state = 138 }
@@ -1988,7 +1988,7 @@ SWE_elmo_decisions = {
 		}
 		fire_only_once = yes
 		cost = 50
-		days_remove = 30
+		days_remove = 15
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_core_elmo_europe"
 			
@@ -2573,7 +2573,7 @@ SWE_wartime_decisions = {
 			has_democratic_government = yes
 		}
 		fire_only_once = yes
-		cost = 100
+		cost = 35
 		ai_will_do = {
 			factor = 10
 		}
@@ -2593,7 +2593,7 @@ SWE_wartime_decisions = {
 			has_war = yes
 		}
 		fire_only_once = yes
-		cost = 100
+		cost = 40
 		ai_will_do = {
 			factor = 10
 		}			

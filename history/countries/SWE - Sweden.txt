@@ -7,8 +7,6 @@ starting_train_buffer = 2.0
 
 country_event = { id = swe.9999 days = 1 } 
 
-
-
 country_event = { days = 130 id = swe_flavor.1 }
 country_event = { days = 366 id = swe_flavor.2 }
 country_event = { days = 104 id = swe_flavor.3 }

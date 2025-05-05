@@ -2282,7 +2282,7 @@ focus_tree = {
 			factor = 80 
 		}
 		available = { 
-			always = no 
+
 		}		
 		allow_branch = {
 			NOT = {
@@ -3218,7 +3218,7 @@ focus_tree = {
 			factor = 80 
 		}
 		available = {
-
+			has_country_flag = SWE_flag_syndie_victory
 		}		
 		
 		completion_reward = {
@@ -3596,7 +3596,7 @@ focus_tree = {
 			factor = 80 
 		}
 		available = {
-
+			has_country_flag = SWE_flag_radsoc_victory
 		}		
 		
 		completion_reward = {
@@ -4003,7 +4003,7 @@ focus_tree = {
 				ideology = totalist
 				popularity = 0.11
 			}
-			add_stability = -0.10
+			add_stability = -0.02
 			add_war_support = 0.08
 			add_ideas = SWE_totalist1
 			country_event = { id = swetot.1 } 			
@@ -4027,6 +4027,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
+			add_stability = 0.02
 			add_popularity = { ideology = totalist popularity = 0.10 }			
 			add_popularity = { ideology = radical_socialist popularity = 0.12 }
 			add_radsoc_to_coalition = yes
@@ -4051,6 +4052,7 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
+			add_stability = 0.02
 			add_popularity = { ideology = totalist popularity = 0.18 }		
 		}
 	}
