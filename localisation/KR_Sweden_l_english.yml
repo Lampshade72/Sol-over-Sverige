@@ -271,6 +271,27 @@ SWE_arch_2_desc:0 ""
 SWE_arch_3:0 "För Gud och Sverige!"
 SWE_arch_3_desc:0 ""
 
+## Elmo ##
+
+SWE_elmo1:0 "Draftiing The Organic State"
+SWE_elmo2:0 "Mobilizing The Organic State"
+SWE_elmo3:0 "One Nation, Many Organs"
+
+SWE_royal_youth_idea:0 "Youth Training Programs"
+SWE_royal_youth2:0 "Expanded Youth Training Programs"
+
+SWE_royal_paramilitaries:0 "The Kings Dagger"
+
+
+
+
+
+
+
+
+
+
+
 ###military Ideas###
 
 SWE_chief_of_army_idea:0 "Chief of the Army"
@@ -279,7 +300,7 @@ SWE_archies_army_idea1:0 "Douglas's War of Manoeuvre"
 
 SWE_archies_army_idea2:0 "Douglas's War of Manoeuvre"
 
-SWE_archie_moterise_cavalry:0 "Motorising Cavalry Forces"
+SWE_archie_motorise_cavalry:0 "Motorising Cavalry Forces"
 
 SWE_archie_officer_smert:0 "Elite Officer Corp"
 
@@ -1107,11 +1128,11 @@ SWE_flag_entente_bad:0 "The Entente Rejects our Telegram!"
 
 ## Decisions ##
 SWE_claim_scandinavia:0 "Claim Scandinavia"
-SWE_destroy_norway:0 "Tear up the Karlstad treaty"
+SWE_destroy_norway:0 "Tear Up the Karlstad Treaty"
 SWE_destroy_denmark:0 "Operation Rädda Danmark"
-SWE_destroy_finjacks:0 "Bring Finland back into Sweden's bossom"
+SWE_destroy_finjacks:0 "Bring Finland back into Sweden's Bosom"
 SWE_destroy_fake_nords:0 "Bringing back our Baltic Bastion"
-SWE_destroy_the_bear:0 "Cutting down the old Bear"
+SWE_destroy_the_bear:0 "Cutting Down the Old Bear"
 
 SWE_fort_south:0 "Protection against Central Europe"
 SWE_fort_west1:0 "Southern Defence line against Norway"
@@ -1200,7 +1221,7 @@ SWE_totalist_S_party:0 "SP"
 SWE_totalist_S_party_long:0 "Socialistiska Partiet - §LSocialist Party§!"
 
 SWE_totalist_C_party:0 "SKP"
-SWE_totalist_C_party_long:0 "Sveriges kommunistiska parti - §LCommunist Party of Sweden§!"
+SWE_totalist_C_party_long:0 "Sveriges Kommunistiska Parti - §LCommunist Party of Sweden§!"
 
 SWE_totalist_flyg_party:0 "SNSP"
 SWE_totalist_flyg_party_long:0 "Sveriges Nationella Syndikalistiska Parti - §LNational Syndicalist Party of Sweden§!"
@@ -1575,7 +1596,7 @@ swetot.5.t:0 "Opium of the People"
 swetot.5.d:0 "There is no force more corrosive to reason, no shackle more suffocating to the spirit of progress, than the ancient and decaying teachings of religion. For too long, the minds of Swedes have been bound by superstition, first through the blood-soaked rites of Norse paganism and later through the long, grim shadow cast by Christianity. From the moment the cross was hoisted above our temples and altars, a darkness fell across Sweden, a darkness of submission, guilt, and blind obedience to invisible masters. \n\nBut no longer. The age of divine lies is ending. \n\nThough many still cling desperately to these irrational beliefs, nurtured by generations of indoctrination and fear, the time has come to begin the great therapy of truth. Religion is the opioid of a dying world—a crutch for the weak, a tool for the exploiters—and we shall see it cast down, broken and discredited. The revolution has no place for fairy tales and ghosts; its altar is reason, and its scripture is strength. \n\nThis will not be an easy struggle. The parasite of faith has deep roots. But we know the path is righteous, and we do not waver. Through education, through will, through the ceaseless flame of ideological clarity, we shall purge the final vestiges of religious delusion from our people. In the end, no Swede shall bow to heaven, nor to prophets, nor to gods. They shall bow only to the Revolution—and to the Chairman, the living embodiment of Sweden’s destiny!"
 swetot.5.a:0 "Opioid replacement therapy begins with a substitute substance…"
 
-swetot.6.t:0 "The Worker, a humble Commissar"
+swetot.6.t:0 "The Worker, a Humble Commissar"
 swetot.6.d:0 "Reaction and traitors hide in every shadow, corner, and unfortunately in many homes in Sweden. Such dissidents cannot be allowed to continue, for leaving them would open up the possibility of a counter-revolution, ending all the progress we have worked so hard for. A massive propaganda drive has begun underway, teaching the values of upholding the revolution, loyalty to the party and chairman. Benefits, such as more leisure time and improved status in the party shall be given to those that aid in our search for counter-revolutionaries. For every worker must be a commissar for the party, and such must fulfill his duty by exposing all enemies of the state!"
 swetot.6.a:0 "Power of human will"
 
@@ -1592,7 +1613,7 @@ swetot.9.t:0 "Expansion of Heavy Industry and Agriculture"
 swetot.9.d:0 "Sweden, in recent history, has enjoyed the benefits of mild industrialisation. Giving small incremental doses of factories, aiding the nation in slowly joining the ranks amongst most industrial nations. This is severely unacceptable, to truly prosper, survive even, Sweden must expand her heavy industries. From infrastructure in the cities, to mechanization of agriculture, a colossal undertaking is underway, in which the entire landscape of Sweden shall be changed. Every building, every factory and every worker shall be pushed to their limit, for Sweden’s revolution may be at stake!"
 swetot.9.a:0 "Five year plan? It must be done faster!"
 
-swetot.10.t:0 "Lindholm's national revolution"
+swetot.10.t:0 "Lindholm's National Revolution"
 swetot.10.d:0 "Lindholm, after his sudden grab at power, now wields Sweden with his small band of fanatics, and in the eyes of some is betraying the ideals gained by the recent revolution. Such naysayers cannot all be silent, lest our fragile government topple once more. As such, Lindholm has announced that Sweden is undergoing her second revolution, a true socialist revolution. One not tainted by the syndicalist menace in France and Britain or other nations abroad. \n\nDeclaring that a true ‘Socialist is one who places solidarity with his own people, Sweden, above all’. While such a speech’s effects are yet truly to be felt, many former members of the reactionary ultranationalists have taken a liking to Lindholm’s new revolution, avowing support for his cause. ALongside this, members of Flyg’s former party have quickly incorporated themselves in the party, furthering connections to the wayward socialists. \n\nWhile there is still much to do, and support is still low, the first step has been taken and with it, our victory!"
 swetot.10.a:0 "True Nationalism cannot last without participation of the Working class"
 
@@ -1604,7 +1625,7 @@ swetot.12.t:0 "Disintegration of Opposition"
 swetot.12.d:0 "It is no surprise that our new regime is rather unpopular to most still, not only to the traditional monarchists that remain in the nation, alongside our former allies on the left. Members of the anarcho-syndicalists have already begun rioting and showing open opposition to our regime, with them are their allies in the SSV who decry our socialism as nothing more than reactionary gibberish! \n\nHowever, with control over Sweden’s military apparatus and soldiers, as well as with the reorganisation of our own Red Guard, such opposition will not last long. Many of the syndicalist strongholds are being hunted down and liquidated. Such woes against us, such provocations, will not go unpunished!"
 swetot.12.a:0 "Demand dedication, always"
 
-swetot.13.t:0 "Shaking hands with General Douglas"
+swetot.13.t:0 "Shaking Hands with General Douglas"
 swetot.13.d:0 "After the revolution that took hold of our nation, many generals in the military, especially those involved in the failed coup, either fled the country or were captured and imprisoned until further notice. One such general that failed to avoid capture was the renowned nationalist and proponent of movement warfare, Archibald Douglas. Seen alongside Jung when their soldiers attempted to storm the Rikstag, he was soon captured by a band of worker militias after an intense shootout caused him and his few remaining soldiers to surrender. With his surrender and subsequent imprisonment, he remained in temporary confinement in Långholmen Prison, however upon hearing of Sven Lindholm’s rise into power, he sent an offer towards the new Chairman. \n\nDouglas, ever the ultra-nationalist, has offered Lindholm his services in exchange for the chance to lead the Swedish armed forces once more, declaring that his involvement in the former coup was merely his failed attempt at saving Sweden from the lawless anarchists. Espousing similar nationalist and command economy ideals as Lindholm, the Chairman has found favour in this former radical nationalist clique. Under strict supervision from Lindholm’s most loyal guardsmen, the generals Archibald Douglas and his close friend Martin Ekstroem have been given new titles of Generals in the reformed Swedish army and the chance to redeem themselves from their past sins. \n\nWhile such a move is seen as insane by many on the left, Lindholm’s mishmash of fanatics see this as a national win, that if the possibility to reform such men is possible, then surely the entire nation could be as well. In any case, the Swedish army now stands bolstered with more competent and experienced leadership."
 swetot.13.a:0 "If the monarchist can reform, any soul can!"
 

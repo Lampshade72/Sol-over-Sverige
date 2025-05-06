@@ -951,7 +951,7 @@ ideas = {
 			picture = ALB_cultural_ideological_revolution
 			allowed = { always = no }
 			modifier = {
-				stability_weekly = 0.02			
+			stability_weekly = 0.01			
 			research_speed_factor = 0.06
 			global_building_slots_factor = 0.20
 			political_power_cost = -0.10			
@@ -1777,7 +1777,7 @@ ideas = {
 			}
 		}
 
-		SWE_royal_youth = {
+		SWE_royal_youth_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_royal_youth"}
 			picture = GFX_idea_CAN_youth_training_act
 			allowed = { always = no }

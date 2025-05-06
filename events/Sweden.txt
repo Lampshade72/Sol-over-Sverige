@@ -3581,7 +3581,12 @@ country_event = { ####communist or socialist ##LS##
 			picture = "gfx/leaders/SWE/Portrait_Sweden_Sven_Linderot.png"
 			expire = "1.1.1"
 			ideology = authcom_subtype
-		}	
+		}
+		set_party_name = {
+			ideology = totalist
+			long_name = SWE_totalist_C_party_long
+			name = SWE_totalist_C_party
+		}			
 		set_cosmetic_tag = SWE_linderot
 		hidden_effect = {
 			country_event = { id = swetot.3 days = 6 }
@@ -3590,7 +3595,11 @@ country_event = { ####communist or socialist ##LS##
 
 	option = { 
 		name = swetot.2.b	
-
+		set_party_name = {
+			ideology = totalist
+			long_name = SWE_totalist_flyg_party_long
+			name = SWE_totalist_flyg_party
+		}		
 		set_country_flag = SWE_flag_flyg_victory
 		hidden_effect = {
 			country_event = { id = swetot.8 days = 180 }

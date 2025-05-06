@@ -2051,7 +2051,7 @@ focus_tree = {
 		icon = GFX_goal_ICE_hvtramannaland_our_home
 		prerequisite = { focus = SWE_FOP_see_evil_speak_evil }		
 		x = 0
-		y = 4
+		y = 5
 		relative_position_id = SWE_FOP_neutrality_again
 		cost = 7
 		ai_will_do = {
@@ -2282,7 +2282,7 @@ focus_tree = {
 			factor = 80 
 		}
 		available = { 
-
+			always = no
 		}		
 		allow_branch = {
 			NOT = {
@@ -2303,12 +2303,13 @@ focus_tree = {
 		prerequisite = { focus = SWE_elections_over }
 		x = 3
 		y = 1
+		cost = 1
 		relative_position_id = SWE_elections_over
 		ai_will_do = {
 			factor = 80 
 		}
 		available = { 
-			always = no 
+			has_government = social_democrat 
 		}
 		
 		completion_reward = {
@@ -2323,6 +2324,7 @@ focus_tree = {
 
 		x = 9
 		y = 1
+		cost = 1
 		relative_position_id = SWE_elections_over
 		ai_will_do = {
 			factor = 80 
@@ -2630,12 +2632,13 @@ focus_tree = {
 		prerequisite = { focus = SWE_elections_over }
 		x = -9
 		y = 1
+		cost = 1
 		relative_position_id = SWE_elections_over
 		ai_will_do = {
 			factor = 80
 		}
 		available = { 
-			always = no
+			has_government = social_conservative
 		}
 		
 		completion_reward = {
@@ -2650,12 +2653,13 @@ focus_tree = {
 
 		x = -3
 		y = 1 
+		cost = 1
 		relative_position_id = SWE_elections_over
 		ai_will_do = {
 			factor = 80
 		}
 		available = { 
-			always = no
+			has_government = market_liberal
 		}
 		
 		completion_reward = {
@@ -3694,8 +3698,8 @@ focus_tree = {
 			ENG = { add_opinion_modifier = { target = SWE modifier = medium_increase } }	
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 1500
-				producer = SWE
+				amount = 2000
+				producer = FRA
 			}			
 		}
 	}
@@ -5844,6 +5848,7 @@ focus_tree = {
 			NFA = { add_opinion_modifier = { target = SWE modifier = small_increase } }
 			CAN = { add_opinion_modifier = { target = SWE modifier = medium_increase } }
 			country_event = { id = swemil.28 }
+			add_stability = 0.05
 		
 		}
 	}
@@ -6135,7 +6140,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = SWE_royal_youth
+			add_ideas = SWE_royal_youth_idea
 		}
 	}
 
@@ -6188,6 +6193,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
 		
 		}
 	}
@@ -6210,7 +6217,7 @@ focus_tree = {
 		
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = SWE_royal_youth
+				remove_idea = SWE_royal_youth_idea
 				add_idea = SWE_royal_youth2
 			}			
 		}
