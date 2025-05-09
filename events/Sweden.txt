@@ -7331,5 +7331,62 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = newsswe.5 #military restore monarchy
+	immediate = { log = "[GetDateText]: [Root.GetName]: event newsswe.5" }
+	title = newsswe.5.t
+	desc = newsswe.5.d
+	picture = GFX_news_event_SWE_military
+
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	option = {
+		name = newsswe.5.a
+		effect_tooltip = {
+			add_named_threat = {
+				threat = 3
+				name = SWE_united_europe_news
+			}
+		}		
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = no
+			}
+		}
+	}
+	option = {
+		name = newsswe.5.b
+		effect_tooltip = {
+			add_named_threat = {
+				threat = 3
+				name = SWE_united_europe_news
+			}
+		}		
+		trigger = {
+			AND = {
+				NOT = { tag = SWE }
+				has_socialist_government = yes
+			}
+		}
+	}
+	option = {
+		name = newsswe.5.c
+		effect_tooltip = {
+			add_named_threat = {
+				threat = 3
+				name = SWE_united_europe_news
+			}
+		}		
+		trigger = {
+			tag = SWE
+		}
+	}
+}
 
 
