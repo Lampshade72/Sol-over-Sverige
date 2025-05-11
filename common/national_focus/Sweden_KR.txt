@@ -17,7 +17,7 @@ focus_tree = {
 			tag = SWE
 		}
 	}
-
+	
 	shared_focus = SCANDINAVIA_nordic_council	
 	default = no
 	continuous_focus_position = { 
@@ -1296,7 +1296,14 @@ focus_tree = {
 			}
 			
 		}
-
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_military_steps_in
+					has_country_flag = SWE_election_safe_success
+				}
+			}
+		}
 
 		completion_reward = {
 
@@ -1328,7 +1335,14 @@ focus_tree = {
 				has_completed_focus = SWE_FOP_neutrality_again
 			}
 		}
-
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_red_in_sweden
+					has_country_flag = SWE_flag_lindholm_tot
+				}
+			}
+		}
 
 		completion_reward = {
 
@@ -1384,6 +1398,15 @@ focus_tree = {
 					has_completed_focus = SWE_FOP_revolutionary_torch
 				}	
 			}
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_red_in_sweden
+					has_country_flag = SWE_flag_lindholm_tot
+				}
+			}
+		}
 
 		completion_reward = {
 			country_event = { id = swefop.1 days = 5 }
@@ -2243,7 +2266,8 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SWE_FOP_tiger_place_in_world
-		}
+		}		
+		
 		x = 0
 		y = 1
 		cost = 5
@@ -2299,7 +2323,7 @@ focus_tree = {
 		id = SWE_social_dem_stab
 		icon = GFX_goal_SWE_focus_hansson
 		prerequisite = { focus = SWE_elections_over }
-		x = 8
+		x = 6
 		y = 1
 		cost = 1
 		relative_position_id = SWE_elections_over
@@ -2316,24 +2340,116 @@ focus_tree = {
 	}
 
 	focus = { 
-		id = SWE_radical_united_front
-		icon = GFX_goal_SWE_sap
-		prerequisite = { focus = SWE_elections_over }
-
-		x = 12
+		id = SWE_scourge_black_monday
+		icon = GFX_HUN_solving_black_monday
+		prerequisite = { focus = SWE_social_dem_stab }		
+		x = -6
 		y = 1
-		cost = 1
-		relative_position_id = SWE_elections_over
+		relative_position_id = SWE_social_dem_stab
+		cost = 6
 		ai_will_do = {
 			factor = 80 
 		}
-
-		available = { 
-			always = no 
+		
+		completion_reward = {
+			add_popularity = { ideology = social_democrat popularity = 0.02 }
+			swap_ideas = {
+				remove_idea = SWE_black_monday_0
+				add_idea = SWE_black_monday_1
+			}
+		
+		}
+	}
+	
+		focus = { 
+		id = SWE_unemployment_no_more
+		icon = GFX_goal_TEX_loyal_labor
+		prerequisite = { focus = SWE_scourge_black_monday }		
+		x = -1
+		y = 1
+		relative_position_id = SWE_scourge_black_monday
+		cost = 5
+		ai_will_do = {
+			factor = 80 
 		}
 		
 		completion_reward = {
-			country_event = { id = swedem.16 days = 2 }			
+			random_owned_state = {
+				limit = {
+					is_core_of = SWE
+					is_controlled_by = SWE
+					infrastructure > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}		
+			random_owned_state = {
+				limit = {
+					is_core_of = SWE
+					is_controlled_by = SWE
+					infrastructure > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+		}
+	}
+
+		focus = { 
+		id = SWE_homes_for_home
+		icon = GFX_CAL_NYA
+		prerequisite = { focus = SWE_scourge_black_monday }		
+		x = 1
+		y = 1
+		relative_position_id = SWE_scourge_black_monday
+		cost = 5
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+		add_one_random_civilian_factory = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}			
+
+		
+		}
+	}
+
+		focus = { 
+		id = SWE_social_saviour
+		icon = GFX_goal_AST_expand_control_party_machine
+		prerequisite = { focus = SWE_homes_for_home }
+		prerequisite = { focus = SWE_unemployment_no_more }		
+		x = 0
+		y = 2
+		relative_position_id = SWE_scourge_black_monday
+		cost = 4
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+		add_popularity = { ideology = social_democrat popularity = 0.04 }
+		add_one_random_civilian_factory = yes
+			swap_ideas = {
+				remove_idea = SWE_black_monday_1
+				add_idea = SWE_black_monday_2
+			}
+		
 		}
 	}
 
@@ -2341,7 +2457,7 @@ focus_tree = {
 		id = SWE_welfare_done_right
 		icon = GFX_goal_NFA_Welfare
 		prerequisite = { focus = SWE_social_dem_stab }		
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SWE_social_dem_stab
 		cost = 6
@@ -2356,11 +2472,54 @@ focus_tree = {
 	}
 
 	focus = { 
-		id = SWE_scourge_black_monday
-		icon = GFX_HUN_solving_black_monday
-		prerequisite = { focus = SWE_social_dem_stab }		
+		id = SWE_helping_poor
+		icon = GFX_goal_NZL_unemployment_insurance
+		prerequisite = { focus = SWE_welfare_done_right }		
 		x = 1
-		y = 1
+		y = 2
+		relative_position_id = SWE_social_dem_stab
+		cost = 6
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -40
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}			
+
+		}
+	}
+
+	focus = { 
+		id = SWE_get_employed
+		icon = GFX_goal_AST_lower_tariffs
+		prerequisite = { focus = SWE_welfare_done_right }		
+		x = -1
+		y = 2
+		relative_position_id = SWE_social_dem_stab
+		cost = 6
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = social_democrat popularity = 0.01 }
+			add_ideas = SWE_social_study
+		}
+	}
+
+
+	focus = { 
+		id = SWE_worker_protection_law
+		icon = GFX_goal_workers_rights
+		prerequisite = { focus = SWE_get_employed }
+		prerequisite = { focus = SWE_helping_poor }
+		
+		x = 0
+		y = 3
 		relative_position_id = SWE_social_dem_stab
 		cost = 6
 		ai_will_do = {
@@ -2369,21 +2528,41 @@ focus_tree = {
 		
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = SWE_black_monday_0
-				add_idea = SWE_black_monday_1
+				remove_idea = SWE_social_dem_pol1
+				add_idea = SWE_social_dem_pol2
 			}
+		}
+	}
+
+	focus = { 
+		id = SWE_healthy_living
+		icon = GFX_goal_CAN_Universal_Healthcare
+		prerequisite = { focus = SWE_worker_protection_law }
+
 		
+		x = 0
+		y = 4
+		relative_position_id = SWE_social_dem_stab
+		cost = 6
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+			add_ideas = SWE_health_care_idea
+			add_popularity = { ideology = social_democrat popularity = 0.02 }
+
 		}
 	}
 
 
 	focus = { 
-		id = SWE_distance_from_radicalism
-		icon = GFX_goal_NFA_Oppose_Radicals
-		prerequisite = { focus = SWE_welfare_done_right }
-		prerequisite = { focus = SWE_scourge_black_monday }
-		x = -2
-		y = 2
+		id = SWE_trade_union_rep
+		icon = GFX_goal_COR_Unions_Fair_Share
+		prerequisite = { focus = SWE_social_dem_stab }
+
+		x = 3
+		y = 1
 		relative_position_id = SWE_social_dem_stab
 		cost = 4
 		ai_will_do = {
@@ -2391,34 +2570,19 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = SWE_political_chaos_idea2
-			add_stability = 0.04
-			add_political_power = 30
-			add_popularity = { ideology = totalist popularity = -0.02 }		
-			add_popularity = { ideology = syndicalist popularity = -0.06 }
-			add_popularity = { ideology = radical_socialist popularity = -0.04 }				
-			country_event = { id = swedem.12 }			
-		}
-	}
-
-	focus = { 
-		id = SWE_trade_union_rep
-		icon = GFX_goal_COR_Unions_Fair_Share
-		prerequisite = { focus = SWE_welfare_done_right }
-		prerequisite = { focus = SWE_scourge_black_monday }
-		x = 0
-		y = 2
-		relative_position_id = SWE_social_dem_stab
-		cost = 5
-		ai_will_do = {
-			factor = 80 
-		}
+				add_political_power = 25
 		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SWE_black_monday_1
-				add_idea = SWE_black_monday_2
-			}
+				if = {
+				limit = { owns_state = 778 }
+				778 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}		
+			
 			if = {
 				limit = { owns_state = 38 }
 				38 = {
@@ -2437,10 +2601,10 @@ focus_tree = {
 		id = SWE_urbanisation_efforts
 		icon = GFX_goal_KIV_urban
 		prerequisite = { 
-			focus = SWE_scourge_black_monday
+			focus = SWE_trade_union_rep
 		}
 		
-		x = 2
+		x = 3
 		y = 2
 		relative_position_id = SWE_social_dem_stab
 		cost = 4
@@ -2458,59 +2622,15 @@ focus_tree = {
 		}
 	}
 
-
-	focus = { 
-		id = SWE_strengthen_ties_to_internationale
-		icon = GFX_goal_FRA_international_insurrection
-		prerequisite = { focus = SWE_radical_united_front }
-		
-		x = 1
-		y = 1
-		relative_position_id = SWE_radical_united_front
-		cost = 3
-		ai_will_do = {
-			factor = 80 
-		}
-		
-		completion_reward = {
-			country_event = { id = swedem.18 }			
-		}
-	}
-
-	focus = { 
-		id = SWE_worker_protection_law
-		icon = GFX_goal_workers_rights
-		prerequisite = { focus = SWE_trade_union_rep }
-		prerequisite = { focus = SWE_distance_from_radicalism }
-		prerequisite = { focus = SWE_urbanisation_efforts }
-		
-		x = -1
-		y = 3
-		relative_position_id = SWE_social_dem_stab
-		cost = 5
-		ai_will_do = {
-			factor = 80 
-		}
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SWE_social_dem_pol1
-				add_idea = SWE_social_dem_pol2
-			}
-		}
-	}
-
 	focus = { 
 		id = SWE_improving_statare_bros
 		icon = GFX_goal_BRG_Patriotic_Worker
-		prerequisite = { focus = SWE_trade_union_rep }
-		prerequisite = { focus = SWE_distance_from_radicalism }
 		prerequisite = { focus = SWE_urbanisation_efforts }
 		
-		x = 1
+		x = 3
 		y = 3
 		relative_position_id = SWE_social_dem_stab
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 80 
 		}
@@ -2525,14 +2645,12 @@ focus_tree = {
 		}
 	}
 
-
 	focus = { 
-		id = SWE_align_farmer_league
-		icon = GFX_goal_ALB_Albanian_Farmers
-		prerequisite = { focus = SWE_worker_protection_law }
+		id = SWE_worker_protections
+		icon = GFX_goal_generic_boost_morale
 		prerequisite = { focus = SWE_improving_statare_bros }
-		
-		x = 0
+		prerequisite = { focus = SWE_worker_protection_law }		
+		x = 2
 		y = 4
 		relative_position_id = SWE_social_dem_stab
 		cost = 4
@@ -2541,7 +2659,63 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_manpower = 5500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = SWE
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+				producer = SWE
+			}			
+			add_popularity = { ideology = social_democrat popularity = -0.01 }
+		
+		}
+	}
+
+	focus = { 
+		id = SWE_distance_from_radicalism
+		icon = GFX_goal_NFA_Oppose_Radicals
+		prerequisite = { focus = SWE_social_dem_stab }
+		x = -3
+		y = 1
+		relative_position_id = SWE_social_dem_stab
+		cost = 4
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+			remove_ideas = SWE_political_chaos_idea2
+			add_stability = 0.04
+			add_political_power = 30
+			add_popularity = { ideology = social_democrat popularity = 0.03 }
+			add_popularity = { ideology = totalist popularity = -0.02 }		
+			add_popularity = { ideology = syndicalist popularity = -0.06 }
+			add_popularity = { ideology = radical_socialist popularity = -0.04 }				
+			country_event = { id = swedem.12 }			
+		}
+	}
+
+	focus = { 
+		id = SWE_align_farmer_league
+		icon = GFX_goal_ALB_Albanian_Farmers
+		prerequisite = { focus = SWE_distance_from_radicalism }
+
+		
+		x = -3
+		y = 2
+		relative_position_id = SWE_social_dem_stab
+		cost = 4
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
 			country_event = { id = swedem.15 }
+			add_popularity = { ideology = social_liberal popularity = 0.09 }
 			add_stability = 0.08
 			if = {
 				limit = { owns_state = 960 }
@@ -2554,6 +2728,141 @@ focus_tree = {
 				}
 			}						
 		
+		}
+	}
+
+	focus = { 
+		id = SWE_social_patriots
+		icon = GFX_goal_AST_commonwealth_reconstruction_training_scheme
+		prerequisite = { focus = SWE_align_farmer_league }
+		x = -3
+		y = 3
+		relative_position_id = SWE_social_dem_stab
+		cost = 4
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = social_democrat popularity = 0.02 }
+			add_ideas = SWE_social_patriot_idea
+
+		}
+	}
+
+	focus = { 
+		id = SWE_social_king_trust
+		icon = GFX_goal_CAN_crusader_king
+		prerequisite = { focus = SWE_social_patriots }
+		prerequisite = { focus = SWE_worker_protection_law }
+		x = -2
+		y = 4
+		relative_position_id = SWE_social_dem_stab
+		cost = 4
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_stability = 0.04
+			add_war_support = -0.06
+		
+
+		}
+	}
+
+	focus = { 
+		id = SWE_northern_bastion_of_socdem
+		icon = GFX_goal_generic_democratic_socialism
+		prerequisite = { focus = SWE_social_king_trust }
+		prerequisite = { focus = SWE_worker_protections }
+		x = 0
+		y = 5
+		relative_position_id = SWE_social_dem_stab
+		cost = 7
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+			country_event = { id = swedem.13 }			
+			swap_ideas = {
+				remove_idea = SWE_social_dem_pol2
+				add_idea = SWE_social_dem_pol3
+			}
+			add_research_slot = 1			
+		}
+	}
+
+	focus = { 
+		id = SWE_nationalise_time
+		icon = GFX_CAL_new_antitrust_laws
+		prerequisite = { focus = SWE_northern_bastion_of_socdem }
+
+		x = 1
+		y = 6
+		relative_position_id = SWE_social_dem_stab
+		cost = 5
+		ai_will_do = {
+			factor = 80 
+		}
+		
+		completion_reward = {
+	
+		}
+	}
+
+	focus = { 
+		id = SWE_finance_healthcare
+		icon = GFX_goal_AST_pharmaceutical_benefits_scheme
+		prerequisite = { focus = SWE_northern_bastion_of_socdem }
+
+		x = -1
+		y = 6
+		relative_position_id = SWE_social_dem_stab
+		cost = 5
+		ai_will_do = {
+			factor = 80 
+		}
+		available = {
+			has_idea = SWE_health_care_idea
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SWE_health_care_idea
+				add_idea = SWE_health_care_idea2
+			}	
+		}
+	}
+
+
+
+
+
+
+
+	focus = { 
+		id = SWE_radical_united_front
+		icon = GFX_goal_SWE_sap
+		prerequisite = { focus = SWE_elections_over }
+
+		x = 14
+		y = 1
+		cost = 1
+		relative_position_id = SWE_elections_over
+		ai_will_do = {
+			factor = 80 
+		}
+
+		available = { 
+			always = no 
+		}
+		
+		completion_reward = {
+			country_event = { id = swedem.16 days = 2 }			
 		}
 	}
 
@@ -2576,28 +2885,25 @@ focus_tree = {
 		}
 	}
 
+
 	focus = { 
-		id = SWE_northern_bastion_of_socdem
-		icon = GFX_goal_generic_democratic_socialism
-		prerequisite = { focus = SWE_align_farmer_league }
+		id = SWE_strengthen_ties_to_internationale
+		icon = GFX_goal_FRA_international_insurrection
+		prerequisite = { focus = SWE_radical_united_front }
 		
-		x = 0
-		y = 5
-		relative_position_id = SWE_social_dem_stab
-		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = SWE_radical_united_front
+		cost = 3
 		ai_will_do = {
 			factor = 80 
 		}
 		
 		completion_reward = {
-			country_event = { id = swedem.13 }			
-			swap_ideas = {
-				remove_idea = SWE_social_dem_pol2
-				add_idea = SWE_social_dem_pol3
-			}
-			add_research_slot = 1			
+			country_event = { id = swedem.18 }			
 		}
 	}
+
 
 	focus = { 
 		id = SWE_cracking_the_crown
@@ -2635,7 +2941,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-		available = { 
+		available = {	
+			is_subject = no
 			has_government = social_conservative
 		}
 		
@@ -2657,6 +2964,7 @@ focus_tree = {
 			factor = 80
 		}
 		available = { 
+			is_subject = no
 			has_government = market_liberal
 		}
 		
@@ -2676,9 +2984,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-			add_stability = 0.02
+			add_political_power =  25
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2705,9 +3016,27 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-	
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+					prefer_home_area_states_unless_filled = yes
+					is_valid_state_for_development = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			add_stability = 0.02
 
 	
 		}
@@ -2724,11 +3053,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-	
-
-	
+			add_ideas = SWE_conservative_corpo_yes
+			add_political_power = -5
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}	
 		}
 	}
 
@@ -2744,10 +3086,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-	
-
+			add_manpower = 6000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1001
+				producer = SWE
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 	
 		}
 	}
@@ -2759,13 +3116,20 @@ focus_tree = {
 		X = 3
 		y = 1
 		relative_position_id = SWE_GEL_leads
-		cost = 6
+		cost = 4
 		ai_will_do = {
 			factor = 80 
 		}
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}
 		
 		completion_reward = {
-			country_event = { id = swedem.1 }		
+			add_ideas = SWE_moral_sweden_1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}	
 
 		}
 	}
@@ -2781,12 +3145,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }		
 			remove_ideas = SWE_political_chaos_idea2
 			country_event = { id = swedem.2 }
-			army_experience = 45
-			add_war_support = 0.08
+			add_war_support = 0.04
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2816,8 +3183,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
-		
+			add_popularity = { ideology = totalist popularity = -0.02 }
+			add_popularity = { ideology = radical_socialist  popularity = -0.07 }
+			add_popularity = { ideology = syndicalist popularity = -0.04 }
+			add_political_power = 20
 		}
 	}
 
@@ -2833,9 +3202,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-
+			increase_ruling_party_popularity_by_5 = yes
+			reverse_add_opinion_modifier = {
+				target = GER
+				modifier = KR_approves_of_govt
+			}			
 		
 		}
 	}
@@ -2848,11 +3224,14 @@ focus_tree = {
 		X = 0
 		y = 1
 		relative_position_id = SWE_GEL_leads
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
 				add_ideas = SWE_conservative_pol1
 
@@ -2868,16 +3247,16 @@ focus_tree = {
 		X = 1
 		y = 2
 		relative_position_id = SWE_GEL_leads
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SWE_conservative_pol1
-				add_idea = SWE_conservative_pol2
-			}
+			add_ideas = SWE_national_education
 
 		
 		}
@@ -2891,14 +3270,18 @@ focus_tree = {
 		X = -1
 		y = 2
 		relative_position_id = SWE_GEL_leads
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-
-
+			add_ideas = SWE_cut_regulations
+			add_stability = -0.02
+			add_political_power = 30
 		
 		}
 	}
@@ -2911,18 +3294,21 @@ focus_tree = {
 		X = 0
 		y = 3
 		relative_position_id = SWE_GEL_leads
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = SWE_conservative_pol1
 				add_idea = SWE_conservative_pol2
 			}
-
-		
+			add_stability = -0.04
+			add_political_power = 50	
 		}
 	}
 
@@ -2934,15 +3320,18 @@ focus_tree = {
 		X = 0
 		y = 4
 		relative_position_id = SWE_GEL_leads
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-
-
-		
+			add_manpower = 500
+			add_war_support = 0.05
+			add_popularity = { ideology = social_conservative popularity = 0.02 }
 		}
 	}
 
@@ -2958,7 +3347,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
 			country_event = { id = swedem.3 }
 			add_research_slot = 1			
@@ -2977,13 +3369,40 @@ focus_tree = {
 		X = -1
 		y = 6
 		relative_position_id = SWE_GEL_leads
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
+		add_political_power = 25
+		
+		custom_effect_tooltip = SWE_banned_soc_party_tt	
 
+			add_popularity = { ideology = totalist popularity = -0.20 }
+			add_popularity = { ideology = radical_socialist  popularity = -0.20 }
+			add_popularity = { ideology = syndicalist popularity = -0.20 }
+			hidden_effect = {
+			set_party_name = {
+			add_popularity = { ideology = social_democrat popularity = 0.15 }			
+			ideology = radical_socialist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			set_party_name = {
+			ideology = syndicalist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			set_party_name = {
+			ideology = totalist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			}
 		
 		}
 	}
@@ -2995,13 +3414,19 @@ focus_tree = {
 		X = 1
 		y = 6
 		relative_position_id = SWE_GEL_leads
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 80 
 		}
-		
+		available = {	
+			is_subject = no
+			has_government = social_conservative
+		}		
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = SWE_moral_sweden_1
+				add_idea = SWE_moral_sweden_2
+			}
 		
 		}
 	}
@@ -3144,7 +3569,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_freeing_the_market
-		icon = GFX_RUS_Encourage_Private_Property
+		icon = GFX_goal_CZE_export_work
 		prerequisite = { focus = SWE_classical_liberalism }
 		X = 1
 		y = 2
@@ -3155,13 +3580,38 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			random_owned_state = {
+				limit = {
+					is_core_of = SWE
+					is_controlled_by = SWE
+					infrastructure > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}		
+			random_owned_state = {
+				limit = {
+					is_core_of = SWE
+					is_controlled_by = SWE
+					infrastructure > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = SWE_independent_industry
-		icon = GFX_RUS_Encourage_Private_Property
+		icon = GFX_UKR_Decentralized_Planning
 		prerequisite = { focus = SWE_classical_liberalism }
 		X = -1
 		y = 2
@@ -3172,13 +3622,14 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = SWE_market_liberal_corpo_yes
 
 		}
 	}
 
 	focus = {
 		id = SWE_sailing_the_market
-		icon = GFX_RUS_Encourage_Private_Property
+		icon = GFX_ITA_free_trade
 		prerequisite = { focus = SWE_independent_industry }
 		prerequisite = { focus = SWE_freeing_the_market }		
 		X = 0
@@ -3199,7 +3650,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_kingly_liberalism
-		icon = GFX_RUS_Encourage_Private_Property
+		icon = GFX_goal_AST_new_markets
 		prerequisite = { focus = SWE_sailing_the_market }		
 		X = 0
 		y = 4
@@ -3210,6 +3661,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = SWE_liberal_king
+			add_war_support = -0.01
+			add_political_power = 60
 
 		}
 	}
@@ -3227,14 +3681,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-	
+			add_ideas = SWE_business_enshrined
+			add_stability = 0.02
+			add_political_power = -10
 		
 		}
 	}
 
 	focus = {
 		id = SWE_privatise_railroads
-		icon = GFX_NEE_support_small_businesses
+		icon = GFX_goal_AST_lower_taxes_holding_business_back
 		prerequisite = { focus = SWE_small_business_centred }
 		X = 3
 		y = 2
@@ -3245,14 +3701,22 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-	
+			add_tech_bonus = {
+			name = SWE_expand_trains
+			bonus = 0.5
+			uses = 1
+			category = train_tech
+		}			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}			
 		
 		}
 	}
 
 	focus = {
 		id = SWE_building_bridges_and_roads
-		icon = GFX_NEE_support_small_businesses
+		icon = GFX_goal_NZL_relief_work
 		prerequisite = { focus = SWE_privatise_railroads }
 		X = 3
 		y = 3
@@ -3263,7 +3727,34 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-	
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+					prefer_home_area_states_unless_filled = yes
+					is_valid_state_for_development = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+					prefer_home_area_states_unless_filled = yes
+					is_valid_state_for_development = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
 		
 		}
 	}
@@ -3298,7 +3789,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_rule_of_law
-		icon = GFX_RUS_Free_Trade_Unions
+		icon = GFX_goal_AST_efficency_over_liberalism
 		prerequisite = { focus = SWE_reaching_out_to_soc_lib }
 		X = -3
 		y = 2
@@ -3310,13 +3801,15 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = SWE_political_chaos_idea2
+			add_war_support = -0.05
+			add_political_power = 50
 			
 		}
 	}
 
 	focus = {
 		id = SWE_ban_syndicalism
-		icon = GFX_RUS_Free_Trade_Unions
+		icon = GFX_CAL_levering_act
 		prerequisite = { focus = SWE_rule_of_law }
 		X = -3
 		y = 3
@@ -3327,14 +3820,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+		add_stability = -0.02
+			add_popularity = { ideology = totalist popularity = -0.06 }
+			add_popularity = { ideology = syndicalist popularity = -0.08 }
 			
 		}
 	}
 
 	focus = {
 		id = SWE_political_paradise
-		icon = GFX_RUS_Free_Trade_Unions
+		icon = GFX_CAL_aaa
 		prerequisite = { focus = SWE_ban_syndicalism }
 		prerequisite = { focus = SWE_sailing_the_market }
 		X = -2
@@ -3346,7 +3841,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			add_popularity = { ideology = market_liberal popularity = 0.09 }
+			add_stability = 0.05
+			add_political_power = 40
 			
 		}
 	}
@@ -3356,7 +3853,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_trams_and_people
-		icon = GFX_NEE_support_small_businesses
+		icon = GFX_CAL_national_railroads
 		prerequisite = { focus = SWE_building_bridges_and_roads }
 		prerequisite = { focus = SWE_sailing_the_market }		
 		X = 2
@@ -3368,7 +3865,18 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-	
+
+			add_manpower = 2500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1001
+				producer = SWE
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+				producer = SWE
+			}			
 		
 		}
 	}
@@ -3376,7 +3884,7 @@ focus_tree = {
 	
 	focus = {
 		id = SWE_bastion_of_liberalism
-		icon = GFX_RUS_New_Liberal_Era
+		icon = GFX_goal_LUX_agrarianism_conservative_reformism
 		prerequisite = { focus = SWE_political_paradise }
 		prerequisite = { focus = SWE_trams_and_people }
 		X = 0
@@ -3414,12 +3922,9 @@ focus_tree = {
 			random_owned_controlled_state = {
 				increase_state_category_by_one_level = yes
 			}
-			random_owned_controlled_state = {
-				increase_state_category_by_one_level = yes
-			}
-			random_owned_controlled_state = {
-				increase_state_category_by_one_level = yes
-			}
+
+
+			
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -3437,7 +3942,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_rural_education_investment
-		icon = GFX_CRM_Fruit
+		icon = GFX_goal_FRA_streamlined_bureaucracies
 		prerequisite = { focus = SWE_bastion_of_liberalism }
 
 		X = -1
@@ -3449,7 +3954,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			add_ideas = SWE_rural_education
+			add_popularity = { ideology = market_liberal popularity = 0.06 }
 			
 		}
 	}
@@ -3465,7 +3971,7 @@ focus_tree = {
 		X = 80
 		y = 0
 		offset = {
-			x = -22
+			x = -36
 			y = 0
 			trigger = {
 				has_country_flag = SWE_flag_red_in_sweden
@@ -5112,7 +5618,7 @@ focus_tree = {
 		x = 102
 		y = 0 
 		offset = {
-			x = -45
+			x = -68
 			y = 0
 			trigger = {
 				has_country_flag = SWE_flag_military_steps_in 
@@ -5278,7 +5784,16 @@ focus_tree = {
 		available = { 
 			has_country_flag = SWE_flag_jung_junta
 		}
-		
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_red_in_sweden
+					has_country_flag = SWE_election_safe_success
+					has_country_flag = SWE_flag_lindholm_tot
+					has_country_flag = SWE_flag_elmo_world
+				}
+			}
+		}		
 		completion_reward = {
 			add_ideas = SWE_pataut1
 			country_event = { id = swemil.18 }
@@ -5297,7 +5812,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_red_in_sweden
+					has_country_flag = SWE_election_safe_success
+					has_country_flag = SWE_flag_lindholm_tot
+					has_country_flag = SWE_flag_elmo_world
+				}
+			}
+		}
 		available = {
 			has_country_flag = SWE_flag_archibald_winning
 		}
@@ -5321,7 +5845,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_red_in_sweden
+					has_country_flag = SWE_election_safe_success
+					has_country_flag = SWE_flag_lindholm_tot
+					has_country_flag = SWE_flag_elmo_world
+				}
+			}
+		}
 		available = {
 			has_country_flag = SWE_flag_authdem_junta
 		}
@@ -5336,19 +5869,23 @@ focus_tree = {
 		id = SWE_create_secret_police
 		icon = GFX_goal_LEC_police2
 		prerequisite = { 
-			focus = SWE_junga_junta
-			focus = SWE_archibald_take_command
+			focus = SWE_place_of_the_crown
+
 			}
 
 		x = 4
 		y = 1
 		cost = 6
-		relative_position_id = SWE_junga_junta
+		relative_position_id = SWE_place_of_the_crown
 		ai_will_do = {
 			factor = 80
 		}
 		available = { 
-
+			OR = {
+				has_country_flag = SWE_flag_archibald_winning
+				has_country_flag = SWE_flag_jung_junta
+				has_country_flag = SWE_flag_elmo_world	
+			}
 		}
 		
 		completion_reward = {
@@ -5370,11 +5907,16 @@ focus_tree = {
 		x = 4
 		y = 2
 		cost = 5
-		relative_position_id = SWE_junga_junta
+		relative_position_id = SWE_place_of_the_crown
 		ai_will_do = {
 			factor = 80
 		}
 		available = { 
+			OR = {
+				has_country_flag = SWE_flag_archibald_winning
+				has_country_flag = SWE_flag_jung_junta
+				has_country_flag = SWE_flag_elmo_world	
+				}
 		}
 		
 		completion_reward = {
@@ -5388,18 +5930,23 @@ focus_tree = {
 		id = SWE_wastes_to_soldiers
 		icon = GFX_goal_NFL_unemployed_soldiers
 		prerequisite = { 
-			focus = SWE_junga_junta
-			focus = SWE_authdem_stabilize_nation
+
+			focus = SWE_place_of_the_crown
 			}
 
 		x = -4
 		y = 1
 		cost = 6
-		relative_position_id = SWE_junga_junta
+		relative_position_id = SWE_place_of_the_crown
 		ai_will_do = {
 			factor = 80
 		}
 		available = { 
+			OR = {
+				has_country_flag = SWE_flag_authdem_junta
+				has_country_flag = SWE_flag_jung_junta
+				has_country_flag = SWE_flag_elmo_world
+				}
 		}
 		
 		completion_reward = {
@@ -5426,11 +5973,16 @@ focus_tree = {
 		x = -4
 		y = 2
 		cost = 5
-		relative_position_id = SWE_junga_junta
+		relative_position_id = SWE_place_of_the_crown
 		ai_will_do = {
 			factor = 80
 		}
 		available = { 
+			OR = {
+				has_country_flag = SWE_flag_authdem_junta
+				has_country_flag = SWE_flag_jung_junta
+				has_country_flag = SWE_flag_elmo_world
+				}
 		}
 		
 		completion_reward = {
@@ -6480,14 +7032,24 @@ focus_tree = {
 		icon = GFX_goal_NFA_Local_Reconstruction_Councils
 		x = 0
 		y = 1
+		offset = {
+			x = -7
+			y = -7
+			trigger = {
+				has_country_flag = SWE_flag_elmo_world
+			}
+		}
+		
 		cost = 5
 		relative_position_id = SWE_svea_rike
 		ai_will_do = {
 			factor = 80
 		}
-
+		
+		
 		available = {
 			has_country_flag = SWE_flag_elmo_world
+			has_completed_focus = SWE_place_of_the_crown
 		}
 		
 		completion_reward = {
@@ -6835,6 +7397,13 @@ focus_tree = {
 		x = -19
 		y = 0
 		offset = {
+			x = 10
+			y = 0
+			trigger = {
+				has_country_flag = SWE_flag_red_in_sweden
+			}
+		}	
+		offset = {
 			x = 7
 			y = 0
 			trigger = {
@@ -6914,7 +7483,7 @@ focus_tree = {
 		x = -26
 		y = 1
 		offset = {
-			x = 7
+			x = 17
 			y = 0
 			trigger = {
 				has_country_flag = SWE_flag_red_in_sweden

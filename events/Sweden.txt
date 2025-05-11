@@ -1648,6 +1648,7 @@ country_event = { ####GEL victory ##LS##
 	option = {
 		name = swedem.0.a
 		add_political_power = 10
+		country_event = { id = swedem.1 days = 41 }			
 	}
 }
 

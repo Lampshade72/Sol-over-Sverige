@@ -730,18 +730,60 @@ ideas = {
 
 		SWE_conservative_corpo_yes = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_corpo_yes"}
-			picture = GFX_idea_generic_conservatism
+			picture = CAN_protectionism_idea
 			allowed = { always = no }
-			modifier = {
-				research_speed_factor = 0.02	
-				political_power_factor = -0.03
-				production_speed_buildings_factor = 0.12
-				global_building_slots_factor = 0.12	
-				consumer_goods_factor = 0.10
+			modifier = {	
+				political_power_factor = -0.01
+				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.10
+				consumer_goods_factor = 0.06
 			}				
 		}
 
+		SWE_cut_regulations = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_cut_regulations"}			
+			picture = HOL_workplace_democracy
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.04
+				political_power_factor = 0.06
+				party_popularity_stability_factor = 0.06
+				drift_defence_factor = -0.06
+			
+			}						
+		}
 
+		SWE_national_education = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_national_education"}			
+			picture = generic_research_bonus
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.05		
+			}						
+		}
+
+		SWE_moral_sweden_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_moral_sweden_1"}			
+			picture = NFA_moral_order
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.07
+				political_power_cost = -0.01
+				production_factory_max_efficiency_factor = 0.03		
+			}						
+		}
+
+		SWE_moral_sweden_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_moral_sweden_2"}			
+			picture = NFA_moral_order
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.1
+				political_power_cost = -0.03
+				production_factory_max_efficiency_factor = 0.07	
+			}						
+		}
 
 ###############
 ## Market Liberal Ideas ## 
@@ -789,16 +831,47 @@ ideas = {
 		
 		SWE_market_liberal_corpo_yes = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_market_liberal_corpo_yes"}
+			picture = generic_conservatism
+			allowed = { always = no }
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+				consumer_goods_factor = 0.07
+			}				
+		}		
+
+		SWE_business_enshrined = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_business_enshrined"}
 			picture = GFX_idea_generic_conservatism
 			allowed = { always = no }
 			modifier = {
-				research_speed_factor = 0.01	
-				production_speed_buildings_factor = 0.08
-				global_building_slots_factor = 0.1
-				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.03
+				global_building_slots_factor = 0.05
+				consumer_goods_factor = -0.05
 			}				
-		}		
-		
+		}			
+
+		SWE_rural_education = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_rural_education"}			
+			picture = generic_research_bonus
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.06
+				political_power_gain = -0.02		
+			}						
+		}
+
+		SWE_liberal_king = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_liberal_king"}			
+			picture = generic_research_bonus
+			allowed = { always = no }
+			modifier = {
+				production_factory_start_efficiency_factor = 0.08
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				war_support_factor = -0.02
+			}						
+		}
 
 ###############
 ## Social Dem Ideas ## 
@@ -854,11 +927,52 @@ ideas = {
 			}				
 		}
 
+		SWE_social_study = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_social_study"}			
+			picture = generic_research_bonus
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_radar_station_factor = 0.1
+			}						
+		}
 
+		SWE_health_care_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_health_care_idea"}			
+			picture = generic_research_bonus
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.04
+				stability_factor = 0.03
+			}						
+		}
 
+		SWE_health_care_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_health_care_idea2"}			
+			picture = generic_research_bonus
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.08
+				production_factory_max_efficiency_factor = 0.07
+				production_factory_efficiency_gain_factor = 0.07
+				stability_factor = 0.05
+			}						
+		}
 
-
-
+		SWE_social_patriot_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_social_patriot_idea"}			
+			picture = generic_research_bonus
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.02
+				stability_factor = 0.04
+				party_popularity_stability_factor = 0.1
+				political_power_gain 0.04
+			
+			}						
+		}
 
 
 
