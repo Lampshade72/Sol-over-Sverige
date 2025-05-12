@@ -584,7 +584,7 @@ ideas = {
 
 		SWE_german_reach_3good = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_german_reach_3good"}
-			picture = GFX_idea_GER_goldstandard
+			picture = GER_goldstandard
 			allowed = { always = no } 
 			modifier = {
 			
@@ -601,7 +601,7 @@ ideas = {
 
 		SWE_german_reach_4good = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_german_reach_4good"}
-			picture = GFX_idea_GER_goldstandard
+			picture = GER_goldstandard
 			allowed = { always = no } 
 			modifier = {
 			
@@ -618,7 +618,7 @@ ideas = {
 
 		SWE_german_reach_2mid = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_german_reach_2mid"}
-			picture = GFX_idea_LEC_Germany_Falling
+			picture = LEC_Germany_Falling
 			allowed = { always = no } 
 			modifier = {
 			
@@ -633,7 +633,7 @@ ideas = {
 
 		SWE_german_reach_3mid = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_german_reach_3mid"}
-			picture = GFX_idea_LEC_Germany_Falling
+			picture = LEC_Germany_Falling
 			allowed = { always = no } 
 			modifier = {
 			
@@ -648,7 +648,7 @@ ideas = {
 
 		SWE_german_reach_2bad = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_german_reach_2bad"}
-			picture = GFX_idea_FSA_atlanta_fire
+			picture = FSA_atlanta_fire
 			allowed = { always = no } 
 			modifier = {
 			
@@ -664,7 +664,7 @@ ideas = {
 
 		SWE_german_reach_3bad = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_german_reach_3bad"}
-			picture = GFX_idea_FSA_atlanta_fire
+			picture = FSA_atlanta_fire
 			allowed = { always = no } 
 			modifier = {
 			
@@ -684,7 +684,7 @@ ideas = {
 
 		SWE_conservative_pol1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_pol1"}
-			picture = GFX_idea_generic_conservatism
+			picture = generic_conservatism
 			allowed = { always = no }
 			modifier = {
 				research_speed_factor = 0.02	
@@ -699,7 +699,7 @@ ideas = {
 
 		SWE_conservative_pol2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_pol2"}
-			picture = GFX_idea_generic_conservatism
+			picture = generic_conservatism
 			allowed = { always = no }
 			modifier = {
 				research_speed_factor = 0.04	
@@ -714,7 +714,7 @@ ideas = {
 
 		SWE_conservative_pol3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_pol3"}
-			picture = GFX_idea_generic_conservatism
+			picture = generic_conservatism
 			allowed = { always = no }
 			modifier = {
 				research_speed_factor = 0.06	
@@ -791,7 +791,7 @@ ideas = {
 
 		SWE_market_liberal_pol1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_market_liberal_pol1"}
-			picture = GFX_idea_generic_economic_liberalism
+			picture = generic_economic_liberalism
 			allowed = { always = no }
 			modifier = {
 				research_speed_factor = 0.02	
@@ -804,7 +804,7 @@ ideas = {
 
 		SWE_market_liberal_pol2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_market_liberal_pol2"}
-			picture = GFX_idea_generic_economic_liberalism
+			picture = generic_economic_liberalism
 			allowed = { always = no }
 			modifier = {
 				research_speed_factor = 0.04	
@@ -817,7 +817,7 @@ ideas = {
 
 		SWE_market_liberal_pol3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_market_liberal_pol3"}
-			picture = GFX_idea_generic_economic_liberalism
+			picture = generic_economic_liberalism
 			allowed = { always = no }
 			modifier = {
 				research_speed_factor = 0.06	
@@ -831,7 +831,7 @@ ideas = {
 		
 		SWE_market_liberal_corpo_yes = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_market_liberal_corpo_yes"}
-			picture = generic_conservatism
+			picture = BBR_equal_opportunity_economy
 			allowed = { always = no }
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
@@ -842,7 +842,7 @@ ideas = {
 
 		SWE_business_enshrined = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_business_enshrined"}
-			picture = GFX_idea_generic_conservatism
+			picture = CZE_small_business_idea
 			allowed = { always = no }
 			modifier = {
 				production_speed_buildings_factor = 0.03
@@ -863,7 +863,7 @@ ideas = {
 
 		SWE_liberal_king = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_liberal_king"}			
-			picture = generic_research_bonus
+			picture = every_man_a_king
 			allowed = { always = no }
 			modifier = {
 				production_factory_start_efficiency_factor = 0.08
@@ -905,7 +905,7 @@ ideas = {
 
 		SWE_social_dem_pol3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_social_dem_pol3"}
-			picture = GFX_idea_ALB_flowers_socialism
+			picture = ALB_flowers_socialism
 			allowed = { always = no }
 			modifier = {
 				consumer_goods_factor = 0.15
@@ -929,7 +929,7 @@ ideas = {
 
 		SWE_social_study = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_social_study"}			
-			picture = generic_research_bonus
+			picture = CAN_new_social_programs
 			allowed = { always = no }
 			modifier = {
 				research_speed_factor = 0.05
@@ -939,7 +939,7 @@ ideas = {
 
 		SWE_health_care_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_health_care_idea"}			
-			picture = generic_research_bonus
+			picture = CAN_universal_healthcare
 			allowed = { always = no }
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -951,7 +951,7 @@ ideas = {
 
 		SWE_health_care_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_health_care_idea2"}			
-			picture = generic_research_bonus
+			picture = CAN_universal_healthcare
 			allowed = { always = no }
 			modifier = {
 				consumer_goods_factor = 0.08
@@ -963,7 +963,7 @@ ideas = {
 
 		SWE_social_patriot_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_social_patriot_idea"}			
-			picture = generic_research_bonus
+			picture = ALB_nationalization
 			allowed = { always = no }
 			modifier = {
 				war_support_factor = 0.02
