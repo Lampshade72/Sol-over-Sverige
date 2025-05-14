@@ -49,6 +49,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_rikstag_restructuring"
 				country_event = { id = TNTswe.2 }
 			swap_ideas = {
 				remove_idea = SWE_political_chaos_idea
@@ -70,6 +71,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_farmer_reachout"
 			add_political_power = 45
 			add_stability = 0.05			
 			add_popularity = {
@@ -94,6 +96,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_german_business_linger"
 			add_political_power = 20
 			add_popularity = {
 				ideology = social_conservative
@@ -137,6 +140,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_dark_monday_cloud"
 			add_political_power = -50
 			hidden_effect = {
 				add_stability = -0.05
@@ -159,6 +163,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_cutting_corners"
 			add_stability = -0.01
 			add_timed_idea = {
 				idea = 	SWE_tighten_expenses1
@@ -182,6 +187,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_minor_welfare_imp"
 			swap_ideas = {
 				remove_idea = SWE_black_monday
 				add_idea = SWE_black_monday_0
@@ -204,6 +210,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_companies_crisis"
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -237,6 +244,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_cutting_armed_forces"
 			army_experience = -15
 			add_timed_idea = {
 				idea = 	SWE_cutting_the_army
@@ -261,6 +269,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_more_austerity_measures"
 			add_timed_idea = {
 				add_stability = -0.04
 				idea = 	SWE_austerity_measures
@@ -286,6 +295,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_final_hurdle"
+			
 			add_political_power = 35
 		}
 	}
@@ -308,6 +319,8 @@ focus_tree = {
 		
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_finish_off_black_monday"
+			
 			add_tech_bonus = {
 				name = SWE_finish_off_black_monday
 				bonus = 1
@@ -334,6 +347,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_boats_to_trawlers"
+			
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -378,6 +393,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_eel_economy"
+			
 			add_ideas = SWE_eel_economy1
 			add_political_power = 35
 		}
@@ -398,6 +415,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_fishing_vessel_reg"
+			
 			navy_experience = 30
 			add_tech_bonus = {
 				name = SWE_fishing_vessel_reg
@@ -426,6 +445,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_sail_seas_of_trade"
+			
 			add_political_power = 60
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
@@ -456,6 +477,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_industrial_investments"
+			
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -513,6 +536,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_farming_mechanization"
+			
 			swap_ideas = {
 				remove_idea = SWE_good_economy2
 				add_idea = SWE_good_economy3
@@ -537,6 +562,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_stabilize_the_krona"
+			
 			swap_ideas = {
 				remove_idea = SWE_black_monday_2
 				add_idea = SWE_black_monday_3
@@ -561,6 +588,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_further_lumber_export"
+			
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -601,6 +630,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_unemployment_aid"
+			
 				remove_ideas = SWE_black_monday_3
 		}
 	}
@@ -622,6 +653,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_riksbank_empowered"
+			
 			add_ideas = SWE_good_economy1
 
 		}
@@ -643,6 +676,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_dannemora_mine_expansion"
+			
 			141 = {
 				add_resource = {
 					type = steel
@@ -669,6 +704,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_zinkgruvan_subsidies"
+			
 			141 = {
 				add_resource = {
 					type = aluminium
@@ -701,6 +738,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_defense_rearmament_investment"
+			
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -733,6 +772,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_northern_mining_giant"
+			
 			swap_ideas = {
 				remove_idea = SWE_good_economy1
 				add_idea = SWE_good_economy2
@@ -762,6 +803,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_funding_research"
+			
 			add_tech_bonus = {
 				name = SWE_funding_research
 				bonus = 1
@@ -788,6 +831,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_lunds_universitet_donation"
+			
 			add_tech_bonus = {
 				name = SWE_lunds_universitet_donation
 				bonus = 1
@@ -813,6 +858,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_chalmers_uni"
+			
 			add_research_slot = 1		
 
 		}
@@ -921,6 +968,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_german_cloud"
 			country_event = { id = TNTswe.3 }
 		}
 	}
@@ -946,6 +994,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_embrace_kaiser"
 			swap_ideas = { 
 				remove_idea = SWE_german_reach_1
 				add_idea = SWE_german_reach_2good
@@ -977,6 +1026,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_gradual_removal"
 			swap_ideas = { 
 				remove_idea = SWE_german_reach_1
 				add_idea = SWE_german_reach_2mid
@@ -1013,6 +1063,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_abrupt_pull_out"
 			swap_ideas = { 
 				remove_idea = SWE_german_reach_1
 				add_idea = SWE_german_reach_2bad
@@ -1040,6 +1091,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_balancing_rope"
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -1084,6 +1136,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_swedish_primancy"
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -1114,6 +1167,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_rewards_from_industrialists"
 			swap_ideas = { 
 				remove_idea = SWE_german_reach_2good
 				add_idea = SWE_german_reach_3good
@@ -1151,6 +1205,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_transformation_of_business"
 				swap_ideas = { 
 					remove_idea = SWE_german_reach_2mid
 					add_idea = SWE_german_reach_3mid
@@ -1176,6 +1231,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_smouldering_pile"
 			swap_ideas = { 
 				remove_idea = SWE_german_reach_2bad
 				add_idea = SWE_german_reach_3bad
@@ -1201,6 +1257,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_exploiting_the_kaiser_bussy"
 			swap_ideas = { 
 				remove_idea = SWE_german_reach_3good
 				add_idea = SWE_german_reach_4good
@@ -1230,6 +1287,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_swedish_business_free_from_bussy"
 			if = {
 				limit = { has_idea = SWE_german_reach_3mid }
 					remove_ideas = SWE_german_reach_3mid
@@ -1269,6 +1327,8 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_tiger_place_in_world"
+			add_political_power = 35
 
 		}
 	}
@@ -1313,6 +1373,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_revolutionary_torch"
+			add_political_power = 10
 
 		}
 	}
@@ -1352,6 +1414,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_democractic_light"
 
 		}
 	}
@@ -1377,6 +1440,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_neutrality_again"
 
 		}
 	}
@@ -1416,6 +1480,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_realm_of_our_own"
 			country_event = { id = swefop.1 days = 5 }
 		}
 	}
@@ -1440,6 +1505,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_nordic_torch_alone"
 			add_stability = -0.05
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -1467,6 +1533,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_workers_arsenal"
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -1501,6 +1568,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_decry_reaction"
 			FRA = { add_opinion_modifier = { target = SWE modifier = medium_decrease } }	
 			ENG = { add_opinion_modifier = { target = SWE modifier = medium_decrease } }
 			add_stability = 0.12
@@ -1526,6 +1594,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_rally_oppressed"
 			add_manpower = 3000
 			add_command_power = 30
 			add_political_power = 50
@@ -1556,6 +1625,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_crush_nordic_crowns"
 			unlock_decision_tooltip = swe_subjugate_norway_revolution
 			unlock_decision_tooltip = swe_subjugate_finland_revolution
 			unlock_decision_tooltip = swe_subjugate_denmark_revolution
@@ -1580,6 +1650,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_true_nordic_union"
 			unlock_decision_tooltip = SWE_claim_scandinavia_revolution
 		}
 	}
