@@ -969,7 +969,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWE_INF_german_cloud"
-			country_event = { id = TNTswe.3 }
+
 		}
 	}
 
@@ -999,9 +999,7 @@ focus_tree = {
 				remove_idea = SWE_german_reach_1
 				add_idea = SWE_german_reach_2good
 				}
-			hidden_effect = { 
-				country_event = { id = TNTswe.4 days = 2 }
-				}
+
 
 		}
 	}
@@ -1031,9 +1029,7 @@ focus_tree = {
 				remove_idea = SWE_german_reach_1
 				add_idea = SWE_german_reach_2mid
 				}
-			hidden_effect = { 
-				country_event = { id = TNTswe.6 days = 2 }
-				}				
+			
 		}
 	}
 
@@ -1068,9 +1064,7 @@ focus_tree = {
 				remove_idea = SWE_german_reach_1
 				add_idea = SWE_german_reach_2bad
 				}
-			hidden_effect = { 
-				country_event = { id = TNTswe.8 days = 2 }
-				}				
+			
 		}
 	}
 
@@ -1184,9 +1178,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			hidden_effect = { 
-				country_event = { id = TNTswe.5 days = 2 }
-				}
+
 		}
 	}
 
@@ -1210,9 +1202,7 @@ focus_tree = {
 					remove_idea = SWE_german_reach_2mid
 					add_idea = SWE_german_reach_3mid
 				}
-			hidden_effect = { 
-				country_event = { id = TNTswe.7 days = 2 }
-				}				
+			
 		}
 	}
 
@@ -1236,9 +1226,7 @@ focus_tree = {
 				remove_idea = SWE_german_reach_2bad
 				add_idea = SWE_german_reach_3bad
 				}
-			hidden_effect = { 
-				country_event = { id = TNTswe.9 days = 2 }
-				}				
+			
 		}
 	}
 
@@ -1673,6 +1661,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_alongside_internationale"
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1
@@ -1700,6 +1689,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_british_naval_advise"
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
 				cost_reduction = 0.5
@@ -1727,6 +1717,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_french_industrial_aid"
 			add_ideas = SWE_swedish_commune_friend
 		}
 	}
@@ -1748,6 +1739,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_ready_world_revolution"
 			unlock_decision_tooltip = swe_subjugate_norway_revolution
 			unlock_decision_tooltip = swe_subjugate_finland_revolution
 			unlock_decision_tooltip = swe_subjugate_denmark_revolution
@@ -1771,6 +1763,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_worker_class_collab"
 			random_owned_controlled_state = {
 				increase_state_category_by_one_level = yes
 			}		
@@ -1799,6 +1792,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_role_to_play"
 			unlock_decision_tooltip = SWE_claim_scandinavia_revolution
 		}
 	}
@@ -1826,6 +1820,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_former_victors_kaiser"
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_political_power = 25
@@ -1851,6 +1846,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_russian_alliance"
 			add_stability = -0.10
 			add_political_power = 45
 			add_command_power = 40
@@ -1877,6 +1873,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_banished_entente"
 			add_stability = 0.10
 			add_political_power = -30
 			add_command_power = 40
@@ -1902,6 +1899,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_drinking_with_kaiser"
 			add_ideas = SWE_swedish_germany_friend
 		}
 	}
@@ -1926,6 +1924,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_petrograd_parade"
 			add_ideas = SWE_swedish_russia
 
 		}
@@ -1949,6 +1948,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_meet_in_ottawa"
 			add_ideas = SWE_swedish_entente
 		}
 	}
@@ -1973,6 +1973,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_bastion_against_radicals"
 			unlock_decision_tooltip = swe_subjugate_norway_alliance
 			unlock_decision_tooltip = swe_subjugate_finland_alliance
 			unlock_decision_tooltip = swe_subjugate_denmark_alliance		
@@ -2001,6 +2002,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_player_in_reclamation"
 			unlock_decision_tooltip = swe_subjugate_norway_alliance
 			unlock_decision_tooltip = swe_subjugate_finland_alliance
 			unlock_decision_tooltip = swe_subjugate_denmark_alliance
@@ -2025,6 +2027,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_triumphant_once_more"
 			add_ideas = SWE_swedish_arm_in_arm
 		}
 	}
@@ -2047,6 +2050,7 @@ focus_tree = {
 
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_torch_of_freedom"
 			add_ideas = SWE_swedish_arm_in_arm
 		}
 	}
@@ -2071,6 +2075,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_trade_priority"
 			add_ideas = SWE_swedish_neutrality1
 		}
 	}
@@ -2091,6 +2096,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_fortification_efforts"
 			unlock_decision_tooltip = SWE_fort_south
 			unlock_decision_tooltip = SWE_fort_west1
 			unlock_decision_tooltip = SWE_fort_west2
@@ -2114,6 +2120,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_gotland_fortress"
 			unlock_decision_tooltip = SWE_fort_coast_cities
 		}
 	}
@@ -2136,6 +2143,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_see_evil_speak_evil"
 			create_intelligence_agency = {
     			name = "General Security Service"
     			icon = GFX_intelligence_agency_logo_kr_swe	
@@ -2161,6 +2169,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_tiger_guards_den"
 			swap_ideas = {
 			remove_idea = SWE_swedish_neutrality1	
 			add_idea = SWE_swedish_neutrality2
@@ -2187,6 +2196,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_ready_the_blade"
 				unlock_decision_tooltip = SWE_claim_scandinavia
 				add_ideas = SWE_swedish_empire
 				country_event = { id = swefop.2 days = 5 }
@@ -2211,6 +2221,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_lands_of_old_empire"
 			unlock_decision_tooltip = SWE_destroy_fake_nords
 
 		}
@@ -2233,6 +2244,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_karlstad_failure"
 			unlock_decision_tooltip = SWE_destroy_norway
 		}
 	}
@@ -2254,6 +2266,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_danes_returned"
 			unlock_decision_tooltip = SWE_destroy_denmark
 		}
 	}
@@ -2277,6 +2290,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_wayward_son"
 			unlock_decision_tooltip = SWE_destroy_finjacks
 		}
 	}
@@ -2300,6 +2314,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_contront_bear"
 			unlock_decision_tooltip = SWE_destroy_the_bear
 			country_event = { id = swefop.4 days = 5 }
 		}
@@ -2323,6 +2338,7 @@ focus_tree = {
 			}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_swedish_dominance"
 			country_event = { id = swefop.6 days = 18 }
 			swap_ideas = {
 			remove_idea = SWE_swedish_empire	
@@ -2363,13 +2379,6 @@ focus_tree = {
 
 
 
-
-
-
-
-
-
-
 #####Social Dem initial#####
 
 	focus = { 
@@ -2394,6 +2403,7 @@ focus_tree = {
 			}
 		}				
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_elections_over"
 		}
 	}
 
@@ -2413,6 +2423,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_dem_stab"
 			country_event = { id = swedem.10 }			
 		}
 	}
@@ -2430,6 +2441,7 @@ focus_tree = {
 		}
 	
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_scourge_black_monday"
 			add_popularity = { ideology = social_democrat popularity = 0.02 }
 			swap_ideas = {
 				remove_idea = SWE_black_monday_0
@@ -2452,6 +2464,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_unemployment_no_more"
 			random_owned_state = {
 				limit = {
 					is_core_of = SWE
@@ -2495,6 +2508,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_homes_for_home"
 		add_one_random_civilian_factory = yes
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
@@ -2521,6 +2535,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_saviour"
 		add_popularity = { ideology = social_democrat popularity = 0.04 }
 		add_one_random_civilian_factory = yes
 			swap_ideas = {
@@ -2547,6 +2562,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_welfare_done_right"
 			country_event = { id = swedem.11 days = 1 }			
 			add_ideas = SWE_social_dem_pol1
 		}
@@ -2568,6 +2584,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_helping_poor"
 			add_stability = 0.05
 			add_political_power = -40
 			random_owned_controlled_state = {
@@ -2593,6 +2610,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_get_employed"
 			add_popularity = { ideology = social_democrat popularity = 0.01 }
 			add_ideas = SWE_social_study
 		}
@@ -2617,6 +2635,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_worker_protection_law"
 			swap_ideas = {
 				remove_idea = SWE_social_dem_pol1
 				add_idea = SWE_social_dem_pol2
@@ -2642,6 +2661,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_healthy_living"
 			add_ideas = SWE_health_care_idea
 			add_popularity = { ideology = social_democrat popularity = 0.02 }
 
@@ -2666,6 +2686,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_trade_union_rep"
 				add_political_power = 25
 		
 				if = {
@@ -2712,6 +2733,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_urbanisation_efforts"
 			random_owned_controlled_state = {
 				increase_state_category_by_one_level = yes
 			}
@@ -2738,6 +2760,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_improving_statare_bros"
 			swap_ideas = {
 				remove_idea = SWE_statare_idea
 				add_idea = SWE_statare_idea2
@@ -2764,6 +2787,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_worker_protections"
 			add_manpower = 5500
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -2796,6 +2820,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_distance_from_radicalism"
 			remove_ideas = SWE_political_chaos_idea2
 			add_stability = 0.04
 			add_political_power = 30
@@ -2825,6 +2850,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_align_farmer_league"
 			country_event = { id = swedem.15 }
 			add_popularity = { ideology = social_liberal popularity = 0.09 }
 			add_stability = 0.08
@@ -2858,6 +2884,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_patriots"
 			add_popularity = { ideology = social_democrat popularity = 0.02 }
 			add_ideas = SWE_social_patriot_idea
 
@@ -2881,6 +2908,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_king_trust"
 			add_one_random_civilian_factory = yes
 			add_one_random_civilian_factory = yes
 			add_stability = 0.04
@@ -2907,6 +2935,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_northern_bastion_of_socdem"
 			country_event = { id = swedem.13 }			
 			swap_ideas = {
 				remove_idea = SWE_social_dem_pol2
@@ -2933,6 +2962,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_nationalise_time"
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2972,6 +3002,7 @@ focus_tree = {
 			has_government = social_democrat
 		}			
 		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_finance_healthcare"
 			swap_ideas = {
 				remove_idea = SWE_health_care_idea
 				add_idea = SWE_health_care_idea2

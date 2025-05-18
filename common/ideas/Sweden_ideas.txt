@@ -932,8 +932,10 @@ ideas = {
 			picture = CAN_new_social_programs
 			allowed = { always = no }
 			modifier = {
-				research_speed_factor = 0.05
-				production_speed_radar_station_factor = 0.1
+				political_power_cost = -0.03
+				research_speed_factor = 0.02		
+				production_factory_max_efficiency_factor = 0.06
+				party_popularity_stability_factor = 0.05
 			}						
 		}
 
@@ -957,6 +959,7 @@ ideas = {
 				consumer_goods_factor = 0.08
 				production_factory_max_efficiency_factor = 0.07
 				production_factory_efficiency_gain_factor = 0.07
+				production_lack_of_resource_penalty_factor = 0.02
 				stability_factor = 0.05
 			}						
 		}
@@ -999,9 +1002,9 @@ ideas = {
 			picture = generic_assassination
 			allowed = { always = no }
 			modifier = {
-				army_org_Factor = -0.30
-				stability_weekly = -0.04
-				stability_factor = -0.25				
+				army_org_Factor = -0.25
+				stability_weekly = -0.01
+				stability_factor = -0.20				
 				political_power_gain = -0.10			
 			}				
 		}
@@ -1011,9 +1014,12 @@ ideas = {
 			picture = HUN_red_terror_idea
 			allowed = { always = no }
 			modifier = {
-				weekly_manpower = -8
-				stability_weekly = -0.04
+				weekly_manpower = -6
+				stability_weekly = -0.02
 				monthly_population = -0.05
+				national_populist_drift = -0.02
+				paternal_autocrat_drift = -0.02
+				authoritarian_democrat_drift = -0.02
 			}				
 		}
 
@@ -1022,9 +1028,13 @@ ideas = {
 			picture = HUN_red_terror_idea
 			allowed = { always = no }
 			modifier = {
-				weekly_manpower = -12
-				stability_weekly = -0.08
+				weekly_manpower = -20
+				stability_weekly = -0.04
 				monthly_population = -0.08
+				national_populist_drift = -0.02
+				paternal_autocrat_drift = -0.02
+				authoritarian_democrat_drift = -0.02
+				social_conservative_drift = -0.02
 			}				
 		}
 
@@ -1033,9 +1043,15 @@ ideas = {
 			picture = HUN_red_terror_idea_2
 			allowed = { always = no }
 			modifier = {
-				weekly_manpower = -25
-				stability_weekly = -0.10
+				weekly_manpower = -50
+				stability_weekly = -0.06
 				monthly_population = -0.15
+				national_populist_drift = -0.03
+				paternal_autocrat_drift = -0.03
+				authoritarian_democrat_drift = -0.03
+				social_conservative_drift = -0.03
+				market_liberal_drift = -0.03
+				social_liberal_drift = -0.03
 			}				
 		}
 

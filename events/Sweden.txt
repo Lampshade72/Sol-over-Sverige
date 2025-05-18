@@ -1926,9 +1926,65 @@ country_event = { ####align soclibs ##LS##
 	}
 }
 
+country_event = { ####lets make healthcare! SD ##LS##
+	id = swedem.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.20" }
+	title = swedem.20.t
+	desc = swedem.20.d
+	picture = GFX_report_event_SWE_Folkpartiet
 
+	is_triggered_only = yes
 
+	option = {
+		name = swedem.20.a
+		
+	}
+}
 
+country_event = { ####create home guard SD ##LS##
+	id = swedem.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.21" }
+	title = swedem.21.t
+	desc = swedem.21.d
+	picture = GFX_report_event_SWE_Folkpartiet
+
+	is_triggered_only = yes
+
+	option = {
+		name = swedem.21.a
+		
+	}
+}
+
+country_event = { ####national highway folkparty ##LS##
+	id = swedem.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.22" }
+	title = swedem.22.t
+	desc = swedem.22.d
+	picture = GFX_report_event_SWE_Folkpartiet
+
+	is_triggered_only = yes
+
+	option = {
+		name = swedem.22.a
+		
+	}
+}
+
+country_event = { ####silence syndies GEL ##LS##
+	id = swedem.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.23" }
+	title = swedem.23.t
+	desc = swedem.23.d
+	picture = GFX_report_event_SWE_Folkpartiet
+
+	is_triggered_only = yes
+
+	option = {
+		name = swedem.23.a
+		
+	}
+}
 
 
 
