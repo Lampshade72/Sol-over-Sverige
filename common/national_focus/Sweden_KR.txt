@@ -2800,6 +2800,7 @@ focus_tree = {
 				producer = SWE
 			}			
 			add_popularity = { ideology = social_democrat popularity = -0.01 }
+			country_event = { id = swedem.21 }
 		
 		}
 	}
@@ -3007,6 +3008,7 @@ focus_tree = {
 				remove_idea = SWE_health_care_idea
 				add_idea = SWE_health_care_idea2
 			}	
+			country_event = { id = swedem.20 }
 		}
 	}
 
@@ -3551,6 +3553,8 @@ focus_tree = {
 			has_government = social_conservative
 		}		
 		completion_reward = {
+		
+		country_event = { id = swedem.23 }
 		add_political_power = 25
 		
 		custom_effect_tooltip = SWE_banned_soc_party_tt	
@@ -3924,6 +3928,8 @@ focus_tree = {
 			has_government = market_liberal
 		}		
 		completion_reward = {
+		
+			country_event = { id = swedem.22 }
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT

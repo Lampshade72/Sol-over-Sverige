@@ -113,7 +113,10 @@ spriteTypes = {
 		name = "GFX_report_event_SWE_IKEA_man"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_IKEA_man.png"
 	}
-
+	spriteType = {
+		name = "GFX_report_event_SWE_women_jormund_ref"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_women_jormund_ref.png"
+	}
 
 
 
