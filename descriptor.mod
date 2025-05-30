@@ -9,3 +9,4 @@ dependencies={
 }
 name="Sol över Sverige: A Kaiserredux Submod"
 supported_version="1.16.*"
+remote_file_id="3490125334"
