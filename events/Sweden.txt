@@ -2141,6 +2141,34 @@ country_event = { ####Who shall win this struggle ##LS##
 
 	option = {
 		name = swerev.3.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_AUTHDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_JUNGA
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_NATPOP
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}					
+				}
+			}
+		}		
 		add_stability = -0.10
 		add_popularity = { ideology = totalist popularity = 0.03 }
 		add_popularity = { ideology = syndicalist popularity = 0.12 }	
@@ -2171,6 +2199,38 @@ country_event = { ####Who shall win this struggle ##LS##
 
 	option = {
 		name = swerev.3.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SOCIALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_FLYG
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}					
+				}
+			}
+		}		
 		add_stability = -0.16
 		add_popularity = { ideology = national_populist popularity = 0.06 }	
 		add_popularity = { ideology = paternal_autocrat popularity = 0.16 }	
@@ -2298,7 +2358,7 @@ country_event = { ####soldiers in factories ##LS##
 		add_stability = 0.02
 		add_war_support = -0.03
 		hidden_effect = {
-		country_event = { id = swe.22 days = 164 }
+		country_event = { id = swe.22 days = 166 }
 			}
 	}
 }
@@ -2314,17 +2374,37 @@ country_event = { ####crown or no crown ##LS##
 
 	option = {
 		name = swemil.4.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_NO_KING_CHAT
+					}
+			}
+		}
 		add_stability = -0.08
 		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
 		add_popularity = { ideology = national_populist popularity = 0.05 }		
 		country_event = { id = swemil.6 days = 6 }	
 		hidden_effect = {
 			country_event = { id = newsswe.4 days = 1 }
-		}		
+		}
 	}
 	
 	option = {
 		name = swemil.4.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_KING_IS_BACK
+					}
+			}
+		}		
 		add_stability = 0.02
 		add_political_power = 20
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }		
@@ -2364,7 +2444,7 @@ country_event = { #Coronation of Gustaf VI Adolf ##LS##
 	}
 
 
-country_event = { #Coronation 
+country_event = { #unhappy 
 	id = swemil.6
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.6" }
 	title = swemil.6.t
@@ -2393,6 +2473,26 @@ country_event = { #Inter-military election ##LS##
 
 	option = { ##Jung Junta pataut
 		name = swemil.7.a
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_AUTHDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_NATPOP
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}					
+				}
+			}
+		}		
 		set_country_flag = SWE_flag_jung_junta
 		add_stability = 0.10
 		add_popularity = { ideology = paternal_autocrat popularity = 0.14 }
@@ -2404,6 +2504,26 @@ country_event = { #Inter-military election ##LS##
 	
 	option = { ##Authdem
 		name = swemil.7.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_JUNGA
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_NATPOP
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}					
+				}
+			}
+		}		
 		set_country_flag = SWE_flag_authdem_junta
 		add_stability = 0.08
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.10 }		
@@ -2435,6 +2555,26 @@ country_event = { #Inter-military election ##LS##
 
 	option = { ##Archibald natpop
 		name = swemil.7.c
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_AUTHDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_JUNGA
+					}					
+				}
+			}
+		}		
 		set_country_flag = SWE_flag_archibald_winning
 		add_stability = -0.02		
 		add_popularity = { ideology = national_populist popularity = 0.12 }
@@ -2501,12 +2641,36 @@ country_event = { #sesame street ##LS##
 
 	option = { #stay
 		name = swemil.9.a
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}					
+				}
+			}
+		}		
 		add_political_power = 15
 		country_event = { id = swemil.10 days = 30 }	
 	}
 	
 	option = { #Elmo says we are friends!
 		name = swemil.9.b
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 0
+				NOT = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}					
+				}
+			}
+		}		
 		add_popularity = { ideology = national_populist popularity = 0.05 }
 		add_stability = -0.02
 		add_war_support = 0.05
@@ -3579,6 +3743,30 @@ country_event = { ####choose your character ##LS##
 
 	option = { ##radsoc
 		name = swerev.10.a
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_FLYG
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}					
+				}
+			}
+		}		
 		set_politics = { ruling_party = radical_socialist elections_allowed = no }
 		set_country_flag = SWE_flag_radsoc_victory
 		remove_all_ministers = yes
@@ -3592,6 +3780,30 @@ country_event = { ####choose your character ##LS##
 	
 	option = { ##syndie
 		name = swerev.10.b
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SOCIALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_FLYG
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}					
+				}
+			}
+		}		
 		set_politics = { ruling_party = syndicalist elections_allowed = no }		
 		set_country_flag = SWE_flag_syndie_victory
 		remove_all_ministers = yes 
@@ -3604,6 +3816,22 @@ country_event = { ####choose your character ##LS##
 
 	option = { ##tots
 		name = swerev.10.c
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SOCIALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
+					}					
+				}
+			}
+		}		
 		set_politics = { ruling_party = totalist elections_allowed = no }			
 		set_country_flag = SWE_flag_totalist_victory
 		remove_all_ministers = yes
@@ -3629,8 +3857,8 @@ country_event = { ####break in rank ##LS##
 
 	option = {
 		name = swetot.1.a	
-		add_stability = -0.02
-		add_war_support = -0.02
+		add_stability = -0.03
+		add_war_support = -0.03
 		
 		
 	}
@@ -3646,7 +3874,17 @@ country_event = { ####communist or socialist ##LS##
 	is_triggered_only = yes
 
 	option = { 
-		name = swetot.2.a	
+		name = swetot.2.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_FLYG
+					}						
+			}
+		}		
 		add_stability = 0.03
 		set_country_flag = SWE_flag_linderot_victory
 		remove_all_ministers = yes
@@ -3673,6 +3911,22 @@ country_event = { ####communist or socialist ##LS##
 
 	option = { 
 		name = swetot.2.b	
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}					
+				}
+			}
+		}		
 		set_party_name = {
 			ideology = totalist
 			long_name = SWE_totalist_flyg_party_long
@@ -3697,6 +3951,16 @@ country_event = { ####lindholm offers support ##LS##
 
 	option = {
 		name = swetot.3.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}						
+			}
+		}		
 		add_stability = 0.03
 		add_political_power = -10
 		
@@ -3704,6 +3968,16 @@ country_event = { ####lindholm offers support ##LS##
 
 	option = {
 		name = swetot.3.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}						
+			}
+		}		
 		add_stability = 0.06
 		add_political_power = 15
 		SWE = { SWE_lindholm_wants_to_lead = yes }
@@ -4047,6 +4321,9 @@ country_event = { ####leader choice ##LS##
 	option = { ## Karin women
 		name = swerev.12.a
 		add_political_power = 30
+		hidden_effect = {
+			country_event = { id = swerev.27 days = 48 }
+		}		
 	}	
 
 	option = { ### Karl dude
@@ -4328,9 +4605,13 @@ country_event = { ####
 
 	option = { 
 		name = swerev.27.a
+		set_country_leader_ideology = radsoc_socialist_feminism_subtype
+		add_political_power = -5
 	}
 	option = { 
 		name = swerev.27.b
+		add_political_power = 25
+		
 
 	}	
 }
@@ -4508,6 +4789,22 @@ country_event = { #1936 Riksdag Elections ##LS##
 
 	option = { #The socialdemocrats win
 		name = swe.8.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_SOCCON
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MARLIB
+					}
+				}
+			}
+		}		
 		add_stability = 0.01
 		add_popularity = { ideology = social_democrat popularity = 0.15 }
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }			
@@ -4527,6 +4824,66 @@ country_event = { #1936 Riksdag Elections ##LS##
 
 	option = { #GEL win
 		name = swe.8.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_MARLIB
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SOCIALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
+					}					
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_FLYG
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}						
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_AUTHDEM
+					}					
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_JUNGA
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_NATPOP
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}
+				}
+			}
+		}		
 		add_stability = 0.01		
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		set_country_flag = SWE_election_safe_success
@@ -4548,6 +4905,66 @@ country_event = { #1936 Riksdag Elections ##LS##
 	
 	option = { ###Market Liberals Win
 		name = swe.8.c 
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCCON
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SOCIALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
+					}					
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_FLYG
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}						
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_AUTHDEM
+					}					
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_JUNGA
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_NATPOP
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}
+				}
+			}
+		}		
 		add_stability = 0.01		
 		add_popularity = { ideology = market_liberal popularity = 0.07 }	
 		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
@@ -4568,6 +4985,27 @@ country_event = { #1936 Riksdag Elections ##LS##
 		
 	option = { ###Radical United Front
 		name = swe.8.e 
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_MARLIB
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCCON
+					}
+
+				}
+			}
+		}		
 		add_stability = -0.01	
 		add_political_power = 12
 		add_popularity = { ideology = radical_socialist popularity = 0.05 }		
