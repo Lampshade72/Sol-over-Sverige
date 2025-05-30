@@ -5092,38 +5092,7 @@ country_event = { #Early in the morning
 	
 	option = { #Republic Survives
 		name = swe.12.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_KING_AUTHORITARIAN_DEMOCRAT
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_AUTHORITARIAN
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_PATERNAL
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_NATIONAL_POPULIST
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_SYNDICALIST
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-					}
-				}
-			}
-		}
+
 		add_stability = -0.02
 		if = {
 			limit = {
@@ -5147,22 +5116,7 @@ country_event = { #Worker's militias form!
 
 	option = { #Whip out the machine guns!
 		name = swe.13.a
-		ai_chance = {
-			base = 25
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_SYNDICALIST
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-					}
-				}
-			}
-		}
+
 		add_manpower = -25
 		141 = {
 			add_manpower = -362
@@ -5176,30 +5130,7 @@ country_event = { #Worker's militias form!
 
 	option = { #The soldiers revolt against their rogue superiors!
 		name = swe.13.b
-		ai_chance = {
-			base = 75
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_KING_AUTHORITARIAN_DEMOCRAT
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_AUTHORITARIAN
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_PATERNAL
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_NATIONAL_POPULIST
-					}
-				}
-			}
-		}
+
 		add_stability = -0.05
 		hidden_effect = { country_event = { id = swe.15 days = 1 } }
 	}
@@ -5223,22 +5154,7 @@ country_event = { #Worker's militias slaughtered
 
 	option = { #Carl August Ehrensvärd
 		name = swe.14.a
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_NATIONAL_POPULIST
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_PATERNAL
-					}
-				}
-			}
-		}
+
 		add_manpower = -87
 		138 = {
 			add_manpower = -2037
@@ -5262,22 +5178,7 @@ country_event = { #Worker's militias slaughtered
 
 	option = { #Helge Jung
 		name = swe.14.b
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_NATIONAL_POPULIST
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_AUTHORITARIAN
-					}
-				}
-			}
-		}
+
 		add_manpower = -87
 		138 = {
 			add_manpower = -2037
@@ -5300,26 +5201,7 @@ country_event = { #Worker's militias slaughtered
 
 	option = { #Archibald Douglas
 		name = swe.14.c
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_KING_AUTHORITARIAN_DEMOCRAT
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_AUTHORITARIAN
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_FAR_LEFT_JUNTA_AUTHORITARIAN_DEMOCRAT_PATERNAL
-					}
-				}
-			}
-		}
+
 		add_manpower = -87
 		138 = {
 			add_manpower = -2037
@@ -6710,16 +6592,7 @@ country_event = {
 
 	option = {
 		name = swe_syncon.1.a
-		ai_chance = {
-			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-				}
-			}
-		}
+
 		add_political_power = -25
 		add_ideas = SWE_syndicalistpeople
 		add_popularity = {
@@ -6733,13 +6606,7 @@ country_event = {
 		name = swe_syncon.1.b
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-				}
-			}
+
 		}
 		add_political_power = 25
 		add_ideas = SWE_radicalistpeople
@@ -6754,13 +6621,7 @@ country_event = {
 		name = swe_syncon.1.c
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_SYNDICALIST
-				}
-			}
+
 		}
 		add_political_power = -25
 		add_ideas = SWE_totalistpeople
@@ -6785,13 +6646,7 @@ country_event = {
 		name = swe_syncon.2.a
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-				}
-			}
+
 		}
 		add_political_power = -25
 		#add_ideas = SWE_syndicalisteconomy
@@ -6806,13 +6661,7 @@ country_event = {
 		name = swe_syncon.2.b
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-				}
-			}
+
 		}
 		add_political_power = 25
 		#add_ideas = SWE_radicalisteconomy
@@ -6828,13 +6677,7 @@ country_event = {
 		add_political_power = -25
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_SYNDICALIST
-				}
-			}
+
 		}
 		#add_ideas = SWE_totalisteconomy
 		add_popularity = {
@@ -6858,13 +6701,7 @@ country_event = {
 		name = swe_syncon.3.a
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-				}
-			}
+
 		}
 		add_political_power = -25
 		add_ideas = SWE_syndicalistmilitary
@@ -6879,13 +6716,7 @@ country_event = {
 		name = swe_syncon.3.b
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-				}
-			}
+
 		}
 		add_political_power = 25
 		add_ideas = SWE_radicalistmilitary
@@ -6900,13 +6731,7 @@ country_event = {
 		name = swe_syncon.3.c
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_SYNDICALIST
-				}
-			}
+
 		}
 		add_political_power = -25
 		add_ideas = SWE_totalistmilitary
@@ -6932,13 +6757,7 @@ country_event = {
 		name = swe_syncon.4.a
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-				}
-			}
+
 		}
 		add_political_power = -25
 		add_ideas = SWE_syndicalistsociety
@@ -6953,13 +6772,7 @@ country_event = {
 		name = swe_syncon.4.b
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_TOTALIST
-				}
-			}
+
 		}
 		add_political_power = 25
 		add_ideas = SWE_radicalistsociety
@@ -6974,13 +6787,7 @@ country_event = {
 		name = swe_syncon.4.c
 		ai_chance = {
 			factor = 33
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SWE_riksdag_election
-					option = SWE_RIKSDAG_ELECTION_FAR_LEFT_REVOLUTION_SYNDICALIST
-				}
-			}
+
 		}
 		add_political_power = -25
 		add_ideas = SWE_totalistsociety

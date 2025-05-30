@@ -50,6 +50,10 @@ spriteTypes = {
 		texturefile = "gfx/flags/small/SWE_king_mil.tga"
 		legacy_lazy_load = no
 	}	
-	
+	spriteType = {
+		name = "GFX_SOS_game_rule_flag_SWE_EMP_1"
+		texturefile = "gfx/flags/small/SWE_EMP_1.tga"
+		legacy_lazy_load = no
+	}	
 	
 }

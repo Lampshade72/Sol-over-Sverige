@@ -1376,9 +1376,29 @@ focus_tree = {
 		relative_position_id = SWE_FOP_tiger_place_in_world
 		cost = 3
 		ai_will_do = {
-			factor = 80
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_NEUTRALITY
+					}
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_EMPIRE
+					}
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_INTERNATIONALE
+					} 
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_NORDIC_INTERNAT
+					} 					
+				}
+			}
 		}
-
 		available = {
 			OR = {
 				has_completed_focus = SWE_GEL_leads
@@ -1416,7 +1436,36 @@ focus_tree = {
 		relative_position_id = SWE_FOP_tiger_place_in_world
 		cost = 3
 		ai_will_do = {
-			factor = 80
+			factor = 60
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = "SWE_FOREIGN_POLICY_ENTENTE"
+					}
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = "SWE_FOREIGN_POLICY_MOSCOW"
+					} 
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = "SWE_FOREIGN_POLICY_REICHSPAKT"
+					}					
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_EMPIRE
+					}
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_INTERNATIONALE
+					} 
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_NORDIC_INTERNAT
+					} 					
+				}
+			}
 		}
 
 		available = {
@@ -1442,7 +1491,36 @@ focus_tree = {
 		relative_position_id = SWE_FOP_tiger_place_in_world
 		cost = 3
 		ai_will_do = {
-			factor = 80
+			factor = 60
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = "SWE_FOREIGN_POLICY_ENTENTE"
+					}
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = "SWE_FOREIGN_POLICY_MOSCOW"
+					} 
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = "SWE_FOREIGN_POLICY_REICHSPAKT"
+					}					
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_NEUTRALITY
+					}
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_INTERNATIONALE
+					} 
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_NORDIC_INTERNAT
+					} 					
+				}
+			}
 		}
 
 		available = {
@@ -1485,7 +1563,14 @@ focus_tree = {
 		relative_position_id = SWE_FOP_revolutionary_torch
 		cost = 4
 		ai_will_do = {
-			factor = 80
+			factor = 25
+			modifier = {
+				factor = 0
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_INTERNATIONALE
+					} 			
+			}
 		}
 
 		available = {
@@ -1653,7 +1738,14 @@ focus_tree = {
 		relative_position_id = SWE_FOP_revolutionary_torch
 		cost = 5
 		ai_will_do = {
-			factor = 80
+			factor = 75
+			modifier = {
+				factor = 0
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_NORDIC_INTERNAT
+					} 			
+			}
 		}
 
 		available = {
@@ -1811,7 +1903,20 @@ focus_tree = {
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 6
 		ai_will_do = {
-			factor = 80
+			factor = 60
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_MOSCOW
+					} 
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_ENTENTE
+					}   									
+				}
+			}
 		}
 
 		available = {
@@ -1838,7 +1943,20 @@ focus_tree = {
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 6
 		ai_will_do = {
-			factor = 80
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_REICHSPAKT
+					} 
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_ENTENTE
+					}   									
+				}
+			}
 		}
 		
 		available = {
@@ -1864,7 +1982,20 @@ focus_tree = {
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 6
 		ai_will_do = {
-			factor = 80
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_MOSCOW
+					} 
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_REICHSPAKT
+					}   									
+				}
+			}
 		}
 
 		available = {
