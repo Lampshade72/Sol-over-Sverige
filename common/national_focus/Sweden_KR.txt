@@ -2550,7 +2550,8 @@ focus_tree = {
 			factor = 80 
 		}
 		available = { 
-			has_government = social_democrat 
+			has_government = social_democrat
+			has_country_flag = SWE_election_safe_success
 		}
 		
 		completion_reward = {
@@ -3249,6 +3250,7 @@ focus_tree = {
 		available = {	
 			is_subject = no
 			has_government = social_conservative
+			has_country_flag = SWE_election_safe_success
 		}
 		
 		completion_reward = {
@@ -3271,6 +3273,7 @@ focus_tree = {
 		available = { 
 			is_subject = no
 			has_government = market_liberal
+			has_country_flag = SWE_election_safe_success
 		}
 		
 		completion_reward = {

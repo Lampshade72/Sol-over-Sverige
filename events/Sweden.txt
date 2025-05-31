@@ -4988,53 +4988,20 @@ country_event = { #1936 Riksdag Elections ##LS##
 		ai_chance = {
 			factor = 20
 			modifier = {
-				factor = 1000
+				factor = 0
 				OR = {
 					has_game_rule = {
 						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION
+						option = SWE_RIKSDAG_ELECTION_SOCCON
 					}
 					has_game_rule = {
 						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_SOCIALIST
+						option = SWE_RIKSDAG_ELECTION_SOCDEM
 					}
 					has_game_rule = {
 						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
-					}					
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_FLYG
-					}	
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_LINDEROT
-					}	
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_LINDHOLM
-					}						
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY
+						option = SWE_RIKSDAG_ELECTION_MARLIB
 					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_AUTHDEM
-					}					
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_JUNGA
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_NATPOP
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_MORASS
-					}
-
 				}
 			}
 		}		
