@@ -144,6 +144,7 @@ focus_tree = {
 			add_political_power = -50
 			hidden_effect = {
 				add_stability = -0.05
+				country_event = { id = swe_flavor.21 days = 91 }				
 			}
 
 		}

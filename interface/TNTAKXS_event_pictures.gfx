@@ -117,7 +117,18 @@ spriteTypes = {
 		name = "GFX_report_event_SWE_women_jormund_ref"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_women_jormund_ref.png"
 	}
-
+	spriteType = {
+		name = "GFX_report_event_SWE_lost_swedes"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_lost_swedes.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_lost_hell"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_lost_hell.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_lost_heaven"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_lost_heaven.png"
+	}	
 
 
 
