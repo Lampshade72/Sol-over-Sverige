@@ -2375,7 +2375,7 @@ country_event = { ####crown or no crown ##LS##
 	option = {
 		name = swemil.4.a
 		ai_chance = {
-			factor = 50
+			factor = 70
 			modifier = {
 				factor = 0
 					has_game_rule = {
@@ -2385,18 +2385,17 @@ country_event = { ####crown or no crown ##LS##
 			}
 		}
 		add_stability = -0.08
-		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
-		add_popularity = { ideology = national_populist popularity = 0.05 }		
-		country_event = { id = swemil.6 days = 6 }	
+		add_popularity = { ideology = national_populist popularity = 0.02 }		
+		country_event = { id = swemil.6 days = 1 }	
 		hidden_effect = {
-			country_event = { id = newsswe.4 days = 1 }
+			country_event = { id = newsswe.4 days = 12 }
 		}
 	}
 	
 	option = {
 		name = swemil.4.b
 		ai_chance = {
-			factor = 50
+			factor = 30
 			modifier = {
 				factor = 0
 					has_game_rule = {
@@ -2408,9 +2407,9 @@ country_event = { ####crown or no crown ##LS##
 		add_stability = 0.02
 		add_political_power = 20
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }		
-		country_event = { id = swemil.5 days = 6 }
+		country_event = { id = swemil.555 days = 6 }
 		hidden_effect = {
-			country_event = { id = newsswe.3 days = 1 }
+			country_event = { id = newsswe.3 days = 13 }
 		}
 
 
@@ -2418,7 +2417,7 @@ country_event = { ####crown or no crown ##LS##
 }
 
 
-country_event = { #Coronation of Gustaf VI Adolf ##LS##
+country_event = { #choosing a king ##LS##
 	id = swemil.555
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.555" }
 	title = swemil.555.t
@@ -2429,24 +2428,39 @@ country_event = { #Coronation of Gustaf VI Adolf ##LS##
 
 	option = { 
 		name = swemil.555.a
-		add_political_power = 45
-		add_stability = 0.01
-		SWE_create_gustaf_adolf_jr = yes
-		drop_cosmetic_tag = yes	
-		remove_all_ministers = yes
-		add_ideas = SWE_Helge_Jung_hog_pau
-		add_ideas = SWE_Gunnar_Berggren_for_pau
-		add_ideas = SWE_Marcus_Wallenberg_eco_pau
-		add_ideas = SWE_Axel_Rappe_sec_pau	
-		set_country_flag = SWE_flag_crown_restored
-		set_cosmetic_tag = SWE_king_mil
+		country_event = { id = swemil.5 days = 3 }
+		add_popularity = { ideology = authoritarian_democrat popularity = -0.02 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
+		add_popularity = { ideology = national_populist popularity = 0.05 }
 		
 		}
 	option = { 
 		name = swemil.555.b
-		add_political_power = 45
-		add_stability = 0.01
-		SWE_create_folk = yes
+		country_event = { id = swemil.556 days = 3 }
+		add_popularity = { ideology = social_conservative popularity = 0.03 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
+		add_popularity = { ideology = paternal_autocrat popularity = -0.01 }
+		add_popularity = { ideology = national_populist popularity = -0.03 }
+
+		
+		}
+		
+	}
+
+country_event = { #Coronation of Carl XVI ##LS##
+	id = swemil.556
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.556" }
+	title = swemil.556.t
+	desc = swemil.556.d
+	picture = GFX_report_event_SWE_King_Gustav_Adolf
+
+	is_triggered_only = yes
+
+	option = { 
+		name = swemil.556.a
+		add_political_power = 90
+		add_stability = -0.02
+		SWE_create_folke = yes
 		drop_cosmetic_tag = yes	
 		remove_all_ministers = yes
 		add_ideas = SWE_Helge_Jung_hog_pau
@@ -2456,8 +2470,7 @@ country_event = { #Coronation of Gustaf VI Adolf ##LS##
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil
 		
-		}
-		
+		}	
 	}
 
 country_event = { #Coronation of Gustaf VI Adolf ##LS##
