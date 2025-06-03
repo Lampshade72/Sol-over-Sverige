@@ -129,7 +129,10 @@ spriteTypes = {
 		name = "GFX_report_event_SWE_lost_heaven"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_lost_heaven.png"
 	}	
-
+	spriteType = {
+		name = "GFX_report_event_SWE_thornell_table"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_thornell_table.png"
+	}
 
 
 	

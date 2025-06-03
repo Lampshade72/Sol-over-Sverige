@@ -5429,6 +5429,79 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SWE_party_syndicates
+		icon = GFX_ALO_Red_Caravan
+		prerequisite = { 
+			focus = SWE_rapid_collectivisation
+			}
+		X = -3
+		y = 3
+		cost = 6
+		relative_position_id = SWE_socialist_communist_victory
+		ai_will_do = {
+			factor = 80 
+		}
+		available = {
+			has_country_flag = SWE_flag_flyg_victory
+
+		}		
+		
+		completion_reward = {
+		
+		
+			add_popularity = { ideology = totalist popularity = 0.02 }			
+	
+			add_stability = 0.05
+			add_political_power = 150
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}				
+		}
+	}	
+
+	focus = {
+		id = SWE_soviet_setup
+		icon = GFX_goal_FRA_nationalize_communications
+		prerequisite = { 
+			focus = SWE_necessary_violence
+			}
+		X = 3
+		y = 3
+		cost = 6
+		relative_position_id = SWE_socialist_communist_victory
+		ai_will_do = {
+			factor = 80 
+		}
+		available = {
+			has_country_flag = SWE_flag_linderot_victory
+
+		}		
+		
+		completion_reward = {
+
+			add_popularity = { ideology = totalist popularity = 0.03 }			
+			add_popularity = { ideology = radical_socialist popularity = 0.06 }		
+			add_stability = 0.08
+			add_political_power = 80
+			
+			random_owned_state = {
+				limit = {
+					is_valid_state_for_development = yes
+					is_core_of = SWE
+					is_controlled_by = SWE
+				}
+				add_extra_state_shared_building_slots = 2
+			}		
+			
+		}
+	}
+
+	focus = {
 		id = SWE_heavy_industrialisation
 		icon = GFX_SOV_militarization_labour
 		prerequisite = { focus = SWE_necessary_violence }
@@ -7276,6 +7349,7 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = { id = swemil.29 }
+			add_ideas = SWE_patriotic_unions
 			random_owned_state = {
 				limit = {
 					is_valid_state_for_development = yes

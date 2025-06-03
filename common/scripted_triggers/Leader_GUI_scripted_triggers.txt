@@ -408,6 +408,10 @@ SWE_has_leader_GUI = {
 			name = "Gustaf VI Adolf"
 			ruling_only = yes
 		}
+		has_country_leader = {
+			name = "Carl XVI Folke"
+			ruling_only = yes
+		}		
 	}
 
 

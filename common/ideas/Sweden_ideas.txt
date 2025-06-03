@@ -1657,7 +1657,7 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
 				research_speed_factor = 0.08
-				authoritarian_democrat_drift = 0.03
+				authoritarian_democrat_drift = 0.04
 			}				
 		}		
 
@@ -1666,14 +1666,10 @@ ideas = {
 			picture = death_men
 			allowed = { always = no }
 			modifier = {
-				stability_factor = 0.10
-				command_power_gain_mult = 0.10
-				army_morale_factor = 0.08
-				mobilization_speed = 0.10
-				production_speed_buildings_factor = 0.10
-				production_factory_efficiency_gain_factor = 0.10
-				research_speed_factor = 0.08
-				authoritarian_democrat_drift = 0.03
+				production_factory_max_efficiency_factor = 0.08
+				production_factory_efficiency_gain_factor = -0.03
+				production_lack_of_resource_penalty_factor = 0.03	
+				paternal_autocrat_drift = 0.01		
 			}				
 		}
 

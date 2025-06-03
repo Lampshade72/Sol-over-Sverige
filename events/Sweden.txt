@@ -2379,7 +2379,7 @@ country_event = { ####crown or no crown ##LS##
 			modifier = {
 				factor = 0
 					has_game_rule = {
-						rule = SWE_riksdag_election
+						rule = SWE_KING_OR_NOT 
 						option = SWE_NO_KING_CHAT
 					}
 			}
@@ -2400,7 +2400,7 @@ country_event = { ####crown or no crown ##LS##
 			modifier = {
 				factor = 0
 					has_game_rule = {
-						rule = SWE_riksdag_election
+						rule = SWE_KING_OR_NOT 
 						option = SWE_KING_IS_BACK
 					}
 			}
@@ -3179,7 +3179,12 @@ country_event = { #return to norm - monarch ##LS##
 
 	option = { #Keep military apparatus
 		name = swemil.30.a
+		add_political_power = 50
+		add_stability = 0.05
+		add_pataut_to_coalition = yes
 		add_soccon_to_coalition = yes
+		add_popularity = { ideology = paternal_autocrat popularity = 0.09 }
+		add_popularity = { ideology = social_conservative popularity = 0.06 }
 	
 	}
 
@@ -3559,14 +3564,14 @@ country_event = { #Shakirah - Thornel starting mil tree  ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.46" }
 	title = swemil.46.t
 	desc = swemil.46.d
-
+	picture = GFX_report_event_SWE_thornell_table
 
 	fire_only_once = yes 
 	is_triggered_only = yes
 
 	option = { 
 		name = swemil.46.a	
-		add_
+		add_political_power = 5
 		
 	}	
 }
@@ -4840,11 +4845,11 @@ country_event = { #1936 Riksdag Elections ##LS##
 				OR = {
 					has_game_rule = {
 						rule = SWE_riksdag_election
-						option = SWE_ELECTION_SOCCON
+						option = SWE_RIKSDAG_ELECTION_SOCCON
 					}
 					has_game_rule = {
 						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MARLIB
+						option = SWE_RIKSDAG_ELECTION_MARLIB
 					}
 				}
 			}
@@ -6866,14 +6871,15 @@ country_event = { #Shakirah flavour! Swedish disapearances
 						has_government = syndicalist
 						has_government = radical_socialist
 						has_government = national_populist
+						has_government = paternal_autocrat
 							}				
 						} 	
 					} 
-				}
-					country_event = { id = swe_flavor.22 days = 370 }
+					country_event = { id = swe_flavor.22 days = 370 }					
+				}				
 				else = {
 					country_event = { id = swe_flavor.23 days = 370 }
-			}		
+				}		
 		}		
 	}
 }
