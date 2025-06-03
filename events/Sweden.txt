@@ -2417,6 +2417,49 @@ country_event = { ####crown or no crown ##LS##
 	}		
 }
 
+
+country_event = { #Coronation of Gustaf VI Adolf ##LS##
+	id = swemil.555
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.555" }
+	title = swemil.555.t
+	desc = swemil.555.d
+	picture = GFX_report_event_SWE_King_Gustav_Adolf
+
+	is_triggered_only = yes
+
+	option = { 
+		name = swemil.555.a
+		add_political_power = 45
+		add_stability = 0.01
+		SWE_create_gustaf_adolf_jr = yes
+		drop_cosmetic_tag = yes	
+		remove_all_ministers = yes
+		add_ideas = SWE_Helge_Jung_hog_pau
+		add_ideas = SWE_Gunnar_Berggren_for_pau
+		add_ideas = SWE_Marcus_Wallenberg_eco_pau
+		add_ideas = SWE_Axel_Rappe_sec_pau	
+		set_country_flag = SWE_flag_crown_restored
+		set_cosmetic_tag = SWE_king_mil
+		
+		}
+	option = { 
+		name = swemil.555.b
+		add_political_power = 45
+		add_stability = 0.01
+		SWE_create_folk = yes
+		drop_cosmetic_tag = yes	
+		remove_all_ministers = yes
+		add_ideas = SWE_Helge_Jung_hog_pau
+		add_ideas = SWE_Gunnar_Berggren_for_pau
+		add_ideas = SWE_Marcus_Wallenberg_eco_pau
+		add_ideas = SWE_Axel_Rappe_sec_pau	
+		set_country_flag = SWE_flag_crown_restored
+		set_cosmetic_tag = SWE_king_mil
+		
+		}
+		
+	}
+
 country_event = { #Coronation of Gustaf VI Adolf ##LS##
 	id = swemil.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.5" }
@@ -3511,7 +3554,7 @@ country_event = { #letter to ottowa - canada is mean ##LS##
 	}	
 }
 
-country_event = { #Ehrensvärd's not nationalist cousin  ##LS##
+country_event = { #Shakirah - Thornel starting mil tree  ##LS##
 	id = swemil.46
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.46" }
 	title = swemil.46.t
@@ -3523,6 +3566,7 @@ country_event = { #Ehrensvärd's not nationalist cousin  ##LS##
 
 	option = { 
 		name = swemil.46.a	
+		add_
 		
 	}	
 }
@@ -6870,6 +6914,23 @@ country_event = { #Shakirah flavour! they ended up in karelia?
 
 }
 
+country_event = { #Shakirah flavour! Swedes in merica before 2CW
+	id = swe_flavor.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe_flavor.24" }
+	title = swe_flavor.24.t
+	desc = swe_flavor.24.d
+	picture = GFX_report_event_SWE_lost_heaven
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = swe_flavor.24.a
+		add_political_power = 5
+
+	}
+
+}
 
 ###News Events 
 

@@ -311,6 +311,62 @@ SWE_create_gustaf_adolf_jr_elmo3 = {
 	}	
 }	
 
+SWE_create_folk = {
+	create_country_leader = {
+		name = "Carl XVI Folke"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = moderate_authoritarianism_subtype
+	}
+
+	create_country_leader = {
+		name = "Carl XVI Folke"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = junta_subtype
+	}
+
+	create_country_leader = {
+		name = "Carl XVI Folke"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = integralism_subtype
+	}
+
+	create_country_leader = {
+		name = "Carl XVI Folke"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = authdem_junta_subtype
+	}
+
+	create_country_leader = {
+		name = "Carl XVI Folke"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = market_liberal_subtype
+	}
+
+	create_country_leader = {
+		name = "Carl XVI Folke"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = centrist_subtype
+	}
+
+	create_country_leader = {
+		name = "Carl XVI Folke"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = social_democrat_subtype
+	}	
+
+
+
+
+
+
+}
 
 
 

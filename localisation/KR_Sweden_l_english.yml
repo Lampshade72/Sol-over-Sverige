@@ -1779,6 +1779,11 @@ swemil.4.d:0 "Now with the majority of the Sweden landscape subdued and the fact
 swemil.4.a:0 "Too much has changed, maintain our current control"
 swemil.4.b:0 "Announce the coronation of King Gustav VI"
 
+swemil.555.t:0 "Choice of king WIP"
+swemil.555.d:0 "WIP"
+swemil.555.a:0 "Adolph"
+swemil.555.b:0 "Folke"
+
 swemil.5.t:0 "Coronation of Gustaf VI Adolf"
 swemil.5.d:0 "In a grand display at Stockholm’s grand cathedral, Prince Gustav Adolf was crowned King Gustav VI of Sweden, becoming the rightful ruler over Sweden. Seen as a return to her recent past before the failed revolution to the outside world, underneath lies a near unrecognisable face of the former Swedish crown. With nearly all her power completely stripped and some of the nobles deposed or replaced with more politically aligned minds, the democratic Kingdom of Sweden is no more. For the firm grip of the Armed forces now holds her reins, with generals and officers seen working in offices once manned by senators of the former Rikstag. \n\nA sense of stability is felt amongst the Swedes as many welcome the return of a majesty, however many know of the truth behind her mask."
 swemil.5.a:0 "Länge leve kungen!"
@@ -1968,6 +1973,9 @@ swemil.45.t:0 "A Response"
 swemil.45.d:0 "Unfortunately, our plea to the Entente has been denied. Appreciating our valiant effort to establish better relations, the Entente seem focused on their goals of Reclamation. This tunneled vision view may be their befal, however we must now move forward without the Entente."
 swemil.45.a:0 "A sad state of foreign affairs"
 
+swemil.46.t:0 "Thörnell, the loyalist"
+swemil.46.d:0 "Stiff and cold, harsh and sarcastic, Thörnell is not liked by his subordinates. Viewed as merely an incompetent 'chair warmer' by the Jung 'Junta', viewed as a bloodthirsty white by the SSV, Thörnell remains in his position as Supreme Commander thanks to his good relations with the government. Believed to not be too ambitious to cause a fuss with the government, but not lax enough to keel over under stress, the government believes him to be the ideal head of the army, even though Gösta Bagge privately loathes him. \n\nA friend of Germany, and also a friend of the exiled French in Africa, Thörnell is worried about the growing threat of revolution, but does not believe SAP to be the harbinger of said societal upheaval. This puts him at odds with the increasingly radical 'Jungjunta', who believe that the SAP will simply open the door to further military cuts, followed shortly by socialist overthrow of both army and state. Perhaps the biggest trait he has, besides being deemed distant and uncharismatic, is his cold calm demeanour. Indeed, as much as the 'Junta' dislikes him, they too believe that he's as calm as a rock during times of unrest. Perhaps too calm."
+swemil.46.a:0 "Our guy in the army"
 
 ### Intro Events ###
 
