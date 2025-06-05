@@ -133,8 +133,18 @@ spriteTypes = {
 		name = "GFX_report_event_SWE_thornell_table"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_thornell_table.png"
 	}
-
-
+	spriteType = {
+		name = "GFX_report_event_SWE_folke_king"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_folke_king.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_adolf_king"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_adolf_king.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_kingly_items"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_kingly_items.png"
+	}
 	
 
 	### GENERIC PICS

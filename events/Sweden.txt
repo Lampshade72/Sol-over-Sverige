@@ -2436,7 +2436,7 @@ country_event = { #choosing a king ##LS##
 		}
 	option = { 
 		name = swemil.555.b
-		country_event = { id = swemil.556 days = 3 }
+		country_event = { id = swemil.557 days = 3 }
 		add_popularity = { ideology = social_conservative popularity = 0.03 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.01 }
@@ -2447,12 +2447,52 @@ country_event = { #choosing a king ##LS##
 		
 	}
 
+country_event = { #choosing name before coronation ##LS##
+	id = swemil.557
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.557" }
+	title = swemil.557.t
+	desc = swemil.557.d
+	picture = GFX_report_event_SWE_kingly_items
+
+	is_triggered_only = yes
+
+	option = { 
+		name = swemil.557.a
+		add_political_power = 10
+		country_event = { id = swemil.556 }
+			hidden_effect = {
+		set_country_flag = SWE_flag_carl
+
+			}
+		}
+		
+	option = { 
+		name = swemil.557.b
+		add_political_power = 5
+		country_event = { id = swemil.556 }
+			hidden_effect = {
+		set_country_flag = SWE_flag_oscar
+
+			}
+		}
+		
+	option = { 
+		name = swemil.557.c
+		add_political_power = 15
+		country_event = { id = swemil.556 }
+			hidden_effect = {
+		set_country_flag = SWE_flag_folke
+
+			}
+		}			
+	}
+
 country_event = { #Coronation of Carl XVI ##LS##
 	id = swemil.556
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.556" }
 	title = swemil.556.t
 	desc = swemil.556.d
-	picture = GFX_report_event_SWE_King_Gustav_Adolf
+	picture = GFX_report_event_SWE_folke_king
 
 	is_triggered_only = yes
 
@@ -2460,25 +2500,65 @@ country_event = { #Coronation of Carl XVI ##LS##
 		name = swemil.556.a
 		add_political_power = 90
 		add_stability = -0.02
-		SWE_create_folke = yes
-		drop_cosmetic_tag = yes	
+		
+			hidden_effect = {
+	
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_carl
+					}
+				SWE_create_folk = yes
+				drop_cosmetic_tag = yes
 		remove_all_ministers = yes
 		add_ideas = SWE_Helge_Jung_hog_pau
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
 		add_ideas = SWE_Axel_Rappe_sec_pau	
 		set_country_flag = SWE_flag_crown_restored
-		set_cosmetic_tag = SWE_king_mil
-		
-		}	
+		set_cosmetic_tag = SWE_king_mil				
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = SWE_flag_oscar
+						}
+				SWE_create_folk_2 = yes
+				drop_cosmetic_tag = yes	
+		remove_all_ministers = yes
+		add_ideas = SWE_Helge_Jung_hog_pau
+		add_ideas = SWE_Gunnar_Berggren_for_pau
+		add_ideas = SWE_Marcus_Wallenberg_eco_pau
+		add_ideas = SWE_Axel_Rappe_sec_pau	
+		set_country_flag = SWE_flag_crown_restored
+		set_cosmetic_tag = SWE_king_mil				
+				} 
+				
+				else_if = {
+					limit = {
+						has_country_flag = SWE_flag_folke 
+						}
+				SWE_create_folk_3 = yes
+				drop_cosmetic_tag = yes	
+		remove_all_ministers = yes
+		add_ideas = SWE_Helge_Jung_hog_pau
+		add_ideas = SWE_Gunnar_Berggren_for_pau
+		add_ideas = SWE_Marcus_Wallenberg_eco_pau
+		add_ideas = SWE_Axel_Rappe_sec_pau	
+		set_country_flag = SWE_flag_crown_restored
+		set_cosmetic_tag = SWE_king_mil				
+					}
+			}
+		}
 	}
+	
+	
 
 country_event = { #Coronation of Gustaf VI Adolf ##LS##
 	id = swemil.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swemil.5" }
 	title = swemil.5.t
 	desc = swemil.5.d
-	picture = GFX_report_event_SWE_King_Gustav_Adolf
+	picture = GFX_report_event_SWE_adolf_king
 
 	is_triggered_only = yes
 
@@ -2486,6 +2566,7 @@ country_event = { #Coronation of Gustaf VI Adolf ##LS##
 		name = swemil.5.a
 		add_political_power = 45
 		add_stability = 0.01
+			hidden_effect = {
 		SWE_create_gustaf_adolf_jr = yes
 		drop_cosmetic_tag = yes	
 		remove_all_ministers = yes
@@ -2495,7 +2576,7 @@ country_event = { #Coronation of Gustaf VI Adolf ##LS##
 		add_ideas = SWE_Axel_Rappe_sec_pau	
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil
-		
+			}
 		}	
 	}
 
@@ -2734,7 +2815,7 @@ country_event = { #sesame street ##LS##
 		set_country_flag = SWE_flag_elmo_world
 		clr_country_flag = SWE_flag_archibald_winning
 		add_ideas = SWE_Elmo_Lindholm_hog_npo
-		SWE_create_gustaf_adolf_jr_elmo1 = yes
+		set_country_leader_ideology = maurrassism_subtype		
 		set_party_name = {
 			ideology = national_populist
 			long_name = SWE_national_populist_maurass_party_long
@@ -2767,13 +2848,13 @@ country_event = { #martin or keep archie ##LS##
 			if = {
 				limit = { has_country_flag = SWE_flag_crown_restored }					
 				} 
-				
+			set_country_leader_ideology = national_security_state_subtype				
 				else = {
 					create_country_leader = {
 				name = "Martin Ekstrom"
 				picture = "gfx/leaders/SWE/Portrait_Sweden_Martin_Ekstrom.png"
 				expire = "1.1.1"
-				ideology = militarism_subtype
+				ideology = national_security_state_subtype
 					}
 				}
 			}					
@@ -2842,7 +2923,7 @@ country_event = { #like minded men ##LS##
 
 	option = { 
 		name = swemil.13.a
-		add_political_power = 60
+		add_political_power = 80
 	
 	}
 }
@@ -2922,8 +3003,9 @@ country_event = { #dictate of nationalism ##LS##
 	}
 
 	option = { 
-		name = swemil.17.a
+		name = swemil.17.b
 		add_authdem_to_coalition = yes 
+		set_country_leader_ideology = natpop_corporatocracy_subtype
 		add_popularity = { ideology = national_populist popularity = 0.03 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }
 		add_political_power = 25
@@ -2932,13 +3014,23 @@ country_event = { #dictate of nationalism ##LS##
 	}
 
 	option = { 
-		name = swemil.17.a
-		add_popularity = { ideology = national_populist popularity = 0.05 }	
-		add_stability = -0.08
+		name = swemil.17.c
+		set_country_leader_ideology = nordicism_subtype
+		add_popularity = { ideology = national_populist popularity = -0.02 }	
+		add_stability = -0.09
 		add_war_support = 0.07
+		add_political_power = -40
 	
 	}	
-
+	option = { 
+		name = swemil.17.e
+		set_country_leader_ideology = national_security_state_subtype
+		add_popularity = { ideology = national_populist popularity = 0.05 }	
+		add_stability = -0.04
+		add_war_support = -0.04
+		add_political_power = 10
+	
+	}	
 	
 }
 
@@ -3316,6 +3408,7 @@ country_event = { #yo elmo what we playing as? AAAHHHHHHH ##LS##
 		name = swemil.36.a
 		country_event = { id = swemil.37 days = 16 }
 		complete_national_focus = SWE_protest_catholic_issue
+		set_country_leader_ideology = maurrassism_subtype
 	}
 
 	option = { #I LOVE MEDIEVAL FIEFDOM!
@@ -3325,7 +3418,7 @@ country_event = { #yo elmo what we playing as? AAAHHHHHHH ##LS##
 		
 		country_event = { id = swemil.38 days = 16 }
 		complete_national_focus = SWE_protest_catholic_issue
-		SWE_create_gustaf_adolf_jr_elmo2 = yes
+		set_country_leader_ideology = natpop_neo_feudalism_subtype 
 	}
 
 	option = { #Integral Nationalism for betas
@@ -3335,7 +3428,7 @@ country_event = { #yo elmo what we playing as? AAAHHHHHHH ##LS##
 					
 		country_event = { id = swemil.39 days = 16 }
 		complete_national_focus = SWE_protest_catholic_issue
-		SWE_create_gustaf_adolf_jr_elmo3 = yes
+		set_country_leader_ideology = integralism_subtype
 
 	}	
 }

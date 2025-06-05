@@ -1227,6 +1227,10 @@ SWE_flag_integrate_finland:0 "Sweden Integrates the Finns"
 SWE_flag_entente_nice:0 "The Entente Accepts our Telegram!"
 
 SWE_flag_entente_bad:0 "The Entente Rejects our Telegram!"
+SWE_flag_folke:0 "Name Folke"
+SWE_flag_carl:0 "Name Carl"
+SWE_flag_oscar:0 "Name Oscar"
+
 
 ## Decisions ##
 SWE_claim_scandinavia:0 "Claim Scandinavia"
@@ -1786,12 +1790,18 @@ swemil.4.b:0 "Announce the coronation of King Gustav VI"
 
 swemil.555.t:0 "A Bleeding Heart, and Young Mind"
 swemil.555.d:0 "With the Red menace now purged from the halls of Stockholm and the syndicalist experiment crushed beneath the boot of patriotic order, the nation turns to its past to secure its future. The monarchy that was unceremoniously cast aside by the traitorous syndicalst regime in Parisian imitation, is to be restored. This decision, made by the High Command and sanctioned by the Jung Junta, marks a return to Sweden’s rightful traditions. \n\nYet, the throne cannot remain empty. A sovereign must be chosen. \n\nOne might expect the heir apparent, Prince Oscar Adolf, eldest son of the exiled King Gustav V, to reclaim his birthright. But such hopes are in vain. Oscar Adolf, having grown sympathetic to liberal democrats abroad and advocating for a return to a constitutional monarchy, has alienated himself from the military. \n\nThe attention of the Junta has thus turned to his son Prince Gustaf Adolf, Duke of Västerbotten. A man molded by discipline and driven by fervent Swedish nationalism, Gustaf Adolf has expressed an unwavering commitment to our new regime. His youth and ideological alignment with the Jung Junta make him an ideal symbol of a revitalized Sweden, traditional, united, and strong.\n\nHowever, not all within the armed forces are aligned behind the young Duke. A second name has emerged, Count Folke Bernadotte of Wisborg, a man of noble blood and diplomatic prowess. Known for his humanitarian efforts and close ties within aristocratic and international circles, Bernadotte commands respect among the officer corps, particularly those outside the inner circle of the Junta. His moderate views and experience suggest a king who could stabilize the nation and perhaps reintroduce Sweden onto the world stage diplomatically. Yet, he has never voiced strong support for the nationalist ideals now driving our military government. \n\nThe choice is delicate. One candidate is a banner for the new Sweden, loyal to the regime and molded for national rebirth. The other is a seasoned leader, capable of healing wounds and legitimizing our rule both at home and abroad, but potentially a threat to the ideological purity of our cause."
-swemil.555.a:0 "Adolph shall Succeed his father’s place"
+swemil.555.a:0 "Adolph shall be crowned the rightful King!"
 swemil.555.b:0 "Folke has the expertise and connections we need"
 
-swemil.556.t:0 "Coronation of Carl XVI"
-swemil.556.d:0 "In a grand display at Stockholm’s grand cathedral, Count of Wisborg Folke Bernadotte was crowned King Carl XVI of Sweden, becoming the rightful ruler over Sweden. Seen as a return to her recent past before the failed revolution to the outside world, underneath lies a near unrecognisable face of the former Swedish crown. With nearly all her power completely stripped and some of the nobles deposed or replaced with more politically aligned minds, the democratic Kingdom of Sweden is no more. For the firm grip of the Armed forces now holds her reins, with generals and officers seen working in offices once manned by senators of the former Rikstag. \n\nHowever Carl XVI has his own ideals and beliefs, sometimes clashing with the ideals of the ruling military, described as wearing his heart on his sleeve, how this relationship will turn out is yet to be seen."
+swemil.556.t:0 "Coronation of Folke Bernadotte"
+swemil.556.d:0 "In a grand display at Stockholm’s grand cathedral, Count of Wisborg Folke Bernadotte was crowned King of Sweden, becoming the rightful ruler over Sweden. Seen as a return to her recent past before the failed revolution to the outside world, underneath lies a near unrecognisable face of the former Swedish crown. With nearly all her power completely stripped and some of the nobles deposed or replaced with more politically aligned minds, the democratic Kingdom of Sweden is no more. For the firm grip of the Armed forces now holds her reins, with generals and officers seen working in offices once manned by senators of the former Rikstag. \n\nHowever Carl XVI has his own ideals and beliefs, sometimes clashing with the ideals of the ruling military, described as wearing his heart on his sleeve, how this relationship will turn out is yet to be seen."
 swemil.556.a:0 "Länge leve kungen!"
+
+swemil.557.t:0 "Folke Bernadotte af Wisborg"
+swemil.557.d:0 "Following the removal of socialist vermin from power, a new dawn rises over a new Sweden. The Jung 'Junta', now an actual proper junta, have declared their intentions to bring back the monarchy. Not content to invite back the line that sold Sweden down the river of inept politics, Jung, Douglas and Ehrensvärd have all decided upon a good substitute: Their friend Folke. \n\nAlthough disinherited due to his father marrying someone of lower standing, Folke Bernadotte would make an excellent king in their eyes. Friendly to everyone, diplomatic, not too ambitious and broadly liked by the population as a whole, him becoming king is not a hard ask at all. Indeed, although disinherited, that can simply be brushed aside as another poorly thought out action by the past ruling line. Already Folke is learning to no longer refer to himself as 'Folke af Wisborg', the title used for disinherited Swedish royals, and is gradually adjusting to his position of king. Indeed, Folke is also beginning to assert his independence over the more radical members of the Junta, like Douglas, intending to be made king with the consent of the people, rather than without. That said, no king has ever been named Folke in the past, and as such Folke and his burgeoning court must sort out the growing issue of his regal name. \n\nThere are a few options on the table, ranging from the more traditional to the more radical. First option is to simply name Folke Carl, like past kings before him. Second option is to name him after his father and grandfather, king Oscar II. Third option is to shatter expectations, and let Folke rule by his own given name. "
+swemil.557.a:0 "Hurrah for Carl Folke XVI!"
+swemil.557.b:0 "Hurrah for Oscar III!"
+swemil.557.c:0 "A new name for a new king, Folke!"
 
 swemil.5.t:0 "Coronation of Gustaf VI Adolf"
 swemil.5.d:0 "In a grand display at Stockholm’s grand cathedral, Prince Gustav Adolf was crowned King Gustav VI of Sweden, becoming the rightful ruler over Sweden. Seen as a return to her recent past before the failed revolution to the outside world, underneath lies a near unrecognisable face of the former Swedish crown. With nearly all her power completely stripped and some of the nobles deposed or replaced with more politically aligned minds, the democratic Kingdom of Sweden is no more. For the firm grip of the Armed forces now holds her reins, with generals and officers seen working in offices once manned by senators of the former Rikstag. \n\nA sense of stability is felt amongst the Swedes as many welcome the return of a majesty, however many know of the truth behind her mask."
@@ -1849,9 +1859,10 @@ swemil.16.a:0 "Discipline. Unity. Rebirth."
 
 swemil.17.t:0 "Dictate of Swedish Nationalism"
 swemil.17.d:0 "As of so far, the new government has remained on a menagerie of like-minded ultranationalists, because of this many differing ideas on economic policies, race and expansion have arrison. Sparking many debates, the time has come for the Riksledare to formalise a cohesive view, one that the rest of the party shall follow. Determining such positions will come with its challenges due to the current shifts and cracks in the party, but to avoid a complete rebellion within, such formation of a cohesive ideology must be made."
-swemil.17.a:0 "Enshrine Corporatism with strong Swedish Nationalism!"
-swemil.17.b:0 "Enshrine the free Market while moderating our Nationalist thought!1"
-swemil.17.c:0 "Enshrine full state economic control, while emphasizing the Swedish race!"
+swemil.17.a:0 "Maintain Military Rule, total and absolute!"
+swemil.17.b:0 "Enshrine Corporatism while moderating our Nationalist thought!"
+swemil.17.c:0 "Emphasize Racial superiority and total state control!"
+swemil.17.e:0 "More must be done to destroy our enemies, tighten security!"
 
 
 ###Jung events###

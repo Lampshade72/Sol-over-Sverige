@@ -210,165 +210,164 @@ SWE_create_gustaf_adolf_jr_elmo1 = {
 		ideology = social_democrat_subtype
 	}	
 }
-SWE_create_gustaf_adolf_jr_elmo2 = {
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = moderate_authoritarianism_subtype
-	}
 
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = junta_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = natpop_neo_feudalism_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = authdem_junta_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = market_liberal_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = centrist_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = social_democrat_subtype
-	}	
-}
-SWE_create_gustaf_adolf_jr_elmo3 = {
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = moderate_authoritarianism_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = junta_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = integralism_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = authdem_junta_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = market_liberal_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = centrist_subtype
-	}
-
-	create_country_leader = {
-		name = "Gustaf VI Adolf"
-		picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
-		expire = "1.1.1"
-		ideology = social_democrat_subtype
-	}	
-}	
+	
 
 SWE_create_folk = {
 	create_country_leader = {
-		name = "Carl XVI Folke"
+		name = "Carl Folke XVI"
 		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
 		expire = "1.1.1"
 		ideology = moderate_authoritarianism_subtype
 	}
 
 	create_country_leader = {
-		name = "Carl XVI Folke"
+		name = "Carl Folke XVI"
 		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
 		expire = "1.1.1"
 		ideology = junta_subtype
 	}
 
 	create_country_leader = {
-		name = "Carl XVI Folke"
+		name = "Carl Folke XVI"
 		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
 		expire = "1.1.1"
-		ideology = integralism_subtype
+		ideology = militarism_subtype
 	}
 
 	create_country_leader = {
-		name = "Carl XVI Folke"
+		name = "Carl Folke XVI"
 		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
 		expire = "1.1.1"
 		ideology = authdem_junta_subtype
 	}
 
 	create_country_leader = {
-		name = "Carl XVI Folke"
+		name = "Carl Folke XVI"
 		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
 		expire = "1.1.1"
 		ideology = market_liberal_subtype
 	}
 
 	create_country_leader = {
-		name = "Carl XVI Folke"
+		name = "Carl Folke XVI"
 		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
 		expire = "1.1.1"
 		ideology = centrist_subtype
 	}
 
 	create_country_leader = {
-		name = "Carl XVI Folke"
+		name = "Carl Folke XVI"
 		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
 		expire = "1.1.1"
 		ideology = social_democrat_subtype
 	}	
 
+}
 
+SWE_create_folk_2 = {
+	create_country_leader = {
+		name = "Oscar III"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = moderate_authoritarianism_subtype
+	}
 
+	create_country_leader = {
+		name = "Oscar III"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = junta_subtype
+	}
 
+	create_country_leader = {
+		name = "Oscar III"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = militarism_subtype
+	}
 
+	create_country_leader = {
+		name = "Oscar III"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = authdem_junta_subtype
+	}
+
+	create_country_leader = {
+		name = "Oscar III"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = market_liberal_subtype
+	}
+
+	create_country_leader = {
+		name = "Oscar III"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = centrist_subtype
+	}
+
+	create_country_leader = {
+		name = "Oscar III"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = social_democrat_subtype
+	}	
 
 }
 
+SWE_create_folk_3 = {
+	create_country_leader = {
+		name = "Folke I"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = moderate_authoritarianism_subtype
+	}
 
+	create_country_leader = {
+		name = "Folke I"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = junta_subtype
+	}
+
+	create_country_leader = {
+		name = "Folke I"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = militarism_subtype
+	}
+
+	create_country_leader = {
+		name = "Folke I"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = authdem_junta_subtype
+	}
+
+	create_country_leader = {
+		name = "Folke I"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = market_liberal_subtype
+	}
+
+	create_country_leader = {
+		name = "Folke I"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = centrist_subtype
+	}
+
+	create_country_leader = {
+		name = "Folke I"
+		picture = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.png"
+		expire = "1.1.1"
+		ideology = social_democrat_subtype
+	}	
+
+}
 
 SWE_set_socdem_leader_erlander = {
 	add_ideas = SWE_Tage_Erlander_hog_sde
