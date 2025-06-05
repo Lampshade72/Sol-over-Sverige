@@ -21,7 +21,7 @@ leader_traits = {
 
 	SWE_bleeding_heart_king_trait = {
 		random = no
-		political_power_factor = 0.1
+		political_power_factor = 0.02
 		production_speed_industrial_complex_factor = 0.1
 		consumer_goods_factor = 0.05
 		improve_relations_maintain_cost_factor = -0.05

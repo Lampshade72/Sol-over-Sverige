@@ -1303,6 +1303,42 @@ SWE_chief_of_army_tt:0 "§OThe King's authority over the Armed forces shall be r
 SWE_arms_against_tyranny_tt:0 "§RWith the Monarchy disposed of and many of the aristocratic generals gone, the Swedish military must be entirely reformed and shaped anew!§!" 
 
 
+### Leader Traits ###
+SWE_lindholm_trait:0 "§pNational Revolutionary§!"
+
+SWE_linderot_trait:0 "§pOld Communist§!"
+
+SWE_flyg_trait:0 "§pTotalist Black Sheep§!"
+
+SWE_trade_union_trait:0 "§1Trade Union Proponent§!"
+
+SWE_anarchist_synd_trait:0 "§8Anarcho-Syndicalist Proponent§!"
+
+SWE_social_dude_trait:0 "§tConnected Socialist§!"
+
+SWE_femm_fatal_trait:0 "§0Women's Rights Revolutionary§!"
+
+SWE_Axel_trait:0 "§ONationalist General§!"
+
+SWE_burger_trait:0 "§FFanatic Legionnaire§!"
+
+SWE_ekstroem_trait:0 "§nTerror Of Sweden§!"
+
+SWE_authdem_trait:0 "§LMerciful General§!"
+
+SWE_Helge_jung_trait:0 "§kAutocratic General§!"
+
+SWE_natpop_riksledare_trait:0 "§kThe Riksledare§!"
+
+SWE_bleeding_heart_king_trait:0 "§RA Bleeding Heart§!"
+
+SWE_reinforced_king_trait:0 "§LThe Guiding Crown§!"
+
+SWE_puppet_king_trait:0 "§RPuppet King§!"
+
+
+
+
 ### Parties ###
 SWE_totalist_party:0 "SKP/SNSP"
 SWE_totalist_party_long:0 "Sveriges kommunistiska parti - §LCommunist Party of Sweden§!\nSveriges Nationella Syndikalistiska Parti - §LNational Syndicalist Party of Sweden§!"
@@ -1325,6 +1361,11 @@ SWE_paternal_autocrat_party_long:0 "Arméns Fosterlandsvänner\n§LArmy's Homela
 SWE_national_populist_party:0 "SRNS"
 SWE_national_populist_party_long:0 "Svea Rikes Nationella Samlingsparti\n§LNational Unity Party of the Swedish Realm§!"
 
+
+
+
+SWE_paternal_autocrat_jung_party:0 "Jungjuntan"
+SWE_paternal_autocrat_jung_party_long:0 "Försvarsmaktens Råd för Nationell Stabilitet\n§LArmed Forces Council for National Stability§!"
 
 SWE_national_populist_maurass_party:0 "SNF"
 SWE_national_populist_maurass_party_long:0 "Sveriges Nationella Förbund\n§LSweden's National Federation§!"
