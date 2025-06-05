@@ -6761,7 +6761,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SWE_under_the_king
-			add_country_leader_trait = CAN_popular_figurehead
+			add_country_leader_trait = SWE_reinforced_king_trait
 			add_stability = 0.05
 			country_event = { id = swemil.15 }			
 		}
