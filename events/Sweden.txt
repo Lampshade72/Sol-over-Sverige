@@ -2636,6 +2636,7 @@ country_event = { #Inter-military election ##LS##
 
 		hidden_effect = {
 			country_event = { id = swe.30 days = 400 }
+			country_event = { id = swemil.19 }
 			}		
 	}
 	
@@ -3070,9 +3071,10 @@ country_event = { #more security or nah ##LS##
 	
 	option = { #yes
 		name = swemil.19.b
-		add_political_power = -5
+		add_political_power = -10
+		add_stability = 0.10
 		add_popularity = { ideology = national_populist popularity = 0.03 }	
-		add_manpower = -150
+		add_manpower = -180
 		remove_ideas_with_trait = security_minister		
 		add_ideas = SWE_Martin_Ekstroem_sec_npo
 			
@@ -3100,12 +3102,24 @@ country_event = { #arresting politicians if no monarch ##LS##
 			add_popularity = { ideology = national_populist popularity = 0.04 }	
 			add_stability = 0.02
 			add_war_support = -0.03
+			
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_crown_restored
+				}
+				set_country_flag = SWE_flag_axel_here
+				remove_ideas_with_trait = head_of_government
+				add_ideas = SWE_Axel_Gyllenkrok_hog_npo			
+				set_country_leader_ideology = pataut_legionarism_subtype
+			} else = {
+			
 			create_country_leader = {
 			name = "Axel Gyllenkrok"
 			picture = "gfx/leaders/SWE/Portrait_Sweden_Axel_Gyllenkrok.png"
 			expire = "1.1.1"
 			ideology = pataut_legionarism_subtype	
 			}
+		}
 			
 	}
 }

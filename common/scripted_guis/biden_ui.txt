@@ -3293,6 +3293,13 @@ scripted_gui = {
 				}
 			}
 			
+			Axel_Gyllenkrok_visible = {
+				AND = { 
+					has_country_flag = HOG_veiw
+					has_idea = SWE_Axel_Gyllenkrok_hog_npo
+				}
+			}			
+			
 			### Dutch PMs ###
 			
 			Henk_Sneevliet_visible = {

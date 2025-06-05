@@ -6761,6 +6761,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SWE_under_the_king
+			add_country_leader_trait = CAN_popular_figurehead
 			add_stability = 0.05
 			country_event = { id = swemil.15 }			
 		}
@@ -6888,17 +6889,11 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				}
-			add_stability = -0.05
+			add_stability = -0.03
 			
-			if = {
-				limit = {
-					NOT = { has_country_flag = SWE_flag_crown_restored }
-				}
-					country_event = { id = swemil.20 }
+			hidden_effect = {
+			country_event = { id = swemil.20 }
 			}
-			else = {
-					country_event = { id = swemil.19 }
-			}							
 		}
 	}
 
@@ -7069,7 +7064,81 @@ focus_tree = {
 		}
 	}
 
+	focus = { 
+		id = SWE_finalize_the_junta
+		icon = GFX_goal_COR_new_tank_forces_icon
+		prerequisite = { focus = SWE_tiger_claw_sharp }
+		mutually_exclusive = { focus = SWE_Axels_nat_junta }
+		
+		x = 1
+		y = 6
+		cost = 8
+		relative_position_id = SWE_junga_junta
+		ai_will_do = {
+			factor = 80
+		}
 
+		available = { 
+			has_country_flag = SWE_flag_jung_junta
+			NOT = {
+				has_country_flag = SWE_flag_axel_here
+			}
+		}
+		
+		completion_reward = {
+		
+			add_political_power = 50
+			add_stability = 0.04
+			add_command_power = 40
+			increase_ruling_party_popularity_by_3 = yes
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			every_owned_state = {
+				add_state_modifier = {
+					modifier = {
+						local_resources_factor = 0.05
+						local_manpower = 0.05
+					}
+				}
+			} 
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_Axels_nat_junta
+		icon = GFX_goal_COR_Truly_Christian_Army
+		prerequisite = { focus = SWE_tiger_claw_sharp }
+		mutually_exclusive = { focus = SWE_finalize_the_junta }
+		
+		x = -1
+		y = 6
+		cost = 8
+		relative_position_id = SWE_junga_junta
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = { 
+			AND = {
+			has_country_flag = SWE_flag_jung_junta
+			has_country_flag = SWE_flag_axel_here
+			}
+		}
+		
+		completion_reward = {
+		
+			add_political_power = 30
+			add_war_support = 0.03
+			add_stability = 0.02
+			add_natpop_to_coalition = yes 
+			add_popularity = { ideology = national_populist popularity = 0.08 }
+			add_ideas = SWE_pataut_natpop
+			
+			
+		}
+	}
 
 ###Authdem mil###
 

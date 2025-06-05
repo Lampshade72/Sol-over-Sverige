@@ -220,16 +220,16 @@ SWE_radical_paramilitary_support_desc:0 "WIP"
 
 ## Jung Ideas ##
 
-SWE_pataut1:0 "Beginning Jung's Vision"
+SWE_pataut1:0 "Beginning The Military's Vision"
 SWE_pataut1_desc:0 "WIP"
 
-SWE_pataut2:0 "Furthering Jung's Vision"
+SWE_pataut2:0 "Furthering The Military's Vision"
 SWE_pataut2_desc:0 "WIP"
 
-SWE_pataut3:0 "Jung's Military With A State"
+SWE_pataut3:0 "Sweden's Military With A State"
 SWE_pataut3_desc:0 "WIP"
 
-SWE_jungs_vision:0 "Total Defensive Alignment"
+SWE_jungs_vision:0 "Jung's Defensive Alignment"
 SWE_jungs_vision_desc:0 "WIP"
 
 SWE_alllied_companies:0 "Military Aligned Companies"
@@ -238,13 +238,13 @@ SWE_alllied_companies_desc:0 "WIP"
 
 ## Authdem ideas ##
 
-SWE_autdem1:0 "Beginning Ehrensvard's Vision"
+SWE_autdem1:0 "Beginning Sweden's Dawn"
 SWE_autdem1_desc:0 ""
 
-SWE_autdem2:0 "Furthering Ehrensvard's Vision"
+SWE_autdem2:0 "A Promising Sunlight"
 SWE_autdem2_desc:0 ""
 
-SWE_autdem3:0 "United Civilian-Military Government"
+SWE_autdem3:0 "Dawn Of A New Swedish Day"
 SWE_autdem3_desc:0 ""
 
 SWE_patriotic_unions:0 "Patriotic Unions Established"
@@ -265,7 +265,7 @@ SWE_authdem_military_desc:0 ""
 SWE_new_paramilitaries:0 "Reforged Paramilitaries"
 SWE_new_paramilitaries_desc:0 ""
 
-SWE_worker_patriotism:0 "Total Worker Patriotism"
+SWE_worker_patriotism:0 "Enforced Worker Patriotism"
 SWE_worker_patriotism_desc:0 ""
 
 SWE_under_the_king:0 "The King 'Commands'"
@@ -870,6 +870,12 @@ SWE_mixed_economic_policy:0 "Intervention and Civilian Command"
 SWE_mixed_economic_policy_desc:0 "The need for economic intervention by the government is necessary, as such the military shall be allowed to do so as it pleases, taking what it needs for the greater good of Sweden."
 SWE_tiger_claw_sharp:0 "Bastion of Nordic Might"
 SWE_tiger_claw_sharp_desc:0 "Sweden has been totally transformed, from a weak hole of democracy, she now stands tall. With the military larger and better than before, few dare tread over our borders, lest they face the might of an entire nation, willing to give their all."
+SWE_finalize_the_junta:0 "Sweden's Bravest"
+SWE_finalize_the_junta_desc:0 "Under Jung, Sweden can now truly say that she is led by her bravest. We ready ourselves, with a renewed conscription and resource acquisition campaign, for we shall never rest until Sweden is truly safe!"
+SWE_Axels_nat_junta:0 "'Nationalise' The Junta"
+SWE_Axels_nat_junta_desc:0 "The Junta thus far has remained relatively apathetic to the fervent nationalist causes throughout the nation. By reaching out to the far-right leagues, like that of our ally Archibald Douglas, Gllynkrok can hope to formulate a truly National Junta!"
+
+
 SWE_wastes_to_soldiers:0 "Wastes to Soldiers"
 SWE_wastes_to_soldiers_desc:0 "There still remain many affected by Black Monday, unemployed wastes strolling city streets without meaning. No more, such men shall be given the opportunity to join the army, where they will be fed, clothed and housed, in return they shall serve Sweden for a few years."
 SWE_army_symbol_of_sweden:0 "Symbol of Swedish Pride"
@@ -1206,7 +1212,7 @@ SWE_flag_political_stability:0 "Moderate Election Success"
 SWE_flag_totalist_victory:0 "Totalists Won the Election!"
 SWE_flag_flyg_victory:0 "National Syndicalism now holds onto Sweden!"
 SWE_flag_linderot_victory:0 "Communism Collects her new Nation!"
-
+SWE_flag_axel_here:0 "Axel is in charge"
 SWE_flag_radsoc_victory:0 "SSV Victory!"
 
 SWE_flag_syndie_victory:0 "Syndicalism Spreads to Sweden!"
@@ -1797,7 +1803,7 @@ swemil.556.t:0 "Coronation of Folke Bernadotte"
 swemil.556.d:0 "In a grand display at Stockholm’s grand cathedral, Count of Wisborg Folke Bernadotte was crowned King of Sweden, becoming the rightful ruler over Sweden. Seen as a return to her recent past before the failed revolution to the outside world, underneath lies a near unrecognisable face of the former Swedish crown. With nearly all her power completely stripped and some of the nobles deposed or replaced with more politically aligned minds, the democratic Kingdom of Sweden is no more. For the firm grip of the Armed forces now holds her reins, with generals and officers seen working in offices once manned by senators of the former Rikstag. \n\nHowever Carl XVI has his own ideals and beliefs, sometimes clashing with the ideals of the ruling military, described as wearing his heart on his sleeve, how this relationship will turn out is yet to be seen."
 swemil.556.a:0 "Länge leve kungen!"
 
-swemil.557.t:0 "Folke Bernadotte af Wisborg"
+swemil.557.t:0 "Folke Bernadotte af Wisborg" #Shakirah
 swemil.557.d:0 "Following the removal of socialist vermin from power, a new dawn rises over a new Sweden. The Jung 'Junta', now an actual proper junta, have declared their intentions to bring back the monarchy. Not content to invite back the line that sold Sweden down the river of inept politics, Jung, Douglas and Ehrensvärd have all decided upon a good substitute: Their friend Folke. \n\nAlthough disinherited due to his father marrying someone of lower standing, Folke Bernadotte would make an excellent king in their eyes. Friendly to everyone, diplomatic, not too ambitious and broadly liked by the population as a whole, him becoming king is not a hard ask at all. Indeed, although disinherited, that can simply be brushed aside as another poorly thought out action by the past ruling line. Already Folke is learning to no longer refer to himself as 'Folke af Wisborg', the title used for disinherited Swedish royals, and is gradually adjusting to his position of king. Indeed, Folke is also beginning to assert his independence over the more radical members of the Junta, like Douglas, intending to be made king with the consent of the people, rather than without. That said, no king has ever been named Folke in the past, and as such Folke and his burgeoning court must sort out the growing issue of his regal name. \n\nThere are a few options on the table, ranging from the more traditional to the more radical. First option is to simply name Folke Carl, like past kings before him. Second option is to name him after his father and grandfather, king Oscar II. Third option is to shatter expectations, and let Folke rule by his own given name. "
 swemil.557.a:0 "Hurrah for Carl Folke XVI!"
 swemil.557.b:0 "Hurrah for Oscar III!"
@@ -1872,15 +1878,15 @@ swemil.18.d:0 "General Helge Victor Jung, after convening the top military brass
 swemil.18.a:0 "Under Helge Jung, Sweden shall be defended"
 
 swemil.19.t:0 "Disarming Unloyal Politicians"
-swemil.19.d:0 "Since the return of the Monarchy and Jung’s establishment of the Junta, many politicians of the former Rikstag have come against our rule. Forming protests at the former Rikstag, demanding for the military and Jung to step down and allow democratic elections to continue under civilian rule. Due to this, Jung has ordered the entire arrest of those registered under the former governments, consisting mainly of those from the Farmer’s league and Hansson’s democrats. Many from the People’s Party and General Electoral League remain silent on the continued arrests, with the most outspoken joining the ranks of those imprisoned. \n\nHowever, General Martin Ekstroem has put forward a proposal to Helge Jung. Claiming that at the current rate of arrests, most of the former politicians will be able to flee Sweden and form exile governments in supportive nations, undermining Junta’s legitimacy as the sole Swedish government. In this case, Ekstroem asks for extended powers, promising swifter action against the former politicians, promising grander results than the current methods. With time quickly passing, Jung must make a decision, maintain the current flow or give this radical a chance to prove himself?"
+swemil.19.d:0 "Since Jung’s establishment of the Junta, many politicians of the former Rikstag have come against our rule. Forming protests at the former Rikstag, demanding for the military and Jung to step down and allow democratic elections to continue under civilian rule. Due to this, Jung has ordered the entire arrest of those registered under the former governments, consisting mainly of those from the Farmer’s league and Hansson’s democrats. Many from the People’s Party and General Electoral League remain silent on the continued arrests, with the most outspoken joining the ranks of those imprisoned. \n\nHowever, General Martin Ekstroem has put forward a proposal to Helge Jung. Claiming that at the current rate of arrests, most of the former politicians will be able to flee Sweden and form exile governments in supportive nations, undermining the Junta’s legitimacy as the sole Swedish government. In this case, Ekstroem asks for extended powers, promising swifter action against the former politicians, promising grander results than the current methods. With time quickly passing, Jung must make a decision, maintain the current flow or give this radical a chance to prove himself?"
 swemil.19.a:0 "No, our current methods are sound"
 swemil.19.b:0 "The ends shall justify the means"
 
 
-swemil.20.t:0 "Disarming Politicians and Monarchists"
-swemil.20.d:0 "Since the rise of Jung against the revolutionaries and the cementation of direct military rule, many politicians of the former Rikstag have come out against our rule. Alongside their protests joining them are monarchists, forming a disorganised coalition of Hansson’s social democrats and Bagge’s conservative monarchists. Because of this, Jung has implemented a decisive order against any and all sedition to the current Junta. Such a move is drastic and draws harsh criticism from many in the military, including his close friend Ehrensvard, believing it will tarnish Jung’s view to the Swedish public and world at large. \n\nAs such, a small clique of Jung’s closest allies have convened to meet with him, presenting a counter-proposal to his plan. Claiming that such moves against the monarchists is too drastic too soon, that many of the rightists in Sweden still hold onto the hope of the crown’s restoration, and such moves against them could amalgamate with another counter-revolution. As such, they propose propping Axel Gyllenkrok as the new face of the regime, allowing Jung to conduct his plans without needing to appear as publicly, albeit with some restrictions on his power. Gyllenkrok can serve as a renewed face, uniting the current military brass with some of the more radical nationalist elements that look towards republicanism, as minor as they are. Jung, both bewildered and shocked at his own circle's proposal, exclaims…"
-swemil.20.a:0 "Nonsense! I rule alone for the good of Sweden!"
-swemil.20.b:0 "Excellent, the military has always remained my true burden!"
+swemil.20.t:0 "The Sassy Jung"
+swemil.20.d:0 "Since taking power, Jung and his now actual junta have spread their tendrils across society. Already well connected with the upper strata, smaller parties are gradually proclaiming support for the military regime, and good pr is key. Although he has friends in the media and personally very friendly, Jung suffers from the perception that he's a bit of a cad, a bit sassy, and a bit smug, and a scandal has broken out regarding his crude tongue... \n\nA few days ago, at a meeting with wealthy socialites during which he was in conversation with two ladies of high class, he shocked the prudish upper classes. As the two ladies made a series of disparaging remarks about their third, who was absent from the event, one of the ladies asked Jung what he thought about the missing third. 'Surely she's not all bad?' the lady asked Jung. 'I do not know, I haven't been that deep in her.' \n\nAlthough blaming the comment on too much gin and far too little tonic, it's clear Jung simply cannot handle himself in public, and as such, perhaps it's best he take a step back, to continue his rule over the junta in the background? If so, Axel Gyllenkrok is more than eager to put his own spin on the junta, letting Jung take more of a backseat on the public side of the Junta."
+swemil.20.a:0 "Jung will taper his drinking and retain control"
+swemil.20.b:0 "Axel Gyllenkrok will bring a fresh new face to the Junta"
 
 
 swemil.21.t:0 "Cutting Out the Radicals"

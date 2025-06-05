@@ -1564,6 +1564,9 @@ ideas = {
 			modifier = {
 				stability_factor = 0.14
 				mobilization_speed = 0.15
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				command_power_gain = 0.15				
 				training_time_army_factor = -0.1
 				consumer_goods_factor = -0.1
 				production_factory_max_efficiency_factor = 0.15
@@ -1588,7 +1591,9 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.08
 				consumer_goods_factor = 0.07	
-				max_dig_in_factor = 0.12	
+				max_dig_in_factor = 0.12
+				encryption = 0.05
+				recon_factor = 0.08				
 				experience_loss_factor = -0.10				
 			}				
 		}
@@ -1605,7 +1610,20 @@ ideas = {
 			}				
 		}
 
-
+		SWE_pataut_natpop = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_pataut3"}
+			picture = GFX_idea_GEN_army_doctrine_off
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.003
+				war_support_factor = 0.05
+				weekly_manpower = 30
+				offensive_war_stability_factor = 0.05			
+				min_export = -0.06
+				production_speed_infrastructure_factor = 0.07
+				national_populist_drift = 0.03
+			}				
+		}
 
 
 
