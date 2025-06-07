@@ -1886,7 +1886,6 @@ swemil.11.d:0 "In a rather unusual breach of decorum, an eccentric letter was de
 swemil.11.a:0 "What a loon, lock him up"
 swemil.11.b:0 "A national international, rolls off the tongue!"
 
-
 swemil.12.t:0 "Wiping the Slate Clean"
 swemil.12.d:0 "While the paramilitaries and reforged police force have done their work diligently and tirelessly, removing anarchist and syndicalist swine alike, many still hold onto their sympathies for the failed revolution. Some even amongst the former Farmer’s league and even People’s Party dismay our rule, forming minor protests against our government. Such direct confrontation with our regime will not go unheard nor overlooked, such men must be further punished. Further advances into rural villages and towns, supported by the military, will swiftly put the remaining socialists to route!"
 swemil.12.a:0 "A moderate socialist is still a socialist!"
@@ -2292,7 +2291,8 @@ swe.55.t:0 "[GetYear] Swedish General Elections"
 swe.55.d:0 "The campaigning season has run its course again and the Swedish people have gone to the polls to elect the government they consider to be the best for Sweden. All that is left is for the ballots to be counted before we can declare the winner..."
 swe.55.a:0 "The Social Democrats triumph!"
 swe.55.b:0 "The Conservatives stand victorious!"
-swe.55.c:0 "The Liberals will rule!"
+swe.55.c:0 "The Folkpartiet have won out!"
+swe.55.e:0 "Emerging out, the Bondeförbundet has won!"
 
 swe.56.t:0 "Social Democratic Government formation"
 swe.56.d:0 "Once again, the social democrats have been victorious in the elections, and it is their right to form a Swedish government. The press eagerly wonders what kind of government will rule Sweden the coming years..."
@@ -2314,8 +2314,6 @@ swe.59.t:0 "A Pivotal Coalition Decision"
 swe.59.d:0 "Against all expectations, Bondeförbundet has emerged as the largest party in the recent elections, riding a wave of rural support and public desire for pragmatic, centrist leadership. Now, with no clear majority in the Riksdag, the party faces a critical decision, whether to form a coalition with the market-liberal Folkpartiet, whose economic vision aligns with rural entrepreneurialism, or with the Social Democrats, whose focus on welfare and social cohesion appeals to many within Bondeförbundet's cooperative tradition. Both options offer stability, but also carry risks of alienating key parts of the base. The path chosen will define Sweden’s political direction for years to come."
 swe.59.a:0 "Partner with the Folkpartiet for a liberal-centrist alliance"
 swe.59.b:0 "Form a progressive bloc with the Social Democrats"
-
-
 
 swe.60.t:0 "Sweden Implements Tariffs"
 swe.60.d:0 "The Swedes have implemented tariffs against us, despite the fact that they are part of the Mitteleuropa Free-Trade Zone and thus in principle banned from implementing such measures. Many economists feel we should retaliate against this measure, lest the integrity of Mitteleuropa be harmed and other members get ideas!"

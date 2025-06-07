@@ -6240,6 +6240,11 @@ country_event = { #The social democrats form a government #Change to socdem lead
 
 	option = { #normal choice
 		name = swe.56.b
+		trigger = {
+			NOT = {
+			date > 1946.1.1
+			}
+		}
 		ai_chance = { factor = 20 }
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }
 		add_popularity = { ideology = social_democrat popularity = 0.03 }		
