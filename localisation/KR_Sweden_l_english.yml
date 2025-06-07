@@ -1362,10 +1362,13 @@ SWE_national_populist_party:0 "SRNS"
 SWE_national_populist_party_long:0 "Svea Rikes Nationella Samlingsparti\n§LNational Unity Party of the Swedish Realm§!"
 
 
-
+SWE_authoritarian_democrat_old_party:0 "Riksrådet"
+SWE_authoritarian_democrat_party_old_long:0 "Riksrådet\n§LCouncil of the Realm§!"
 
 SWE_paternal_autocrat_jung_party:0 "Jungjuntan"
 SWE_paternal_autocrat_jung_party_long:0 "Försvarsmaktens Råd för Nationell Stabilitet\n§LArmed Forces Council for National Stability§!"
+
+
 
 SWE_national_populist_maurass_party:0 "SNF"
 SWE_national_populist_maurass_party_long:0 "Sveriges Nationella Förbund\n§LSweden's National Federation§!"
@@ -2043,6 +2046,12 @@ swemil.45.a:0 "A sad state of foreign affairs"
 swemil.46.t:0 "Thörnell, the loyalist"
 swemil.46.d:0 "Stiff and cold, harsh and sarcastic, Thörnell is not liked by his subordinates. Viewed as merely an incompetent 'chair warmer' by the Jung 'Junta', viewed as a bloodthirsty white by the SSV, Thörnell remains in his position as Supreme Commander thanks to his good relations with the government. Believed to not be too ambitious to cause a fuss with the government, but not lax enough to keel over under stress, the government believes him to be the ideal head of the army, even though Gösta Bagge privately loathes him. \n\nA friend of Germany, and also a friend of the exiled French in Africa, Thörnell is worried about the growing threat of revolution, but does not believe SAP to be the harbinger of said societal upheaval. This puts him at odds with the increasingly radical 'Jungjunta', who believe that the SAP will simply open the door to further military cuts, followed shortly by socialist overthrow of both army and state. Perhaps the biggest trait he has, besides being deemed distant and uncharismatic, is his cold calm demeanour. Indeed, as much as the 'Junta' dislikes him, they too believe that he's as calm as a rock during times of unrest. Perhaps too calm."
 swemil.46.a:0 "Our guy in the army"
+
+swemil.47.t:0 "A Return to the Old Order"
+swemil.47.d:0 "Despite repression of many political dissidents, an official declaration of the Junta and the appointment of  Ehrensvärd, many in Sweden and across the globe still denounce our government as illegitimate. Even as Ehrensvärd has embraced a few of the former conservative elements, we still struggle with issues of legitimacy. As such, some within our cabinet have proposed an idea to help our legitimacy, an old institution made new. By restoring and calling our government the Riksrådet or Privy Council of Sweden, an order from the medieval period of Sweden. The Riksrådet was once an advisory and co-ruling position alongside the King of Sweden. Whether we have a King or not, such an institution and return, could bring back legitimacy from history, a return to our true traditional government roots. Although such a proposal could work, others in our government call such a move as meaningless and a waste of time, and that such a name change remains unnecessary for now. Whatever we choose, it must be made now."
+swemil.47.a:0 "Change it, we shall embrace our past!"
+swemil.47.b:0 "Change it and fully embrace our past, restoring the Privy Council!"
+swemil.47.c:0 "There is no need for a medieval change"
 
 ### Intro Events ###
 
