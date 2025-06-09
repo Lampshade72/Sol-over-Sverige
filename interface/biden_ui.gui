@@ -2563,6 +2563,12 @@ guiTypes = {
 			name = "Axel_Gyllenkrok"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Sweden_Axel_Gyllenkrok"
+		}
+
+		iconType = { #
+			name = "Gustaf_Andersson"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Gustaf_Andersson"
 		}		
 		
 		### Dutch PMs ###

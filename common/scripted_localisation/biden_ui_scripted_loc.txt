@@ -6480,6 +6480,14 @@ defined_text = {
 		}
 		localization_key = SWE_Axel_Gyllenkrok_hog_npo
 	}
+
+	text = {
+		trigger = {
+			has_idea = SWE_Gustaf_Andersson_hog_mli
+			
+		}
+		localization_key = SWE_Gustaf_Andersson_hog_mli
+	}
 	
 	
 	### Dutch PMs ###
@@ -13726,6 +13734,17 @@ text = {
 		}
 		localization_key = GFX_Portrait_Sweden_Axel_Gyllenkrok
 	}	
+
+	text = {
+		trigger = {
+			has_idea = SWE_Gustaf_Andersson_hog_mli
+			
+		}
+		localization_key = GFX_Portrait_Sweden_Gustaf_Andersson
+	}	
+	
+	
+	
 	
 	### Dutch PMs ###
 	

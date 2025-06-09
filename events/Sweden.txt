@@ -2554,6 +2554,13 @@ country_event = { #### MARLIB leader
 	option = { #Bertil
 		name = sweelect.3.a
 		add_popularity = { ideology = market_liberal popularity = 0.01 }
+		set_country_flag = SWE_flag_1940_gustaf_andersson
+			
+	}
+
+	option = { #Bertil
+		name = sweelect.3.b
+		add_popularity = { ideology = market_liberal popularity = 0.01 }
 		set_country_flag = SWE_flag_1940_bertil_ohlin
 			
 	}
@@ -2681,7 +2688,18 @@ country_event = { #### Election and leader events
 			country_event = {
 				id = sweelect.8
 				days = 2
-			}		
+			}	
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1940_gustaf_andersson
+				}
+				
+				add_ideas = SWE_Gustaf_Andersson_hog_mli
+				add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
+				add_ideas = SWE_Gustav_Cassel_eco_mli
+				add_ideas = SWE_Thorwald_Bergquist_sec_mli
+				
+			}
 			if = {
 				limit = {
 					has_country_flag = SWE_flag_1940_bertil_ohlin
@@ -2691,7 +2709,7 @@ country_event = { #### Election and leader events
 				add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
 				add_ideas = SWE_Gustav_Cassel_eco_mli
 				add_ideas = SWE_Thorwald_Bergquist_sec_mli
-				add_soccon_to_coalition = yes
+
 			}
 		}		
 			

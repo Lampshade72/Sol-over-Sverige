@@ -3298,7 +3298,15 @@ scripted_gui = {
 					has_country_flag = HOG_veiw
 					has_idea = SWE_Axel_Gyllenkrok_hog_npo
 				}
-			}			
+			}
+
+			Gustaf_Andersson_visible = {
+				AND = { 
+					has_country_flag = HOG_veiw
+					has_idea = SWE_Gustaf_Andersson_hog_mli
+				}
+			}
+			
 			
 			### Dutch PMs ###
 			
