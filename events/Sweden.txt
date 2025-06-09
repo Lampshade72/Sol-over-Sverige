@@ -15,7 +15,7 @@ add_namespace = swetot
 add_namespace = swefop
 add_namespace = swedem
 add_namespace = newsswe
-
+add_namespace = sweelect
 
 ######### FOP events #########
 country_event = { ####swedish gold coast ##LS##
@@ -1994,6 +1994,1007 @@ country_event = { ####silence syndies GEL ##LS##
 		
 	}
 }
+
+country_event = { ####national league form ##LS##
+	id = swedem.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.24" }
+	title = swedem.24.t
+	desc = swedem.24.d
+	picture = GFX_report_event_SWE_Folkpartiet
+
+	is_triggered_only = yes
+
+	option = { #kept
+		name = swedem.24.a
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }
+		add_political_power = -5
+		add_stability = -0.01
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = SWE_national_populist_maurass_party_long
+			name = SWE_national_populist_maurass_party
+		}	
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = SWE_national_populist_maurass_party_long
+			name = SWE_national_populist_maurass_party
+		}		
+	
+	}
+	
+	option = { #banned
+		name = swedem.24.b
+		set_country_flag = SWE_flag_national_league_banned
+		add_popularity = { ideology = paternal_autocrat popularity = 0.01 }
+		add_political_power = 10
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = SWE_national_populist_maurass_party_long
+			name = SWE_national_populist_maurass_party
+		}		
+	}	
+}
+
+
+##### Election and primary Events ######
+
+
+country_event = { #Black Monday arrives in Sweden ##kr-K##
+	id = swe.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.1" }
+	title = swe.1.t
+	desc = swe.1.d
+	picture = GFX_report_event_SWE_black_monday
+
+	is_triggered_only = yes
+
+	option = {
+		name = swe.1.a
+		add_ideas = SWE_black_monday
+		add_stability = -0.02
+	}
+}
+
+
+country_event = { #Per Albin Hansson critises our crisis response ##kr-K##
+	id = swe.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.2" }
+	title = swe.2.t
+	desc = swe.2.d
+	picture = GFX_report_event_SWE_Hansson
+
+	is_triggered_only = yes
+
+	option = {
+		name = swe.2.a
+		add_popularity = { ideology = social_democrat popularity = 0.02 }
+		add_popularity = { ideology = social_conservative popularity = -0.02 }
+	}
+}
+
+country_event = { #Rising SSV membership ##kr-K##
+	id = swe.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.3" }
+	title = swe.3.t
+	desc = swe.3.d
+	picture = GFX_report_event_SWE_Socialists
+
+	is_triggered_only = yes
+
+	option = {
+		name = swe.3.a
+		add_popularity = { ideology = social_democrat popularity = -0.02 }
+		add_popularity = { ideology = radical_socialist popularity = 0.02 }
+	}
+}
+
+country_event = { #Arvid Lindman supports the Bagge-Cabinet ##kr-K##
+	id = swe.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.4" }
+	title = swe.4.t
+	desc = swe.4.d
+	picture = GFX_report_event_SWE_Arvid_Lindman
+
+	is_triggered_only = yes
+
+	option = {
+		name = swe.4.a
+		add_popularity = { ideology = social_conservative popularity = 0.02 }
+		add_political_power = 40
+	}
+}
+
+country_event = { #SAP refuses to rule out cooperation with radicals ##kr-K##
+	id = swe.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.5" }
+	title = swe.5.t
+	desc = swe.5.d
+	picture = GFX_report_event_SWE_Hansson
+
+	is_triggered_only = yes
+
+	option = {
+		name = swe.5.a
+		add_popularity = { ideology = radical_socialist popularity = 0.03 }
+		add_stability = -0.02
+	}
+}
+
+country_event = { #A vote for SAP is a vote for Paris ##kr-K##
+	id = swe.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.6" }
+	title = swe.6.t
+	desc = swe.6.d
+	picture = GFX_report_event_SWE_Antisocialists
+
+	is_triggered_only = yes
+
+	option = {
+		name = swe.6.a
+		add_political_power = 10
+		add_popularity = { ideology = social_conservative popularity = 0.02 }
+		add_popularity = { ideology = market_liberal popularity = 0.01 }
+		add_popularity = { ideology = social_democrat popularity = -0.03 }
+	}
+}
+
+country_event = { #Debate over the budget
+	id = swe.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.7" }
+	title = swe.7.t
+	desc = swe.7.d
+	picture = GFX_report_event_SWE_Riksdag
+
+	is_triggered_only = yes
+
+	option = { #The socialdemocrats win
+		name = swe.7.a
+		ai_chance = { base = 33 }
+		add_popularity = { ideology = social_democrat popularity = 0.06 }
+		add_popularity = { ideology = social_conservative popularity = -0.04 }
+	}
+
+	option = { #The conservatives win
+		name = swe.7.b
+		ai_chance = { base = 33 }
+		add_popularity = { ideology = social_conservative popularity = 0.04 }
+		add_popularity = { ideology = social_democrat popularity = -0.02 }
+	}
+
+	option = { #The liberals save the conservatives in the debate
+		name = swe.7.c
+		ai_chance = { base = 33 }
+		add_popularity = { ideology = market_liberal popularity = 0.06 }
+		add_popularity = { ideology = social_conservative popularity = 0.01 }
+		add_popularity = { ideology = social_democrat popularity = -0.05 }
+	}
+}
+
+country_event = { #1936 Riksdag Elections ##LS##
+	id = swe.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.8" }
+	title = swe.8.t
+	desc = swe.8.d
+	picture = GFX_report_event_SWE_Elections
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		date < 1937.1.1
+	}
+
+	option = { #The socialdemocrats win
+		name = swe.8.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCCON
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_MARLIB
+					}
+				}
+			}
+		}		
+		add_stability = 0.01
+		add_popularity = { ideology = social_democrat popularity = 0.15 }
+		set_politics = { ruling_party = social_democrat elections_allowed = yes }			
+		complete_national_focus = SWE_elections_over
+		complete_national_focus = SWE_social_dem_stab
+		set_country_flag = SWE_election_safe_success
+		remove_all_ministers = yes
+		add_ideas = SWE_Per_Albin_Hansson_hog_sde
+		add_ideas = SWE_J_Rickard_Sandler_for_sde
+		add_ideas = SWE_Per_Edvin_Skold_eco_sde
+		add_ideas = SWE_Karl_Schlyter_sec_sde
+		hidden_effect = {
+			country_event = { id = swe.49 days = 700 }
+			country_event = { id = newsswe.1 days = 1 }
+		}
+	}
+
+	option = { #GEL win
+		name = swe.8.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_MARLIB
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SOCIALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
+					}					
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_FLYG
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}						
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_AUTHDEM
+					}					
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_JUNGA
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_NATPOP
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}
+				}
+			}
+		}		
+		add_stability = 0.01		
+		add_popularity = { ideology = social_conservative popularity = 0.05 }
+		set_country_flag = SWE_election_safe_success
+		complete_national_focus = SWE_elections_over
+		complete_national_focus = SWE_GEL_leads
+		add_popularity = { ideology = social_liberal popularity = 0.04 }
+		set_politics = { ruling_party = social_conservative elections_allowed = yes }
+		remove_all_ministers = yes
+		add_ideas = SWE_Goesta_Bagge_hog_sco
+		add_ideas = SWE_Christian_Guenther_for_sco
+		add_ideas = SWE_Arthur_Heiding_eco_sli
+		add_ideas = SWE_Knut_Ewerloef_sec_sco
+		add_marlib_to_coalition = yes	
+		hidden_effect = {
+			country_event = { id = swe.49 days = 700 }
+			country_event = { id = newsswe.1 days = 1 }
+		}		
+	}
+	
+	option = { ###Market Liberals Win
+		name = swe.8.c 
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCCON
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SOCIALIST
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
+					}					
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_FLYG
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDEROT
+					}	
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_REVOLUTION_LINDHOLM
+					}						
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_AUTHDEM
+					}					
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_JUNGA
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_NATPOP
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_ELECTION_MILITARY_MORASS
+					}
+				}
+			}
+		}		
+		add_stability = 0.01		
+		add_popularity = { ideology = market_liberal popularity = 0.07 }	
+		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
+		set_country_flag = SWE_election_safe_success
+		complete_national_focus = SWE_elections_over
+		complete_national_focus = SWE_people_party_front	
+		add_soccon_to_coalition = yes
+		remove_all_ministers = yes	
+		add_ideas = SWE_Bertil_Ohlin_hog_mli
+		add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
+		add_ideas = SWE_Gustav_Cassel_eco_mli
+		add_ideas = SWE_Thorwald_Bergquist_sec_mli
+		hidden_effect = {
+			country_event = { id = swe.49 days = 700 }
+			country_event = { id = newsswe.1 days = 1 }
+		}		
+		}
+		
+	option = { ###Radical United Front
+		name = swe.8.e 
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCCON
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_SOCDEM
+					}
+					has_game_rule = {
+						rule = SWE_riksdag_election
+						option = SWE_RIKSDAG_ELECTION_MARLIB
+					}
+				}
+			}
+		}		
+		add_stability = -0.01	
+		add_political_power = 12
+		add_popularity = { ideology = radical_socialist popularity = 0.05 }		
+		add_popularity = { ideology = social_democrat popularity = 0.05 }	
+		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
+		complete_national_focus = SWE_elections_over
+		complete_national_focus = SWE_radical_united_front
+		add_radsoc_to_coalition = yes
+		remove_all_ministers = yes		
+		add_ideas = SWE_Per_Albin_Hansson_hog_sde
+		add_ideas = SWE_Fredrik_Stroem_for_rso
+		add_ideas = SWE_Oesten_Unden_eco_rso
+		add_ideas = SWE_Karl_Kilbom_sec_rso
+		}
+	
+}
+
+
+country_event = { #### SOCDEM leader
+	id = sweelect.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.1"
+
+		}
+	title = sweelect.1.t
+	desc = sweelect.1.d
+	picture = GFX_report_event_SWE_Folkpartiet
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+		tag = SWE
+		date > 1940.3.1
+		has_country_flag = SWE_election_safe_success
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sweelect.2
+				days = 6
+			}
+		}
+	}
+
+	option = { #Hansson wins
+		name = sweelect.1.a
+		trigger = {
+			NOT = {
+				has_country_flag = SWE_flag_dead_hansson
+				}
+			}
+		add_popularity = { ideology = social_democrat popularity = 0.02 }
+
+		set_country_flag = SWE_flag_1940_hansson
+			
+	}
+	
+	option = { #Erlander Wins
+		name = sweelect.1.b
+		add_popularity = { ideology = social_democrat popularity = 0.01 }
+
+		set_country_flag = SWE_flag_1940_erlander
+		
+	}	
+}
+
+country_event = { #### SOCCON leader
+	id = sweelect.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sweelect.2" }
+	title = sweelect.2.t
+	desc = sweelect.2.d
+	picture = GFX_report_event_SWE_Folkpartiet
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sweelect.3
+				days = 6
+			}
+		}
+	}
+
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Bagge retains
+		name = sweelect.2.a
+
+		add_popularity = { ideology = social_conservative popularity = 0.02 }
+
+		set_country_flag = SWE_flag_1940_bagge
+			
+	}
+	
+	option = { #Domo doms
+		name = sweelect.2.b
+		add_popularity = { ideology = social_conservative popularity = 0.01 }
+
+		set_country_flag = SWE_flag_1940_domo
+		
+	}	
+}
+
+country_event = { #### MARLIB leader
+	id = sweelect.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.3"
+
+		}
+	title = sweelect.3.t
+	desc = sweelect.3.d
+	picture = GFX_report_event_SWE_Folkpartiet
+
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sweelect.4
+				days = 5
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes 
+
+	option = { #Bertil
+		name = sweelect.3.a
+		add_popularity = { ideology = market_liberal popularity = 0.01 }
+		set_country_flag = SWE_flag_1940_bertil_ohlin
+			
+	}
+	
+}
+
+country_event = { #### SOCLIB leader
+	id = sweelect.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.4"
+
+		}
+	title = sweelect.4.t
+	desc = sweelect.4.d
+	picture = GFX_report_event_SWE_Folkpartiet
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Axel
+		name = sweelect.4.a
+
+		add_popularity = { ideology = social_liberal popularity = 0.01 }
+		add_political_power = 5
+		set_country_flag = SWE_flag_1940_axel
+			
+	}	
+}
+
+country_event = { #### Election and leader events
+	id = sweelect.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.5"
+		hidden_effect = {
+			remove_all_ministers = yes
+			}
+		}
+	title = sweelect.5.t
+	desc = sweelect.5.d
+	picture = GFX_report_event_SWE_Folkpartiet
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Social Democrats win
+		name = sweelect.5.a
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
+		hidden_effect = {
+			country_event = {
+				id = sweelect.6
+				days = 2
+			}		
+			if = {
+				limit = { 
+					has_country_flag = SWE_flag_1940_hansson
+				}
+				add_ideas = SWE_Per_Albin_Hansson_hog_sde
+				add_ideas = SWE_J_Rickard_Sandler_for_sde
+				add_ideas = SWE_Per_Edvin_Skold_eco_sde
+				add_ideas = SWE_Karl_Schlyter_sec_sde
+			}
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1940_erlander
+				}
+				add_ideas = SWE_Tage_Erlander_hog_sde
+				add_ideas = SWE_J_Rickard_Sandler_for_sde
+				add_ideas = SWE_Per_Edvin_Skold_eco_sde
+				add_ideas = SWE_Karl_Schlyter_sec_sde
+			}
+		}	
+	}
+	
+	option = { #Conservatives Win 
+		name = sweelect.5.b
+		add_popularity = { ideology = social_conservative popularity = 0.08 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_conservative elections_allowed = yes }		
+		hidden_effect = { 
+			country_event = {
+				id = sweelect.7
+				days = 2
+			}		
+			if = {
+				limit = { 
+					has_country_flag = SWE_flag_1940_bagge
+				}
+				add_ideas = SWE_Goesta_Bagge_hog_sco
+				add_ideas = SWE_Christian_Guenther_for_sco
+				add_ideas = SWE_Arthur_Heiding_eco_sli
+				add_ideas = SWE_Knut_Ewerloef_sec_sco
+				add_marlib_to_coalition = yes
+			}
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1940_domo
+				}
+				add_ideas = SWE_Fritiof_Domoe_hog_sco
+				add_ideas = SWE_Christian_Guenther_for_sco
+				add_ideas = SWE_Arthur_Heiding_eco_sli
+				add_ideas = SWE_Knut_Ewerloef_sec_sco
+				add_marlib_to_coalition = yes
+			}
+		}		
+		
+	}
+	
+	option = { #Folkpartiet win 
+		name = sweelect.5.c
+		add_popularity = { ideology = market_liberal popularity = 0.08 }
+		add_political_power = 5
+		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
+		hidden_effect = {
+			country_event = {
+				id = sweelect.8
+				days = 2
+			}		
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1940_bertil_ohlin
+				}
+				
+				add_ideas = SWE_Bertil_Ohlin_hog_mli
+				add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
+				add_ideas = SWE_Gustav_Cassel_eco_mli
+				add_ideas = SWE_Thorwald_Bergquist_sec_mli
+				add_soccon_to_coalition = yes
+			}
+		}		
+			
+	}
+	
+	option = { #Bondeförbundet win 
+		name = sweelect.5.e
+		trigger = {
+			OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			}		
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.08 }
+		set_politics = { ruling_party = social_liberal elections_allowed = yes }		
+		hidden_effect = {
+			country_event = {
+				id = sweelect.9
+				days = 2
+			}		
+		add_ideas = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_for_sli
+		add_ideas = SWE_Arthur_Heiding_eco_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_sec_sli		
+		}
+			
+	}	
+
+	option = { #National League victory
+		name = sweelect.5.f
+		trigger = {
+			NOT = {
+				has_country_flag = SWE_flag_national_league_banned
+			}
+		}
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }		
+		set_country_leader_ideology = authdem_national_conservative_subtype
+		
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.09 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
+		add_pataut_to_coalition = yes
+		
+		add_ideas = SWE_Elmo_Lindholm_hog_npo
+		add_ideas = SWE_Sven_Hedin_for_ade
+		add_ideas = SWE_Per_Engdahl_eco_pau
+		add_ideas = SWE_Alf_Meyerhoffer_sec_pau
+	
+		}
+			
+	}	
+	
+
+
+country_event = { #### socdem coalition
+	id = sweelect.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.6"
+
+		}
+	title = sweelect.6.t
+	desc = sweelect.6.d
+	picture = GFX_report_event_SWE_Folkpartiet
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #soclib
+		name = sweelect.6.a
+		add_soclib_to_coalition = yes
+		add_popularity = { ideology = social_liberal popularity = 0.04 }
+		add_political_power = 5
+			
+	}	
+	
+	option = { #all lib
+		name = sweelect.6.b
+		add_soclib_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_popularity = { ideology = market_liberal popularity = 0.02 }
+		add_political_power = 15
+			
+	}	
+}
+
+country_event = { #### soccon coalition
+	id = sweelect.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.7"
+
+		}
+	title = sweelect.7.t
+	desc = sweelect.7.d
+	picture = GFX_report_event_SWE_Folkpartiet
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #marlib
+		name = sweelect.7.a
+		add_marlib_to_coalition = yes
+		add_popularity = { ideology = market_liberal popularity = 0.04 }
+		add_political_power = 5
+			
+	}	
+	
+	option = { #all lib
+		name = sweelect.7.b
+		add_soclib_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_popularity = { ideology = market_liberal popularity = 0.02 }
+		add_political_power = 15
+			
+	}	
+	
+	option = { #authdem
+		name = sweelect.7.c
+		add_authdem_to_coalition = yes
+		add_popularity = { ideology = social_conservative popularity = -0.02 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.07 }
+		add_political_power = -10
+		add_stability = -0.02
+			
+	}	
+}
+
+country_event = { #### marlib coalition
+	id = sweelect.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.8"
+
+		}
+	title = sweelect.8.t
+	desc = sweelect.8.d
+	picture = GFX_report_event_SWE_Folkpartiet
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #soccon
+		name = sweelect.8.a
+		add_soccon_to_coalition = yes
+		add_popularity = { ideology = social_conservative popularity = 0.04 }
+			
+	}	
+	
+	option = { #soclib
+		name = sweelect.8.b
+		add_soclib_to_coalition = yes
+		add_popularity = { ideology = social_liberal popularity = 0.03 }
+			
+	}	
+}
+
+country_event = { #### soclib coalition
+	id = sweelect.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.9"
+
+		}
+	title = sweelect.9.t
+	desc = sweelect.9.d
+	picture = GFX_report_event_SWE_Folkpartiet
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #socdem
+		name = sweelect.9.a
+		add_socdem_to_coalition = yes
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+			
+	}	
+	
+	option = { #marlib
+		name = sweelect.9.b
+		add_marlib_to_coalition = yes
+		add_popularity = { ideology = market_liberal popularity = 0.07 }
+			
+	}	
+}
+
+country_event = { #### SOCDEM leader
+	id = sweelect.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.10"
+
+		}
+	title = sweelect.10.t
+	desc = sweelect.10.d
+	picture = GFX_report_event_SWE_Folkpartiet
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+		tag = SWE
+		date > 1944.5.1
+		has_country_flag = SWE_election_safe_success
+
+	}
+
+	immediate = {
+		hidden_effect = {
+
+		}
+	}
+
+	option = { #Hansson wins
+		name = sweelect.10.a
+		trigger = {
+			NOT = {
+				has_country_flag = SWE_flag_dead_hansson
+				}
+			}
+		add_popularity = { ideology = social_democrat popularity = 0.02 }
+
+		set_country_flag = SWE_flag_1940_hansson
+			
+	}
+	
+	option = { #Erlander Wins
+		name = sweelect.10.b
+		add_popularity = { ideology = social_democrat popularity = 0.01 }
+
+		set_country_flag = SWE_flag_1940_erlander
+		
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4904,384 +5905,6 @@ country_event = { ##LS##
 #################### 1936 Events ########################
 #########################################################
 
-country_event = { #Black Monday arrives in Sweden ##kr-K##
-	id = swe.1
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.1" }
-	title = swe.1.t
-	desc = swe.1.d
-	picture = GFX_report_event_SWE_black_monday
-
-	is_triggered_only = yes
-
-	option = {
-		name = swe.1.a
-		add_ideas = SWE_black_monday
-		add_stability = -0.02
-	}
-}
-
-
-country_event = { #Per Albin Hansson critises our crisis response ##kr-K##
-	id = swe.2
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.2" }
-	title = swe.2.t
-	desc = swe.2.d
-	picture = GFX_report_event_SWE_Hansson
-
-	is_triggered_only = yes
-
-	option = {
-		name = swe.2.a
-		add_popularity = { ideology = social_democrat popularity = 0.02 }
-		add_popularity = { ideology = social_conservative popularity = -0.02 }
-	}
-}
-
-country_event = { #Rising SSV membership ##kr-K##
-	id = swe.3
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.3" }
-	title = swe.3.t
-	desc = swe.3.d
-	picture = GFX_report_event_SWE_Socialists
-
-	is_triggered_only = yes
-
-	option = {
-		name = swe.3.a
-		add_popularity = { ideology = social_democrat popularity = -0.02 }
-		add_popularity = { ideology = radical_socialist popularity = 0.02 }
-	}
-}
-
-country_event = { #Arvid Lindman supports the Bagge-Cabinet ##kr-K##
-	id = swe.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.4" }
-	title = swe.4.t
-	desc = swe.4.d
-	picture = GFX_report_event_SWE_Arvid_Lindman
-
-	is_triggered_only = yes
-
-	option = {
-		name = swe.4.a
-		add_popularity = { ideology = social_conservative popularity = 0.02 }
-		add_political_power = 40
-	}
-}
-
-country_event = { #SAP refuses to rule out cooperation with radicals ##kr-K##
-	id = swe.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.5" }
-	title = swe.5.t
-	desc = swe.5.d
-	picture = GFX_report_event_SWE_Hansson
-
-	is_triggered_only = yes
-
-	option = {
-		name = swe.5.a
-		add_popularity = { ideology = radical_socialist popularity = 0.03 }
-		add_stability = -0.02
-	}
-}
-
-country_event = { #A vote for SAP is a vote for Paris ##kr-K##
-	id = swe.6
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.6" }
-	title = swe.6.t
-	desc = swe.6.d
-	picture = GFX_report_event_SWE_Antisocialists
-
-	is_triggered_only = yes
-
-	option = {
-		name = swe.6.a
-		add_political_power = 10
-		add_popularity = { ideology = social_conservative popularity = 0.02 }
-		add_popularity = { ideology = market_liberal popularity = 0.01 }
-		add_popularity = { ideology = social_democrat popularity = -0.03 }
-	}
-}
-
-country_event = { #Debate over the budget
-	id = swe.7
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.7" }
-	title = swe.7.t
-	desc = swe.7.d
-	picture = GFX_report_event_SWE_Riksdag
-
-	is_triggered_only = yes
-
-	option = { #The socialdemocrats win
-		name = swe.7.a
-		ai_chance = { base = 33 }
-		add_popularity = { ideology = social_democrat popularity = 0.06 }
-		add_popularity = { ideology = social_conservative popularity = -0.04 }
-	}
-
-	option = { #The conservatives win
-		name = swe.7.b
-		ai_chance = { base = 33 }
-		add_popularity = { ideology = social_conservative popularity = 0.04 }
-		add_popularity = { ideology = social_democrat popularity = -0.02 }
-	}
-
-	option = { #The liberals save the conservatives in the debate
-		name = swe.7.c
-		ai_chance = { base = 33 }
-		add_popularity = { ideology = market_liberal popularity = 0.06 }
-		add_popularity = { ideology = social_conservative popularity = 0.01 }
-		add_popularity = { ideology = social_democrat popularity = -0.05 }
-	}
-}
-
-country_event = { #1936 Riksdag Elections ##LS##
-	id = swe.8
-	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.8" }
-	title = swe.8.t
-	desc = swe.8.d
-	picture = GFX_report_event_SWE_Elections
-
-	is_triggered_only = yes
-
-	trigger = {
-		date < 1937.1.1
-	}
-
-	option = { #The socialdemocrats win
-		name = swe.8.a
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_SOCCON
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_MARLIB
-					}
-				}
-			}
-		}		
-		add_stability = 0.01
-		add_popularity = { ideology = social_democrat popularity = 0.15 }
-		set_politics = { ruling_party = social_democrat elections_allowed = yes }			
-		complete_national_focus = SWE_elections_over
-		complete_national_focus = SWE_social_dem_stab
-		set_country_flag = SWE_election_safe_success
-		remove_all_ministers = yes
-		add_ideas = SWE_Per_Albin_Hansson_hog_sde
-		add_ideas = SWE_J_Rickard_Sandler_for_sde
-		add_ideas = SWE_Per_Edvin_Skold_eco_sde
-		add_ideas = SWE_Karl_Schlyter_sec_sde
-		hidden_effect = {
-			country_event = { id = swe.49 days = 700 }
-			country_event = { id = newsswe.1 days = 1 }
-		}
-	}
-
-	option = { #GEL win
-		name = swe.8.b
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_MARLIB
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_SOCDEM
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_SOCIALIST
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
-					}					
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_FLYG
-					}	
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_LINDEROT
-					}	
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_LINDHOLM
-					}						
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_AUTHDEM
-					}					
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_JUNGA
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_NATPOP
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_MORASS
-					}
-				}
-			}
-		}		
-		add_stability = 0.01		
-		add_popularity = { ideology = social_conservative popularity = 0.05 }
-		set_country_flag = SWE_election_safe_success
-		complete_national_focus = SWE_elections_over
-		complete_national_focus = SWE_GEL_leads
-		add_popularity = { ideology = social_liberal popularity = 0.04 }
-		set_politics = { ruling_party = social_conservative elections_allowed = yes }
-		remove_all_ministers = yes
-		add_ideas = SWE_Goesta_Bagge_hog_sco
-		add_ideas = SWE_Christian_Guenther_for_sco
-		add_ideas = SWE_Arthur_Heiding_eco_sli
-		add_ideas = SWE_Knut_Ewerloef_sec_sco
-		add_marlib_to_coalition = yes	
-		hidden_effect = {
-			country_event = { id = swe.49 days = 700 }
-			country_event = { id = newsswe.1 days = 1 }
-		}		
-	}
-	
-	option = { ###Market Liberals Win
-		name = swe.8.c 
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_SOCCON
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_SOCDEM
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_SOCIALIST
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_SYNDICALIST
-					}					
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_FLYG
-					}	
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_LINDEROT
-					}	
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_REVOLUTION_LINDHOLM
-					}						
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_AUTHDEM
-					}					
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_JUNGA
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_NATPOP
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_ELECTION_MILITARY_MORASS
-					}
-				}
-			}
-		}		
-		add_stability = 0.01		
-		add_popularity = { ideology = market_liberal popularity = 0.07 }	
-		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
-		set_country_flag = SWE_election_safe_success
-		complete_national_focus = SWE_elections_over
-		complete_national_focus = SWE_people_party_front	
-		add_soccon_to_coalition = yes
-		remove_all_ministers = yes	
-		add_ideas = SWE_Bertil_Ohlin_hog_mli
-		add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
-		add_ideas = SWE_Gustav_Cassel_eco_mli
-		add_ideas = SWE_Thorwald_Bergquist_sec_mli
-		hidden_effect = {
-			country_event = { id = swe.49 days = 700 }
-			country_event = { id = newsswe.1 days = 1 }
-		}		
-		}
-		
-	option = { ###Radical United Front
-		name = swe.8.e 
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_SOCCON
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_SOCDEM
-					}
-					has_game_rule = {
-						rule = SWE_riksdag_election
-						option = SWE_RIKSDAG_ELECTION_MARLIB
-					}
-				}
-			}
-		}		
-		add_stability = -0.01	
-		add_political_power = 12
-		add_popularity = { ideology = radical_socialist popularity = 0.05 }		
-		add_popularity = { ideology = social_democrat popularity = 0.05 }	
-		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
-		complete_national_focus = SWE_elections_over
-		complete_national_focus = SWE_radical_united_front
-		add_radsoc_to_coalition = yes
-		remove_all_ministers = yes		
-		add_ideas = SWE_Per_Albin_Hansson_hog_sde
-		add_ideas = SWE_Fredrik_Stroem_for_rso
-		add_ideas = SWE_Oesten_Unden_eco_rso
-		add_ideas = SWE_Karl_Kilbom_sec_rso
-		}
-	
-}
 
 
 

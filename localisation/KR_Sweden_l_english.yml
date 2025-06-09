@@ -1237,6 +1237,19 @@ SWE_flag_folke:0 "Name Folke"
 SWE_flag_carl:0 "Name Carl"
 SWE_flag_oscar:0 "Name Oscar"
 
+SWE_flag_national_league_banned:0 "National League banned"
+
+###Election Flags####
+SWE_flag_dead_hansson:0 "Hansson has died"
+SWE_flag_1940_hansson:0 "Hansson chosen to lead the party"
+SWE_flag_1940_erlander:0 "Erlander chosen to lead the party"
+SWE_flag_1940_bagge:0 "Gosta Bagge chosen to lead the party"
+SWE_flag_1940_domo:0 "Fritiof Domo chosen to lead the party"
+SWE_flag_1940_gustaf_andersson:0 "Gustaf Andersson chosen to lead the party"
+SWE_flag_1940_bertil_ohlin:0 "Bertil Ohlin chosen to lead the party"
+SWE_flag_1940_axel:0 "Axel Pehrsson-Bramstorp chosen to lead the party"
+SWE_flag_1940_ekman:0 "Carl Gustaf Ekman is chosen to lead the party"
+
 
 ## Decisions ##
 SWE_claim_scandinavia:0 "Claim Scandinavia"
@@ -1361,6 +1374,14 @@ SWE_paternal_autocrat_party_long:0 "Arméns Fosterlandsvänner\n§LArmy's Homela
 SWE_national_populist_party:0 "SRNS"
 SWE_national_populist_party_long:0 "Svea Rikes Nationella Samlingsparti\n§LNational Unity Party of the Swedish Realm§!"
 
+SWE_authoritarian_democrat_league_party:0 "SNF"
+SWE_authoritarian_democrat_party_league_long:0 "Sveriges Nationella Förbund\n§LSweden's National Federation§!"
+
+SWE_paternal_autocrat_league_party:0 "SNF"
+SWE_paternal_autocrat_league_party_long:0 "Sveriges Nationella Förbund\n§LSweden's National Federation§!"
+
+
+
 
 SWE_authoritarian_democrat_old_party:0 "Riksrådet"
 SWE_authoritarian_democrat_party_old_long:0 "Riksrådet\n§LCouncil of the Realm§!"
@@ -1461,7 +1482,7 @@ TNTswe.1.d:0 "After the hard-fought victory of the German Empire in the Weltkrie
 TNTswe.1.a:0 "The Tysk leviathan seeps into every crack"
 
 TNTswe.2.t:0 "The Political Situation"
-TNTswe.2.d:0 "With her neutrality in the Weltkrieg Sweden has been allowed to maintain a stable political scene compared to the rest of Europe. While the fallen Kingdom of Britain and Republic of France both fell to the hordes of Syndicalists and Russia currently under the leadership of the so-called Social Liberal Kerensky since the ravages of the Russian Civil War. However this apparent stability has not stopped some wayward Swedes from aligning with those considered flung too far outside the political scene. \n\nOn the centre-left are the Farmers’ League, seen as an agrarian and socially liberal party, they enjoy much of their support from the rural farmer base, most commonly found in coalition with the larger leftist parties, it's possible they may be swayed right if the conditions are good. The largest Leftist party, lead by Per Albin Hansson, presiding over the Swedish Social Democratic Workers’ Party which maintains a centre-left to moderate-left political stance, also remaining to adhere to the Monarchy Sweden currently holds. Further left are the Swedish Social Democratic Left Party, a contingent of more Radical social democrats that adhere to many of Per Albin Hansson’s policies bar the question of the Monarchy, seeing it as a symbol of reactionary tradition, believing Sweden can only truly be free when she is a republic. \n\nInspired by those in France and Britain, a syndicalist group calling themselves the Central Organisation of the Workers of Sweden, hope to abolish the monarchy and bring about a syndicalist revolution in Sweden like other syndicalist nations. They share membership with the Left party but are barred from coalition status as they are seen as far too radical. Finally are the splinter parties of the Socialist Party and the Communist Party of Sweden, headed by Nils Flyg and Sven Linderot respectively. Sharing many of the similar policies, due to their small status they are in coalition with each other in the hope of achieving more seats in the Rikstag, while a victory for them is impossible, they may be invited by other factions. \n\nOn the Right is the Peoples’ Party, a classical liberal group seen as a moderate bridge between both the centre right and left, it currently enjoys coalition status with the conservatives. The largest Conservative party is the General Electoral League, currently led by Gösta Bagge, it believes in the ideas of a protectionist economy while maintaining conservative values, adhering close to the Crown of Sweden. Further right resides small scatterings of military cliques and ultra-nationalist paramilitaries, the largest military clique residing around Helge Jung, with his group nicknamed the ‘Jung Junta’. Within the Ultra-nationalist groups preside Archibald Douglas, a leading military figure, Birger Furugård whose policies echo that of the legionnaires throughout Europe, and Elmo Lindholm following a Maurassian system of governance."
+TNTswe.2.d:0 "With her neutrality in the Weltkrieg Sweden has been allowed to maintain a stable political scene compared to the rest of Europe. While the fallen Kingdom of Britain and Republic of France both fell to the hordes of Syndicalists and Russia currently under the leadership of the so-called Social Liberal Kerensky since the ravages of the Russian Civil War. However this apparent stability has not stopped some wayward Swedes from aligning with those considered flung too far outside the political scene. \n\nOn the centre-left are the Farmers’ League, seen as an agrarian and socially liberal party, they enjoy much of their support from the rural farmer base, most commonly found in coalition with the larger leftist parties, it's possible they may be swayed right if the conditions are good. The largest Leftist party, lead by Per Albin Hansson, presiding over the Swedish Social Democratic Workers’ Party which maintains a centre-left to moderate-left political stance, also remaining to adhere to the Monarchy Sweden currently holds. Further left are the Swedish Social Democratic Left Party, a contingent of more Radical social democrats that adhere to many of Per Albin Hansson’s policies bar the question of the Monarchy, seeing it as a symbol of reactionary tradition, believing Sweden can only truly be free when she is a republic. \n\nInspired by those in France and Britain, a syndicalist group calling themselves the Central Organisation of the Workers of Sweden, hope to abolish the monarchy and bring about a syndicalist revolution in Sweden like other syndicalist nations. They share membership with the Left party but are barred from coalition status as they are seen as far too radical. Finally are the splinter parties of the National Syndicalist Party of Sweden and the Communist Party of Sweden, headed by Nils Flyg and Sven Linderot respectively. Sharing many of the similar policies, due to their small status they are in coalition with each other in the hope of achieving more seats in the Rikstag, while a victory for them is impossible, they may be invited by other factions. \n\nOn the Right is the Peoples’ Party, a classical liberal group seen as a moderate bridge between both the centre right and left, it currently enjoys coalition status with the conservatives. The largest Conservative party is the General Electoral League, currently led by Gösta Bagge, it believes in the ideas of a protectionist economy while maintaining conservative values, adhering close to the Crown of Sweden. Further right resides small scatterings of military cliques and ultra-nationalist paramilitaries, the largest military clique residing around Helge Jung, with his group nicknamed the ‘Jung Junta’. Within the Ultra-nationalist groups preside Archibald Douglas, a leading military figure, Birger Furugård whose policies echo that of the legionnaires throughout Europe, and Elmo Lindholm following a Maurassian system of governance.."
 TNTswe.2.a:0 "Stability breads Safety, right?"
 
 TNTswe.3.t:0 "More Intro choice etc"
@@ -1601,7 +1622,123 @@ swedem.22.a:0 "Let Sweden move forward!"
 
 swedem.23.t:0 "Silencing the Syndicalists"
 swedem.23.d:0 "With political tensions rising across Europe and whispers of revolution echoing from abroad, the General Electoral League has taken a hard stance against what it calls 'subversive socialist and syndicalist agitators.' Declaring that the far-left poses a clear and present danger to the Swedish democratic order, the government has enacted sweeping bans on parties ranging from revolutionary socialists to communists. While civil liberties advocates decry the move as authoritarian overreach, conservatives praise it as a necessary measure to preserve peace and stability in the kingdom. No response has yet been recorded from the Internationale, however it is likely they will not approve."
-swedem.23.a:0 "A firm hand secures the nation."
+swedem.23.a:0 "A firm hand secures the nation"
+
+swedem.24.t:0 "National League Of Sweden Grows"
+swedem.24.d:0 ""
+swedem.24.a:0 "Blasted breakaways!"
+swedem.24.b:0 "Suppress their propaganda!"
+
+#### Working on elections ####
+
+sweelect.1.t:0 "Social Democrat Leadership Debate (1940)"
+sweelect.1.d:0 ""
+sweelect.1.a:0 "Hansson maintains leadership!"
+sweelect.1.b:0 "Erlander sweeps the position!"
+
+sweelect.2.t:0 "Conservative Party Leadership Debate (1940)"
+sweelect.2.d:0 ""
+sweelect.2.a:0 "Bagge keeps the ship steady"
+sweelect.2.b:0 "Domo decimates the debate, leading the party!"
+
+sweelect.3.t:0 "Folkpartiet leadership Debate (1940)"
+sweelect.3.d:0 ""
+sweelect.3.a:0 "Bertil rises to the leadership role!"
+
+sweelect.4.t:0 "Bondeförbundet Leadership Debate (1940)"
+sweelect.4.d:0 ""
+sweelect.4.a:0 "Pehrsson-Bramstorp leads the Farmer's League!"
+
+sweelect.5.t:0 "Swedish 1940 elections"
+sweelect.5.d:0 ""
+sweelect.5.a:0 "The Social Democrats win!"
+sweelect.5.b:0 "The Conservatives grab hold of victory!"
+sweelect.5.c:0 "The Folkpartiet is voted in!"
+sweelect.5.e:0 "Surprissingly, the Farmer's League secure victory!"
+
+sweelect.6.t:0 "socdem coalition"
+sweelect.6.d:0 ""
+sweelect.6.a:0 "The Farmer's league are our closest ally!"
+sweelect.6.b:0 "A centre-Left alliance shall aid Sweden!"
+
+sweelect.7.t:0 "soccon coalition"
+sweelect.7.d:0 ""
+sweelect.7.a:0 "The Folkpartiet shall join our side once more!"
+sweelect.7.b:0 "A Centre-Right alliance shall lead Sweden!"
+sweelect.7.c:0 "The newly made National League of Sweden shall be our ally!"
+
+sweelect.8.t:0 "marlib coalition"
+sweelect.8.d:0 ""
+sweelect.8.a:0 "The Conservatives shall join us!"
+sweelect.8.b:0 "A true Centre alliance with the Farmer's League!"
+
+sweelect.9.t:0 "soclib coalition"
+sweelect.9.d:0 ""
+sweelect.9.a:0 "The Social Democrats are our natural allies!"
+sweelect.9.b:0 "A true Centre alliance with the Folkpartiet!"
+
+sweelect.10.t:0 "Social Democrat Leadership Debate (1944)"
+sweelect.10.d:0 ""
+sweelect.10.a:0 "Hansson maintains leadership!"
+sweelect.10.b:0 "Erlander sweeps the position!"
+
+sweelect.11.t:0 "conservative leaders 2"
+sweelect.11.d:0 ""
+sweelect.11.a:0 ""
+
+swedem.35.t:0 "folkpartiet leaders 2"
+swedem.35.d:0 ""
+swedem.35.a:0 ""
+
+swedem.36.t:0 "soclib leaders 2"
+swedem.36.d:0 ""
+swedem.36.a:0 ""
+
+swedem.37.t:0 "1944 elections"
+swedem.37.d:0 ""
+swedem.37.a:0 ""
+
+swedem.38.t:0 "socdem coalition 2"
+swedem.38.d:0 ""
+swedem.38.a:0 ""
+
+swedem.39.t:0 "conservative coalition 2"
+swedem.39.d:0 ""
+swedem.39.a:0 ""
+
+swedem.40.t:0 "Folkpartiet coalition 2"
+swedem.40.d:0 ""
+swedem.40.a:0 ""
+
+swedem.41.t:0 "soclib coalition 2"
+swedem.41.d:0 ""
+swedem.41.a:0 ""
+
+swedem.42.t:0 "socdem leaders 3"
+swedem.42.d:0 ""
+swedem.42.a:0 ""
+
+swedem.43.t:0 "conservatives leaders 3"
+swedem.43.d:0 ""
+swedem.43.a:0 ""
+
+swedem.44.t:0 "marlib leaders 3"
+swedem.44.d:0 ""
+swedem.44.a:0 ""
+
+swedem.45.t:0 "soclib leaders 3"
+swedem.45.d:0 ""
+swedem.45.a:0 ""
+
+swedem.46.t:0 "socdem leaders 4"
+swedem.46.d:0 ""
+swedem.46.a:0 ""
+
+swedem.47.t:0 "conservative leaders 4"
+swedem.47.d:0 ""
+swedem.47.a:0 ""
+
+
 
 
 
