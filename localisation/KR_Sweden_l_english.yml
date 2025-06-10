@@ -1631,33 +1631,35 @@ swedem.24.b:0 "Suppress their propaganda!"
 
 #### Working on elections ####
 
-sweelect.1.t:0 "Social Democrat Leadership Debate (1940)"
-sweelect.1.d:0 ""
+sweelect.1.t:0 "The Social Democratic Leadership Debate"
+sweelect.1.d:0 "With the elections fast approaching, the Social Democrats must come to a decision, who shall lead the party? Hansson remains the most obvious candidate, skilled in both Rikstag debates and a talented statesman; his current leadership over the party has proved fruitful. However, another candidate, that of Tage Erlander. 15 years Hanssons junior, Erlander represents a younger face in the party, still a strong advocate for the party's model of Folkhemmet welfare. The choice is voted upon, with a clear winner being decided upon."
 sweelect.1.a:0 "Hansson maintains leadership!"
 sweelect.1.b:0 "Erlander sweeps the position!"
 
-sweelect.2.t:0 "Conservative Party Leadership Debate (1940)"
-sweelect.2.d:0 ""
+sweelect.2.t:0 "The Conservatives Congregate"
+sweelect.2.d:0 "The Conservative party recently has gone about a name change, once the Electoral League, the party has since been renamed as the National Organisation of the Right. Even with this, the basis of the party has changed little, and currently Gosta Bagge heads it. Today, the party has congregated to vote on who shall lead them in the upcoming election. Gosta Bagge, formerly endorsed by the famed Arvid Lindman, seems to be the most likely candidate. Maintaining the party’s corporate ideals and traditional conservatism. The only other candidate to arise, is the lesser known Fritiof Domö, only a few years younger than Bagge, he shows a younger yet relatively the same face of the party. With the only other candidate Martin Skoglund refusing to run for Prime ministership, it now remains to be seen if the party will decide on Bagge or Domö."
 sweelect.2.a:0 "Bagge keeps the ship steady"
-sweelect.2.b:0 "Domo decimates the debate, leading the party!"
+sweelect.2.b:0 "Domö decimates the debate, leading the party!"
 
-sweelect.3.t:0 "Folkpartiet leadership Debate (1940)"
-sweelect.3.d:0 ""
-sweelect.3.a:0 "Bertil rises to the leadership role!"
+sweelect.3.t:0 "Folkpartiet leadership Debate"
+sweelect.3.d:0 "With the 1940 elections soon approaching, a debate on who shall lead the Folkpartiet has arisen once again. Gustaf has served the party well, maintaining and controlling his role with confidence, some within the party insist on Bertil Ohlin taking the party's reins. Once more, a decision comes between the older and more experienced Andersson, or the younger and more energetic Ohlin?"
+sweelect.3.a:0 "Gustaf Andersson keeps the people’s confidence!"
+sweelect.3.b:0 "Bertil rises to the leadership role!"
 
 sweelect.4.t:0 "Bondeförbundet Leadership Debate (1940)"
-sweelect.4.d:0 ""
+sweelect.4.d:0 "While many other parties quickly decide on who shall represent them and lead the nation should they find success, Pehrsson-Bramstorp sits comfortably in his seat as leader of the Farmer’s League. Enjoying the benefits of coalition allow for them to avoid direct leadership, while ensuring many of their own policies get implemented. This next election is unlikely to shift this flow, surely such a party couldn’t reach a near majority alone. Surely?"
 sweelect.4.a:0 "Pehrsson-Bramstorp leads the Farmer's League!"
 
 sweelect.5.t:0 "Swedish 1940 elections"
-sweelect.5.d:0 ""
+sweelect.5.d:0 "Once more unto the breach, as Summer settles and the cold breeze of distant winter draws closer, Swedes rush to the ballot boxes once more. With primary candidates for each party decided upon, a clear excitement is felt amongst each party, with a hope for an electoral victory. Many see the Social democrats as near assured winners, while conservatives cling to the hope of a victory by even the smallest margin. The Folkpartiet enjoy the liberty of knowing that if either major party is elected, they have a chance at coalition, same alongside the Farmer’s league. While such an election is believed to go smoothly, another minor party of upstarts, the National League of Sweden, headed by the nationalist Elmo Lindholm, also hopes to secure victory. Espousing deep patriotism for the country, public expressions of anti-semetism and general disdain for the political left, a victory for them is highly unlikely."
 sweelect.5.a:0 "The Social Democrats win!"
 sweelect.5.b:0 "The Conservatives grab hold of victory!"
 sweelect.5.c:0 "The Folkpartiet is voted in!"
-sweelect.5.e:0 "Surprissingly, the Farmer's League secure victory!"
+sweelect.5.e:0 "Shocking even themselves, the Farmer’s league wins a majority!"
+sweelect.5.f:0 "Insanity! The National League of Sweden has won!"
 
-sweelect.6.t:0 "socdem coalition"
-sweelect.6.d:0 ""
+sweelect.6.t:0 "Anointed a Majority in the Rikstag"
+sweelect.6.d:0 "With our victory over the Rikstag secured, we must now go about consolidating our alliances and coalition partners. The most obvious being the centre-left Farmer’s league, despite their leaders' somewhat minor rivalry with our own, together we would be able to aid Sweden to the best of our abilities. Our other option is to extend the coalition invitation to both of the centrist parties, not just the Farmer’s league but the Folkpartiet too. While such an alliance would grant us a near unlimited majority in the Rikstag, it would require lots of leeway and concessions with our allies."
 sweelect.6.a:0 "The Farmer's league are our closest ally!"
 sweelect.6.b:0 "A centre-Left alliance shall aid Sweden!"
 
