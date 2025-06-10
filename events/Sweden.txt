@@ -1995,17 +1995,50 @@ country_event = { ####silence syndies GEL ##LS##
 	}
 }
 
-country_event = { ####national league form ##LS##
+country_event = { ####military steps down ##LS##
 	id = swedem.24
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.24" }
 	title = swedem.24.t
 	desc = swedem.24.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_army_retires
 
 	is_triggered_only = yes
 
 	option = { #kept
 		name = swedem.24.a
+		add_political_power = 30
+		increase_ruling_party_popularity_by_2 = yes
+		
+		random_unit_leader = {
+			limit = { has_id = 1008 } #CdG
+			promote_leader = yes
+		}	
+
+		random_unit_leader = { 
+			limit = { has_id = 1001 }
+			remove_unit_leader = yes
+		}
+		hidden_effect = {
+
+			country_event = { id = swedem.25 days = 45 }
+
+		}			
+	
+	}
+}	
+
+
+country_event = { ####national league form ##LS##
+	id = swedem.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.25" }
+	title = swedem.25.t
+	desc = swedem.25.d
+	picture = GFX_report_event_SWE_elmo_book
+
+	is_triggered_only = yes
+
+	option = { #kept
+		name = swedem.25.a
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }
 		add_political_power = -5
 		add_stability = -0.01
@@ -2023,7 +2056,7 @@ country_event = { ####national league form ##LS##
 	}
 	
 	option = { #banned
-		name = swedem.24.b
+		name = swedem.25.b
 		set_country_flag = SWE_flag_national_league_banned
 		add_popularity = { ideology = paternal_autocrat popularity = 0.01 }
 		add_political_power = 10
@@ -2034,7 +2067,6 @@ country_event = { ####national league form ##LS##
 		}		
 	}	
 }
-
 
 ##### Election and primary Events ######
 
@@ -2215,6 +2247,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		add_ideas = SWE_Karl_Schlyter_sec_sde
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
+			country_event = { id = swedem.24 days = 300 }
 			country_event = { id = newsswe.1 days = 1 }
 		}
 	}
@@ -2296,6 +2329,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		add_marlib_to_coalition = yes	
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
+			country_event = { id = swedem.24 days = 300 }
 			country_event = { id = newsswe.1 days = 1 }
 		}		
 	}
@@ -2376,6 +2410,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		add_ideas = SWE_Thorwald_Bergquist_sec_mli
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
+			country_event = { id = swedem.24 days = 300 }
 			country_event = { id = newsswe.1 days = 1 }
 		}		
 		}
@@ -2428,7 +2463,7 @@ country_event = { #### SOCDEM leader
 		}
 	title = sweelect.1.t
 	desc = sweelect.1.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_Hansson
 	fire_only_once = yes
 
 	trigger = {
@@ -2479,7 +2514,7 @@ country_event = { #### SOCCON leader
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sweelect.2" }
 	title = sweelect.2.t
 	desc = sweelect.2.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_SocCon_Cabinet
 
 	immediate = {
 		hidden_effect = {
@@ -2575,7 +2610,7 @@ country_event = { #### SOCLIB leader
 		}
 	title = sweelect.4.t
 	desc = sweelect.4.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_Elections
 		
 	trigger = {
 		OR = {
@@ -2609,7 +2644,7 @@ country_event = { #### Election and leader events
 		}
 	title = sweelect.5.t
 	desc = sweelect.5.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_Elections
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -2771,7 +2806,7 @@ country_event = { #### socdem coalition
 		}
 	title = sweelect.6.t
 	desc = sweelect.6.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_socdem_cabinet
 		
 	trigger = {
 		OR = {
@@ -2812,7 +2847,7 @@ country_event = { #### soccon coalition
 		}
 	title = sweelect.7.t
 	desc = sweelect.7.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_SocCon_Cabinet
 		
 	trigger = {
 		OR = {
@@ -2863,7 +2898,7 @@ country_event = { #### marlib coalition
 		}
 	title = sweelect.8.t
 	desc = sweelect.8.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_DEN_farm
 		
 	trigger = {
 		OR = {
@@ -2900,7 +2935,7 @@ country_event = { #### soclib coalition
 		}
 	title = sweelect.9.t
 	desc = sweelect.9.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_men_reading
 		
 	trigger = {
 		OR = {
@@ -7795,6 +7830,44 @@ country_event = { #Shakirah flavour! Swedes in merica before 2CW
 	}
 
 }
+
+country_event = { #Train crash
+	id = swe_flavor.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swe_flavor.25" }
+	title = swe_flavor.25.t
+	desc = swe_flavor.25.d
+	picture = GFX_report_event_SWE_train_accident
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = swe_flavor.25.a
+		add_manpower = -3
+		add_stability = -0.01
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###News Events 
 

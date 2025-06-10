@@ -144,8 +144,35 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_SWE_kingly_items"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_kingly_items.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_army_retires"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_army_retires.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_SWE_elmo_book"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_elmo_book.png"
 	}
-	
+	spriteType = {
+		name = "GFX_report_event_SWE_men_reading"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_men_reading.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_marching_band"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_marching_band.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_train_accident"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_train_accident.png"
+	}
+
+
+
+
+
+
+
+
 
 	### GENERIC PICS
 	spriteType = {

@@ -1624,10 +1624,14 @@ swedem.23.t:0 "Silencing the Syndicalists"
 swedem.23.d:0 "With political tensions rising across Europe and whispers of revolution echoing from abroad, the General Electoral League has taken a hard stance against what it calls 'subversive socialist and syndicalist agitators.' Declaring that the far-left poses a clear and present danger to the Swedish democratic order, the government has enacted sweeping bans on parties ranging from revolutionary socialists to communists. While civil liberties advocates decry the move as authoritarian overreach, conservatives praise it as a necessary measure to preserve peace and stability in the kingdom. No response has yet been recorded from the Internationale, however it is likely they will not approve."
 swedem.23.a:0 "A firm hand secures the nation"
 
-swedem.24.t:0 "National League Of Sweden Grows"
-swedem.24.d:0 ""
-swedem.24.a:0 "Blasted breakaways!"
-swedem.24.b:0 "Suppress their propaganda!"
+swedem.24.t:0 "The Military Retires from Politics"
+swedem.24.d:0 "Following the SSV's inability to enter mainstream Swedish politics, as well as assurances from the SAP that they hate syndicalists just as much as they do, the 'Junta' has dissolved. With the government focused on increasing military spending and greater expansion, all the things Jung and his fellow compatriots asked for are gradually becoming reality. New fighters are being designed, new ships are planned, military industry is being built near and far, and the government is just hawkish enough to sate the appetites of the more radical members of the 'junta'. As such, after a meeting with fellow officers and members of high society, Jung declares his full support to the governments endeavours. \n\nFor his hard work, the government has already earmarked Jung for the position of Supreme Commander, with the rifts in the army now only a memory. "
+swedem.24.a:0 "All's well that ends well"
+
+swedem.25.t:0 "National League Of Sweden Grows"
+swedem.25.d:0 ""
+swedem.25.a:0 "Blasted breakaways!"
+swedem.25.b:0 "Suppress their propaganda!"
 
 #### Working on elections ####
 
@@ -2912,6 +2916,9 @@ swe_flavor.23.t:0 "Greetings from Karelia!"
 swe_flavor.23.d:0 "Kirunasvenskarna, the Kiruna Swedes as the local media calls the missing destitute, have been found. A steady trickle of letters have arrived back in Sweden, sent from a few villages in Karelia, and the commission tasked with the investigation verify the claims made within. \n\nSome of the letters contain money, but all contain well wishes and information about how they are living well, or at least better than before. The unskilled labourers became employed by the government to build roads from a village called Ukhtah all the way to Kem, whereas those skilled in mining ended up employed in Hibinogorsk, some distance from Murmansk, all receiving their pay and promised privileges. Although it's not exactly a utopia, the commission is content to simply label the entire affair a benign emigration, not entirely unlike that to the Americas."
 swe_flavor.23.a:0 "Hibino-whatnow?"
 
+swe_flavor.25.t:0 "Gubbero Rail Accident"
+swe_flavor.25.d:0 "In  a shocking accident, a train travelling along the Gubbero rail has crashed. The causes and reasons for such an event are currently unknown, however what is known is that the incident has cost the lives of a few. Now described as the worst railway incident in Swedish history, the nation reels in shock at such a catastrophe."
+swe_flavor.25.a:0 "What a tragedy"
 
 ### TO BE REVISED STUFF ###
 
