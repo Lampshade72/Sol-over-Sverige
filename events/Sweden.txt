@@ -2791,6 +2791,7 @@ country_event = { #### Election and leader events
 		add_ideas = SWE_Sven_Hedin_for_ade
 		add_ideas = SWE_Per_Engdahl_eco_pau
 		add_ideas = SWE_Alf_Meyerhoffer_sec_pau
+		set_country_flag = SWE_flag_1940_national_league_victory
 	
 		}
 			
@@ -3163,7 +3164,7 @@ country_event = { #### authdem further cement political roots
 			has_government = social_conservative
 		}
 		NOT = {
-			SWE_flag_national_league_banned
+			has_country_flag = SWE_flag_national_league_banned
 		}
 		
 	}		
@@ -3343,9 +3344,187 @@ country_event = { #### Election and leader events
 	
 		}
 			
+}	
+
+
+country_event = { #### socdem coalition
+	id = sweelect.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.16"
+
+		}
+	title = sweelect.16.t
+	desc = sweelect.16.d
+	picture = GFX_report_event_SWE_socdem_cabinet
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #soclib
+		name = sweelect.16.a
+		add_soclib_to_coalition = yes
+		add_popularity = { ideology = social_liberal popularity = 0.04 }
+		add_political_power = 5
+			
 	}	
+	
+	option = { #all lib
+		name = sweelect.16.b
+		add_soclib_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_popularity = { ideology = market_liberal popularity = 0.02 }
+		add_political_power = 15
+			
+	}	
+}
 
+country_event = { #### soccon coalition
+	id = sweelect.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.17"
 
+		}
+	title = sweelect.17.t
+	desc = sweelect.17.d
+	picture = GFX_report_event_SWE_SocCon_Cabinet
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #marlib
+		name = sweelect.17.a
+		add_marlib_to_coalition = yes
+		add_popularity = { ideology = market_liberal popularity = 0.04 }
+		add_political_power = 5
+			
+	}	
+	
+	option = { #all lib
+		name = sweelect.17.b
+		add_soclib_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_popularity = { ideology = market_liberal popularity = 0.02 }
+		add_political_power = 15
+			
+	}	
+	
+	option = { #authdem
+		name = sweelect.17.c
+		trigger = {
+			NOT = {
+			 has_country_flag = SWE_flag_national_league_banned
+			}
+		}
+		add_authdem_to_coalition = yes
+		add_popularity = { ideology = social_conservative popularity = -0.02 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.07 }
+		
+			if = { 
+				limit = { 
+					has_country_flag = SWE_flag_1940_national_league_victory
+					}
+				add_political_power = 30
+				add_stability = 0.02
+			} else = {
+		add_political_power = -10
+		add_stability = -0.02
+			}
+	}	
+}
+
+country_event = { #### marlib coalition
+	id = sweelect.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.18"
+
+		}
+	title = sweelect.18.t
+	desc = sweelect.18.d
+	picture = GFX_report_event_DEN_farm
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #soccon
+		name = sweelect.18.a
+		add_soccon_to_coalition = yes
+		add_popularity = { ideology = social_conservative popularity = 0.04 }
+			
+	}	
+	
+	option = { #soclib
+		name = sweelect.18.b
+		add_soclib_to_coalition = yes
+		add_popularity = { ideology = social_liberal popularity = 0.03 }
+			
+	}	
+}
+
+country_event = { #### soclib coalition
+	id = sweelect.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.19"
+
+		}
+	title = sweelect.19.t
+	desc = sweelect.19.d
+	picture = GFX_report_event_SWE_men_reading
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #socdem
+		name = sweelect.19.a
+		add_socdem_to_coalition = yes
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+			
+	}	
+	
+	option = { #marlib
+		name = sweelect.19.b
+		add_marlib_to_coalition = yes
+		add_popularity = { ideology = market_liberal popularity = 0.07 }
+			
+	}	
+}
 
 
 
