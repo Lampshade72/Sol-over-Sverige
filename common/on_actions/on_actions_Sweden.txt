@@ -26,6 +26,7 @@ on_actions = {
 				limit = { tag = SWE }
 				country_event = { id = swe.8 }
 				country_event = { id = sweelect.5 }
+				country_event = { id = sweelect.15 }
 			}
 		}
 	}

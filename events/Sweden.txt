@@ -2990,7 +2990,10 @@ country_event = { #### SOCDEM leader
 
 	immediate = {
 		hidden_effect = {
-
+			country_event = {
+				id = sweelect.11
+				days = 6
+			}
 		}
 	}
 
@@ -3003,7 +3006,7 @@ country_event = { #### SOCDEM leader
 			}
 		add_popularity = { ideology = social_democrat popularity = 0.02 }
 
-		set_country_flag = SWE_flag_1940_hansson
+		set_country_flag = SWE_flag_1944_hansson
 			
 	}
 	
@@ -3011,20 +3014,336 @@ country_event = { #### SOCDEM leader
 		name = sweelect.10.b
 		add_popularity = { ideology = social_democrat popularity = 0.01 }
 
-		set_country_flag = SWE_flag_1940_erlander
+		set_country_flag = SWE_flag_1944_erlander
 		
+	}	
+}
+
+country_event = { #### SOCCON leader
+	id = sweelect.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sweelect.11" }
+	title = sweelect.11.t
+	desc = sweelect.11.d
+	picture = GFX_report_event_SWE_SocCon_Cabinet
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sweelect.12
+				days = 6
+			}
+		}
+	}
+
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Bagge retains
+		name = sweelect.11.a
+
+		add_popularity = { ideology = social_conservative popularity = 0.02 }
+
+		set_country_flag = SWE_flag_1944_bagge
+			
+	}
+	
+	option = { #Domo doms
+		name = sweelect.11.b
+		add_popularity = { ideology = social_conservative popularity = 0.01 }
+
+		set_country_flag = SWE_flag_1944_domo
+		
+	}	
+}
+
+
+country_event = { #### MARLIB leader
+	id = sweelect.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.12"
+
+		}
+	title = sweelect.12.t
+	desc = sweelect.12.d
+	picture = GFX_report_event_SWE_Folkpartiet
+
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sweelect.13
+				days = 5
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes 
+
+	option = { #andersson
+		name = sweelect.12.a
+		add_popularity = { ideology = market_liberal popularity = 0.01 }
+		set_country_flag = SWE_flag_1944_gustaf_andersson
+			
+	}
+
+	option = { #Bertil
+		name = sweelect.12.b
+		add_popularity = { ideology = market_liberal popularity = 0.01 }
+		set_country_flag = SWE_flag_1944_bertil_ohlin
+			
+	}
+	
+}
+
+country_event = { #### SOCLIB leader
+	id = sweelect.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.13"
+
+		}
+	title = sweelect.13.t
+	desc = sweelect.13.d
+	picture = GFX_report_event_SWE_Elections
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Axel
+		name = sweelect.13.a
+
+		add_popularity = { ideology = social_liberal popularity = 0.01 }
+		add_political_power = 5
+		set_country_flag = SWE_flag_1944_axel
+			
+	}	
+}
+
+country_event = { #### authdem further cement political roots
+	id = sweelect.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.14"
+
+		}
+	title = sweelect.14.t
+	desc = sweelect.14.d
+	picture = GFX_report_event_SWE_Elections
+		
+	trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_conservative
+		}
+		NOT = {
+			SWE_flag_national_league_banned
+		}
+		
+	}		
+		
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #elmo here
+		name = sweelect.14.a
+
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
+		add_political_power = -5
+			
 	}	
 }
 
 
 
 
+country_event = { #### Election and leader events
+	id = sweelect.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event sweelect.15"
+		hidden_effect = {
+			remove_all_ministers = yes
+			}
+		}
+	title = sweelect.15.t
+	desc = sweelect.15.d
+	picture = GFX_report_event_SWE_Elections
 
+	is_triggered_only = yes
+	fire_only_once = yes
 
+	option = { #Social Democrats win
+		name = sweelect.15.a
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
+		hidden_effect = {
+			country_event = {
+				id = sweelect.6
+				days = 2
+			}		
+			if = {
+				limit = { 
+					has_country_flag = SWE_flag_1944_hansson
+				}
+				add_ideas = SWE_Per_Albin_Hansson_hog_sde
+				add_ideas = SWE_J_Rickard_Sandler_for_sde
+				add_ideas = SWE_Per_Edvin_Skold_eco_sde
+				add_ideas = SWE_Karl_Schlyter_sec_sde
+			}
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1944_erlander
+				}
+				add_ideas = SWE_Tage_Erlander_hog_sde
+				add_ideas = SWE_J_Rickard_Sandler_for_sde
+				add_ideas = SWE_Per_Edvin_Skold_eco_sde
+				add_ideas = SWE_Karl_Schlyter_sec_sde
+			}
+		}	
+	}
+	
+	option = { #Conservatives Win 
+		name = sweelect.15.b
+		add_popularity = { ideology = social_conservative popularity = 0.08 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_conservative elections_allowed = yes }		
+		hidden_effect = { 
+			country_event = {
+				id = sweelect.7
+				days = 2
+			}		
+			if = {
+				limit = { 
+					has_country_flag = SWE_flag_1944_bagge
+				}
+				add_ideas = SWE_Goesta_Bagge_hog_sco
+				add_ideas = SWE_Christian_Guenther_for_sco
+				add_ideas = SWE_Arthur_Heiding_eco_sli
+				add_ideas = SWE_Knut_Ewerloef_sec_sco
+				add_marlib_to_coalition = yes
+			}
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1944_domo
+				}
+				add_ideas = SWE_Fritiof_Domoe_hog_sco
+				add_ideas = SWE_Christian_Guenther_for_sco
+				add_ideas = SWE_Arthur_Heiding_eco_sli
+				add_ideas = SWE_Knut_Ewerloef_sec_sco
+				add_marlib_to_coalition = yes
+			}
+		}		
+		
+	}
+	
+	option = { #Folkpartiet win 
+		name = sweelect.15.c
+		add_popularity = { ideology = market_liberal popularity = 0.08 }
+		add_political_power = 5
+		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
+		hidden_effect = {
+			country_event = {
+				id = sweelect.8
+				days = 2
+			}	
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1944_gustaf_andersson
+				}
+				
+				add_ideas = SWE_Gustaf_Andersson_hog_mli
+				add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
+				add_ideas = SWE_Gustav_Cassel_eco_mli
+				add_ideas = SWE_Thorwald_Bergquist_sec_mli
+				
+			}
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1944_bertil_ohlin
+				}
+				
+				add_ideas = SWE_Bertil_Ohlin_hog_mli
+				add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
+				add_ideas = SWE_Gustav_Cassel_eco_mli
+				add_ideas = SWE_Thorwald_Bergquist_sec_mli
 
+			}
+		}		
+			
+	}
+	
+	option = { #Bondeförbundet win 
+		name = sweelect.15.e
+		trigger = {
+			OR = {
+			has_government = social_democrat
+			has_government = market_liberal
+			}		
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.08 }
+		set_politics = { ruling_party = social_liberal elections_allowed = yes }		
+		hidden_effect = {
+			country_event = {
+				id = sweelect.9
+				days = 2
+			}		
+		add_ideas = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_for_sli
+		add_ideas = SWE_Arthur_Heiding_eco_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_sec_sli		
+		}
+			
+	}	
 
-
-
+	option = { #National League victory
+		name = sweelect.15.f
+		trigger = {
+			NOT = {
+				has_country_flag = SWE_flag_national_league_banned
+			}
+		}
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }		
+		set_country_leader_ideology = authdem_national_conservative_subtype
+		
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.09 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
+		add_pataut_to_coalition = yes
+		
+		add_ideas = SWE_Elmo_Lindholm_hog_npo
+		add_ideas = SWE_Sven_Hedin_for_ade
+		add_ideas = SWE_Per_Engdahl_eco_pau
+		add_ideas = SWE_Alf_Meyerhoffer_sec_pau
+	
+		}
+			
+	}	
 
 
 

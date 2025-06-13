@@ -1250,6 +1250,15 @@ SWE_flag_1940_bertil_ohlin:0 "Bertil Ohlin chosen to lead the party"
 SWE_flag_1940_axel:0 "Axel Pehrsson-Bramstorp chosen to lead the party"
 SWE_flag_1940_ekman:0 "Carl Gustaf Ekman is chosen to lead the party"
 
+SWE_flag_1944_hansson:0 "Hansson chosen to lead the party"
+SWE_flag_1944_erlander:0 "Erlander chosen to lead the party"
+SWE_flag_1944_bagge:0 "Gosta Bagge chosen to lead the party"
+SWE_flag_1944_domo:0 "Fritiof Domo chosen to lead the party"
+SWE_flag_1944_gustaf_andersson:0 "Gustaf Andersson chosen to lead the party"
+SWE_flag_1944_bertil_ohlin:0 "Bertil Ohlin chosen to lead the party"
+SWE_flag_1944_axel:0 "Axel Pehrsson-Bramstorp chosen to lead the party"
+SWE_flag_1944_ekman:0 "Carl Gustaf Ekman is chosen to lead the party"
+
 
 ## Decisions ##
 SWE_claim_scandinavia:0 "Claim Scandinavia"
@@ -2917,7 +2926,7 @@ swe_flavor.23.d:0 "Kirunasvenskarna, the Kiruna Swedes as the local media calls 
 swe_flavor.23.a:0 "Hibino-whatnow?"
 
 swe_flavor.25.t:0 "Gubbero Rail Accident"
-swe_flavor.25.d:0 "In  a shocking accident, a train travelling along the Gubbero rail has crashed. The causes and reasons for such an event are currently unknown, however what is known is that the incident has cost the lives of a few. Now described as the worst railway incident in Swedish history, the nation reels in shock at such a catastrophe."
+swe_flavor.25.d:0 "In a shocking accident, a train travelling along the Gubbero rail has crashed. The causes and reasons for such an event are currently unknown, however what is known is that the incident has cost the lives of a few. Now described as the worst railway incident in Swedish history, the nation reels in shock at such a catastrophe."
 swe_flavor.25.a:0 "What a tragedy"
 
 ### TO BE REVISED STUFF ###
