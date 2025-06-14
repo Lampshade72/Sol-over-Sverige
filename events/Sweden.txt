@@ -2701,6 +2701,7 @@ country_event = { #### Election and leader events
 	picture = GFX_report_event_SWE_Elections
 
 	trigger = { 
+		has_socialist_government = no	
 		tag = SWE
 		date > 1940.9.1
 		has_country_flag = SWE_election_safe_success
@@ -3258,6 +3259,7 @@ country_event = { #### Election and leader events
 	picture = GFX_report_event_SWE_Elections
 
 	trigger = { 
+		has_socialist_government = no
 		tag = SWE
 		date > 1944.9.1
 		has_country_flag = SWE_election_safe_success
@@ -7444,7 +7446,7 @@ country_event = { #[GetYear] Swedish General Elections ##Needs rework
 
 	trigger = {
 		has_socialist_government = no
-		date > 1937.1.1
+		date > 1944.1.1
 	}
 
 	option = { #The Social Democrats are victorious
