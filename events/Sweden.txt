@@ -2700,6 +2700,12 @@ country_event = { #### Election and leader events
 	desc = sweelect.5.d
 	picture = GFX_report_event_SWE_Elections
 
+	trigger = { 
+		tag = SWE
+		date > 1940.9.1
+		has_country_flag = SWE_election_safe_success
+	}
+
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -3250,6 +3256,12 @@ country_event = { #### Election and leader events
 	title = sweelect.15.t
 	desc = sweelect.15.d
 	picture = GFX_report_event_SWE_Elections
+
+	trigger = { 
+		tag = SWE
+		date > 1944.9.1
+		has_country_flag = SWE_election_safe_success
+	}
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -7422,10 +7434,7 @@ country_event = { #[GetYear] Swedish General Elections ##Needs rework
 	id = swe.55
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event swe.55"
-		hidden_effect = {
-			remove_ideas = SWE_idea_unity_cabinet
 
-		}
 	}
 	title = swe.55.t
 	desc = swe.55.d
@@ -7442,34 +7451,47 @@ country_event = { #[GetYear] Swedish General Elections ##Needs rework
 		name = swe.55.a
 		ai_chance = { factor = 65 }
 		add_popularity = { ideology = social_democrat popularity = 0.08 }
-		country_event = { id = swe.56 days = 7 }
+		set_politics = { ruling_party = social_democrat elections_allowed = yes }
 	}
 
 	option = { #The Conservatives are victorious 
 		name = swe.55.b
 		ai_chance = { factor = 35 }
 		add_popularity = { ideology = social_conservative popularity = 0.08 }
-		
-		country_event = { id = swe.57 days = 7 }
+		set_politics = { ruling_party = social_conservative elections_allowed = yes }		
+
 	}
 
 	option = { #marlibs victorious 
 		name = swe.55.c
 		ai_chance = { factor = 65 }
+		set_politics = { ruling_party = market_liberal elections_allowed = yes }
 		add_popularity = { ideology = market_liberal popularity = 0.08 }
-		country_event = { id = swe.58 days = 7 }
+
 	}
 
 	option = { #The soclibs are victorious
 		name = swe.55.e
 		ai_chance = { factor = 35 }
-		trigger = {
-			has_government = social_democrat
-		}
+
 		add_popularity = { ideology = social_liberal popularity = 0.08 }
-		add_stability = -0.03
-		country_event = { id = swe.59 days = 7 }
+		set_politics = { ruling_party = social_liberal elections_allowed = yes }
+
 	}
+	
+	option = { #The authdem victorious
+		name = swe.55.e
+		ai_chance = { factor = 35 }
+		trigger = {
+			NOT = {
+				has_country_flag = SWE_flag_national_league_banned
+			}
+		}
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.08 }
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }
+
+
+	}	
 }
 
 country_event = { #The social democrats form a government #Change to socdem leader choice
