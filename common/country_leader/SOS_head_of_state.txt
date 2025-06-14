@@ -121,13 +121,13 @@ leader_traits = {
 		stability_factor = 0.05
 		war_support_factor = -0.05
 		industrial_capacity_factory = 0.05
-		social_democrat = 0.01
+		radical_socialist = 0.01
 		totalist_drift = 0.01
 	}	
 
 	SWE_lindholm_trait = {
 		random = no
-		political_advisor_cost_factor = 0.05
+		political_power_factor = 0.1 = 0.05
 		justify_war_goal_time = -0.25
 		ai_focus_aggressive_factor = 0.5
 		war_stability_factor = 0.05
