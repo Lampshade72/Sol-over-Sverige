@@ -1538,7 +1538,7 @@ country_event = { #Embracing Kiaser ##LS##
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swe.9999" }
 	title = TNTswe.4.t
 	desc = TNTswe.4.d
-	picture = GFX_report_event_generic_conference4
+	picture = GFX_report_event_generic_conference3
 
 	is_triggered_only = yes
 
@@ -2122,6 +2122,28 @@ country_event = { ####unity cabinet
 	}	
 }
 
+
+country_event = { ####Kilbom rejoins the social democrats
+	id = swedem.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.27" }
+	title = swedem.27.t
+	desc = swedem.27.d
+	picture = GFX_report_event_SWE_kilbom_socdem
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = swedem.27.a
+		add_political_power = 15
+		add_popularity = { ideology = social_democrat popularity = 0.03 }
+		add_popularity = { ideology = radical_socialist popularity = -0.04 }
+		
+	
+	}
+		
+}
+
 ##### Election and primary Events ######
 
 
@@ -2302,6 +2324,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
+			country_event = { id = swedem.27 days = 650 }
 			country_event = { id = newsswe.1 days = 1 }
 		}
 	}
@@ -2384,6 +2407,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
+			country_event = { id = swedem.27 days = 650 }
 			country_event = { id = newsswe.1 days = 1 }
 		}		
 	}
@@ -2465,6 +2489,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
+			country_event = { id = swedem.27 days = 650 }			
 			country_event = { id = newsswe.1 days = 1 }
 		}		
 		}
@@ -2561,6 +2586,15 @@ country_event = { #### SOCDEM leader
 		set_country_flag = SWE_flag_1940_erlander
 		
 	}	
+	
+	option = { #Karl Kilbom
+		name = sweelect.1.c
+		add_popularity = { ideology = social_democrat popularity = -0.01 }
+		add_political_power = -5
+
+		set_country_flag = SWE_flag_1940_karl_kilbom
+		
+	}	
 }
 
 country_event = { #### SOCCON leader
@@ -2617,7 +2651,7 @@ country_event = { #### MARLIB leader
 		}
 	title = sweelect.3.t
 	desc = sweelect.3.d
-	picture = GFX_report_event_SWE_Folkpartiet
+	picture = GFX_report_event_SWE_folkpartiet_again
 
 	trigger = {
 		OR = {
@@ -2664,7 +2698,7 @@ country_event = { #### SOCLIB leader
 		}
 	title = sweelect.4.t
 	desc = sweelect.4.d
-	picture = GFX_report_event_SWE_Elections
+	picture = GFX_report_event_SWE_farmer_league
 		
 	trigger = {
 		OR = {
@@ -2738,6 +2772,16 @@ country_event = { #### Election and leader events
 				add_ideas = SWE_Per_Edvin_Skold_eco_sde
 				add_ideas = SWE_Karl_Schlyter_sec_sde
 			}
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1940_karl_kilbom
+				}
+				add_ideas = SWE_Karl_Kilbom_hog_rso
+				add_ideas = SWE_Fredrik_Stroem_for_rso
+				add_ideas = SWE_Ernst_Wigforss_eco_sde
+				add_ideas = SWE_J_Rickard_Sandler_sec_sde
+				set_country_leader_ideology = socdem_democratic_socialism_subtype
+			}			
 		}	
 	}
 	

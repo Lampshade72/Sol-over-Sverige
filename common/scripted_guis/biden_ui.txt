@@ -3306,6 +3306,13 @@ scripted_gui = {
 					has_idea = SWE_Gustaf_Andersson_hog_mli
 				}
 			}
+
+			Karl_Kilbom_visible = {
+				AND = { 
+					has_country_flag = HOG_veiw
+					has_idea = SWE_Karl_Kilbom_hog_rso
+				}
+			}
 			
 			
 			### Dutch PMs ###

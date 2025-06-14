@@ -6488,6 +6488,15 @@ defined_text = {
 		}
 		localization_key = SWE_Gustaf_Andersson_hog_mli
 	}
+
+	text = {
+		trigger = {
+			has_idea = SWE_Karl_Kilbom_hog_rso
+			
+		}
+		localization_key = SWE_Karl_Kilbom_hog_rso
+	}	
+	
 	
 	
 	### Dutch PMs ###
@@ -13742,7 +13751,15 @@ text = {
 		}
 		localization_key = GFX_Portrait_Sweden_Gustaf_Andersson
 	}	
-	
+
+	text = {
+		trigger = {
+			has_idea = SWE_Karl_Kilbom_hog_rso
+			
+		}
+		localization_key = GFX_Portrait_Sweden_Karl_Kilbom
+	}
+
 	
 	
 	

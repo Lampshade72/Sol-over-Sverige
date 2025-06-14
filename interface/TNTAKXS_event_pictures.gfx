@@ -165,12 +165,30 @@ spriteTypes = {
 		name = "GFX_report_event_SWE_train_accident"
 		texturefile = "gfx/event_pictures/Europe/SOS/SWE_train_accident.png"
 	}
-
-
-
-
-
-
+	spriteType = {
+		name = "GFX_report_event_SWE_farmer_axel"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_farmer_axel.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_kilbom_king"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_kilbom_king.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_farmer_league"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_farmer_league.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_farmer_poster"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_farmer_poster.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_folkpartiet_again"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_folkpartiet_again.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SWE_kilbom_socdem"
+		texturefile = "gfx/event_pictures/Europe/SOS/SWE_kilbom_socdem.png"
+	}
 
 
 

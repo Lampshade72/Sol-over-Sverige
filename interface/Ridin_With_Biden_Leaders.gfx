@@ -2116,7 +2116,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Sweden_Gustaf_Andersson"
 		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Andersson.png"
-	}		
+	}	
+
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Karl_Kilbom"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Karl_Kilbom.png"
+	}
+	
 	
 	### Dutch PMs ###
 	

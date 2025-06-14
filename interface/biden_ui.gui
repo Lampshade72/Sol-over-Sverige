@@ -2569,7 +2569,13 @@ guiTypes = {
 			name = "Gustaf_Andersson"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Sweden_Gustaf_Andersson"
-		}		
+		}
+
+		iconType = { #
+			name = "Karl_Kilbom"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Karl_Kilbom"
+		}
 		
 		### Dutch PMs ###
 		

@@ -403,6 +403,7 @@ SWE_has_leader_GUI = {
 		has_idea = SWE_Elmo_Lindholm_hog_npo
 		has_idea = SWE_Axel_Gyllenkrok_hog_npo
 		has_idea = SWE_Gustaf_Andersson_hog_mli
+		has_idea = SWE_Karl_Kilbom_hog_rso
 		
 	}
 	OR = {
