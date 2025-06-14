@@ -121,7 +121,7 @@ leader_traits = {
 		stability_factor = 0.05
 		war_support_factor = -0.05
 		industrial_capacity_factory = 0.05
-		radical_socialist = 0.01
+		radical_socialist_drift = 0.01
 		totalist_drift = 0.01
 	}	
 

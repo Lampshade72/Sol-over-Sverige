@@ -2518,6 +2518,14 @@ focus_tree = {
 		icon = GFX_UKR_Left_Wing_Splits
 		x = 56
 		y = 0
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				has_country_flag = SWE_election_safe_success
+			}
+		}		
+		
 		cost = 2
 		ai_will_do = {
 			factor = 80 
@@ -2536,6 +2544,7 @@ focus_tree = {
 		}				
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWE_elections_over"
+			add_political_power = 15
 		}
 	}
 
@@ -4326,6 +4335,10 @@ focus_tree = {
 			
 		}
 	}
+
+
+
+
 
 
 	

@@ -7446,7 +7446,7 @@ country_event = { #[GetYear] Swedish General Elections ##Needs rework
 
 	trigger = {
 		has_socialist_government = no
-		date > 1944.1.1
+		date > 1948.9.1
 	}
 
 	option = { #The Social Democrats are victorious

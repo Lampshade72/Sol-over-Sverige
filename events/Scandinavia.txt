@@ -425,12 +425,8 @@ country_event = { # Treaty of Stockholm (Sweden)
 	trigger = {
 		tag = SWE
 		date > 1937.6.1
-		OR = {
-			has_completed_focus = SWE_free_trade_economy
-			has_completed_focus = SWE_coalition_of_likeminded
-		}
-		has_elected_government = yes
-		is_subject = no
+			has_elected_government = yes
+			is_subject = no
 		DEN = {
 			has_elected_government = yes
 			is_subject = no
