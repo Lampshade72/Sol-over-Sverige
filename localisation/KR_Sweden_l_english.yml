@@ -1643,9 +1643,23 @@ swedem.24.d:0 "Following the SSV's inability to enter mainstream Swedish politic
 swedem.24.a:0 "All's well that ends well"
 
 swedem.25.t:0 "National League Of Sweden Grows"
-swedem.25.d:0 ""
+swedem.25.d:0 "Today, with the slow moderation of the armed forces as the fear of a leftist revolution fades, a new party has stepped into the shoes of the radical right. Elmo Lindholm, once leader of the Electoral League’s youth wing, has today announced his own party, independent of the current conservatives. Calling themselves the National League of Sweden (Sveriges Nationella Förbund), they advocate for a total return to tradition, exclaiming the failings of the current conservatives towards the policies of social democracy. Surrounding themselves with rabid nationalism, with rumours of even integrating ethno-nationalists into their cause, all the other parties consider them flagrant authoritarians biding their time. While still relatively small in numbers, they do pose a threat to the conservatives, drawing members with their erratic and charismatic speeches. As such, we have a chance to ban their inclusion in the Rikstag, cementing them as outsiders to the democratic system. However such a move may in itself seem authoritarian, so careful decisions must be made."
 swedem.25.a:0 "Blasted breakaways!"
 swedem.25.b:0 "Suppress their propaganda!"
+
+swedem.26.t:0 "A Unitary Cabinet"
+swedem.26.d:0 "With the fires of the world's second greatest conflict not raging across continental Europe, our current policy of neutrality will hopefully weather us through this storm. However, within the Rikstag, a proposal has come forth, headed by Hansson and his Social democrats, a grand coalition between the Social democrats, Farmer’s league, Folkpartiet and the Conservatives to stabilize and safeguard Sweden during this crisis. While some believe such a move would simply ingrain the parties more under Hansson’s control, he claims it's merely to protect Sweden. The members of the Rikstag now consider this choice, as a fire rises over Europe."
+swedem.26.a:0 "Put aside our differences, we must work together!"
+swedem.26.b:0 "Such a coalition would compromise the Democratic system!"
+
+swedem.27.t:0 "Kilbom puts down the Hammer and Sickle"
+swedem.27.d:0 "In a most unexpected turn today, former leader of the SSV, Karl Kilbom, has announced his resignation and enthusiasm to join the SAP. With such a move, Kilbom reforms himself, moving away from the political extremes of socialism and syndicalism, towards the more accepted social democratic principles. Whether he has any plans for a go at leadership of the SAP is uncertain, however if such a man can be brought back from the brink of radicalism, then anyone can!"
+swedem.27.a:0 "Reformation of even the most radical must be celebrated!"
+
+swedem.28.t:0 "The Flag we Hoist"
+swedem.28.d:0 "Following the dissolution of the Swedish-Norwegian union in 1905, the flag of Sweden was changed to remove the Norwegian symbolism. Then in 1906, a light medium blue was adopted onto the flag, to represent the shift from Sweden as an imperial power to one of a model democratic state. However, with the winds of history forever shifting, some within the Rikstag and public wish to see a resurgence in the darker shade of blue once used. While the group is minor and such a change would do nothing for gain in the country, it remains a novel premise."
+swedem.28.a:0 "A return to 1905!"
+swedem.28.b:0 "We accept our current flag"
 
 #### Working on elections ####
 

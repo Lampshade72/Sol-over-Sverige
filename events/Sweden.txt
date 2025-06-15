@@ -2040,6 +2040,7 @@ country_event = { ####national league form ##LS##
 	option = { #kept
 		name = swedem.25.a
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
 		add_political_power = -5
 		add_stability = -0.01
 		set_party_name = {
@@ -2085,7 +2086,8 @@ country_event = { ####unity cabinet
 			}
 		tag = SWE
 		date > 1940.3.1
-		has_country_flag = SWE_election_safe_success			
+		has_country_flag = SWE_election_safe_success
+		is_in_faction = no
 	}
 
 	option = { #yes
@@ -2149,7 +2151,6 @@ country_event = { #flag switcher
 	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.28" }
 	title = swedem.28.t
 	desc = swedem.28.d
-	picture = 
 
 	is_triggered_only = yes
 
