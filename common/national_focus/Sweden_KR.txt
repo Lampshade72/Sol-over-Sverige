@@ -4342,6 +4342,886 @@ focus_tree = {
 	}
 
 
+#### Second Term Election Trees ####
+
+	focus = { 
+		id = SWE_second_election
+		icon = GFX_goal_FRA_streamlined_bureaucracies
+		x = 0
+		y = 10
+		relative_position_id = SWE_elections_over		
+		
+		cost = 2
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			always = no
+		}		
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag  = SWE_flag_red_in_sweden
+					has_country_flag = SWE_flag_military_steps_in
+					has_country_flag = SWE_flag_lindholm_tot
+				}
+			}
+		}				
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_second_election"
+			add_political_power = 15
+		}
+	}
+
+
+
+
+
+
+### SOCDEM second term ###
+	focus = { 
+		id = SWE_social_dem_second
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_second_election }
+		x = 14
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_dem_second"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_folkhemmet_improve
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_dem_second }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_folkhemmet_improve"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_Hjalmar_Branting_ideology
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_dem_second }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_Hjalmar_Branting_ideology"
+			
+		}
+	} 
+
+	focus = { 
+		id = SWE_marx_and_key
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_dem_second }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_marx_and_key"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_market_rikstag_dom
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_marx_and_key }
+		prerequisite = { focus = SWE_Hjalmar_Branting_ideology }
+		prerequisite = { focus = SWE_folkhemmet_improve } 
+		mutually_exclusive = { focus = SWE_social_rikstag_dom }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_rikstag_dom"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_social_rikstag_dom
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_marx_and_key }
+		prerequisite = { focus = SWE_Hjalmar_Branting_ideology }
+		prerequisite = { focus = SWE_folkhemmet_improve }
+		mutually_exclusive = { focus = SWE_market_rikstag_dom }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_rikstag_dom"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_people_over_politics
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { 
+				focus = SWE_market_rikstag_dom
+				focus = SWE_social_rikstag_dom
+		}
+		prerequisite = { focus =  }
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_people_over_politics"
+			
+		}
+	}
+
+
+
+### SOCLIB Second term ###
+
+	focus = { 
+		id = SWE_social_liberal_win
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_second_election }
+		x = 7
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_liberal_win"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_environment_help
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_liberal_win }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_environment_help"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_europe_agrarian
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_liberal_win }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_europe_agrarian"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_farmer_focus
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_liberal_win }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_farmer_focus"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_centre_left
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_environment_help }
+		prerequisite = { focus = SWE_europe_agrarian }
+		prerequisite = { focus = SWE_farmer_focus }
+		mutually_exclusive = { focus = SWE_centre_full }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_centre_left"
+			
+		}
+	}	
+	
+	focus = { 
+		id = SWE_centre_full
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_environment_help }
+		prerequisite = { focus = SWE_europe_agrarian }
+		prerequisite = { focus = SWE_farmer_focus }
+		mutually_exclusive = { focus = SWE_centre_left }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_centre_full"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_agricultural_future
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_centre_full
+						focus = SWE_centre_left
+						}
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_agricultural_future"
+			
+		}
+	}	
+
+### MARLIB Second Term ###
+	focus = { 
+		id = SWE_market_liberal_win
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_second_election }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_liberal_win"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_finnish_rights
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_market_liberal_win }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_finnish_rights"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_grass_roots_prot
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_market_liberal_win }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_grass_roots_prot"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_nordic_wealth
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_market_liberal_win }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_nordic_wealth"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_market_conserv
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_finnish_rights }
+		prerequisite = { focus = SWE_grass_roots_prot }
+		prerequisite = { focus = SWE_nordic_wealth }
+		mutually_exclusive = { focus = SWE_market_centre }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_conserv"
+			
+		}
+	}	
+	
+	focus = { 
+		id = SWE_market_centre
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_finnish_rights }
+		prerequisite = { focus = SWE_grass_roots_prot }
+		prerequisite = { focus = SWE_nordic_wealth }
+		mutually_exclusive = { focus = SWE_market_conserv }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_centre"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_Anders_Chydenius
+
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_market_centre
+						focus = SWE_market_conserv
+						}
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_Anders_Chydenius"
+			
+		}
+	}
+
+
+
+
+
+
+### SOCCON 1940 ###
+	focus = { 
+		id = SWE_social_conservative_win
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_second_election }
+		x = -7
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_conservative_win"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_landman_legacy
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_conservative_win }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_landman_legacy"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_regulate_agriculture
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_conservative_win }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_regulate_agriculture"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_further_central
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_social_conservative_win }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_further_central"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_conservative_majority
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_landman_legacy }
+		prerequisite = { focus = SWE_regulate_agriculture }
+		prerequisite = { focus = SWE_further_central }
+		mutually_exclusive = { focus = SWE_conservative_radicals }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_conservative_majority"
+			
+		}
+	}	
+	
+	focus = { 
+		id = SWE_conservative_radicals
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_landman_legacy }
+		prerequisite = { focus = SWE_regulate_agriculture }
+		prerequisite = { focus = SWE_further_central }
+		mutually_exclusive = { focus = SWE_conservative_majority }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_conservative_radicals"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_against_free_market_thought
+
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_conservative_majority
+						focus = SWE_conservative_radicals
+						}
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_against_free_market_thought"
+			
+		}
+	}
+
+
+
+
+
+
+### Authdem 1940 ###
+
+	focus = { 
+		id = SWE_national_league_win
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_second_election }
+		x = -14
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_national_league_win"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_bully_opposition
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_national_league_win }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_bully_opposition"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_dagsposten 
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_national_league_win }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_dagsposten"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_break_syndicalism
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_national_league_win }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_break_syndicalism"
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_nordic_radicalism
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_bully_opposition }
+		prerequisite = { focus = SWE_dagsposten }
+		prerequisite = { focus = SWE_break_syndicalism }
+		mutually_exclusive = { focus = SWE_european_social_union }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_nordic_radicalism"
+			
+		}
+	}	
+	
+	focus = { 
+		id = SWE_european_social_union
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_bully_opposition }
+		prerequisite = { focus = SWE_dagsposten }
+		prerequisite = { focus = SWE_break_syndicalism }
+		mutually_exclusive = { focus = SWE_nordic_radicalism }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_european_social_union"
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_against_all_odds
+
+		icon = GFX_goal_SWE_focus_hansson
+		prerequisite = { focus = SWE_european_social_union
+						focus = SWE_nordic_radicalism
+						}
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_election_safe_success
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_against_all_odds"
+			
+		}
+	}
+
+
+
+
+
+
 
 
 
