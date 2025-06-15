@@ -1195,93 +1195,8 @@ SWE_navy_henrik_trolle:0 "Naval Warfare Alike Henrik Trolle"
 SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedish Admirals in history, by embodying his skill, the Swedish navy shall rise to heights it has never seen before."
 
 
-### Second term election focuses ###
-
-SWE_second_election:0 "1944 National Elections"
 
 
-## SOCDEM 2nd term ##
-
-SWE_social_dem_second:0 "Social Democrats Secure Victory"
-
-SWE_folkhemmet_improve:0 "Abolish The Statare"
-
-SWE_Hjalmar_Branting_ideology:0 "Hjalmar Branting Thought"
-
-SWE_marx_and_key:0 "Marxism and Keynesianism"
-
-SWE_social_rikstag_dom:0 "Socialist Party Domination"
-
-SWE_market_rikstag_dom:0 "Moderate Party Domination"
-
-SWE_people_over_politics:0 "People Over Politics"
-
-
-## SOCLIB ##
-
-SWE_social_liberal_win:0 "Bondeförbundet Beats the Ballots"
-
-SWE_environment_help:0 "Environmental Conservation"
-
-SWE_european_agrarian:0 "The European Agrarian Model"
-
-SWE_farmer_focus:0 "Farmer's First and Foremost"
-
-SWE_centre_full:0 "True Centrist Government"
-
-SWE_centre_left:0 "Crops and Roses"
-
-SWE_agricultural_future:0 "Future of Development"
-
-
-## MARLIB 2nd ##
-
-SWE_market_liberal_win:0 "Folkpartiet Faces Forward"
-
-SWE_finnish_rights:0 "Finnish Protections and Laws"
-
-SWE_grass_roots_prot:0 "Independence From The Church of Sweden"
-
-SWE_nordic_wealth:0 "Abundent Nordic Wealth"
-
-SWE_market_centre:0 "True Liberal Government"
-
-SWE_market_conserv:0 "Classical Rightist Coalition"
-
-SWE_Anders_Chydenius:0 "Ratify Anders Chydenius Thought"
-
-
-## SOCCON ##
-
-SWE_social_conservative_win:0 "The Conservatives Collect Victory"
-
-SWE_landman_legacy:0 "Lindman's Legacy Enshrined"
-
-SWE_regulate_agriculture:0 "Forceful Regulation of Agriculture"
-
-SWE_further_central:0 "Necessary Government Centralisation"
-
-SWE_conservative_radicals:0 "Slide to the Right"
-
-SWE_conservative_majority:0 "Tradition and Honour"
-
-SWE_against_free_market_thought:0 "Topple Free Market Thought"
-
-## NAT lEAGUE ##
-
-SWE_national_league_win:0 "The Emergence of the National League"
-
-SWE_bully_opposition:0 "Bully the Opposition"
-
-SWE_dagsposten:0 "Newspaper for National Politics and Culture"
-
-SWE_break_syndicalism:0 "Crush the Syndicalist Menace"
-
-SWE_european_social_union:0 "Endorse the European Cause"
-
-SWE_nordic_radicalism:0 "Bastion of Nordic Nationalism"
-
-SWE_against_all_odds:0 "To Defy the Odds"
 
 
 
@@ -1375,7 +1290,7 @@ swe_seize_iceland:0 "Seize Iceland"
 
 SWE_join_russia_ls:0 "A Bear-Hug Alliance"
 SWE_join_reichspact_ls:0 "Back to our German Roots"
-SWE_join_entente_LS:0 "Shaking hands in Halifax" 
+SWE_join_entente_LS:0 "Shaking hands in Halifax"
 
 SWE_economic_tree_decisions:0 "Economic Decisions"
 SWE_add_rubber_1:0 "Making Rubber"
@@ -1383,7 +1298,7 @@ SWE_add_steel_1:0 "New Steel Mines"
 SWE_add_oil_1:0 "Further Oil Drilling"
 SWE_add_radio:0 "Stockholm Radio Network"
 SWE_add_defensive_arms:0 "Further Defensive Rearmament"
-SWE_develop_Krangede_Hydroelectric_dam:0 "Construct the Krangede Hydroelectric Dam"
+SWE_develop_Krangede_Hydroelectic_dam:0 "Construct the Krangede Hydroelectric Dam"
 SWE_develop_gotland:0 "Develop Gotland"
 SWE_add_civilian1:0 "Develop Southern Factories"
 SWE_add_civilian2:0 "Re-open Norrland Businesses"
