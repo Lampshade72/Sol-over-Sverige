@@ -4267,8 +4267,7 @@ country_event = { #Coronation of Carl XVI ##LS##
 		name = swemil.556.a
 		add_political_power = 90
 		add_stability = -0.02
-		add_country_leader_trait = SWE_bleeding_heart_king_trait
-		add_country_leader_trait = SWE_puppet_king_trait
+
 		
 			hidden_effect = {
 	
@@ -4282,7 +4281,10 @@ country_event = { #Coronation of Carl XVI ##LS##
 		add_ideas = SWE_Helge_Jung_hog_pau
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
-		add_ideas = SWE_Axel_Rappe_sec_pau	
+		add_ideas = SWE_Axel_Rappe_sec_pau
+
+		add_country_leader_trait = SWE_bleeding_heart_king_trait
+		add_country_leader_trait = SWE_puppet_king_trait		
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil				
 				}
@@ -4297,7 +4299,10 @@ country_event = { #Coronation of Carl XVI ##LS##
 		add_ideas = SWE_Helge_Jung_hog_pau
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
-		add_ideas = SWE_Axel_Rappe_sec_pau	
+		add_ideas = SWE_Axel_Rappe_sec_pau
+
+		add_country_leader_trait = SWE_bleeding_heart_king_trait
+		add_country_leader_trait = SWE_puppet_king_trait		
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil				
 				} 
@@ -4313,6 +4318,9 @@ country_event = { #Coronation of Carl XVI ##LS##
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
 		add_ideas = SWE_Axel_Rappe_sec_pau	
+		
+		add_country_leader_trait = SWE_bleeding_heart_king_trait
+		add_country_leader_trait = SWE_puppet_king_trait
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil				
 					}
