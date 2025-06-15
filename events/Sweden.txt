@@ -2762,6 +2762,8 @@ country_event = { #### Election and leader events
 				add_ideas = SWE_J_Rickard_Sandler_for_sde
 				add_ideas = SWE_Per_Edvin_Skold_eco_sde
 				add_ideas = SWE_Karl_Schlyter_sec_sde
+				
+				set_country_leader_ideology = socdem_humanistic_capitalism_subtype
 			}
 			if = {
 				limit = {
@@ -2771,6 +2773,8 @@ country_event = { #### Election and leader events
 				add_ideas = SWE_J_Rickard_Sandler_for_sde
 				add_ideas = SWE_Per_Edvin_Skold_eco_sde
 				add_ideas = SWE_Karl_Schlyter_sec_sde
+				
+				set_country_leader_ideology = liberal_socialism_subtype
 			}
 			if = {
 				limit = {
@@ -2780,6 +2784,7 @@ country_event = { #### Election and leader events
 				add_ideas = SWE_Fredrik_Stroem_for_rso
 				add_ideas = SWE_Ernst_Wigforss_eco_sde
 				add_ideas = SWE_J_Rickard_Sandler_sec_sde
+				
 				set_country_leader_ideology = socdem_democratic_socialism_subtype
 			}			
 		}	
@@ -3330,6 +3335,8 @@ country_event = { #### Election and leader events
 				add_ideas = SWE_J_Rickard_Sandler_for_sde
 				add_ideas = SWE_Per_Edvin_Skold_eco_sde
 				add_ideas = SWE_Karl_Schlyter_sec_sde
+				
+				set_country_leader_ideology = socdem_humanistic_capitalism_subtype
 			}
 			if = {
 				limit = {
@@ -3339,7 +3346,19 @@ country_event = { #### Election and leader events
 				add_ideas = SWE_J_Rickard_Sandler_for_sde
 				add_ideas = SWE_Per_Edvin_Skold_eco_sde
 				add_ideas = SWE_Karl_Schlyter_sec_sde
+				
+				set_country_flag = liberal_socialism_subtype
 			}
+			if = {
+				limit = {
+					has_country_flag = SWE_flag_1944_karl_kilbom
+				}
+				add_ideas = SWE_Karl_Kilbom_hog_rso
+				add_ideas = SWE_Fredrik_Stroem_for_rso
+				add_ideas = SWE_Ernst_Wigforss_eco_sde
+				add_ideas = SWE_J_Rickard_Sandler_sec_sde
+				set_country_leader_ideology = socdem_democratic_socialism_subtype
+			}			
 		}	
 	}
 	
