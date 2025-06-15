@@ -2144,6 +2144,36 @@ country_event = { ####Kilbom rejoins the social democrats
 		
 }
 
+country_event = { #flag switcher
+	id = swedem.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.28" }
+	title = swedem.28.t
+	desc = swedem.28.d
+	picture = 
+
+	is_triggered_only = yes
+
+	option = { #I want it darker
+		name = swedem.28.a
+		set_cosmetic_tag = SWE_dark
+	}	
+	option = { #We light the flame
+		name = swedem.28.b
+
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
 ##### Election and primary Events ######
 
 
@@ -2325,6 +2355,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
 			country_event = { id = swedem.27 days = 650 }
+			country_event = { id = swedem.28 days = 445 }
 			country_event = { id = newsswe.1 days = 1 }
 		}
 	}
@@ -2408,6 +2439,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
 			country_event = { id = swedem.27 days = 650 }
+			country_event = { id = swedem.28 days = 445 }
 			country_event = { id = newsswe.1 days = 1 }
 		}		
 	}
@@ -2489,7 +2521,8 @@ country_event = { #1936 Riksdag Elections ##LS##
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
-			country_event = { id = swedem.27 days = 650 }			
+			country_event = { id = swedem.27 days = 650 }
+			country_event = { id = swedem.28 days = 445 }			
 			country_event = { id = newsswe.1 days = 1 }
 		}		
 		}
@@ -5502,6 +5535,7 @@ country_event = { #Authdem name change  ##LS##
 		
 	}	
 }
+
 
 
 ##########Socialist Tree Events############

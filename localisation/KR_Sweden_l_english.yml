@@ -3361,6 +3361,18 @@ SWE_king_mil:0 "Kingdom of Sweden"
 SWE_king_mil_ADJ:0 "Swedish"
 SWE_king_mil_DEF:0 "the Kingdom of Sweden"
 
+SWE_dark:0 "Sweden"
+SWE_dark_ADJ:0 "Swedish"
+SWE_dark_DEF:0 "the Kingdom of Sweden"
+
+SWE_dark_king:0 "Kingdom of Sweden"
+SWE_dark_king_ADJ:0 "Swedish"
+SWE_dark_king_DEF:0 "the Kingdom of Sweden"
+
+SWE_dark_state:0 "Swedish State"
+SWE_dark_state:0 "Swedish"
+SWE_dark_state:0 "the Swedish State"
+
 SWE_mil_bagge:0 "Kingdom of Sweden"
 SWE_mil_bagge_ADJ:0 "Swedish"
 SWE_mil_bagge_DEF:0 "the Kingdom of Sweden"
