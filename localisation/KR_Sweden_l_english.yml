@@ -22,7 +22,7 @@ SWE_black_monday:0 "Black Monday's Midnight Sky"
 SWE_black_monday_0:0 "Black Monday's Dark Clouds"
 SWE_black_monday_1:0 "Black Monday's Grey Clouds"
 SWE_black_monday_2:0 "Black Monday's Clearing Clouds"
-SWE_black_monday_3:0 "Black Monday's Clear Skys"
+SWE_black_monday_3:0 "Black Monday's Clear Skies"
 
 SWE_cutting_the_army:0 "Cutting Military Expenditure"
 SWE_austerity_measures:0 "Further Austerity Measures"
@@ -30,43 +30,43 @@ SWE_austerity_measures:0 "Further Austerity Measures"
 
 ## Economic Ideas ##
 SWE_eel_economy1:0 "Eel Economy"
-SWE_eel_economy1_desc:0 "WIP"
+SWE_eel_economy1_desc:0 ""
 SWE_eel_economy2:0 "Eel Economy"
-SWE_eel_economy2_desc:0 "WIP"
+SWE_eel_economy2_desc:0 ""
 
 SWE_good_economy1:0 "Dawning Industry"
-SWE_good_economy1_desc:0 "WIP"
+SWE_good_economy1_desc:0 ""
 SWE_good_economy2:0 "Rising Industry"
-SWE_good_economy2_desc:0 "WIP"
+SWE_good_economy2_desc:0 ""
 SWE_good_economy3:0 "Revitalised Industry"
-SWE_good_economy3_desc:0 "WIP"
+SWE_good_economy3_desc:0 ""
 
 ## German Influence Ideas ##
 SWE_german_reach_2good:0 "German Approved Businesses"
-SWE_german_reach_2good_desc:0 "WIP"
+SWE_german_reach_2good_desc:0 ""
 SWE_german_reach_3good:0 "German Approved Businesses"
-SWE_german_reach_3good_desc:0 "WIP"
+SWE_german_reach_3good_desc:0 ""
 SWE_german_reach_4good:0 "German Approved Businesses"
-SWE_german_reach_4good_desc:0 "WIP"
+SWE_german_reach_4good_desc:0 ""
 
 SWE_german_reach_2mid:0 "Removing German Businesses"
-SWE_german_reach_2mid_desc:0 "WIP"
+SWE_german_reach_2mid_desc:0 ""
 SWE_german_reach_3mid:0 "Removing German Businesses"
-SWE_german_reach_3mid_desc:0 "WIP"
+SWE_german_reach_3mid_desc:0 ""
 
 SWE_german_reach_2bad:0 "Destroying German Businesses"
-SWE_german_reach_2bad_desc:0 "WIP"
+SWE_german_reach_2bad_desc:0 ""
 SWE_german_reach_3bad:0 "Destroying German Businesses"
-SWE_german_reach_3bad_desc:0 "WIP"
+SWE_german_reach_3bad_desc:0 ""
 
 ## First election ideas ##
 
 SWE_conservative_pol1:0 "Establishing Swedish Conservatism"
-SWE_conservative_pol1_desc:0 "WIP"
+
 SWE_conservative_pol2:0 "Achieving Swedish Tradition"
-SWE_conservative_pol2_desc:0 "WIP"
+
 SWE_conservative_pol3:0 "Northern Light Conservatism"
-SWE_conservative_pol3_desc:0 "WIP"
+
 SWE_moral_sweden_1:0 "A Nation of Morals"
 SWE_moral_sweden_2:0 "A Nation of Morals"
 SWE_national_education:0 "National Education Board"
@@ -74,28 +74,28 @@ SWE_cut_regulations:0 "Removing Red Tape"
 SWE_conservative_corpo_yes:0 "Swedish Corporatism"
 
 SWE_statare_idea2:0 "Improved Statare"
-SWE_statare_idea2_desc:0 "WIP"
+
 
 SWE_domestic_business1:0 "Domestic Business Focus"
-SWE_domestic_business1_desc:0 "WIP"
+
 
 SWE_market_liberal_pol1:0 "Establishing Swedish Libertarianism"
-SWE_market_liberal_pol1_desc:0 "WIP"
+
 SWE_market_liberal_pol2:0 "Achieving Swedish Centrism"
-SWE_market_liberal_pol2_desc:0 "WIP"
+
 SWE_market_liberal_pol3:0 "Liberal, Free, Proud"
-SWE_market_liberal_pol3_desc:0 "WIP"
+
 SWE_business_enshrined:0 "Small Business Focus"
 SWE_market_liberal_corpo_yes:0 "Investing in the Future"
 SWE_liberal_king:0 "Kingly Liberalism"
 SWE_rural_education:0 "Rural Education Board"
 
 SWE_social_dem_pol1:0 "Constructing Folkhemmet"
-SWE_social_dem_pol1_desc:0 "WIP"
+
 SWE_social_dem_pol2:0 "Emerging Folkhemmet"
-SWE_social_dem_pol2_desc:0 "WIP"
+
 SWE_social_dem_pol3:0 "Folkhemmet"
-SWE_social_dem_pol3_desc:0 "WIP"
+
 
 SWE_social_dem_urban_effort:0 "Urbanisation Efforts"
 SWE_social_patriot_idea:0 "Patriotic Party"
@@ -107,24 +107,24 @@ SWE_unity_cabinet_lamp:0 "Unity Cabinet"
 
 ## Revolution ideas ##
 SWE_military_resistance:0 "Reactionary Military Resistance"
-SWE_military_resistance_desc:0 "WIP"
+
 
 SWE_red_terror_1:0 "Curtailing Red Terror"
-SWE_red_terror_1_desc:0 "WIP"
+
 
 SWE_red_terror_2:0 "Limited Red Terror"
-SWE_red_terror_2_desc:0 "WIP"
+
 
 SWE_red_terror_3:0 "Rampant Red Terror"
-SWE_red_terror_3_desc:0 "WIP"
+
 
 ## Totalist Ideas ##
 SWE_totalist1:0 "Beginning the Totalist Revolution"
-SWE_totalist1_desc:0 "WIP"
+
 SWE_totalist2:0 "Furthering the Totalist Revolution"
-SWE_totalist2_desc:0 "WIP"
+
 SWE_totalist3:0 "Total Revolution Achieved"
-SWE_totalist3_desc:0 "WIP"
+
 
 SWE_totalist_collect:0 "Mass Collectivization"
 SWE_totalist_collect_desc:0 ""
@@ -208,34 +208,35 @@ SWE_nat_pop_allies_desc:0 ""
 ## Military coup ideas ##
 
 SWE_red_resistance_mil:0 "Leftist Resistance"
-SWE_red_resistance_mil_desc:0 "WIP"
+
 
 SWE_unending_martial_law:0 "Indefinite Martial Law"
-SWE_unending_martial_law_desc:0 "WIP"
+
 
 SWE_army_symbol:0 "Military Symbolism"
-SWE_army_symbol_desc:0 "WIP"
+
 
 SWE_radical_paramilitary_support:0 "Radical Nationalist Paramilitary Support"
-SWE_radical_paramilitary_support_desc:0 "WIP"
+
 
 
 ## Jung Ideas ##
 
 SWE_pataut1:0 "Beginning The Military's Vision"
-SWE_pataut1_desc:0 "WIP"
+
 
 SWE_pataut2:0 "Furthering The Military's Vision"
-SWE_pataut2_desc:0 "WIP"
+
 
 SWE_pataut3:0 "Sweden's Military With A State"
-SWE_pataut3_desc:0 "WIP"
+
 
 SWE_jungs_vision:0 "Jung's Defensive Alignment"
-SWE_jungs_vision_desc:0 "WIP"
+
 
 SWE_alllied_companies:0 "Military Aligned Companies"
-SWE_alllied_companies_desc:0 "WIP"
+
+SWE_pataut_natpop:0 "Nationalist Military Dictatorship"
 
 
 ## Authdem ideas ##
@@ -287,7 +288,7 @@ SWE_arch_3_desc:0 ""
 
 ## Elmo ##
 
-SWE_elmo1:0 "Draftiing The Organic State"
+SWE_elmo1:0 "Drafting The Organic State"
 SWE_elmo2:0 "Mobilizing The Organic State"
 SWE_elmo3:0 "One Nation, Many Organs"
 
@@ -1156,8 +1157,8 @@ SWE_swedish_jet_testing:0 "Future Propulsion Testing"
 SWE_swedish_jet_testing_desc:0 "Aircraft can always go faster, go further, as such research into alternative propulsion systems must be explored to push their limits."
 SWE_swedish_aa_emplacement:0 "Anti-Aircraft Emplacement Planning"
 SWE_swedish_aa_emplacement_desc:0 "Aircraft alone cannot defend our skies, while they refuel anti-aircraft guns must be ready to defend them."
-SWE_swedish_air_superiority:0 "Dog Pilot Exercises"
-SWE_swedish_air_superiority_desc:0 "Like the glory of knights of old, our pilots will be embolden with honor and glory in their fight, as the new knights of the sky."
+SWE_swedish_air_superior:0 "Dog Pilot Exercises"
+SWE_swedish_air_superior_desc:0 "Like the glory of knights of old, our pilots will be embolden with honor and glory in their fight, as the new knights of the sky."
 SWE_swedish_new_age_aircraft:0 "New Age of Air Warfare"
 SWE_swedish_new_age_aircraft_desc:0 "Warfare is always evolving, and aircraft are no exception, the Swedish air force must be cutting edge, always."
 
@@ -1643,9 +1644,23 @@ swedem.24.d:0 "Following the SSV's inability to enter mainstream Swedish politic
 swedem.24.a:0 "All's well that ends well"
 
 swedem.25.t:0 "National League Of Sweden Grows"
-swedem.25.d:0 ""
+swedem.25.d:0 "Today, with the slow moderation of the armed forces as the fear of a leftist revolution fades, a new party has stepped into the shoes of the radical right. Elmo Lindholm, once leader of the Electoral League’s youth wing, has today announced his own party, independent of the current conservatives. Calling themselves the National League of Sweden (Sveriges Nationella Förbund), they advocate for a total return to tradition, exclaiming the failings of the current conservatives towards the policies of social democracy. Surrounding themselves with rabid nationalism, with rumours of even integrating ethno-nationalists into their cause, all the other parties consider them flagrant authoritarians biding their time. While still relatively small in numbers, they do pose a threat to the conservatives, drawing members with their erratic and charismatic speeches. As such, we have a chance to ban their inclusion in the Rikstag, cementing them as outsiders to the democratic system. However such a move may in itself seem authoritarian, so careful decisions must be made."
 swedem.25.a:0 "Blasted breakaways!"
 swedem.25.b:0 "Suppress their propaganda!"
+
+swedem.26.t:0 "A Unitary Cabinet"
+swedem.26.d:0 "With the fires of the world's second greatest conflict not raging across continental Europe, our current policy of neutrality will hopefully weather us through this storm. However, within the Rikstag, a proposal has come forth, headed by Hansson and his Social democrats, a grand coalition between the Social democrats, Farmer’s league, Folkpartiet and the Conservatives to stabilize and safeguard Sweden during this crisis. While some believe such a move would simply ingrain the parties more under Hansson’s control, he claims it's merely to protect Sweden. The members of the Rikstag now consider this choice, as a fire rises over Europe."
+swedem.26.a:0 "Put aside our differences, we must work together!"
+swedem.26.b:0 "Such a coalition would compromise the Democratic system!"
+
+swedem.27.t:0 "Kilbom puts down the Hammer and Sickle"
+swedem.27.d:0 "In a most unexpected turn today, former leader of the SSV, Karl Kilbom, has announced his resignation and enthusiasm to join the SAP. With such a move, Kilbom reforms himself, moving away from the political extremes of socialism and syndicalism, towards the more accepted social democratic principles. Whether he has any plans for a go at leadership of the SAP is uncertain, however if such a man can be brought back from the brink of radicalism, then anyone can!"
+swedem.27.a:0 "Reformation of even the most radical must be celebrated!"
+
+swedem.28.t:0 "The Flag we Hoist"
+swedem.28.d:0 "Following the dissolution of the Swedish-Norwegian union in 1905, the flag of Sweden was changed to remove the Norwegian symbolism. Then in 1906, a light medium blue was adopted onto the flag, to represent the shift from Sweden as an imperial power to one of a model democratic state. However, with the winds of history forever shifting, some within the Rikstag and public wish to see a resurgence in the darker shade of blue once used. While the group is minor and such a change would do nothing for gain in the country, it remains a novel premise."
+swedem.28.a:0 "A return to 1905!"
+swedem.28.b:0 "We accept our current flag"
 
 #### Working on elections ####
 
@@ -1993,7 +2008,7 @@ swemil.3.a:0 "Arms for Labours sake"
 swemil.4.t:0 "The Crown Conundrum"
 swemil.4.d:0 "Now with the majority of the Sweden landscape subdued and the factories bustling once more, the Junta may now start convening on setting out her policies and laws. While the effects of martial law shall remain for now, the big question of the former removed monarchy has arisen. \n\nThe former King, Gustav V has been seen by the general conservative base as a failure to Sweden’s traditional values, quickly giving up his powers once the former socialists demanded his abdication. As such, another candidate has been found, the relatively young Duke of Västerbotten, Prince Gustaf Adolf. Openly sympathetic to our cause and beliefs, has expressed his desire to be crowned king of Sweden, owing such a position to us would all but guarantee his loyalty. \n\nSuch a puppet would allow us to reignite our relations with the formerly disgraced moderate right, allowing the monarchy to be used once more as a symbol of Sweden to unite her people. If the monarchy was restored however, it would be unlike its previous iteration, the new king would hold no power, with the current military state maintaining its current control over government. Now the military leaders must decide, to allow the monarchy once more, or maintain her open military rule over Sweden?"
 swemil.4.a:0 "Too much has changed, maintain our current control"
-swemil.4.b:0 "Announce the coronation of King Gustav VI"
+swemil.4.b:0 "Announce the appointment of a new King!"
 
 swemil.555.t:0 "A Bleeding Heart, and Young Mind"
 swemil.555.d:0 "With the Red menace now purged from the halls of Stockholm and the syndicalist experiment crushed beneath the boot of patriotic order, the nation turns to its past to secure its future. The monarchy that was unceremoniously cast aside by the traitorous syndicalst regime in Parisian imitation, is to be restored. This decision, made by the High Command and sanctioned by the Jung Junta, marks a return to Sweden’s rightful traditions. \n\nYet, the throne cannot remain empty. A sovereign must be chosen. \n\nOne might expect the heir apparent, Prince Oscar Adolf, eldest son of the exiled King Gustav V, to reclaim his birthright. But such hopes are in vain. Oscar Adolf, having grown sympathetic to liberal democrats abroad and advocating for a return to a constitutional monarchy, has alienated himself from the military. \n\nThe attention of the Junta has thus turned to his son Prince Gustaf Adolf, Duke of Västerbotten. A man molded by discipline and driven by fervent Swedish nationalism, Gustaf Adolf has expressed an unwavering commitment to our new regime. His youth and ideological alignment with the Jung Junta make him an ideal symbol of a revitalized Sweden, traditional, united, and strong.\n\nHowever, not all within the armed forces are aligned behind the young Duke. A second name has emerged, Count Folke Bernadotte of Wisborg, a man of noble blood and diplomatic prowess. Known for his humanitarian efforts and close ties within aristocratic and international circles, Bernadotte commands respect among the officer corps, particularly those outside the inner circle of the Junta. His moderate views and experience suggest a king who could stabilize the nation and perhaps reintroduce Sweden onto the world stage diplomatically. Yet, he has never voiced strong support for the nationalist ideals now driving our military government. \n\nThe choice is delicate. One candidate is a banner for the new Sweden, loyal to the regime and molded for national rebirth. The other is a seasoned leader, capable of healing wounds and legitimizing our rule both at home and abroad, but potentially a threat to the ideological purity of our cause."
@@ -3360,6 +3375,18 @@ SWE_EMP_2_DEF:0 "the Swedish Empire"
 SWE_king_mil:0 "Kingdom of Sweden"
 SWE_king_mil_ADJ:0 "Swedish"
 SWE_king_mil_DEF:0 "the Kingdom of Sweden"
+
+SWE_dark:0 "Sweden"
+SWE_dark_ADJ:0 "Swedish"
+SWE_dark_DEF:0 "the Kingdom of Sweden"
+
+SWE_dark_king:0 "Kingdom of Sweden"
+SWE_dark_king_ADJ:0 "Swedish"
+SWE_dark_king_DEF:0 "the Kingdom of Sweden"
+
+SWE_dark_state:0 "Swedish State"
+SWE_dark_state:0 "Swedish"
+SWE_dark_state:0 "the Swedish State"
 
 SWE_mil_bagge:0 "Kingdom of Sweden"
 SWE_mil_bagge_ADJ:0 "Swedish"

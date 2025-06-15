@@ -2040,6 +2040,7 @@ country_event = { ####national league form ##LS##
 	option = { #kept
 		name = swedem.25.a
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
 		add_political_power = -5
 		add_stability = -0.01
 		set_party_name = {
@@ -2085,7 +2086,8 @@ country_event = { ####unity cabinet
 			}
 		tag = SWE
 		date > 1940.3.1
-		has_country_flag = SWE_election_safe_success			
+		has_country_flag = SWE_election_safe_success
+		is_in_faction = no
 	}
 
 	option = { #yes
@@ -2143,6 +2145,35 @@ country_event = { ####Kilbom rejoins the social democrats
 	}
 		
 }
+
+country_event = { #flag switcher
+	id = swedem.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.28" }
+	title = swedem.28.t
+	desc = swedem.28.d
+
+	is_triggered_only = yes
+
+	option = { #I want it darker
+		name = swedem.28.a
+		set_cosmetic_tag = SWE_dark
+	}	
+	option = { #We light the flame
+		name = swedem.28.b
+
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
 
 ##### Election and primary Events ######
 
@@ -2325,6 +2356,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
 			country_event = { id = swedem.27 days = 650 }
+			country_event = { id = swedem.28 days = 445 }
 			country_event = { id = newsswe.1 days = 1 }
 		}
 	}
@@ -2408,6 +2440,7 @@ country_event = { #1936 Riksdag Elections ##LS##
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
 			country_event = { id = swedem.27 days = 650 }
+			country_event = { id = swedem.28 days = 445 }
 			country_event = { id = newsswe.1 days = 1 }
 		}		
 	}
@@ -2489,7 +2522,8 @@ country_event = { #1936 Riksdag Elections ##LS##
 		hidden_effect = {
 			country_event = { id = swe.49 days = 700 }
 			country_event = { id = swedem.24 days = 300 }
-			country_event = { id = swedem.27 days = 650 }			
+			country_event = { id = swedem.27 days = 650 }
+			country_event = { id = swedem.28 days = 445 }			
 			country_event = { id = newsswe.1 days = 1 }
 		}		
 		}
@@ -4233,8 +4267,7 @@ country_event = { #Coronation of Carl XVI ##LS##
 		name = swemil.556.a
 		add_political_power = 90
 		add_stability = -0.02
-		add_country_leader_trait = SWE_bleeding_heart_king_trait
-		add_country_leader_trait = SWE_puppet_king_trait
+
 		
 			hidden_effect = {
 	
@@ -4248,7 +4281,10 @@ country_event = { #Coronation of Carl XVI ##LS##
 		add_ideas = SWE_Helge_Jung_hog_pau
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
-		add_ideas = SWE_Axel_Rappe_sec_pau	
+		add_ideas = SWE_Axel_Rappe_sec_pau
+
+		add_country_leader_trait = SWE_bleeding_heart_king_trait
+		add_country_leader_trait = SWE_puppet_king_trait		
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil				
 				}
@@ -4263,7 +4299,10 @@ country_event = { #Coronation of Carl XVI ##LS##
 		add_ideas = SWE_Helge_Jung_hog_pau
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
-		add_ideas = SWE_Axel_Rappe_sec_pau	
+		add_ideas = SWE_Axel_Rappe_sec_pau
+
+		add_country_leader_trait = SWE_bleeding_heart_king_trait
+		add_country_leader_trait = SWE_puppet_king_trait		
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil				
 				} 
@@ -4279,6 +4318,9 @@ country_event = { #Coronation of Carl XVI ##LS##
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
 		add_ideas = SWE_Axel_Rappe_sec_pau	
+		
+		add_country_leader_trait = SWE_bleeding_heart_king_trait
+		add_country_leader_trait = SWE_puppet_king_trait
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil				
 					}
@@ -4309,9 +4351,10 @@ country_event = { #Coronation of Gustaf VI Adolf ##LS##
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
 		add_ideas = SWE_Axel_Rappe_sec_pau	
-		add_country_leader_trait = SWE_puppet_king_trait
+
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil
+		add_country_leader_trait = SWE_puppet_king_trait		
 			}
 		}	
 	}
@@ -4328,7 +4371,7 @@ country_event = { #unhappy
 
 	option = { 
 		name = swemil.6.a
-		add_war_support = 0.03
+		add_war_support = -0.02
 		add_political_power = -25
 		
 		}	
@@ -5502,6 +5545,7 @@ country_event = { #Authdem name change  ##LS##
 		
 	}	
 }
+
 
 
 ##########Socialist Tree Events############
@@ -8145,7 +8189,7 @@ country_event = {
 		name = swe_flavor.6.c
 		add_ideas = SWE_hotellockout
 		hidden_effect = {
-			country_event = { id = swe_flavor.8 days = 2 }
+			country_event = { id = swe_flavor.8 days = 5 }
 		}
 	}
 }

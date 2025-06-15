@@ -978,6 +978,8 @@ focus_tree = {
 		id = SWE_INF_embrace_kaiser
 		icon = GFX_goal_GER_Central_Culture
 		prerequisite = { focus = SWE_INF_german_cloud }
+		mutually_exclusive = { focus = SWE_INF_gradual_removal }
+		mutually_exclusive = { focus = SWE_INF_abrupt_pull_out }		
 		x = 2
 		y = 1
 		relative_position_id = SWE_INF_german_cloud
@@ -1009,6 +1011,8 @@ focus_tree = {
 		id = SWE_INF_gradual_removal
 		icon = GFX_MAF_meet_with_the_kaiser
 		prerequisite = { focus = SWE_INF_german_cloud }
+		mutually_exclusive = { focus = SWE_INF_embrace_kaiser }
+		mutually_exclusive = { focus = SWE_INF_abrupt_pull_out }
 		x = 0
 		y = 1
 		relative_position_id = SWE_INF_german_cloud
@@ -1038,7 +1042,8 @@ focus_tree = {
 		id = SWE_INF_abrupt_pull_out
 		icon = GFX_goal_WHR_Assert_Independence_Germany
 		prerequisite = { focus = SWE_INF_german_cloud }
-		mutually_exclusive = { focus = SWE_INF_abrupt_pull_out }
+		mutually_exclusive = { focus = SWE_INF_gradual_removal }
+		mutually_exclusive = { focus = SWE_INF_embrace_kaiser }	
 		x = -2
 		y = 1
 		relative_position_id = SWE_INF_german_cloud
@@ -6984,7 +6989,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_martial_law_declared }
 		x = 2
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_martial_law_declared
 		ai_will_do = {
 			factor = 80
@@ -7061,7 +7066,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_martial_law_declared }
 		x = -2
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_martial_law_declared
 		ai_will_do = {
 			factor = 80
@@ -7097,7 +7102,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = SWE_red_resistance_mil
 			country_event = { id = swemil.7 }
 		}
 	}
@@ -7129,6 +7133,8 @@ focus_tree = {
 		}		
 		completion_reward = {
 			add_ideas = SWE_pataut1
+			
+			remove_ideas = SWE_red_resistance_mil
 			country_event = { id = swemil.18 }
 		}
 	}	
@@ -7161,6 +7167,7 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = { id = swemil.8 }
+			remove_ideas = SWE_red_resistance_mil
 			add_ideas = SWE_arch_1
 			add_popularity = { ideology = national_populist popularity = 0.15 }
 		}
@@ -7194,6 +7201,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SWE_autdem1
+			remove_ideas = SWE_red_resistance_mil			
 			country_event = { id = swemil.26 }
 		}
 	}
@@ -8179,7 +8187,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_expand_armed_forces
-		icon = GFX_goal_generic_intense_warfare
+		icon = GFX_goal_CAL_Peace_Army
 		prerequisite = { focus = SWE_necessary_economic_intervention }
 		prerequisite = { focus = SWE_bring_the_right_back }
 
@@ -10861,14 +10869,6 @@ focus_tree = {
 			factor = 10
 		}
 
-		available = {
-			OR = {
-				has_country_flag = SWE_flag_military_steps_in
-				has_country_flag = SWE_election_safe_success
-				has_country_flag = SWE_flag_red_in_sweden
-			}
-		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWE_navy_baltic_sea"
 			add_ideas = SWE_baltic_sea_fleet1
@@ -10890,14 +10890,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
-		}
-
-		available = {
-			OR = {
-				has_country_flag = SWE_flag_military_steps_in
-				has_country_flag = SWE_election_safe_success
-				has_country_flag = SWE_flag_red_in_sweden
-			}
 		}
 
 		completion_reward = {
@@ -10922,14 +10914,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
-		}
-
-		available = {
-			OR = {
-				has_country_flag = SWE_flag_military_steps_in
-				has_country_flag = SWE_election_safe_success
-				has_country_flag = SWE_flag_red_in_sweden
-			}
 		}
 
 		completion_reward = {
