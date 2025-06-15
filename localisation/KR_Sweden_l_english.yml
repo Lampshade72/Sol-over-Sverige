@@ -1267,6 +1267,8 @@ SWE_flag_1944_ekman:0 "Carl Gustaf Ekman is chosen to lead the party"
 
 
 ## Decisions ##
+
+SWE_foreign_policy_empire_decisions:0 "Retaking the Swedish Empire"
 SWE_claim_scandinavia:0 "Claim Scandinavia"
 SWE_destroy_norway:0 "Tear Up the Karlstad Treaty"
 SWE_destroy_denmark:0 "Operation Rädda Danmark"
