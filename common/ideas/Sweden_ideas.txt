@@ -331,7 +331,20 @@ ideas = {
 			}
 		}
 
+#############
+# Flavour Ideas 
+#############
 
+
+		SWE_hotellockout = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_hotellockout"}
+			picture = trotskyite_plot
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
 
 
 ##############
@@ -1476,7 +1489,9 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.02
 				consumer_goods_factor = 0.03				
 			}				
-		}		
+		}
+
+		
 
 ##############
 # Military political ideas

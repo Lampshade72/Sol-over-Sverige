@@ -978,6 +978,8 @@ focus_tree = {
 		id = SWE_INF_embrace_kaiser
 		icon = GFX_goal_GER_Central_Culture
 		prerequisite = { focus = SWE_INF_german_cloud }
+		mutually_exclusive = { focus = SWE_INF_gradual_removal }
+		mutually_exclusive = { focus = SWE_INF_abrupt_pull_out }		
 		x = 2
 		y = 1
 		relative_position_id = SWE_INF_german_cloud
@@ -1009,6 +1011,8 @@ focus_tree = {
 		id = SWE_INF_gradual_removal
 		icon = GFX_MAF_meet_with_the_kaiser
 		prerequisite = { focus = SWE_INF_german_cloud }
+		mutually_exclusive = { focus = SWE_INF_embrace_kaiser }
+		mutually_exclusive = { focus = SWE_INF_abrupt_pull_out }
 		x = 0
 		y = 1
 		relative_position_id = SWE_INF_german_cloud
@@ -1038,7 +1042,8 @@ focus_tree = {
 		id = SWE_INF_abrupt_pull_out
 		icon = GFX_goal_WHR_Assert_Independence_Germany
 		prerequisite = { focus = SWE_INF_german_cloud }
-		mutually_exclusive = { focus = SWE_INF_abrupt_pull_out }
+		mutually_exclusive = { focus = SWE_INF_gradual_removal }
+		mutually_exclusive = { focus = SWE_INF_embrace_kaiser }	
 		x = -2
 		y = 1
 		relative_position_id = SWE_INF_german_cloud

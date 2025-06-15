@@ -22,7 +22,7 @@ SWE_black_monday:0 "Black Monday's Midnight Sky"
 SWE_black_monday_0:0 "Black Monday's Dark Clouds"
 SWE_black_monday_1:0 "Black Monday's Grey Clouds"
 SWE_black_monday_2:0 "Black Monday's Clearing Clouds"
-SWE_black_monday_3:0 "Black Monday's Clear Skys"
+SWE_black_monday_3:0 "Black Monday's Clear Skies"
 
 SWE_cutting_the_army:0 "Cutting Military Expenditure"
 SWE_austerity_measures:0 "Further Austerity Measures"
@@ -236,6 +236,7 @@ SWE_jungs_vision:0 "Jung's Defensive Alignment"
 
 SWE_alllied_companies:0 "Military Aligned Companies"
 
+SWE_pataut_natpop:0 "Nationalist Military Dictatorship"
 
 
 ## Authdem ideas ##
@@ -1156,8 +1157,8 @@ SWE_swedish_jet_testing:0 "Future Propulsion Testing"
 SWE_swedish_jet_testing_desc:0 "Aircraft can always go faster, go further, as such research into alternative propulsion systems must be explored to push their limits."
 SWE_swedish_aa_emplacement:0 "Anti-Aircraft Emplacement Planning"
 SWE_swedish_aa_emplacement_desc:0 "Aircraft alone cannot defend our skies, while they refuel anti-aircraft guns must be ready to defend them."
-SWE_swedish_air_superiority:0 "Dog Pilot Exercises"
-SWE_swedish_air_superiority_desc:0 "Like the glory of knights of old, our pilots will be embolden with honor and glory in their fight, as the new knights of the sky."
+SWE_swedish_air_superior:0 "Dog Pilot Exercises"
+SWE_swedish_air_superior_desc:0 "Like the glory of knights of old, our pilots will be embolden with honor and glory in their fight, as the new knights of the sky."
 SWE_swedish_new_age_aircraft:0 "New Age of Air Warfare"
 SWE_swedish_new_age_aircraft_desc:0 "Warfare is always evolving, and aircraft are no exception, the Swedish air force must be cutting edge, always."
 

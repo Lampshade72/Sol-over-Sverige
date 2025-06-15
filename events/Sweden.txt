@@ -8189,7 +8189,7 @@ country_event = {
 		name = swe_flavor.6.c
 		add_ideas = SWE_hotellockout
 		hidden_effect = {
-			country_event = { id = swe_flavor.8 days = 2 }
+			country_event = { id = swe_flavor.8 days = 5 }
 		}
 	}
 }
