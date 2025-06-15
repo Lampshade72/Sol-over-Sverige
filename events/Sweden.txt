@@ -4351,9 +4351,10 @@ country_event = { #Coronation of Gustaf VI Adolf ##LS##
 		add_ideas = SWE_Gunnar_Berggren_for_pau
 		add_ideas = SWE_Marcus_Wallenberg_eco_pau
 		add_ideas = SWE_Axel_Rappe_sec_pau	
-		add_country_leader_trait = SWE_puppet_king_trait
+
 		set_country_flag = SWE_flag_crown_restored
 		set_cosmetic_tag = SWE_king_mil
+		add_country_leader_trait = SWE_puppet_king_trait		
 			}
 		}	
 	}
@@ -4370,7 +4371,7 @@ country_event = { #unhappy
 
 	option = { 
 		name = swemil.6.a
-		add_war_support = 0.03
+		add_war_support = -0.02
 		add_political_power = -25
 		
 		}	
