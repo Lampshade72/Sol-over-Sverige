@@ -432,8 +432,10 @@ SWE_swedish_empire2:0 "An Empire Reborn"
 SWE_integrate_finland:0 "Integration of Finland"
 SWE_occupation_finland:0 "Occupation of Finland"
 
-SWE_kompani_linge_idea:0 "Kompani Linge Sabotage"
-SWE_union_activity:0 "Unionist Activity Present"
+SWE_union_activity:0 "Industrial Sabotage"
+SWE_union_activity_desc:0 "The syndicalists in Norway are attempting to destabilize the Swedish government by funding militant trade unions throughout the country."
+SWE_kompani_linge_idea:0 "Kompani Linge"
+SWE_kompani_linge_idea_desc:0 "Kompani Linge is a band of commandos lead by former actor Martin Linge. They are currently engaged in different forms of sabotage in Sweden."
 
 ####Focuses####
 
@@ -1198,8 +1200,11 @@ SWE_navy_large_and_big_desc:0 "They may move fast, we shoot faster. They may arm
 SWE_navy_henrik_trolle:0 "Naval Warfare Alike Henrik Trolle"
 SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedish Admirals in history, by embodying his skill, the Swedish navy shall rise to heights it has never seen before."
 
-
-
+SWE_kompani_linge_tooltip: "§HWill be removed if:§!\n$TRIGGER_OR_STARTS$\n   $SWE_kompani_linge_SWE_is_socialist$\n   $SWE_kompani_linge_NOR_does_not_exist$\n   $SWE_kompani_linge_NOR_has_capitulated$\n   $SWE_kompani_linge_NOR_is_not_socialist$\n"
+SWE_kompani_linge_SWE_is_socialist: "[SWE_kompani_linge_SWE_is_socialist] $KR_is_socialist$"
+SWE_kompani_linge_NOR_does_not_exist: "[SWE_kompani_linge_NOR_does_not_exist] §H[NOR.GetNameWithFlag]§! $TRIGGER_DOES_NOT_EXIST$"
+SWE_kompani_linge_NOR_has_capitulated: "[SWE_kompani_linge_NOR_has_capitualted] §H[NOR.GetName]§!: $TRIGGER_HAS_CAPITULATED$"
+SWE_kompani_linge_NOR_is_not_socialist: "[SWE_kompani_linge_NOR_is_not_socialist] §H[NOR.GetName]§!: $KR_is_socialist_NOT$"
 
 
 
@@ -1476,8 +1481,8 @@ swefop.999.a:0 "colony time"
 swefop.999.b:0 "i dont feel like it"
 
 swefop.998.t:0 "Vinland colony"
-swefop.998.d:0 "Yay!"
-swefop.998.a:0 "viking era!"
+swefop.998.d:0 "Recently we have come into control of the areas of Labrador and Newfoundland, holding a unique piece of old history. Harking back to the vikings, like those of Leif Eriksson, the area was apparently discovered and named Vinland, or Winland. The name comes from the believed grapes that grew in the area, as the Vin stands for ‘wine’, however this can be disputed as also meaning ‘pasture’ or ‘meadow’. As of yet, no tangible evidence of Viking settlements have been found, but many documents from the kings of Denmark aid in the belief of a viking settlement long before Columbas ever arrived at the New world. Excavations and archeologists from our prestigious schools have already begun arriving, hoping to find and uncover any physical proof of Nordic settlements, it now only remains a matter of time until we do. \n\nWhile such history remains interesting, using this belief of the first North American colony from Europe has allowed us to establish a colonial government there, mimicking our current government. Whether such a state will be successful remains to be seen, but this is another step in uncovering our history."
+swefop.998.a:0 "The New World, now ours"
 
 swefop.777.t:0 "Order to the Wayward Child"
 swefop.777.d:0 "Not seen since 1809 when Finland was ceded to Russia after the Swedish Empire’s defeat at her hands, Finland now rests once more upon Sweden’s watchful eye. The current Swedish government has shown in a display of power, the rising of the Swedish flag over the town hall in Hamina, once called Fredrikshamn when under the Swedish Empire, where the former Treaty of Fredrikshamn was signed, ceded Finland to Russia. \n\nWith such a display, many Finns have started coming out in resistance to the Swedish occupation, many putting aside their ideological differences in defence of Finnish independence. Such resistance has been met harshly with Swedish soldiers and officers as the Stockholm government decides on what to do with their newfoundland. \n\nThe first and most straightforward option is total annexation and reintegration of Finland into Sweden. This would force a long and arduous process of annihilating Finnish culture and sovereignty, while likely suffering strong resistance from the native Finns. Some in government say this is the only option as, like Jörmungandr, in an immortal cycle of allowing the Finns self-governance will only lead to constant rebellion. \n\nAnother camp favors the idea of integrating the Finns but offers another solution. Annex the main areas that house a large Swedish presence, and install a puppet administration over the rest to subdue the Finnish resistance while also slowly forcing their reintegration back into Sweden. \n\nA final group sees the total integration of Finland as a truly impossible feat, due to Finland’s many years of self-governance, forcing a reintegration would doom Sweden with economic issues and constant uprisings. As such they advocate for putting a pro-Swedish government in charge of Finland, giving the Finns a sense of self-governance while still keeping them aligned with Sweden. \n\nA choice must be made soon, as the Finnish resistance only grows with each passing day."
@@ -1508,9 +1513,9 @@ swefop.4.t:0 "The Shadow of the Russian Bear"
 swefop.4.d:0 "Beyond the eastern horizon lies a giant, old and restless. Whether led by czars, commissars, or autocrats cloaked in modern titles, Russia has always cast a long and heavy shadow over the North. Its ambitions are vast, its borders never settled, and its appetite for influence unending.\n\nNow, as tensions rise across Europe and the balance of power begins to shift, Sweden must confront the truth: peace with Russia is temporary, but preparedness is eternal. Our generals speak of ancient wars, of Narva and Poltava, of lost provinces and faded glory. The people whisper of revanche, of defense, of destiny.\n\nWhether we strike first or steel ourselves for the inevitable, one thing is certain, the Russian Bear watches, and it may soon move."
 swefop.4.a:0 "Sharpen the spears. Ready the North."
 
-swefop.5.t:0 "Destroyed Norway and Denmark"
-swefop.5.d:0 "They are now gone"
-swefop.5.a:0 "skibidi WIP"
+swefop.5.t:0 "Revenge over the Kalmar Union"
+swefop.5.d:0 "In a bold and historic proclamation, Sweden has declared herself the Swedish Empire, reviving the dreams of a unified North last seen in the days of the Kalmar Union. The flags of Denmark and Norway now bow to Stockholm's rule, with Copenhagen's harbors and Oslo's fjords firmly under our control. Yet, this triumph is marred by widespread unrest, as protests flare across the newly annexed territories, from Aarhus to Bergen. Whispers of defiance echo in the streets, and the world watches with unease as Sweden's ambitions cast a long shadow over Europe. Shall we consolidate our grip on Scandinavia through unity, crush the dissent with an iron hand, promote a shared Nordic identity, or boldly proclaim our destiny to reshape the continent?"
+swefop.5.a:0 "Waging Just Wars against Unjust Enemies!"
 
 
 swefop.6.t:0 "An Old Empire made New"
