@@ -5763,6 +5763,8 @@ focus_tree = {
 		prerequisite = { focus = SWE_national_revolution }
 		X = 1
 		y = 1
+		
+		cost = 4
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -5772,6 +5774,11 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
+		
+			swap_ideas = {
+				remove_idea = SWE_black_monday_1
+				add_idea = SWE_black_monday_2
+			}		
 			random_owned_state = {
 				limit = {
 					is_valid_state_for_development = yes
@@ -5805,6 +5812,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_national_revolution }
 		X = -1
 		y = 1
+		cost = 4
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -5826,6 +5834,8 @@ focus_tree = {
 		prerequisite = { focus = SWE_organize_paramilitaries }		
 		X = 2
 		y = 2
+		
+		cost = 6
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -5848,6 +5858,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_organize_paramilitaries }		
 		X = 0
 		y = 2
+		cost = 5
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -5869,6 +5880,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_organize_paramilitaries }
 		X = -2
 		y = 2
+		cost = 6
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -5931,6 +5943,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_vast_industrialisation }
 		X = 1
 		y = 3
+		cost = 5
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -5955,6 +5968,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_vast_industrialisation }
 		X = -1
 		y = 3
+		cost = 5
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -5998,6 +6012,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_devotion_to_leader }
 		X = 0
 		y = 4
+		cost = 6.5
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -6021,6 +6036,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_socialist_imperialism }
 		X = 1
 		y = 5
+		cost = 4
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -6045,6 +6061,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_socialist_imperialism }
 		X = -1
 		y = 5
+		cost = 5
 		relative_position_id = SWE_national_revolution
 		ai_will_do = {
 			factor = 80 
@@ -6471,6 +6488,9 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 		}
 		
 		completion_reward = {
@@ -6525,6 +6545,10 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 
+
+		
 		}
 		
 		completion_reward = {
@@ -6551,9 +6575,13 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 		}
 		
 		completion_reward = {
+		
 			swap_ideas = {
 				remove_idea = SWE_arch_1
 				add_idea = SWE_arch_2
@@ -6578,7 +6606,10 @@ focus_tree = {
 			factor = 80
 		}
 
-		available = {
+		available = { 
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 		}
 		
 		completion_reward = {
@@ -6605,6 +6636,9 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 		}
 		
 		completion_reward = {
@@ -6650,6 +6684,9 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 		}
 		
 		completion_reward = {
@@ -6673,6 +6710,9 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 		}
 		
 		completion_reward = {
@@ -6709,6 +6749,9 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 		}
 		
 		completion_reward = {
@@ -6753,6 +6796,9 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 			NOT = {
 				has_country_flag = SWE_flag_crown_restored
 			}
@@ -6781,6 +6827,8 @@ focus_tree = {
 		}
 
 		available = {
+					has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 
 				has_country_flag = SWE_flag_crown_restored
 		}
 		
@@ -6809,6 +6857,9 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = SWE_flag_no_elmo_nats
+			has_government = national_populist 		
+		
 		}
 		
 		completion_reward = {
@@ -7606,6 +7657,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		
+			swap_ideas = {
+				remove_idea = SWE_black_monday_1
+				add_idea = SWE_black_monday_2
+			}		
 			random_owned_state = {
 				limit = {
 					is_valid_state_for_development = yes

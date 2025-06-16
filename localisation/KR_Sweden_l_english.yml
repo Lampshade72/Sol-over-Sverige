@@ -429,7 +429,11 @@ SWE_swedish_empire:0 "Awakened Empire"
 SWE_swedish_empire2:0 "An Empire Reborn"
 
 
+SWE_integrate_finland:0 "Integration of Finland"
+SWE_occupation_finland:0 "Occupation of Finland"
 
+SWE_kompani_linge_idea:0 "Kompani Linge Sabotage"
+SWE_union_activity:0 "Unionist Activity Present"
 
 ####Focuses####
 
@@ -728,7 +732,7 @@ SWE_international_worker:0 "An International Model Worker"
 SWE_international_worker_desc:0 "The Swedish worker is a model syndicalist, someone dedicated to the struggles of others, someone who prioritizes the collective over the individual. We shall set the example for all other nations to follow."
 SWE_true_international_rev:0 "True Internationalism"
 SWE_true_international_rev_desc:0 "Internationalism is the final goal of the syndicalist revolution, one where the world comes hand in hand, free from tyrants and borders. For now, such a goal is still far away, but by cooperating with the most major players in syndicalism, we can etch closer to that goal."
-SWE_northern_syndicalism_renewed:0 "Northern Sydnicalism"
+SWE_northern_syndicalism_renewed:0 "Northern Syndicalism"
 SWE_northern_syndicalism_renewed_desc:0 "Drawing from inspirations locally, we shall implement ideas from our other allies in our nation. The notion of ‘Folkhemmet’ shall be repurposed under a syndicalist model."
 SWE_finalising_constitution:0 "A Syndicalist Charter"
 SWE_finalising_constitution_desc:0 "Rewriting up the charter initially made at the advent of the revolution to better fit our syndicalist government will be a turning point in our nation's history!"
@@ -1226,6 +1230,7 @@ SWE_flag_anarcho_syndie:0 "Syndicalists Remain to Anarchist Doctrine"
 
 SWE_flag_lindholm_tot:0 "Lindholm's Radicals have seized power!"
 
+SWE_flag_no_elmo_nats:0 "Elmo Lindholm's Integralists are rejected!"
 SWE_flag_elmo_world:0 "Elmo Lindholm's Integral Nationalists take charge!"
 SWE_flag_elmo_quo:0 "Elmo keeps the Maurras ideology"
 SWE_flag_elmo_med:0 "Elmo embraces Feudalism"
@@ -1243,11 +1248,15 @@ SWE_flag_oscar:0 "Name Oscar"
 SWE_flag_national_league_banned:0 "National League banned"
 
 ###Election Flags####
+SWE_flag_1936_socdem:0 "The Social Democrats Won the 1936 election!"
+SWE_flag_1936_soccon:0 "The Conservatives Won the 1936 election!"
+SWE_flag_1936_marlib:0 "The Folkpartiet Won the 1936 election!"
+
 SWE_flag_dead_hansson:0 "Hansson has died"
 SWE_flag_1940_hansson:0 "Hansson chosen to lead the party"
 SWE_flag_1940_erlander:0 "Erlander chosen to lead the party"
 SWE_flag_1940_karl_kilbom:0 "Karl Kilbom chosen to lead the party"
-SWE_flag_1940_bagge:0 "Gosta Bagge chosen to lead the party"
+SWE_flag_1940_bagge:0 "Gösta Bagge chosen to lead the party"
 SWE_flag_1940_domo:0 "Fritiof Domo chosen to lead the party"
 SWE_flag_1940_gustaf_andersson:0 "Gustaf Andersson chosen to lead the party"
 SWE_flag_1940_bertil_ohlin:0 "Bertil Ohlin chosen to lead the party"
@@ -1258,7 +1267,7 @@ SWE_flag_1940_national_league_victory:0 "The National League won the 1940 electi
 SWE_flag_1944_hansson:0 "Hansson chosen to lead the party"
 SWE_flag_1944_erlander:0 "Erlander chosen to lead the party"
 SWE_flag_1944_karl_kilbom:0 "Karl Kilbom chosen to lead the party"
-SWE_flag_1944_bagge:0 "Gosta Bagge chosen to lead the party"
+SWE_flag_1944_bagge:0 "Gösta Bagge chosen to lead the party"
 SWE_flag_1944_domo:0 "Fritiof Domo chosen to lead the party"
 SWE_flag_1944_gustaf_andersson:0 "Gustaf Andersson chosen to lead the party"
 SWE_flag_1944_bertil_ohlin:0 "Bertil Ohlin chosen to lead the party"
@@ -1276,21 +1285,33 @@ SWE_destroy_finjacks:0 "Bring Finland back into Sweden's Bosom"
 SWE_destroy_fake_nords:0 "Bringing back our Baltic Bastion"
 SWE_destroy_the_bear:0 "Cutting Down the Old Bear"
 
+SWE_neutral_decisions:0 "Policies of Neutrality"
 SWE_fort_south:0 "Protection against Central Europe"
 SWE_fort_west1:0 "Southern Defence line against Norway"
 SWE_fort_west2:0 "Middle Defence line against Norway"
 SWE_fort_north:0 "Defence against the Finnish Menace"
+SWE_integrate_scandinavia_neu:0 "Integration of Scandinavia"
+swe_integrate_finland_neutral:0 "Integration of Finland"
 
 SWE_fort_coast_cities:0 "Fortify Coastal Cities"
 
+
+SWE_alliance_reachout:0 "Policy of Alliances"
 swe_subjugate_norway_alliance:0 "Subduing Norway"
 swe_subjugate_finland_alliance:0 "Knocking down Finland"
 swe_subjugate_denmark_alliance:0 "Step on the younger brother"
 swe_seize_iceland:0 "Seize Iceland"
+swe_integrate_finland_alliance:0 "Integration of Finland"
+SWE_integrate_scandinavia_ali:0 "Integration of Scandinavia"
 
 SWE_join_russia_ls:0 "A Bear-Hug Alliance"
 SWE_join_reichspact_ls:0 "Back to our German Roots"
 SWE_join_entente_LS:0 "Shaking hands in Halifax"
+
+SWE_revolution_decisions:0 "Policies of Revolution"
+SWE_join_internationale_ls:0 "Alongside the 3rd Internationale"
+SWE_own_faction_rev:0 "Nordic Bastion of Socialism"
+
 
 SWE_economic_tree_decisions:0 "Economic Decisions"
 SWE_add_rubber_1:0 "Making Rubber"
@@ -1310,13 +1331,21 @@ swe_subjugate_denmark_revolution:0 "Freeing the Dane's"
 swe_subjugate_finland_revolution:0 "Liberating the Finn's"
 swe_subjugate_norway_revolution:0 "Unchaining the Norwegian's"
 SWE_claim_scandinavia_revolution:0 "Claiming a Red Scandinavia"
+swe_integrate_finland_revolution:0 "Integrating the Red Finns"
+SWE_integrate_scandinavia_revolution:0 "Integrating Scandinavian Workers"
 
+SWE_mobilize_landsturm:0 "Mobilize the Landsturm Reserves!"
 
+SWE_idea_landstorm:0 "Landsturm Reserves"
 
+SWE_vinland_decision:0 "The First Colony"
+SWE_establish_vinland:0 "Establishing Vinland"
 
-
-
-
+SWE_elmo_decisions:0 "The Crown to Rule them All"
+SWE_join_latin_bois:0 "Joining the Latin Alliance"
+SWE_claim_elmo_europe:0 "Claims to European Domination"
+SWE_core_elmo_europe:0 "Integration of the many European Monarchs"
+SWE_elmo_flag_switcher:0 "Flag of the new Empire"
 
 
 ### Leaders ###
@@ -1544,7 +1573,7 @@ swedem.0.d:0 "Standing as the ballwork of conservatism in Sweden, the General El
 swedem.0.a:0 "Stability under Tradition"
 
 swedem.1.t:0 "The General Electoral League sets out her objectives"
-swedem.1.d:0 "The General Electoral league stands out as the mainline conservative party in Swedish politics, headed by the former Lindman, it defines itself by its approach of mild corporatist economics with the view of protectionism while maintaining social cohesion and tradition. The party favours many voters from those who align with the current monarchy, labeling itself as the only true party to uphold the Crown’s position in its entirety. Gosta Bagge and his party now set out about fixing the issues they see plaguing Sweden, positioning Sweden onto the global stage either as a neutral factor focused on her own defence, becoming a part of one of the major factions playing their hand at international cooperation or secluding herself to her northern neighbours in a bid for Nordic unity. With this the party has formed an official coalition once more with the People’s Party, a staunchly classical liberal party that finds itself largely compatible with the Electoral league, such a relationship gives Bagge the needed seats to dominate the Rikstag, and place his party in a good position against the opposition."
+swedem.1.d:0 "The General Electoral league stands out as the mainline conservative party in Swedish politics, headed by the former Lindman, it defines itself by its approach of mild corporatist economics with the view of protectionism while maintaining social cohesion and tradition. The party favours many voters from those who align with the current monarchy, labeling itself as the only true party to uphold the Crown’s position in its entirety. Gösta Bagge and his party now set out about fixing the issues they see plaguing Sweden, positioning Sweden onto the global stage either as a neutral factor focused on her own defence, becoming a part of one of the major factions playing their hand at international cooperation or secluding herself to her northern neighbours in a bid for Nordic unity. With this the party has formed an official coalition once more with the People’s Party, a staunchly classical liberal party that finds itself largely compatible with the Electoral league, such a relationship gives Bagge the needed seats to dominate the Rikstag, and place his party in a good position against the opposition."
 swedem.1.a:0 "We will make ‘The Admiral’ proud!"
 
 swedem.2.t:0 "Electoral Victory Approved by the Army"
@@ -1670,10 +1699,10 @@ sweelect.1.t:0 "The Social Democratic Leadership Debate"
 sweelect.1.d:0 "With the elections fast approaching, the Social Democrats must come to a decision, who shall lead the party? Hansson remains the most obvious candidate, skilled in both Rikstag debates and a talented statesman; his current leadership over the party has proved fruitful. However, another candidate, that of Tage Erlander. 15 years Hanssons junior, Erlander represents a younger face in the party, still a strong advocate for the party's model of Folkhemmet welfare. However a third, and more unorthodox choice has arisen, the former leader of the SSV in the 1936 elections, Karl Kilbom. Joining the Social democrats in 1938 after the failure of the SSV to gain traction, he has been proposed as the third, albeit radical, candidate for Sweden. At the least he has promised to maintain the monarchy. The choice is voted upon, with a clear winner being decided upon."
 sweelect.1.a:0 "Hansson maintains leadership!"
 sweelect.1.b:0 "Erlander sweeps the position!"
-sweelect.1.b:0 "Kilbom returns and reformed!"
+sweelect.1.c:0 "Kilbom returns and reformed!"
 
 sweelect.2.t:0 "The Conservatives Congregate"
-sweelect.2.d:0 "The Conservative party recently has gone about a name change, once the Electoral League, the party has since been renamed as the National Organisation of the Right. Even with this, the basis of the party has changed little, and currently Gosta Bagge heads it. Today, the party has congregated to vote on who shall lead them in the upcoming election. Gosta Bagge, formerly endorsed by the famed Arvid Lindman, seems to be the most likely candidate. Maintaining the party’s corporate ideals and traditional conservatism. The only other candidate to arise, is the lesser known Fritiof Domö, only a few years younger than Bagge, he shows a younger yet relatively the same face of the party. With the only other candidate Martin Skoglund refusing to run for Prime ministership, it now remains to be seen if the party will decide on Bagge or Domö."
+sweelect.2.d:0 "The Conservative party recently has gone about a name change, once the Electoral League, the party has since been renamed as the National Organisation of the Right. Even with this, the basis of the party has changed little, and currently Gösta Bagge heads it. Today, the party has congregated to vote on who shall lead them in the upcoming election. Gösta Bagge, formerly endorsed by the famed Arvid Lindman, seems to be the most likely candidate. Maintaining the party’s corporate ideals and traditional conservatism. The only other candidate to arise, is the lesser known Fritiof Domö, only a few years younger than Bagge, he shows a younger yet relatively the same face of the party. With the only other candidate Martin Skoglund refusing to run for Prime ministership, it now remains to be seen if the party will decide on Bagge or Domö."
 sweelect.2.a:0 "Bagge keeps the ship steady"
 sweelect.2.b:0 "Domö decimates the debate, leading the party!"
 
@@ -1721,7 +1750,7 @@ sweelect.10.a:0 "Hansson maintains leadership!"
 sweelect.10.b:0 "Erlander sweeps the position!"
 
 sweelect.11.t:0 "The Conservatives Congregate"
-sweelect.11.d:0 "The Conservative party recently has gone about a name change, once the Electoral League, the party has since been renamed as the National Organisation of the Right. Even with this, the basis of the party has changed little, and currently Gosta Bagge heads it. Today, the party has congregated to vote on who shall lead them in the upcoming election. Gosta Bagge, formerly endorsed by the famed Arvid Lindman, seems to be the most likely candidate. Maintaining the party’s corporate ideals and traditional conservatism. The only other candidate to arise, is the lesser known Fritiof Domö, only a few years younger than Bagge, he shows a younger yet relatively the same face of the party. With the only other candidate Martin Skoglund refusing to run for Prime ministership, it now remains to be seen if the party will decide on Bagge or Domö."
+sweelect.11.d:0 "The Conservative party recently has gone about a name change, once the Electoral League, the party has since been renamed as the National Organisation of the Right. Even with this, the basis of the party has changed little, and currently Gösta Bagge heads it. Today, the party has congregated to vote on who shall lead them in the upcoming election. Gösta Bagge, formerly endorsed by the famed Arvid Lindman, seems to be the most likely candidate. Maintaining the party’s corporate ideals and traditional conservatism. The only other candidate to arise, is the lesser known Fritiof Domö, only a few years younger than Bagge, he shows a younger yet relatively the same face of the party. With the only other candidate Martin Skoglund refusing to run for Prime ministership, it now remains to be seen if the party will decide on Bagge or Domö."
 sweelect.11.a:0 "Bagge keeps the ship steady"
 sweelect.11.b:0 "Domö decimates the debate, leading the party!"
 
@@ -2133,7 +2162,7 @@ swemil.26.d:0 "With the appointment of Carl August Ehrensvärd as the leader of 
 swemil.26.a:0 "The Armies duty is the serve the people"
 
 swemil.27.t:0 "Reconciliation with the Moderate Right"
-swemil.27.d:0 "The aftermath of the Army’s coup against the revolutionaries left many of the mainstream parties in total chaos. Many of Hansson’s social democrats were either arrested or fled the country, as the abolishment of the monarchy was blamed upon them. The Farmer’s League remains, absorbing some of Hansson’s remnants while being kept under watchful eye of the military. This leaves the People’s party and the General Electoral league, both still holding significant support from the civilian population. By reaching out to their former leaders, especially Gosta Bagge due to Lindman’s backing of him, shall ensure stability in Sweden and expand our support base."
+swemil.27.d:0 "The aftermath of the Army’s coup against the revolutionaries left many of the mainstream parties in total chaos. Many of Hansson’s social democrats were either arrested or fled the country, as the abolishment of the monarchy was blamed upon them. The Farmer’s League remains, absorbing some of Hansson’s remnants while being kept under watchful eye of the military. This leaves the People’s party and the General Electoral league, both still holding significant support from the civilian population. By reaching out to their former leaders, especially Gösta Bagge due to Lindman’s backing of him, shall ensure stability in Sweden and expand our support base."
 swemil.27.a:0 "Together, we can rebuild Sweden"
 
 swemil.28.t:0 "A Telegram to Ottawa"
@@ -2435,7 +2464,9 @@ swe.44.d:0 "Once more, it is the birthday of the revolution. The state has commi
 swe.44.a:0 "Leve vår Revolution!"
 
 swe.49.t:0 "The General Electoral League Changes Its Name"
-swe.49.d:0 "Since their defeat in 1936, the fate of the conservative General Electoral League has been one of misfortune. The party has been seeing much of its support defecting to the Social Democrats of Hansson, and those who supported the League in opposition to the Social Democrats are going back to the Folkpartiet if the polls are to be believed.\nIn an attempt to rebrand the party that is now the bastion of right-wing opposition and to reverse its fortunes once more, party leadership has elected to change the partyname into the National Organisation of the Right (Högerns Riksorganisation). Whether this tactic will be successful in attracting more voters once again, remains to be seen."
+swe.49.d.socdem:0 "Since their defeat in 1936, the fate of the conservative General Electoral League has been one of misfortune. The party has been seeing much of its support defecting to the Social Democrats of Hansson, and those who supported the League in opposition to the Social Democrats are going back to the Folkpartiet if the polls are to be believed.\nIn an attempt to rebrand the party that is now the bastion of right-wing opposition and to reverse its fortunes once more, party leadership has elected to change the partyname into the National Organisation of the Right (Högerns Riksorganisation). Whether this tactic will be successful in attracting more voters once again, remains to be seen."
+swe.49.d.soccon:0 "Since our striking victory against the social democrats in 1936, the slow societal turn towards conservatism has benefited our popularity greatly. With support for Hansson and his lot shrinking each day, a decision has been made to espouse ourselves as the conservative juggernaut in Sweden. A name change, while seen initially by members of the AV as pointless, the idea of the proposal allows us to further draw in support and voters by decorating ourselves with a new face. With a majority of the party already in favour, it seems the new name for ourselves is now the National Organisation of the Right (Högerns Riksorganisation). We can only wait and see for the public's reaction!"
+swe.49.d.marlib:0 "While not necessarily a defeat, their second place in the coalition has warranted the conservatives a steep decline in voters and public support. With the majority now aligning with us, the Folkpartiet, and any wayward centrists turning towards the Farmer’s league or Hanssons social democrats. \n\nIn an attempt to rebrand the party that is now the bastion of right-wing opposition and to reverse its fortunes once more, party leadership has elected to change the partyname into the National Organisation of the Right (Högerns Riksorganisation). Whether this tactic will be successful in attracting more voters once again, remains to be seen."
 swe.49.a:0 "Interesting..."
 
 swe.50.t:0 "The King Intends to Send a Letter"
