@@ -4346,7 +4346,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_second_election
-		icon = GFX_goal_FRA_streamlined_bureaucracies
+		icon = GFX_goal_NFA_New_Elections
 		x = 0
 		y = 10
 		relative_position_id = SWE_elections_over		
@@ -4381,7 +4381,7 @@ focus_tree = {
 ### SOCDEM second term ###
 	focus = { 
 		id = SWE_social_dem_second
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_SWE_sap
 		prerequisite = { focus = SWE_second_election }
 		x = 14
 		y = 1
@@ -4403,7 +4403,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_folkhemmet_improve
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_COR_Home_Grown_Dixiewood
 		prerequisite = { focus = SWE_social_dem_second }
 		x = 2
 		y = 1
@@ -4425,7 +4425,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_Hjalmar_Branting_ideology
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_TEX_democratic_transition
 		prerequisite = { focus = SWE_social_dem_second }
 		x = 0
 		y = 1
@@ -4447,7 +4447,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_marx_and_key
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_GER_Hero_Marx
 		prerequisite = { focus = SWE_social_dem_second }
 		x = -2
 		y = 1
@@ -4469,7 +4469,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_market_rikstag_dom
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_COR_Free_Market_Appeals
 		prerequisite = { focus = SWE_marx_and_key }
 		prerequisite = { focus = SWE_Hjalmar_Branting_ideology }
 		prerequisite = { focus = SWE_folkhemmet_improve } 
@@ -4494,7 +4494,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_social_rikstag_dom
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_UKR_Progressive_National_Policy
 		prerequisite = { focus = SWE_marx_and_key }
 		prerequisite = { focus = SWE_Hjalmar_Branting_ideology }
 		prerequisite = { focus = SWE_folkhemmet_improve }
@@ -4519,7 +4519,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_people_over_politics
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_FRA_peoples_banking
 		prerequisite = { 
 				focus = SWE_market_rikstag_dom
 				focus = SWE_social_rikstag_dom
@@ -4550,7 +4550,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_social_liberal_win
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_CAL_farm_bankruptcy_act
 		prerequisite = { focus = SWE_second_election }
 		x = 7
 		y = 1
@@ -4572,7 +4572,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_environment_help
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_trees
 		prerequisite = { focus = SWE_social_liberal_win }
 		x = 2
 		y = 1
@@ -4594,7 +4594,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_europe_agrarian
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_CZE_agrarian_victory
 		prerequisite = { focus = SWE_social_liberal_win }
 		x = 0
 		y = 1
@@ -4714,7 +4714,7 @@ focus_tree = {
 ### MARLIB Second Term ###
 	focus = { 
 		id = SWE_market_liberal_win
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_LUX_progressive_classical_liberalism
 		prerequisite = { focus = SWE_second_election }
 		x = 0
 		y = 1
@@ -4736,7 +4736,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_finnish_rights
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_flag_finland
 		prerequisite = { focus = SWE_market_liberal_win }
 		x = 2
 		y = 1
@@ -4758,7 +4758,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_grass_roots_prot
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_ICE_bridging_urban_rural_fissure
 		prerequisite = { focus = SWE_market_liberal_win }
 		x = 0
 		y = 1
@@ -4780,7 +4780,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_nordic_wealth
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_ICE_adopt_nordic_model
 		prerequisite = { focus = SWE_market_liberal_win }
 		x = -2
 		y = 1
@@ -4802,7 +4802,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_market_conserv
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NZL_conservative_outreach
 		prerequisite = { focus = SWE_finnish_rights }
 		prerequisite = { focus = SWE_grass_roots_prot }
 		prerequisite = { focus = SWE_nordic_wealth }
@@ -4827,7 +4827,7 @@ focus_tree = {
 	
 	focus = { 
 		id = SWE_market_centre
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_AST_independent_central_bank
 		prerequisite = { focus = SWE_finnish_rights }
 		prerequisite = { focus = SWE_grass_roots_prot }
 		prerequisite = { focus = SWE_nordic_wealth }
@@ -4853,7 +4853,7 @@ focus_tree = {
 	focus = { 
 		id = SWE_Anders_Chydenius
 
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NFA_Many_Theories_Singular_National_Economy
 		prerequisite = { focus = SWE_market_centre
 						focus = SWE_market_conserv
 						}
@@ -4884,7 +4884,7 @@ focus_tree = {
 ### SOCCON 1940 ###
 	focus = { 
 		id = SWE_social_conservative_win
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_SWE_avf
 		prerequisite = { focus = SWE_second_election }
 		x = -7
 		y = 1
@@ -4906,7 +4906,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_landman_legacy
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NFA_organic_state_realised
 		prerequisite = { focus = SWE_social_conservative_win }
 		x = 2
 		y = 1
@@ -4928,7 +4928,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_regulate_agriculture
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_agricultural_policies
 		prerequisite = { focus = SWE_social_conservative_win }
 		x = 0
 		y = 1
@@ -4950,7 +4950,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_further_central
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_UKR_Federation_Central_Europe
 		prerequisite = { focus = SWE_social_conservative_win }
 		x = -2
 		y = 1
@@ -4972,7 +4972,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_conservative_majority
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_UKR_All_Ukrainian_Parliament
 		prerequisite = { focus = SWE_landman_legacy }
 		prerequisite = { focus = SWE_regulate_agriculture }
 		prerequisite = { focus = SWE_further_central }
@@ -4997,7 +4997,7 @@ focus_tree = {
 	
 	focus = { 
 		id = SWE_conservative_radicals
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_BEL_Radicalize_Rexist_Ideology_Further
 		prerequisite = { focus = SWE_landman_legacy }
 		prerequisite = { focus = SWE_regulate_agriculture }
 		prerequisite = { focus = SWE_further_central }
@@ -5023,7 +5023,7 @@ focus_tree = {
 	focus = { 
 		id = SWE_against_free_market_thought
 
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NFA_Put_Chains_Labour
 		prerequisite = { focus = SWE_conservative_majority
 						focus = SWE_conservative_radicals
 						}
@@ -5055,7 +5055,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_national_league_win
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NFA_National_Project
 		prerequisite = { focus = SWE_second_election }
 		x = -14
 		y = 1
@@ -5077,7 +5077,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_bully_opposition
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NFA_Assembly_Under_Check
 		prerequisite = { focus = SWE_national_league_win }
 		x = 2
 		y = 1
@@ -5099,7 +5099,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_dagsposten 
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NFA_La_Liberte_Masses
 		prerequisite = { focus = SWE_national_league_win }
 		x = 0
 		y = 1
@@ -5121,7 +5121,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_break_syndicalism
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NFA_Corporatism_Empire
 		prerequisite = { focus = SWE_national_league_win }
 		x = -2
 		y = 1
@@ -5143,7 +5143,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_nordic_radicalism
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_NFA_Continuity
 		prerequisite = { focus = SWE_bully_opposition }
 		prerequisite = { focus = SWE_dagsposten }
 		prerequisite = { focus = SWE_break_syndicalism }
@@ -5168,7 +5168,7 @@ focus_tree = {
 	
 	focus = { 
 		id = SWE_european_social_union
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_GER_paneuropa
 		prerequisite = { focus = SWE_bully_opposition }
 		prerequisite = { focus = SWE_dagsposten }
 		prerequisite = { focus = SWE_break_syndicalism }
@@ -5194,7 +5194,7 @@ focus_tree = {
 	focus = { 
 		id = SWE_against_all_odds
 
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_RUS_Stratocracy
 		prerequisite = { focus = SWE_european_social_union
 						focus = SWE_nordic_radicalism
 						}
