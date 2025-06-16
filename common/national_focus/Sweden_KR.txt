@@ -5059,7 +5059,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_national_league_win
-		icon = GFX_goal_NFA_National_Project
+		icon = GFX_National_League_2
 		prerequisite = { focus = SWE_second_election }
 		x = -14
 		y = 1

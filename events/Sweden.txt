@@ -2089,6 +2089,8 @@ country_event = { ####unity cabinet
 		has_country_flag = SWE_election_safe_success
 		is_in_faction = no
 	}
+	
+	fire_only_once = yes
 
 	option = { #yes
 		name = swedem.26.a

@@ -1200,6 +1200,7 @@ SWE_navy_large_and_big_desc:0 "They may move fast, we shoot faster. They may arm
 SWE_navy_henrik_trolle:0 "Naval Warfare Alike Henrik Trolle"
 SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedish Admirals in history, by embodying his skill, the Swedish navy shall rise to heights it has never seen before."
 
+<<<<<<< HEAD
 ### Second term election focuses ###
 
 SWE_second_election:0 "1940 National Elections"
@@ -1294,6 +1295,7 @@ SWE_kompani_linge_SWE_is_socialist: "[SWE_kompani_linge_SWE_is_socialist] $KR_is
 SWE_kompani_linge_NOR_does_not_exist: "[SWE_kompani_linge_NOR_does_not_exist] §H[NOR.GetNameWithFlag]§! $TRIGGER_DOES_NOT_EXIST$"
 SWE_kompani_linge_NOR_has_capitulated: "[SWE_kompani_linge_NOR_has_capitualted] §H[NOR.GetName]§!: $TRIGGER_HAS_CAPITULATED$"
 SWE_kompani_linge_NOR_is_not_socialist: "[SWE_kompani_linge_NOR_is_not_socialist] §H[NOR.GetName]§!: $KR_is_socialist_NOT$"
+>>>>>>> main
 
 
 
