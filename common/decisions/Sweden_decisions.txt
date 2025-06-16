@@ -1466,6 +1466,65 @@ SWE_revolution_decisions = {
 		}
 	}
 
+	SWE_join_russian_socialists = {
+		icon = generic_nationalism
+
+		allowed = { tag = SWE }
+
+		available = {
+			has_socialist_government = yes
+			NOT = { has_completed_focus = SWE_FOP_nordic_torch_alone }
+			
+			OR = {
+						RUS = {
+							has_socialist_government = yes
+						}
+						
+						SOV = { 
+							has_socialist_government = yes
+						}
+			
+			}
+			date > 1937.2.2
+			is_in_faction = no
+		}
+
+		visible = {
+			has_completed_focus = SWE_FOP_revolutionary_torch
+			is_subject = no
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+					has_game_rule = {
+						rule = SWE_foreign_policy 
+						option = SWE_FOREIGN_POLICY_NORDIC_INTERNAT
+					}    									
+			}
+		}
+		fire_only_once = no
+		cost = 35
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_join_russian_socialists"
+			if = {
+				limit = { 
+					SOV = { 
+						exists = yes 
+						}
+					}
+				SOV = {
+					add_to_faction = SWE
+				}		
+			} else = {
+				RUS = {
+					add_to_faction = yes
+				}			
+			}
+		}
+	}
+
 	SWE_own_faction_rev = {# Create Faction
 		icon = generic_nationalism
 
