@@ -4345,7 +4345,7 @@ focus_tree = {
 	}
 
 
-<<<<<<< HEAD
+
 #### Second Term Election Trees ####
 
 	focus = { 
@@ -4620,7 +4620,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_farmer_focus
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_AST_break_urban_rural_divide
 		prerequisite = { focus = SWE_social_liberal_win }
 		x = -2
 		y = 1
@@ -4642,7 +4642,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_centre_left
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_AST_further_advance_gender_equality
 		prerequisite = { focus = SWE_environment_help }
 		prerequisite = { focus = SWE_europe_agrarian }
 		prerequisite = { focus = SWE_farmer_focus }
@@ -4667,7 +4667,7 @@ focus_tree = {
 	
 	focus = { 
 		id = SWE_centre_full
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_AST_united_white_free_prosperous
 		prerequisite = { focus = SWE_environment_help }
 		prerequisite = { focus = SWE_europe_agrarian }
 		prerequisite = { focus = SWE_farmer_focus }
@@ -4692,7 +4692,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_agricultural_future
-		icon = GFX_goal_SWE_focus_hansson
+		icon = GFX_goal_AST_the_defenders_of_a_new_socialist_democracy
 		prerequisite = { focus = SWE_centre_full
 						focus = SWE_centre_left
 						}
@@ -5081,7 +5081,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_bully_opposition
-		icon = GFX_goal_NFA_Assembly_Under_Check
+		icon = GFX_goal_AST_country_law_in_the_city
 		prerequisite = { focus = SWE_national_league_win }
 		x = 2
 		y = 1
@@ -5125,7 +5125,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_break_syndicalism
-		icon = GFX_goal_NFA_Corporatism_Empire
+		icon = GFX_goal_AST_stand_as_the_maximalist_ideal
 		prerequisite = { focus = SWE_national_league_win }
 		x = -2
 		y = 1
