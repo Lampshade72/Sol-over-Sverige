@@ -4551,6 +4551,7 @@ country_event = { #Archy wins ##LS##
 					country_event = { id = swemil.9 days = 6 }	
 			} else = { 
 				country_event = { id = swemil.10 days = 25 }
+				set_country_flag = SWE_flag_no_elmo_nats
 			}
 	}
 }

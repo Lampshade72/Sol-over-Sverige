@@ -8142,7 +8142,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_olof_plan
-		icon = GFX_goal_COR_industrial_security_act
+		icon = GFX_SWE_Olof_Army
 		prerequisite = { focus = SWE_chief_of_army }
 		mutually_exclusive = { focus = SWE_archies_plan }
 		mutually_exclusive = { focus = SWE_jung_plan }
@@ -8167,7 +8167,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_jung_plan
-		icon = GFX_goal_POL_Defensive_Tactics
+		icon = GFX_SWE_Jung_Army
 		prerequisite = { focus = SWE_chief_of_army }
 		mutually_exclusive = { focus = SWE_archies_plan }
 		mutually_exclusive = { focus = SWE_olof_plan }
