@@ -6245,23 +6245,13 @@ country_event = { ####new charter - ideology change ##LS##
 	option = { #switch to national syndicalism
 		name = swetot.14.b	
 		add_stability = 0.03
-		create_country_leader = {
-			name = "Sven Olov Lindholm"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Sven_Sven_Olov_Lindholm.png"
-			expire = "1.1.1"
-			ideology = natsynd_subtype
-		}
+		set_country_leader_ideology = natsynd_subtype
 		
 	}	
 	option = {# switch to totalist savinkovism
 		name = swetot.14.c
 		add_stability = -0.02
-		create_country_leader = {
-			name = "Sven Olov Lindholm"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Sven_Sven_Olov_Lindholm.png"
-			expire = "1.1.1"
-			ideology = totalist_savinkovism_subtype
-		}
+		set_country_leader_ideology = totalist_savinkovism_subtype
 		
 	}	
 }

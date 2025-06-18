@@ -535,7 +535,7 @@ SWE_deregulation_key_desc:0 "By cutting away nuisance regulations, we can open u
 SWE_expand_education_sector:0 "Expanding National Education"
 SWE_expand_education_sector_desc:0 "It is essential that all the youth have access to education, by expanding the current government educational apparatus, we can assure that the youth in Sweden learn good moral values, mathematics and scientific pursuits." 
 SWE_spotless_welfare:0 "Limited Welfare"
-SWE_spotless_welfare:0 "We shall implement welfare, similar to that proposed by the Social Democrats. However, as they propose, the ability to scam and cheat the system would run rampant, as such we shall design a system with strict eligibility and time constraints on welfare benefits."
+SWE_spotless_welfare_desc:0 "We shall implement welfare, similar to that proposed by the Social Democrats. However, as they propose, the ability to scam and cheat the system would run rampant, as such we shall design a system with strict eligibility and time constraints on welfare benefits."
 SWE_spotless_welfare_desc:0 "Welfare carries the fear of creating a class of people who lounge about while receiving compensation, as such our policy of welfare shall be tightly regulated. Enforcing those who are on it to comply with standards, like actively seeking for a job or even military membership, to avoid an overbearing amount of government spending."
 SWE_fund_the_scouts:0 "Incentivize Scout Membership"
 SWE_fund_the_scouts_desc:0 "The scouts serve as the perfect example of guiding the growing minds in Sweden, by helping them in recruitment, we can create a new generation of fit and naturally capable men!"
@@ -1009,9 +1009,9 @@ SWE_FOP_british_naval_advise_desc:0 "The Brits have always been known for their 
 SWE_FOP_worker_class_collab:0 "International Worker Collaboration"
 SWE_FOP_worker_class_collab_desc:0 "Workers across the whole globe must come together if we are to succeed and defeat the greed of capitalism and foolishness of nationalist, arise!"
 SWE_FOP_ready_world_revolution:0 "Preparing for World Revolution"
-SWE_FOP_ready_world_revolution:0 "The sole purpose for the 3rd Internationale is the total liberation of the working class across the globe, and with this task, we must be prepared."
+SWE_FOP_ready_world_revolution_desc:0 "The sole purpose for the 3rd Internationale is the total liberation of the working class across the globe, and with this task, we must be prepared."
 SWE_FOP_role_to_play:0 "The Torch We Carry"
-SWE_FOP_role_to_play:0 "We carry a torch, it tells the tale of liberation, freedom and hope. Together, with our comrades in the Internationale we can achieve much, for together we all carry a torch, for the workers!"
+SWE_FOP_role_to_play_desc:0 "We carry a torch, it tells the tale of liberation, freedom and hope. Together, with our comrades in the Internationale we can achieve much, for together we all carry a torch, for the workers!"
 
 SWE_FOP_nordic_torch_alone:0 "A Nordic Internationell"
 SWE_FOP_nordic_torch_alone_desc:0 "The 3rd Internationale started as a noble cause, but like many causes it has since become corrupt, a shell of its original intentions. Its ideologies muddy the water of freedom and tyranny in their ploy for red imperialism. Because of this, we must go it alone, proclaiming our own international, here in the Nordic North."
@@ -1406,7 +1406,7 @@ SWE_puppet_king_trait:0 "§RPuppet King§!"
 
 ### Parties ###
 SWE_totalist_party:0 "SKP/SNSP"
-SWE_totalist_party_long:0 "Sveriges kommunistiska parti - §LCommunist Party of Sweden§!\nSveriges Nationella Syndikalistiska Parti - §LNational Syndicalist Party of Sweden§!"
+SWE_totalist_party_long:0 "Sveriges kommunistiska parti - §LCommunist Party of Sweden§!\nSveriges Nationalsyndikalistiska parti - §LNational Syndicalist Party of Sweden§!"
 SWE_syndicalist_party:0 "SAC"
 SWE_syndicalist_party_long:0 "Sveriges Arbetares Centralorganisation\n§LCentral Organisation of the Workers of Sweden§!"
 SWE_radical_socialist_party:0 "SSV"
@@ -1453,7 +1453,7 @@ SWE_totalist_C_party:0 "SKP"
 SWE_totalist_C_party_long:0 "Sveriges Kommunistiska Parti - §LCommunist Party of Sweden§!"
 
 SWE_totalist_flyg_party:0 "SNSP"
-SWE_totalist_flyg_party_long:0 "Sveriges Nationella Syndikalistiska Parti - §LNational Syndicalist Party of Sweden§!"
+SWE_totalist_flyg_party_long:0 "Sveriges Nationalsyndikalistiska parti - §LNational Syndicalist Party of Sweden§!"
 
 SWE_totalist_lind_party:0 "SSS"
 SWE_totalist_lind_party_long:0 "Svensk Socialistisk Samling - §LSwedish Socialist Gathering§!"
@@ -2015,7 +2015,8 @@ swetot.13.d:0 "After the revolution that took hold of our nation, many generals 
 swetot.13.a:0 "If the monarchist can reform, any soul can!"
 
 swetot.14.t:0 "Address to the Nation"
-swetot.14.d:0 "Today, in a grand and orchestrated display of national strength, Riksledare Lindholm addressed the people of Sweden with unwavering authority, unveiling the foundations of a new era—one forged in fire, discipline, and destiny. Standing before a sea of flags and a roaring crowd, he declared the drafting of a new national charter, one unlike any the world has seen. Unlike the crumbling constitutions of Britain or the hollow principles of France, Sweden’s new charter will be a testament to her unique spirit—crafted not from borrowed ideals, but from the blood, toil, and will of the Swedish people. \n\nIn his address, Lindholm fiercely condemned the 3rd Internationale and its pitiful doctrine of blind internationalism—calling it not a vision of unity, but a grotesque denial of national identity. He proclaimed that their obsession with borderless brotherhood had led to their moral and structural decay. And when their house of cards inevitably collapses, it will be Sweden—disciplined, unified, and reborn—that shall rise to pick up the shattered remnants of Europe. Not out of charity, but duty. Not in weakness, but in strength. \n\nEspousing a bold vision blending radical nationalist purpose with a reimagined form of Swedish socialism, Lindholm's words struck like lightning—commanding applause, evoking passion, and stirring the very soul of the nation. As his speech came to an end, a thunderous ovation erupted—thousands of voices united as one, echoing his vision across the capital and beyond.\n\nThe world now gazes upon Sweden with awe, fear, and fascination. No longer the placid, democratic monarchist bastion of yesteryear, our nation has been reborn as a blazing pillar of social-nationalist resolve. Under the watchful eye of the Riksledare, Sweden stands proud; unyielding, sovereign, and ready to shape the destiny of a crumbling continent."swetot.14.a:0 "Remain as we are, we have no need for change again!"
+swetot.14.d:0 "Today, in a grand and orchestrated display of national strength, Riksledare Lindholm addressed the people of Sweden with unwavering authority, unveiling the foundations of a new era—one forged in fire, discipline, and destiny. Standing before a sea of flags and a roaring crowd, he declared the drafting of a new national charter, one unlike any the world has seen. Unlike the crumbling constitutions of Britain or the hollow principles of France, Sweden’s new charter will be a testament to her unique spirit—crafted not from borrowed ideals, but from the blood, toil, and will of the Swedish people. \n\nIn his address, Lindholm fiercely condemned the 3rd Internationale and its pitiful doctrine of blind internationalism—calling it not a vision of unity, but a grotesque denial of national identity. He proclaimed that their obsession with borderless brotherhood had led to their moral and structural decay. And when their house of cards inevitably collapses, it will be Sweden—disciplined, unified, and reborn—that shall rise to pick up the shattered remnants of Europe. Not out of charity, but duty. Not in weakness, but in strength. \n\nEspousing a bold vision blending radical nationalist purpose with a reimagined form of Swedish socialism, Lindholm's words struck like lightning—commanding applause, evoking passion, and stirring the very soul of the nation. As his speech came to an end, a thunderous ovation erupted—thousands of voices united as one, echoing his vision across the capital and beyond.\n\nThe world now gazes upon Sweden with awe, fear, and fascination. No longer the placid, democratic monarchist bastion of yesteryear, our nation has been reborn as a blazing pillar of social-nationalist resolve. Under the watchful eye of the Riksledare, Sweden stands proud; unyielding, sovereign, and ready to shape the destiny of a crumbling continent."
+swetot.14.a:0 "Remain as we are, we have no need for change again!"
 swetot.14.b:0 "Flyg’s vision will be best realised by our hand!"
 swetot.14.c:0 "The Russian ideologue Savinkov’s ideals would best fit Sweden!"
 
