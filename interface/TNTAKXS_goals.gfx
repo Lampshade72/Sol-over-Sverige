@@ -105,14 +105,20 @@ SpriteTypes = {
 
 	SpriteType = {
 		name = "GFX_National_League_2"
-		texturefile = "gfx/interface/goals/National_League_2.png"
+		texturefile = "gfx/interface/goals/attempt/National_League_2.png"
 	}
 	SpriteType = {
 		name = "GFX_National_League_3"
-		texturefile = "gfx/interface/goals/National_League_3.png"
+		texturefile = "gfx/interface/goals/attempt/National_League_3.png"
 	}
-
-
+	SpriteType = {
+		name = "GFX_SWE_Jung_Army"
+		texturefile = "gfx/interface/goals/CHKX/SWE_Jung_Army.png"
+	}
+	SpriteType = {
+		name = "GFX_SWE_Olof_Army"
+		texturefile = "gfx/interface/goals/CHKX/SWE_Olof_Army.png"
+	}
 
 	
 }
