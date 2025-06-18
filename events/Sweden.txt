@@ -6480,12 +6480,11 @@ country_event = { ####ideology choice ##LS##
 		name = swerev.19.a
 		add_stability = 0.05
 		set_country_flag = SWE_flag_anarcho_syndie
-		remove_ideas_with_trait = security_minister
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = head_of_government
+		remove_all_ministers = yes 
 		add_ideas = SWE_Elise_Ottesen_Jensen_hog_syn
 		add_ideas = SWE_Britta_Gröndahl_for_syn
 		add_ideas = SWE_Elise_Ottesen_Jensen_sec_syn
+		add_ideas = SWE_Gustav_Sjoestroem_eco_syn 
 		
 		create_country_leader = {
 			name = "Elise Ottesen-Jensen"

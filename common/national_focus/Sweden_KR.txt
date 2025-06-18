@@ -6482,7 +6482,7 @@ focus_tree = {
 	focus = { 
 		id = SWE_corporatism_in_north
 		icon = GFX_goal_BEL_Continue_Corporatist_Industrialization
-		prerequisite = { focus = SWE_archibald_take_command }
+		prerequisite = { focus = SWE_archibald_take_command } 
 
 		x = 1
 		y = 1
