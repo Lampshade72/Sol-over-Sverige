@@ -135,6 +135,32 @@ SpriteTypes = {
 		name = "GFX_SOS_lindman"
 		texturefile = "gfx/interface/goals/attempt/SOS_lindman.png"
 	}
+	SpriteType = {
+		name = "GFX_SOS_church_bye"
+		texturefile = "gfx/interface/goals/attempt/SOS_church_bye.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_nordic_wealth"
+		texturefile = "gfx/interface/goals/attempt/SOS_nordic_wealth.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_sweeping"
+		texturefile = "gfx/interface/goals/attempt/SOS_sweeping.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_no_statare"
+		texturefile = "gfx/interface/goals/attempt/SOS_no_statare.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_branting"
+		texturefile = "gfx/interface/goals/attempt/SOS_branting.png"
+	}
+
+
+
+
+
+
 	
 }
 
