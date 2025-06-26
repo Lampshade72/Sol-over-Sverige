@@ -365,7 +365,7 @@ SWE_foreign_policy_empire_decisions = {
 			country_event = { id = scandinavia.20 } 
 			add_timed_idea = {
 				idea = SWE_integrate_scandinavia_idea
-				days = 411
+				days = 210
 			}			
 		}
 		
@@ -850,7 +850,7 @@ SWE_neutral_decisions = {
 			country_event = { id = scandinavia.20 } 
 			add_timed_idea = {
 				idea = SWE_integrate_scandinavia_idea
-				days = 411
+				days = 210
 			}		
 
 		}
@@ -1397,7 +1397,7 @@ SWE_alliance_reachout = {
 			country_event = { id = scandinavia.20 } 
 			add_timed_idea = {
 				idea = SWE_integrate_scandinavia_idea
-				days = 411
+				days = 210
 			}		
 
 		}
@@ -1954,7 +1954,7 @@ SWE_revolution_decisions = {
 			add_stability = -0.10
 			add_timed_idea = {
 				idea = SWE_integrate_scandinavia_idea
-				days = 411
+				days = 210
 			}		
 			if = {
 				limit = { has_completed_focus = SWE_radical_socialist_victory } 
