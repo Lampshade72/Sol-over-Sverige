@@ -4912,7 +4912,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_landman_legacy
-		icon = GFX_goal_NFA_organic_state_realised
+		icon = GFX_SOS_lindman
 		prerequisite = { focus = SWE_social_conservative_win }
 		x = 2
 		y = 1
@@ -5105,7 +5105,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_dagsposten 
-		icon = GFX_goal_NFA_La_Liberte_Masses
+		icon = GFX_SOS_dagspoken
 		prerequisite = { focus = SWE_national_league_win }
 		x = 0
 		y = 1
@@ -5127,7 +5127,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_break_syndicalism
-		icon = GFX_goal_AST_stand_as_the_maximalist_ideal
+		icon = GFX_SOS_destroy_syndies
 		prerequisite = { focus = SWE_national_league_win }
 		x = -2
 		y = 1
@@ -5200,7 +5200,7 @@ focus_tree = {
 	focus = { 
 		id = SWE_against_all_odds
 
-		icon = GFX_RUS_Stratocracy
+		icon = GFX_SOS_SNF_salute
 		prerequisite = { focus = SWE_european_social_union
 						focus = SWE_nordic_radicalism
 						}

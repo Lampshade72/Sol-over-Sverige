@@ -119,7 +119,22 @@ SpriteTypes = {
 		name = "GFX_SWE_Olof_Army"
 		texturefile = "gfx/interface/goals/CHKX/SWE_Olof_Army.png"
 	}
-
+	SpriteType = {
+		name = "GFX_SOS_destroy_syndies"
+		texturefile = "gfx/interface/goals/attempt/SOS_destroy_syndies.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_dagspoken"
+		texturefile = "gfx/interface/goals/attempt/SOS_dagspoken.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_SNF_salute"
+		texturefile = "gfx/interface/goals/attempt/SOS_SNF_salute.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_lindman"
+		texturefile = "gfx/interface/goals/attempt/SOS_lindman.png"
+	}
 	
 }
 
