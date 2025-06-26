@@ -4490,6 +4490,10 @@ focus_tree = {
 		available = { 
 			has_government = social_democrat
 			has_country_flag = SWE_election_safe_success
+			NOT = { 
+				has_country_flag = SWE_flag_1940_karl_kilbom
+			}
+			
 		}
 		
 		completion_reward = {
@@ -4515,6 +4519,8 @@ focus_tree = {
 		available = { 
 			has_government = social_democrat
 			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_karl_kilbom
+			
 		}
 		
 		completion_reward = {

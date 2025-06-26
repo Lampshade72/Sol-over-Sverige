@@ -2977,6 +2977,7 @@ country_event = { #### socdem coalition
 		add_soclib_to_coalition = yes
 		add_popularity = { ideology = social_liberal popularity = 0.04 }
 		add_political_power = 5
+		set_country_flag = SWE_flag_1940_socdem_soclib
 			
 	}	
 	
@@ -2987,6 +2988,7 @@ country_event = { #### socdem coalition
 		add_popularity = { ideology = social_liberal popularity = 0.05 }
 		add_popularity = { ideology = market_liberal popularity = 0.02 }
 		add_political_power = 15
+		set_country_flag = SWE_flag_1940_socdem_alllib
 			
 	}	
 }
@@ -3018,6 +3020,7 @@ country_event = { #### soccon coalition
 		add_marlib_to_coalition = yes
 		add_popularity = { ideology = market_liberal popularity = 0.04 }
 		add_political_power = 5
+		set_country_flag = SWE_flag_1940_soccon_marlib
 			
 	}	
 	
@@ -3028,6 +3031,7 @@ country_event = { #### soccon coalition
 		add_popularity = { ideology = social_liberal popularity = 0.05 }
 		add_popularity = { ideology = market_liberal popularity = 0.02 }
 		add_political_power = 15
+		set_country_flag = SWE_flag_1940_soccon_alllib
 			
 	}	
 	
@@ -3038,6 +3042,7 @@ country_event = { #### soccon coalition
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.07 }
 		add_political_power = -10
 		add_stability = -0.02
+		set_country_flag = SWE_flag_1940_soccon_authdem
 			
 	}	
 }
