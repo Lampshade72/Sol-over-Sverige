@@ -385,7 +385,7 @@ focus_tree = {
 		x = 5
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 5
+		cost = 4.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -469,7 +469,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -527,7 +527,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 4
+		cost = 4.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -668,7 +668,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 5
+		cost = 4.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -696,7 +696,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -850,7 +850,7 @@ focus_tree = {
 		x = -7
 		y = 2
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -916,7 +916,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = SWE_finish_off_black_monday
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1316,7 +1316,7 @@ focus_tree = {
 				has_country_flag = SWE_flag_red_in_sweden		
 			
 			}
-			date > 1938.1.1
+			date > 1937.7.1
 		}
 
 
@@ -1341,7 +1341,7 @@ focus_tree = {
 			}
 		}		
 		relative_position_id = SWE_FOP_tiger_place_in_world
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 80
 		}
@@ -1354,6 +1354,7 @@ focus_tree = {
 			}
 			NOT = { 
 				has_completed_focus = SWE_FOP_democractic_light
+				has_completed_focus = SWE_FOP_neutrality_again
 			}
 			
 		}
@@ -1380,7 +1381,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 50
 			modifier = {
@@ -1440,7 +1441,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 60
 			modifier = {
@@ -1479,6 +1480,7 @@ focus_tree = {
 				has_completed_focus = SWE_FOP_democractic_light
 				has_completed_focus = SWE_FOP_realm_of_our_own
 				has_country_flag = SWE_flag_political_mayhem
+				has_country_flag = SWE_flag_red_in_sweden
 				}
 			}
 
@@ -1495,7 +1497,7 @@ focus_tree = {
 		x = -11
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 60
 			modifier = {
@@ -3202,7 +3204,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SWE_radical_united_front
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 80 
 		}
@@ -3222,7 +3224,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SWE_radical_united_front
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 80 
 		}
@@ -5272,7 +5274,7 @@ focus_tree = {
 		X = -1
 		y = 1
 		relative_position_id = SWE_revolution_wins
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 80 
 		}
@@ -5328,7 +5330,7 @@ focus_tree = {
 		X = 1
 		y = 1
 		relative_position_id = SWE_revolution_wins
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 80 
 		}
@@ -5357,7 +5359,7 @@ focus_tree = {
 		X = 0
 		y = 2
 		relative_position_id = SWE_revolution_wins
-		cost = 4
+		cost = 4.5
 		ai_will_do = {
 			factor = 80 
 		}
@@ -5378,12 +5380,12 @@ focus_tree = {
 		X = 0
 		y = 3
 		relative_position_id = SWE_revolution_wins
-		cost = 8
+		cost = 5
 		select_effect = {
-			country_event = { id = swerev.6 days = 16 } 
-			country_event = { id = swerev.7 days = 26 } 
-			country_event = { id = swerev.8 days = 36 } 
-			country_event = { id = swerev.9 days = 46 } 			
+			country_event = { id = swerev.6 days = 10 } 
+			country_event = { id = swerev.7 days = 18 } 
+			country_event = { id = swerev.8 days = 26 } 
+			country_event = { id = swerev.9 days = 30 } 			
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5431,7 +5433,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_anarchist_wins_syndies }
 		X = 1
 		y = 1
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_syndicalist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5456,7 +5458,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_centralisation_syndies }
 		X = -1
 		y = 1
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_syndicalist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5479,7 +5481,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_centralisation_syndies }
 		X = 2
 		y = 2
-		cost = 6
+		cost = 5
 		relative_position_id = SWE_syndicalist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5505,7 +5507,7 @@ focus_tree = {
 			}
 		X = 0
 		y = 2
-		cost = 8
+		cost = 7
 		relative_position_id = SWE_syndicalist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5542,7 +5544,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_anarchist_wins_syndies }
 		X = -2
 		y = 2
-		cost = 6
+		cost = 5
 		relative_position_id = SWE_syndicalist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5664,7 +5666,7 @@ focus_tree = {
 		}
 		X = 0
 		y = 5
-		cost = 6
+		cost = 5
 		relative_position_id = SWE_syndicalist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5685,7 +5687,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_finalising_constitution }
 		X = -1
 		y = 6
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_syndicalist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5760,7 +5762,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_mild_industrialisation }
 		X = 0
 		y = 7
-		cost = 4
+		cost = 7
 		relative_position_id = SWE_syndicalist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5838,7 +5840,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_radical_socialist_victory }
 		X = 1
 		y = 1
-		cost = 6
+		cost = 5
 		relative_position_id = SWE_radical_socialist_victory
 		ai_will_do = {
 			factor = 80 
@@ -5902,7 +5904,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_radical_socialist_victory }
 		X = -3
 		y = 1
-		cost = 6
+		cost = 5
 		relative_position_id = SWE_radical_socialist_victory
 		ai_will_do = {
 			factor = 80 
@@ -7009,7 +7011,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_martial_law_declared }
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3.5
 		relative_position_id = SWE_martial_law_declared
 		ai_will_do = {
 			factor = 80
@@ -7030,7 +7032,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_martial_law_declared }
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_martial_law_declared
 		ai_will_do = {
 			factor = 80
@@ -7086,7 +7088,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_martial_law_declared }
 		x = -2
 		y = 1
-		cost = 4
+		cost = 3.5
 		relative_position_id = SWE_martial_law_declared
 		ai_will_do = {
 			factor = 80
@@ -7133,7 +7135,7 @@ focus_tree = {
 
 		x = 0
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_martial_law_declared
 		ai_will_do = {
 			factor = 80
@@ -7166,7 +7168,7 @@ focus_tree = {
 
 		x = 7
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_martial_law_declared
 		ai_will_do = {
 			factor = 80
@@ -7200,7 +7202,7 @@ focus_tree = {
 
 		x = -7
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_martial_law_declared
 		ai_will_do = {
 			factor = 80
@@ -7236,7 +7238,7 @@ focus_tree = {
 
 		x = 4
 		y = 1
-		cost = 6
+		cost = 5
 		relative_position_id = SWE_place_of_the_crown
 		ai_will_do = {
 			factor = 80
@@ -7297,7 +7299,7 @@ focus_tree = {
 
 		x = -4
 		y = 1
-		cost = 6
+		cost = 5
 		relative_position_id = SWE_place_of_the_crown
 		ai_will_do = {
 			factor = 80
@@ -7360,11 +7362,11 @@ focus_tree = {
 	focus = { 
 		id = SWE_corporatism_in_north
 		icon = GFX_goal_BEL_Continue_Corporatist_Industrialization
-		prerequisite = { focus = SWE_archibald_take_command }
+		prerequisite = { focus = SWE_archibald_take_command } 
 
 		x = 1
 		y = 1
-		cost = 6
+		cost = 4.5
 		relative_position_id = SWE_archibald_take_command
 		ai_will_do = {
 			factor = 80
@@ -7421,7 +7423,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 6
+		cost = 4.5
 		relative_position_id = SWE_archibald_take_command
 		ai_will_do = {
 			factor = 80
@@ -7439,6 +7441,8 @@ focus_tree = {
 				remove_idea = SWE_radical_paramilitary_support
 				add_idea = SWE_new_paramilitaries
 			}
+			
+			add_stability = 0.02
 		
 		}
 	}
@@ -7560,7 +7564,7 @@ focus_tree = {
 
 		x = 2
 		y = 4
-		cost = 6
+		cost = 5.5
 		relative_position_id = SWE_archibald_take_command
 		ai_will_do = {
 			factor = 80
@@ -7625,7 +7629,7 @@ focus_tree = {
 
 		x = -2
 		y = 4
-		cost = 6
+		cost = 5.5
 		relative_position_id = SWE_archibald_take_command
 		ai_will_do = {
 			factor = 80
@@ -7672,7 +7676,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_council_of_command }
 		x = 1
 		y = 5
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_archibald_take_command
 		ai_will_do = {
 			factor = 80
@@ -7703,7 +7707,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_dictate_of_one }
 		x = -1
 		y = 5
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_archibald_take_command
 		ai_will_do = {
 			factor = 80
@@ -7733,7 +7737,7 @@ focus_tree = {
 
 		x = 0
 		y = 6
-		cost = 8
+		cost = 7
 		relative_position_id = SWE_archibald_take_command
 		ai_will_do = {
 			factor = 80
@@ -7771,7 +7775,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 6
+		cost = 4.5
 		relative_position_id = SWE_junga_junta
 		ai_will_do = {
 			factor = 80
@@ -7827,7 +7831,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 6
+		cost = 4.5
 		relative_position_id = SWE_junga_junta
 		ai_will_do = {
 			factor = 80
@@ -7929,7 +7933,7 @@ focus_tree = {
 		
 		x = -1
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_junga_junta
 		ai_will_do = {
 			factor = 80
@@ -8110,7 +8114,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 6
+		cost = 4.5
 		relative_position_id = SWE_authdem_stabilize_nation
 		ai_will_do = {
 			factor = 80
@@ -8136,7 +8140,7 @@ focus_tree = {
 
 		x = 1
 		y = 2
-		cost = 4
+		cost = 4.5
 		relative_position_id = SWE_authdem_stabilize_nation
 		ai_will_do = {
 			factor = 80
@@ -8247,7 +8251,7 @@ focus_tree = {
 
 		x = 2
 		y = 3
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_authdem_stabilize_nation
 		ai_will_do = {
 			factor = 80
@@ -8367,7 +8371,7 @@ focus_tree = {
 
 		x = -1
 		y = 4
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_authdem_stabilize_nation
 		ai_will_do = {
 			factor = 80
@@ -8463,7 +8467,7 @@ focus_tree = {
 
 		x = 0
 		y = 6
-		cost = 8
+		cost = 7
 		relative_position_id = SWE_authdem_stabilize_nation
 		ai_will_do = {
 			factor = 80
@@ -8530,7 +8534,7 @@ focus_tree = {
 			}
 		x = -2
 		y = 1
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_sesame_street
 		ai_will_do = {
 			factor = 80
@@ -8602,7 +8606,7 @@ focus_tree = {
 			}
 		x = 2
 		y = 1
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_sesame_street
 		ai_will_do = {
 			factor = 80
@@ -8633,7 +8637,7 @@ focus_tree = {
 			
 		x = 0
 		y = 2
-		cost = 5
+		cost = 6
 		relative_position_id = SWE_sesame_street
 		ai_will_do = {
 			factor = 80
@@ -8656,7 +8660,7 @@ focus_tree = {
 			
 		x = -1
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_sesame_street
 		ai_will_do = {
 			factor = 80
@@ -8883,7 +8887,7 @@ focus_tree = {
 				}
 			}
 		}		
-		cost = 5
+		cost = 4.5
 
 		ai_will_do = {
 			factor = 10
@@ -8914,7 +8918,7 @@ focus_tree = {
 		x = -12
 		y = 1
 		
-		cost = 5
+		cost = 4
 
 
 		ai_will_do = {
@@ -8961,7 +8965,7 @@ focus_tree = {
 			}
 		}
 		
-		cost = 5
+		cost = 4
 
 
 		ai_will_do = {
@@ -9018,7 +9022,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_olof_plan
-		icon = GFX_goal_COR_industrial_security_act
+		icon = GFX_SWE_Olof_Army
 		prerequisite = { focus = SWE_chief_of_army }
 		mutually_exclusive = { focus = SWE_archies_plan }
 		mutually_exclusive = { focus = SWE_jung_plan }
@@ -9043,7 +9047,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_jung_plan
-		icon = GFX_goal_POL_Defensive_Tactics
+		icon = GFX_SWE_Jung_Army
 		prerequisite = { focus = SWE_chief_of_army }
 		mutually_exclusive = { focus = SWE_archies_plan }
 		mutually_exclusive = { focus = SWE_olof_plan }
@@ -9073,7 +9077,7 @@ focus_tree = {
 
 		x = 7
 		y = 2
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9137,7 +9141,7 @@ focus_tree = {
 
 		x = 5
 		y = 3
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9167,7 +9171,7 @@ focus_tree = {
 
 		x = 6
 		y = 4
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9194,7 +9198,7 @@ focus_tree = {
 
 		x = 4
 		y = 4
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9277,7 +9281,7 @@ focus_tree = {
 
 		x = -1
 		y = 2
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9304,7 +9308,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_old_war_doctrine }
 		x = 0
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9433,7 +9437,7 @@ focus_tree = {
 
 		x = -7
 		y = 2
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9466,7 +9470,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_defensive_positions }
 		x = -5
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9572,7 +9576,7 @@ focus_tree = {
 
 		x = -3
 		y = 2
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9599,7 +9603,7 @@ focus_tree = {
 
 		x = -3
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9629,7 +9633,7 @@ focus_tree = {
 
 		x = 3
 		y = 2
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9655,7 +9659,7 @@ focus_tree = {
 
 		x = 3
 		y = 3
-		cost = 5
+		cost = 4.5
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9697,7 +9701,7 @@ focus_tree = {
 
 		x = 0
 		y = 6
-		cost = 5
+		cost = 7
 		relative_position_id = SWE_chief_of_army
 
 		ai_will_do = {
@@ -9724,7 +9728,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_swedish_red_army }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_arms_against_tyranny
 
 		ai_will_do = {
@@ -9748,7 +9752,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_swedish_red_militia }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_arms_against_tyranny
 
 		ai_will_do = {
@@ -9826,7 +9830,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 3
 		relative_position_id = SWE_arms_against_tyranny
 
 		ai_will_do = {
@@ -9856,7 +9860,7 @@ focus_tree = {
 
 		x = 1
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_arms_against_tyranny
 
 		ai_will_do = {
@@ -9892,7 +9896,7 @@ focus_tree = {
 
 		x = -1
 		y = 3
-		cost = 5
+		cost = 4
 		relative_position_id = SWE_arms_against_tyranny
 
 		ai_will_do = {
@@ -10286,7 +10290,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SWE_swedish_air_force
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -10316,7 +10320,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_swedish_air_force
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -10346,7 +10350,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = SWE_swedish_air_force
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -10922,7 +10926,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SWE_swedish_navy_start
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -10945,7 +10949,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_swedish_navy_start
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -10969,7 +10973,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SWE_swedish_navy_start
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 10

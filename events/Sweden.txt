@@ -2075,6 +2075,8 @@ country_event = { ####unity cabinet
 	title = swedem.26.t
 	desc = swedem.26.d
 	picture = GFX_report_event_SWE_Folkpartiet
+	
+	fire_only_once = yes
 
 	trigger = { #some kind of European world war
 			OR = {
@@ -4553,6 +4555,7 @@ country_event = { #Archy wins ##LS##
 					country_event = { id = swemil.9 days = 6 }	
 			} else = { 
 				country_event = { id = swemil.10 days = 25 }
+				set_country_flag = SWE_flag_no_elmo_nats
 			}
 	}
 }
@@ -6247,23 +6250,13 @@ country_event = { ####new charter - ideology change ##LS##
 	option = { #switch to national syndicalism
 		name = swetot.14.b	
 		add_stability = 0.03
-		create_country_leader = {
-			name = "Sven Olov Lindholm"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Sven_Sven_Olov_Lindholm.png"
-			expire = "1.1.1"
-			ideology = natsynd_subtype
-		}
+		set_country_leader_ideology = natsynd_subtype
 		
 	}	
 	option = {# switch to totalist savinkovism
 		name = swetot.14.c
 		add_stability = -0.02
-		create_country_leader = {
-			name = "Sven Olov Lindholm"
-			picture = "gfx/leaders/SWE/Portrait_Sweden_Sven_Sven_Olov_Lindholm.png"
-			expire = "1.1.1"
-			ideology = totalist_savinkovism_subtype
-		}
+		set_country_leader_ideology = totalist_savinkovism_subtype
 		
 	}	
 }
@@ -6492,12 +6485,11 @@ country_event = { ####ideology choice ##LS##
 		name = swerev.19.a
 		add_stability = 0.05
 		set_country_flag = SWE_flag_anarcho_syndie
-		remove_ideas_with_trait = security_minister
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = head_of_government
+		remove_all_ministers = yes 
 		add_ideas = SWE_Elise_Ottesen_Jensen_hog_syn
 		add_ideas = SWE_Britta_Gröndahl_for_syn
 		add_ideas = SWE_Elise_Ottesen_Jensen_sec_syn
+		add_ideas = SWE_Gustav_Sjoestroem_eco_syn 
 		
 		create_country_leader = {
 			name = "Elise Ottesen-Jensen"
