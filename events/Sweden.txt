@@ -2178,11 +2178,13 @@ country_event = { #socdem marx or key
 
 	option = { #marxism
 		name = swedem.29.a
+		add_ideas = SWE_moderate_marxism
 		
 
 	}	
 	option = { #keynaism
 		name = swedem.29.b
+		add_ideas = SWE_key_thought
 
 	}	
 }
@@ -3055,10 +3057,12 @@ country_event = { #### soccon coalition
 	option = { #authdem
 		name = sweelect.7.c
 		add_authdem_to_coalition = yes
+		add_pataut_to_coalition = yes
 		add_popularity = { ideology = social_conservative popularity = -0.02 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.07 }
 		add_political_power = -10
 		add_stability = -0.02
+		set_country_flag = SWE_flag_1940_soccon_authdem
 
 			
 	}	
@@ -3127,6 +3131,7 @@ country_event = { #### soclib coalition
 		name = sweelect.9.a
 		add_socdem_to_coalition = yes
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		set_country_flag = SWE_flag_1940_soclib_left
 			
 	}	
 	
@@ -3134,6 +3139,7 @@ country_event = { #### soclib coalition
 		name = sweelect.9.b
 		add_marlib_to_coalition = yes
 		add_popularity = { ideology = market_liberal popularity = 0.07 }
+		set_country_flag = SWE_flag_1940_soclib_middle
 			
 	}	
 }

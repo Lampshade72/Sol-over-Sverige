@@ -4398,7 +4398,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
@@ -4423,7 +4423,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
@@ -4452,7 +4452,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
@@ -4488,11 +4488,13 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus SWE_marx_and_key"
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_marx_and_key"
+			country_event = { id = swedem.29 }		
+					
 			
 		}
 	}	
@@ -4513,16 +4515,19 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = SWE_election_safe_success
-			NOT = { 
-				has_country_flag = SWE_flag_1940_karl_kilbom
-			}
+			has_country_flag = SWE_flag_1940_election
+			has_idea = SWE_key_thought
+
 			
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_rikstag_dom"
-			
+			swap_ideas = {
+				remove_idea = SWE_key_thought
+				add_idea = SWE_key_thought_2
+			}		
+		
 		}
 	}
 
@@ -4542,13 +4547,18 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = SWE_election_safe_success
-			has_country_flag = SWE_flag_1940_karl_kilbom
+			has_country_flag = SWE_flag_1940_election
+			has_idea = SWE_moderate_marxism
+
 			
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_rikstag_dom"
+			swap_ideas = {
+				remove_idea = SWE_moderate_marxism
+				add_idea = SWE_moderate_marxism_2
+			}
 			
 		}
 	}	
@@ -4571,11 +4581,26 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_people_over_politics"
+				add_political_power = 100
+				add_war_support	 = 0.03
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}				
+					
 			
 		}
 	}
@@ -4586,7 +4611,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_social_liberal_win
-		icon = GFX_CAL_farm_bankruptcy_act
+		icon = GFX_goal_CZE_agrarian_victory
 		prerequisite = { focus = SWE_second_election }
 		x = 7
 		y = 1
@@ -4597,11 +4622,17 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_liberal_win"
+			add_political_power = 15
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}			
+					
+					
 			
 		}
 	}
@@ -4619,18 +4650,28 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_environment_help"
+				add_stability = -0.03
+			every_owned_state = {
+				add_state_modifier = {
+					modifier = {
+						local_resources_factor = 0.1
+					}
+				}
+			}
+				
+					
 			
 		}
 	}
 
 	focus = { 
 		id = SWE_europe_agrarian
-		icon = GFX_goal_CZE_agrarian_victory
+		icon = GFX_CAL_farm_bankruptcy_act
 		prerequisite = { focus = SWE_social_liberal_win }
 		x = 0
 		y = 1
@@ -4641,11 +4682,42 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_europe_agrarian"
+					
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}			
 			
 		}
 	}	
@@ -4663,11 +4735,14 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus SWE_farmer_focus"
+				log = "[GetDateText]: [Root.GetName]: Focus SWE_farmer_focus"
+				add_stability = 0.06
+				add_ideas = SWE_farmers_first
+					
 			
 		}
 	}
@@ -4688,11 +4763,17 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
+			has_country_flag = SWE_flag_1940_soclib_left
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_centre_left"
+					add_political_power = 20
+			swap_ideas = {
+				remove_idea = SWE_farmers_first
+				add_idea = SWE_farmers_roses
+			}					
 			
 		}
 	}	
@@ -4713,12 +4794,17 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
+			has_country_flag = SWE_flag_1940_soclib_middle
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_centre_full"
-			
+					add_political_power = -10
+			swap_ideas = {
+				remove_idea = SWE_farmers_first
+				add_idea = SWE_farmers_centrism
+			}			
 		}
 	}	
 
@@ -4738,11 +4824,41 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_agricultural_future"
+			add_political_power = 35
+			add_ideas = SWE_temper_government
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.02
+			}					
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.02
+			}	
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.04
+			}	
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.04
+			}				
 			
 		}
 	}	
@@ -4750,7 +4866,7 @@ focus_tree = {
 ### MARLIB Second Term ###
 	focus = { 
 		id = SWE_market_liberal_win
-		icon = GFX_goal_LUX_progressive_classical_liberalism
+		icon = GFX_SOS_sweeping
 		prerequisite = { focus = SWE_second_election }
 		x = 0
 		y = 1
@@ -4761,11 +4877,20 @@ focus_tree = {
 		}
 		available = { 
 			has_government = market_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_liberal_win"
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_market_liberal_win"
+			add_political_power = 10
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.02
+			}					
 			
 		}
 	}
@@ -4783,11 +4908,21 @@ focus_tree = {
 		}
 		available = { 
 			has_government = market_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus SWE_finnish_rights"
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_finnish_rights"
+			FIN = { add_opinion_modifier = { target = SWE modifier = medium_increase } }
+			every_owned_state = {
+				add_state_modifier = {
+					modifier = {
+						local_manpower = 0.08
+					}
+				}
+			}				
+
+
 			
 		}
 	}
@@ -4805,11 +4940,14 @@ focus_tree = {
 		}
 		available = { 
 			has_government = market_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus SWE_grass_roots_prot"
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_grass_roots_prot"
+			
+			add_stability = -0.04
+			add_ideas = SWE_protestant_church
 			
 		}
 	}	
@@ -4827,12 +4965,25 @@ focus_tree = {
 		}
 		available = { 
 			has_government = market_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus SWE_nordic_wealth"
-			
+				log = "[GetDateText]: [Root.GetName]: Focus SWE_nordic_wealth"
+			add_political_power = 30	
+				
+			778 = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+			908 = {
+				add_resource = {
+					type = oil
+					amount = 3
+				}
+			}			
 		}
 	}
 
@@ -4852,11 +5003,17 @@ focus_tree = {
 		}
 		available = { 
 			has_government = market_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_conserv"
+				log = "[GetDateText]: [Root.GetName]: Focus SWE_market_conserv"
+				add_political_power = -12
+				add_stability = 0.02
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.11
+			}				
 			
 		}
 	}	
@@ -4877,11 +5034,17 @@ focus_tree = {
 		}
 		available = { 
 			has_government = market_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_centre"
+				add_political_power = 20
+				add_stability = -0.02
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.09
+			}
 			
 		}
 	}	
@@ -4889,7 +5052,7 @@ focus_tree = {
 	focus = { 
 		id = SWE_Anders_Chydenius
 
-		icon = GFX_SOS_sweeping
+		icon = GFX_SOS_anders
 		prerequisite = { focus = SWE_market_centre
 						focus = SWE_market_conserv
 						}
@@ -4903,11 +5066,13 @@ focus_tree = {
 		}
 		available = { 
 			has_government = market_liberal
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus SWE_Anders_Chydenius"
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_Anders_Chydenius"
+			
+			add_ideas = SWE_anders_thought
 			
 		}
 	}
@@ -4931,11 +5096,17 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_conservative
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_conservative_win"
+				add_political_power = 50 
+			add_popularity = {
+				ideology = social_conservative 
+				popularity = 0.06
+			}				
+					
 			
 		}
 	}
@@ -4953,11 +5124,13 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_conservative
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_landman_legacy"
+					add_stability = 0.02
+					add_ideas = SWE_lindman_legacy
 			
 		}
 	}
@@ -4975,11 +5148,13 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_conservative
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_regulate_agriculture"
+			unlock_decision_tooltip = swe_starting_new_regs
+
 			
 		}
 	}	
@@ -4997,11 +5172,18 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_conservative
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_further_central"
+				add_stability = 0.1
+				add_war_support = 0.06
+			add_popularity = {
+				ideology = social_conservative 
+				popularity = -0.03
+			}				
+					
 			
 		}
 	}
@@ -5022,12 +5204,21 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_conservative
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
+			NOT = {
+				has_country_flag = SWE_flag_1940_soccon_authdem
+			}
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_conservative_majority"
 			
+			add_ideas = SWE_conservative_market_coalition
+					
+			add_popularity = {
+				ideology = market_liberal 
+				popularity = 0.05
+			}			
 		}
 	}	
 	
@@ -5047,11 +5238,18 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_conservative
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
+			has_country_flag = SWE_flag_1940_soccon_authdem
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_conservative_radicals"
+				add_ideas = SWE_conservative_authdem_coalition	
+
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.02
+			}					
 			
 		}
 	}	
@@ -5073,11 +5271,24 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_conservative
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_against_free_market_thought"
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}					
+
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}			
 			
 		}
 	}
@@ -5102,11 +5313,16 @@ focus_tree = {
 		}
 		available = { 
 			has_government = authoritarian_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_national_league_win"
+				add_political_power = -5	
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.03
+			}
 			
 		}
 	}
@@ -5124,7 +5340,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = authoritarian_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
@@ -5135,7 +5351,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_dagsposten 
-		icon = GFX_SOS_dagspoken
+		icon = GFX_SOS_radio
 		prerequisite = { focus = SWE_national_league_win }
 		x = 0
 		y = 1
@@ -5146,7 +5362,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = authoritarian_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
@@ -5157,7 +5373,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_break_syndicalism
-		icon = GFX_SOS_destroy_syndies
+		icon = GFX_SOS_bully
 		prerequisite = { focus = SWE_national_league_win }
 		x = -2
 		y = 1
@@ -5168,7 +5384,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = authoritarian_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
@@ -5193,7 +5409,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = authoritarian_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
@@ -5204,7 +5420,7 @@ focus_tree = {
 	
 	focus = { 
 		id = SWE_european_social_union
-		icon = GFX_goal_GER_paneuropa
+		icon = GFX_SOS_europe
 		prerequisite = { focus = SWE_bully_opposition }
 		prerequisite = { focus = SWE_dagsposten }
 		prerequisite = { focus = SWE_break_syndicalism }
@@ -5218,7 +5434,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = authoritarian_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {
@@ -5244,7 +5460,7 @@ focus_tree = {
 		}
 		available = { 
 			has_government = authoritarian_democrat
-			has_country_flag = SWE_election_safe_success
+			has_country_flag = SWE_flag_1940_election
 		}
 		
 		completion_reward = {

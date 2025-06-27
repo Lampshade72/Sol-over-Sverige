@@ -155,9 +155,22 @@ SpriteTypes = {
 		name = "GFX_SOS_branting"
 		texturefile = "gfx/interface/goals/attempt/SOS_branting.png"
 	}
-
-
-
+	SpriteType = {
+		name = "GFX_SOS_anders"
+		texturefile = "gfx/interface/goals/attempt/SOS_anders.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_bully"
+		texturefile = "gfx/interface/goals/attempt/SOS_bully.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_europe"
+		texturefile = "gfx/interface/goals/attempt/SOS_europe.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_radio"
+		texturefile = "gfx/interface/goals/attempt/SOS_radio.png"
+	}
 
 
 

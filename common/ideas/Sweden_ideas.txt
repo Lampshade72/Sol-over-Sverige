@@ -1013,9 +1013,24 @@ ideas = {
 			picture = NFA_unity_gov
 			allowed = { always = no }
 			modifier = {
-				monthly_population = -0.1
-				stability_weekly = 0.0005
-				supply_factor = -0.1
+				consumer_goods_factor = 0.12
+				political_power_gain = -0.01
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			
+			
+			}						
+		}
+
+		SWE_moderate_marxism_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_moderate_marxism_2"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.12
+				political_power_gain = -0.02
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
 			}						
 		}
 		
@@ -1024,11 +1039,197 @@ ideas = {
 			picture = NFA_unity_gov
 			allowed = { always = no }
 			modifier = {
-				monthly_population = -0.1
-				stability_weekly = 0.0005
-				supply_factor = -0.1
+				consumer_goods_factor = -0.05
+				political_power_factor = -0.01
+				production_factory_efficiency_gain_factor = 0.03
+				production_speed_buildings_factor = -0.1
 			}						
 		}
+
+		SWE_key_thought_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_key_thought_2"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_factor = -0.02
+				production_factory_efficiency_gain_factor = 0.07
+				production_speed_buildings_factor = -0.1
+			}						
+		}
+
+		SWE_farmers_first = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_farmers_first"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.15
+				political_power_gain = 0.02
+				consumer_goods_factor = 0.05
+				social_liberal_drift = 0.03
+			}						
+		}
+
+		SWE_farmers_roses = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_farmers_roses"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.2
+				production_factory_efficiency_gain_factor = 0.05
+				political_power_gain = 0.02
+				consumer_goods_factor = 0.1
+				social_liberal_drift = 0.04
+				social_democrat_drift = 0.01
+			}						
+		}
+
+		SWE_farmers_centrism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_farmers_centrism"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.2
+				production_factory_max_efficiency_factor = 0.07
+				political_power_gain = 0.02
+				consumer_goods_factor = 0.1
+				social_liberal_drift = 0.04
+				market_liberal_drift = 0.02				
+			}						
+		}
+
+		SWE_temper_government = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_temper_government"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.04
+				production_speed_buildings_factor = 0.05
+				social_liberal_drift = 0.01
+			}						
+		}
+
+		SWE_protestant_church = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_protestant_church"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.02
+				monthly_population = 0.1
+				production_factory_efficiency_gain_factor = 0.04
+				market_liberal_drift = 0.01
+			}						
+		}
+
+		SWE_anders_thought = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_protestant_church"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.04
+				war_support_factor = -0.06
+				trade_opinion_factor = 0.1
+				trade_cost_for_target_factor = -0.05
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.04
+				market_liberal_drift = 0.04
+				social_conservative_drift = 0.01
+				social_liberal_drift = 0.01
+			}						
+		}
+
+		SWE_lindman_legacy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_lindman_legacy"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.01
+				production_factory_efficiency_gain_factor = -0.04
+				production_factory_max_efficiency_factor = 0.07
+				social_conservative_drift = 0.01
+			}						
+		}
+		
+		SWE_conservative_agriculture_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_agriculture_1"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.05
+				stability_factor = -0.03
+			}						
+		}
+
+		SWE_conservative_agriculture_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_agriculture_2"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.11
+				political_power_gain = -0.03
+				stability_factor = -0.01
+				production_factory_max_efficiency_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.02
+			}						
+		}
+
+		SWE_conservative_agriculture_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_agriculture_3"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.07
+				political_power_gain = -0.01
+				production_factory_max_efficiency_factor = 0.06
+				production_factory_efficiency_gain_factor = 0.04
+			}						
+		}
+
+		SWE_conservative_market_coalition = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_market_coalition"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.03
+				stability_factor = 0.05
+				war_support_factor = -0.03
+				social_conservative_drift = 0.03
+				market_liberal_drift = 0.01
+			}						
+		}
+
+		SWE_conservative_authdem_coalition = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_conservative_authdem_coalition"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.01
+				stability_factor = -0.05
+				war_support_factor = 0.1
+				party_popularity_stability_factor = 0.05
+				social_conservative_drift = 0.04
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.01
+			}						
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

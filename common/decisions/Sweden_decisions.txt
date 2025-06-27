@@ -2879,4 +2879,76 @@ SWE_statare_decisions = {
 	
 }
 
+SWE_conservative_agriculture_d = {
+	swe_starting_new_regs = {
+		icon = GFX_decision_generic_agriculture
+		allowed = {
+			tag = SWE
+		}
+		available = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_regulate_agriculture
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 52
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision swe_build_them_homes"
+			add_ideas = SWE_conservative_agriculture_1
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_build_them_homes"					
+			swap_ideas = {
+				remove_idea = SWE_conservative_agriculture_1
+				add_idea = SWE_conservative_agriculture_2
+			}
+			
+		}
+	}
 
+	swe_next_regs = {
+		icon = GFX_decision_generic_agriculture
+		allowed = {
+			tag = SWE
+		}
+		available = {
+			tag = SWE
+			has_idea = SWE_conservative_agriculture_2
+		}
+		visible = {
+			has_completed_focus = SWE_regulate_agriculture
+		}
+		fire_only_once = yes
+		cost = 45
+		days_remove = 72
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision swe_next_regs"
+			
+			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove swe_next_regs"					
+			swap_ideas = {
+				remove_idea = SWE_conservative_agriculture_2
+				add_idea = SWE_conservative_agriculture_3
+			}			
+			
+			
+		}
+	}	
+	
+	
+	
+	
+	
+	
+	
+}
