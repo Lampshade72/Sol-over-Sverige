@@ -993,6 +993,57 @@ ideas = {
 			}						
 		}
 
+##############
+## Second term election ideas ##
+##############
+
+		SWE_removing_statare = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_removing_statare"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				monthly_population = -0.1
+				stability_weekly = 0.0005
+				supply_factor = -0.1
+			}						
+		}
+
+		SWE_moderate_marxism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_moderate_marxism"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				monthly_population = -0.1
+				stability_weekly = 0.0005
+				supply_factor = -0.1
+			}						
+		}
+		
+		SWE_key_thought = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_key_thought"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				monthly_population = -0.1
+				stability_weekly = 0.0005
+				supply_factor = -0.1
+			}						
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ###############

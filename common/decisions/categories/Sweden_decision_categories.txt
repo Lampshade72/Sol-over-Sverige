@@ -112,4 +112,15 @@ SWE_wartime_decisions = {
 		}	
 
 }
+
+SWE_statare_decisions = {
+	icon = GFX_decision_champagne_glass
+	allowed = {
+		original_tag = SWE 
+		}
+	visible = { 
+		has_war = yes 
+		}	
+
+}
 	
