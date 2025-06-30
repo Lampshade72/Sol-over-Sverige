@@ -1,0 +1,62 @@
+spriteTypes = {
+	### BRG ###
+	spriteType = {
+		name = "GFX_idea_BRG_Tradional_Goverance"
+		texturefile = "gfx/interface/ideas/ideas/BRG_Tradional_Goverance.png"
+	}
+
+	### SOS ###
+	spriteType = {
+		name = "GFX_idea_SOS_air_sup"
+		texturefile = "gfx/interface/ideas/SOS/SOS_air_sup.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_air_worker"
+		texturefile = "gfx/interface/ideas/SOS/SOS_air_worker.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_CAS_idea"
+		texturefile = "gfx/interface/ideas/SOS/SOS_CAS_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_cavalry_rider"
+		texturefile = "gfx/interface/ideas/SOS/SOS_cavalry_rider.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_douglas_army"
+		texturefile = "gfx/interface/ideas/SOS/SOS_douglas_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_jung_army"
+		texturefile = "gfx/interface/ideas/SOS/SOS_jung_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_olof_army"
+		texturefile = "gfx/interface/ideas/SOS/SOS_olof_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_elite_officers"
+		texturefile = "gfx/interface/ideas/SOS/SOS_elite_officers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_harsh_offiers"
+		texturefile = "gfx/interface/ideas/SOS/SOS_harsh_offiers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_empire_soldier"
+		texturefile = "gfx/interface/ideas/SOS/SOS_empire_soldier.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_empire_soldier_2"
+		texturefile = "gfx/interface/ideas/SOS/SOS_empire_soldier_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_red_army"
+		texturefile = "gfx/interface/ideas/SOS/SOS_red_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_red_militia"
+		texturefile = "gfx/interface/ideas/SOS/SOS_red_militia.png"
+	}
+
+}

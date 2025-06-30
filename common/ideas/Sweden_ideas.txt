@@ -125,6 +125,16 @@ ideas = {
 			}
 		}
 
+		SWE_integrate_iceland_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_integrate_iceland_idea"}
+			picture = generic_cold_war
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.03
+				consumer_goods_factor = 0.05
+			}
+		}
+
 		SWE_swedish_empire = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_empire"}
 			picture = COR_american_hegemon
@@ -1217,7 +1227,19 @@ ideas = {
 			}						
 		}
 
-
+		SWE_nationalist_newspaper = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_nationalist_newspaper"}			
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				political_power_gain 0.05
+				war_support_factor = 0.04
+				stability_factor = -0.02
+				social_conservative_drift = -0.01
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.01
+			}						
+		}
 
 
 

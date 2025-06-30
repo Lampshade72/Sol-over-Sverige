@@ -2189,11 +2189,175 @@ country_event = { #socdem marx or key
 	}	
 }
 
+country_event = { #bully opposition
+	id = swedem.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.30" }
+	title = swedem.30.t
+	desc = swedem.30.d
 
+	is_triggered_only = yes
 
+	option = { #polite politics
+		name = swedem.30.a
+		add_political_power = -30
+		add_stability = 0.02
+		add_war_support = -0.01
+		add_popularity = { ideology = social_democrat popularity = -0.04 }
+		add_popularity = { ideology = social_liberal popularity = -0.02 }
+		add_popularity = { ideology = market_liberal popularity = -0.02 }
+		add_popularity = { ideology = social_conservative popularity = 0.03 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
 
+		
 
+	}	
+	option = { #cutthroatness
+		name = swedem.30.b
+		add_political_power = -10
+		add_stability = -0.03
+		add_war_support = 0.02
+		add_popularity = { ideology = social_democrat popularity = -0.05 }
+		add_popularity = { ideology = social_liberal popularity = -0.05 }
+		add_popularity = { ideology = market_liberal popularity = -0.04 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.04 }		
 
+	}	
+}
+
+country_event = { #authdem restore elections - parties organize
+	id = swedem.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.31" }
+	title = swedem.31.t
+	desc = swedem.31.d
+
+	is_triggered_only = yes
+
+	option = { #allow all parties
+		name = swedem.31.a
+		set_country_flag = SWE_flag_authdem_all_parties
+		add_political_power = 15
+		add_stability = -0.08
+			country_event = {
+				id = swedem.32
+				days = 3
+			}
+		
+
+	}	
+	option = { #only right wingers
+		name = swedem.31.b
+		set_country_flag = SWE_flag_authdem_right_parties
+		add_political_power = 5
+		add_stability = 0.03
+			country_event = {
+				id = swedem.32
+				days = 3
+			}
+	}	
+}
+
+country_event = { #authdem restore elections - elections
+	id = swedem.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.32" }
+	title = swedem.32.t
+	desc = swedem.32.d
+
+	is_triggered_only = yes
+
+	option = { #socdem
+		name = swedem.32.a
+		trigger = {
+				has_country_flag = SWE_flag_authdem_all_parties
+		}
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
+			country_event = {
+				id = sweelect.6
+				days = 2
+			}		
+				add_ideas = SWE_Tage_Erlander_hog_sde
+				add_ideas = SWE_J_Rickard_Sandler_for_sde
+				add_ideas = SWE_Per_Edvin_Skold_eco_sde
+				add_ideas = SWE_Karl_Schlyter_sec_sde				
+				set_country_leader_ideology = liberal_socialism_subtype
+	}	
+	option = { #soclib
+		name = swedem.32.b
+		trigger = {
+				has_country_flag = SWE_flag_authdem_all_parties
+		}
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_liberal elections_allowed = yes }		
+			country_event = {
+				id = sweelect.9
+				days = 4
+			}		
+		add_ideas = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_for_sli
+		add_ideas = SWE_Arthur_Heiding_eco_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_sec_sli	
+	}	
+	option = { #marlib
+		name = swedem.32.c
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		add_popularity = { ideology = market_liberal popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
+			country_event = {
+				id = sweelect.8
+				days = 4
+			}		
+				add_ideas = SWE_Bertil_Ohlin_hog_mli
+				add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
+				add_ideas = SWE_Gustav_Cassel_eco_mli
+				add_ideas = SWE_Thorwald_Bergquist_sec_mli
+
+	}	
+	option = { #soccon
+		name = swedem.32.e
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		add_popularity = { ideology = social_conservative popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_conservative elections_allowed = yes }		
+			country_event = {
+				id = sweelect.7
+				days = 4
+			}		
+				add_ideas = SWE_Fritiof_Domoe_hog_sco
+				add_ideas = SWE_Christian_Guenther_for_sco
+				add_ideas = SWE_Arthur_Heiding_eco_sli
+				add_ideas = SWE_Knut_Ewerloef_sec_sco
+				add_marlib_to_coalition = yes
+
+	}	
+	option = { #authdem
+		name = swedem.32.f
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }		
+		set_country_leader_ideology = authdem_national_conservative_subtype
+		
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.09 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
+		add_pataut_to_coalition = yes
+		
+		add_ideas = SWE_Elmo_Lindholm_hog_npo
+		add_ideas = SWE_Sven_Hedin_for_ade
+		add_ideas = SWE_Per_Engdahl_eco_pau
+		add_ideas = SWE_Alf_Meyerhoffer_sec_pau
+
+	}	
+	
+}
 
 
 
@@ -2806,6 +2970,8 @@ country_event = { #### Election and leader events
 
 	option = { #Social Democrats win
 		name = sweelect.5.a
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
 		add_political_power = 10
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
@@ -2852,6 +3018,8 @@ country_event = { #### Election and leader events
 	
 	option = { #Conservatives Win 
 		name = sweelect.5.b
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		add_popularity = { ideology = social_conservative popularity = 0.08 }
 		add_political_power = 10
 		set_politics = { ruling_party = social_conservative elections_allowed = yes }		
@@ -2886,6 +3054,8 @@ country_event = { #### Election and leader events
 	
 	option = { #Folkpartiet win 
 		name = sweelect.5.c
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		add_popularity = { ideology = market_liberal popularity = 0.08 }
 		add_political_power = 5
 		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
@@ -2928,6 +3098,8 @@ country_event = { #### Election and leader events
 			has_government = market_liberal
 			}		
 		}
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		add_popularity = { ideology = social_liberal popularity = 0.08 }
 		set_politics = { ruling_party = social_liberal elections_allowed = yes }		
 		hidden_effect = {
@@ -2950,6 +3122,8 @@ country_event = { #### Election and leader events
 				has_country_flag = SWE_flag_national_league_banned
 			}
 		}
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }		
 		set_country_leader_ideology = authdem_national_conservative_subtype
 		
@@ -4451,6 +4625,7 @@ country_event = { #Inter-military election ##LS##
 		hidden_effect = {
 			country_event = { id = swe.30 days = 400 }
 			country_event = { id = swemil.19 }
+			set_country_flag = SWE_flag_no_elmo_nats
 			}		
 	}
 	
@@ -4487,6 +4662,7 @@ country_event = { #Inter-military election ##LS##
 		add_ideas = SWE_Carlos_Adlercreutz_sec_ade
 		
 		hidden_effect = {
+			set_country_flag = SWE_flag_no_elmo_nats
 			if = {
 				limit = { has_country_flag = SWE_flag_crown_restored }				
 				} 
@@ -5145,17 +5321,10 @@ country_event = { #return to norm - monarch ##LS##
 
 	option = { #let bagge restore some civilian
 		name = swemil.30.b
-		add_stability = 0.12
-		add_popularity = { ideology = social_conservative popularity = 0.10 }		
-		set_cosmetic_tag = SWE_mil_bagge
+		add_stability = 0.03
+		add_popularity = { ideology = social_conservative popularity = 0.03 }		
 		add_ideas = SWE_authdem_civilian
-		add_authdem_to_coalition = yes
-		
-		set_party_name = {
-			ideology = social_conservative
-			long_name = SWE_social_conservative_alternate_party_long
-			name = SWE_social_conservative_alternate_party
-		}		
+		country_event = { id = swedem.31 days = 6 }		
 
 	}	
 }

@@ -437,6 +437,8 @@ SWE_union_activity_desc:0 "The syndicalists in Norway are attempting to destabil
 SWE_kompani_linge_idea:0 "Kompani Linge"
 SWE_kompani_linge_idea_desc:0 "Kompani Linge is a band of commandos lead by former actor Martin Linge. They are currently engaged in different forms of sabotage in Sweden."
 
+SWE_integrate_scandinavia_idea:0 "Integration of Scandinavia"
+
 ####Focuses####
 
 SWE_rikstag_restructuring:0 "The Riksdag's Rising Stagnation"
@@ -1203,7 +1205,7 @@ SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedis
 
 ### Second term election focuses ###
 
-SWE_second_election:0 "1940 National Elections"
+SWE_second_election:0 "Another National Election"
 
 
 ## SOCDEM 2nd term ##
@@ -1341,13 +1343,15 @@ SWE_flag_carl:0 "Name Carl"
 SWE_flag_oscar:0 "Name Oscar"
 
 SWE_flag_national_league_banned:0 "National League banned"
+SWE_flag_scandinavia_formed:0 "Scandinavia Formed"
+SWE_flag_nordic_formed:0 "Nordic Formed"
 
 ###Election Flags####
 SWE_flag_1936_socdem:0 "The Social Democrats Won the 1936 election!"
 SWE_flag_1936_soccon:0 "The Conservatives Won the 1936 election!"
 SWE_flag_1936_marlib:0 "The Folkpartiet Won the 1936 election!"
 
-SWE_flag_1940_election:0 "The 1940 Elections have occured"
+SWE_flag_1940_election:0 "Another Election has Occured"
 
 SWE_flag_dead_hansson:0 "Hansson has died"
 SWE_flag_1940_hansson:0 "Hansson chosen to lead the party"
@@ -1381,6 +1385,9 @@ SWE_flag_1944_bertil_ohlin:0 "Bertil Ohlin chosen to lead the party"
 SWE_flag_1944_axel:0 "Axel Pehrsson-Bramstorp chosen to lead the party"
 SWE_flag_1944_ekman:0 "Carl Gustaf Ekman is chosen to lead the party"
 
+
+SWE_flag_authdem_all_parties:0 "The Military allows free elections"
+SWE_flag_authdem_right_parties:0 "The Military only allows some parties"
 
 ## Decisions ##
 
@@ -3275,6 +3282,11 @@ SWE_tt_inflation_back_to_two:0 "With the new currency, inflation will be reset t
 SWE_tt_will_be_removed_redistribute_wealth:0 "§RThis modifier will be removed when we redistribute the wealth.§!"
 SWE_douglasfocutext_alive:"Our senior staff officer Archibald Douglas proposes we convert the Swedish army into a mobile force capable of outmaneuvering the enemy forces to swiftly neutralise our enemies."
 SWE_douglasfocutext_dead:0 "Former senior staff officer Archibald Douglas proposed we convert the Swedish army into a mobile force capable of outmaneuvering the enemy forces to swiftly neutralise our enemies."
+
+
+SWE_nordic_radicalism_tt:0 "§BBy reinforcing our Nordic roots, we can ease integration with the other Nordic Nations§!"
+
+SWE_europa_tt:0 "§RBy championing the National European cause, we will unlock unique foreign policy decisions§!"
 
 ### Decisions ###
 SWE_fix_black_monday_category:0 "Response to Black Monday"

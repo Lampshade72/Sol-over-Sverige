@@ -1316,7 +1316,7 @@ focus_tree = {
 				has_country_flag = SWE_flag_red_in_sweden		
 			
 			}
-			date > 1937.7.1
+			date > 1937.6.1
 		}
 
 
@@ -4355,6 +4355,23 @@ focus_tree = {
 		icon = GFX_goal_NFA_New_Elections
 		x = 0
 		y = 10
+		offset = {
+			x = -22
+			y = 5
+			trigger = {
+				has_country_flag = SWE_flag_military_steps_in
+			}
+		}	
+		offset = {
+			x = 0
+			y = -4
+			trigger = {
+				AND = {
+					has_country_flag = SWE_flag_military_steps_in
+					has_country_flag = SWE_flag_no_elmo_nats
+				}
+			}
+		}		
 		relative_position_id = SWE_elections_over		
 		
 		cost = 2
@@ -4367,9 +4384,9 @@ focus_tree = {
 		allow_branch = {
 			NOT = {
 				OR = {
-					has_country_flag  = SWE_flag_red_in_sweden
-					has_country_flag = SWE_flag_military_steps_in
+					has_country_flag = SWE_flag_red_in_sweden
 					has_country_flag = SWE_flag_lindholm_tot
+					has_country_flag = SWE_flag_elmo_world
 				}
 			}
 		}				
@@ -5345,6 +5362,8 @@ focus_tree = {
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_bully_opposition"
+				add_stability = 0.02
+				country_event = { id = swedem.30 }
 			
 		}
 	}
@@ -5367,6 +5386,9 @@ focus_tree = {
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_dagsposten"
+				add_political_power = 15
+				add_ideas = SWE_nationalist_newspaper
+					
 			
 		}
 	}	
@@ -5389,6 +5411,33 @@ focus_tree = {
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_break_syndicalism"
+		add_political_power = 25
+		
+		custom_effect_tooltip = SWE_banned_soc_party_tt	
+
+			add_popularity = { ideology = totalist popularity = -0.20 }
+			add_popularity = { ideology = radical_socialist  popularity = -0.20 }
+			add_popularity = { ideology = syndicalist popularity = -0.20 }
+			add_popularity = { ideology = social_democrat popularity = 0.15 }
+			hidden_effect = {
+			set_party_name = {
+						
+			ideology = radical_socialist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			set_party_name = {
+			ideology = syndicalist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			set_party_name = {
+			ideology = totalist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			}
+
 			
 		}
 	}
@@ -5414,6 +5463,9 @@ focus_tree = {
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_nordic_radicalism"
+					custom_effect_tooltip = SWE_nordic_radicalism_tt
+					
+					
 			
 		}
 	}	
@@ -5439,7 +5491,7 @@ focus_tree = {
 		
 		completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SWE_european_social_union"
-			
+					custom_effect_tooltip = SWE_europa_tt
 		}
 	}	
 
@@ -8762,7 +8814,16 @@ focus_tree = {
 			factor = 80
 		}
 		
-		
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_red_in_sweden
+					has_country_flag = SWE_election_safe_success
+					has_country_flag = SWE_flag_lindholm_tot
+					has_country_flag = SWE_flag_no_elmo_nats
+				}
+			}
+		}		
 		available = {
 			has_country_flag = SWE_flag_elmo_world
 			has_completed_focus = SWE_place_of_the_crown
