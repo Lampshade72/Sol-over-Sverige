@@ -130,7 +130,10 @@ spriteTypes = {
 		name = "GFX_idea_SOS_landstorm"
 		texturefile = "gfx/interface/ideas/SOS/SOS_landstorm.png"
 	}
-
+	spriteType = {
+		name = "GFX_idea_SOS_knight_sword"
+		texturefile = "gfx/interface/ideas/SOS/SOS_knight_sword.png"
+	}
 
 
 

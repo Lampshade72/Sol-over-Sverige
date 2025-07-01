@@ -511,6 +511,7 @@ ideas = {
 				}
 			}
             modifier = {
+				monthly_population = 0.05
 				refit_speed = 0.15
 				refit_ic_cost = -0.15
 				repair_speed_factor = 0.15
@@ -531,6 +532,7 @@ ideas = {
 				}
 			}
             modifier = {
+				monthly_population = 0.1
 				refit_speed = 0.20
 				refit_ic_cost = -0.20
 				repair_speed_factor = 0.20
@@ -759,7 +761,7 @@ ideas = {
 
 		SWE_cut_regulations = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_cut_regulations"}			
-			picture = HOL_workplace_democracy
+			picture = SOS_knight_sword
 			allowed = { always = no }
 			modifier = {
 				stability_factor = -0.04
@@ -886,7 +888,7 @@ ideas = {
 
 		SWE_liberal_king = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_liberal_king"}			
-			picture = every_man_a_king
+			picture = SOS_knight_sword
 			allowed = { always = no }
 			modifier = {
 				production_factory_start_efficiency_factor = 0.08
@@ -993,7 +995,7 @@ ideas = {
 
 		SWE_social_patriot_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_social_patriot_idea"}			
-			picture = ALB_nationalization
+			picture = SOS_knight_sword
 			allowed = { always = no }
 			modifier = {
 				war_support_factor = 0.02
