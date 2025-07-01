@@ -1205,24 +1205,32 @@ SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedis
 
 ### Second term election focuses ###
 
-SWE_second_election:0 "Another National Election"
-
+SWE_second_election:0 "1940 National Elections"
+SWE_second_election_desc:0 "Once again, the Swedish nation returns to the polls, with the outcome once more shaping her future."
 
 ## SOCDEM 2nd term ##
 
 SWE_social_dem_second:0 "Social Democrats Secure Victory"
+SWE_social_dem_second_desc:0 "The Social Democrats secure a large enough majority to win the election."
 
 SWE_folkhemmet_improve:0 "Abolish The Statare"
+SWE_folkhemmet_improve_desc:0 "The Statare still holds itself as the last vestiges of the middle ages, a bygone era of servitude and domination of the lower class. We shall set about decisively abolishing this ancient system, doing so carefully as to not place such people on the streets without support or homes."
 
 SWE_Hjalmar_Branting_ideology:0 "Hjalmar Branting Thought"
+SWE_Hjalmar_Branting_ideology_desc:0 "The first of Sweden’s greatest social democratic minds, Hjalmar Branting, the first social democratic prime minister of Sweden. His efforts and works at stabilising Sweden and preparing her to prosper for years to come is evident even now in society. We shall celebrate his great works, with the promise of continuing his legacy."
 
 SWE_marx_and_key:0 "Marxism and Keynesianism"
+SWE_marx_and_key_desc:0 "While initially, under Hjalmar Branting, the social democratic party followed pragmatic view on Marxism, willing to cooperate with Centrists and liberals alike, the domination of germany across Europe turned to party to Keynesian economics. However, some within the party are demanding we return to our Marxist roots, with Germany be damned."
 
 SWE_social_rikstag_dom:0 "Socialist Party Domination"
+SWE_social_rikstag_dom_desc:0 "With the decision to return to pragmatic Marxism, the party is now furthering its social and nationalization policies. While many detractors and the opposition see this as a direct link to the Internationale, we decry such radicalism."
 
 SWE_market_rikstag_dom:0 "Moderate Party Domination"
+SWE_market_rikstag_dom_desc:0 "The party has spoken and the moderate Keynesian wing has won out, the party shall maintain her economically nominal capitalism while espousing social democratic values, grafting a mix between the Marxism of old and the Money of the future."
 
 SWE_people_over_politics:0 "People Over Politics"
+SWE_people_over_politics_desc:0 "One thing is certain in politics, most people either hold disdain or confusion for their politicians, especially when progress is slow. We will prioritise the people of Sweden over personal politics, venturing out our coalitions and plans towards what is best for each individual in Sweden."
+
 
 
 ## SOCLIB ##
