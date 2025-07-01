@@ -25,7 +25,7 @@ ideas = {
 
 		SWE_statare_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_idea"}
-			picture = NFA_compulsory_work
+			picture = SOS_statare_1
 			allowed = { always = no }
             modifier = {
 				consumer_goods_factor = -0.08
@@ -2940,6 +2940,19 @@ ideas = {
 				enemy_army_bonus_air_superiority_factor = -0.05
 				special_forces_out_of_supply_factor = -0.1
 				special_forces_no_supply_grace = 48				
+			}	
+		}
+
+		SWE_red_partizans = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_partizans"}
+			allowed = { always = no }
+            picture = SOS_pulchra
+			modifier = {
+				conscription = 0.01
+				conscription_factor = 0.05
+				war_support_factor = -0.05
+				training_time_army_factor = -0.05
+			
 			}	
 		}
 

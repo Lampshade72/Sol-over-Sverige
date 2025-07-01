@@ -10344,6 +10344,8 @@ focus_tree = {
 			add_manpower = 6700
 			add_stability = -0.07
 			increase_ruling_party_popularity_by_2 = yes
+			
+			add_ideas = SWE_red_partizans
 		}
 	}
 
