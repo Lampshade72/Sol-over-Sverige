@@ -58,5 +58,39 @@ spriteTypes = {
 		name = "GFX_idea_SOS_red_militia"
 		texturefile = "gfx/interface/ideas/SOS/SOS_red_militia.png"
 	}
+	spriteType = {
+		name = "GFX_idea_SOS_carolus"
+		texturefile = "gfx/interface/ideas/SOS/SOS_carolus.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_integrate_finland"
+		texturefile = "gfx/interface/ideas/SOS/SOS_integrate_finland.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_SCA_locked"
+		texturefile = "gfx/interface/ideas/SOS/SOS_SCA_locked.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_hit_run"
+		texturefile = "gfx/interface/ideas/SOS/SOS_hit_run.png"
+	}		
+	spriteType = {
+		name = "GFX_idea_SOS_lion"
+		texturefile = "gfx/interface/ideas/SOS/SOS_lion.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_red_officer"
+		texturefile = "gfx/interface/ideas/SOS/SOS_red_officer.png"
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
