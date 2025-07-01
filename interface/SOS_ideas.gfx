@@ -82,15 +82,66 @@ spriteTypes = {
 		name = "GFX_idea_SOS_red_officer"
 		texturefile = "gfx/interface/ideas/SOS/SOS_red_officer.png"
 	}	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	spriteType = {
+		name = "GFX_idea_SOS_swe_worker"
+		texturefile = "gfx/interface/ideas/SOS/SOS_swe_worker.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_red_res"
+		texturefile = "gfx/interface/ideas/SOS/SOS_red_res.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_soldier_shoot"
+		texturefile = "gfx/interface/ideas/SOS/SOS_soldier_shoot.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_jung_gov"
+		texturefile = "gfx/interface/ideas/SOS/SOS_jung_gov.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_axel"
+		texturefile = "gfx/interface/ideas/SOS/SOS_axel.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_royal_guard"
+		texturefile = "gfx/interface/ideas/SOS/SOS_royal_guard.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_royal_guard_anime"
+		texturefile = "gfx/interface/ideas/SOS/SOS_royal_guard_anime.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_silver_wolf"
+		texturefile = "gfx/interface/ideas/SOS/SOS_silver_wolf.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_pulchra"
+		texturefile = "gfx/interface/ideas/SOS/SOS_pulchra.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_SOS_tiger_slep"
+		texturefile = "gfx/interface/ideas/SOS/SOS_tiger_slep.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_paramilitary"
+		texturefile = "gfx/interface/ideas/SOS/SOS_paramilitary.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_landstorm"
+		texturefile = "gfx/interface/ideas/SOS/SOS_landstorm.png"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 }

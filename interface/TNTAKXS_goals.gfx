@@ -171,8 +171,14 @@ SpriteTypes = {
 		name = "GFX_SOS_radio"
 		texturefile = "gfx/interface/goals/attempt/SOS_radio.png"
 	}
-
-
+	SpriteType = {
+		name = "GFX_SOS_strike_dragon"
+		texturefile = "gfx/interface/goals/attempt/SOS_strike_dragon.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_mountain_guy"
+		texturefile = "gfx/interface/goals/attempt/SOS_mountain_guy.png"
+	}
 
 	
 }

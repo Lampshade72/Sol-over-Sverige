@@ -439,6 +439,8 @@ SWE_kompani_linge_idea_desc:0 "Kompani Linge is a band of commandos lead by form
 
 SWE_integrate_scandinavia_idea:0 "Integration of Scandinavia"
 
+SWE_elmo_europe_idea:0 "Europa United"
+
 ####Focuses####
 
 SWE_rikstag_restructuring:0 "The Riksdag's Rising Stagnation"
@@ -1205,7 +1207,7 @@ SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedis
 
 ### Second term election focuses ###
 
-SWE_second_election:0 "1940 National Elections"
+SWE_second_election:0 "Another National Elections"
 SWE_second_election_desc:0 "Once again, the Swedish nation returns to the polls, with the outcome once more shaping her future."
 
 ## SOCDEM 2nd term ##

@@ -1492,7 +1492,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_FOP_realm_of_our_own
-		icon = GFX_goal_NEE_New_Shadows_War
+		icon = GFX_SOS_mountain_guy
 		prerequisite = { focus = SWE_FOP_tiger_place_in_world }
 		x = -11
 		y = 1
@@ -5895,6 +5895,9 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
+			
+			add_manpower = 2500
+		
 			swap_ideas = {
 				remove_idea = SWE_syndicalist1
 				add_idea = SWE_syndicalist2
@@ -6868,9 +6871,8 @@ focus_tree = {
 		
 		completion_reward = {
 			add_stability = 0.08
-			add_war_support = 0.15
 			add_command_power = 60
-			army_experience = 45	
+			add_manpower = 4500
 			add_ideas = SWE_tot_commisar
 			country_event = { id = swetot.6 } 
 		}
@@ -7529,7 +7531,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_create_secret_police
-		icon = GFX_goal_LEC_police2
+		icon = GFX_SOS_strike_dragon
 		prerequisite = { 
 			focus = SWE_place_of_the_crown
 
