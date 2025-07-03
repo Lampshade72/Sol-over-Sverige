@@ -2667,6 +2667,7 @@ SWE_alliance_reachout = {
 				has_global_flag = USA_civil_war_avoided_flag
 				has_global_flag = USA_civil_war_over_flag
 				}
+				
 				exists = yes
 				is_subject = no
 			}
@@ -2701,6 +2702,7 @@ SWE_alliance_reachout = {
 				has_completed_focus = SWE_FOP_alliance_of_misfits
 			}
 			COR = {
+				is_in_faction = no
 				has_global_flag = USA_civil_war_over_flag
 				exists = yes
 				is_subject = no
@@ -2735,6 +2737,7 @@ SWE_alliance_reachout = {
 				has_completed_focus = SWE_FOP_alliance_of_misfits
 			}
 			CAL = {
+				is_in_faction = no
 				has_global_flag = USA_civil_war_over_flag
 				exists = yes
 				is_subject = no
@@ -2770,7 +2773,8 @@ SWE_alliance_reachout = {
 				has_completed_focus = SWE_FOP_alliance_of_misfits
 			}
 			MEX = {
-				has_democratic_government = yes
+				is_in_faction = no
+				has_socialist_government = no
 				exists = yes
 				is_subject = no
 			}
@@ -2807,7 +2811,8 @@ SWE_alliance_reachout = {
 			NOT = {
 				has_global_flag = spanish_civil_war
 			}			
-			SPR = {				
+			SPR = {	
+				is_in_faction = no
 				has_socialist_government = no
 				exists = yes
 				is_subject = no
@@ -2845,7 +2850,8 @@ SWE_alliance_reachout = {
 			NOT = {
 				has_global_flag = spanish_civil_war
 			}			
-			CAR = {				
+			CAR = {	
+				is_in_faction = no
 				has_socialist_government = no
 				exists = yes
 				is_subject = no
@@ -2859,6 +2865,80 @@ SWE_alliance_reachout = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SWE_FOP_invite_SPR"
 			CAR = {
+				country_event = {
+					id = swefop.29
+					days = 1
+				}
+			}
+		}
+	}
+
+	SWE_FOP_invite_FIN = {
+		cost = 25
+		icon = GFX_decision_generic_nationalism
+		allowed = { original_tag = SWE }
+		
+		available = {
+			is_faction_leader = yes
+		}
+		
+		visible = {
+			SWE = {
+				has_completed_focus = SWE_FOP_alliance_of_misfits
+			}
+			
+			FIN = {	
+				is_in_faction = no
+				has_socialist_government = no
+				exists = yes
+				is_subject = no
+			}
+		}
+
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 30
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_FOP_invite_SPR"
+			FIN = {
+				country_event = {
+					id = swefop.29
+					days = 1
+				}
+			}
+		}
+	}
+
+	SWE_FOP_invite_FIN = {
+		cost = 25
+		icon = GFX_decision_generic_nationalism
+		allowed = { original_tag = SWE }
+		
+		available = {
+			is_faction_leader = yes
+		}
+		
+		visible = {
+			SWE = {
+				has_completed_focus = SWE_FOP_alliance_of_misfits
+			}
+			
+			FIN = {	
+				is_in_faction = no
+				has_socialist_government = no
+				exists = yes
+				is_subject = no
+			}
+		}
+
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 30
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWE_FOP_invite_SPR"
+			FIN = {
 				country_event = {
 					id = swefop.29
 					days = 1
