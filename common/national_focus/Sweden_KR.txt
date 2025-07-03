@@ -1331,7 +1331,7 @@ focus_tree = {
 		id = SWE_FOP_revolutionary_torch
 		icon = GFX_Carrying_the_torch
 		prerequisite = { focus = SWE_FOP_tiger_place_in_world }		
-		x = 14
+		x = 18
 		y = 1
 		offset = {
 			x = -5
@@ -1378,7 +1378,7 @@ focus_tree = {
 		id = SWE_FOP_democractic_light
 		icon = GFX_goal_ATH_diplomats
 		prerequisite = { focus = SWE_FOP_tiger_place_in_world }		
-		x = 7
+		x = 9
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
 		cost = 2
@@ -1909,7 +1909,8 @@ focus_tree = {
 		prerequisite = { focus = SWE_FOP_democractic_light }
 		mutually_exclusive = { focus = SWE_FOP_banished_entente }
 		mutually_exclusive = { focus = SWE_FOP_russian_alliance }
-		x = 2
+		mutually_exclusive = { focus = SWE_FOP_ourselves_forward }
+		x = 1
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 5
@@ -1943,13 +1944,66 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SWE_FOP_ourselves_forward
+		icon = GFX_SOS_leaders
+		prerequisite = { focus = SWE_FOP_democractic_light }
+		mutually_exclusive = { focus = SWE_FOP_banished_entente }
+		mutually_exclusive = { focus = SWE_FOP_russian_alliance }
+		mutually_exclusive = { focus = SWE_FOP_former_victors_kaiser }
+		x = 3
+		y = 1
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			is_faction_leader = yes
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_ourselves_forward"
+
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = SWE_FOP_alliance_of_misfits
+		icon = GFX_SOS_merica
+		prerequisite = { focus = SWE_FOP_ourselves_forward }
+
+		x = 4
+		y = 2
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			is_faction_leader = yes
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_ourselves_forward"
+
+			add_political_power = 25
+		}
+	}
+
 	focus = { 
 		id = SWE_FOP_russian_alliance
 		icon = GFX_UKR_Look_To_Russia
 		prerequisite = { focus = SWE_FOP_democractic_light }
 		mutually_exclusive	= { focus = SWE_FOP_banished_entente }
 		mutually_exclusive = { focus = SWE_FOP_former_victors_kaiser }
-		x = 0
+		mutually_exclusive = { focus = SWE_FOP_ourselves_forward }
+		x = -1
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 5
@@ -1987,8 +2041,9 @@ focus_tree = {
 		icon = GFX_goal_CAN_lets_go_canada
 		prerequisite = { focus = SWE_FOP_democractic_light }
 		mutually_exclusive = { focus = SWE_FOP_former_victors_kaiser }
-		mutually_exclusive = { focus = SWE_FOP_russian_alliance }		
-		x = -2
+		mutually_exclusive = { focus = SWE_FOP_russian_alliance }
+		mutually_exclusive = { focus = SWE_FOP_ourselves_forward }		
+		x = -3
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 5
@@ -2024,10 +2079,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SWE_FOP_drinking_with_kaiser
-		icon = GFX_goal_AST_drink_with_industrialists
-		prerequisite = { focus = SWE_FOP_former_victors_kaiser }
-		x = 2
+		id = SWE_FOP_naval_history
+		icon = GFX_goal_CAN_Focus_RCN
+		prerequisite = { focus = SWE_FOP_banished_entente }
+		x = -4
 		y = 2
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 4
@@ -2041,15 +2096,42 @@ focus_tree = {
 
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_drinking_with_kaiser"
-			add_ideas = SWE_swedish_germany_friend
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_meet_in_ottawa"
+			
 		}
 	}
 
 	focus = {
-		id = SWE_FOP_petrograd_parade
-		icon = GFX_RUS_Utilize_Hosts_Troops
+		id = SWE_FOP_entente_history
+		icon = GFX_RUS_Special_Forces_Office
 		prerequisite = { 
+			focus = SWE_FOP_banished_entente
+			focus = SWE_FOP_russian_alliance
+			}
+		x = -2
+		y = 2
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 4
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_entente_history"
+			add_ideas = SWE_swedish_entente
+		}
+	}
+
+	focus = {
+		id = SWE_FOP_military_history
+		icon = GFX_goal_NEE_All_American_Army
+		prerequisite = { 
+			focus = SWE_FOP_former_victors_kaiser
 			focus = SWE_FOP_russian_alliance
 			}
 		x = 0
@@ -2073,10 +2155,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SWE_FOP_meet_in_ottawa
-		icon = GFX_goal_CAN_protect_parliment
-		prerequisite = { focus = SWE_FOP_banished_entente }
-		x = -2
+		id = SWE_FOP_industrial_focus
+		icon = GFX_goal_AST_drink_with_industrialists
+		prerequisite = { 
+			focus = SWE_FOP_former_victors_kaiser
+			focus = SWE_FOP_ourselves_forward
+			}
+		x = 2
 		y = 2
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 4
@@ -2090,18 +2175,81 @@ focus_tree = {
 
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_meet_in_ottawa"
-			add_ideas = SWE_swedish_entente
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_drinking_with_kaiser"
+			add_ideas = SWE_swedish_germany_friend
 		}
 	}
 
 	focus = {
-		id = SWE_FOP_bastion_against_radicals
-		icon = GFX_goal_generic_non_voilence
+		id = SWE_FOP_secure_nordics
+		icon = GFX_SOS_lady
 		prerequisite = { 
-			focus = SWE_FOP_drinking_with_kaiser
+			focus = SWE_FOP_entente_history
+			focus = SWE_FOP_military_history
+			focus = SWE_FOP_industrial_focus
+			focus = SWE_FOP_naval_history
+			focus = SWE_FOP_alliance_of_misfits
+		}
+		x = -2
+		y = 3
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_secure_nordics"
+
+		}
+	}
+
+	focus = {
+		id = SWE_FOP_finland_decision
+		icon = GFX_focus_rus_finland
+		prerequisite = { 
+			focus = SWE_FOP_entente_history
+			focus = SWE_FOP_military_history
+			focus = SWE_FOP_industrial_focus
+			focus = SWE_FOP_naval_history
+			focus = SWE_FOP_alliance_of_misfits
+		}
+		x = 0
+		y = 3
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_finland_decision"
+
+		}
+	}
+
+
+	focus = {
+		id = SWE_FOP_iceland_gambit
+		icon = GFX_goal_NFL_iceland
+		prerequisite = { 
+			focus = SWE_FOP_entente_history
+			focus = SWE_FOP_military_history
+			focus = SWE_FOP_industrial_focus
+			focus = SWE_FOP_naval_history
+			focus = SWE_FOP_alliance_of_misfits
 			}
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 3
@@ -2115,47 +2263,23 @@ focus_tree = {
 
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_bastion_against_radicals"
-			unlock_decision_tooltip = swe_subjugate_norway_alliance
-			unlock_decision_tooltip = swe_subjugate_finland_alliance
-			unlock_decision_tooltip = swe_subjugate_denmark_alliance		
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_iceland_gambit"
+		
 
 		}
 	}
 
-	focus = {
-		id = SWE_FOP_player_in_reclamation
-		icon = GFX_goal_CAN_all_for_reclamation
-		prerequisite = { 
-			focus = SWE_FOP_petrograd_parade
-			focus = SWE_FOP_meet_in_ottawa
-		}
-		x = -1
-		y = 3
-		relative_position_id = SWE_FOP_democractic_light
-		cost = 3
-		ai_will_do = {
-			factor = 80
-		}
 
-		available = {
-
-		}
-
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_player_in_reclamation"
-			unlock_decision_tooltip = swe_subjugate_norway_alliance
-			unlock_decision_tooltip = swe_subjugate_finland_alliance
-			unlock_decision_tooltip = swe_subjugate_denmark_alliance
-		}
-	}
 
 	focus = {
 		id = SWE_FOP_triumphant_once_more
 		icon = GFX_goal_generic_future_technology
-		prerequisite = { focus = SWE_FOP_bastion_against_radicals }
-		x = 1
+		prerequisite = { 
+			focus = SWE_FOP_secure_nordics
+			focus = SWE_FOP_finland_decision
+			focus = SWE_FOP_iceland_gambit
+			}
+		x = 0
 		y = 4
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 7
@@ -2170,29 +2294,6 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_triumphant_once_more"
-			add_ideas = SWE_swedish_arm_in_arm
-		}
-	}
-
-	focus = {
-		id = SWE_FOP_torch_of_freedom
-		icon = GFX_goal_generic_world_diplomacy
-		prerequisite = { focus = SWE_FOP_player_in_reclamation }
-		x = -1
-		y = 4
-		relative_position_id = SWE_FOP_democractic_light
-		cost = 7
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-
-		}
-
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_torch_of_freedom"
 			add_ideas = SWE_swedish_arm_in_arm
 		}
 	}
@@ -10162,7 +10263,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_new_doctrine
-		icon = GFX_GRU_ground_support_focus-4018
+		icon = GFX_SOS_red_soldier_focus
 		prerequisite = { 
 			focus = SWE_remove_old_generals
 

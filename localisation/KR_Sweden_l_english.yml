@@ -983,26 +983,44 @@ SWE_FOP_tiger_guards_den_desc:0 "Sweden is safe, safe from the petty alliances o
 
 SWE_FOP_democractic_light:0 "Grand Alliance Reachout"
 SWE_FOP_democractic_light_desc:0 "In this modern menagerie of allegiances and alliances, it is evident that those who stay together survive. There remains a few major choices for us to align ourselves with, in Petrograd the Russian horde stands ready to pursue their territorial reclamation, the Entente who seek to end their exile from their homelands and in the middle of these groups sits the German Reichspakt, threatened from possibly all factions. We must make a decision now, lest we get thrown to the wayside of history."
-SWE_FOP_banished_entente:0 "The Banished Ones"
+SWE_FOP_banished_entente:0 "Return of the Exiles"
 SWE_FOP_banished_entente_desc:0 "We have decided to join the Entente, seeking to aid them in their righteous crusade against the Internationale hordes."
-SWE_FOP_meet_in_ottawa:0 "Entente Expertise"
-SWE_FOP_meet_in_ottawa_desc:0 "It is no lie that the current state of the Entente’s standing armies do not match the size of their enemies. But for what they lack in size, they make up for in professionalism. As such, we shall take on their experts in training our own special forces."
+
 SWE_FOP_russian_alliance:0 "Thawing Relations with Russia"
 SWE_FOP_russian_alliance_desc:0 "In what most have seen as the most unexpected turn, we have decided to join the Russian alliance. We seek to stand by them in their rightful reclamation of their native lands, against any foe that they face."
-SWE_FOP_petrograd_parade:0 "A Parade in Petrograd"
-SWE_FOP_petrograd_parade_desc:0 "Russia’s standing army has always been a spectacle of awe and prowess, while not always the best equipped, it remains unmatched in sheer size."
-SWE_FOP_player_in_reclamation:0 "Vital Node in Reclamation"
-SWE_FOP_player_in_reclamation_desc:0 "Our role is now certain, we are now a vital jumping point for our allies' reclamation of their rightful lands."
-SWE_FOP_torch_of_freedom:0 "Torch of Liberation"
-SWE_FOP_torch_of_freedom_desc:0 "We shall be the bearers of liberation, through blood and sweat, our allies shall prosper, and so shall we!"
+
 SWE_FOP_former_victors_kaiser:0 "With the Weltkrieg Winners"
 SWE_FOP_former_victors_kaiser_desc:0 "The Reichspakt sits the closest to us, sharing common Germanic and traditional government styles, they are clearing the no brainer option here."
-SWE_FOP_drinking_with_kaiser:0 "Reichspakt Benefits"
-SWE_FOP_drinking_with_kaiser_desc:0 "The Reichspakt is more than just a web of military alliances, it is an economic union. By further integrating ourselves into it we can hope to reap the rewards."
-SWE_FOP_bastion_against_radicals:0 "Bastion Against Ravenous Titans"
-SWE_FOP_bastion_against_radicals_desc:0 "Germany’s cause is a just one, the end to power hungry and radical nations, freedom to those oppressed by them. We stand beside our German brethren, ready to defend European freedom and liberty."
-SWE_FOP_triumphant_once_more:0 "Towards Another Domination"
-SWE_FOP_triumphant_once_more_desc:0 "Like the Weltkreig before, Germany shall win again, this time with us by their side."
+
+SWE_FOP_ourselves_forward:0 "Forge our own Path"
+SWE_FOP_ourselves_forward_desc:0 ""
+
+SWE_FOP_naval_history:0 "Britain and France's Naval Prowess"
+SWE_FOP_naval_history_desc:0 ""
+
+SWE_FOP_entente_history:0 "Men Over Arms"
+SWE_FOP_entente_history_desc:0 ""
+
+SWE_FOP_military_history:0 "Sheer Might in Size"
+SWE_FOP_military_history_desc:0 ""
+
+SWE_FOP_industrial_focus:0 "Industrial Expertise"
+SWE_FOP_industrial_focus_desc:0 ""
+
+SWE_FOP_alliance_of_misfits:0 "Alliance of Misfits"
+SWE_FOP_alliance_of_misfits_desc:0 ""
+
+SWE_FOP_secure_nordics:0 "Eyes on Scandinavia"
+SWE_FOP_secure_nordics_desc:0 ""
+
+SWE_FOP_finland_decision:0 "The Fate of Finland"
+SWE_FOP_finland_decision_desc:0 ""
+
+SWE_FOP_iceland_gambit:0 "The Iceland Question"
+SWE_FOP_iceland_gambit_desc:0 ""
+
+SWE_FOP_triumphant_once_more:0 "Towards A New World Order"
+SWE_FOP_triumphant_once_more_desc:0 ""
 
 SWE_FOP_revolutionary_torch:0 "Carrying The Torch of Revolution"
 SWE_FOP_revolutionary_torch_desc:0 "With the revolution triumphant and the nation stable once again, we can turn our gaze outwards. The most obvious choice is to join the Internationale in their righteous cause for an international worker liberation, or perhaps we find their ideology corrupt from our own?"
@@ -1643,10 +1661,112 @@ swefop.6.t:0 "An Old Empire made New"
 swefop.6.d:0 "The dream of empire, once buried beneath centuries of neutrality and modest diplomacy, has been reignited and realized. Under firm and visionary leadership, Sweden has cast off its traditional restraint and seized its destiny as the dominant power in the North. The Nordic lands, Denmark, Norway, Finland, and Iceland, have all been brought under Swedish control, willingly or otherwise. Even the ancient foe to the east, Russia, has bowed before the might of a resurgent Swedish war machine.\n\nFrom the icy fjords of Norway to the windswept steppes beyond the Karelian Isthmus, Swedish soldiers now march under the banner of the Three Crowns. The Baltic Sea, once contested, is now a Swedish lake. Stockholm has become the capital of a new empire, an empire that recalls the days of Gustavus Adolphus and Charles XII, but now reborn for the modern age.\n\nSome hail this resurgence as the beginning of a golden age for Scandinavia. Others whisper of tyranny and retribution. But one thing is certain: the Swedish Empire is no longer a memory—it is a force the world must reckon with."
 swefop.6.a:0 "The North is ours, long live the Empire!"
 
+swefop.7.t:0 "" #Neutrality 1
+swefop.7.d:0 ""
+swefop.7.a:0 ""
 
+swefop.8.t:0 "" #Neutrality 2
+swefop.8.d:0 ""
+swefop.8.a:0 ""
 
+swefop.9.t:0 "The Greenland Situation" #Demand Greenland Denmark
+swefop.9.d:0 ""
+swefop.9.a:0 "We shall demand Greenland!"
 
+swefop.10.t:0 "Sweden Demands Greenland" #Danishh response
+swefop.10.d:0 ""
+swefop.10.a:0 "Are they mad? No!"
+swefop.10.b:0 "Its not worth the trouble, sure"
 
+swefop.11.t:0 "Denmark Concedes Greenland" #Denmark accept
+swefop.11.d:0 ""
+swefop.11.a:0 "Our rightfull territory!"
+
+swefop.12.t:0 "Denmark Holds Fast" #Denmark refuse
+swefop.12.d:0 ""
+swefop.12.a:0 "To arms!"
+swefop.12.b:0 "We shall bide our time..."
+
+swefop.13.t:0 "Sweden Demands Greenland" #Canadian response
+swefop.13.d:0 ""
+swefop.13.a:0 "Ha, with what army? No!"
+swefop.13.a:0 "Bah, its not worth the fight"
+
+swefop.14.t:0 "Canada Concedes Greenland" #Canada accepts
+swefop.14.d:0 ""
+swefop.14.a:0 "A valianet move by Canada!"
+
+swefop.15.t:0 "Canada Refuses our Demands" #Canada refuses
+swefop.15.d:0 ""
+swefop.15.a:0 "To arms!"
+swefop.15.b:0 "We shall bide our time..."
+
+swefop.16.t:0 "Victory over the Horizon" #swedish victory against Canada
+swefop.16.d:0 ""
+swefop.16.a:0 "Send the deal, surely they will accept?"
+swefop.16.b:0 "The Canadians realm will fall together!"
+
+swefop.17.t:0 "Sweden offers Negotiations" #Peace with Sweden?
+swefop.17.d:0 ""
+swefop.17.a:0 "Fine, let them have the barren ice!"
+swefop.17.b:0 "No, we shall destroy these Scandinavians!"
+
+swefop.18.t:0 "Canada Accepts Negotiations" #They accept peace
+swefop.18.d:0 ""
+swefop.18.a:0 "A victory against a titan!"
+
+swefop.19.t:0 "A Request from Sweden" #request canada response greenland
+swefop.19.d:0 ""
+swefop.19.a:0 "No, they have no claims"
+swefop.19.b:0 "Sure, they know the climate better than us"
+
+swefop.20.t:0 "Canada gives in" #Canada accepts
+swefop.20.d:0 ""
+swefop.20.a:0 "Truly, allies to the end!"
+
+swefop.21.t:0 "Canada denies our Request" #Canada refuses
+swefop.21.d:0 ""
+swefop.21.a:0 "We shall make our leave then"
+swefop.21.b:0 "Humiliating"
+
+swefop.22.t:0 "Sweden Request Iceland" #Demand canada iceland response
+swefop.22.d:0 ""
+swefop.22.a:0 "Its position is too vital to reclamation, no"
+swefop.22.a:0 "They may have it"
+
+swefop.23.t:0 "Canada Cedes Iceland" #Canada accepts
+swefop.23.d:0 ""
+swefop.23.a:0 "The brilliance of negotiation!"
+
+swefop.24.t:0 "Canada Refuses our Request" #Canada refuses
+swefop.24.d:0 ""
+swefop.24.a:0 "Then we shall leave them behind"
+swefop.24.a:0 "Dreadful"
+
+swefop.25.t:0 "Sweden Demans our Annexation" #Iceland responsse
+swefop.25.d:0 ""
+swefop.25.a:0 "Fine, we shall yield"
+swefop.25.a:0 "Take our island from our cold, fish, dead hands!"
+
+swefop.26.t:0 "Iceland Accepts Annexation" #Iceland agrees
+swefop.26.d:0 ""
+swefop.26.a:0 "Another territorial ambition satisfied!"
+
+swefop.27.t:0 "Iceland Rejects Us" #Iceland denies
+swefop.27.d:0 ""
+swefop.27.a:0 "Negotiations have failed us, prepare the troops"
+
+swefop.28.t:0 "A Sweden Centred Alliance" #Create own factrion 
+swefop.28.d:0 ""
+swefop.28.a:0 "The Northern Alliance!"
+swefop.28.a:0 "The Aurora Pact!"
+swefop.28.a:0 "The Swedish Defence Pact!"
+swefop.28.a:0 "The Stockholm Accord!"
+
+swefop.29.t:0 "Sweden Invites us to her faction" #Generic invite to faction
+swefop.29.d:0 ""
+swefop.29.a:0 "Let woes come, for together we will be one!"
+swefop.29.b:0 "No thanks!"
 
 
 ### Events ###
@@ -1819,6 +1939,37 @@ swedem.28.t:0 "The Flag we Hoist"
 swedem.28.d:0 "Following the dissolution of the Swedish-Norwegian union in 1905, the flag of Sweden was changed to remove the Norwegian symbolism. Then in 1906, a light medium blue was adopted onto the flag, to represent the shift from Sweden as an imperial power to one of a model democratic state. However, with the winds of history forever shifting, some within the Riksdag and public wish to see a resurgence in the darker shade of blue once used. While the group is minor and such a change would do nothing for gain in the country, it remains a novel premise."
 swedem.28.a:0 "A return to 1905!"
 swedem.28.b:0 "We accept our current flag"
+
+swedem.29.t:0 "The Decision on the Economic Direction of the Party"
+swedem.29.d:0 ""
+swedem.29.a:0 "We shall re-embrace Marxism!"
+swedem.29.b:0 "Stick to what works, Keynesian economics!"
+
+swedem.30.t:0 "Locking Down Opposition"
+swedem.30.d:0 ""
+swedem.30.a:0 "Polite way"
+swedem.30.b:0 "Cutthroat"
+
+swedem.31.t:0 "To 'Free' Elections?"
+swedem.31.d:0 ""
+swedem.31.a:0 "Free Elections"
+swedem.31.b:0 "No lefties"
+
+swedem.32.t:0 "A Return to the Ballots"
+swedem.32.d:0 "Election post army coup"
+swedem.32.a:0 "Erlander's Social Democrats"
+swedem.32.b:0 "Farmer's League"
+swedem.32.c:0 "Folkpartiet"
+swedem.32.e:0 "Conservatives"
+swedem.32.f:0 "National League"
+
+
+
+
+
+
+
+
 
 #### Working on elections ####
 

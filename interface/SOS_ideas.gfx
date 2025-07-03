@@ -138,7 +138,14 @@ spriteTypes = {
 		name = "GFX_idea_SOS_statare_1"
 		texturefile = "gfx/interface/ideas/SOS/SOS_statare_1.png"
 	}
-
+	spriteType = {
+		name = "GFX_idea_SOS_eels"
+		texturefile = "gfx/interface/ideas/SOS/SOS_eels.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOS_red_soldier"
+		texturefile = "gfx/interface/ideas/SOS/SOS_red_soldier.png"
+	}
 
 
 

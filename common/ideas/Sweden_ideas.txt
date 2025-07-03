@@ -475,7 +475,7 @@ ideas = {
 
 		SWE_statare_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_idea2"}
-			picture = NFA_compulsory_work
+			picture = SOS_statare_1
 			allowed = { always = no }
             modifier = {
 				consumer_goods_factor = -0.06
@@ -487,7 +487,7 @@ ideas = {
 
 		SWE_statare_idea3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_idea3"}
-			picture = NFA_compulsory_work
+			picture = SOS_statare_1
 			allowed = { always = no }
             modifier = {
 				consumer_goods_factor = -0.05
@@ -499,7 +499,7 @@ ideas = {
 
 		SWE_eel_economy1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_eel_economy"}
-			picture = GEN_navy_logistics
+			picture = SOS_eels
 			allowed = { always = no }
 			research_bonus = {
 				naval_equipment = 0.05
@@ -520,7 +520,7 @@ ideas = {
 
 		SWE_eel_economy2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_trade_sea"}
-			picture = GEN_navy_logistics
+			picture = SOS_eels
 			allowed = { always = no }
 			research_bonus = {
 				naval_equipment = 0.1
@@ -1449,7 +1449,7 @@ ideas = {
 
 		SWE_tot_commisar = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_tot_commisar"}
-			picture = SOV_opposition
+			picture = SOS_red_soldier
 			allowed = { always = no }
 			modifier = {
 				war_support_weekly = 0.005
@@ -1524,7 +1524,7 @@ ideas = {
 
 		SWE_red_new_guard = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_red_new_guard"}
-			picture = union_military
+			picture = SOS_red_soldier
 			allowed = { always = no }
 			modifier = {
 				stability_weekly = 0.01

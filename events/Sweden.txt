@@ -1470,11 +1470,683 @@ country_event = { #neutrality 2 final ##LS##
 	
 }
 
+country_event = { #demand greenland denmark
+	id = swefop.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.9" }
+	title = swefop.9.t
+	desc = swefop.9.d
+	picture = GFX_report_event_SWE_neutral_1
 
+	is_triggered_only = yes
 
+	option = { # Demand it outright
+		name = swefop.9.a
+		ai_chance = {
+			factor = 100
+		}
+		DEN = {
+			country_event = swefop.10
+		}
+	}
+					
+}
 
+country_event = { # Danish Response
+	id = swefop.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.10" }
+	title = swefop.10.t
+	desc = swefop.10.d
+	picture = GFX_report_event_NOR_new_government
 
+	is_triggered_only = yes
 
+	fire_only_once = yes
+
+	option = { # No, we refuse
+		name = swefop.10.a
+		ai_chance = {
+			factor = 20
+		}
+		SWE = {
+			country_event = swefop.12
+		}
+	}
+
+	option = { # Yes, give away the island
+		name = swefop.10.b
+		ai_chance = {
+			factor = 80
+		}
+		SWE = {
+			country_event = swefop.11
+		}
+		add_political_power = -25
+	}
+}
+
+country_event = { # Denmark Accept!
+	id = swefop.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.11" }
+	title = swefop.11.t
+	desc = swefop.11.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = swefop.11.a
+		add_political_power = 100
+		transfer_state = 101 #Greenland
+		add_state_core = 101
+		transfer_state = 926 #Greenland Interior
+		add_state_core = 926
+	}
+}
+
+country_event = { # Denmark Refuse our request
+	id = swefop.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.12" }
+	title = swefop.12.t
+	desc = swefop.12.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Then it is war!
+		name = swefop.12.a
+		ai_chance = {
+			factor = 20
+		}
+		declare_war_on = {
+			target = DEN
+			type = annex_everything
+		}
+	}
+
+	option = { # Back down...
+		name = swefop.12.b
+		ai_chance = {
+			factor = 80
+		}
+		add_political_power = -10
+	}
+}
+
+country_event = { # Canadian Response
+	id = swefop.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.13" }
+	title = swefop.13.t
+	desc = swefop.13.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # No, we refuse
+		name = swefop.13.a
+		ai_chance = {
+			factor = 90
+		}
+		SWE = {
+			country_event = swefop.15
+		}
+	}
+
+	option = { # Yes, give away the island
+		name = swefop.13.b
+		ai_chance = {
+			factor = 10
+		}
+		SWE = {
+			country_event = swefop.14
+		}
+		add_political_power = -10
+	}
+}
+
+country_event = { # Canada Accept!
+	id = swefop.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.14" }
+	title = swefop.14.t
+	desc = swefop.14.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = swefop.14.a
+		add_political_power = 100
+		transfer_state = 101 #Greenland
+		add_state_core = 101
+		transfer_state = 926 #Greenland Interior
+		add_state_core = 926
+	}
+}
+
+country_event = { # Canada Refuse our request
+	id = swefop.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.15" }
+	title = swefop.15.t
+	desc = swefop.15.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Then it is war!
+		name = swefop.15.a
+		ai_chance = {
+			factor = 10
+		}
+		declare_war_on = {
+			target = CAN
+			type = take_state_focus
+			generator = {
+				101
+				926
+			}
+		}
+	}
+
+	option = { # Back down...
+		name = swefop.15.b
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+country_event = { # SWE Victory vs. CAN
+	id = swefop.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.16" }
+	title = swefop.16.t
+	desc = swefop.16.d
+	picture = GFX_report_event_NOR_new_government
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SWE
+		is_subject = no
+		country_exists = CAN
+		has_war_with = CAN
+		NOT = {
+			is_in_faction = yes
+		}
+		OR = {
+			controls_state = 101
+			CAN = {
+				surrender_progress > 0.25
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = { # Sue for peace
+		name = swefop.16.a
+		ai_chance = {
+			factor = 100
+		}
+		CAN = {
+			country_event = swefop.17
+		}
+	}
+
+	option = { # Total Conquest
+		name = swefop.16.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -20
+	}
+}
+
+country_event = { # Peace with Norway?
+	id = swefop.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.17" }
+	title = swefop.17.t
+	desc = swefop.17.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Accept
+		name = swefop.17.a
+		ai_chance = {
+			factor = 100
+		}
+		SWE = {
+			white_peace = CAN
+		}
+		SWE = {
+			country_event = swefop.18
+		}
+	}
+
+	option = { # Refuse
+		name = swefop.17.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -200
+	}
+}
+
+country_event = {
+	id = swefop.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.18" }
+	title = swefop.18.t
+	desc = swefop.18.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #
+		name = swefop.18.a
+		add_political_power = 100
+		transfer_state = 101 #Greenland
+		transfer_state = 926 #Greenland Interior
+		if = {
+			limit = {
+				100 = {
+					is_owned_by = CAN
+				}
+			}
+			transfer_state = 100 #Iceland
+		}
+		if = {
+			limit = {
+				337 = {
+					is_owned_by = CAN
+				}
+			}
+			transfer_state = 337 #Faroe Islands
+		}
+		if = {
+			limit = {
+				country_exists = ICE
+				ICE = {
+					is_subject_of = CAN
+				}
+			}
+			annex_country = {
+				target = ICE
+			}
+		}
+	}
+}
+
+country_event = { # Canadian Response
+	id = swefop.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.19" }
+	title = swefop.19.t
+	desc = swefop.19.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # No, we refuse
+		name = swefop.19.a
+		ai_chance = {
+			factor = 20
+		}
+		SWE = {
+			country_event = swefop.21
+		}
+	}
+
+	option = { # Yes, give away the island
+		name = swefop.19.b
+		ai_chance = {
+			factor = 80
+		}
+		SWE = {
+			country_event = swefop.20
+		}
+		add_political_power = -20
+	}
+}
+
+country_event = { # Canada Accept!
+	id = swefop.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.20" }
+	title = swefop.20.t
+	desc = swefop.20.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = swefop.20.a
+		add_political_power = 100
+		transfer_state = 101 #Greenland
+		add_state_core = 101
+		transfer_state = 926 #Greenland Interior
+		add_state_core = 926
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = 
+			KR_returned_land 
+			}
+		}
+	}
+}
+
+country_event = { # Canada Refuse our request
+	id = swefop.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.21" }
+	title = swefop.21.t
+	desc = swefop.21.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Then we'll leave
+		name = swefop.21.a
+		ai_chance = {
+			factor = 5
+		}
+		if = {
+			limit = {
+				is_in_faction_with = CAN
+			}
+			CAN = {
+				remove_from_faction = SWE
+			}
+		}
+	}
+
+	option = { # Back down...
+		name = swefop.21.b
+		ai_chance = {
+			factor = 95
+		}
+		add_political_power = -50
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = 
+			KR_disapproves_of_govt 
+			}
+		}
+	}
+}
+
+country_event = { # Canadian Response
+	id = swefop.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.22" }
+	title = swefop.22.t
+	desc = swefop.22.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # No, we refuse
+		name = swefop.22.a
+		ai_chance = {
+			factor = 20
+		}
+		SWE = {
+			country_event = swefop.24
+		}
+	}
+
+	option = { # Yes, give away the island
+		name = swefop.22.b
+		ai_chance = {
+			factor = 80
+		}
+		SWE = {
+			country_event = swefop.23
+		}
+		add_political_power = -20
+	}
+}
+
+country_event = { # Canada Accept!
+	id = swefop.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.23" }
+	title = swefop.23.t
+	desc = swefop.23.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = swefop.23.a
+		add_political_power = 100
+		annex_country = {
+			target = ICE
+			transfer_troops = yes
+		}
+		add_state_core = 100
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = 
+			KR_returned_land 
+			}
+		}
+	}
+}
+
+country_event = { # Canada Refuse our request
+	id = swefop.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.24" }
+	title = swefop.24.t
+	desc = swefop.24.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Then we'll leave
+		name = swefop.24.a
+		ai_chance = {
+			factor = 5
+		}
+		if = {
+			limit = {
+				is_in_faction_with = CAN
+			}
+			CAN = {
+				remove_from_faction = SWE
+			}
+		}
+	}
+
+	option = { # Back down...
+		name = swefop.24.b
+		ai_chance = {
+			factor = 95
+		}
+		add_political_power = -50
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = 
+			KR_disapproves_of_govt 
+			}
+		}
+	}
+}
+
+country_event = { # Iceland Response
+	id = swefop.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.25" }
+	title = swefop.25.t
+	desc = swefop.25.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Yes, join Norway
+		name = swefop.25.a
+		ai_chance = {
+			factor = 100
+		}
+		SWE = {
+			country_event = { 
+				hours = 2 
+				id = swefop.26
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	
+	option = { # No, we refuse
+		name = swefop.25.b
+		ai_chance = {
+			factor = 0
+		}
+		SWE = {
+			country_event = { days = 1 id = swefop.27 }
+		}
+	}
+}
+
+country_event = { # Iceland Says Yes
+	id = swefop.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.26" }
+	title = swefop.26.t
+	desc = swefop.26.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Sweden must grow larger
+		name = swefop.26.a
+		100 = {
+			if = {
+				limit = { is_owned_by = ICE }
+				add_core_of = SWE
+			}
+		}
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+		army_experience = 10
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		annex_country = { target = ICE transfer_troops = yes }
+	}
+}
+
+country_event = { # Iceland Says No
+	id = swefop.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.27" }
+	title = swefop.27.t
+	desc = swefop.27.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Get Wargoal
+		name = swefop.27.a
+		add_war_support = 0.05
+		create_wargoal = {
+			type = take_state_focus
+			target = ICE
+		}
+	}
+}
+
+country_event = { # create own faction
+	id = swefop.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.28" }
+	title = swefop.28.t
+	desc = swefop.28.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # name 1
+		name = swefop.28.a
+		add_political_power = 20
+		create_faction = "Northern Alliance"
+	}
+	option = { # name 2
+		name = swefop.28.b
+		add_political_power = 20
+		create_faction = "Aurora Pact"
+	}
+	option = { # name 3
+		name = swefop.28.c
+		add_political_power = 20
+		create_faction = "Swedish Defence Pact"
+	}	
+	option = { # name 3
+		name = swefop.28.e
+		add_political_power = 20
+		create_faction = "Stockholm Accord"
+	}	
+	
+	
+}
+
+country_event = { #Join SWE Faction
+	id = swefop.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event swefop.29"}
+	title = swefop.29.t
+	desc = swefop.29.d
+	picture = GFX_report_event_generic_diplomacy1
+	
+	is_triggered_only = yes
+
+  
+	option = { #yes
+		name = swefop.29.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 25
+				is_in_faction = no
+			}
+		}
+		SWE = {
+			add_to_faction = ROOT 
+		}
+	}
+	
+	option = { #no
+		name = swefop.29.b
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
 
 
 #######New events here######### 

@@ -179,6 +179,44 @@ SpriteTypes = {
 		name = "GFX_SOS_mountain_guy"
 		texturefile = "gfx/interface/goals/attempt/SOS_mountain_guy.png"
 	}
+	SpriteType = {
+		name = "GFX_SOS_red_soldier_focus"
+		texturefile = "gfx/interface/goals/attempt/SOS_red_soldier_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_merica"
+		texturefile = "gfx/interface/goals/attempt/SOS_merica.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_leaders"
+		texturefile = "gfx/interface/goals/attempt/SOS_leaders.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_lady"
+		texturefile = "gfx/interface/goals/attempt/SOS_lady.png"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
 }
