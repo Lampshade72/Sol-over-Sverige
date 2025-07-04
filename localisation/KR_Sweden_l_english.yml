@@ -1441,16 +1441,21 @@ SWE_fort_coast_cities:0 "Fortify Coastal Cities"
 
 
 SWE_alliance_reachout:0 "Policy of Alliances"
-swe_subjugate_norway_alliance:0 "Subduing Norway"
-swe_subjugate_finland_alliance:0 "Knocking down Finland"
-swe_subjugate_denmark_alliance:0 "Step on the Younger Brother"
-swe_seize_iceland:0 "Seize Iceland"
-swe_integrate_finland_alliance:0 "Integration of Finland"
-SWE_integrate_scandinavia_ali:0 "Integration of Scandinavia"
+
 
 SWE_join_russia_ls:0 "A Bear-Hug Alliance"
 SWE_join_reichspact_ls:0 "Back to our German Roots"
 SWE_join_entente_LS:0 "Shaking hands in Halifax"
+SWE_create_faction:0 "Form our own Alliance"
+
+SWE_FOP_invite_USA:0 "Invite USA to our faction"
+SWE_FOP_invite_COR:0 "Invite Constitutional America to our faction"
+SWE_FOP_invite_CAL:0 "Invite Pacific States to our faction"
+SWE_FOP_invite_MEX:0 "Invite Mexico to our faction"
+SWE_FOP_invite_SPR:0 "Invite Spain to our faction"
+SWE_FOP_invite_CAR:0 "Invite Carlist Spain to our faction"
+SWE_FOP_invite_FIN:0 "Invite Finland to our faction"
+
 
 SWE_revolution_decisions:0 "Policies of Revolution"
 SWE_join_internationale_ls:0 "Alongside the 3rd Internationale"
@@ -1491,6 +1496,37 @@ SWE_join_latin_bois:0 "Joining the Latin Alliance"
 SWE_claim_elmo_europe:0 "Claims to European Domination"
 SWE_core_elmo_europe:0 "Integration of the many European Monarchs"
 SWE_elmo_flag_switcher:0 "Flag of the new Empire"
+
+
+SWE_scandinavia_foreign_policy_decisions:0 "Swedish Foreign Policy"
+SWE_claiming_scandinavia:0 "Make our claim to Scandinavia known"
+SWE_FOP_destroy_norway:0 "To Christianize the Vickings"
+SWE_FOP_destroy_denmark:0 "A Rival of Red and White"
+SWE_FOP_claim_iceland:0 "Make our claim to Iceland known"
+SWE_FOP_claim_greenland:0 "Make our claim to Greenland known"
+SWE_FOP_demand_greenland_denmark:0 "Demand Greenland from Denmark"
+SWE_FOP_demand_greenland_canada:0 "Demand Greenland from Canada"
+SWE_FOP_request_greenland:0 "Request Greenland from our Allies"
+SWE_FOP_request_iceland:0 "Request Iceland from our Allies"
+SWE_FOP_unite_iceland:0 "Demand Iceland's Submission"
+SWE_FOP_destroy_finjacks:0 "To cut a Finn"
+SWE_FOP_integrate_finland:0 "Policy of Integration of Finland"
+SWE_FOP_destroy_Baltics:0 "Restoring the Empire's Baltic borders"
+SWE_FOP_destroy_russia:0 "Undo the Treaty of Fredrikshamn"
+SWE_FOP_take_pom:0 "Our claims to Northern Germany"
+SWE_FOP_integrate_pom:0 "Integration of our German brethren"
+SWE_FOP_integrate_scandinavia:0 "Integration of Scandinavia"
+SWE_FOP_integrate_iceland:0 "Integrating Iceland" 
+SWE_national_league_europe:0 "Our claim to Europa's National Heart"
+SWE_national_league_europe_core:0 "Integrating the Greatest Empire"
+
+SWE_statare_decisions:0 "Fixing the Statare Issue"
+swe_build_them_homes:0 "Public housing Construction"
+swe_education:0 "Free Education for the Statare"
+
+SWE_conservative_agriculture_d:0 "Conservative Agricultural Regulations"
+swe_starting_new_regs:0 "Enacting new regulations"
+swe_next_regs:0 "Further the development"
 
 
 ### Leaders ###
