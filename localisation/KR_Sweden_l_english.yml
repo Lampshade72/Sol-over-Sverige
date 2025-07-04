@@ -1670,101 +1670,101 @@ swefop.8.d:0 ""
 swefop.8.a:0 ""
 
 swefop.9.t:0 "The Greenland Situation" #Demand Greenland Denmark
-swefop.9.d:0 ""
+swefop.9.d:0 "Greenland sits as the perfect location for expanding our naval base, while also harbouring a similar culture. With such a small population and vital ports located in the north, we should go about demanding such a territory from our southern Neighbour Denmark."
 swefop.9.a:0 "We shall demand Greenland!"
 
 swefop.10.t:0 "Sweden Demands Greenland" #Danishh response
-swefop.10.d:0 ""
+swefop.10.d:0 "Our Northern Scandinavian nation Sweden has come to us with a demand, asking for us to relinquish our territories in Greenland to them. They advised us that denying such a request could come at a heavy cost, how should we respond?"
 swefop.10.a:0 "Are they mad? No!"
 swefop.10.b:0 "Its not worth the trouble, sure"
 
 swefop.11.t:0 "Denmark Concedes Greenland" #Denmark accept
-swefop.11.d:0 ""
+swefop.11.d:0 "In a grand display of diplomacy and negotiations, we have convinced Denmark to concede their territory in Greenland. By gaining this new land we can hope to expand our current territory and establish a stronger naval presence."
 swefop.11.a:0 "Our rightfull territory!"
 
 swefop.12.t:0 "Denmark Holds Fast" #Denmark refuse
-swefop.12.d:0 ""
+swefop.12.d:0 "It seems Denmark has refused our request for their territories in Greenland, as such some in government express that war remains the only other option, as diplomacy has failed. The rest suggest waiting, biding our time for a greater moment to seize the territories."
 swefop.12.a:0 "To arms!"
 swefop.12.b:0 "We shall bide our time..."
 
 swefop.13.t:0 "Sweden Demands Greenland" #Canadian response
-swefop.13.d:0 ""
+swefop.13.d:0 "The Northern Scandinavian nation Sweden has come to us with a demand, asking for us to relinquish our territories in Greenland to them. They advised us that denying such a request could come at a heavy cost, how should we respond?"
 swefop.13.a:0 "Ha, with what army? No!"
 swefop.13.a:0 "Bah, its not worth the fight"
 
 swefop.14.t:0 "Canada Concedes Greenland" #Canada accepts
-swefop.14.d:0 ""
-swefop.14.a:0 "A valianet move by Canada!"
+swefop.14.d:0 "In a grand display of diplomacy and negotiations, we have convinced Canada to concede their territory in Greenland. By gaining this new land we can hope to expand our current territory and establish a stronger naval presence."
+swefop.14.a:0 "A wise move by Canada!"
 
 swefop.15.t:0 "Canada Refuses our Demands" #Canada refuses
-swefop.15.d:0 ""
+swefop.15.d:0 "It seems Canada has refused our request for their territories in Greenland, as such some in government express that war remains the only other option, as diplomacy has failed. The rest suggest waiting, biding our time for a greater moment to seize the territories."
 swefop.15.a:0 "To arms!"
 swefop.15.b:0 "We shall bide our time..."
 
 swefop.16.t:0 "Victory over the Horizon" #swedish victory against Canada
-swefop.16.d:0 ""
+swefop.16.d:0 "With Canadian forces pushed out of their Atlantic territories, some in government have come up with the proposition to offer peace to Canada. Asking for the full incorporation of their Atlantic territories to avoid further bloodshed and war."
 swefop.16.a:0 "Send the deal, surely they will accept?"
 swefop.16.b:0 "The Canadians realm will fall together!"
 
 swefop.17.t:0 "Sweden offers Negotiations" #Peace with Sweden?
-swefop.17.d:0 ""
+swefop.17.d:0 "Sweden has sent us a message, asking for peace with the caveat that we concede our Atlantic territories to them. Shall we continue the war and retake our land, or concede to build up our forces for the reclamation?"
 swefop.17.a:0 "Fine, let them have the barren ice!"
 swefop.17.b:0 "No, we shall destroy these Scandinavians!"
 
 swefop.18.t:0 "Canada Accepts Negotiations" #They accept peace
-swefop.18.d:0 ""
+swefop.18.d:0 "In an unprecedented work of negotiations and diplomacy, Canada has accepted peace, giving us full control over the territories that we have demanded. With the war ending and soldiers returning home, we can only hope it was worth the bloodshed."
 swefop.18.a:0 "A victory against a titan!"
 
 swefop.19.t:0 "A Request from Sweden" #request canada response greenland
-swefop.19.d:0 ""
+swefop.19.d:0 "Our Northern Scandinavian ally Sweden has come to us with a demand, asking for us to relinquish our territories in Greenland to them. While the territories don’t hold too much value, they could prove useful in the reclamation of the home isles, how should we respond?"
 swefop.19.a:0 "No, they have no claims"
 swefop.19.b:0 "Sure, they know the climate better than us"
 
 swefop.20.t:0 "Canada gives in" #Canada accepts
-swefop.20.d:0 ""
+swefop.20.d:0 "In an unprecedented work of negotiations and diplomacy, our valiant allies in Canada have agreed to hand over the territories in the Atlantic!"
 swefop.20.a:0 "Truly, allies to the end!"
 
 swefop.21.t:0 "Canada denies our Request" #Canada refuses
-swefop.21.d:0 ""
+swefop.21.d:0 "Canada has rejected our proposal for the Atlantic territories, we are now left with two decisions. Either accept the fact that working with Canada is no longer possible, or swallow our pride and continue the alliance with the Exiles."
 swefop.21.a:0 "We shall make our leave then"
 swefop.21.b:0 "Humiliating"
 
 swefop.22.t:0 "Sweden Request Iceland" #Demand canada iceland response
-swefop.22.d:0 ""
+swefop.22.d:0 "Our Northern Scandinavian ally Sweden has come to us with a demand, asking for us to relinquish our territories in Iceland to them. While the territories don’t hold too much value, they could prove useful in the reclamation of the home isles, how should we respond?"
 swefop.22.a:0 "Its position is too vital to reclamation, no"
 swefop.22.a:0 "They may have it"
 
 swefop.23.t:0 "Canada Cedes Iceland" #Canada accepts
-swefop.23.d:0 ""
+swefop.23.d:0 "In an unprecedented work of negotiations and diplomacy, our valiant allies in Canada have agreed to hand over Iceland!"
 swefop.23.a:0 "The brilliance of negotiation!"
 
 swefop.24.t:0 "Canada Refuses our Request" #Canada refuses
-swefop.24.d:0 ""
+swefop.24.d:0 "Canada has rejected our proposal for Iceland, we are now left with two decisions. Either accept the fact that working with Canada is no longer possible, or swallow our pride and continue the alliance with the Exiles."
 swefop.24.a:0 "Then we shall leave them behind"
 swefop.24.a:0 "Dreadful"
 
 swefop.25.t:0 "Sweden Demans our Annexation" #Iceland responsse
-swefop.25.d:0 ""
+swefop.25.d:0 "Today a delegation from Sweden arrived in the early morning, informing us that the Swedish government has ‘kindly’ asked for our direct annexation into their territories. Promising limited autonomy and protection from enemies in Europe, the invitation is inviting, however giving up our independence won’t sit well with most in Iceland."
 swefop.25.a:0 "Fine, we shall yield"
 swefop.25.a:0 "Take our island from our cold, fish, dead hands!"
 
 swefop.26.t:0 "Iceland Accepts Annexation" #Iceland agrees
-swefop.26.d:0 ""
+swefop.26.d:0 "In an unprecedented work of negotiations and diplomacy, Iceland has accepted our invitation to be annexed by us, hurrah!"
 swefop.26.a:0 "Another territorial ambition satisfied!"
 
 swefop.27.t:0 "Iceland Rejects Us" #Iceland denies
-swefop.27.d:0 ""
+swefop.27.d:0 "As most expected, Iceland has rejected our proposal for a peaceful annexation of their territories, this leaves us with little options left."
 swefop.27.a:0 "Negotiations have failed us, prepare the troops"
 
 swefop.28.t:0 "A Sweden Centred Alliance" #Create own factrion 
-swefop.28.d:0 ""
+swefop.28.d:0 "With the decision to create our own alliance, making us the de facto leader, we are now left with a choice of name. Many have been presented, yet only one may be chosen, let us choose it wisely."
 swefop.28.a:0 "The Northern Alliance!"
 swefop.28.a:0 "The Aurora Pact!"
 swefop.28.a:0 "The Swedish Defence Pact!"
 swefop.28.a:0 "The Stockholm Accord!"
 
 swefop.29.t:0 "Sweden Invites us to her faction" #Generic invite to faction
-swefop.29.d:0 ""
+swefop.29.d:0 "Today a delegation from Sweden arrived in the early morning, informing us that the Swedish government has offered us a seat in their grand alliance. Promising protection, mutual aid and joint military exercises, such an alliance may prove useful to us, we must weigh our options."
 swefop.29.a:0 "Let woes come, for together we will be one!"
 swefop.29.b:0 "No thanks!"
 
