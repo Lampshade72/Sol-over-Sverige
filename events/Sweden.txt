@@ -256,17 +256,10 @@ country_event = { #Finland now ours
 		add_ideas = SWE_integrate_finland
 		add_stability = -0.1
 		add_war_support = 0.04	
+		unlock_decision_tooltip = SWE_FOP_integrate_finland
+		country_event = { id = swefop.30 days = 4 }
 		
-		if = { limit = { has_completed_focus = SWE_FOP_wayward_son}
-		unlock_decision_tooltip = swe_integrate_finland_empire
-		} 
-		else_if = { limit = { has_completed_focus = SWE_FOP_democractic_light}
-		unlock_decision_tooltip = swe_integrate_finland_alliance
-		} else_if = { limit = { has_socialist_government = yes }
-		unlock_decision_tooltip = swe_integrate_finland_revolution
-		} else = {
-		unlock_decision_tooltip = swe_integrate_finland_neutral
-		}
+
 	}
 	
 	option = { ##Take essential, setup puppet
@@ -2169,6 +2162,47 @@ country_event = { #Join SWE Faction
 	}
 }
 
+country_event = { #Rename!!!!
+	id = swefop.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event swefop.30"}
+	title = swefop.30.t
+	desc = swefop.30.d
+	picture = GFX_report_event_RUS_konigsberg
+	
+	is_triggered_only = yes
+
+	option = { #no rename
+		name = swefop.30.a
+	}
+	option = { #Just capital 
+		name = swefop.30.b
+		set_province_name = { id = 11105 name = "Helsingfors"}
+		840 = { set_state_flag = renamed_state_Helsingfors }
+		hidden_effect = { 
+			every_controlled_state = { rename_state_effect = yes }
+		}
+	}
+	option = { #Just capital 
+		name = swefop.30.c
+		set_province_name = { id = 11105 name = "Helsingfors"}
+		840 = { set_state_flag = renamed_state_Helsingfors }
+		set_province_name = { id = 3083 name = "Åbo"}
+		863 = { set_state_flag = renamed_state_Abo }
+		set_province_name = { id = 9206 name = "Viborg"}
+		1325 = { set_state_flag = renamed_state_Viborg }	 		
+		set_province_name = { id = 3117 name = "Björneborg"}
+		863 = { set_state_flag = renamed_state_Bjorneborg }
+		set_province_name = { id = 3137 name = "Tammerfors"}
+		111 = { set_state_flag = renamed_state_Tammerfors }
+
+
+
+		hidden_effect = { 
+			every_controlled_state = { rename_state_effect = yes }
+		}
+	}
+
+}
 
 #######New events here######### 
 

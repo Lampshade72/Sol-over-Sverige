@@ -2490,7 +2490,7 @@ SWE_alliance_reachout = {
 				is_faction_leader = yes
 				has_socialist_government = no
 			}
-			date > 1937.2.2
+			date > 1937.4.2
 		}
 
 		visible = {
@@ -2538,7 +2538,7 @@ SWE_alliance_reachout = {
 				is_faction_leader = yes
 		
 			}
-			date > 1937.2.2
+			date > 1937.4.2
 		}
 
 		visible = {
@@ -2587,7 +2587,7 @@ SWE_alliance_reachout = {
 				is_faction_leader = yes
 		
 			}
-			date > 1937.2.2
+			date > 1937.4.2
 		}
 
 		visible = {
@@ -2628,7 +2628,7 @@ SWE_alliance_reachout = {
 
 		available = {
 			has_socialist_government = no
-			date > 1937.2.2
+			date > 1937.4.2
 		}
 
 		visible = {
@@ -3009,7 +3009,7 @@ SWE_scandinavia_foreign_policy_decisions = {
 		available = {
 			NOT = { is_in_faction_with = ROOT }
 			OR = {
-			has_completed_focus = SWE_FOP_triumphant_once_more
+			has_completed_focus = SWE_FOP_secure_nordics
 			has_completed_focus = SWE_FOP_danes_returned
 			}			
 			is_subject = no		
@@ -3017,7 +3017,7 @@ SWE_scandinavia_foreign_policy_decisions = {
 
 		visible = {
 			OR = {
-			has_completed_focus = SWE_FOP_triumphant_once_more
+			has_completed_focus = SWE_FOP_secure_nordics
 			has_completed_focus = SWE_FOP_danes_returned
 			}			
 		}
@@ -3502,6 +3502,7 @@ SWE_scandinavia_foreign_policy_decisions = {
 		}
 
 		visible = {
+			has_country_flag = SWE_flag_integrate_finland
 			OR = {
 				has_completed_focus = SWE_FOP_wayward_son
 				has_completed_focus = SWE_FOP_finland_decision
@@ -3509,7 +3510,7 @@ SWE_scandinavia_foreign_policy_decisions = {
 		}
 
 		cost = 40
-		days_remove = 15
+		days_remove = 120
 		fire_only_once = yes
 
 

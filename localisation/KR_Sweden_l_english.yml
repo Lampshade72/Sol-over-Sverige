@@ -27,6 +27,30 @@ SWE_black_monday_3:0 "Black Monday's Clear Skies"
 SWE_cutting_the_army:0 "Cutting Military Expenditure"
 SWE_austerity_measures:0 "Further Austerity Measures"
 
+SWE_removing_statre:0 "Removal of the Statare"
+
+SWE_key_thought:0 "Keynesian Model Maintained"
+SWE_key_thought_2:0 "Keynesian Model Maintained"
+
+SWE_moderate_marxism:0 "Reformed Marxism Enshrined"
+SWE_moderate_marxism_2:0 "Reformed Marxism Enshrined"
+
+
+SWE_farmers_first:0 "Farmers First"
+SWE_farmers_roses:0 "Rose Tinted Farmers"
+SWE_farmers_centrism:0 "Simplicity of Agrarian Life"
+SWE_temper_government:0 "Hands-Off Government"
+
+SWE_protestant_church:0 "Church Independence"
+SWE_anders_thought:0 "Ander's Legacy Enshrined"
+
+SWE_lindman_legacy:0 "Lindman's Legacy"
+SWE_conservative_authdem_coalition:0 "Radical Right Coalition"
+SWE_conservative_market_coalition:0 "Centre-Right Coalition"
+
+SWE_nationalist_newspaper:0 "Dagsposten"
+
+
 
 ## Economic Ideas ##
 SWE_eel_economy1:0 "Eel Economy"
@@ -420,16 +444,17 @@ SWE_swedish_commune_friend:0 "Commune's Industrial Advice"
 
 SWE_swedish_uob_friend:0 "Britain's Naval Expertise"
 
-SWE_swedish_germany_friend:0 "Reichspakt Investments"
-SWE_swedish_russia:0 "Russian Willpower"
-SWE_swedish_entente:0 "Entente Expertise"
+SWE_swedish_germany_friend:0 "Investment Alliance"
+SWE_swedish_russia:0 "History of Militancy"
+SWE_swedish_entente:0 "Security and Specialty"
 SWE_swedish_arm_in_arm:0 "Torch of Allegiance"
 SWE_swedish_neutrality1:0 "Swedish Neutrality Reinforced"
 SWE_swedish_intelligence:0 "Svensk Tiger"
 SWE_swedish_neutrality2:0 "Swedish Neutrality Entrenched"
 SWE_swedish_empire:0 "Awakened Empire"
 SWE_swedish_empire2:0 "An Empire Reborn"
-
+SWE_swedish_navy_help:0 "Entente Naval Expertise"
+SWE_swedish_misfits:0 "Misfit Prowess"
 
 SWE_integrate_finland:0 "Integration of Finland"
 SWE_occupation_finland:0 "Occupation of Finland"
@@ -1227,7 +1252,7 @@ SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedis
 
 ### Second term election focuses ###
 
-SWE_second_election:0 "Another National Elections"
+SWE_second_election:0 "Another National Election"
 SWE_second_election_desc:0 "Once again, the Swedish nation returns to the polls, with the outcome once more shaping her future."
 
 ## SOCDEM 2nd term ##
@@ -1258,18 +1283,20 @@ SWE_people_over_politics_desc:0 "One thing is certain in politics, most people e
 ## SOCLIB ##
 
 SWE_social_liberal_win:0 "Bondeförbundet Beats the Ballots"
-
+SWE_social_liberal_win_desc:0 "In a most unexpected turn of events, the Bondeförbundet has won the election!"
 SWE_environment_help:0 "Environmental Conservation"
-
+SWE_environment_help_desc:0 "While every nation requires an industry to survive in the modern world, we cannot allow unabashed industrialisation to ruin what nature we have. Signing a bill into effect that will set about what areas can and can’t undergo development, to protect both the Swedish countryside and her animals."
 SWE_europe_agrarian:0 "The European Agrarian Model"
-
+SWE_europe_agrarian_desc:0 "Within Europe’s history sits the farmer, the backbone of the entire continent. With a rich and deep history of agriculture and farming within both Europe and Sweden herself, we should be willing to embrace these ties. We shall further fund our agricultural development, for a nation marches on its stomach!"
 SWE_farmer_focus:0 "Farmer's First and Foremost"
-
+SWE_farmer_focus_desc:0 "For all the good a factory produces, a steel shop crafts and a painting covers, none can do so without food. Our farmers are the utmost important part of our society, whether we remember that or not. As such, government incentives and funding will align them further with our party and expand the industry greatly."
 SWE_centre_full:0 "True Centrist Government"
-
+SWE_centre_full_desc:0 "By aligning with the Folkpartiet, we can avoid the heavy handedness of the Social democrats and fully embrace a centrist government!"
 SWE_centre_left:0 "Crops and Roses"
-
+SWE_centre_left_desc:0 "The Social Democrats represent our closest ally in the Riksdag, as well as supplying us with the necessary seats to accomplish our goals."
 SWE_agricultural_future:0 "Future of Development"
+SWE_agricultural_future_desc:0 "The world is ever changing, and as a nation we must be prepared for that change, come what may!"
+
 
 
 ## MARLIB 2nd ##

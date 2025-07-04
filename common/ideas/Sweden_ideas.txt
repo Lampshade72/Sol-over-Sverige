@@ -221,38 +221,44 @@ ideas = {
 
 		SWE_swedish_entente = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_entente"}
-			picture = CAN_entente_trade_idea
+			picture = SOS_lion
 			allowed = { always = no }
             modifier = {
 				special_forces_cap = 0.04
 				special_forces_attack_factor = 0.03
 				special_forces_defence_factor = 0.03
 				special_forces_training_time_factor = -0.05
-				amphibious_invasion = 0.05
-				invasion_preparation = -0.07
 			}
 		}		
 
+			SWE_swedish_navy_help = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_navy_help"}
+			picture = CAN_entente_trade_idea
+			allowed = { always = no }
+			
+            modifier = {
+				experience_gain_navy = 0.03
+				experience_gain_navy_factor = 0.05			
+				naval_coordination = 0.05
+				amphibious_invasion = 0.05
+				invasion_preparation = -0.1			
+			}
+		}
+
 		SWE_swedish_russia = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_russia"}
-			picture = advisors_russia
+			picture = BAN_gray_army_training
 			allowed = { always = no }
 			equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.05
 					instant = yes
-				}
-				support_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
 				}				
 			}			
             modifier = {
-				land_doctrine_cost_factor = -0.1	
-				training_time_army_factor = -0.1				
-				initiative_factor = 0.06
-				intel_from_combat_factor = 0.08
-				recon_factor_while_entrenched = 0.1				
+				land_doctrine_cost_factor = -0.05					
+				initiative_factor = 0.05
+				
 			}
 		}
 
@@ -268,18 +274,29 @@ ideas = {
 				industrial_capacity_factory = 0.1				
 			}
 		}
-		
-			SWE_swedish_germany_friend = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_germany_friend"}
-			picture = advisors_germany
+
+			SWE_swedish_misfits = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_misfits"}
+			picture = industrial_protectionism
 			allowed = { always = no }
 			
             modifier = {
-				stability_factor = 0.05
-				war_support_factor = 0.06
-				experience_gain_factor = 0.04
-				training_time_army_factor = -0.05				
-				justify_war_goal_time = -0.5
+				political_power_gain = 0.02
+				land_doctrine_cost_factor = -0.05
+				training_time_army_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.03
+			
+			}
+		}
+		
+			SWE_swedish_germany_friend = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_germany_friend"}
+			picture = industrial_protectionism
+			allowed = { always = no }
+			
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+				production_factory_max_efficiency_factor = 0.03
 				industrial_capacity_factory = 0.05				
 			}
 		}
@@ -1256,39 +1273,6 @@ ideas = {
 				paternal_autocrat_drift = 0.01
 			}						
 		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###############
-## Radical Soc elec Ideas ##
-###############
-
 
 
 

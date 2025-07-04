@@ -1990,9 +1990,9 @@ focus_tree = {
 
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_ourselves_forward"
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_alliance_of_misfits"
+			add_ideas = SWE_swedish_misfits
 
-			add_political_power = 25
 		}
 	}
 
@@ -2096,7 +2096,9 @@ focus_tree = {
 
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_meet_in_ottawa"
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_naval_history"
+		
+		add_ideas = SWE_swedish_navy_help
 			
 		}
 	}
@@ -2205,6 +2207,12 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_secure_nordics"
+		
+		unlock_decision_tooltip = SWE_claiming_scandinavia
+		unlock_decision_tooltip = SWE_FOP_destroy_norway
+		unlock_decision_tooltip = SWE_FOP_claim_greenland
+		unlock_decision_tooltip = SWE_FOP_destroy_denmark
+		
 
 		}
 	}
@@ -2234,6 +2242,8 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_finland_decision"
+		
+		unlock_decision_tooltip = SWE_FOP_destroy_finjacks
 
 		}
 	}
@@ -2265,6 +2275,8 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_iceland_gambit"
 		
+			unlock_decision_tooltip = SWE_FOP_claim_iceland
+		
 
 		}
 	}
@@ -2295,6 +2307,12 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_triumphant_once_more"
 			add_ideas = SWE_swedish_arm_in_arm
+			unlock_decision_tooltip = SWE_FOP_destroy_Baltics
+			
+			add_political_power = 100
+			
+			
+			
 		}
 	}
 
@@ -2440,7 +2458,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_ready_the_blade"
-				unlock_decision_tooltip = SWE_claim_scandinavia
+				unlock_decision_tooltip = SWE_claiming_scandinavia
 				add_ideas = SWE_swedish_empire
 				country_event = { id = swefop.2 days = 5 }
 
@@ -2465,7 +2483,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_lands_of_old_empire"
-			unlock_decision_tooltip = SWE_destroy_fake_nords
+			unlock_decision_tooltip = SWE_FOP_destroy_Baltics
 
 		}
 	}
@@ -2488,7 +2506,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_karlstad_failure"
-			unlock_decision_tooltip = SWE_destroy_norway
+			unlock_decision_tooltip = SWE_FOP_destroy_norway
 		}
 	}
 	
@@ -2510,7 +2528,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_danes_returned"
-			unlock_decision_tooltip = SWE_destroy_denmark
+			unlock_decision_tooltip = SWE_FOP_destroy_denmark
 		}
 	}
 	
@@ -2534,7 +2552,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_wayward_son"
-			unlock_decision_tooltip = SWE_destroy_finjacks
+			unlock_decision_tooltip = SWE_FOP_destroy_finjacks
 		}
 	}
 
@@ -2558,7 +2576,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_contront_bear"
-			unlock_decision_tooltip = SWE_destroy_the_bear
+			unlock_decision_tooltip = SWE_FOP_destroy_russia
 			country_event = { id = swefop.4 days = 5 }
 		}
 	}
