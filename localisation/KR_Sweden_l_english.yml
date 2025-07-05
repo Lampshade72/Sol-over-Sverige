@@ -1302,51 +1302,57 @@ SWE_agricultural_future_desc:0 "The world is ever changing, and as a nation we m
 ## MARLIB 2nd ##
 
 SWE_market_liberal_win:0 "Folkpartiet Faces Forward"
-
+SWE_market_liberal_win_desc:0 "The Folkpartiet has won the election, determined to create their classical liberal dream in Sweden!"
 SWE_finnish_rights:0 "Finnish Protections and Laws"
-
+SWE_finnish_rights_desc:0 "One of the largest minorities in Sweden are the Finns, by maintaining good relations with them and uplifting them where possible, we can hope to increase industries in those areas."
 SWE_grass_roots_prot:0 "Independence From The Church of Sweden"
-
-SWE_nordic_wealth:0 "Abundent Nordic Wealth"
-
+SWE_grass_roots_prot_desc:0 ""
+SWE_nordic_wealth:0 "Abundant Nordic Wealth"
+SWE_nordic_wealth_desc:0 "The Nordic region is one of truly untapped wealth, liquid gold hides across its frozen plains, simply waiting to be discovered! By further investing in our mining industry we can hope to discover scores of new minerals hidden beneath the ground."
 SWE_market_centre:0 "True Liberal Government"
-
+SWE_market_centre_desc:0 "The Farmer’s league represents the left side of the political centre, aligning with them is both natural and the only way forward for a true moderate centrist government!"
 SWE_market_conserv:0 "Classical Rightist Coalition"
-
+SWE_market_conserv_desc:0 "The Conservatives still hold a bulwark in the Riksdag, with some of our own policies aligned with their interests, it's only natural to form a coalition with them."
 SWE_Anders_Chydenius:0 "Ratify Anders Chydenius Thought"
+SWE_Anders_Chydenius_desc:0 "Anders Chydenius was and still is the founding father of Swedish liberalism and temperance, a model citizen and priest. His dedication to ending torture and despotism in Sweden paved the way for it to become a model democracy, without his efforts we would be nowhere near where we are now."
+
 
 
 ## SOCCON ##
 
 SWE_social_conservative_win:0 "The Conservatives Collect Victory"
-
+SWE_social_conservative_win_desc:0 "The Conservatives have achieved victory in the Riksdag, prepared to labour and toil Sweden to a traditional and faithful future."
 SWE_landman_legacy:0 "Lindman's Legacy Enshrined"
-
+SWE_landman_legacy_desc:0 "Arvid Lindman is everything a model conservative in Sweden should be, intelligent, kind yet swift, his remarkable statesmanship helped bring universal suffrage, increased access to public education and earned him respect even from other politicians across the aisle. While his passing is tremendously devastating to the nation, his legacy shall live on, for all future prime ministers to follow!"
 SWE_regulate_agriculture:0 "Forceful Regulation of Agriculture"
-
+SWE_regulate_agriculture_desc:0 "It is a shame that many farms and agricultural industries in Sweden remain backward, wasting the potential of the land they toil. In times like these, government intervention is necessary, we shall force our way in and make sure agricultural land is used to its peak efficiency."
 SWE_further_central:0 "Necessary Government Centralisation"
-
+SWE_further_central_desc:0 "With each local province lies its own council, with each council lies a slog of bureaucracy and wasted time. By centralising key areas across the nation, we can cut back on expenses and wasted potential."
 SWE_conservative_radicals:0 "Slide to the Right"
-
+SWE_conservative_radicals_desc:0 "In times of political change, it is best to follow the wind. The increasing rise of the far-right is no secret, their flamboyant and obscene proposals have quickly captivated many on the right, only by allying such forces can we hope to contain their ambition."
 SWE_conservative_majority:0 "Tradition and Honour"
-
+SWE_conservative_majority_desc:0 "There is honour in kingly discussion and debates, such tradition shall be kept, while radicals try to silence their opponents, we know a good debate does more to convince the public."
 SWE_against_free_market_thought:0 "Topple Free Market Thought"
+SWE_against_free_market_thought_desc:0 "The lunacy espoused by some of a total free market cannot be allowed to continue, its unregulated and uncaringness for a single nation has no place in Swedish society."
+
 
 ## NAT lEAGUE ##
 
 SWE_national_league_win:0 "The Emergence of the National League"
-
+SWE_national_league_win_desc:0 "In a shocking turn, we the National League have won the election, beating out the moderate conservatives and leftists alike, Sweden now lies at our fingertips!"
 SWE_bully_opposition:0 "Bully the Opposition"
-
+SWE_bully_opposition_desc:0 "The opposition remains loud, blocking our proposals at every turn, no matter the benefits it may bring. As such, we must find a way to drown them out, to show the nation the hypocrisy of such men."
 SWE_dagsposten:0 "Newspaper for National Politics and Culture"
-
+SWE_dagsposten_desc:0 "The Dagsposten, or Newspaper for National Politics and Culture is a conglomerate piece of work made up of our most fundamental beliefs as a party, now in the position of government, we can further spread it across the whole nation for all to read."
 SWE_break_syndicalism:0 "Crush the Syndicalist Menace"
-
+SWE_break_syndicalism_desc:0 "Syndicalism, socialism, moderate leftism, whatever form it may come in, it remains the same. A vile anti-national ideology bent on destroying each nation it tries to consume, we must remind the public of this threat, and end it for good."
 SWE_european_social_union:0 "Endorse the European Cause"
-
+SWE_european_social_union_desc:0 "Our cause, our purpose, is a truly unified Europe. A grand continental nation, dedicated to European wellbeing and nationalism, we shall further endorse this cause!"
 SWE_nordic_radicalism:0 "Bastion of Nordic Nationalism"
-
+SWE_nordic_radicalism_desc:0 "The Nordics have a long history intertwined together, with the ferocity of the vikings, our combined christening together, we are a united peoples. We shall spread our values to our nordic neighbours, despite any grievances they may hold."
 SWE_against_all_odds:0 "To Defy the Odds"
+SWE_against_all_odds_desc:0 "We have somehow defied the odds, originally a breakaway youth group from Lindmans conservatives, we have formed our own party and now dominate the Riksdag, three cheers for the King and the nation!"
+
 
 SWE_kompani_linge_tooltip: "§HWill be removed if:§!\n$TRIGGER_OR_STARTS$\n   $SWE_kompani_linge_SWE_is_socialist$\n   $SWE_kompani_linge_NOR_does_not_exist$\n   $SWE_kompani_linge_NOR_has_capitulated$\n   $SWE_kompani_linge_NOR_is_not_socialist$\n"
 SWE_kompani_linge_SWE_is_socialist: "[SWE_kompani_linge_SWE_is_socialist] $KR_is_socialist$"
