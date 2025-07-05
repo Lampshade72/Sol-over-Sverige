@@ -119,6 +119,104 @@ SpriteTypes = {
 		name = "GFX_SWE_Olof_Army"
 		texturefile = "gfx/interface/goals/CHKX/SWE_Olof_Army.png"
 	}
+	SpriteType = {
+		name = "GFX_SOS_destroy_syndies"
+		texturefile = "gfx/interface/goals/attempt/SOS_destroy_syndies.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_dagspoken"
+		texturefile = "gfx/interface/goals/attempt/SOS_dagspoken.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_SNF_salute"
+		texturefile = "gfx/interface/goals/attempt/SOS_SNF_salute.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_lindman"
+		texturefile = "gfx/interface/goals/attempt/SOS_lindman.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_church_bye"
+		texturefile = "gfx/interface/goals/attempt/SOS_church_bye.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_nordic_wealth"
+		texturefile = "gfx/interface/goals/attempt/SOS_nordic_wealth.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_sweeping"
+		texturefile = "gfx/interface/goals/attempt/SOS_sweeping.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_no_statare"
+		texturefile = "gfx/interface/goals/attempt/SOS_no_statare.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_branting"
+		texturefile = "gfx/interface/goals/attempt/SOS_branting.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_anders"
+		texturefile = "gfx/interface/goals/attempt/SOS_anders.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_bully"
+		texturefile = "gfx/interface/goals/attempt/SOS_bully.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_europe"
+		texturefile = "gfx/interface/goals/attempt/SOS_europe.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_radio"
+		texturefile = "gfx/interface/goals/attempt/SOS_radio.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_strike_dragon"
+		texturefile = "gfx/interface/goals/attempt/SOS_strike_dragon.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_mountain_guy"
+		texturefile = "gfx/interface/goals/attempt/SOS_mountain_guy.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_red_soldier_focus"
+		texturefile = "gfx/interface/goals/attempt/SOS_red_soldier_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_merica"
+		texturefile = "gfx/interface/goals/attempt/SOS_merica.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_leaders"
+		texturefile = "gfx/interface/goals/attempt/SOS_leaders.png"
+	}
+	SpriteType = {
+		name = "GFX_SOS_lady"
+		texturefile = "gfx/interface/goals/attempt/SOS_lady.png"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
 }

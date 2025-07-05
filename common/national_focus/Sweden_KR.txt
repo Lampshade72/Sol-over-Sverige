@@ -1316,7 +1316,7 @@ focus_tree = {
 				has_country_flag = SWE_flag_red_in_sweden		
 			
 			}
-			date > 1937.7.1
+			date > 1937.6.1
 		}
 
 
@@ -1331,7 +1331,7 @@ focus_tree = {
 		id = SWE_FOP_revolutionary_torch
 		icon = GFX_Carrying_the_torch
 		prerequisite = { focus = SWE_FOP_tiger_place_in_world }		
-		x = 14
+		x = 18
 		y = 1
 		offset = {
 			x = -5
@@ -1378,7 +1378,7 @@ focus_tree = {
 		id = SWE_FOP_democractic_light
 		icon = GFX_goal_ATH_diplomats
 		prerequisite = { focus = SWE_FOP_tiger_place_in_world }		
-		x = 7
+		x = 9
 		y = 1
 		relative_position_id = SWE_FOP_tiger_place_in_world
 		cost = 2
@@ -1492,7 +1492,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_FOP_realm_of_our_own
-		icon = GFX_goal_NEE_New_Shadows_War
+		icon = GFX_SOS_mountain_guy
 		prerequisite = { focus = SWE_FOP_tiger_place_in_world }
 		x = -11
 		y = 1
@@ -1569,7 +1569,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SWE_FOP_revolutionary_torch
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -1607,7 +1607,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 6
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -1642,7 +1642,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 4
+		cost = 3.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1668,7 +1668,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -1699,7 +1699,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 80
 		}
@@ -1724,7 +1724,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = SWE_FOP_nordic_torch_alone
-		cost = 4
+		cost = 2.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1747,7 +1747,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SWE_FOP_revolutionary_torch
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 75
 			modifier = {
@@ -1782,7 +1782,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 6
+		cost = 4.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1810,7 +1810,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 6
+		cost = 4.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1832,7 +1832,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 4
+		cost = 2.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1856,7 +1856,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -1885,7 +1885,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = SWE_FOP_alongside_internationale
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			factor = 80
 		}
@@ -1909,10 +1909,11 @@ focus_tree = {
 		prerequisite = { focus = SWE_FOP_democractic_light }
 		mutually_exclusive = { focus = SWE_FOP_banished_entente }
 		mutually_exclusive = { focus = SWE_FOP_russian_alliance }
-		x = 2
+		mutually_exclusive = { focus = SWE_FOP_ourselves_forward }
+		x = 1
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 60
 			modifier = {
@@ -1943,16 +1944,69 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SWE_FOP_ourselves_forward
+		icon = GFX_SOS_leaders
+		prerequisite = { focus = SWE_FOP_democractic_light }
+		mutually_exclusive = { focus = SWE_FOP_banished_entente }
+		mutually_exclusive = { focus = SWE_FOP_russian_alliance }
+		mutually_exclusive = { focus = SWE_FOP_former_victors_kaiser }
+		x = 3
+		y = 1
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			is_faction_leader = yes
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_ourselves_forward"
+
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = SWE_FOP_alliance_of_misfits
+		icon = GFX_SOS_merica
+		prerequisite = { focus = SWE_FOP_ourselves_forward }
+
+		x = 4
+		y = 2
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			is_faction_leader = yes
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_alliance_of_misfits"
+			add_ideas = SWE_swedish_misfits
+
+		}
+	}
+
 	focus = { 
 		id = SWE_FOP_russian_alliance
 		icon = GFX_UKR_Look_To_Russia
 		prerequisite = { focus = SWE_FOP_democractic_light }
 		mutually_exclusive	= { focus = SWE_FOP_banished_entente }
 		mutually_exclusive = { focus = SWE_FOP_former_victors_kaiser }
-		x = 0
+		mutually_exclusive = { focus = SWE_FOP_ourselves_forward }
+		x = -1
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1987,11 +2041,12 @@ focus_tree = {
 		icon = GFX_goal_CAN_lets_go_canada
 		prerequisite = { focus = SWE_FOP_democractic_light }
 		mutually_exclusive = { focus = SWE_FOP_former_victors_kaiser }
-		mutually_exclusive = { focus = SWE_FOP_russian_alliance }		
-		x = -2
+		mutually_exclusive = { focus = SWE_FOP_russian_alliance }
+		mutually_exclusive = { focus = SWE_FOP_ourselves_forward }		
+		x = -3
 		y = 1
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 20
 			modifier = {
@@ -2024,13 +2079,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SWE_FOP_drinking_with_kaiser
-		icon = GFX_goal_AST_drink_with_industrialists
-		prerequisite = { focus = SWE_FOP_former_victors_kaiser }
-		x = 2
+		id = SWE_FOP_naval_history
+		icon = GFX_goal_CAN_Focus_RCN
+		prerequisite = { focus = SWE_FOP_banished_entente }
+		x = -4
 		y = 2
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 6
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -2041,21 +2096,50 @@ focus_tree = {
 
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_drinking_with_kaiser"
-			add_ideas = SWE_swedish_germany_friend
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_naval_history"
+		
+		add_ideas = SWE_swedish_navy_help
+			
 		}
 	}
 
 	focus = {
-		id = SWE_FOP_petrograd_parade
-		icon = GFX_RUS_Utilize_Hosts_Troops
+		id = SWE_FOP_entente_history
+		icon = GFX_RUS_Special_Forces_Office
 		prerequisite = { 
+			focus = SWE_FOP_banished_entente
+			focus = SWE_FOP_russian_alliance
+			}
+		x = -2
+		y = 2
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 4
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_entente_history"
+			add_ideas = SWE_swedish_entente
+		}
+	}
+
+	focus = {
+		id = SWE_FOP_military_history
+		icon = GFX_goal_NEE_All_American_Army
+		prerequisite = { 
+			focus = SWE_FOP_former_victors_kaiser
 			focus = SWE_FOP_russian_alliance
 			}
 		x = 0
 		y = 2
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 6
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -2073,13 +2157,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SWE_FOP_meet_in_ottawa
-		icon = GFX_goal_CAN_protect_parliment
-		prerequisite = { focus = SWE_FOP_banished_entente }
-		x = -2
+		id = SWE_FOP_industrial_focus
+		icon = GFX_goal_AST_drink_with_industrialists
+		prerequisite = { 
+			focus = SWE_FOP_former_victors_kaiser
+			focus = SWE_FOP_ourselves_forward
+			}
+		x = 2
 		y = 2
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 6
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -2090,21 +2177,92 @@ focus_tree = {
 
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_meet_in_ottawa"
-			add_ideas = SWE_swedish_entente
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_drinking_with_kaiser"
+			add_ideas = SWE_swedish_germany_friend
 		}
 	}
 
 	focus = {
-		id = SWE_FOP_bastion_against_radicals
-		icon = GFX_goal_generic_non_voilence
+		id = SWE_FOP_secure_nordics
+		icon = GFX_SOS_lady
 		prerequisite = { 
-			focus = SWE_FOP_drinking_with_kaiser
+			focus = SWE_FOP_entente_history
+			focus = SWE_FOP_military_history
+			focus = SWE_FOP_industrial_focus
+			focus = SWE_FOP_naval_history
+			focus = SWE_FOP_alliance_of_misfits
+		}
+		x = -2
+		y = 3
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_secure_nordics"
+		
+		unlock_decision_tooltip = SWE_claiming_scandinavia
+		unlock_decision_tooltip = SWE_FOP_destroy_norway
+		unlock_decision_tooltip = SWE_FOP_claim_greenland
+		unlock_decision_tooltip = SWE_FOP_destroy_denmark
+		
+
+		}
+	}
+
+	focus = {
+		id = SWE_FOP_finland_decision
+		icon = GFX_focus_rus_finland
+		prerequisite = { 
+			focus = SWE_FOP_entente_history
+			focus = SWE_FOP_military_history
+			focus = SWE_FOP_industrial_focus
+			focus = SWE_FOP_naval_history
+			focus = SWE_FOP_alliance_of_misfits
+		}
+		x = 0
+		y = 3
+		relative_position_id = SWE_FOP_democractic_light
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_finland_decision"
+		
+		unlock_decision_tooltip = SWE_FOP_destroy_finjacks
+
+		}
+	}
+
+
+	focus = {
+		id = SWE_FOP_iceland_gambit
+		icon = GFX_goal_NFL_iceland
+		prerequisite = { 
+			focus = SWE_FOP_entente_history
+			focus = SWE_FOP_military_history
+			focus = SWE_FOP_industrial_focus
+			focus = SWE_FOP_naval_history
+			focus = SWE_FOP_alliance_of_misfits
 			}
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = SWE_FOP_democractic_light
-		cost = 6
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -2115,47 +2273,25 @@ focus_tree = {
 
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_bastion_against_radicals"
-			unlock_decision_tooltip = swe_subjugate_norway_alliance
-			unlock_decision_tooltip = swe_subjugate_finland_alliance
-			unlock_decision_tooltip = swe_subjugate_denmark_alliance		
+		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_iceland_gambit"
+		
+			unlock_decision_tooltip = SWE_FOP_claim_iceland
+		
 
 		}
 	}
 
-	focus = {
-		id = SWE_FOP_player_in_reclamation
-		icon = GFX_goal_CAN_all_for_reclamation
-		prerequisite = { 
-			focus = SWE_FOP_petrograd_parade
-			focus = SWE_FOP_meet_in_ottawa
-		}
-		x = -1
-		y = 3
-		relative_position_id = SWE_FOP_democractic_light
-		cost = 6
-		ai_will_do = {
-			factor = 80
-		}
 
-		available = {
-
-		}
-
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_player_in_reclamation"
-			unlock_decision_tooltip = swe_subjugate_norway_alliance
-			unlock_decision_tooltip = swe_subjugate_finland_alliance
-			unlock_decision_tooltip = swe_subjugate_denmark_alliance
-		}
-	}
 
 	focus = {
 		id = SWE_FOP_triumphant_once_more
 		icon = GFX_goal_generic_future_technology
-		prerequisite = { focus = SWE_FOP_bastion_against_radicals }
-		x = 1
+		prerequisite = { 
+			focus = SWE_FOP_secure_nordics
+			focus = SWE_FOP_finland_decision
+			focus = SWE_FOP_iceland_gambit
+			}
+		x = 0
 		y = 4
 		relative_position_id = SWE_FOP_democractic_light
 		cost = 7
@@ -2171,29 +2307,12 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_triumphant_once_more"
 			add_ideas = SWE_swedish_arm_in_arm
-		}
-	}
-
-	focus = {
-		id = SWE_FOP_torch_of_freedom
-		icon = GFX_goal_generic_world_diplomacy
-		prerequisite = { focus = SWE_FOP_player_in_reclamation }
-		x = -1
-		y = 4
-		relative_position_id = SWE_FOP_democractic_light
-		cost = 7
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-
-		}
-
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_torch_of_freedom"
-			add_ideas = SWE_swedish_arm_in_arm
+			unlock_decision_tooltip = SWE_FOP_destroy_Baltics
+			
+			add_political_power = 100
+			
+			
+			
 		}
 	}
 
@@ -2328,7 +2447,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 6
+		cost = 4
 		ai_will_do = {
 			factor = 80
 		}
@@ -2339,7 +2458,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_ready_the_blade"
-				unlock_decision_tooltip = SWE_claim_scandinavia
+				unlock_decision_tooltip = SWE_claiming_scandinavia
 				add_ideas = SWE_swedish_empire
 				country_event = { id = swefop.2 days = 5 }
 
@@ -2353,7 +2472,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 5
+		cost = 2.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2364,7 +2483,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_lands_of_old_empire"
-			unlock_decision_tooltip = SWE_destroy_fake_nords
+			unlock_decision_tooltip = SWE_FOP_destroy_Baltics
 
 		}
 	}
@@ -2376,7 +2495,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 5
+		cost = 2.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2387,7 +2506,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_karlstad_failure"
-			unlock_decision_tooltip = SWE_destroy_norway
+			unlock_decision_tooltip = SWE_FOP_destroy_norway
 		}
 	}
 	
@@ -2398,7 +2517,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 5
+		cost = 2.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2409,7 +2528,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_danes_returned"
-			unlock_decision_tooltip = SWE_destroy_denmark
+			unlock_decision_tooltip = SWE_FOP_destroy_denmark
 		}
 	}
 	
@@ -2422,7 +2541,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 6
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -2433,7 +2552,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_wayward_son"
-			unlock_decision_tooltip = SWE_destroy_finjacks
+			unlock_decision_tooltip = SWE_FOP_destroy_finjacks
 		}
 	}
 
@@ -2446,7 +2565,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 7
+		cost = 3
 		ai_will_do = {
 			factor = 80
 		}
@@ -2457,7 +2576,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SWE_FOP_contront_bear"
-			unlock_decision_tooltip = SWE_destroy_the_bear
+			unlock_decision_tooltip = SWE_FOP_destroy_russia
 			country_event = { id = swefop.4 days = 5 }
 		}
 	}
@@ -2470,7 +2589,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = SWE_FOP_realm_of_our_own
-		cost = 7
+		cost = 4.5
 		ai_will_do = {
 			factor = 80
 		}
@@ -2526,7 +2645,7 @@ focus_tree = {
 	focus = { 
 		id = SWE_elections_over
 		icon = GFX_UKR_Left_Wing_Splits
-		x = 56
+		x = 52
 		y = 0
 		offset = {
 			x = -8
@@ -2562,7 +2681,7 @@ focus_tree = {
 		id = SWE_social_dem_stab
 		icon = GFX_goal_SWE_focus_hansson
 		prerequisite = { focus = SWE_elections_over }
-		x = 6
+		x = -10
 		y = 1
 		cost = 1
 		relative_position_id = SWE_elections_over
@@ -2907,7 +3026,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		relative_position_id = SWE_social_dem_stab
-		cost = 4
+		cost = 3.5
 		ai_will_do = {
 			factor = 80 
 		}
@@ -3032,7 +3151,7 @@ focus_tree = {
 		x = -3
 		y = 3
 		relative_position_id = SWE_social_dem_stab
-		cost = 4
+		cost = 3.5
 		ai_will_do = {
 			factor = 80 
 		}
@@ -3179,7 +3298,7 @@ focus_tree = {
 		icon = GFX_goal_SWE_sap
 		prerequisite = { focus = SWE_elections_over }
 
-		x = 14
+		x = -20
 		y = 1
 		cost = 1
 		relative_position_id = SWE_elections_over
@@ -3264,7 +3383,7 @@ focus_tree = {
 		id = SWE_GEL_leads
 		icon = GFX_goal_SWE_focus_bagge
 		prerequisite = { focus = SWE_elections_over }
-		x = -18
+		x = 12
 		y = 1
 		cost = 1
 		relative_position_id = SWE_elections_over
@@ -3287,7 +3406,7 @@ focus_tree = {
 		icon = GFX_goal_SWE_avf
 		prerequisite = { focus = SWE_elections_over }
 
-		x = -6
+		x = 0
 		y = 1 
 		cost = 1
 		relative_position_id = SWE_elections_over
@@ -3381,7 +3500,7 @@ focus_tree = {
 		X = -3
 		y = 3
 		relative_position_id = SWE_GEL_leads
-		cost = 4
+		cost = 3.5
 		ai_will_do = {
 			factor = 80 
 		}
@@ -3510,7 +3629,7 @@ focus_tree = {
 		X = 3
 		y = 3
 		relative_position_id = SWE_GEL_leads
-		cost = 4
+		cost = 3.5
 		ai_will_do = {
 			factor = 80 
 		}
@@ -3774,7 +3893,7 @@ focus_tree = {
 			focus = SWE_GEL_leads
 			focus = SWE_people_party_front
 		}
-		X = -6
+		X = 6
 		y = 1
 		relative_position_id = SWE_people_party_front
 		cost = 6
@@ -4078,7 +4197,7 @@ focus_tree = {
 		X = 3
 		y = 3
 		relative_position_id = SWE_people_party_front
-		cost = 4
+		cost = 3.5
 		ai_will_do = {
 			factor = 80 
 		}
@@ -4182,7 +4301,7 @@ focus_tree = {
 		X = -3
 		y = 3
 		relative_position_id = SWE_people_party_front
-		cost = 4
+		cost = 3.5
 		ai_will_do = {
 			factor = 80 
 		}
@@ -4348,6 +4467,1190 @@ focus_tree = {
 
 
 
+#### Second Term Election Trees ####
+
+	focus = { 
+		id = SWE_second_election
+		icon = GFX_goal_NFA_New_Elections
+		x = 0
+		y = 9
+		offset = {
+			x = -18
+			y = 7
+			trigger = {
+				has_country_flag = SWE_flag_military_steps_in
+			}
+		}	
+		offset = {
+			x = 0
+			y = -5
+			trigger = {
+				AND = {
+					has_country_flag = SWE_flag_military_steps_in
+					has_country_flag = SWE_flag_no_elmo_nats
+				}
+			}
+		}		
+		relative_position_id = SWE_elections_over		
+		
+		cost = 2
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			always = no
+		}		
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_red_in_sweden
+					has_country_flag = SWE_flag_lindholm_tot
+					has_country_flag = SWE_flag_elmo_world
+				}
+			}
+		}				
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_second_election"
+			add_political_power = 15
+		}
+	}
+
+
+
+
+
+
+### SOCDEM second term ###
+	focus = { 
+		id = SWE_social_dem_second
+		icon = GFX_goal_SWE_sap
+		prerequisite = { focus = SWE_second_election }
+		x = -14
+		y = 1
+		cost = 3
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_dem_second"
+					add_popularity = { ideology = social_democrat popularity = 0.04 }
+					add_stability = 0.05
+					add_political_power = 60
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_folkhemmet_improve
+		icon = GFX_SOS_no_statare
+		prerequisite = { focus = SWE_social_dem_second }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_folkhemmet_improve"
+			swap_ideas = {
+				remove_idea = SWE_statare_idea2
+				add_idea = SWE_removing_statare
+			}					
+			
+			unlock_decision_tooltip = swe_build_them_homes
+					
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_Hjalmar_Branting_ideology
+		icon = GFX_SOS_branting
+		prerequisite = { focus = SWE_social_dem_second }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_Hjalmar_Branting_ideology"
+				add_stability = 0.05
+				add_political_power = 70
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}					
+					
+			
+		}
+	} 
+
+	focus = { 
+		id = SWE_marx_and_key
+		icon = GFX_goal_GER_Hero_Marx
+		prerequisite = { focus = SWE_social_dem_second }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_marx_and_key"
+			country_event = { id = swedem.29 }		
+					
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_market_rikstag_dom
+		icon = GFX_goal_COR_Free_Market_Appeals
+		prerequisite = { focus = SWE_marx_and_key }
+		prerequisite = { focus = SWE_Hjalmar_Branting_ideology }
+		prerequisite = { focus = SWE_folkhemmet_improve } 
+		mutually_exclusive = { focus = SWE_social_rikstag_dom }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_flag_1940_election
+			has_idea = SWE_key_thought
+
+			
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_rikstag_dom"
+			swap_ideas = {
+				remove_idea = SWE_key_thought
+				add_idea = SWE_key_thought_2
+			}		
+		
+		}
+	}
+
+	focus = { 
+		id = SWE_social_rikstag_dom
+		icon = GFX_UKR_Progressive_National_Policy
+		prerequisite = { focus = SWE_marx_and_key }
+		prerequisite = { focus = SWE_Hjalmar_Branting_ideology }
+		prerequisite = { focus = SWE_folkhemmet_improve }
+		mutually_exclusive = { focus = SWE_market_rikstag_dom }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_flag_1940_election
+			has_idea = SWE_moderate_marxism
+
+			
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_rikstag_dom"
+			swap_ideas = {
+				remove_idea = SWE_moderate_marxism
+				add_idea = SWE_moderate_marxism_2
+			}
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_people_over_politics
+		icon = GFX_goal_FRA_peoples_banking
+		prerequisite = { 
+				focus = SWE_market_rikstag_dom
+				focus = SWE_social_rikstag_dom
+		}
+		prerequisite = { focus =  }
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_social_dem_second
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_people_over_politics"
+				add_political_power = 100
+				add_war_support	 = 0.03
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}				
+					
+			
+		}
+	}
+
+
+
+### SOCLIB Second term ###
+
+	focus = { 
+		id = SWE_social_liberal_win
+		icon = GFX_goal_CZE_agrarian_victory
+		prerequisite = { focus = SWE_second_election }
+		x = -7
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_liberal_win"
+			add_political_power = 15
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}			
+					
+					
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_environment_help
+		icon = GFX_goal_trees
+		prerequisite = { focus = SWE_social_liberal_win }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_environment_help"
+				add_stability = -0.03
+			every_owned_state = {
+				add_state_modifier = {
+					modifier = {
+						local_resources_factor = 0.1
+					}
+				}
+			}
+				
+					
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_europe_agrarian
+		icon = GFX_CAL_farm_bankruptcy_act
+		prerequisite = { focus = SWE_social_liberal_win }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_europe_agrarian"
+					
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}			
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_farmer_focus
+		icon = GFX_goal_AST_break_urban_rural_divide
+		prerequisite = { focus = SWE_social_liberal_win }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SWE_farmer_focus"
+				add_stability = 0.06
+				add_ideas = SWE_farmers_first
+					
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_centre_left
+		icon = GFX_goal_AST_further_advance_gender_equality
+		prerequisite = { focus = SWE_environment_help }
+		prerequisite = { focus = SWE_europe_agrarian }
+		prerequisite = { focus = SWE_farmer_focus }
+		mutually_exclusive = { focus = SWE_centre_full }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_flag_1940_election
+			has_country_flag = SWE_flag_1940_soclib_left
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_centre_left"
+					add_political_power = 20
+			swap_ideas = {
+				remove_idea = SWE_farmers_first
+				add_idea = SWE_farmers_roses
+			}					
+			
+		}
+	}	
+	
+	focus = { 
+		id = SWE_centre_full
+		icon = GFX_goal_AST_united_white_free_prosperous
+		prerequisite = { focus = SWE_environment_help }
+		prerequisite = { focus = SWE_europe_agrarian }
+		prerequisite = { focus = SWE_farmer_focus }
+		mutually_exclusive = { focus = SWE_centre_left }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_flag_1940_election
+			has_country_flag = SWE_flag_1940_soclib_middle
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_centre_full"
+					add_political_power = -10
+			swap_ideas = {
+				remove_idea = SWE_farmers_first
+				add_idea = SWE_farmers_centrism
+			}			
+		}
+	}	
+
+	focus = { 
+		id = SWE_agricultural_future
+		icon = GFX_goal_AST_the_defenders_of_a_new_socialist_democracy
+		prerequisite = { focus = SWE_centre_full
+						focus = SWE_centre_left
+						}
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_social_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_agricultural_future"
+			add_political_power = 35
+			add_ideas = SWE_temper_government
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.02
+			}					
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.02
+			}	
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.04
+			}	
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.04
+			}				
+			
+		}
+	}	
+
+### MARLIB Second Term ###
+	focus = { 
+		id = SWE_market_liberal_win
+		icon = GFX_SOS_sweeping
+		prerequisite = { focus = SWE_second_election }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_market_liberal_win"
+			add_political_power = 10
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.02
+			}					
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_finnish_rights
+		icon = GFX_goal_flag_finland
+		prerequisite = { focus = SWE_market_liberal_win }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_finnish_rights"
+			FIN = { add_opinion_modifier = { target = SWE modifier = medium_increase } }
+			every_owned_state = {
+				add_state_modifier = {
+					modifier = {
+						local_manpower = 0.08
+					}
+				}
+			}				
+
+
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_grass_roots_prot
+		icon = GFX_SOS_church_bye
+		prerequisite = { focus = SWE_market_liberal_win }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_grass_roots_prot"
+			
+			add_stability = -0.04
+			add_ideas = SWE_protestant_church
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_nordic_wealth
+		icon = GFX_SOS_nordic_wealth
+		prerequisite = { focus = SWE_market_liberal_win }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SWE_nordic_wealth"
+			add_political_power = 30	
+				
+			778 = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+			908 = {
+				add_resource = {
+					type = oil
+					amount = 3
+				}
+			}			
+		}
+	}
+
+	focus = { 
+		id = SWE_market_conserv
+		icon = GFX_goal_NZL_conservative_outreach
+		prerequisite = { focus = SWE_finnish_rights }
+		prerequisite = { focus = SWE_grass_roots_prot }
+		prerequisite = { focus = SWE_nordic_wealth }
+		mutually_exclusive = { focus = SWE_market_centre }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SWE_market_conserv"
+				add_political_power = -12
+				add_stability = 0.02
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.11
+			}				
+			
+		}
+	}	
+	
+	focus = { 
+		id = SWE_market_centre
+		icon = GFX_goal_AST_independent_central_bank
+		prerequisite = { focus = SWE_finnish_rights }
+		prerequisite = { focus = SWE_grass_roots_prot }
+		prerequisite = { focus = SWE_nordic_wealth }
+		mutually_exclusive = { focus = SWE_market_conserv }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_market_centre"
+				add_political_power = 20
+				add_stability = -0.02
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.09
+			}
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_Anders_Chydenius
+
+		icon = GFX_SOS_anders
+		prerequisite = { focus = SWE_market_centre
+						focus = SWE_market_conserv
+						}
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_market_liberal_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = market_liberal
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWE_Anders_Chydenius"
+			
+			add_ideas = SWE_anders_thought
+			
+		}
+	}
+
+
+
+
+
+
+### SOCCON 1940 ###
+	focus = { 
+		id = SWE_social_conservative_win
+		icon = GFX_goal_SWE_avf
+		prerequisite = { focus = SWE_second_election }
+		x = 7
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_social_conservative_win"
+				add_political_power = 50 
+			add_popularity = {
+				ideology = social_conservative 
+				popularity = 0.06
+			}				
+					
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_landman_legacy
+		icon = GFX_SOS_lindman
+		prerequisite = { focus = SWE_social_conservative_win }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_landman_legacy"
+					add_stability = 0.02
+					add_ideas = SWE_lindman_legacy
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_regulate_agriculture
+		icon = GFX_goal_agricultural_policies
+		prerequisite = { focus = SWE_social_conservative_win }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_regulate_agriculture"
+			unlock_decision_tooltip = swe_starting_new_regs
+
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_further_central
+		icon = GFX_UKR_Federation_Central_Europe
+		prerequisite = { focus = SWE_social_conservative_win }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_further_central"
+				add_stability = 0.1
+				add_war_support = 0.06
+			add_popularity = {
+				ideology = social_conservative 
+				popularity = -0.03
+			}				
+					
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_conservative_majority
+		icon = GFX_UKR_All_Ukrainian_Parliament
+		prerequisite = { focus = SWE_landman_legacy }
+		prerequisite = { focus = SWE_regulate_agriculture }
+		prerequisite = { focus = SWE_further_central }
+		mutually_exclusive = { focus = SWE_conservative_radicals }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_flag_1940_election
+			NOT = {
+				has_country_flag = SWE_flag_1940_soccon_authdem
+			}
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_conservative_majority"
+			
+			add_ideas = SWE_conservative_market_coalition
+					
+			add_popularity = {
+				ideology = market_liberal 
+				popularity = 0.05
+			}			
+		}
+	}	
+	
+	focus = { 
+		id = SWE_conservative_radicals
+		icon = GFX_goal_BEL_Radicalize_Rexist_Ideology_Further
+		prerequisite = { focus = SWE_landman_legacy }
+		prerequisite = { focus = SWE_regulate_agriculture }
+		prerequisite = { focus = SWE_further_central }
+		mutually_exclusive = { focus = SWE_conservative_majority }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_flag_1940_election
+			has_country_flag = SWE_flag_1940_soccon_authdem
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_conservative_radicals"
+				add_ideas = SWE_conservative_authdem_coalition	
+
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.02
+			}					
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_against_free_market_thought
+
+		icon = GFX_goal_NFA_Put_Chains_Labour
+		prerequisite = { focus = SWE_conservative_majority
+						focus = SWE_conservative_radicals
+						}
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_social_conservative_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = social_conservative
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_against_free_market_thought"
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}					
+
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}			
+			
+		}
+	}
+
+
+
+
+
+
+### Authdem 1940 ###
+
+	focus = { 
+		id = SWE_national_league_win
+		icon = GFX_National_League_2
+		prerequisite = { focus = SWE_second_election }
+		x = 14
+		y = 1
+		cost = 1
+		relative_position_id = SWE_second_election
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_national_league_win"
+				add_political_power = -5	
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.03
+			}
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_bully_opposition
+		icon = GFX_goal_AST_country_law_in_the_city
+		prerequisite = { focus = SWE_national_league_win }
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_bully_opposition"
+				add_stability = 0.02
+				country_event = { id = swedem.30 }
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_dagsposten 
+		icon = GFX_SOS_radio
+		prerequisite = { focus = SWE_national_league_win }
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_dagsposten"
+				add_political_power = 15
+				add_ideas = SWE_nationalist_newspaper
+					
+			
+		}
+	}	
+
+	focus = { 
+		id = SWE_break_syndicalism
+		icon = GFX_SOS_bully
+		prerequisite = { focus = SWE_national_league_win }
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_break_syndicalism"
+		add_political_power = 25
+		
+		custom_effect_tooltip = SWE_banned_soc_party_tt	
+			
+		
+			add_popularity = { ideology = totalist popularity = -0.20 }
+			add_popularity = { ideology = radical_socialist  popularity = -0.20 }
+			add_popularity = { ideology = syndicalist popularity = -0.20 }
+			add_popularity = { ideology = social_democrat popularity = 0.15 }
+			hidden_effect = {
+			set_party_name = {
+						
+			ideology = radical_socialist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			set_party_name = {
+			ideology = syndicalist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			set_party_name = {
+			ideology = totalist
+			long_name = SWE_banned_soc_party_long
+			name = SWE_banned_soc_party
+			}
+			}
+
+			
+		}
+	}
+
+	focus = { 
+		id = SWE_nordic_radicalism
+		icon = GFX_goal_NFA_Continuity
+		prerequisite = { focus = SWE_bully_opposition }
+		prerequisite = { focus = SWE_dagsposten }
+		prerequisite = { focus = SWE_break_syndicalism }
+		mutually_exclusive = { focus = SWE_european_social_union }
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_nordic_radicalism"
+					custom_effect_tooltip = SWE_nordic_radicalism_tt
+					
+					
+			
+		}
+	}	
+	
+	focus = { 
+		id = SWE_european_social_union
+		icon = GFX_SOS_europe
+		prerequisite = { focus = SWE_bully_opposition }
+		prerequisite = { focus = SWE_dagsposten }
+		prerequisite = { focus = SWE_break_syndicalism }
+		mutually_exclusive = { focus = SWE_nordic_radicalism }
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_european_social_union"
+					custom_effect_tooltip = SWE_europa_tt
+		}
+	}	
+
+	focus = { 
+		id = SWE_against_all_odds
+
+		icon = GFX_SOS_SNF_salute
+		prerequisite = { focus = SWE_european_social_union
+						focus = SWE_nordic_radicalism
+						}
+
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = SWE_national_league_win
+		ai_will_do = {
+			factor = 80 
+		}
+		available = { 
+			has_government = authoritarian_democrat
+			has_country_flag = SWE_flag_1940_election
+		}
+		
+		completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus SWE_against_all_odds"
+					
+					add_war_support = 0.03
+					add_political_power = 100
+					add_ideas = SWE_nationalist_riksdag
+			
+		}
+	}
+
+
+#### 1944 Elections tree 
+
+
+
+
 
 
 
@@ -4361,7 +5664,7 @@ focus_tree = {
 		X = 80
 		y = 0
 		offset = {
-			x = -36
+			x = -42
 			y = 0
 			trigger = {
 				has_country_flag = SWE_flag_red_in_sweden
@@ -4716,6 +6019,9 @@ focus_tree = {
 		}		
 		
 		completion_reward = {
+			
+			add_manpower = 2500
+		
 			swap_ideas = {
 				remove_idea = SWE_syndicalist1
 				add_idea = SWE_syndicalist2
@@ -5689,9 +6995,8 @@ focus_tree = {
 		
 		completion_reward = {
 			add_stability = 0.08
-			add_war_support = 0.15
 			add_command_power = 60
-			army_experience = 45	
+			add_manpower = 4500
 			add_ideas = SWE_tot_commisar
 			country_event = { id = swetot.6 } 
 		}
@@ -6350,7 +7655,7 @@ focus_tree = {
 
 	focus = { 
 		id = SWE_create_secret_police
-		icon = GFX_goal_LEC_police2
+		icon = GFX_SOS_strike_dragon
 		prerequisite = { 
 			focus = SWE_place_of_the_crown
 
@@ -7635,7 +8940,16 @@ focus_tree = {
 			factor = 80
 		}
 		
-		
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SWE_flag_red_in_sweden
+					has_country_flag = SWE_election_safe_success
+					has_country_flag = SWE_flag_lindholm_tot
+					has_country_flag = SWE_flag_no_elmo_nats
+				}
+			}
+		}		
 		available = {
 			has_country_flag = SWE_flag_elmo_world
 			has_completed_focus = SWE_place_of_the_crown
@@ -8972,7 +10286,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_new_doctrine
-		icon = GFX_GRU_ground_support_focus-4018
+		icon = GFX_SOS_red_soldier_focus
 		prerequisite = { 
 			focus = SWE_remove_old_generals
 
@@ -9154,6 +10468,8 @@ focus_tree = {
 			add_manpower = 6700
 			add_stability = -0.07
 			increase_ruling_party_popularity_by_2 = yes
+			
+			add_ideas = SWE_red_partizans
 		}
 	}
 

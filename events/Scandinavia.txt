@@ -2092,6 +2092,7 @@ country_event = {
 	option = {
 		name = scandinavia.20.b
 		set_cosmetic_tag = SCA_FAKE
+		set_country_flag = SWE_flag_scandinavia_formed
 		every_state = {
 		limit = { is_core_of = SWE }
 		add_core_of = FROM
@@ -2297,6 +2298,7 @@ country_event = {
 	option = {
 		name = scandinavia.20.e
 		set_cosmetic_tag = SCA_KALMAR
+		set_country_flag = SWE_flag_scandinavia_formed
 		every_state = {
 		limit = { is_core_of = SWE }
 		add_core_of = FROM
@@ -2398,6 +2400,7 @@ country_event = {
 			}
 		}		
 		set_cosmetic_tag = SWE_EMP_1
+		set_country_flag = SWE_flag_scandinavia_formed
 		every_state = {
 		limit = { is_core_of = SWE }
 		add_core_of = FROM

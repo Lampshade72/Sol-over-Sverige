@@ -27,6 +27,30 @@ SWE_black_monday_3:0 "Black Monday's Clear Skies"
 SWE_cutting_the_army:0 "Cutting Military Expenditure"
 SWE_austerity_measures:0 "Further Austerity Measures"
 
+SWE_removing_statre:0 "Removal of the Statare"
+
+SWE_key_thought:0 "Keynesian Model Maintained"
+SWE_key_thought_2:0 "Keynesian Model Maintained"
+
+SWE_moderate_marxism:0 "Reformed Marxism Enshrined"
+SWE_moderate_marxism_2:0 "Reformed Marxism Enshrined"
+
+
+SWE_farmers_first:0 "Farmers First"
+SWE_farmers_roses:0 "Rose Tinted Farmers"
+SWE_farmers_centrism:0 "Simplicity of Agrarian Life"
+SWE_temper_government:0 "Hands-Off Government"
+
+SWE_protestant_church:0 "Church Independence"
+SWE_anders_thought:0 "Ander's Legacy Enshrined"
+
+SWE_lindman_legacy:0 "Lindman's Legacy"
+SWE_conservative_authdem_coalition:0 "Radical Right Coalition"
+SWE_conservative_market_coalition:0 "Centre-Right Coalition"
+
+SWE_nationalist_newspaper:0 "Dagsposten"
+
+
 
 ## Economic Ideas ##
 SWE_eel_economy1:0 "Eel Economy"
@@ -298,7 +322,7 @@ SWE_royal_youth2:0 "Expanded Youth Training Programs"
 SWE_royal_paramilitaries:0 "The Kings Dagger"
 
 
-
+SWE_nationalist_riksdag:0 "Nationalist Riksdag"
 
 
 
@@ -389,6 +413,8 @@ SWE_red_army_tank:0 "Red Army Tanks"
 
 SWE_red_new_leadership_idea2:0 "Army Against Tyranny"
 
+SWE_red_partizans:0 "Partisan Reserves"
+
 ###Airforce Ideas### 
 
 SWE_gyllen_air_CAS1:0 "Gyllenkrok's Air Support Doctrine"
@@ -418,16 +444,17 @@ SWE_swedish_commune_friend:0 "Commune's Industrial Advice"
 
 SWE_swedish_uob_friend:0 "Britain's Naval Expertise"
 
-SWE_swedish_germany_friend:0 "Reichspakt Investments"
-SWE_swedish_russia:0 "Russian Willpower"
-SWE_swedish_entente:0 "Entente Expertise"
+SWE_swedish_germany_friend:0 "Investment Alliance"
+SWE_swedish_russia:0 "History of Militancy"
+SWE_swedish_entente:0 "Security and Specialty"
 SWE_swedish_arm_in_arm:0 "Torch of Allegiance"
 SWE_swedish_neutrality1:0 "Swedish Neutrality Reinforced"
 SWE_swedish_intelligence:0 "Svensk Tiger"
 SWE_swedish_neutrality2:0 "Swedish Neutrality Entrenched"
 SWE_swedish_empire:0 "Awakened Empire"
 SWE_swedish_empire2:0 "An Empire Reborn"
-
+SWE_swedish_navy_help:0 "Entente Naval Expertise"
+SWE_swedish_misfits:0 "Misfit Prowess"
 
 SWE_integrate_finland:0 "Integration of Finland"
 SWE_occupation_finland:0 "Occupation of Finland"
@@ -436,6 +463,10 @@ SWE_union_activity:0 "Industrial Sabotage"
 SWE_union_activity_desc:0 "The syndicalists in Norway are attempting to destabilize the Swedish government by funding militant trade unions throughout the country."
 SWE_kompani_linge_idea:0 "Kompani Linge"
 SWE_kompani_linge_idea_desc:0 "Kompani Linge is a band of commandos lead by former actor Martin Linge. They are currently engaged in different forms of sabotage in Sweden."
+
+SWE_integrate_scandinavia_idea:0 "Integration of Scandinavia"
+
+SWE_elmo_europe_idea:0 "Europa United"
 
 ####Focuses####
 
@@ -977,26 +1008,44 @@ SWE_FOP_tiger_guards_den_desc:0 "Sweden is safe, safe from the petty alliances o
 
 SWE_FOP_democractic_light:0 "Grand Alliance Reachout"
 SWE_FOP_democractic_light_desc:0 "In this modern menagerie of allegiances and alliances, it is evident that those who stay together survive. There remains a few major choices for us to align ourselves with, in Petrograd the Russian horde stands ready to pursue their territorial reclamation, the Entente who seek to end their exile from their homelands and in the middle of these groups sits the German Reichspakt, threatened from possibly all factions. We must make a decision now, lest we get thrown to the wayside of history."
-SWE_FOP_banished_entente:0 "The Banished Ones"
+SWE_FOP_banished_entente:0 "Return of the Exiles"
 SWE_FOP_banished_entente_desc:0 "We have decided to join the Entente, seeking to aid them in their righteous crusade against the Internationale hordes."
-SWE_FOP_meet_in_ottawa:0 "Entente Expertise"
-SWE_FOP_meet_in_ottawa_desc:0 "It is no lie that the current state of the Entente’s standing armies do not match the size of their enemies. But for what they lack in size, they make up for in professionalism. As such, we shall take on their experts in training our own special forces."
+
 SWE_FOP_russian_alliance:0 "Thawing Relations with Russia"
 SWE_FOP_russian_alliance_desc:0 "In what most have seen as the most unexpected turn, we have decided to join the Russian alliance. We seek to stand by them in their rightful reclamation of their native lands, against any foe that they face."
-SWE_FOP_petrograd_parade:0 "A Parade in Petrograd"
-SWE_FOP_petrograd_parade_desc:0 "Russia’s standing army has always been a spectacle of awe and prowess, while not always the best equipped, it remains unmatched in sheer size."
-SWE_FOP_player_in_reclamation:0 "Vital Node in Reclamation"
-SWE_FOP_player_in_reclamation_desc:0 "Our role is now certain, we are now a vital jumping point for our allies' reclamation of their rightful lands."
-SWE_FOP_torch_of_freedom:0 "Torch of Liberation"
-SWE_FOP_torch_of_freedom_desc:0 "We shall be the bearers of liberation, through blood and sweat, our allies shall prosper, and so shall we!"
+
 SWE_FOP_former_victors_kaiser:0 "With the Weltkrieg Winners"
 SWE_FOP_former_victors_kaiser_desc:0 "The Reichspakt sits the closest to us, sharing common Germanic and traditional government styles, they are clearing the no brainer option here."
-SWE_FOP_drinking_with_kaiser:0 "Reichspakt Benefits"
-SWE_FOP_drinking_with_kaiser_desc:0 "The Reichspakt is more than just a web of military alliances, it is an economic union. By further integrating ourselves into it we can hope to reap the rewards."
-SWE_FOP_bastion_against_radicals:0 "Bastion Against Ravenous Titans"
-SWE_FOP_bastion_against_radicals_desc:0 "Germany’s cause is a just one, the end to power hungry and radical nations, freedom to those oppressed by them. We stand beside our German brethren, ready to defend European freedom and liberty."
-SWE_FOP_triumphant_once_more:0 "Towards Another Domination"
-SWE_FOP_triumphant_once_more_desc:0 "Like the Weltkreig before, Germany shall win again, this time with us by their side."
+
+SWE_FOP_ourselves_forward:0 "Forge our own Path"
+SWE_FOP_ourselves_forward_desc:0 ""
+
+SWE_FOP_naval_history:0 "Britain and France's Naval Prowess"
+SWE_FOP_naval_history_desc:0 ""
+
+SWE_FOP_entente_history:0 "Men Over Arms"
+SWE_FOP_entente_history_desc:0 ""
+
+SWE_FOP_military_history:0 "Sheer Might in Size"
+SWE_FOP_military_history_desc:0 ""
+
+SWE_FOP_industrial_focus:0 "Industrial Expertise"
+SWE_FOP_industrial_focus_desc:0 ""
+
+SWE_FOP_alliance_of_misfits:0 "Alliance of Misfits"
+SWE_FOP_alliance_of_misfits_desc:0 ""
+
+SWE_FOP_secure_nordics:0 "Eyes on Scandinavia"
+SWE_FOP_secure_nordics_desc:0 ""
+
+SWE_FOP_finland_decision:0 "The Fate of Finland"
+SWE_FOP_finland_decision_desc:0 ""
+
+SWE_FOP_iceland_gambit:0 "The Iceland Question"
+SWE_FOP_iceland_gambit_desc:0 ""
+
+SWE_FOP_triumphant_once_more:0 "Towards A New World Order"
+SWE_FOP_triumphant_once_more_desc:0 ""
 
 SWE_FOP_revolutionary_torch:0 "Carrying The Torch of Revolution"
 SWE_FOP_revolutionary_torch_desc:0 "With the revolution triumphant and the nation stable once again, we can turn our gaze outwards. The most obvious choice is to join the Internationale in their righteous cause for an international worker liberation, or perhaps we find their ideology corrupt from our own?"
@@ -1200,11 +1249,117 @@ SWE_navy_large_and_big_desc:0 "They may move fast, we shoot faster. They may arm
 SWE_navy_henrik_trolle:0 "Naval Warfare Alike Henrik Trolle"
 SWE_navy_henrik_trolle_desc:0 "Henrik af Trolle is one of the most famous Swedish Admirals in history, by embodying his skill, the Swedish navy shall rise to heights it has never seen before."
 
+
+### Second term election focuses ###
+
+SWE_second_election:0 "Another National Election"
+SWE_second_election_desc:0 "Once again, the Swedish nation returns to the polls, with the outcome once more shaping her future."
+
+## SOCDEM 2nd term ##
+
+SWE_social_dem_second:0 "Social Democrats Secure Victory"
+SWE_social_dem_second_desc:0 "The Social Democrats secure a large enough majority to win the election."
+
+SWE_folkhemmet_improve:0 "Abolish The Statare"
+SWE_folkhemmet_improve_desc:0 "The Statare still holds itself as the last vestiges of the middle ages, a bygone era of servitude and domination of the lower class. We shall set about decisively abolishing this ancient system, doing so carefully as to not place such people on the streets without support or homes."
+
+SWE_Hjalmar_Branting_ideology:0 "Hjalmar Branting Thought"
+SWE_Hjalmar_Branting_ideology_desc:0 "The first of Sweden’s greatest social democratic minds, Hjalmar Branting, the first social democratic prime minister of Sweden. His efforts and works at stabilising Sweden and preparing her to prosper for years to come is evident even now in society. We shall celebrate his great works, with the promise of continuing his legacy."
+
+SWE_marx_and_key:0 "Marxism and Keynesianism"
+SWE_marx_and_key_desc:0 "While initially, under Hjalmar Branting, the social democratic party followed pragmatic view on Marxism, willing to cooperate with Centrists and liberals alike, the domination of germany across Europe turned to party to Keynesian economics. However, some within the party are demanding we return to our Marxist roots, with Germany be damned."
+
+SWE_social_rikstag_dom:0 "Socialist Party Domination"
+SWE_social_rikstag_dom_desc:0 "With the decision to return to pragmatic Marxism, the party is now furthering its social and nationalization policies. While many detractors and the opposition see this as a direct link to the Internationale, we decry such radicalism."
+
+SWE_market_rikstag_dom:0 "Moderate Party Domination"
+SWE_market_rikstag_dom_desc:0 "The party has spoken and the moderate Keynesian wing has won out, the party shall maintain her economically nominal capitalism while espousing social democratic values, grafting a mix between the Marxism of old and the Money of the future."
+
+SWE_people_over_politics:0 "People Over Politics"
+SWE_people_over_politics_desc:0 "One thing is certain in politics, most people either hold disdain or confusion for their politicians, especially when progress is slow. We will prioritise the people of Sweden over personal politics, venturing out our coalitions and plans towards what is best for each individual in Sweden."
+
+
+
+## SOCLIB ##
+
+SWE_social_liberal_win:0 "Bondeförbundet Beats the Ballots"
+SWE_social_liberal_win_desc:0 "In a most unexpected turn of events, the Bondeförbundet has won the election!"
+SWE_environment_help:0 "Environmental Conservation"
+SWE_environment_help_desc:0 "While every nation requires an industry to survive in the modern world, we cannot allow unabashed industrialisation to ruin what nature we have. Signing a bill into effect that will set about what areas can and can’t undergo development, to protect both the Swedish countryside and her animals."
+SWE_europe_agrarian:0 "The European Agrarian Model"
+SWE_europe_agrarian_desc:0 "Within Europe’s history sits the farmer, the backbone of the entire continent. With a rich and deep history of agriculture and farming within both Europe and Sweden herself, we should be willing to embrace these ties. We shall further fund our agricultural development, for a nation marches on its stomach!"
+SWE_farmer_focus:0 "Farmer's First and Foremost"
+SWE_farmer_focus_desc:0 "For all the good a factory produces, a steel shop crafts and a painting covers, none can do so without food. Our farmers are the utmost important part of our society, whether we remember that or not. As such, government incentives and funding will align them further with our party and expand the industry greatly."
+SWE_centre_full:0 "True Centrist Government"
+SWE_centre_full_desc:0 "By aligning with the Folkpartiet, we can avoid the heavy handedness of the Social democrats and fully embrace a centrist government!"
+SWE_centre_left:0 "Crops and Roses"
+SWE_centre_left_desc:0 "The Social Democrats represent our closest ally in the Riksdag, as well as supplying us with the necessary seats to accomplish our goals."
+SWE_agricultural_future:0 "Future of Development"
+SWE_agricultural_future_desc:0 "The world is ever changing, and as a nation we must be prepared for that change, come what may!"
+
+
+
+## MARLIB 2nd ##
+
+SWE_market_liberal_win:0 "Folkpartiet Faces Forward"
+SWE_market_liberal_win_desc:0 "The Folkpartiet has won the election, determined to create their classical liberal dream in Sweden!"
+SWE_finnish_rights:0 "Finnish Protections and Laws"
+SWE_finnish_rights_desc:0 "One of the largest minorities in Sweden are the Finns, by maintaining good relations with them and uplifting them where possible, we can hope to increase industries in those areas."
+SWE_grass_roots_prot:0 "Independence From The Church of Sweden"
+SWE_grass_roots_prot_desc:0 ""
+SWE_nordic_wealth:0 "Abundant Nordic Wealth"
+SWE_nordic_wealth_desc:0 "The Nordic region is one of truly untapped wealth, liquid gold hides across its frozen plains, simply waiting to be discovered! By further investing in our mining industry we can hope to discover scores of new minerals hidden beneath the ground."
+SWE_market_centre:0 "True Liberal Government"
+SWE_market_centre_desc:0 "The Farmer’s league represents the left side of the political centre, aligning with them is both natural and the only way forward for a true moderate centrist government!"
+SWE_market_conserv:0 "Classical Rightist Coalition"
+SWE_market_conserv_desc:0 "The Conservatives still hold a bulwark in the Riksdag, with some of our own policies aligned with their interests, it's only natural to form a coalition with them."
+SWE_Anders_Chydenius:0 "Ratify Anders Chydenius Thought"
+SWE_Anders_Chydenius_desc:0 "Anders Chydenius was and still is the founding father of Swedish liberalism and temperance, a model citizen and priest. His dedication to ending torture and despotism in Sweden paved the way for it to become a model democracy, without his efforts we would be nowhere near where we are now."
+
+
+
+## SOCCON ##
+
+SWE_social_conservative_win:0 "The Conservatives Collect Victory"
+SWE_social_conservative_win_desc:0 "The Conservatives have achieved victory in the Riksdag, prepared to labour and toil Sweden to a traditional and faithful future."
+SWE_landman_legacy:0 "Lindman's Legacy Enshrined"
+SWE_landman_legacy_desc:0 "Arvid Lindman is everything a model conservative in Sweden should be, intelligent, kind yet swift, his remarkable statesmanship helped bring universal suffrage, increased access to public education and earned him respect even from other politicians across the aisle. While his passing is tremendously devastating to the nation, his legacy shall live on, for all future prime ministers to follow!"
+SWE_regulate_agriculture:0 "Forceful Regulation of Agriculture"
+SWE_regulate_agriculture_desc:0 "It is a shame that many farms and agricultural industries in Sweden remain backward, wasting the potential of the land they toil. In times like these, government intervention is necessary, we shall force our way in and make sure agricultural land is used to its peak efficiency."
+SWE_further_central:0 "Necessary Government Centralisation"
+SWE_further_central_desc:0 "With each local province lies its own council, with each council lies a slog of bureaucracy and wasted time. By centralising key areas across the nation, we can cut back on expenses and wasted potential."
+SWE_conservative_radicals:0 "Slide to the Right"
+SWE_conservative_radicals_desc:0 "In times of political change, it is best to follow the wind. The increasing rise of the far-right is no secret, their flamboyant and obscene proposals have quickly captivated many on the right, only by allying such forces can we hope to contain their ambition."
+SWE_conservative_majority:0 "Tradition and Honour"
+SWE_conservative_majority_desc:0 "There is honour in kingly discussion and debates, such tradition shall be kept, while radicals try to silence their opponents, we know a good debate does more to convince the public."
+SWE_against_free_market_thought:0 "Topple Free Market Thought"
+SWE_against_free_market_thought_desc:0 "The lunacy espoused by some of a total free market cannot be allowed to continue, its unregulated and uncaringness for a single nation has no place in Swedish society."
+
+
+## NAT lEAGUE ##
+
+SWE_national_league_win:0 "The Emergence of the National League"
+SWE_national_league_win_desc:0 "In a shocking turn, we the National League have won the election, beating out the moderate conservatives and leftists alike, Sweden now lies at our fingertips!"
+SWE_bully_opposition:0 "Bully the Opposition"
+SWE_bully_opposition_desc:0 "The opposition remains loud, blocking our proposals at every turn, no matter the benefits it may bring. As such, we must find a way to drown them out, to show the nation the hypocrisy of such men."
+SWE_dagsposten:0 "Newspaper for National Politics and Culture"
+SWE_dagsposten_desc:0 "The Dagsposten, or Newspaper for National Politics and Culture is a conglomerate piece of work made up of our most fundamental beliefs as a party, now in the position of government, we can further spread it across the whole nation for all to read."
+SWE_break_syndicalism:0 "Crush the Syndicalist Menace"
+SWE_break_syndicalism_desc:0 "Syndicalism, socialism, moderate leftism, whatever form it may come in, it remains the same. A vile anti-national ideology bent on destroying each nation it tries to consume, we must remind the public of this threat, and end it for good."
+SWE_european_social_union:0 "Endorse the European Cause"
+SWE_european_social_union_desc:0 "Our cause, our purpose, is a truly unified Europe. A grand continental nation, dedicated to European wellbeing and nationalism, we shall further endorse this cause!"
+SWE_nordic_radicalism:0 "Bastion of Nordic Nationalism"
+SWE_nordic_radicalism_desc:0 "The Nordics have a long history intertwined together, with the ferocity of the vikings, our combined christening together, we are a united peoples. We shall spread our values to our nordic neighbours, despite any grievances they may hold."
+SWE_against_all_odds:0 "To Defy the Odds"
+SWE_against_all_odds_desc:0 "We have somehow defied the odds, originally a breakaway youth group from Lindmans conservatives, we have formed our own party and now dominate the Riksdag, three cheers for the King and the nation!"
+
+
 SWE_kompani_linge_tooltip: "§HWill be removed if:§!\n$TRIGGER_OR_STARTS$\n   $SWE_kompani_linge_SWE_is_socialist$\n   $SWE_kompani_linge_NOR_does_not_exist$\n   $SWE_kompani_linge_NOR_has_capitulated$\n   $SWE_kompani_linge_NOR_is_not_socialist$\n"
 SWE_kompani_linge_SWE_is_socialist: "[SWE_kompani_linge_SWE_is_socialist] $KR_is_socialist$"
 SWE_kompani_linge_NOR_does_not_exist: "[SWE_kompani_linge_NOR_does_not_exist] §H[NOR.GetNameWithFlag]§! $TRIGGER_DOES_NOT_EXIST$"
 SWE_kompani_linge_NOR_has_capitulated: "[SWE_kompani_linge_NOR_has_capitualted] §H[NOR.GetName]§!: $TRIGGER_HAS_CAPITULATED$"
 SWE_kompani_linge_NOR_is_not_socialist: "[SWE_kompani_linge_NOR_is_not_socialist] §H[NOR.GetName]§!: $KR_is_socialist_NOT$"
+
 
 
 
@@ -1251,11 +1406,15 @@ SWE_flag_carl:0 "Name Carl"
 SWE_flag_oscar:0 "Name Oscar"
 
 SWE_flag_national_league_banned:0 "National League banned"
+SWE_flag_scandinavia_formed:0 "Scandinavia Formed"
+SWE_flag_nordic_formed:0 "Nordic Formed"
 
 ###Election Flags####
 SWE_flag_1936_socdem:0 "The Social Democrats Won the 1936 election!"
 SWE_flag_1936_soccon:0 "The Conservatives Won the 1936 election!"
 SWE_flag_1936_marlib:0 "The Folkpartiet Won the 1936 election!"
+
+SWE_flag_1940_election:0 "Another Election has Occured"
 
 SWE_flag_dead_hansson:0 "Hansson has died"
 SWE_flag_1940_hansson:0 "Hansson chosen to lead the party"
@@ -1269,6 +1428,16 @@ SWE_flag_1940_axel:0 "Axel Pehrsson-Bramstorp chosen to lead the party"
 SWE_flag_1940_ekman:0 "Carl Gustaf Ekman is chosen to lead the party"
 SWE_flag_1940_national_league_victory:0 "The National League won the 1940 election"
 
+SWE_flag_1940_socdem_soclib:0 "Social Democrats form coalition with Farmer's League"
+SWE_flag_1940_socdem_alllib:0 "Social Democrats form full left-centre coaltion"
+
+SWE_flag_1940_soclib_left:0 "Farmer's League Align the Left"
+SWE_flag_1940_soclib_middle:0 "Farmer's League make Centre-Left coalition"
+
+SWE_flag_1940_soccon_marlib:0 "Conservatives form coalition with Folkpartiet"
+SWE_flag_1940_soccon_alllib:0 "Conservatives form full centre coaltion"
+SWE_flag_1940_soccon_authdem:0 "Conservatives form right wing coalition"
+
 SWE_flag_1944_hansson:0 "Hansson chosen to lead the party"
 SWE_flag_1944_erlander:0 "Erlander chosen to lead the party"
 SWE_flag_1944_karl_kilbom:0 "Karl Kilbom chosen to lead the party"
@@ -1279,6 +1448,11 @@ SWE_flag_1944_bertil_ohlin:0 "Bertil Ohlin chosen to lead the party"
 SWE_flag_1944_axel:0 "Axel Pehrsson-Bramstorp chosen to lead the party"
 SWE_flag_1944_ekman:0 "Carl Gustaf Ekman is chosen to lead the party"
 
+
+SWE_flag_authdem_all_parties:0 "The Military allows free elections"
+SWE_flag_authdem_right_parties:0 "The Military only allows some parties"
+
+SWE_flag_national_league_dom:0 "The National League have banned and outlawed left-wing parties!"
 
 ## Decisions ##
 
@@ -1302,16 +1476,21 @@ SWE_fort_coast_cities:0 "Fortify Coastal Cities"
 
 
 SWE_alliance_reachout:0 "Policy of Alliances"
-swe_subjugate_norway_alliance:0 "Subduing Norway"
-swe_subjugate_finland_alliance:0 "Knocking down Finland"
-swe_subjugate_denmark_alliance:0 "Step on the Younger Brother"
-swe_seize_iceland:0 "Seize Iceland"
-swe_integrate_finland_alliance:0 "Integration of Finland"
-SWE_integrate_scandinavia_ali:0 "Integration of Scandinavia"
+
 
 SWE_join_russia_ls:0 "A Bear-Hug Alliance"
 SWE_join_reichspact_ls:0 "Back to our German Roots"
 SWE_join_entente_LS:0 "Shaking hands in Halifax"
+SWE_create_faction:0 "Form our own Alliance"
+
+SWE_FOP_invite_USA:0 "Invite USA to our faction"
+SWE_FOP_invite_COR:0 "Invite Constitutional America to our faction"
+SWE_FOP_invite_CAL:0 "Invite Pacific States to our faction"
+SWE_FOP_invite_MEX:0 "Invite Mexico to our faction"
+SWE_FOP_invite_SPR:0 "Invite Spain to our faction"
+SWE_FOP_invite_CAR:0 "Invite Carlist Spain to our faction"
+SWE_FOP_invite_FIN:0 "Invite Finland to our faction"
+
 
 SWE_revolution_decisions:0 "Policies of Revolution"
 SWE_join_internationale_ls:0 "Alongside the 3rd Internationale"
@@ -1352,6 +1531,37 @@ SWE_join_latin_bois:0 "Joining the Latin Alliance"
 SWE_claim_elmo_europe:0 "Claims to European Domination"
 SWE_core_elmo_europe:0 "Integration of the many European Monarchs"
 SWE_elmo_flag_switcher:0 "Flag of the new Empire"
+
+
+SWE_scandinavia_foreign_policy_decisions:0 "Swedish Foreign Policy"
+SWE_claiming_scandinavia:0 "Make our claim to Scandinavia known"
+SWE_FOP_destroy_norway:0 "To Christianize the Vickings"
+SWE_FOP_destroy_denmark:0 "A Rival of Red and White"
+SWE_FOP_claim_iceland:0 "Make our claim to Iceland known"
+SWE_FOP_claim_greenland:0 "Make our claim to Greenland known"
+SWE_FOP_demand_greenland_denmark:0 "Demand Greenland from Denmark"
+SWE_FOP_demand_greenland_canada:0 "Demand Greenland from Canada"
+SWE_FOP_request_greenland:0 "Request Greenland from our Allies"
+SWE_FOP_request_iceland:0 "Request Iceland from our Allies"
+SWE_FOP_unite_iceland:0 "Demand Iceland's Submission"
+SWE_FOP_destroy_finjacks:0 "To cut a Finn"
+SWE_FOP_integrate_finland:0 "Policy of Integration of Finland"
+SWE_FOP_destroy_Baltics:0 "Restoring the Empire's Baltic borders"
+SWE_FOP_destroy_russia:0 "Undo the Treaty of Fredrikshamn"
+SWE_FOP_take_pom:0 "Our claims to Northern Germany"
+SWE_FOP_integrate_pom:0 "Integration of our German brethren"
+SWE_FOP_integrate_scandinavia:0 "Integration of Scandinavia"
+SWE_FOP_integrate_iceland:0 "Integrating Iceland" 
+SWE_national_league_europe:0 "Our claim to Europa's National Heart"
+SWE_national_league_europe_core:0 "Integrating the Greatest Empire"
+
+SWE_statare_decisions:0 "Fixing the Statare Issue"
+swe_build_them_homes:0 "Public housing Construction"
+swe_education:0 "Free Education for the Statare"
+
+SWE_conservative_agriculture_d:0 "Conservative Agricultural Regulations"
+swe_starting_new_regs:0 "Enacting new regulations"
+swe_next_regs:0 "Further the development"
 
 
 ### Leaders ###
@@ -1522,10 +1732,112 @@ swefop.6.t:0 "An Old Empire made New"
 swefop.6.d:0 "The dream of empire, once buried beneath centuries of neutrality and modest diplomacy, has been reignited and realized. Under firm and visionary leadership, Sweden has cast off its traditional restraint and seized its destiny as the dominant power in the North. The Nordic lands, Denmark, Norway, Finland, and Iceland, have all been brought under Swedish control, willingly or otherwise. Even the ancient foe to the east, Russia, has bowed before the might of a resurgent Swedish war machine.\n\nFrom the icy fjords of Norway to the windswept steppes beyond the Karelian Isthmus, Swedish soldiers now march under the banner of the Three Crowns. The Baltic Sea, once contested, is now a Swedish lake. Stockholm has become the capital of a new empire, an empire that recalls the days of Gustavus Adolphus and Charles XII, but now reborn for the modern age.\n\nSome hail this resurgence as the beginning of a golden age for Scandinavia. Others whisper of tyranny and retribution. But one thing is certain: the Swedish Empire is no longer a memory—it is a force the world must reckon with."
 swefop.6.a:0 "The North is ours, long live the Empire!"
 
+swefop.7.t:0 "" #Neutrality 1
+swefop.7.d:0 ""
+swefop.7.a:0 ""
 
+swefop.8.t:0 "" #Neutrality 2
+swefop.8.d:0 ""
+swefop.8.a:0 ""
 
+swefop.9.t:0 "The Greenland Situation" #Demand Greenland Denmark
+swefop.9.d:0 "Greenland sits as the perfect location for expanding our naval base, while also harbouring a similar culture. With such a small population and vital ports located in the north, we should go about demanding such a territory from our southern Neighbour Denmark."
+swefop.9.a:0 "We shall demand Greenland!"
 
+swefop.10.t:0 "Sweden Demands Greenland" #Danishh response
+swefop.10.d:0 "Our Northern Scandinavian nation Sweden has come to us with a demand, asking for us to relinquish our territories in Greenland to them. They advised us that denying such a request could come at a heavy cost, how should we respond?"
+swefop.10.a:0 "Are they mad? No!"
+swefop.10.b:0 "Its not worth the trouble, sure"
 
+swefop.11.t:0 "Denmark Concedes Greenland" #Denmark accept
+swefop.11.d:0 "In a grand display of diplomacy and negotiations, we have convinced Denmark to concede their territory in Greenland. By gaining this new land we can hope to expand our current territory and establish a stronger naval presence."
+swefop.11.a:0 "Our rightfull territory!"
+
+swefop.12.t:0 "Denmark Holds Fast" #Denmark refuse
+swefop.12.d:0 "It seems Denmark has refused our request for their territories in Greenland, as such some in government express that war remains the only other option, as diplomacy has failed. The rest suggest waiting, biding our time for a greater moment to seize the territories."
+swefop.12.a:0 "To arms!"
+swefop.12.b:0 "We shall bide our time..."
+
+swefop.13.t:0 "Sweden Demands Greenland" #Canadian response
+swefop.13.d:0 "The Northern Scandinavian nation Sweden has come to us with a demand, asking for us to relinquish our territories in Greenland to them. They advised us that denying such a request could come at a heavy cost, how should we respond?"
+swefop.13.a:0 "Ha, with what army? No!"
+swefop.13.a:0 "Bah, its not worth the fight"
+
+swefop.14.t:0 "Canada Concedes Greenland" #Canada accepts
+swefop.14.d:0 "In a grand display of diplomacy and negotiations, we have convinced Canada to concede their territory in Greenland. By gaining this new land we can hope to expand our current territory and establish a stronger naval presence."
+swefop.14.a:0 "A wise move by Canada!"
+
+swefop.15.t:0 "Canada Refuses our Demands" #Canada refuses
+swefop.15.d:0 "It seems Canada has refused our request for their territories in Greenland, as such some in government express that war remains the only other option, as diplomacy has failed. The rest suggest waiting, biding our time for a greater moment to seize the territories."
+swefop.15.a:0 "To arms!"
+swefop.15.b:0 "We shall bide our time..."
+
+swefop.16.t:0 "Victory over the Horizon" #swedish victory against Canada
+swefop.16.d:0 "With Canadian forces pushed out of their Atlantic territories, some in government have come up with the proposition to offer peace to Canada. Asking for the full incorporation of their Atlantic territories to avoid further bloodshed and war."
+swefop.16.a:0 "Send the deal, surely they will accept?"
+swefop.16.b:0 "The Canadians realm will fall together!"
+
+swefop.17.t:0 "Sweden offers Negotiations" #Peace with Sweden?
+swefop.17.d:0 "Sweden has sent us a message, asking for peace with the caveat that we concede our Atlantic territories to them. Shall we continue the war and retake our land, or concede to build up our forces for the reclamation?"
+swefop.17.a:0 "Fine, let them have the barren ice!"
+swefop.17.b:0 "No, we shall destroy these Scandinavians!"
+
+swefop.18.t:0 "Canada Accepts Negotiations" #They accept peace
+swefop.18.d:0 "In an unprecedented work of negotiations and diplomacy, Canada has accepted peace, giving us full control over the territories that we have demanded. With the war ending and soldiers returning home, we can only hope it was worth the bloodshed."
+swefop.18.a:0 "A victory against a titan!"
+
+swefop.19.t:0 "A Request from Sweden" #request canada response greenland
+swefop.19.d:0 "Our Northern Scandinavian ally Sweden has come to us with a demand, asking for us to relinquish our territories in Greenland to them. While the territories don’t hold too much value, they could prove useful in the reclamation of the home isles, how should we respond?"
+swefop.19.a:0 "No, they have no claims"
+swefop.19.b:0 "Sure, they know the climate better than us"
+
+swefop.20.t:0 "Canada gives in" #Canada accepts
+swefop.20.d:0 "In an unprecedented work of negotiations and diplomacy, our valiant allies in Canada have agreed to hand over the territories in the Atlantic!"
+swefop.20.a:0 "Truly, allies to the end!"
+
+swefop.21.t:0 "Canada denies our Request" #Canada refuses
+swefop.21.d:0 "Canada has rejected our proposal for the Atlantic territories, we are now left with two decisions. Either accept the fact that working with Canada is no longer possible, or swallow our pride and continue the alliance with the Exiles."
+swefop.21.a:0 "We shall make our leave then"
+swefop.21.b:0 "Humiliating"
+
+swefop.22.t:0 "Sweden Request Iceland" #Demand canada iceland response
+swefop.22.d:0 "Our Northern Scandinavian ally Sweden has come to us with a demand, asking for us to relinquish our territories in Iceland to them. While the territories don’t hold too much value, they could prove useful in the reclamation of the home isles, how should we respond?"
+swefop.22.a:0 "Its position is too vital to reclamation, no"
+swefop.22.a:0 "They may have it"
+
+swefop.23.t:0 "Canada Cedes Iceland" #Canada accepts
+swefop.23.d:0 "In an unprecedented work of negotiations and diplomacy, our valiant allies in Canada have agreed to hand over Iceland!"
+swefop.23.a:0 "The brilliance of negotiation!"
+
+swefop.24.t:0 "Canada Refuses our Request" #Canada refuses
+swefop.24.d:0 "Canada has rejected our proposal for Iceland, we are now left with two decisions. Either accept the fact that working with Canada is no longer possible, or swallow our pride and continue the alliance with the Exiles."
+swefop.24.a:0 "Then we shall leave them behind"
+swefop.24.a:0 "Dreadful"
+
+swefop.25.t:0 "Sweden Demans our Annexation" #Iceland responsse
+swefop.25.d:0 "Today a delegation from Sweden arrived in the early morning, informing us that the Swedish government has ‘kindly’ asked for our direct annexation into their territories. Promising limited autonomy and protection from enemies in Europe, the invitation is inviting, however giving up our independence won’t sit well with most in Iceland."
+swefop.25.a:0 "Fine, we shall yield"
+swefop.25.a:0 "Take our island from our cold, fish, dead hands!"
+
+swefop.26.t:0 "Iceland Accepts Annexation" #Iceland agrees
+swefop.26.d:0 "In an unprecedented work of negotiations and diplomacy, Iceland has accepted our invitation to be annexed by us, hurrah!"
+swefop.26.a:0 "Another territorial ambition satisfied!"
+
+swefop.27.t:0 "Iceland Rejects Us" #Iceland denies
+swefop.27.d:0 "As most expected, Iceland has rejected our proposal for a peaceful annexation of their territories, this leaves us with little options left."
+swefop.27.a:0 "Negotiations have failed us, prepare the troops"
+
+swefop.28.t:0 "A Sweden Centred Alliance" #Create own factrion 
+swefop.28.d:0 "With the decision to create our own alliance, making us the de facto leader, we are now left with a choice of name. Many have been presented, yet only one may be chosen, let us choose it wisely."
+swefop.28.a:0 "The Northern Alliance!"
+swefop.28.a:0 "The Aurora Pact!"
+swefop.28.a:0 "The Swedish Defence Pact!"
+swefop.28.a:0 "The Stockholm Accord!"
+
+swefop.29.t:0 "Sweden Invites us to her faction" #Generic invite to faction
+swefop.29.d:0 "Today a delegation from Sweden arrived in the early morning, informing us that the Swedish government has offered us a seat in their grand alliance. Promising protection, mutual aid and joint military exercises, such an alliance may prove useful to us, we must weigh our options."
+swefop.29.a:0 "Let woes come, for together we will be one!"
+swefop.29.b:0 "No thanks!"
 
 
 ### Events ###
@@ -1698,6 +2010,37 @@ swedem.28.t:0 "The Flag we Hoist"
 swedem.28.d:0 "Following the dissolution of the Swedish-Norwegian union in 1905, the flag of Sweden was changed to remove the Norwegian symbolism. Then in 1906, a light medium blue was adopted onto the flag, to represent the shift from Sweden as an imperial power to one of a model democratic state. However, with the winds of history forever shifting, some within the Riksdag and public wish to see a resurgence in the darker shade of blue once used. While the group is minor and such a change would do nothing for gain in the country, it remains a novel premise."
 swedem.28.a:0 "A return to 1905!"
 swedem.28.b:0 "We accept our current flag"
+
+swedem.29.t:0 "The Decision on the Economic Direction of the Party"
+swedem.29.d:0 ""
+swedem.29.a:0 "We shall re-embrace Marxism!"
+swedem.29.b:0 "Stick to what works, Keynesian economics!"
+
+swedem.30.t:0 "Locking Down Opposition"
+swedem.30.d:0 ""
+swedem.30.a:0 "Polite way"
+swedem.30.b:0 "Cutthroat"
+
+swedem.31.t:0 "To 'Free' Elections?"
+swedem.31.d:0 ""
+swedem.31.a:0 "Free Elections"
+swedem.31.b:0 "No lefties"
+
+swedem.32.t:0 "A Return to the Ballots"
+swedem.32.d:0 "Election post army coup"
+swedem.32.a:0 "Erlander's Social Democrats"
+swedem.32.b:0 "Farmer's League"
+swedem.32.c:0 "Folkpartiet"
+swedem.32.e:0 "Conservatives"
+swedem.32.f:0 "National League"
+
+
+
+
+
+
+
+
 
 #### Working on elections ####
 
@@ -3173,6 +3516,11 @@ SWE_tt_inflation_back_to_two:0 "With the new currency, inflation will be reset t
 SWE_tt_will_be_removed_redistribute_wealth:0 "§RThis modifier will be removed when we redistribute the wealth.§!"
 SWE_douglasfocutext_alive:"Our senior staff officer Archibald Douglas proposes we convert the Swedish army into a mobile force capable of outmaneuvering the enemy forces to swiftly neutralise our enemies."
 SWE_douglasfocutext_dead:0 "Former senior staff officer Archibald Douglas proposed we convert the Swedish army into a mobile force capable of outmaneuvering the enemy forces to swiftly neutralise our enemies."
+
+
+SWE_nordic_radicalism_tt:0 "§BBy reinforcing our Nordic roots, we can ease integration with the other Nordic Nations§!"
+
+SWE_europa_tt:0 "§RBy championing the National European cause, we will unlock unique foreign policy decisions§!"
 
 ### Decisions ###
 SWE_fix_black_monday_category:0 "Response to Black Monday"

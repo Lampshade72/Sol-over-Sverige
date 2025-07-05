@@ -256,17 +256,10 @@ country_event = { #Finland now ours
 		add_ideas = SWE_integrate_finland
 		add_stability = -0.1
 		add_war_support = 0.04	
+		unlock_decision_tooltip = SWE_FOP_integrate_finland
+		country_event = { id = swefop.30 days = 4 }
 		
-		if = { limit = { has_completed_focus = SWE_FOP_wayward_son}
-		unlock_decision_tooltip = swe_integrate_finland_empire
-		} 
-		else_if = { limit = { has_completed_focus = SWE_FOP_democractic_light}
-		unlock_decision_tooltip = swe_integrate_finland_alliance
-		} else_if = { limit = { has_socialist_government = yes }
-		unlock_decision_tooltip = swe_integrate_finland_revolution
-		} else = {
-		unlock_decision_tooltip = swe_integrate_finland_neutral
-		}
+
 	}
 	
 	option = { ##Take essential, setup puppet
@@ -1470,12 +1463,746 @@ country_event = { #neutrality 2 final ##LS##
 	
 }
 
+country_event = { #demand greenland denmark
+	id = swefop.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.9" }
+	title = swefop.9.t
+	desc = swefop.9.d
+	picture = GFX_report_event_SWE_neutral_1
+
+	is_triggered_only = yes
+
+	option = { # Demand it outright
+		name = swefop.9.a
+		ai_chance = {
+			factor = 100
+		}
+		DEN = {
+			country_event = swefop.10
+		}
+	}
+					
+}
+
+country_event = { # Danish Response
+	id = swefop.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.10" }
+	title = swefop.10.t
+	desc = swefop.10.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # No, we refuse
+		name = swefop.10.a
+		ai_chance = {
+			factor = 20
+		}
+		SWE = {
+			country_event = swefop.12
+		}
+	}
+
+	option = { # Yes, give away the island
+		name = swefop.10.b
+		ai_chance = {
+			factor = 80
+		}
+		SWE = {
+			country_event = swefop.11
+		}
+		add_political_power = -25
+	}
+}
+
+country_event = { # Denmark Accept!
+	id = swefop.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.11" }
+	title = swefop.11.t
+	desc = swefop.11.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = swefop.11.a
+		add_political_power = 100
+		transfer_state = 101 #Greenland
+		add_state_core = 101
+		transfer_state = 926 #Greenland Interior
+		add_state_core = 926
+	}
+}
+
+country_event = { # Denmark Refuse our request
+	id = swefop.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.12" }
+	title = swefop.12.t
+	desc = swefop.12.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Then it is war!
+		name = swefop.12.a
+		ai_chance = {
+			factor = 20
+		}
+		declare_war_on = {
+			target = DEN
+			type = annex_everything
+		}
+	}
+
+	option = { # Back down...
+		name = swefop.12.b
+		ai_chance = {
+			factor = 80
+		}
+		add_political_power = -10
+	}
+}
+
+country_event = { # Canadian Response
+	id = swefop.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.13" }
+	title = swefop.13.t
+	desc = swefop.13.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # No, we refuse
+		name = swefop.13.a
+		ai_chance = {
+			factor = 90
+		}
+		SWE = {
+			country_event = swefop.15
+		}
+	}
+
+	option = { # Yes, give away the island
+		name = swefop.13.b
+		ai_chance = {
+			factor = 10
+		}
+		SWE = {
+			country_event = swefop.14
+		}
+		add_political_power = -10
+	}
+}
+
+country_event = { # Canada Accept!
+	id = swefop.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.14" }
+	title = swefop.14.t
+	desc = swefop.14.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = swefop.14.a
+		add_political_power = 100
+		transfer_state = 101 #Greenland
+		add_state_core = 101
+		transfer_state = 926 #Greenland Interior
+		add_state_core = 926
+	}
+}
+
+country_event = { # Canada Refuse our request
+	id = swefop.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.15" }
+	title = swefop.15.t
+	desc = swefop.15.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Then it is war!
+		name = swefop.15.a
+		ai_chance = {
+			factor = 10
+		}
+		declare_war_on = {
+			target = CAN
+			type = take_state_focus
+			generator = {
+				101
+				926
+			}
+		}
+	}
+
+	option = { # Back down...
+		name = swefop.15.b
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+country_event = { # SWE Victory vs. CAN
+	id = swefop.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.16" }
+	title = swefop.16.t
+	desc = swefop.16.d
+	picture = GFX_report_event_NOR_new_government
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SWE
+		is_subject = no
+		country_exists = CAN
+		has_war_with = CAN
+		NOT = {
+			is_in_faction = yes
+		}
+		OR = {
+			controls_state = 101
+			CAN = {
+				surrender_progress > 0.25
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = { # Sue for peace
+		name = swefop.16.a
+		ai_chance = {
+			factor = 100
+		}
+		CAN = {
+			country_event = swefop.17
+		}
+	}
+
+	option = { # Total Conquest
+		name = swefop.16.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -20
+	}
+}
+
+country_event = { # Peace with Norway?
+	id = swefop.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.17" }
+	title = swefop.17.t
+	desc = swefop.17.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Accept
+		name = swefop.17.a
+		ai_chance = {
+			factor = 100
+		}
+		SWE = {
+			white_peace = CAN
+		}
+		SWE = {
+			country_event = swefop.18
+		}
+	}
+
+	option = { # Refuse
+		name = swefop.17.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -200
+	}
+}
+
+country_event = {
+	id = swefop.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.18" }
+	title = swefop.18.t
+	desc = swefop.18.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #
+		name = swefop.18.a
+		add_political_power = 100
+		transfer_state = 101 #Greenland
+		transfer_state = 926 #Greenland Interior
+		if = {
+			limit = {
+				100 = {
+					is_owned_by = CAN
+				}
+			}
+			transfer_state = 100 #Iceland
+		}
+		if = {
+			limit = {
+				337 = {
+					is_owned_by = CAN
+				}
+			}
+			transfer_state = 337 #Faroe Islands
+		}
+		if = {
+			limit = {
+				country_exists = ICE
+				ICE = {
+					is_subject_of = CAN
+				}
+			}
+			annex_country = {
+				target = ICE
+			}
+		}
+	}
+}
+
+country_event = { # Canadian Response
+	id = swefop.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.19" }
+	title = swefop.19.t
+	desc = swefop.19.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # No, we refuse
+		name = swefop.19.a
+		ai_chance = {
+			factor = 20
+		}
+		SWE = {
+			country_event = swefop.21
+		}
+	}
+
+	option = { # Yes, give away the island
+		name = swefop.19.b
+		ai_chance = {
+			factor = 80
+		}
+		SWE = {
+			country_event = swefop.20
+		}
+		add_political_power = -20
+	}
+}
+
+country_event = { # Canada Accept!
+	id = swefop.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.20" }
+	title = swefop.20.t
+	desc = swefop.20.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = swefop.20.a
+		add_political_power = 100
+		transfer_state = 101 #Greenland
+		add_state_core = 101
+		transfer_state = 926 #Greenland Interior
+		add_state_core = 926
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = 
+			KR_returned_land 
+			}
+		}
+	}
+}
+
+country_event = { # Canada Refuse our request
+	id = swefop.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.21" }
+	title = swefop.21.t
+	desc = swefop.21.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Then we'll leave
+		name = swefop.21.a
+		ai_chance = {
+			factor = 5
+		}
+		if = {
+			limit = {
+				is_in_faction_with = CAN
+			}
+			CAN = {
+				remove_from_faction = SWE
+			}
+		}
+	}
+
+	option = { # Back down...
+		name = swefop.21.b
+		ai_chance = {
+			factor = 95
+		}
+		add_political_power = -50
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = 
+			KR_disapproves_of_govt 
+			}
+		}
+	}
+}
+
+country_event = { # Canadian Response
+	id = swefop.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.22" }
+	title = swefop.22.t
+	desc = swefop.22.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # No, we refuse
+		name = swefop.22.a
+		ai_chance = {
+			factor = 20
+		}
+		SWE = {
+			country_event = swefop.24
+		}
+	}
+
+	option = { # Yes, give away the island
+		name = swefop.22.b
+		ai_chance = {
+			factor = 80
+		}
+		SWE = {
+			country_event = swefop.23
+		}
+		add_political_power = -20
+	}
+}
+
+country_event = { # Canada Accept!
+	id = swefop.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.23" }
+	title = swefop.23.t
+	desc = swefop.23.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = swefop.23.a
+		add_political_power = 100
+		annex_country = {
+			target = ICE
+			transfer_troops = yes
+		}
+		add_state_core = 100
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = 
+			KR_returned_land 
+			}
+		}
+	}
+}
+
+country_event = { # Canada Refuse our request
+	id = swefop.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.24" }
+	title = swefop.24.t
+	desc = swefop.24.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Then we'll leave
+		name = swefop.24.a
+		ai_chance = {
+			factor = 5
+		}
+		if = {
+			limit = {
+				is_in_faction_with = CAN
+			}
+			CAN = {
+				remove_from_faction = SWE
+			}
+		}
+	}
+
+	option = { # Back down...
+		name = swefop.24.b
+		ai_chance = {
+			factor = 95
+		}
+		add_political_power = -50
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = 
+			KR_disapproves_of_govt 
+			}
+		}
+	}
+}
+
+country_event = { # Iceland Response
+	id = swefop.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.25" }
+	title = swefop.25.t
+	desc = swefop.25.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Yes, join Norway
+		name = swefop.25.a
+		ai_chance = {
+			factor = 100
+		}
+		SWE = {
+			country_event = { 
+				hours = 2 
+				id = swefop.26
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	
+	option = { # No, we refuse
+		name = swefop.25.b
+		ai_chance = {
+			factor = 0
+		}
+		SWE = {
+			country_event = { days = 1 id = swefop.27 }
+		}
+	}
+}
+
+country_event = { # Iceland Says Yes
+	id = swefop.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.26" }
+	title = swefop.26.t
+	desc = swefop.26.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Sweden must grow larger
+		name = swefop.26.a
+		100 = {
+			if = {
+				limit = { is_owned_by = ICE }
+				add_core_of = SWE
+			}
+		}
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+		army_experience = 10
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		annex_country = { target = ICE transfer_troops = yes }
+	}
+}
+
+country_event = { # Iceland Says No
+	id = swefop.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.27" }
+	title = swefop.27.t
+	desc = swefop.27.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Get Wargoal
+		name = swefop.27.a
+		add_war_support = 0.05
+		create_wargoal = {
+			type = take_state_focus
+			target = ICE
+		}
+	}
+}
+
+country_event = { # create own faction
+	id = swefop.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swefop.28" }
+	title = swefop.28.t
+	desc = swefop.28.d
+	picture = GFX_report_event_NOR_new_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # name 1
+		name = swefop.28.a
+		add_political_power = 20
+		create_faction = "Northern Alliance"
+	}
+	option = { # name 2
+		name = swefop.28.b
+		add_political_power = 20
+		create_faction = "Aurora Pact"
+	}
+	option = { # name 3
+		name = swefop.28.c
+		add_political_power = 20
+		create_faction = "Swedish Defence Pact"
+	}	
+	option = { # name 4
+		name = swefop.28.e
+		add_political_power = 20
+		create_faction = "Stockholm Accord"
+	}	
+
+	option = { # name 5
+		name = swefop.28.f
+		trigger = {
+		OR = {
+			has_global_flag = SPOOKY_PORTRAITS
+			has_global_flag = KX_POLICEMAN_SWEAR_TO_GOD
+			has_global_flag = BIDEN_VISIBLE
+			has_global_flag = XINET_ON
+			has_global_flag = crazy_as_fuck_poland
+			has_global_flag = IMPERIUM_ON
+			has_global_flag = CHRISTMAS_ON
+			has_global_flag = POLAR_BEARS_ON
+			has_global_flag = TROTSKY_VISIBLE
+			has_global_flag = OWB_CROSSOVER_GLOBAL
+			}		
+		
+		}
+		
+		add_political_power = 20
+		create_faction = "1st International Anti-Finnish Accord"
+	}	
+	
+}
+
+country_event = { #Join SWE Faction
+	id = swefop.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event swefop.29"}
+	title = swefop.29.t
+	desc = swefop.29.d
+	picture = GFX_report_event_generic_diplomacy1
+	
+	is_triggered_only = yes
+
+  
+	option = { #yes
+		name = swefop.29.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 25
+				is_in_faction = no
+			}
+		}
+		SWE = {
+			add_to_faction = ROOT 
+		}
+	}
+	
+	option = { #no
+		name = swefop.29.b
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = { #Rename!!!!
+	id = swefop.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event swefop.30"}
+	title = swefop.30.t
+	desc = swefop.30.d
+	picture = GFX_report_event_RUS_konigsberg
+	
+	is_triggered_only = yes
+
+	option = { #no rename
+		name = swefop.30.a
+	}
+	option = { #Just capital 
+		name = swefop.30.b
+		set_province_name = { id = 11105 name = "Helsingfors"}
+		840 = { set_state_flag = renamed_state_Helsingfors }
+		hidden_effect = { 
+			every_controlled_state = { rename_state_effect = yes }
+		}
+	}
+	option = { #Just capital 
+		name = swefop.30.c
+		set_province_name = { id = 11105 name = "Helsingfors"}
+		840 = { set_state_flag = renamed_state_Helsingfors }
+		set_province_name = { id = 3083 name = "Åbo"}
+		863 = { set_state_flag = renamed_state_Abo }
+		set_province_name = { id = 9206 name = "Viborg"}
+		1325 = { set_state_flag = renamed_state_Viborg }	 		
+		set_province_name = { id = 3117 name = "Björneborg"}
+		863 = { set_state_flag = renamed_state_Bjorneborg }
+		set_province_name = { id = 3137 name = "Tammerfors"}
+		111 = { set_state_flag = renamed_state_Tammerfors }
 
 
 
+		hidden_effect = { 
+			every_controlled_state = { rename_state_effect = yes }
+		}
+	}
 
-
-
+}
 
 #######New events here######### 
 
@@ -2091,6 +2818,8 @@ country_event = { ####unity cabinet
 		has_country_flag = SWE_election_safe_success
 		is_in_faction = no
 	}
+	
+	fire_only_once = yes
 
 	option = { #yes
 		name = swedem.26.a
@@ -2166,13 +2895,196 @@ country_event = { #flag switcher
 	}	
 }
 
+country_event = { #socdem marx or key
+	id = swedem.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.29" }
+	title = swedem.29.t
+	desc = swedem.29.d
 
+	is_triggered_only = yes
 
+	option = { #marxism
+		name = swedem.29.a
+		add_ideas = SWE_moderate_marxism
+		
 
+	}	
+	option = { #keynaism
+		name = swedem.29.b
+		add_ideas = SWE_key_thought
 
+	}	
+}
 
+country_event = { #bully opposition
+	id = swedem.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.30" }
+	title = swedem.30.t
+	desc = swedem.30.d
 
+	is_triggered_only = yes
 
+	option = { #polite politics
+		name = swedem.30.a
+		add_political_power = -30
+		add_stability = 0.02
+		add_war_support = -0.01
+		add_popularity = { ideology = social_democrat popularity = -0.04 }
+		add_popularity = { ideology = social_liberal popularity = -0.02 }
+		add_popularity = { ideology = market_liberal popularity = -0.02 }
+		add_popularity = { ideology = social_conservative popularity = 0.03 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
+
+		
+
+	}	
+	option = { #cutthroatness
+		name = swedem.30.b
+		add_political_power = -10
+		add_stability = -0.03
+		add_war_support = 0.02
+		add_popularity = { ideology = social_democrat popularity = -0.05 }
+		add_popularity = { ideology = social_liberal popularity = -0.05 }
+		add_popularity = { ideology = market_liberal popularity = -0.04 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.04 }		
+
+	}	
+}
+
+country_event = { #authdem restore elections - parties organize
+	id = swedem.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.31" }
+	title = swedem.31.t
+	desc = swedem.31.d
+
+	is_triggered_only = yes
+
+	option = { #allow all parties
+		name = swedem.31.a
+		set_country_flag = SWE_flag_authdem_all_parties
+		add_political_power = 15
+		add_stability = -0.08
+			country_event = {
+				id = swedem.32
+				days = 3
+			}
+		
+
+	}	
+	option = { #only right wingers
+		name = swedem.31.b
+		set_country_flag = SWE_flag_authdem_right_parties
+		add_political_power = 5
+		add_stability = 0.03
+			country_event = {
+				id = swedem.32
+				days = 3
+			}
+	}	
+}
+
+country_event = { #authdem restore elections - elections
+	id = swedem.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event swedem.32" }
+	title = swedem.32.t
+	desc = swedem.32.d
+
+	is_triggered_only = yes
+
+	option = { #socdem
+		name = swedem.32.a
+		trigger = {
+				has_country_flag = SWE_flag_authdem_all_parties
+		}
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
+			country_event = {
+				id = sweelect.6
+				days = 2
+			}		
+				add_ideas = SWE_Tage_Erlander_hog_sde
+				add_ideas = SWE_J_Rickard_Sandler_for_sde
+				add_ideas = SWE_Per_Edvin_Skold_eco_sde
+				add_ideas = SWE_Karl_Schlyter_sec_sde				
+				set_country_leader_ideology = liberal_socialism_subtype
+	}	
+	option = { #soclib
+		name = swedem.32.b
+		trigger = {
+				has_country_flag = SWE_flag_authdem_all_parties
+		}
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_liberal elections_allowed = yes }		
+			country_event = {
+				id = sweelect.9
+				days = 4
+			}		
+		add_ideas = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_for_sli
+		add_ideas = SWE_Arthur_Heiding_eco_sli
+		add_ideas = SWE_Karl_Gustaf_Westman_sec_sli	
+	}	
+	option = { #marlib
+		name = swedem.32.c
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		add_popularity = { ideology = market_liberal popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
+			country_event = {
+				id = sweelect.8
+				days = 4
+			}		
+				add_ideas = SWE_Bertil_Ohlin_hog_mli
+				add_ideas = SWE_Gustaf_Andersson_i_Rasjoen_for_mli
+				add_ideas = SWE_Gustav_Cassel_eco_mli
+				add_ideas = SWE_Thorwald_Bergquist_sec_mli
+
+	}	
+	option = { #soccon
+		name = swedem.32.e
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		add_popularity = { ideology = social_conservative popularity = 0.05 }
+		add_political_power = 10
+		set_politics = { ruling_party = social_conservative elections_allowed = yes }		
+			country_event = {
+				id = sweelect.7
+				days = 4
+			}		
+				add_ideas = SWE_Fritiof_Domoe_hog_sco
+				add_ideas = SWE_Christian_Guenther_for_sco
+				add_ideas = SWE_Arthur_Heiding_eco_sli
+				add_ideas = SWE_Knut_Ewerloef_sec_sco
+				add_marlib_to_coalition = yes
+
+	}	
+	option = { #authdem
+		name = swedem.32.f
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }		
+		set_country_leader_ideology = authdem_national_conservative_subtype
+		
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.09 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
+		add_pataut_to_coalition = yes
+		
+		add_ideas = SWE_Elmo_Lindholm_hog_npo
+		add_ideas = SWE_Sven_Hedin_for_ade
+		add_ideas = SWE_Per_Engdahl_eco_pau
+		add_ideas = SWE_Alf_Meyerhoffer_sec_pau
+
+	}	
+	
+}
 
 
 
@@ -2785,6 +3697,8 @@ country_event = { #### Election and leader events
 
 	option = { #Social Democrats win
 		name = sweelect.5.a
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
 		add_political_power = 10
 		set_politics = { ruling_party = social_democrat elections_allowed = yes }		
@@ -2831,6 +3745,8 @@ country_event = { #### Election and leader events
 	
 	option = { #Conservatives Win 
 		name = sweelect.5.b
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		add_popularity = { ideology = social_conservative popularity = 0.08 }
 		add_political_power = 10
 		set_politics = { ruling_party = social_conservative elections_allowed = yes }		
@@ -2865,6 +3781,8 @@ country_event = { #### Election and leader events
 	
 	option = { #Folkpartiet win 
 		name = sweelect.5.c
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		add_popularity = { ideology = market_liberal popularity = 0.08 }
 		add_political_power = 5
 		set_politics = { ruling_party = market_liberal elections_allowed = yes }		
@@ -2907,6 +3825,8 @@ country_event = { #### Election and leader events
 			has_government = market_liberal
 			}		
 		}
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		add_popularity = { ideology = social_liberal popularity = 0.08 }
 		set_politics = { ruling_party = social_liberal elections_allowed = yes }		
 		hidden_effect = {
@@ -2929,6 +3849,8 @@ country_event = { #### Election and leader events
 				has_country_flag = SWE_flag_national_league_banned
 			}
 		}
+		complete_national_focus = SWE_second_election
+		set_country_flag = SWE_flag_1940_election
 		set_politics = { ruling_party = authoritarian_democrat elections_allowed = yes }		
 		set_country_leader_ideology = authdem_national_conservative_subtype
 		
@@ -2975,6 +3897,7 @@ country_event = { #### socdem coalition
 		add_soclib_to_coalition = yes
 		add_popularity = { ideology = social_liberal popularity = 0.04 }
 		add_political_power = 5
+
 			
 	}	
 	
@@ -2985,6 +3908,7 @@ country_event = { #### socdem coalition
 		add_popularity = { ideology = social_liberal popularity = 0.05 }
 		add_popularity = { ideology = market_liberal popularity = 0.02 }
 		add_political_power = 15
+
 			
 	}	
 }
@@ -3016,6 +3940,7 @@ country_event = { #### soccon coalition
 		add_marlib_to_coalition = yes
 		add_popularity = { ideology = market_liberal popularity = 0.04 }
 		add_political_power = 5
+
 			
 	}	
 	
@@ -3026,16 +3951,20 @@ country_event = { #### soccon coalition
 		add_popularity = { ideology = social_liberal popularity = 0.05 }
 		add_popularity = { ideology = market_liberal popularity = 0.02 }
 		add_political_power = 15
+
 			
 	}	
 	
 	option = { #authdem
 		name = sweelect.7.c
 		add_authdem_to_coalition = yes
+		add_pataut_to_coalition = yes
 		add_popularity = { ideology = social_conservative popularity = -0.02 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.07 }
 		add_political_power = -10
 		add_stability = -0.02
+		set_country_flag = SWE_flag_1940_soccon_authdem
+
 			
 	}	
 }
@@ -3103,6 +4032,7 @@ country_event = { #### soclib coalition
 		name = sweelect.9.a
 		add_socdem_to_coalition = yes
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		set_country_flag = SWE_flag_1940_soclib_left
 			
 	}	
 	
@@ -3110,6 +4040,7 @@ country_event = { #### soclib coalition
 		name = sweelect.9.b
 		add_marlib_to_coalition = yes
 		add_popularity = { ideology = market_liberal popularity = 0.07 }
+		set_country_flag = SWE_flag_1940_soclib_middle
 			
 	}	
 }
@@ -4421,6 +5352,7 @@ country_event = { #Inter-military election ##LS##
 		hidden_effect = {
 			country_event = { id = swe.30 days = 400 }
 			country_event = { id = swemil.19 }
+			set_country_flag = SWE_flag_no_elmo_nats
 			}		
 	}
 	
@@ -4457,6 +5389,7 @@ country_event = { #Inter-military election ##LS##
 		add_ideas = SWE_Carlos_Adlercreutz_sec_ade
 		
 		hidden_effect = {
+			set_country_flag = SWE_flag_no_elmo_nats
 			if = {
 				limit = { has_country_flag = SWE_flag_crown_restored }				
 				} 
@@ -5115,17 +6048,10 @@ country_event = { #return to norm - monarch ##LS##
 
 	option = { #let bagge restore some civilian
 		name = swemil.30.b
-		add_stability = 0.12
-		add_popularity = { ideology = social_conservative popularity = 0.10 }		
-		set_cosmetic_tag = SWE_mil_bagge
+		add_stability = 0.03
+		add_popularity = { ideology = social_conservative popularity = 0.03 }		
 		add_ideas = SWE_authdem_civilian
-		add_authdem_to_coalition = yes
-		
-		set_party_name = {
-			ideology = social_conservative
-			long_name = SWE_social_conservative_alternate_party_long
-			name = SWE_social_conservative_alternate_party
-		}		
+		country_event = { id = swedem.31 days = 6 }		
 
 	}	
 }
