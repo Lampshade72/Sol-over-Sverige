@@ -322,7 +322,7 @@ SWE_royal_youth2:0 "Expanded Youth Training Programs"
 SWE_royal_paramilitaries:0 "The Kings Dagger"
 
 
-
+SWE_nationalist_riksdag:0 "Nationalist Riksdag"
 
 
 
@@ -1451,6 +1451,8 @@ SWE_flag_1944_ekman:0 "Carl Gustaf Ekman is chosen to lead the party"
 
 SWE_flag_authdem_all_parties:0 "The Military allows free elections"
 SWE_flag_authdem_right_parties:0 "The Military only allows some parties"
+
+SWE_flag_national_league_dom:0 "The National League have banned and outlawed left-wing parties!"
 
 ## Decisions ##
 
